@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- popwindow的配置 -->
+    <dimen name="pop_padding_drawable">2.0dip</dimen>
+    <dimen name="pop_padding_up">4.0dip</dimen>
+    <dimen name="pop_font_size">8.0dp</dimen>
+    <dimen name="message_list_padding">4.0dp</dimen>
+    <dimen name="message_list_padding_top">8.0dp</dimen>
+    <dimen name="login_accountxinfo">10.0dp</dimen>
+    <dimen name="login_textmargintp">8.0dp</dimen>
+    <dimen name="login_margintp">14.0dp</dimen>
+    <dimen name="egame_textsize_18">16.0dp</dimen>
+    <dimen name="dp_1">1.3px</dimen>
+    <dimen name="dp_2">2.7px</dimen>
+    <dimen name="dp_3">4px</dimen>
+    <dimen name="dp_4">5.3px</dimen>
+    <dimen name="dp_5">6.7px</dimen>
+    <dimen name="dp_8">10.6px</dimen>
+    <dimen name="dp_10">13.3px</dimen>
+    <dimen name="dp_11">14.7px</dimen>
+    <dimen name="dp_13">17.3px</dimen>
+    <dimen name="dp_14">18.7px</dimen>
+    <dimen name="dp_15">20px</dimen>
+    <dimen name="dp_16">21.3px</dimen>
+    <dimen name="dp_18">24dp</dimen>
+    <dimen name="dp_19">25.3px</dimen>
+    <dimen name="dp_56">74.7px</dimen>
+    <dimen name="dp_64">85.3px</dimen>
+    <dimen name="dp_40">53.3px</dimen>
+    <dimen name="dp_48">64px</dimen>
+    <dimen name="dp_24">32px</dimen>
+    <dimen name="dp_12">16px</dimen>
+    <dimen name="dp_20">26.7px</dimen>
+
+</resources>

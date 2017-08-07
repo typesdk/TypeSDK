@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background" >
+
+    <LinearLayout
+        android:id="@+id/pyw_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/pyw_common_title"
+            layout="@layout/pyw_common_title_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pyw_title"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pyw_tv_account_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/pyw_common_white"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <View
+            android:id="@+id/pyw_myvoucher_pop_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d1d1d1"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/pyw_myvoucher_type_btn"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/pyw_common_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/pyw_myvoucher_canuse_title_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/pyw_myvoucher_canuse_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textColor="@color/pyw_vocher_nouse_txt_color"
+                    android:textSize="@dimen/pyw_common_large" />
+
+                <View
+                    android:id="@+id/pyw_myvoucher_canuse_title_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@+id/pyw_myvoucher_canuse_title"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/pyw_myvoucher_canuse_title"
+                    android:background="@color/pyw_vocher_nouse_txt_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pyw_myvoucher_used_title_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/pyw_myvoucher_used_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textColor="@color/pyw_vocher_nouse_txt_color"
+                    android:textSize="@dimen/pyw_common_large" />
+
+                <View
+                    android:id="@+id/pyw_myvoucher_used_title_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@+id/pyw_myvoucher_used_title"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/pyw_myvoucher_used_title"
+                    android:background="@color/pyw_vocher_nouse_txt_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pyw_myvoucher_overdue_title_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/pyw_myvoucher_overdue_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textColor="@color/pyw_vocher_nouse_txt_color"
+                    android:textSize="@dimen/pyw_common_large" />
+
+                <View
+                    android:id="@+id/pyw_myvoucher_overdue_title_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@+id/pyw_myvoucher_overdue_title"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/pyw_myvoucher_overdue_title"
+                    android:background="@color/pyw_vocher_nouse_txt_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" >
+
+            <ListView
+                android:id="@+id/pyw_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/pyw_common_transparent"
+                android:listSelector="@color/pyw_common_transparent"
+                android:paddingBottom="10dp"
+                android:scrollbars="none"
+                android:scrollingCache="false" >
+            </ListView>
+
+            <com.pengyouwan.sdk.ui.widget.TipsLayout
+                android:id="@+id/pyw_layout_tips"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pyw_tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无可用代金券"
+            android:textSize="@dimen/pyw_common_large"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pyw_myvoucher_bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:visibility="gone" />
+
+</RelativeLayout>

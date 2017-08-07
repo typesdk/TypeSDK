@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无数据"
+            android:textColor="@color/sogou_game_sdk_color_666666"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <com.sogou.gamecenter.sdk.views.listviewpro.PullLoadListView
+            android:id="@+id/sogou_game_sdk_lv_code_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:divider="@color/sogou_game_sdk_color_eeeeee"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ledi_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/load_linear02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ledi_regist_remain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f30000"
+            android:textSize="13sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ledi_user_edit_bg"
+                android:orientation="horizontal" >
+
+                <ImageSwitcher
+                    android:layout_width="8dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ledi_user_name_img" />
+
+                <EditText
+                    android:id="@+id/register_name_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="24"
+                    android:background="@null"
+                    android:hint="@string/ledi_input_account"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/float_window_black"
+                    android:textColorHint="@color/float_window_hint_grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ledi_password_edit_bg"
+                android:orientation="horizontal" >
+
+                <ImageSwitcher
+                    android:layout_width="8dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ledi_password_bg" />
+
+                <EditText
+                    android:id="@+id/register_password_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="24"
+                    android:background="@null"
+                    android:hint="@string/ledi_input_password"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/float_window_black"
+                    android:textColorHint="@color/float_window_hint_grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ledi_phone_edit_bg"
+                android:orientation="horizontal" >
+
+                <ImageSwitcher
+                    android:layout_width="10dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ledi_phone_bg" />
+
+                <EditText
+                    android:id="@+id/register_phone_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="25"
+                    android:background="@null"
+                    android:hint="@string/ledi_input_phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:phoneNumber="true"
+                    android:textColor="@color/float_window_black"
+                    android:textColorHint="@color/float_window_hint_grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </TableLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/register_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="@string/ledi_register_remind"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/ledi_btn_load_bg"
+                android:gravity="center"
+                android:text="@string/ledi_once_register"
+                android:textColor="#fcffff"
+                android:textSize="14sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stargame.sdk.ui.view.ResizeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/lib_white"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+    <com.stargame.sdk.ui.view.TitleLayout
+            android:id="@+id/lib_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    <FrameLayout
+            android:id="@+id/content_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"/>
+
+</com.stargame.sdk.ui.view.ResizeLayout>

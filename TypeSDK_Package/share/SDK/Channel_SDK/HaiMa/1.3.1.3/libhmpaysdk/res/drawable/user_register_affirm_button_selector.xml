@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="3dp"></corners>
+
+            <stroke
+                android:color="@color/user_register_affirm_button_not_clickable_bg"
+                android:width="1dp"></stroke>
+
+            <solid android:color="@color/user_register_affirm_button_not_clickable_bg" ></solid>
+
+            <padding
+                android:bottom="10dp"
+                android:top="10dp"
+                android:left="10dp"
+                android:right="10dp"></padding>
+        </shape>
+    </item>
+
+    <item android:state_enabled="true">
+        <shape>
+            <corners android:radius="3dp"></corners>
+
+            <stroke
+                android:color="@color/user_register_get_verify_num_button_color"
+                android:width="1dp"></stroke>
+
+            <solid android:color="@color/user_register_get_verify_num_button_color" ></solid>
+
+            <padding
+                android:bottom="10dp"
+                android:top="10dp"
+                android:left="10dp"
+                android:right="10dp"></padding>
+        </shape>
+    </item>
+
+
+</selector>

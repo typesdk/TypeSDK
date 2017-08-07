@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pj_title_bg_red">#ffe40019</color>
+    <color name="pj_btn_bg_red">#d92721</color>
+    <color name="pj_btn_bg_yellow">#f3d109</color>
+    <color name="pj_input_text_color">#818080</color>
+    <color name="pj_text_gray">#aaaaaa</color>
+    <color name="pj_text_black">#333333</color>
+    <color name="pj_activity_bg_gray">#f6f6f6</color>
+</resources>

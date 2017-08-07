@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center_vertical"
+              android:background="@drawable/lib_background_theme_category_selector">
+    <TextView
+            android:id="@+id/lib_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/lib_background_theme_category_drawableleft_selector"
+            android:drawablePadding="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/lib_theme_category_textcolor_selector"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"/>
+</LinearLayout>

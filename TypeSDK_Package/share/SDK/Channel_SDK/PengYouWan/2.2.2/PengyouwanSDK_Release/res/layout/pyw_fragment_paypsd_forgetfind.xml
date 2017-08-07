@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/pyw_common_white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_change_paypsd"
+            style="@style/PYW.Safe.Layout"
+            android:background="@color/pyw_common_white"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                style="@style/PYW.Safe.Text"
+                android:text="@string/pyw_paypsd_change" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView style="@style/PYW.Safe.Image" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:background="@color/pyw_common_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_find_paypsd"
+            style="@style/PYW.Safe.Layout"
+            android:background="@color/pyw_common_white" >
+
+            <TextView
+                style="@style/PYW.Safe.Text"
+                android:layout_marginLeft="20dp"
+                android:text="@string/pyw_paypsd_find" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView style="@style/PYW.Safe.Image" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

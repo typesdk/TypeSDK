@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="jolopay_full_transparent">#00000000</color>
+    <color name="jolopay_half_transparent">#aa000000</color>
+    <color name="jolopay_white">#FFFFFF</color>
+    <color name="jolopay_black">#000000</color>
+    <color name="jolopay_gray">#808080</color>
+    <color name="jolopay_gray2">#5B5B5B</color>
+    <color name="jolopay_gray3">#7B7B7B</color>
+    <color name="jolopay_red">#FF0000</color>
+    <color name="jolopay_gold">#FFD700</color>
+    <color name="jolopay_yellow">#FFFF00</color>
+    <color name="jolopay_green">#008000</color>
+    <color name="jolopay_blue">#0000FF</color>
+    <color name="jolopay_purple">#800080</color>
+    <color name="jolopay_pink">#FFC0CB</color>
+    <color name="jolopay_orange">#FFA500</color>
+    <color name="jolopay_lemonyellow">#FFFACD</color>
+    <color name="jolopay_graywhite">#F5F5F5</color>
+    <color name="jolopay_grayslate">#708090</color>
+    <color name="jolopay_lightblue">#0083FF</color>
+    <color name="jolopay_title_bg">#41c22b</color>
+    <color name="jolopay_global_bg">#f5f5f5</color>
+    <color name="jolopay_goods_bg">#db767b</color>
+
+</resources>

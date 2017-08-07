@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kg_common_dialog_title_height"
+        android:background="@drawable/kg_kugou_dialogtitle_default_bg" >
+
+        <TextView
+            android:id="@+id/kg_tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="请输入支付密码"
+            android:textColor="@color/kg_common_gray_lighter"
+            android:textSize="@dimen/kg_common_dialog_title_size" />
+
+        <ImageView
+            android:id="@+id/kg_common_dialog_close_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/kg_selector_close_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kg_common_dialog_contain_background"
+        android:padding="15dp" >
+
+        <com.kugou.game.sdk.ui.widget.LoadingView
+            android:id="@+id/kg_loadingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kg_common_dialog_contain_background"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/kg_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kg_input_pay_pwd_game_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textSize="@dimen/kg_common_large" />
+
+            <TextView
+                android:id="@+id/kg_input_pay_pwd_youbi_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/kg_common_larger" />
+
+            <EditText
+                android:id="@+id/kg_input_pay_pwd_gridpasswordview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:maxLength="6"
+                android:inputType="numberPassword"
+                android:padding="5dp"
+                android:background="@drawable/kg_shape_frame_gray"
+                android:hint="@string/kg_input_pay_passwd_tip"
+                android:textColorHint="@color/kg_common_gray_more_lighter"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/kg_input_pay_pwd_error_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/kg_common_orange"
+                android:textSize="@dimen/kg_common_large"
+                android:visibility="gone" />
+            
+            <TextView
+                android:id="@+id/kg_get_back_pay_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/kg_common_blue"
+                android:textSize="@dimen/kg_common_large"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

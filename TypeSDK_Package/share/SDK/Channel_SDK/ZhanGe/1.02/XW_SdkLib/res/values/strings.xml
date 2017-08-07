@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btn_charge_green">#00b600</color>
+    <color name="btn_charge_gray">#999999</color>
+    <color name="aqua">#48AC4E</color>
+    <string name="view_tag">view_tag</string>
+    <string name="app_name">易通游戏</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_user">用户</string>
+    <string name="btn_gift">礼包</string>
+    <string name="btn_server">客服</string>
+    <string name="btn_bbs">论坛</string>
+    <string name="title_user">用户中心</string>
+    <string name="tv_gift">礼包</string>
+
+</resources>

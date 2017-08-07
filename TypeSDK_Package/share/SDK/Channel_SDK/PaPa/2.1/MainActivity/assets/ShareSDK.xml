@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+   
+    
+    <ShareSDK 
+        AppKey = "563efaa5a8fe"/>
+    <SinaWeibo
+        Id="1"
+        SortId="5"
+        AppKey="3535391124"
+        AppSecret="6eebb09d369d910f869b277bf3b82fb1"
+        RedirectUrl="http://www.weibo.com"
+        ShareByAppClient="true"
+        Enable="true" />
+
+    <TencentWeibo
+        Id="2"
+        SortId="2"
+        AppKey="801307650"
+        AppSecret="ae36f4ee3946e1cbb98d6965b0b2ff5c"
+        RedirectUri="http://sharesdk.cn"
+        Enable="false" />
+    <QZone
+        Id="3"
+        SortId="4"
+        AppId="100371282"
+        AppKey="aed9b0303e3ed1e27bae87c33761161d"
+        ShareByAppClient="true"
+        Enable="true" />
+    
+  
+    <Wechat
+        Id="4"
+        SortId="1"
+        AppId="wx1af84651e5bbda70"
+        AppSecret="e0246ba5350ae67ae892441cf9414c60"
+        BypassApproval="false"
+        Enable="false" />
+    
+    <WechatMoments
+        Id="5"
+        SortId="2"
+        AppId="wx1af84651e5bbda70"
+        AppSecret="e0246ba5350ae67ae892441cf9414c60"
+        BypassApproval="false"
+        Enable="false" />
+        
+	<WechatFavorite
+        Id="6"
+        SortId="6"
+        AppId="wx1af84651e5bbda70"
+        AppSecret="e0246ba5350ae67ae892441cf9414c60"
+        BypassApproval="true"
+        Enable="false" />
+    
+	<QQ
+        Id="7"
+        SortId="3"
+        AppId="1104212033"
+        AppKey="8cEGovUJHkO1j0z6"
+        ShareByAppClient="true"
+        Enable="true" />
+    
+
+    
+    <Bluetooth
+        Id="36"
+        SortId="36"
+        Enable="false" />
+
+
+    
+</DevInfor>

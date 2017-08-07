@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:id="@+id/alertdialog_ll_top"
+        android:background="@drawable/smallhao_alertdialog_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/smallhao_alertdialog_tv_title"
+            android:layout_marginTop="7dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="切换提示"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:paddingTop="4dip"
+            android:paddingBottom="4dip"
+            android:id="@+id/smallhao_alertdialog_tv_message"
+            android:layout_marginTop="5dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"                
+            android:layout_marginBottom="10dip"          
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:hint="请输入支付密码"
+            android:background="@drawable/white_green_kuang"
+            android:gravity="left|center_vertical" 
+            android:paddingLeft="90dip"
+            style="@style/et_tc_textColorHint"
+            />
+        
+        <View
+        android:id="@+id/setpaypassword_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"       
+        android:background="@color/line" 
+        />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_below="@+id/alertdialog_ll_top"
+        android:background="@drawable/smallhao_alertdialog_bottom_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/alertdialog_btn_cancel" 
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="取消"
+             android:textColor="#00cc99"
+            android:background="@null"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+        <View
+        android:id="@+id/alertdialog_line_1"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"       
+        android:background="@color/line" 
+        />
+        <Button
+            android:id="@+id/alertdialog_btn_ensure" 
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="#00cc99"
+            android:background="@null"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    
+
+</RelativeLayout>

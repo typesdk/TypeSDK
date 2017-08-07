@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wangyin="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/wepay_space_xlarge"
+    android:layout_marginRight="@dimen/wepay_space_xlarge"
+    android:orientation="vertical" >
+
+    <com.wangyin.wepay.widget.CPAmountTextView
+        android:id="@+id/txt_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/wepay_space_middle"
+        wangyin:decimalSize="@dimen/wepay_txt_xxxlarge"
+        wangyin:integerSize="@dimen/wepay_txt_xxxlarge"
+        wangyin:suffix="@string/wepay_yuan"
+        wangyin:suffixSize="@dimen/wepay_txt_large" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/wepay_space_middle" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wepay_order_info_recipient"
+            android:textColor="@color/wepay_txt_main"
+            android:textSize="@dimen/wepay_txt_middle" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_recipient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/wepay_txt_main"
+            android:textSize="@dimen/wepay_txt_middle"
+            android:maxEms="12"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/wepay_space_small" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wepay_order_info_commodity"
+            android:textColor="@color/wepay_txt_main"
+            android:textSize="@dimen/wepay_txt_middle" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_commodity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/wepay_txt_main"
+            android:textSize="@dimen/wepay_txt_middle"
+            android:maxEms="12"
+            android:singleLine="true"
+            
+             />
+    </LinearLayout>
+
+</LinearLayout>

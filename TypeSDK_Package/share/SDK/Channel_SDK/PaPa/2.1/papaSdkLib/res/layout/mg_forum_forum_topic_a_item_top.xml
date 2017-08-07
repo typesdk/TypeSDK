@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!--android:paddingLeft="@dimen/mg_forum_post_item_padding"-->
+    <!--android:paddingRight="@dimen/mg_forum_post_item_padding"-->
+
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:id="@+id/banner"
+               android:src="@drawable/main_normal_icon"
+               android:scaleType="fitXY"/>
+
+</RelativeLayout>

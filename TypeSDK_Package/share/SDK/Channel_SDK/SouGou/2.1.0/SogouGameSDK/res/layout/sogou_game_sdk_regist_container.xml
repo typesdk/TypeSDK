@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sogou_game_sdk_main_background_color"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/sogou_game_sdk_head" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="39dip"
+            android:layout_marginTop="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_reg_express"
+                android:layout_width="0px"
+                android:layout_height="39dip"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_marginLeft="23dp"
+                android:background="@drawable/sogou_game_tab_bg"
+                android:gravity="center"
+                android:text="@string/sogou_game_sdk_reg_tab_express"
+                android:textColor="@color/sogou_game_sdk_color_000000"
+                android:textSize="14sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_reg_user_main"
+                android:layout_width="0px"
+                android:layout_height="39dip"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_marginRight="23dp"
+                android:text="@string/sogou_game_sdk_reg_title_main"
+                android:textSize="14sp" >
+            </TextView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/sogou_game_sdk_reg_myframe"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:background="@color/sogou_game_sdk_white"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/egame_pop_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/egame_popl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/lmain_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+             >
+
+            <RadioButton
+                android:id="@+id/lrb_function"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_gift"
+                android:visibility="gone"
+                android:text="礼包" />
+
+            <RadioButton
+                android:id="@+id/lrb_news_center"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_book"
+                android:visibility="gone"
+                android:text="攻略" />
+
+            <RadioButton
+                android:id="@+id/lrb_smart_service"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_talk"
+                android:visibility="gone"
+                android:text="论坛" />
+            
+            <RadioButton
+                android:id="@+id/lrb_pop_mission"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_mission"
+                android:text="任务" />
+            
+            <RadioButton
+                android:id="@+id/lrb_pop_help"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_help"
+                android:text="客服" />
+
+            <RadioButton
+                android:id="@+id/lrb_pop_account"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_user"
+                android:text="账户" />
+            
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/egame_popr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/rmain_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+            
+            <RadioButton
+                android:id="@+id/rrb_pop_account"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_user"
+                android:text="账户" />
+            
+			<RadioButton
+                android:id="@+id/rrb_pop_help"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_help"
+                android:text="客服" />
+			
+			<RadioButton
+                android:id="@+id/rrb_pop_mission"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_mission"
+                android:text="任务" />
+			
+            <RadioButton
+                android:id="@+id/rrb_smart_service"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_talk"
+                android:visibility="gone"
+                android:text="论坛" />
+
+            <RadioButton
+                android:id="@+id/rrb_news_center"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_book"
+                android:visibility="gone"
+                android:text="攻略" />
+
+            <RadioButton
+                android:id="@+id/rrb_function"
+                style="@style/pop_style"
+                android:drawableTop="@drawable/egame_floatview_gift"
+                android:visibility="gone"
+                android:text="礼包" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

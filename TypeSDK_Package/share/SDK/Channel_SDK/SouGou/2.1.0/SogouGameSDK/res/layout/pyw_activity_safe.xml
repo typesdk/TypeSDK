@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/pyw_common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pyw_img_no_leftrightframe_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_securitymobile"
+            style="@style/PYW.Safe.Layout"
+            android:background="@drawable/pyw_selector_common_item_bg"
+            android:padding="1dp" >
+
+            <TextView
+                style="@style/PYW.Safe.Text"
+                android:layout_marginLeft="20dp"
+                android:text="@string/pyw_safe_securitymobile" />
+
+            <TextView
+                android:id="@+id/pwy_tv_pwd_bind_number"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="138****8888"
+                android:textColor="@color/pyw_common_gray_lighter" />
+            <!--
+                 <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+            -->
+
+            <TextView
+                android:id="@+id/pyw_tv_modify_bind"
+                style="@style/PYW.Safe.Modify"
+                android:text="绑定" />
+
+            <ImageView style="@style/PYW.Safe.Image" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pyw_img_no_leftrightframe_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_loginpassword"
+            style="@style/PYW.Safe.Layout"
+            android:background="@drawable/pyw_selector_common_item_bg" >
+
+            <TextView
+                style="@style/PYW.Safe.Text"
+                android:layout_marginLeft="20dp"
+                android:text="@string/pyw_safe_loginpassword" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView style="@style/PYW.Safe.Modify" />
+
+            <ImageView style="@style/PYW.Safe.Image" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:background="@color/pyw_common_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_paypassword"
+            style="@style/PYW.Safe.Layout"
+            android:background="@drawable/pyw_selector_common_item_bg" >
+
+            <TextView
+                style="@style/PYW.Safe.Text"
+                android:layout_marginLeft="20dp"
+                android:text="@string/pyw_safe_paypassword" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/pyw_tv_modify_pay"
+                style="@style/PYW.Safe.Modify" />
+
+            <ImageView style="@style/PYW.Safe.Image" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/pyw_safe_hint"
+        android:textColor="@color/pyw_common_gray_lighter"
+        android:textSize="@dimen/pyw_common_medium" />
+
+    <include
+        android:id="@+id/pyw_layout_contact"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/pyw_common_editext_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        layout="@layout/pyw_view_bottom_contact"
+        android:background="@drawable/pyw_img_service_bg"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:id="@+id/pyw_tv_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/pyw_page_edge_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/pyw_common_gray_lighter"
+        android:textSize="@dimen/pyw_common_medium" />
+
+</LinearLayout>

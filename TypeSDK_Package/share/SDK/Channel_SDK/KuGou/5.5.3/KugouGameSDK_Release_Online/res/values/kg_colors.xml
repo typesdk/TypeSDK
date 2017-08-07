@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- 基本颜色 -->
+    <color name="kg_common_white">#ffffffff</color>
+    <color name="kg_common_black">#ff000000</color>
+    <color name="kg_common_red">#f32525</color>
+    <color name="kg_common_green">#ff00ff00</color>
+    <color name="kg_common_blue">#479dfc</color>
+    <color name="kg_common_blue_lighter">#249EF6</color>
+    <color name="kg_common_orange">#fc5f28</color>
+    <color name="kg_common_blue_deep">#259EF7</color>
+    <color name="kg_common_green_light">#26B134</color>
+    <color name="kg_common_red_light">#A10000</color>
+    <color name="kg_common_blue_kugou">#249EF6</color>
+    
+    <color name="kg_common_title_back">#479dfc</color>
+
+    <!-- 通用颜色 -->
+    <color name="kg_common_hint_color">#cccccc</color>
+    <color name="kg_common_background">#fafafa</color>
+    <color name="kg_common_background_lighter">#f0f0f0</color>
+    <color name="kg_common_gray_normal">#cccccc</color>
+    <color name="kg_common_gray_pressed">#b7b7b7</color>
+    <!-- 透明颜色 -->
+    <color name="kg_common_transparent">#00000000</color>
+    <!-- 半透明颜色 -->
+    <color name="kg_common_translucence">#e0000000</color>
+    <color name="kg_common_translucence_lighter">#50000000</color>
+    <!-- 按钮点击后的颜色 -->
+    <color name="kg_common_btn_pressed">#ffdddddd</color>
+    <!-- toolbarCustomView按钮点击后的颜色 -->
+    <color name="kg_toolbar_customview_btn_pressed">#330000ff</color>
+    <!-- 分割线颜色 -->
+    <color name="kg_common_divider">#ffdddddd</color>
+    <!-- 充值模块 -->
+    <color name="kg_grass_green">#ff8a4314</color>
+    <!-- 充值模块 -->
+    <color name="kg_usercenter_item_pressed">#d4d4d4</color>
+    <color name="kg_validate_reget_btn_color_unenable">#dddddd</color>
+    <!-- 对话框顶部线条颜色 -->
+    <color name="dialog_top_line">#C20000</color>
+    <!-- 背景色（深色） -->
+    <color name="kg_common_background_dark">#ffaaaaaa</color>
+    <!-- 字体，灰色（深色） -->
+    <color name="kg_common_gray_darker">#ff333333</color>
+    <!-- 字体，灰色（浅色）-->
+    <color name="kg_common_gray_lighter">#ff666666</color>
+    <color name="kg_common_gray_lighter_1">#f6f6f6</color>
+    <color name="kg_common_gray_lighter_2">#9D9D9D</color>
+    <color name="kg_common_gray_e5e5e5">#e5e5e5</color>
+    <!-- 字体，灰色（最浅色）-->
+    <color name="kg_common_gray_more_lighter">#ffcccccc</color>
+    <!-- 字体，most灰色 -->
+    <color name="kg_common_gray_most_lighter">#ffdddddd</color>
+    <!-- 安装按钮相关颜色 -->
+    <color name="kg_magic_btn_bg_default">#ffff6f00</color>
+    <color name="kg_magic_btn_bg_pressed">#ffe96500</color>
+    <!-- 标题栏按钮点击色 -->
+    <color name="kg_titlebar_btn_pressed">#e3871e</color>
+    <!-- 浮动工具栏连接线的背景色 -->
+    <color name="kg_toolbar_line">#ffA6AAAF</color>
+    <!-- 回退按钮点击颜色 -->
+    <color name="kg_kugou_game_close_pressed">#127fcd</color>
+    
+    <color name="kg_item_click">#22a8cef8</color>
+    
+    <color name="kg_green_btn_normal">#10db4e</color>
+    <color name="kg_green_btn_pressed">#68c937</color>
+    <color name="kg_blue_btn_pressed">#4681e5</color>
+
+    <!-- 短信支付sdk -->
+    <color name="translucent">#00000000</color>
+	<drawable name="translucent">#00000000</drawable></resources>

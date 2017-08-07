@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/container"
+              android:orientation="horizontal"
+              android:layout_width="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_width"
+              android:layout_height="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_height"
+              android:background="@drawable/shape_comment_reply_bg"
+              android:padding="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_padding" android:gravity="center">
+
+    <TextView
+            android:layout_width="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_btn_width"
+            android:layout_height="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_btn_height"
+            android:text="采纳"
+            android:id="@+id/resolve" android:gravity="center" android:background="@drawable/comment_reply_btn"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_padding"/>
+    <TextView
+            android:layout_width="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_btn_width"
+            android:layout_height="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_btn_height"
+            android:id="@+id/report" android:text="举报" android:gravity="center"
+            android:background="@drawable/comment_reply_btn" android:textSize="12dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_padding"/>
+    <TextView
+            android:layout_width="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_btn_width"
+            android:layout_height="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_btn_height"
+            android:text="删除"
+            android:id="@+id/delete" android:gravity="center" android:background="@drawable/comment_reply_btn"
+            android:textSize="12dp"
+            android:layout_marginRight="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_padding"
+            android:textColor="@android:color/white"/>
+    <TextView
+            android:layout_width="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_btn_width"
+            android:layout_height="@dimen/mg_forum_forum_post_a_comment_reply_popwindow_btn_height"
+            android:text="回复"
+            android:id="@+id/reply" android:gravity="center" android:background="@drawable/comment_reply_btn"
+            android:textSize="12dp"
+            android:textColor="@android:color/white"/>
+</LinearLayout>

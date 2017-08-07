@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kg_dialog_layout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/kg_kugou_dialog_default_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kg_kugou_dialog_default_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/kg_all_user_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/kg_recharge_account_bg_pressed"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="@string/kg_login_account"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/kg_all_user_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#ffdfdfdf"
+        android:layout_marginTop="5dp"
+        android:dividerHeight="1dp" />
+
+    <include layout="@layout/kg_common_dialog_bottom_bar" 
+        android:visibility="gone"/>
+
+</LinearLayout>

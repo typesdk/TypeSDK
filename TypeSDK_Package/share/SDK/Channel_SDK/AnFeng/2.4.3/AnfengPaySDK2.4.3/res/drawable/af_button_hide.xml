@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="@android:color/white" />
+	<stroke  android:color="#cccccc" android:width="0.5dp"/>
+    
+    <corners
+        android:bottomLeftRadius="15dp"
+        android:bottomRightRadius="15dp"
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp" />
+    <padding 
+        android:left="10dp"
+        android:right="10dp"
+        
+        /> 
+  
+</shape>

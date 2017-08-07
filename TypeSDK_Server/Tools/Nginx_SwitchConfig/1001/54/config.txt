@@ -1,0 +1,29 @@
+{
+    "profile_verison": "1.0.1",
+    "itemListUrl": "http://demo.typesdk.com:40000/1001/54/getChannelConfig",
+    "other": {
+        "pay_mode": "release",
+        "pushservice": "1",
+        "open_log": "1","open_pay": "1",
+        "crash_url": "demo.typesdk.com",
+        "crash_port": "21",
+        "user_name": "crash",
+        "user_pass_word": "crashlog"
+    },
+    "crash_profile": {
+        "collect_model_regular": "all",
+        "collect_sdk_regular": "all",
+        "catch_tag": [
+            "Unity"
+        ],
+        "is_open": "1"
+    },
+    "payment_profile": {
+        "sdk_open_regular": "all",
+        "sdk_open_list": [],
+        "is_appstorepay_open": "1"
+    },
+    "white_id": {
+        "getip": "http://demo.typesdk.com:30003/getIp"
+    }
+}

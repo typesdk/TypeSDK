@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pyw_loading_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="45dip" >
+
+    <TextView
+        android:id="@+id/pyw_tv_loading_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/pyw_common_transparent"
+        android:minWidth="50dp"
+        android:padding="10dip"
+        android:text="正在加载"
+        android:textColor="#D4D4D4"
+        android:textSize="@dimen/pyw_common_small" />
+
+    <com.pengyouwan.sdk.ui.widget.LoadingView
+        android:id="@+id/pyw_custom_loading_view"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/pyw_tv_loading_tips"
+        android:src="@drawable/pyw_img_loading" />
+
+</RelativeLayout>

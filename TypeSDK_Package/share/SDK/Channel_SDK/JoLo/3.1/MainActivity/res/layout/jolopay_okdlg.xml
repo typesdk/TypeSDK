@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <TextView
+        android:id="@+id/okdlg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/jolopay_tiptop"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/jolopay_dialog_title"
+        android:textColor="@color/jolopay_white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/okdlg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/jolopay_white"
+        android:padding="10dp"
+        android:textColor="@color/jolopay_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/okdlg_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/jolopay_tipdown"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/jolopay_dialog_ok"
+        android:textColor="@color/jolopay_white"
+        android:textSize="18sp" />
+
+</LinearLayout>

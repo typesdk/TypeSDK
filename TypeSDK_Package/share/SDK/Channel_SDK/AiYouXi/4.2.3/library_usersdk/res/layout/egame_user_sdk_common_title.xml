@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_54"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/egame_usersdk_white" >
+
+        <ImageView
+            android:id="@+id/egame_common_title_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/egame_logo_titlebar_egame_text_green"
+            android:gravity="left|center_vertical"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/egame_common_title_titiletv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/egame_activity_logo"
+            android:background="@drawable/egame_back_status"
+            android:clickable="true"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/egame_usersdk_green"
+            android:textSize="@dimen/dp_18"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/egame_common_title_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_9"
+            android:layout_marginTop="@dimen/dp_4"
+            android:background="@drawable/egame_btn_activity_btn_blue"
+            android:focusable="false"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="@dimen/dp_10"
+            android:text="@string/egame_finish_gold"
+            android:textColor="@color/egame_usersdk_white"
+            android:textSize="@dimen/dp_14" />
+    </RelativeLayout>
+
+</LinearLayout>

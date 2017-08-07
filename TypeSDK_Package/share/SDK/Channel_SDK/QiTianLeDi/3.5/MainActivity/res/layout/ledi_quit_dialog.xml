@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ledi_quit_dialog_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/quit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/B_black"
+            android:text="是否进入论坛" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/quit_title"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp" >
+
+            <Button
+                android:id="@+id/quit_forum"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ledi_quit_forum_bg"
+                android:onClick="quit_btn_click"
+                android:text="@string/ledi_forum"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/quit"
+                 android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ledi_quti_btn_bg"
+                android:onClick="quit_btn_click"
+                android:text="@string/ledi_quit"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

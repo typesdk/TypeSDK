@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="kefu_title">22sp</dimen>
+    <dimen name="kefu_list_title">14sp</dimen>
+    <dimen name="bottom_text_size">12sp</dimen>
+    
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="activity_37kefu_heigth">5dp</dimen>
+    <dimen name="activity_37kefu_wdith">5dp</dimen>
+    
+    <dimen name="but_text_size">20sp</dimen>
+    <dimen name="textview_text_size">14sp</dimen>
+
+</resources>

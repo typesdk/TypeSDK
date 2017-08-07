@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/YK_GameSDK_544PX"
+    android:layout_height="@dimen/YK_GameSDK_428PX"
+    android:layout_gravity="center"
+    android:background="@color/yk_white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/YK_GameSDK_28PX"
+    android:paddingRight="@dimen/YK_GameSDK_28PX" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/YK_GameSDK_544PX"
+        android:layout_height="@dimen/YK_GameSDK_88PX"
+        android:background="@color/yk_white" >
+
+        <LinearLayout
+            android:id="@+id/yk_icon_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/YK_GameSDK_88PX"
+                android:layout_height="@dimen/YK_GameSDK_44PX"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/yk_icon_title" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/YK_GameSDK_28PX"
+            android:layout_toRightOf="@id/yk_icon_logo"
+            android:gravity="center_vertical"
+            android:text="视频录制"
+            android:textColor="@color/yk_text_title"
+            android:textSize="@dimen/YK_GameSDK_32PX" />
+
+        <ImageView
+            android:id="@+id/yk_icon_close"
+            android:layout_width="@dimen/YK_GameSDK_50PX"
+            android:layout_height="@dimen/YK_GameSDK_50PX"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/YK_GameSDK_24PX"
+            android:background="@drawable/yk_ed_clear"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/YK_GameSDK_2PX"
+        android:background="@color/yk_title_line" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/YK_GameSDK_544PX"
+        android:layout_height="@dimen/YK_GameSDK_325PX"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/YK_GameSDK_100PX"
+            android:layout_marginLeft="@dimen/YK_GameSDK_40PX"
+            android:layout_marginRight="@dimen/YK_GameSDK_40PX"
+            android:gravity="center_vertical"
+            android:text="tips"
+            android:textColor="#333333"
+            android:textSize="@dimen/YK_GameSDK_31PX" />
+
+        <Button
+            android:id="@+id/btn_okay"
+            android:layout_width="@dimen/YK_GameSDK_300PX"
+            android:layout_height="@dimen/YK_GameSDK_70PX"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/YK_GameSDK_40PX"
+            android:background="@drawable/upload_btn_selector"
+            android:text="确定"
+            android:visibility="gone"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/YK_GameSDK_31PX" />
+
+        <LinearLayout
+            android:id="@+id/yk_video_ll_double_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/YK_GameSDK_40PX"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_double_okay"
+                android:layout_width="@dimen/YK_GameSDK_200PX"
+                android:layout_height="@dimen/YK_GameSDK_70PX"
+                android:background="@drawable/upload_btn_selector"
+                android:text="是"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="@dimen/YK_GameSDK_94PX"
+                android:textSize="@dimen/YK_GameSDK_31PX" />
+
+            <Button
+                android:id="@+id/btn_double_cancel"
+                android:layout_width="@dimen/YK_GameSDK_200PX"
+                android:layout_height="@dimen/YK_GameSDK_70PX"
+                android:background="@drawable/upload_btn_selector"
+                android:text="否"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/YK_GameSDK_31PX" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

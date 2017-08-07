@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">啪啪copy工程</string>
+
+    <string name="papaName">啪啪</string>
+    <string name="f_floor">第%1$d楼</string>
+    <string name="f_floor_1st">沙发</string>
+    <string name="f_floor_2nd">板凳</string>
+    <string name="f_comment_content_2">%1$s回复%2$s : %3$s</string>
+    <string name="f_comment_content_1">%1$s : %2$s</string>
+    <string name="f_comment_content_more">查看更多%1$d条回复...</string>
+    <string name="profile_message_item_content_praise">%1$s</string>
+    <string name="profile_message_item_content_comment">回复 : %1$s</string>
+    <string name="profile_message_item_content_reply">回复%1$s : %2$s</string>
+    <string name="net_connect_failed">网络连接异常，请检查网络连接</string>
+    <!--ForumTMemberFragment-->
+    <string name="forum_t_member_fragment_member_desc">%1$s加入%2$s</string>
+    <string name="forum_t_member_fragment_members_title">关注的人（%1$s）</string>
+    <string name="forum_t_member_fragment_no_more_moderators">版主招募中，请加入啪友汇QQ群（ 137320879）进行申请</string>
+
+
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新...</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_nomore">亲，到底了</string>
+    <!--ImagePagerActivity-->
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <!--ForumPostsActivity-->
+    <string name="comment_item_content_2">%1$s回复%2$s : %3$s</string>
+    <string name="comment_item_content_1">%1$s : %2$s</string>
+    <string name="comment_item_content_more">查看更多%1$d条回复...</string>
+    <string name="comment_item_floor">第%1$d楼</string>
+    <string name="comment_item_floor_1st">沙发</string>
+    <string name="comment_item_floor_2nd">板凳</string>
+    <string name="forum_post_favorite_success">帖子已收藏</string>
+    <string name="forum_post_defavorite_success">帖子已取消收藏</string>
+    <string name="forum_post_favorite_fail">帖子收藏失败</string>
+    <string name="forum_post_best_success">帖子已加精</string>
+    <string name="forum_post_debest_success">帖子已取消加精</string>
+    <string name="forum_post_best_fail">帖子加精失败</string>
+    <string name="forum_post_report_success">帖子已举报</string>
+    <string name="forum_post_report_fail">帖子举报失败</string>
+    <!--ForumActivity-->
+    <string name="forum_user_not_login">尚未登录，请先登录！</string>
+    <string name="forum_user_login_invalid">用户验证失效，请重新登录！</string>
+    <!--share_posts_activity.xml-->
+    <string name="share_posts_myremain_help_money">您可用铜板：%1$s</string>
+    <string name="share_posts_nomore_help_money">您的铜板不足！</string>
+    <string name="receive_cdk_count">目前已领取%1$s款礼包</string>
+    <!--OemDetailActivity.java-->
+    <!--<string name="cdk_propotion">剩余 %1$s</string>-->
+    <string name="cdk_propotion">%1$s</string>
+    <string name="cdk_expired_date">有效期：%1$s</string>
+    <string name="my_cdk_count">我的礼包箱（%1$s）</string>
+    <string name="receive_cdk_tip">点击右侧按钮领取礼包码</string>
+    <string name="receive_cdk_button1">领取</string>
+    <string name="receive_cdk_button2">点击领取礼包</string>
+    <string name="receive_cdk_button3">点击领取啪啪专属礼包</string>
+    <string name="receive_cdk_button4">使用铜板兑换礼包</string>
+    <string name="receive_cdk_button5">该礼包已被领完</string>
+    <string name="login_dsc"> 正在登录...</string>
+
+
+    <string name="tourist_tip"> 您的账号为游客账号，完善账号\n后才能发帖！</string>
+
+
+    <string name="activation_code">激活码：</string>
+</resources>

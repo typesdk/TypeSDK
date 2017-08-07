@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ch_transparent" >
+
+    <RelativeLayout
+        android:id="@+id/ch_dialog_push_head"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ch_dialog_green_top_corner"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ch_dialog_push_iv_logo"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ch_dialog_title_logo" />
+        
+         
+        <ImageView
+            android:id="@+id/ch_dialog_push_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:background="@drawable/ch_dialog_right_close_sel" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ch_dialog_push_head"
+        android:alpha="50"
+        android:background="@drawable/ch_dialog_gray_bottom_corner"
+        android:paddingBottom="3dp" >
+
+        <RelativeLayout
+            android:id="@+id/ch_dialog_push_webview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+	            android:id="@+id/ch_dialog_push_progress_img"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:layout_centerInParent="true"
+	            android:indeterminateDrawable="@anim/ch_anim_rotate_cycle"
+	            android:indeterminateDuration="1000" 
+	            android:visibility="gone"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@id/ch_dialog_push_webview_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ch_dialog_push_btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ch_dialog_pay_btn"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@drawable/ch_dialog_green_font_bg"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

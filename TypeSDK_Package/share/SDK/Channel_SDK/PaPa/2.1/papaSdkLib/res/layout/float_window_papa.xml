@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+<LinearLayout
+        android:id="@+id/menuBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/float_left_bg3_papa"
+        android:gravity="center_vertical">
+
+    <ImageView
+            android:id="@+id/accountPapa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/account_papa"
+            android:visibility="gone"/>
+
+
+    <ImageView
+            android:id="@+id/activityPapa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/activity_papa"
+            android:visibility="gone"/>
+
+    <ImageView
+            android:id="@+id/giftPapa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/gift_papa"
+            android:visibility="gone"/>
+
+    <ImageView
+            android:id="@+id/strategy_papa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/strategy_papa"
+            android:visibility="gone"/>
+
+    <ImageView
+            android:id="@+id/community_papa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/community_papa"
+            android:visibility="gone"/>
+</LinearLayout>
+
+</LinearLayout>

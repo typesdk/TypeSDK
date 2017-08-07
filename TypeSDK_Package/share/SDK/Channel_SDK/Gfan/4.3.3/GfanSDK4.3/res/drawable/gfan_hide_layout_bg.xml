@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<gradient
+    android:startColor="#06bcb8b8"
+    android:endColor="#4f383636"
+    android:angle="-90"
+    />
+</shape><!-- From: file:/E:/GfanSDK/SDK/src/main/res/drawable/gfan_hide_layout_bg.xml -->

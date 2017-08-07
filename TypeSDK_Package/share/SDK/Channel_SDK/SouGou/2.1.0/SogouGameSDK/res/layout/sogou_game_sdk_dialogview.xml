@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sogou_game_sdk_dialog_view"
+    android:layout_width="267dip"
+    android:layout_height="87dip"
+    android:background="@drawable/sogou_game_sdk_exit_dialog_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="9.5dip"
+    android:paddingRight="9.5dip" >
+
+    <LinearLayout
+        android:id="@+id/sogou_game_sdk_login_alert_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.5dip"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_login_alert_user_label"
+            style="@style/sogou_game_sdk_textview_s20_c595959"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sogou_game_sdk_login_alert_user_label" />
+
+        <com.sogou.gamecenter.sdk.views.AlwaysMarqueeTextView
+            android:id="@+id/sogou_game_sdk_login_alert_user"
+            style="@style/sogou_game_sdk_pay_s22_c3d3d3d"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sogou_game_sdk_login_alert_ll"
+        android:layout_marginTop="8dip"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/sogou_game_sdk_login_loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/sogou_game_sdk_login_loading" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_login_alert_loading"
+            style="@style/sogou_game_sdk_textview_s20_c595959"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:text="@string/sogou_game_sdk_login_alert_loading" />
+    </LinearLayout>
+
+</RelativeLayout>

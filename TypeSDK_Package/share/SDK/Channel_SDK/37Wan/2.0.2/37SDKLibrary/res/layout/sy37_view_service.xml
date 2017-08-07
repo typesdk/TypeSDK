@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dip" >
+
+    <include
+        android:id="@+id/netload"
+        layout="@layout/sy37_netload"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:layout_marginBottom="10dip"
+        android:divider="@drawable/sy37_icon_list_diver"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/sourceLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/sy37_layout_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_weight="1.0"
+            android:textColor="@color/s_orange"
+            android:textSize="20sp" />
+        
+        <Button
+            android:id="@+id/sourceBack"
+            style="@style/backBut" 
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/sourcelistView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:divider="@drawable/sy37_icon_list_diver"
+        android:cacheColorHint="@android:color/transparent"
+        android:scaleType="centerInside" 
+        android:visibility="gone"
+        />
+	<View 
+	    android:id="@+id/sourceLine"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dip"
+	    android:background="@drawable/sy37_icon_list_diver"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/webviewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_bg_kefu_webview_head"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/webviewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:maxLines="2"
+                    android:textColor="@color/s_orange"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/webviewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_weight="1.0"
+                    android:maxLines="2"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/back"
+                style="@style/backBut" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="7dip"
+            android:background="#00000000"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

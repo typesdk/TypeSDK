@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dcn_dialog_common_interval">
+
+    <TextView
+        android:id="@+id/dcn_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:lines="1"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="title"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/dcn_close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dcn_dialog_common_interval"
+        android:background="@drawable/dcn_dialog_hint_close" />
+</RelativeLayout>

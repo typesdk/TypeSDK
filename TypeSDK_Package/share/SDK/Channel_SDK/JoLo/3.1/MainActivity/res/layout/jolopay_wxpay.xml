@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/jolopay_wxpay_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/jolopay_wxpay_type_value"
+        android:textColor="@color/jolopay_gray"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jolopay_list_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jolopay_pay_price"
+            android:textColor="@color/jolopay_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/jolopay_wxpay_pay_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jolopay_red"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/jolopay_wxpay_note_title"
+        android:textColor="@color/jolopay_gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/jolopay_wxpay_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:background="@drawable/jolopay_note_bg"
+        android:padding="10dip"
+        android:text="@string/jolopay_wxpay_note_value"
+        android:textColor="@color/jolopay_gray"
+        android:textSize="14sp" />
+
+</LinearLayout>

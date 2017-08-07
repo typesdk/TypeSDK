@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@android:color/transparent"
+             android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_alipwd_sign_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/alisign_dialog_bg_shape"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/dialog_alipwd_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="支付免密支付授权"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/dialog_alipwd_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_alipwd_title"
+            android:lines="3"
+            android:paddingBottom="15dp"
+            android:text="支付免密支付授权"
+            android:textColor="#666666"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_alipwd_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_alipwd_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_alipwd_content"
+                android:layout_weight="6"
+                android:background="@drawable/alisign_dialog_btn_shape"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/tnp_activity"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:id="@+id/dialog_alipwd_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/dialog_alipwd_cancel"
+                android:layout_weight="4"
+                android:background="@drawable/alisign_dialog_btn_shape"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/take_part_in_activities"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_alipwd_sign_success_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/alisign_dialog_bg_shape"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/dialog_alipwd_success_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:lines="3"
+            android:text="授权成功"
+            android:textColor="#666666"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/dialog_alipwd_success_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_alipwd_success_title"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/alisign_dialog_btn_shape"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="10dp"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/dialog_alipwd_pb"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+
+
+</FrameLayout>

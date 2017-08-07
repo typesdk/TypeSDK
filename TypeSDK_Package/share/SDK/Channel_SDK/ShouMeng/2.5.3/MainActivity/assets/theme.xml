@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <logo>logo.png</logo>
+    <color>
+        <background>
+            <actionbar>#ff979797</actionbar>
+            <sumarry>#ffffffff</sumarry>
+        </background>
+        <button>
+            <enabled>#ffff7c00</enabled>
+            <pressed>#ffffa800</pressed>
+        </button>
+    </color>
+</theme>  

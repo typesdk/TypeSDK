@@ -1,0 +1,34 @@
+{
+  "version":"1.5.0.20160810",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "data" : ""
+    }
+    ,"out_url" :"http://g.linnyou.com/api/index"
+    ,"out_url_test" :"http://lijinling.g.linnyou.com/api/index"
+    ,"out_params" :
+    {
+      "data" : ""
+      ,"sign" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+
+      }
+    ,"out_url" :"http://g.linnyou.com/api/index"
+    ,"out_params" :
+      {
+      "sign": ""
+      }
+    }
+  ]
+}

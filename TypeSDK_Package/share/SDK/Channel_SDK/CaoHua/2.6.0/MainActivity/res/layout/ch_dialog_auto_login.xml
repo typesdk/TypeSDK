@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ch_white"  >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:minWidth="200dp"
+            android:layout_marginBottom="5dp" >
+
+            <ProgressBar
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:indeterminateDrawable="@anim/ch_anim_rotate_cycle"
+	            android:indeterminateDuration="1000" />
+
+            <TextView
+                android:id="@+id/ch_dialog_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:maxWidth="200dp"
+                android:text="欢迎回来"
+                android:textColor="@color/ch_black"
+                android:textSize="15sp" />
+        </LinearLayout>
+        
+        
+        <TextView
+            android:id="@+id/ch_dialog_change_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换账号"
+            android:textColor="@drawable/ch_dialog_green_font_bg"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

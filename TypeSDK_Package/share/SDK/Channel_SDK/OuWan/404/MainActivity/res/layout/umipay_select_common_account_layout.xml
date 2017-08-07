@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:orientation = "vertical" >
+
+	<TextView
+			android:text="@string/umipay_title_select_common_account"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:textColor="@color/umipay_white"/>
+
+	<ListView
+			android:id = "@+id/umipay_mobile_login_account_list"
+			android:layout_width = "match_parent"
+			android:layout_height = "160dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:overScrollMode="never"
+			android:fadingEdge="none"
+			android:layout_gravity = "center_horizontal" />
+	<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "40dp"
+			android:orientation="horizontal"
+			android:layout_gravity = "center"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom = "20dp"
+			android:layout_marginLeft = "16dp"
+			android:layout_marginRight = "16dp">
+
+		<Button
+				android:id = "@+id/umipay_return_btn"
+				android:layout_weight="1"
+				android:layout_width = "match_parent"
+				android:layout_height = "40dp"
+				android:layout_marginRight="10dp"
+				android:background = "@drawable/umipay_btn_black"
+				android:text = "@string/umipay_return"
+				android:textColor = "#ffffff"
+				android:textSize = "17dp" />
+
+		<Button
+				android:id = "@+id/umipay_login_btn"
+				android:layout_weight="1"
+				android:layout_width = "match_parent"
+				android:layout_height = "40dp"
+				android:background = "@drawable/umipay_btn_yellow"
+				android:text = "@string/umipay_confirm"
+				android:textColor = "#ffffff"
+				android:textSize = "17dp" />
+	</LinearLayout >
+
+</LinearLayout >

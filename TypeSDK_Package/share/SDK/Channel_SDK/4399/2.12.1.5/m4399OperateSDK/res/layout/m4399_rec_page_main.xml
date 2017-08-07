@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/m4399RecPageStyle"
+    android:layout_width="@dimen/m4399_rec_page_width"
+    android:layout_height="@dimen/m4399_rec_page_height">
+
+    <include
+        layout="@layout/m4399_rec_sec_main_page_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_title_height" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/money_area"
+                layout="@layout/m4399_rec_sec_order_role_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/line_area"
+                layout="@layout/m4399_rec_sec_mvcenter_separator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginRight="@dimen/m4399_rec_paddingLeft" />
+
+            <cn.m4399.recharge.ui.widget.ExpandableGridView
+                android:id="@+id/payment_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:isScrollContainer="false"
+                android:layout_marginBottom="@dimen/m4399_rec_paddingTop"
+                android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginTop="@dimen/m4399_rec_paddingTop"
+                android:listSelector="@drawable/m4399_rec_pm_item_bg"
+                android:numColumns="@integer/m4399_rec_main_frag_gridview_column_num"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/m4399_rec_sec_mvcenter_foot"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_foot_height"
+        android:paddingLeft="@dimen/m4399_rec_paddingLeft"
+        android:paddingRight="@dimen/m4399_rec_paddingRight" />
+
+</LinearLayout>

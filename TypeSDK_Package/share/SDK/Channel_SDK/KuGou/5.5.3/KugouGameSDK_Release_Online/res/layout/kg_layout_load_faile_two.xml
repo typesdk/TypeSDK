@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_load_faile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/kg_common_white"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/img_load_faile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kg_game_center_load_faile_icon" />
+
+    <TextView
+        android:id="@+id/tv_loading_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kg_loading_wrong_1"
+        android:textColor="@color/kg_common_gray_darker"
+        android:textSize="@dimen/kg_common_large" />
+</LinearLayout>

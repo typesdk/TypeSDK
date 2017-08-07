@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/float_window_edittextbg_black"
+    android:orientation="vertical"
+    android:id="@+id/layout_discount_layout" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:textColor="#f00"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/ledi_money_discount_listtext"
+        android:textSize="12sp" />
+    <!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+ android:text="单笔充值8001-10000元，立享5折优惠,单笔充值4001-8000元，立享6折优惠,单笔充值101-4000元，立享7折优惠,单笔充值10-100元，立享8折优惠"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="单笔充值8001-10000元，立享5折优惠"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="单笔充值4001-8000元，立享6折优惠"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="单笔充值101-4000元，立享7折优惠"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="单笔充值10-100元，立享8折优惠"
+            android:textSize="8sp" />
+    </LinearLayout>
+    -->
+
+</LinearLayout>

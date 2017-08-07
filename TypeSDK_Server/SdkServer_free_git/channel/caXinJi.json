@@ -1,0 +1,35 @@
+{
+  "version": "3.0.3.20161020",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "POST",
+      "in_params": {
+        "token": ""
+      },
+      "out_url": "http://pay-api.xinjigame.com/api/checkToken.jhtml",
+      "out_params": {
+        "token": ""
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "amount": "",
+        "flag": "",
+        "orderId": "",
+        "userNo": "",
+        "extra": ""
+      },
+      "out_url": "http://pay-api.xinjigame.com/api/checkToken.jhtml",
+      "out_params": {
+        "amount": "",
+        "flag": "",
+        "orderId": "",
+        "userNo": "",
+        "extra": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        
+        android:background="@drawable/dcn_pop_up_bg"
+        android:paddingBottom="15dp">
+        <RelativeLayout
+            android:id="@+id/dcn_switch_account_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/dcn_switch_account"
+                android:textSize="22sp"
+                android:textColor="@color/dcn_ucenter_navi_text_color_pressed"
+                />
+
+            
+            <LinearLayout
+                android:id="@+id/dcn_switch_account_exit"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_popup_closed_selector" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/dcn_switch_account_dialog_content"
+                android:textSize="16sp"
+                android:textColor="@color/dcn_light_black"
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/dcn_switch_account_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/dcn_cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dcn_pop_up_cancel_btn"
+                android:textColor="@android:color/white"
+                android:text="@string/dcn_dialog_cancel" />
+
+            <Button
+                android:id="@+id/dcn_restart_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dcn_orange_btn_selector"
+                android:text="@string/dcn_dialog_restart"
+                android:textColor="@android:color/white" />
+            
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

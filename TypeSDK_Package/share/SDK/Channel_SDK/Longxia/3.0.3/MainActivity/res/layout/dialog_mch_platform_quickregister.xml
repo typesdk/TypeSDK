@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="账号注册"
+            android:textColor="#FFB400"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mc_platform_input_back"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/mc_platform_login_user" />
+
+        <EditText
+            android:id="@+id/txt_mc_platform_quickregister_account"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="请输入账号"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mc_platform_input_back"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/mc_platform_login_lock" />
+
+        <EditText
+            android:id="@+id/txt_mc_platform_quickregister_password"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:id="@+id/btn_mc_read"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txt_mc_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txt_mc_read"
+            android:text="《改成对应联运注册许可协议》"
+            android:textColor="#FFB400"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_mc_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btn_mc_read"
+            android:text="我已阅读"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:id="@+id/btn_mc_platform_quickregister"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/mch_button_selector"
+            android:text="完成注册"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_reg_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/Button01"
+            android:layout_toRightOf="@+id/Button01"
+            android:background="#00000000"
+            android:text="手机号快速注册"
+            android:textColor="#FFB400"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#00000000"
+            android:text="您可以用"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_mc_platform_quickregistertologin"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:text="返回登录> "
+            android:textColor="#FFB400"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

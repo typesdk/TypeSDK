@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="lib_message_item_alert"/>
+    <item type="id" name="lib_message_item_me2other_text"/>
+    <item type="id" name="lib_message_item_me2other_audio"/>
+    <item type="id" name="lib_message_item_me2other_image"/>
+    <item type="id" name="lib_message_item_other2me_text"/>
+    <item type="id" name="lib_message_item_other2me_audio"/>
+    <item type="id" name="lib_message_item_other2me_image"/>
+</resources>

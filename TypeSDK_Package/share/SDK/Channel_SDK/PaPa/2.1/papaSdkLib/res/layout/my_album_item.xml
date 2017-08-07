@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.papa91.pay.widget.SquareLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/itemLayout">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_centerInParent="true">
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:focusable="false"/>
+        <!--android:background="@drawable/camera"-->
+
+        <ImageView
+                android:id="@+id/image_flag"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:src="@drawable/pic_select_default"
+                android:scaleType="fitCenter"/>
+
+    </RelativeLayout>
+</com.papa91.pay.widget.SquareLayout>

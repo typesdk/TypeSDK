@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/yk_ykbgColor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/YK_GameSDK_100PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+         <ImageView
+                android:id="@+id/yk_icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/YK_GameSDK_36PX"
+                android:paddingRight="@dimen/YK_GameSDK_36PX"
+                android:src="@drawable/yk_video_setting_back" />
+
+        <TextView
+            android:id="@+id/tv_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="视频管理"
+            android:textColor="@color/yk_text_title2"
+            android:textSize="@dimen/YK_GameSDK_32PX" />
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/YK_GameSDK_10PX"
+            android:layout_marginTop="@dimen/YK_GameSDK_24PX"
+            android:text="编辑"
+            android:textSize="@dimen/YK_GameSDK_30PX"
+            android:textColor="#279bd4"
+            android:padding="3dp" />
+    </RelativeLayout>
+
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/yk_title_line" >
+    </LinearLayout>
+		<Button
+            android:id="@+id/btn_del"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/YK_GameSDK_100PX"
+            android:background="@drawable/yk_btn_video_del_selector"
+            android:text="删除"
+            android:textSize="@dimen/YK_GameSDK_40PX"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+		<TextView 
+		    android:id="@+id/tv_no_date"
+		    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#5B5B5B"
+            android:visibility="gone"
+            android:layout_margin="@dimen/YK_GameSDK_100PX"
+            android:gravity="center|top"
+            android:textSize="@dimen/YK_GameSDK_35PX"
+            android:text="暂无录制视频 \n快去游戏中录制吧"/>
+        <ListView
+            android:id="@+id/yk_video_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_del"
+            android:layout_below="@id/line"
+            android:divider="@color/yk_title_line"
+            android:dividerHeight="@dimen/YK_GameSDK_1PX"
+            android:scrollbars="none" >
+        </ListView>
+        
+    </RelativeLayout>
+      
+    
+
+</LinearLayout>

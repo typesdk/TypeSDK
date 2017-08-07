@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ledi_linear1"
+        android:layout_width="300dp"
+        android:layout_height="255dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ledi_c1_btn"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/ledi_title_bg" />
+
+            <ImageView
+                android:id="@+id/zhuce_btn"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/ledi_register_title_down"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <com.ledi.view.CustomViewPager
+            android:id="@+id/ledi_mainpager_viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

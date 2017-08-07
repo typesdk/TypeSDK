@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EAEAEA" >
+
+    <TextView
+        android:id="@+id/passport_activity_sso_check_info_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dip"
+        android:gravity="center"
+        android:text="@string/passport_string_content_sso_check_info"
+        android:textColor="#636363"
+        android:textSize="14sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/passport_activity_sso_dynastic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passport_activity_sso_check_info_tip"
+        android:layout_margin="10dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/passport_activity_sso_dynastic_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/passport_activity_sso_other_login_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passport_activity_sso_dynastic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dip"
+        android:gravity="center"
+        android:text="@string/passport_string_content_sso_other_login"
+        android:textColor="#D5D5D5"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/passport_activity_sso_login_ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_below="@id/passport_activity_sso_other_login_tip"
+        android:layout_marginTop="10dip" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/passport_activity_sso_login_ll1_sogou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/passport_activity_sso_btn_sogou"
+                android:drawablePadding="3dip"
+                android:gravity="center"
+                android:text="搜狗"
+                android:textColor="#636363"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/passport_activity_sso_login_ll1_wx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/passport_activity_login_btn_wx"
+                android:drawablePadding="3dip"
+                android:gravity="center"
+                android:text="微信"
+                android:textColor="#636363"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/passport_activity_sso_login_ll1_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/passport_activity_login_btn_qq"
+                android:drawablePadding="3dip"
+                android:gravity="center"
+                android:text="QQ"
+                android:textColor="#636363"
+                android:textSize="15sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passport_activity_sso_login_ll2"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_below="@id/passport_activity_sso_login_ll1"
+        android:layout_marginTop="10dip" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/passport_activity_sso_login_ll2_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/passport_activity_login_btn_sina"
+                android:drawablePadding="3dip"
+                android:gravity="center"
+                android:text="微博"
+                android:textColor="#636363"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passport_activity_sso_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="@string/passport_string_content_sso_bottom_tip"
+            android:textColor="#636363"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/passport_activity_sso_regist"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/passport_string_content_sso_bottom_regist"
+            android:textColor="#6EA7E7"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/passport_activity_sso_bottom"
+        android:background="#D5D5D5" />
+
+</RelativeLayout>

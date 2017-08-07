@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:drawable="@drawable/wepay_select_arrow_disable" android:state_enabled="false"/>
+	<item android:drawable="@drawable/wepay_select_arrow_pressed" android:state_enabled="true" android:state_pressed="true"/>
+	<item android:drawable="@drawable/wepay_select_arrow_enable" android:state_enabled="true"/>
+
+</selector>

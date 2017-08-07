@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/sogou_game_sdk_float_menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sogou_game_sdk_float_icon" />
+
+    <ImageView
+        android:id="@+id/sogou_game_sdk_news_iv"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_toRightOf="@id/sogou_game_sdk_float_menu_icon"
+        android:layout_marginLeft="-18dp"
+        android:layout_alignTop="@id/sogou_game_sdk_float_menu_icon"
+        android:src="@drawable/sogou_game_sdk_personal_center_msg_count"
+        android:visibility="gone" />
+
+</RelativeLayout>

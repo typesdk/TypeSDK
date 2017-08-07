@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="push_app_name">Device Service</string>
+    <string name="download_falied">Download failed, click to retry.</string>
+    <string name="warring_network_mobile">No wifi network, would you download with mobile network?</string>
+    <string name="warring_no_network">Network not available, please set the wifi network.</string>
+	<string name="text_start_task">Start download</string>
+    <string name="text_set_wifi">Set Wifi</string>
+	<string name="text_set_later">Maybe Later</string>
+</resources>

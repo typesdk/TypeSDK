@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageButton
+        android:id="@+id/floating_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/letv_logo" />
+    <ImageView 
+        android:id="@+id/float_red_sots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sdk_red_spots"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/floating_imageView"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

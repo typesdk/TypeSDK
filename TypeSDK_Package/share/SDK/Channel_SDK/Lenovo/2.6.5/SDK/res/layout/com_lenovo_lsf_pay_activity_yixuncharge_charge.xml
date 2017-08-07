@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/com_lenovo_lsf_pay_goods_bg">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/pay_charge_btn"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:fadeScrollbars="false" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+           <LinearLayout
+                    android:id="@+id/ll_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f3f3f3"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="15dp">
+				<ImageView
+		            android:id="@+id/cashier_icon"
+		            android:layout_alignParentLeft="true"
+		            android:layout_centerVertical="true"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/com_lenovo_lsf_pay_yixun_coin" />
+                <TextView
+                    android:id="@+id/szf_deno_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/cashier_icon"
+                    android:textSize="16sp"
+                    android:textColor="#757575"
+                    android:text="购买"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/pay_charge_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/szf_deno_tip"
+                    android:textSize="18sp"
+                    android:textColor="#191919"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"  />
+            </RelativeLayout>
+            
+            <!-- 提示栏 -->
+            <TextView
+                android:id="@+id/warn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/warn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/com_lenovo_lsf_pay_yixun_warning2_tip"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+    </ScrollView>
+        
+    <TextView
+        android:id="@+id/reminder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:textSize="14sp"
+        android:textColor="#ff9600"
+        android:gravity="center"
+        android:layout_above="@id/pay_charge_btn"/>
+    <Button
+        android:id="@id/pay_charge_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/service1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/com_lenovo_lsf_pay_btn_selector_up"
+        android:text="@string/com_lenovo_lsf_pay_confirm_text" />
+    <TextView
+        android:id="@+id/service1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_above="@+id/service2"
+        android:textColor="#afafaf"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true" 
+        />
+    <TextView
+        android:id="@+id/service2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="16dp"
+        android:textSize="12sp"
+        android:textColor="#afafaf"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.duanzi"
+    android:versionCode="306"
+    android:versionName="3.0.6"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+    <!-- baselib permission start -->
+    <!-- 获取设备信息权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 自动装权限 -->
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <!-- 获取指定Tag日志需要的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 获取网络状态并存到本地需要的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 崩溃日志收集 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <!-- 本地推送 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- baselib permission end -->
+
+
+    <!-- JinRi permission start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <!-- JinRi permission end -->
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- baselib config start -->
+        <service
+            android:name="com.type.sdk.notification.PushService"
+            android:enabled="true"
+            android:process=":message" >
+        </service>
+
+        <receiver android:name="com.type.sdk.notification.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.type.sdk.android.TypeAccessibility"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+        <!-- baselib config end -->
+        
+        <activity
+            android:name="com.type.sdk.android.duanZi.TypeSDKSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+			
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			
+        </activity>
+
+        <activity
+            android:name="com.type.sdk.android.duanZi.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape" >
+             <intent-filter>
+                <action android:name="dz.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        <!--  -->
+        
+         <!-- JinRi start -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+        <activity
+            android:name="com.ss.android.login.sdk.activity.MobileActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:theme="@style/login_transparent"/>
+        <activity
+            android:name="com.ss.android.sdk.article.base.activity.BrowserActivity"
+            android:configChanges="keyboard|orientation|screenSize"/>
+         <!-- JinRi  start -->
+
+          <activity 
+            android:name="com.unionpay.uppay.PayActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true" 
+            android:windowSoftInputMode="adjustResize"/>
+    </application>
+
+</manifest>

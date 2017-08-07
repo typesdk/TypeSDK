@@ -1,0 +1,46 @@
+{
+  "version":"2.3.0.20160325",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "game_uin" : ""
+    ,"token" : ""
+    }
+    ,"out_url" : "http://guopan.cn/gamesdk/verify/"
+    ,"out_params" :
+    {
+      "game_uin" : ""
+    ,"appid" : ""
+    ,"token" : ""
+    ,"t" : ""
+    ,"sign" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "trade_no" : ""
+      ,"serialNumber" : ""
+      ,"money" : ""
+      ,"status" : ""
+      ,"t" : ""
+      ,"sign" : ""
+      }
+    ,"out_url" :"http://guopan.cn/gamesdk/verify/"
+    ,"out_params" :
+      {
+        "trade_no" : ""
+      ,"serialNumber" : ""
+      ,"money" : ""
+      ,"status" : ""
+      ,"t" : ""
+      ,"sign" : ""
+      }
+    }
+  ]
+}

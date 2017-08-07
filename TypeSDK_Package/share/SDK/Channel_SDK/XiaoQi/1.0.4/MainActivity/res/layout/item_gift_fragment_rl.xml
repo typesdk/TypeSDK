@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/activity_horizontal_width"
+    android:layout_height="70dip" >
+    
+    <RelativeLayout
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+         >
+
+    <ImageView
+        android:id="@+id/gift_fragment_iv_icon"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:padding="5dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_toRightOf="@+id/gift_fragment_iv_icon"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gift_fragment_tv_giftname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:text="风暴幻想高级礼包"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginTop="5dip"
+            android:id="@+id/gift_fragment_tv_giftamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000000"          
+            android:text="剩余数量：888/1000" />
+
+        <TextView
+            android:id="@+id/gift_fragment_tv_giftexpiration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:text="过期时间：2016-05-18" />
+    </LinearLayout>
+    
+    </RelativeLayout>
+
+</RelativeLayout>
+

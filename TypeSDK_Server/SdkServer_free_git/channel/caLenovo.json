@@ -1,0 +1,34 @@
+{
+  "version":"v2.6.1.20160226",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "lpsust" : ""
+    }
+    ,"out_url" : "http://passport.lenovo.com/interserver/authen/1.2/getaccountid"
+    ,"out_params" :
+    {
+      "lpsust" : ""
+    ,"realm" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "transdata" : ""
+      ,"sign":""
+      }
+    ,"out_url" :"http://passport.lenovo.com/interserver/authen/1.2/getaccountid"
+    ,"out_params" :
+      {
+        "transdata" : ""
+      ,"sign":""
+      }
+    }
+  ]
+}

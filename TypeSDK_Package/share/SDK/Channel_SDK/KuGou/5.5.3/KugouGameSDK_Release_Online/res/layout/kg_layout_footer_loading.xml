@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kugou.game.sdk.ui.widget.UnpressableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kg_loading_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/kg_common_background"
+    android:minHeight="45dip" >
+
+    <TextView
+        android:id="@+id/kg_loading_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kg_selector_btn_common"
+        android:padding="10dip"
+        android:minWidth="50dp"
+        android:textColor="@color/kg_common_gray_darker"
+        android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/kg_loading_progress_bar"
+        style="@style/kg_ProgressBar_Loading_Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/kg_loading_tips"
+        android:layout_centerVertical="true" />
+
+</com.kugou.game.sdk.ui.widget.UnpressableRelativeLayout>

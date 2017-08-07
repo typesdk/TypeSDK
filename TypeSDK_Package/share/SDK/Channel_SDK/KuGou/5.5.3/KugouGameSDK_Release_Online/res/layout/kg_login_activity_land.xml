@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/kg_common_title_bar" />
+
+    <ScrollView
+        android:id="@+id/kg_layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/kg_layout_userlogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/kg_common_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kg_sp_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kg_login_account_photo" />
+
+                <EditText
+                    android:id="@+id/kg_login_username"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/kg_username"
+                    android:maxLength="64"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/kg_common_hint_color"
+                    android:textSize="16sp" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/kg_account_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/kg_account_select" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kg_sp_bg"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kg_login_password_photo" />
+
+                <EditText
+                    android:id="@+id/kg_login_password"
+                    android:layout_width="0dp"
+                    android:layout_height="35dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/kg_password_text"
+                    android:maxLength="64"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="30dip"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/kg_common_hint_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/kg_login_forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="@string/kg_forget_password"
+                    android:textColor="@color/kg_common_gray_more_lighter"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kg_login_wrong_tips"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/kg_common_red"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/kg_start_login_button"
+                    android:layout_width="300dip"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:background="@drawable/kg_selector_btn_blue"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_login"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/kg_start_reg_imdi_button"
+                    android:layout_width="300dip"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/kg_selector_btn_green"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_one_second_register"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/kg_common_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

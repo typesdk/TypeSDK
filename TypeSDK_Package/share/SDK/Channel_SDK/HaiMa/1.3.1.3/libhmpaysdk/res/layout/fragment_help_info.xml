@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qrcode_dialog_background_shape">
+
+
+    <ImageView
+        android:id="@+id/help_info_dialog_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/qr_code_dialog_close"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/help_info_dialog_close_iv">
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_login_weixin_service"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"/>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/m4399_rec_page_width"
+    android:layout_height="@dimen/m4399_rec_page_height"
+    android:background="@drawable/m4399_rec_page_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:background="@drawable/hpay_top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/hpay_btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/hpay_top_back_selector" />
+
+        <TextView
+            android:id="@+id/hpay_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hpay_btnback"
+            android:singleLine="true"
+            android:text="@string/hpay_recharge"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/hpay_flwebview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.arcsoft.hpay100.web.HPayWebView
+            android:id="@+id/hpay_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" />
+        <!-- 错误页面 -->
+
+        <LinearLayout
+            android:id="@+id/hpay_net_error"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/hpay_error_image_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:src="@drawable/hpay_net_error" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/hpay_network_abnormal"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/hpay_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="4dip"
+            android:progressDrawable="@drawable/hpay_pb_web_title" />
+    </FrameLayout>
+
+</LinearLayout>

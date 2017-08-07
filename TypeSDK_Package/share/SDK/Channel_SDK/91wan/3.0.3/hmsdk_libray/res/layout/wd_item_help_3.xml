@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/wd_pay_help_3_item_image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wd_pay_help_jiao" />
+
+    <TextView
+        android:id="@+id/wd_pay_help_3_item_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/wd_pay_help_1_item_bg"
+        android:gravity="clip_vertical"
+        android:paddingLeft="5dp"
+        android:text="oooo"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000" />
+
+</LinearLayout>

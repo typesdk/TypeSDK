@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pyw_layout_load_faile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pyw_common_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/pyw_iv_load_faile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pyw_img_loading_failed" />
+
+    <TextView
+        android:id="@+id/pyw_tv_loading_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="抱歉，加载失败了!"
+        android:textColor="#123456"
+        android:textSize="@dimen/pyw_common_medium" />
+
+</LinearLayout>

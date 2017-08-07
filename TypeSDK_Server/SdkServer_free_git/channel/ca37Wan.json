@@ -1,0 +1,51 @@
+{
+  "version":"2.0.2.20151018",
+  "actions":[
+    {
+      "name":"Login"
+      ,"method":"POST"
+      ,"in_params":
+      {
+      "token" : ""
+      }
+      ,"out_url" : "http://vt.api.m.37.com/verify/token/"
+      ,"out_params" :
+      {
+        "pid" : ""
+        ,"gid" : ""
+        ,"time" : ""
+        ,"sign" : ""
+        ,"token" : ""
+      }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "time": ""
+        ,"sign": ""
+        ,"oid": ""
+        ,"doid" : ""
+        ,"dsid": ""
+        ,"dext": ""
+        ,"uid": ""
+        ,"money": ""
+        ,"coin": ""
+      }
+    ,"out_url" :"http://vt.api.m.37.com/verify/token/"
+    ,"out_params" :
+      {
+        "time": ""
+      ,"sign": ""
+      ,"oid": ""
+      ,"doid" : ""
+      ,"dsid": ""
+      ,"dext": ""
+      ,"uid": ""
+      ,"money": ""
+      ,"coin": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_colors_gray_bg_transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/my_activity_padding"
+        android:padding="12dp" >
+
+        <LinearLayout
+            android:id="@+id/my_rl_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="80dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/my_iv_head"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="46dp"
+            android:minHeight="300dp"
+            android:minWidth="300dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/my_btn_change_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/my_selector_blue_long"
+                android:text="@string/my_btn_change_head"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/my_btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/my_selector_blue_long"
+                android:text="@string/my_btn_save"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

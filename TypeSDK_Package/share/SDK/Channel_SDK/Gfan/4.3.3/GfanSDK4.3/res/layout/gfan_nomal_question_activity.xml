@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gfan_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/gfan_title_style"
+        android:id="@+id/tv_nomalquestion_title"
+        android:text="用户常见问题"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/gfan_uc_view_space"
+        android:layout_weight="5"
+        android:background="@drawable/gfan_nomal_questions_bg"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_questions_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_nomalquestion_communication"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:text="如果没能解决您的问题，请联系客服，客服QQ群：21527016"
+        android:textColor="#b9bcbf"
+        android:textSize="15sp" />
+</LinearLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_nomal_question_activity.xml -->

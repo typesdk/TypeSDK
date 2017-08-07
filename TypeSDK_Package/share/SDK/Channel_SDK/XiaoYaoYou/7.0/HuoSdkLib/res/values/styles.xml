@@ -1,0 +1,197 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="AlertDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+    </style>
+
+    <style name="GuidanceLineStyle">
+        <item name="android:background">@color/fanwei_color_fenhong</item>
+        <item name="android:layout_height">@dimen/title_line</item>
+    </style>
+
+    <style name="fan_share_text">
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:textSize">@dimen/text_18_size</item>
+    </style>
+
+    <style name="fan_share_button">
+        <item name="android:textColor">@color/fanwei_color_red</item>
+        <item name="android:textSize">@dimen/text_22_size</item>
+    </style>
+
+    <style name="text_font">
+        <item name="android:textSize">@dimen/text_12_size</item>
+        <item name="android:textColor">@color/fanwei_color_shenhui</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_16_size</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="fan_pay_money">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/text_28_size</item>
+        <item name="android:textColor">@color/fanwei_color_chenghong</item>
+    </style>
+
+    <style name="fan_pay_buttom_text" parent="text_font"></style>
+
+    <style name="fan_pay_channel_text">
+        <item name="android:textSize">@dimen/text_16_size</item>
+        <item name="android:textColor">@color/fanwei_color_banhui</item>
+    </style>
+
+    <style name="fan_pay_channel_per_text">
+        <item name="android:textSize">@dimen/text_13_size</item>
+        <item name="android:textColor">@color/fanwei_color_shenhui</item>
+    </style>
+
+    <style name="fan_sms_text_style">
+        <item name="android:textSize">@dimen/text_15_size</item>
+        <item name="android:textColor">@color/fanwei_color_banhui</item>
+    </style>
+
+    <style name="sdw_79351b">
+        <item name="android:shadowColor">#ff79351b</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="fan_text_15_style">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/btnColor</item>
+    </style>
+
+    <style name="sdw_white">
+        <item name="android:shadowColor">#7fffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.65</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/fanwei_color_touming</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="space_view">
+        <item name="android:layout_width">@dimen/fanwei_30_dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="fanwei_custom_btn_style">
+        <item name="android:textSize">@dimen/text_18_size</item>
+    </style>
+
+    <style name="fanwei_btn_style" parent="@style/fanwei_custom_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/fanwei_color_lanse</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_bk</item>
+    </style>
+
+    <style name="fanwei_back_btn_style" parent="@style/fanwei_custom_btn_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:background">@drawable/btn_cancel_selector</item>
+    </style>
+
+    <style name="transparent">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="fan_sms_title_text_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/fanwei_color_banhui</item>
+        <item name="android:textSize">@dimen/text_16_size</item>
+    </style>
+
+    <style name="textstyle_radiobuttontitle_s19_cwhite">
+        <item name="android:layout_height">37dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Fan_NotificationTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NotificationContent">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="fan_vertical_bar_style">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/fanwei_color_danhui</item>
+    </style>
+
+    <style name="fan_card_pay_title_text_style" parent="@style/fanwei_custom_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/fanwei_20_dp</item>
+        <item name="android:layout_marginTop">@dimen/fanwei_5_dp</item>
+        <item name="android:textColor">@color/fanwei_color_banhui</item>
+    </style>
+    <style name="dialog_bg_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

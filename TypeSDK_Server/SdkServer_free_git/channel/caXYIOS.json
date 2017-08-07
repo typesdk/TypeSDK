@@ -1,0 +1,41 @@
+{
+  "version": "",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "POST",
+      "in_params": {
+        "uid": "",
+        "token": ""
+      },
+      "out_url": "http://passport.xyzs.com/checkLogin.php",
+      "out_params": {
+        "uid": "",
+        "token": "",
+        "appid": ""
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "orderid": "",
+        "uid": "",
+        "amount": "",
+        "extra": "",
+        "ts": "",
+        "sign": ""
+      },
+      "out_url": "http://passport.xyzs.com/checkLogin.php",
+      "verifyurl": "http://xx.xx.xx.xx:xxx/sdkverify",
+      "out_params": {
+        "orderid": "",
+        "uid": "",
+        "amount": "",
+        "extra": "",
+        "ts": "",
+        "sign": ""
+      }
+    }
+  ]
+}

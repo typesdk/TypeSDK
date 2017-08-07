@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 س</item>
+        <item quantity="other">%d س</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 د</item>
+        <item quantity="other">%d د</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 ث</item>
+        <item quantity="other">%d ث</item>
+    </plurals>
+    <string name="tw__like_tweet">إعجاب بالتغريدة</string>
+    <string name="tw__liked_tweet">إلغاء الإعجاب</string>
+    <string name="tw__loading_tweet">يتم تحميل التغريدة</string>
+    <string name="tw__pause">توقف</string>
+    <string name="tw__play">تشغيل</string>
+    <string name="tw__relative_date_format_long">d/M/y</string>
+    <string name="tw__relative_date_format_short">d MMM</string>
+    <string name="tw__replay">إعادة التشغيل</string>
+    <string name="tw__retweeted_by_format">مُعاد تغريدها بواسطة %1$s</string>
+    <string name="tw__share_content_format">اطلع على تغريدة ‎\@%1$s\: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">تغريدة من %1$s (‎\@%2$s)</string>
+    <string name="tw__share_tweet">مشاركة التغريدة</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">تغريدة وسائط</string>
+</resources>

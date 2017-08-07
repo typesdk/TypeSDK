@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="74dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="5dp"
+        android:layout_centerVertical="true">
+
+        <!-- 占位-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="margin left"
+            android:src="@drawable/dcn_login_password"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dcn_select_account_tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/dcn_white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=" - "
+                    android:textColor="@color/dcn_white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dcn_select_account_tv_mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/dcn_white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/dcn_account_time_game"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/dcn_select_account_tv_lastapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="110dp"
+                        android:singleLine="true"
+                        android:text="@string/dcn_select_account_last_app_none"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/dcn_white"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/dcn_select_account_tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/dcn_white"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <!--<EditText-->
+                    <!--android:id="@+id/dcn_select_account_remarks"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="3dp"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--android:background="@drawable/dcn_transparent"-->
+                    <!--android:hint="@string/dcn_add_remark"-->
+                    <!--android:maxLength="20"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textColor="@color/dcn_gray_dark"-->
+                    <!--android:textColorHint="@color/dcn_gray_light"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:visibility="visible"/>-->
+            </FrameLayout>
+
+
+            <TextView
+                android:id="@+id/dcn_select_account_tv_remark"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="4dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="@string/dcn_select_account_last_app_none"
+                android:textColor="@color/dcn_white"
+                android:textSize="12sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:minWidth="30dp">
+
+            <CheckBox
+                android:id="@+id/dcn_select_account_default_radio"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:button="@drawable/dcn_selector_check" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/dcn_edit_ok"
+        android:layout_width="50dp"
+        android:layout_height="68dp"
+        android:background="@color/dcn_orange_common"
+        android:layout_alignParentRight="true"
+        android:text="@string/dcn_ok"
+        android:textColor="@color/dcn_white"
+        android:visibility="gone"/>
+</RelativeLayout>

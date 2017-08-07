@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/kg_common_title_bar" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/kg_message_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/kg_common_background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/kg_common_white"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/kg_msg_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/kg_common_gray_darker"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/kg_msg_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/kg_common_gray_more_lighter"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/kg_common_gray_normal" />
+
+        <TextView
+            android:id="@+id/kg_msg_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/kg_common_gray_lighter"
+            android:textSize="@dimen/kg_common_large" />
+    </LinearLayout>
+
+    <com.kugou.game.sdk.ui.widget.TipsLayout
+        android:id="@+id/kg_tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

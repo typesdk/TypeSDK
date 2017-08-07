@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@drawable/wd_bg_dialog_shape_corner">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/wd_dialog_padding">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定手机号"
+                android:textSize="@dimen/wd_text_size_20"
+                android:layout_gravity="center"
+                android:textColor="@color/wd_color_blue"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+        />
+            <ImageView
+                    android:id="@+id/wd_iv_binding_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wd_ic_account_close"
+                    android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/wd_bg_edit_shape_corner"
+                android:layout_marginTop="15dp">
+
+            <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="40dip"
+                    android:scaleType="center"
+                    android:src="@drawable/wd_ic_account_phone"
+                    android:visibility="visible"
+                    android:layout_marginLeft="8dp"
+            />
+            <EditText
+                    android:id="@+id/wd_et_binding_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入手机号码"
+                    android:maxLength="20"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null"
+                    android:background="@null"
+                    android:textSize="@dimen/wd_text_size_16">
+            </EditText>
+
+            <ImageView
+                    android:id="@+id/wd_iv_binding_clean"
+                    android:layout_width="30dip"
+                    android:layout_height="40dip"
+                    android:scaleType="center"
+                    android:src="@drawable/wd_ic_account_edit_clear_selector"
+                    android:visibility="invisible"
+            />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="15dip"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+        >
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/wd_bg_edit_shape_corner"
+                    android:layout_weight="0.6"
+            >
+
+                <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="40dip"
+                        android:scaleType="center"
+                        android:src="@drawable/wd_ic_account_message"
+                        android:visibility="visible"
+                        android:layout_marginLeft="8dp"
+                />
+
+                <EditText
+                        android:id="@+id/wd_et_binding_validate"
+                        android:layout_weight="0.2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="输入验证码"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null"
+                        android:background="@null"
+                        android:textSize="@dimen/wd_text_size_16"
+                />
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/wd_btn_binding_validate"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.2"
+                    android:text="获取验证码"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/wd_color_white"
+                    android:background="@drawable/wd_bg_validate_shape_normal"
+                    android:textSize="@dimen/wd_text_size_16"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:gravity="center"
+                android:orientation="horizontal"
+        >
+
+            <Button
+                    android:id="@+id/wd_btn_binding"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/wd_bg_account_btn_blue_selector"
+                    android:text="绑定并进入游戏"
+                    android:textColor="@color/wd_color_white"
+                    android:gravity="center"
+                    android:textSize="@dimen/wd_text_size_18"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

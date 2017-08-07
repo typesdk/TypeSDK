@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="dcn_dialog_activity" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dcn_full_screen_activity" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+    </style>
+
+    <style name="dcn_float_activity" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/dcn_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dcn_dialog_login" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- <item name="android:windowBackground">@android:color/transparent</item> -->
+        <item name="android:windowBackground">@color/dcn_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+
+    <style name="dcn_dialog_switch_line" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- <item name="android:windowBackground">@android:color/transparent</item> -->
+        <item name="android:windowBackground">@color/dcn_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="dcn_dialog_waiting" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/dcn_transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dcn_dialog_floating" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/dcn_transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- 全屏dialog样式 左右插入 -->
+    <style name="dcn_full_screen_dialog">
+        <item name="android:windowBackground">@color/dcn_white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="dcn_login_progress" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义不确定圆形进度条 -->
+
+    <style name="dcn_progress_loading" parent="android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/dcn_progress</item>
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">72dp</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">72dp</item>
+    </style>
+
+    <style name="dcn_Activity_Transparent" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/dcn_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!-- 银联支付 -->
+    <style name="Theme.UPPay" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 弹出菜单文字样式 -->
+    <style name="dcn_float_memu_text">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- 个人中心导航样式 -->
+    <style name="dcn_ucenter_navigation">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/dcn_ucenter_navi_text_selector</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="dcn_dialog_ucenter" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <declare-styleable name="line">
+        <attr name="orientation_dashed" format="string" />
+    </declare-styleable>
+
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dcn_from_right</item>
+        <item name="android:windowExitAnimation">@anim/dcn_to_left</item>
+    </style>
+
+    <style name="DcnDownloadProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">10dip</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/dcn_download_progress</item>
+    </style>
+
+    <style name="dcn_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/dcn_gray_dark</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="dcn_title.gray">
+        <item name="android:textColor">@color/dcn_gray_dark</item>
+    </style>
+
+    <style name="dcn_content">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dcn_gray_dark</item>
+    </style>
+
+    <style name="dcn_toggole">
+        <item name="android:background">@drawable/dcn_toggle</item>
+        <item name="android:button">@null</item>
+        <item name="android:textOff">""</item>
+        <item name="android:textOn">""</item>
+        <item name="android:text">""</item>
+    </style>
+
+    <style name="dcn_radio" parent="dcn_content">
+        <item name="android:background">@drawable/dcn_checkedtext</item>
+        <item name="android:textColor">@color/dcn_select_account_radio_txt_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!--<declare-styleable name="CircleImageView">-->
+        <!--<attr name="civ_border_width" format="dimension" />-->
+        <!--<attr name="civ_border_color" format="color" />-->
+        <!--<attr name="civ_border_overlay" format="boolean" />-->
+        <!--<attr name="civ_fill_color" format="color" />-->
+    <!--</declare-styleable>-->
+
+    <!--<declare-styleable name="SlipButton">-->
+    <!--<attr name="bg" format="reference" />-->
+    <!--<attr name="slipImg" format="reference" />-->
+    <!--<attr name="slipOn" format="boolean"></attr>-->
+    <!--</declare-styleable>-->
+
+    <!--<declare-styleable name="IndexView">-->
+    <!--<attr name="childNum" format="integer" />-->
+    <!--<attr name="imgSelect" format="reference" />-->
+    <!--<attr name="imgUnSelect" format="reference" />-->
+    <!--</declare-styleable>-->
+</resources>

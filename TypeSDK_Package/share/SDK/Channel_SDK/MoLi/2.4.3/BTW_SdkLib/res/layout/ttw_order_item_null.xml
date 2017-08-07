@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="80dip"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="5dip"
+    android:orientation="vertical"
+    android:layout_marginTop="30dip"
+    android:gravity="center"
+    android:background="@drawable/ttw_circle_bg"
+     >
+       <TextView 
+           android:id="@+id/lv_order_null"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="亲，你还没有充值哦！"
+           />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pyw_login_dialog_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pyw_img_dialogcontent_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pyw_iv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_title_height"
+        android:background="@drawable/pyw_img_dialogtitle_bg"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:text="@string/pyw_common_dialog_title_tips"
+        android:textColor="@color/pyw_common_gray_darker"
+        android:textSize="@dimen/pyw_common_larger" />
+
+    <View
+        android:id="@+id/pyw_view_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_below="@id/pyw_iv_title"
+        android:background="@color/pyw_common_item_divider" />
+
+    <TextView
+        android:id="@+id/pyw_tv_logout_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyw_view_divider"
+        android:layout_marginBottom="@dimen/pyw_dp_72"
+        android:layout_marginTop="@dimen/pyw_dp_72"
+        android:gravity="center"
+        android:text="@string/pyw_logout_tips"
+        android:textColor="@color/pyw_common_gray_darker"
+        android:textSize="@dimen/pyw_common_large" />
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyw_tv_logout_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/pyw_dp_51"
+        android:layout_marginRight="@dimen/pyw_dp_51" >
+
+        <Button
+            android:id="@+id/pyw_btn_logout_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:layout_weight="1"
+            android:background="@drawable/pyw_selector_btn_white_bg"
+            android:text="@string/pyw_cancel"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <Button
+            android:id="@+id/pyw_btn_logout_ensure"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:layout_marginLeft="@dimen/pyw_dp_49"
+            android:layout_weight="1"
+            android:background="@drawable/pyw_selector_btn_white_bg"
+            android:text="@string/pyw_ensure"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_dp_75"
+        android:layout_below="@id/pyw_layout_bottom" />
+
+</RelativeLayout>

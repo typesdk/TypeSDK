@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iw_ll_assist"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lvansdk_assist_bg_left" >
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lvansdk_user_center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="个人中心"
+            android:textColor="#000"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lvansdk_shop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="游戏市场"
+            android:textColor="#000"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lvansdk_service" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text=" 客  服 "
+            android:textColor="#000"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+</LinearLayout>

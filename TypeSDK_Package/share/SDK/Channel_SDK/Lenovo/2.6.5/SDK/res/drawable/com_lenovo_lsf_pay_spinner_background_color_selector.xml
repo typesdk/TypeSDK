@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><selector xmlns:android="http://schemas.android.com/apk/res/android">    <item         android:state_pressed="true"        android:drawable="@color/com_lenovo_lsf_pay_phone_card_line_normal"></item>    <item android:state_pressed="false"        android:drawable="@color/com_lenovo_lsf_pay_result_text"></item></selector>

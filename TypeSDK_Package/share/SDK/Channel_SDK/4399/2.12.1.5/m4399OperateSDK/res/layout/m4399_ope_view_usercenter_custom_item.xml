@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人中心 操作列表项 by.linlijun  for test 这些固定的文字、图片要删掉~-->
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:background="@drawable/m4399_ope_usercenter_action_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="9dp"
+        android:paddingBottom="9dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/usercenter_action_item_image"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/m4399_ope_usercenter_contact_qq"/>
+
+        <TextView
+            android:id="@+id/usercenter_action_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/m4399_ope_usercenter_tv_margin"
+            android:layout_toRightOf="@+id/usercenter_action_item_image"
+            android:gravity="center_vertical"
+            android:textColor="#dd000000"
+            android:text="@string/m4399_ope_usercenter_my_client"
+            android:textSize="@dimen/m4399_ope_usercenter_tv_size" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/usercenter_action_item_first_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/usercenter_action_item_title">
+            <ImageView
+                android:id="@+id/usercenter_action_item_right"
+                android:layout_width="@dimen/m4399_ope_usercenter_icon_size"
+                android:layout_height="@dimen/m4399_ope_usercenter_icon_size"
+                android:src="@drawable/m4399_ope_per_center_right"/>
+
+            <TextView
+                android:id="@+id/usercenter_action_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/usercenter_action_item_right"
+                android:text="@string/m4399_ope_usercenter_client_content"
+                android:textSize="@dimen/m4399_ope_usercenter_tv_size"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/m4399_ope_usercenter_orange"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/usercenter_right_la"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+            <cn.m4399.operate.ui.widget.SlideSwitchsButton
+                android:visibility="gone"
+                android:id="@+id/usercenter_action_slide_switches_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/usercenter_action_item_arrow"
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:src="@drawable/m4399_ope_usercenter_right_arrow"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/usercenter_action_item_right_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/m4399_ope_usercenter_tv_size"
+            android:textColor="#42000000"
+            android:layout_toLeftOf="@id/usercenter_right_la"/>
+
+
+
+    </RelativeLayout>
+
+
+    <View
+        style="@style/m4399PerfectLine"
+        android:background="#dddddd"/>
+
+    </LinearLayout>

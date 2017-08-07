@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"    
+    android:background="#ffffff"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+         >
+   
+    <TextView
+        android:id="@+id/personcenter_tv_first"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/personcenter_tv_second"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/personcenter_tv_first"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/personcenter_tv_third"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/personcenter_iv_fourth"
+        android:gravity="center_vertical"
+        android:paddingRight="10dip"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/personcenter_iv_fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dip"
+        android:src="@drawable/rightjiantou" />
+
+     </RelativeLayout>
+    <View 
+        android:id="@+id/personcenter_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#22000000" 
+        android:layout_marginLeft="10dip"
+      
+        />
+    
+</LinearLayout>

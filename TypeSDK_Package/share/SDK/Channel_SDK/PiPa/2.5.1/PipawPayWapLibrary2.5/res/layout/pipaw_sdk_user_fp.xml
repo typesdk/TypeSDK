@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forget_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/sdk_web_title_bg" >
+
+        <LinearLayout
+            android:id="@+id/fp_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/sdk_back_bg_selector"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dip"
+            android:paddingRight="10dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sdk_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pp_back"
+                android:textColor="@color/text_web"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="@color/text_web"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/fp_enter_game"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sdk_back_bg_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="#ff0d0e14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center"
+                android:text="@string/pp_enter_game"
+                android:textColor="@color/text_web"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/fp_webview"
+        layout="@layout/pipaw_sdk_user_webview" />
+
+</LinearLayout>

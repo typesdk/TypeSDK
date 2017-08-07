@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/yyh_blue" />
+            <corners android:radius="3dp"/>
+        </shape>
+	</item>
+	
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/yyh_blue_half_transparent" />
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+
+    <item android:state_enabled="false" >
+        <shape>
+            <solid android:color="@color/yyh_gray" />
+            <corners android:radius="3dp"/>
+        </shape>
+    </item>
+</selector>

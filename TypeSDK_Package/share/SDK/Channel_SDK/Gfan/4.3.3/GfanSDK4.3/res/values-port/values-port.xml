@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/GfanSDK/SDK/src/main/res/values-port/gfan_dimens.xml -->
+    <eat-comment/>
+    <dimen name="gfan_edit_layout_height">40dp</dimen>
+    <dimen name="gfan_uc_bg_lr_margin">20dp</dimen>
+    <dimen name="gfan_uc_bg_padding">20dp</dimen>
+    <dimen name="gfan_uc_bg_tb_margin">10dp</dimen>
+    <dimen name="gfan_uc_bg_title_margin_top">33dp</dimen>
+</resources>

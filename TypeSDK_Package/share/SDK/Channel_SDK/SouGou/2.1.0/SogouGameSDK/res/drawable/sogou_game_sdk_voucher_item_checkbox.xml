@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- checked -->
+    <item android:drawable="@drawable/sogou_game_sdk_pay_voucher_item_checkbox_d" android:state_checked="true"/>
+    <!-- default -->
+    <item android:drawable="@drawable/sogou_game_sdk_pay_voucher_item_checkbox_s" android:state_checked="false"/>
+
+</selector>

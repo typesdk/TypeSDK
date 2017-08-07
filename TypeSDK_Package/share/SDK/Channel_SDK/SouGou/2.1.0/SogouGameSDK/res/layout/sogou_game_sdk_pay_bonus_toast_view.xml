@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dip"
+    android:background="@color/sogou_game_sdk_color_feebd8"
+    android:gravity="center_horizontal|bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="8sp"
+    android:paddingTop="8sp" >
+
+    <com.sogou.gamecenter.sdk.views.AlwaysMarqueeTextView
+        android:id="@+id/sogou_game_sdk_pay_bonus_toast_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="53sp"
+        android:layout_marginRight="53sp"
+        android:singleLine="true"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="14sp" />
+
+</LinearLayout>

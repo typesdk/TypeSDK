@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <include
+            android:id="@+id/roof_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            layout="@layout/ledi_info" />
+
+         <LinearLayout
+            android:id="@+id/ledi_layout_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roof_info"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ledi_roof_remind"
+                android:textColor="#454545"
+                android:textSize="12sp" />
+<!--             <TextView
+                android:id="@+id/textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/float_window_yellow"
+                android:textStyle="bold|italic"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ledi_roof_remind4"
+                android:textColor="#454545"
+                android:textSize="12sp" />-->
+        </LinearLayout> 
+
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ledi_layout_text"
+            android:text="@string/ledi_roof_remind2"
+            android:textColor="#454545"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview4"
+            android:text="@string/ledi_roof_remind3"
+            android:textColor="#454545"
+            android:textSize="12sp" />
+
+<!--         <TextView
+            android:id="@+id/textview2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview"
+            android:text="@string/ledi_ledi_offweb"
+            android:gravity="left"
+            android:textColor="#454545"
+            android:textSize="12sp" /> -->
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/roof_bootom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ledi_root_bootom_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="bootomBtnOnclick"
+        android:text="@string/ledi_roof_pay"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+<!--     <LinearLayout
+        android:id="@+id/ledi_roof_linearlayout_giftremin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/roof_bootom_btn"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/ledi_giftremain"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ledi_gift_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="2元"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/ledi_gift_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:button="@drawable/ledi_remember_password_bg"
+            android:checked="true"
+            android:textColor="#555555"
+            android:textSize="13sp" />
+    </LinearLayout> -->
+
+</RelativeLayout>

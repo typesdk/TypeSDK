@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <item Android:state_selected="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <!-- 实心 -->
+               <solid android:color="@color/kg_common_btn_pressed" />
+               <!-- 描边 -->
+               <stroke
+               android:width="1px"
+               android:color="@color/kg_common_gray_more_lighter" />
+               <!-- 圆角 -->
+               <corners
+               android:radius="0dp"
+               />
+        </shape>
+    </item>
+    <item Android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <!-- 实心 -->
+               <solid android:color="@color/kg_common_btn_pressed" />
+               <!-- 描边 -->
+               <stroke
+               android:width="1px"
+               android:color="@color/kg_common_gray_more_lighter" />
+               <!-- 圆角 -->
+               <corners
+               android:radius="0dp"
+               />
+        </shape>
+    </item>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+               android:shape="rectangle" >
+               <!-- 实心 -->
+               <solid android:color="@color/kg_common_white" />
+               <!-- 描边 -->
+               <stroke
+               android:width="1px"
+               android:color="@color/kg_common_gray_more_lighter" />
+               <!-- 圆角 -->
+               <corners
+               android:radius="0dp"
+               />
+           </shape>
+    </item>
+
+</selector>
+
+

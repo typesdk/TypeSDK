@@ -1,0 +1,52 @@
+{
+  "version":"3.4.20151018",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "uid":""
+    ,"session_id" : ""
+    }
+    ,"out_url" : "http://www.44755.com/notify-login"
+    ,"out_params" :
+    {
+      "uid" : ""
+    ,"session_id" : ""
+    ,"pid" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "sid" : ""
+      ,"orderid" : ""
+      ,"cash" : ""
+      ,"money" : ""
+      ,"amount" : ""
+      ,"way_name" : ""
+      ,"exchange" : ""
+      ,"pay_time" : ""
+      ,"uid" : ""
+      ,"sign":""
+      }
+    ,"out_url" :"http://www.44755.com/notify-login"
+    ,"out_params" :
+      {
+        "sid" : ""
+      ,"orderid" : ""
+      ,"cash" : ""
+      ,"money" : ""
+      ,"amount" : ""
+      ,"way_name" : ""
+      ,"exchange" : ""
+      ,"pay_time" : ""
+      ,"uid" : ""
+      ,"sign":""
+      }
+    }
+  ]
+}

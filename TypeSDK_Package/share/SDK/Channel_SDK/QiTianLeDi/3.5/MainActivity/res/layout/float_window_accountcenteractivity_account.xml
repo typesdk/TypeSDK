@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/float_window_account_modify_pwd_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/float_window_accountcenter_textview_selector"
+        android:drawableRight="@drawable/float_window_jiantou"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:text="@string/float_window_modify_pwd"
+        android:textColor="@color/float_window_black"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/float_window_account_bond_phone_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/float_window_accountcenter_textview_selector"
+        android:drawableRight="@drawable/float_window_jiantou"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:text="@string/float_window_bond_phone"
+        android:textColor="@color/float_window_black"
+        android:textSize="19sp" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/egame_disembark_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/egame_mesgpush_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal" 
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/egame_mesgpush_titletv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/mesgpush_title"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1000">
+
+        <RelativeLayout
+            android:id="@+id/egame_mesgpush_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" >
+
+            <ImageView
+                android:id="@+id/egame_user_mesgpush_leftarr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/egame_user_message_leftarrow" />
+
+            <ImageView
+                android:id="@+id/egame_user_mesgpush_rightarr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/egame_user_message_rightarrow" />
+
+            <WebView
+                android:id="@+id/egamge_mesgpush_webview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/egame_user_mesgpush_rightarr"
+                android:layout_toRightOf="@id/egame_user_mesgpush_leftarr" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/egame_mesgpush_cb"
+            style="@style/MyCheckBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="5dp"
+            android:text="@string/egame_without_messagepush"
+            android:textColor="@color/mesgpush_other"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/egame_mesgpush_canclebt2"
+            android:layout_width="108dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/egame_btn_login_status"
+            android:text="@string/egame_withoutmesg_but"
+            android:textColor="@color/egame_usersdk_white"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/egame_mesgpush_canclebt"
+            android:layout_width="108dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/egame_btn_login_status"
+            android:text="@string/egame_withoutmesg_but"
+            android:textColor="@color/egame_usersdk_white"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+</LinearLayout>

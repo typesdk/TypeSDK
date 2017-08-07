@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basedialoglayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/uniform_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/buoy_black"
+            android:alpha="0.9"
+            android:textSize="14sp"
+            />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/center_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/center_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/buoy_item_desc_gray"
+            android:textSize="13sp"
+            android:lineSpacingMultiplier="1.2"
+            android:gravity="center_vertical"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:id="@+id/button_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    >
+	    <Button
+	        android:id="@+id/base_cancelBtn"
+	        android:layout_width="137dip"
+	        android:layout_height="44dip"
+	        android:layout_weight="1"
+	        android:background="@drawable/buoy_dialog_btn_bg"
+	        android:text="@string/buoy_cancel"
+	        android:textColor="@color/buoy_button_text_color"
+        	android:textSize="14dp"
+        	android:alpha="1.0"
+        	android:layout_marginBottom="18dp"
+    		android:layout_marginTop="18dp"
+	         />
+	
+	    <Button
+	        android:id="@+id/base_okBtn"
+	        android:layout_width="137dip"
+	        android:layout_height="44dip"
+	        android:layout_weight="1"
+	        android:background="@drawable/buoy_dialog_btn_bg"
+	        android:text="@string/buoy_confirm"
+	        android:textColor="@color/buoy_button_text_color"
+        	android:textSize="14dp"
+        	android:alpha="1.0"
+        	android:layout_marginBottom="18dp"
+    		android:layout_marginTop="18dp"
+	    	android:layout_marginLeft="10dp"
+	         />
+	    <Button
+	        android:id="@+id/base_thirdBtn"
+	        android:layout_width="137dip"
+	        android:layout_height="44dip"
+	        android:layout_weight="1"
+	        android:background="@drawable/buoy_dialog_btn_bg"
+	        android:text="@string/buoy_confirm"
+	        android:textColor="@color/buoy_button_text_color"
+        	android:textSize="14dp"
+        	android:alpha="1.0"
+        	android:layout_marginBottom="18dp"
+    		android:layout_marginTop="18dp"
+	    	android:visibility="gone"
+	    	android:layout_marginLeft="10dp"
+	         />
+	</LinearLayout>
+
+</LinearLayout>

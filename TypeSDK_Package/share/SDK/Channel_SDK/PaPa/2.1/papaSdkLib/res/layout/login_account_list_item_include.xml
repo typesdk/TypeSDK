@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp33"
+        >-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/papalogin_editback"
+              android:padding="@dimen/dp38"
+
+        >
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 android:text=""
+                 android:id="@+id/name"
+                 android:textColor="@color/text_black"
+                 android:layout_gravity="left"
+                />
+        <Button android:layout_width="@dimen/dp160" android:layout_height="@dimen/dp60"
+                android:background="@drawable/papalogin_greenbutn_seleter"
+                android:layout_marginLeft="@dimen/dp52"
+                android:text="复制"
+                android:textColor="@color/white"
+                android:id="@+id/copy"
+                android:textSize="@dimen/sp42"
+                android:layout_gravity="right"
+                />
+
+            </FrameLayout>
+
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="@dimen/dp38"
+            >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="最近一次登录：20015"
+                  android:id="@+id/time"
+                  android:textColor="@color/text_black"
+                />
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="@dimen/dp38"
+            >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="登录业务：梦幻西游"
+                  android:id="@+id/game"
+                  android:textColor="@color/text_black"
+                />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+<!--</FrameLayout>-->

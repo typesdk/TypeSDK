@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sdk_name">37手游</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="game">热门游戏</string>
+    <string name="activities">活动专区</string>
+    <string name="service">微官网</string>
+    <string name="kefu_account">帐号管理</string>
+    <string name="goback">&#160;返&#160;&#160;回&#160;</string>
+    <string name="back_game">返回游戏</string>
+    <string name="kefu_modify_pw">&#160;&#160;&#160;&#160;修改密码</string>
+    <string name="modify_name">&#160;&#160;&#160;&#160;修改昵称</string>
+    <string name="bind_mobile">&#160;&#160;&#160;&#160;帐号安全（绑定手机）</string>
+    <string name="kefu_webview_404">网络错误，请稍后重试.</string>
+    
+    <string name="fg_give_gift">领取</string>
+    <string name="fg_copy">复 制</string>
+    <string name="fg_deadline">截止时间:</string>
+    <string name="fg_surplus">剩余</string>
+    <string name="fg_gift_content">礼包内容:</string>
+    <string name="fg_gift_card">礼包卡号:</string>
+    <string name="fg_gift_time">领取时间:</string>
+    <string name="fg_strategy">&#160;&#160;攻略</string>
+    <string name="fg_news">&#160;&#160;新闻</string>
+    <string name="fg_gift">&#160;&#160;礼包</string>
+    
+    <string name="fg_login_title">登录</string>
+    <string name="fg_account_manager">帐号管理</string>
+    
+    <string name="fg_login">登录</string>
+    <string name="fg_reg_account"> 注 册 </string>
+    <string name="fg_login_btn"> 立即登录 </string>
+        
+  	<string name="fg_reg_account_now">立即注册</string>
+    <string name="fg_account">帐号：</string>
+    <string name="fg_en_account_hint">请输入登录帐号</string>
+    <string name="fg_account_hint">请输入帐号</string>
+    <string name="fg_pw">密码：</string>
+    <string name="fg_en_pw_hint">请输入登录密码</string>
+    <string name="fg_pw_hint">请输入密码</string>
+    <string name="fg_modify_pw_go">修改密码 >></string>
+    <string name="fg_find_pw_go">安全中心 >></string>
+    <string name="fg_find_pw"> 安全中心</string>
+    <string name="fg_find_pw_tips">温馨提示:\n1、绑定手机号码或邮箱便于找回您的密码\n2、若找回密码有任何问题，您可以联系客服邮箱kf@37.com或企业QQ:800089273 </string>
+    
+    <string name="fg_bind">帐号绑定</string>
+    <string name="fg_bind_email">邮箱绑定</string>
+    <string name="fg_bind_mobile">手机绑定</string>
+    <string name="fg_bind_mobile_now">立即绑定手机</string>
+    
+    <string name="fg_bind_not">暂不绑定</string>
+    <string name="fg_bind_yes">立即绑定</string>
+    
+    <string name="fg_find">密码找回</string>
+    
+    <string name="fg_secure_email">邮箱：</string>
+    <string name="fg_secure_email_hint">请输入您的邮箱</string>
+    <string name="fg_secure_email_tips">温馨提示:\n1、绑定手机号码或邮箱便于找回您的密码。</string>
+    <string name="fg_secure_find_email">邮箱找回</string>
+    
+    <string name="fg_secure_find_mobile">手机找回</string>
+    <string name="fg_useraccount">用户帐号：</string>
+	<string name="fg_secure_mobile_hint">请输入手机号码</string>    
+	<string name="fg_secure_mobile_getcode">获取验证码</string>
+	<string name="fg_secure_code">验&#160;&#160;证&#160;&#160;码：</string>
+	<string name="fg_secure_code_hint">请输入验证码</string>
+	<string name="fg_secure_mobile_tips_0">温馨提示:\n1、手机号码仅用于验证，不收取任何费用。</string>
+	<string name="fg_secure_mobile_tips">温馨提示:\n1、绑定手机号码或邮箱便于找回您的密码。</string>
+    
+    <string name="fg_nick">昵称:</string>
+    <string name="fg_nick_hint">请输入昵称</string>
+    <string name="fg_mygift">我的礼包</string>
+    <string name="fg_wallet">我的钱包</string>
+    <string name="fg_modify_info">修改个人资料</string>
+    <string name="fg_modify_pw">修改密码</string>
+    <string name="fg_back">&lt;&lt; 返回</string>
+    <string name="fg_back_right">&lt;&lt;返回</string>
+    <string name="fg_back_login">返回登录</string>
+    <string name="fg_submit">提 交</string>
+    <string name="fg_start_game">启动游戏</string>
+    
+    <string name="fg_welcome">欢迎来到37手游，37手游只淘精品网游，祝您游戏愉快！</string>
+    <string name="fg_sex">性别：</string>
+    <string name="fg_sex_boy">&#160;&#160;男</string>
+    <string name="fg_sex_girl">&#160;&#160;女</string>
+    <string name="fg_sex_secret">&#160;&#160;保密</string>
+    <string name="fg_birthday">出生日期：</string>
+    <string name="fg_birthday_hint">点击修改出生日期</string>
+    <string name="fg_mobile_no">手机号码：</string>
+    <string name="fg_mobile_no_hint">优惠活动短信通知您</string>
+    
+    <string name="fg_my_wallet">我的钱包</string>
+    <string name="fg_money">帐号余额：</string>
+    <string name="fg_my_point">我的萌点：</string>
+    <string name="fg_wallet_sub">充 值</string>
+    <string name="fg_wallet_gift">兑换礼包</string>
+    <string name="fg_wallet_tips_title">温馨提示：</string>
+    <string name="fg_wallet_tips_content">帐号余额在游戏中可通过余额支付被使用。成功充值将按10:1赠送萌点，萌点用于兑换各类游戏限量版道具或其他礼品。</string>
+    
+    <string name="fg_old_pw">旧密码：</string>
+    <string name="fg_old_pw_hint">请输入旧密码</string>
+    <string name="fg_new_pw">新密码：</string>
+    <string name="fg_new_pw_conform">确认新密码：</string>
+    <string name="fg_new_pw_hint">请输入新密码</string>
+    <string name="fg_new_pw_conform_hint">请确认新密码</string>
+    <string name="fg_confirm"> 确 定 </string>
+    <string name="fg_cancel"> 返 回 </string>
+    <string name="fg_cancel2"> 取 消 </string>
+    <string name="modify_pw">修改密码</string>
+    <string name="fg_net_err">加载失败</string>
+    <string name="fg_net_again">建议检查网络后</string>
+    <string name="fg_net_click">点击屏幕尝试重新连接</string>
+    
+    <string name="fg_pay_center">游戏充值中心</string>
+    <string name="fg_to_game">返回游戏</string>
+    
+    <string name="fg_update_title">更新提示</string>
+    <string name="fg_update_now">立即更新</string>
+    
+    <string name="fg_update_down_title">下载更新包中</string>
+    <string name="fg_update_down_finish">下载完成</string>
+    <string name="fg_update_down_backgroud">后台下载</string>
+    
+    
+    <string name="fg_down_text">下载</string>
+    
+    <string name="fg_return_login">返回登录</string>
+   	<string name="fg_login_bbs">官方论坛</string> 
+    
+    <string name="confirm_install_hint">"安装提示"</string>	
+	<string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+	<string name="Ensure">"确定"</string>
+	<string name="Cancel">"取消"</string>
+	<string name="kefu_gift">&#160;&#160;礼包</string>
+	<string name="kefu_messageTip">&#160;&#160;消息(%S)</string>
+	
+	<string name="kefu_wait_title">请等待</string>
+	<string name="kefu_wait_msg">正在处理中...</string>
+	<string name="kefu_start_app">启动独立客服客户端</string>
+	<string name="kefu_download_app">下载独立客服客户端</string>
+	
+    <!-- unionpay -->
+    <string name="pay_phone">银联支付</string>
+    <string name="pay_question">如果你在支付过程中遇到问题\n可以通过kf@37.com联系我们</string>
+    <string name="pay_prompt">温馨提示</string>
+    <string name="update">马上升级</string>
+    <string name="update_tips">您需要升级到最新的支付插件后，才能继续使用银联支付，谢谢！</string>
+    
+    
+    
+</resources>

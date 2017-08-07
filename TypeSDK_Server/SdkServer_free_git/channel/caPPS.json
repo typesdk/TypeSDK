@@ -1,0 +1,41 @@
+{
+  "version":"3.7.5.20151018",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+
+    }
+    ,"out_url" : "http://127.0.0.1"
+    ,"out_params" :
+    {
+
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "user_id" : ""
+      ,"order_id":""
+      ,"money":""
+      ,"time":""
+      ,"userData":""
+      ,"sign":""
+      }
+    ,"out_url" :"http://127.0.0.1"
+    ,"out_params" :
+      {
+        "user_id" : ""
+      ,"order_id":""
+      ,"money":""
+      ,"time":""
+      ,"userData":""
+      ,"sign":""
+      }
+    }
+  ]
+}

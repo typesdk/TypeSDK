@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="m4399_com_base_dialog_width">320dp</dimen>
+    <dimen name="m4399_com_base_dialog_height">214dp</dimen>
+    <dimen name="m4399_com_base_dialog_padding">12dp</dimen>
+    <dimen name="m4399_com_base_dialog_half_padding">6dp</dimen>
+
+</resources>

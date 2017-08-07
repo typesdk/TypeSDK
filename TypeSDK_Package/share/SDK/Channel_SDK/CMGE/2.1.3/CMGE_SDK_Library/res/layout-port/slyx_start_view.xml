@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1b1c1e"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/slyx_start_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+         <TextView
+                android:id="@+id/slyx_start_display_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cmge_sdk_init"
+                android:textColor="#E36321"
+                android:textSize="16.0sp"
+                android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/slyx_start_img_rotate"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerInParent="true" 
+                android:background="@drawable/slyx_waiting_1"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/slyx_start_hotline_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:textColor="#AFAFAF"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/slyx_start_qq_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:textColor="#AFAFAF"
+            android:textSize="14.0sp" />
+
+        <Button
+            android:id="@+id/slyx_start_confirm_btn"
+            android:layout_width="400dip"
+            android:layout_height="45dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/slyx_login_bt_l"
+            android:gravity="center"
+            android:padding="0dip"
+            android:text="@string/cmge_sdk_init_retry"
+            android:textColor="#ffffff"
+            android:textSize="16.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

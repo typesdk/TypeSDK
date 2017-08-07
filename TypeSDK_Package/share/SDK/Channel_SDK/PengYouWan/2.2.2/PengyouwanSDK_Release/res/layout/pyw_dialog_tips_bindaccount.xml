@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/pyw_img_dialogcontent_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/pyw_dp_75" >
+
+    <TextView
+        android:id="@+id/pyw_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pyw_common_title_height"
+        android:background="@drawable/pyw_img_dialogtitle_bg"
+        android:gravity="center"
+        android:text="温馨提示"
+        android:textColor="@color/pyw_common_black_ligther"
+        android:textSize="@dimen/pyw_common_large" />
+
+    <View
+        android:id="@+id/pyw_view_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="@color/pyw_common_item_divider" />
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/pyw_dp_51"
+        android:paddingRight="@dimen/pyw_dp_51"
+        android:paddingTop="@dimen/pyw_dp_51" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pyw_img_hadreg_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pyw_dp_36"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="友友的手机绑定失败了哟！"
+                    android:textColor="@color/pyw_common_gray_darker"
+                    android:textSize="@dimen/pyw_common_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pyw_dp_21"
+                    android:text="该游戏账号已与其他手机绑定"
+                    android:textColor="@color/pyw_common_gray_lighter"
+                    android:textSize="@dimen/pyw_common_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pyw_dp_51"
+        android:paddingRight="@dimen/pyw_dp_51"
+        android:paddingTop="@dimen/pyw_dp_51" >
+
+        <Button
+            android:id="@+id/pyw_btn_unbind"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:background="@drawable/pyw_selector_btn_white_bg"
+            android:text="返回用户中心"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <Button
+            android:id="@+id/pyw_btn_bind"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:layout_marginLeft="@dimen/pyw_dp_49"
+            android:background="@drawable/pyw_selector_btn_blue_bg"
+            android:text="绑定其他账号"
+            android:textColor="@color/pyw_common_white"
+            android:textSize="@dimen/pyw_common_large" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="#bb1b1c1e" >
+
+        <TextView
+            android:id="@+id/slyx_popuwind_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_toLeftOf="@+id/slyx_login_popuwind_bt_rl"
+            android:gravity="center"
+            android:text="x.正在登录。。。"
+            android:textColor="#ffffffff"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/slyx_login_popuwind_bt_rl"
+            android:layout_width="108dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/slyx_login_popuwind_bt"
+                android:layout_width="88dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:background="@color/slyx_color_login_popuwin_bt"
+                android:gravity="center"
+                android:text="@string/slyx_change_account"
+                android:textColor="#ffe36321" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</LinearLayout>

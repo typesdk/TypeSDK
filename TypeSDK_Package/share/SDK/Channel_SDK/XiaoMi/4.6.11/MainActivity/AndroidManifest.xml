@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- sdk version v4.4.33 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="4611"
+    android:versionName="4.6.11"
+    package="com.type.sdk.android.mi"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+    
+    <!-- xiaomi sdk permission start -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.xiaomi.sdk.permission.PAYMENT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- xiaomi sdk permission end -->
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication" />
+</manifest>

@@ -1,0 +1,4 @@
+[arm64-v8a]
+lib_ucsdk_softlink.so = 01b0b95b0b2c7a912ebfa1e5b7f20c2c
+lib_ucsdk_patch.so = 14bd68ecd3615ad5e4dabb7622749e00
+lib_ucsdk_xcrypt.so = 9cc43ead59ca8dae9b808a42d7599c6e

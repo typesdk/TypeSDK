@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lib_droi_account_dialog_center_btn_normal"
+    android:minHeight="64dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/lib_droi_account_nickname_dialog_title"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/dialog_nickname_select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lib_droi_account_global_button_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/lib_droi_account_edittext_selector"
+        android:hint="@string/lib_droi_account_dialog_input_newnick_name"
+        android:paddingLeft="5dp"
+        android:textColorHint="@color/lib_droi_account_edit_text_color"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lib_droi_account_dialog_btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/lib_droi_account_dialog_btn_bottomleft"
+            android:gravity="center"
+            android:text="@string/lib_droi_account_global_btn_cancel"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/lib_droi_account_dialog_btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/lib_droi_account_dialog_btn_bottomright"
+            android:gravity="center"
+            android:text="@string/lib_droi_account_dialog_ok"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

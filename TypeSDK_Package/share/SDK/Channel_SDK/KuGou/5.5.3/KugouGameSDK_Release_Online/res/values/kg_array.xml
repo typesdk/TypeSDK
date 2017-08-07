@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="kg_alipay_result_code">
+        <item>9000</item>
+        <item>4000</item>
+        <item>4001</item>
+        <item>4003</item>
+        <item>4004</item>
+        <item>4005</item>
+        <item>4006</item>
+        <item>4010</item>
+        <item>6000</item>
+        <item>6001</item>
+        <item>6002</item>
+        <item>8000</item>
+    </string-array>
+    <string-array name="kg_alipay_result_msg">
+        <item>操作成功</item>
+        <item>系统异常</item>
+        <item>数据格式不正确</item>
+        <item>该用户绑定的支付宝账户被冻结或不允许支付</item>
+        <item>该用户已解除绑定</item>
+        <item>绑定失败或没有绑定</item>
+        <item>订单支付失败</item>
+        <item>重新绑定账户</item>
+        <item>支付服务正在进行升级操作</item>
+        <item>支付操作已取消</item>
+        <item>网络连接异常</item>
+        <item>正在处理中</item>
+    </string-array>
+
+</resources>

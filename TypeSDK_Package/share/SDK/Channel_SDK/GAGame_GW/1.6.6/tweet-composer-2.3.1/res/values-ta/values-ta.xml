@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tw__composer_hint">என்ன நடக்கிறது?</string>
+    <string name="tw__install">நிறுவு</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__post_tweet">ட்விட் செய்</string>
+</resources>

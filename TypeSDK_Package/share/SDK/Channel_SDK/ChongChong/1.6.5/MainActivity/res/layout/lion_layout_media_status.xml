@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.video.MediaStatusLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_layout_media_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        android:id="@+id/lion_layout_media_status_loading_wait_buffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/lion_layout_media_status_loading_url_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lion_common_black"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/lion_text_loading_video"
+            android:textColor="#85C210" />
+
+        <ProgressBar
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:background="@color/lion_common_transparent"
+            android:progress="50"
+            android:progressDrawable="@drawable/lion_common_video_landscape_progress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lion_layout_media_status_net_unlink_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#212121"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lion_text_net_unlink"
+            android:textColor="@color/lion_common_white" />
+
+        <TextView
+            android:id="@+id/lion_layout_media_status_net_unlink_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="@string/lion_text_click_to_retry"
+            android:textColor="#85C210"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lion_layout_media_status_link_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#212121"
+        android:gravity="center"
+        android:text="@string/lion_text_unlink_url"
+        android:textColor="@color/lion_common_white"
+        android:textSize="16.0sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/lion_layout_media_status_replay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lion_common_black"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <com.lion.ccpay.view.ReplayView
+            android:id="@+id/lion_layout_media_status_replay"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:drawablePadding="7.5dip"
+            android:drawableTop="@drawable/lion_video_replay"
+            android:ellipsize="end"
+            android:gravity="center|top"
+            android:maxLines="5"
+            android:paddingTop="15.0dip"
+            android:text="@string/lion_text_replay"
+            android:textColor="@color/lion_common_white"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lion_layout_media_status_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lion_common_black"
+        android:scaleType="center"
+        android:src="@drawable/lion_icon_community_play" />
+
+</com.lion.ccpay.widget.video.MediaStatusLayout>

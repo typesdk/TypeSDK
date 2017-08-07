@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="@color/activity_default_background">
+
+    <!--actionBar-->
+    <include layout="@layout/mg_forum_title_layout" android:id="@id/actionbarLayout"/>
+
+    <view class="com.papa91.pay.widget.ForumLoadingView"
+          android:id="@+id/loadingView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+            <!--list-->
+            <view class="com.papa91.pay.widget.XListView"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/listView"
+                  android:listSelector="@android:color/transparent"
+                  android:divider="@android:color/transparent"
+                  android:cacheColorHint="@android:color/transparent"
+                  android:dividerHeight="0dp"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:descendantFocusability="afterDescendants"/>
+
+            <!--prevent window flickering about a second-->
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                         android:visibility="gone"
+                         android:id="@+id/videoContainer"
+                         android:background="@android:color/white">
+                <include android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:id="@+id/videoLayout"
+                         layout="@layout/video_layout"/>
+            </FrameLayout>
+        </RelativeLayout>
+
+    </view>
+
+    <!--bottom-->
+    <View android:layout_width="match_parent" android:layout_height="0dp"
+          android:id="@+id/bottom" android:layout_alignParentBottom="true"/>
+</LinearLayout>

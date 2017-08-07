@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/zy_pay_dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zy_pay_dialog_bg"
+    android:paddingBottom="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/zy_pay_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zy_pay_dialog_title_height"
+        android:background="@drawable/zy_pay_dialog_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/zy_pay_dialog_title_text"
+            android:textColor="@color/zy_pay_dialog_title_textcolor"
+            android:textSize="@dimen/zy_pay_dialog_title_textsize" />
+
+        <TextView
+            android:id="@+id/zy_pay_dialog_cancel"
+            android:layout_width="@dimen/zy_pay_dialog_cancel_width"
+            android:layout_height="@dimen/zy_pay_dialog_cancel_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/zy_pay_dialog_cancel_marginright"
+            android:layout_marginTop="@dimen/zy_pay_dialog_cancel_margintop"
+            android:background="@drawable/zy_pay_cancel" 
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/zy_pay_triangle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zy_pay_continue_game_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zy_pay_title_layout"
+        android:layout_marginTop="@dimen/zy_pay_continue_game_margintop"
+        android:orientation="vertical" >
+		<ImageView 
+		    android:layout_width="@dimen/zy_pay_continue_game_image_size"
+		    android:layout_height="@dimen/zy_pay_continue_game_image_size"
+		    android:layout_gravity="center_horizontal"
+		    android:src="@drawable/zy_pay_continue_image"
+		    />
+		<TextView 
+		    android:id="@+id/zy_pay_continue_game_content_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="成功支付6E点，您的剩余E点为4E点"
+		    android:textSize="@dimen/zy_pay_continue_game_content_textsize"
+		    android:layout_marginTop="@dimen/zy_pay_continue_game_content_text_margintop"
+		    android:textColor="@color/zy_pay_continue_game_content_textcolor"
+		    android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zy_pay_continue_game_imagebtn_id"
+        android:layout_width="@dimen/zy_pay_dialog_content_width"
+        android:layout_height="@dimen/zy_pay_dialog_imagebtn_height"
+        android:layout_below="@id/zy_pay_continue_game_content_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/zy_pay_continue_game_imagebtn_margintop"
+        android:text="继续游戏"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16.5sp"
+        android:background="@drawable/zy_pay_dialog_imagebtn_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 填充 -->
+    <solid android:color="@color/pyw_vocher_nouse_txt_color" />
+
+    <!-- 角度 -->
+    <corners
+        android:radius="10dp" />
+
+</shape>

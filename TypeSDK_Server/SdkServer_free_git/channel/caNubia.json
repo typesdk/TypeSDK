@@ -1,0 +1,33 @@
+{
+  "version":"3.0.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+    "session_id" : ""
+    ,"uid" : ""
+    }
+    ,"out_url" : "http://niusdk.api.nubia.cn/VerifyAccount/CheckSession"
+    ,"out_params" :
+    {}
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "order_no": "",
+        "data_timestamp": "",
+        "pay_success": "",
+        "sign": ""
+      }
+    ,"out_url" :"http://niusdk.api.nubia.cn/VerifyAccount/CheckSession"
+    ,"out_params" :
+      {
+      }
+    }
+  ]
+}

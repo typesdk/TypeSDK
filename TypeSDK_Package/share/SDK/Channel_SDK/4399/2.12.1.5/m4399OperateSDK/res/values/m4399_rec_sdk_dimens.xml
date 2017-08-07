@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <dimen name="m4399_rec_page_height">275dp</dimen>
+    <dimen name="m4399_rec_page_width">420dp</dimen>
+    <dimen name="m4399_rec_title_height">38dp</dimen>
+    <dimen name="m4399_rec_title_iv_txt_spacing">4dp</dimen>
+    <dimen name="m4399_rec_separator_height">1dp</dimen>
+    <dimen name="m4399_rec_paddingTop">6dp</dimen>
+    <dimen name="m4399_rec_paddingBottom">6dp</dimen>
+    <dimen name="m4399_rec_paddingLeft">12dp</dimen>
+    <dimen name="m4399_rec_paddingRight">12dp</dimen>
+    <dimen name="m4399_rec_payment_icon_size">64dp</dimen>
+    <dimen name="m4399_rec_payment_icon_padding">6dp</dimen>
+    <dimen name="m4399_rec_payment_text_size">12sp</dimen>
+    <dimen name="m4399_rec_table_paddingTop">7dp</dimen>
+    <dimen name="m4399_rec_foot_height">26dp</dimen>
+    <dimen name="m4399_rec_edittext_height">31dp</dimen>
+    <dimen name="m4399_rec_sum_btns_eara_height">33dp</dimen>
+    <dimen name="m4399_rec_btns_hspacing">6dp</dimen>
+    <dimen name="m4399_rec_btns_vspacing">9dp</dimen>
+    <dimen name="m4399_rec_gridview_hspacing">7dp</dimen>
+    <dimen name="m4399_rec_gridview_half_vspacing">7dp</dimen>
+    <dimen name="m4399_rec_gridview_vspacing">7dp</dimen>
+    <dimen name="m4399_rec_gridview_item_height">33dp</dimen>
+    <dimen name="m4399_rec_dialog_height">180dp</dimen>
+    <dimen name="m4399_rec_dialog_width">211dp</dimen>
+    <dimen name="m4399_rec_dialog_spacing">6dp</dimen>
+    <dimen name="m4399_rec_single_btn_marginBottom">11dp</dimen>
+    <dimen name="m4399_rec_foot_text_size">13sp</dimen>
+    <dimen name="m4399_rec_record_entry_offset">32dp</dimen>
+    <dimen name="m4399_rec_record_item_height">40dp</dimen>
+    <dimen name="m4399_rec_record_header_text_size">17sp</dimen>
+    <dimen name="m4399_rec_record_item_text_size">15sp</dimen>
+    <dimen name="m4399_rec_liantong_cfm_captcha_padding">8dp</dimen>
+    <dimen name="m4399_rec_gameinfo_top_margin">0dp</dimen>
+
+    <dimen name="spacing_xlarge">20dp</dimen>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="spacing_normal">12dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+
+    <dimen name="font_xlarge">20sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="sont_small">12sp</dimen>
+
+</resources>

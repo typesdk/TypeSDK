@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_layout_subject_item_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:paddingRight="7.5dip" />
+
+    <com.lion.ccpay.view.praise.CommunityCommentPraiseView
+        android:id="@+id/lion_layout_comment_item_info_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="25.0dip"
+        android:background="@drawable/lion_common_transparent_selector"
+        android:drawableLeft="@drawable/lion_common_community_like_round_selector"
+        android:drawablePadding="5.0dip"
+        android:gravity="center|left"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:singleLine="true"
+        android:textColor="@color/lion_common_text_gray"
+        android:textSize="12.0sp" />
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="10.0dip"
+        android:background="@color/lion_common_line" />
+
+    <TextView
+        android:id="@+id/lion_layout_comment_item_info_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="25.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/lion_common_transparent_selector"
+        android:drawableLeft="@drawable/lion_icon_community_comments"
+        android:drawablePadding="5.0dip"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:text="@string/lion_text_community_reply_str"
+        android:textColor="@color/lion_common_text_gray"
+        android:textSize="12.0sp" />
+
+</LinearLayout>

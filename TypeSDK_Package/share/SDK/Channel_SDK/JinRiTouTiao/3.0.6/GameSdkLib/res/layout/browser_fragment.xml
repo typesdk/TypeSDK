@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <WebView
+        android:id="@+id/ss_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ProgressBar
+        android:id="@+id/ss_htmlprogessbar"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bar"
+        android:visibility="visible" />
+
+    <com.ss.android.sdk.common.ui.view.FullscreenVideoFrame
+        android:id="@+id/customview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000000"
+        android:clickable="true"
+        android:visibility="gone" />
+    
+
+</RelativeLayout>

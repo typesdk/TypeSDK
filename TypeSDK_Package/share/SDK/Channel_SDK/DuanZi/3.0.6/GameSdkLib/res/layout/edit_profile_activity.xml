@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_mask_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/big_avatar_size"
+                android:layout_height="@dimen/big_avatar_size"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_default_avatar_big"/>
+
+            <LinearLayout
+                android:id="@+id/user_frame"
+                style="@style/mobile_edit_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/username_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_tip_username"/>
+
+                <EditText
+                    android:id="@+id/username_input"
+                    style="@style/mobile_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/username_hint"
+                    android:inputType="text"/>
+
+                <ImageView
+                    android:id="@+id/clear_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/clear_edit_view"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

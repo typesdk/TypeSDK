@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "fill_parent"
+              android:layout_height = "fill_parent"
+
+              android:background = "#ececec" >
+
+	<RelativeLayout
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:gravity = "center_vertical"
+
+			android:minHeight = "40dp" >
+
+		<ImageView
+				android:id = "@+id/umipay_account_list_item_delete_button"
+				android:layout_width = "26dp"
+				android:layout_height = "26dp"
+				android:padding="5dp"
+				android:layout_alignParentRight = "true"
+				android:layout_marginRight = "5dp"
+				android:src = "@drawable/umipay_btn_delete_account"
+
+				android:textSize = "18sp" />
+
+		<TextView
+				android:id = "@+id/umipay_account_list_item_text"
+				android:layout_width = "fill_parent"
+				android:layout_height = "wrap_content"
+				android:layout_alignParentLeft = "true"
+				android:layout_toLeftOf = "@id/umipay_account_list_item_delete_button"
+				android:paddingLeft = "10dp"
+				android:textColor="#a4a4a4">
+		</TextView >
+	</RelativeLayout >
+
+</LinearLayout >

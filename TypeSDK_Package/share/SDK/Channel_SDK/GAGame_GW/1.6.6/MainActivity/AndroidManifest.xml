@@ -1,0 +1,201 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.typesdk"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="auto"
+    android:versionCode="166"
+    android:versionName="1.6.6" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+		android:targetSdkVersion="25"
+        tools:overrideLibrary="com.paypal.android.sdk.payments" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- google -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <!-- google end -->
+    
+    
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.type.sdk.android.typesdk.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+			
+			<intent-filter>
+        		<action android:name="android.intent.action.VIEW" />
+        		<category android:name="android.intent.category.DEFAULT" />
+        		<data android:scheme="typesdk" />
+        	</intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.activity.ProtocolActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.activity.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.hwlogin.FacebookLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/myTransparent" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.hwlogin.TwitterLoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/myTransparent" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.googlepay.Googlepay"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/myTransparent" >
+        </activity>
+
+        <meta-data
+            android:name="android_gid"
+            android:value="0" />
+
+        <!-- fb -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/facebook_app_name" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider@facebook_appid@"
+            android:exported="true" />
+        <!-- fb end -->
+
+
+        <!-- tw -->
+        <activity
+            android:name="com.twitter.sdk.android.core.identity.OAuthActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="@twitter_key@" />
+        <!-- tw end -->
+
+
+        <!-- google pay -->
+		<meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- google end -->
+
+
+        <!-- PayPal支付 -->
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+        <!-- PayPal支付 -->
+
+
+        <!-- appsflyer -->
+        <receiver
+            android:name="com.appsflyer.MultipleInstallBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.appsflyer.SingleInstallBroadcastReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <!-- end -->
+        <!-- baselib config start -->
+        <!-- 服务逻辑 -->
+        <service
+            android:name="com.type.sdk.notification.PushService"
+            android:process=":process1" />
+        <!-- baselib config end -->
+    </application>
+
+</manifest>

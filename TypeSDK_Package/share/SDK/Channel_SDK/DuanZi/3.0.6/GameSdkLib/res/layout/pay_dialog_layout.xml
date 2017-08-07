@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="276.0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/pay_dialog_bg">
+    
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pay_dialog_close_bg"
+        android:minHeight="27dp"
+        android:minWidth="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center">
+    </ImageView>
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/pay_dialog_title_textsize"
+        android:textColor="@color/pay_dialog_title_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/pay_dialog_title">
+    </TextView>
+    
+    <include 
+        android:id="@+id/pay_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        layout="@layout/pay_content_layout"/>
+    
+    <ListView 
+        android:id="@+id/pay_lv"
+        android:layout_width="match_parent"
+        android:layout_height="253dp"
+        android:layout_below="@+id/pay_content"
+        android:layout_marginTop="14dp"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@color/transparent"/>
+
+     <include
+        android:id="@+id/consult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_lv"
+        layout="@layout/pay_consult_layout"/>
+    
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sdk_login_xiala_bg_selector"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/username_tv"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:textColor="@color/sdk_text_selector"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/delete"
+        android:layout_width="50dip"
+        android:layout_height="45dip"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sdk_login_btn_del_selector" />
+    </LinearLayout>
+
+</LinearLayout>

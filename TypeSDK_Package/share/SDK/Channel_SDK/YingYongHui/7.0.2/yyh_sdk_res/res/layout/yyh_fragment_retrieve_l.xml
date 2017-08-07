@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv_header_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/yyh_back"
+        android:drawablePadding="10dp"
+        android:paddingTop="10dp"
+        android:text="找回密码"
+        android:textColor="@color/yyh_gray_dark"
+        android:textSize="17dp" />
+
+    <RadioGroup
+        android:id="@+id/rg_retrieve_way"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yyh_blue_frame_bg"
+        android:orientation="horizontal"
+        android:padding="0.75dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <RadioButton
+            android:id="@+id/rb_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/yyh_redio_btn_blue_left"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/yyh_text_selector_blue_white" />
+
+        <RadioButton
+            android:id="@+id/rb_mail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/yyh_redio_btn_blue_right"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="邮箱"
+            android:textColor="@color/yyh_text_selector_blue_white" />
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <com.appchina.usersdk.WidgetSetPasswordLayout
+                android:id="@+id/set_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/yyh_btn_blue_bg"
+                android:maxWidth="300dp"
+                android:text="确认"
+                android:textColor="@color/yyh_white"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

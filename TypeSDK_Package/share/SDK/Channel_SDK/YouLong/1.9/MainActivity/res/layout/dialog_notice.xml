@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/notice_shape" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:scrollbars="none">
+
+            <WebView
+                android:id="@+id/webview_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/exit_icon_20dp"
+            android:layout_height="@dimen/exit_icon_20dp"
+            android:layout_gravity="right"
+            android:layout_margin="3dp"
+            android:src="@drawable/_yl_notice_close" />
+    </FrameLayout>
+
+</RelativeLayout>

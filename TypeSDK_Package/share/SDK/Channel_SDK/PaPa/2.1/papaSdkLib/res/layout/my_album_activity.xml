@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ebebeb">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:color/white"
+                    android:id="@+id/album_title">
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:id="@+id/back_image"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back_icon"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"/>
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+                      android:clickable="true"
+                      android:gravity="center"
+                      android:layout_toRightOf="@+id/back_image"
+                      android:paddingRight="10dp"
+                      android:id="@+id/layout_show_album"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/layout_title"
+                      android:gravity="center"
+                      android:layout_gravity="center"
+                      android:textSize="18sp"
+                      android:textColor="#4d4d4d"
+                      android:layout_centerVertical="true"
+                      android:layout_marginLeft="5dp"
+                      android:text="我的相册"/>
+
+            <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:id="@+id/album_collapse_image"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:layout_toRightOf="@id/layout_title"
+                    android:background="@drawable/arrow_down"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:id="@+id/ok_image"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/compelete_selector"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="7dp"/>
+
+        <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/select_num"
+                android:layout_centerVertical="true"
+                android:background="@drawable/pic_select_num_bg"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/ok_image"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:layout_below="@id/album_title"
+                    android:id="@+id/album_main"
+    >
+        <GridView android:id="@+id/album_grid"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:horizontalSpacing="10dp"
+                  android:verticalSpacing="10dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:gravity="center"
+                  android:columnWidth="80dp"
+                  android:numColumns="auto_fit"
+                  android:scrollbars="vertical"
+                  android:scrollbarStyle="insideOverlay"
+                  android:listSelector="@android:color/transparent"
+                  android:stretchMode="columnWidth"
+        />
+        <!-- <GridView
+                 android:id="@+id/album_grid"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:cacheColorHint="@android:color/transparent"
+                 android:clipChildren="true"
+                 android:gravity="center"
+                 android:listSelector="@android:color/transparent"
+                 android:numColumns="3"
+                 android:stretchMode="columnWidth"
+                 android:verticalSpacing="8dip"
+                 android:horizontalSpacing="8dip"
+                 android:padding="14dp"
+                 android:scrollbars="none"
+                 android:clickable="true"
+                 android:descendantFocusability="blocksDescendants"
+                 android:focusable="true">
+         </GridView>-->
+    </RelativeLayout>
+
+</RelativeLayout>

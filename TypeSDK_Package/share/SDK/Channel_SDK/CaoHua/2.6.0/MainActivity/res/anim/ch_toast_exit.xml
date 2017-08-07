@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 出去动画 -->
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@android:integer/config_longAnimTime"
+    android:fromXScale="1"
+    android:toXScale="1"
+    android:fromYScale="1"
+    android:toYScale="0"
+    android:interpolator="@android:anim/decelerate_interpolator" />

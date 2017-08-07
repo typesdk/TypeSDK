@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/row1"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/forum_posts_activity_functions_min_height">
+
+        <LinearLayout
+                android:id="@+id/moreFuncFavorite"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="true"
+                android:background="@drawable/forum_posts_func_bg">
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/moreFuncFavoriteImg"
+                    android:src="@drawable/more_func_favorite"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收藏"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="7dp"/>
+        </LinearLayout>
+        <!--<View android:layout_width="1px" android:layout_height="@dimen/forum_posts_activity_functions_min_height"-->
+        <!--android:background="@color/white" android:visibility="visible"/>-->
+        <LinearLayout
+                android:id="@+id/moreFuncShare"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="true"
+                android:background="@drawable/forum_posts_func_bg"
+                android:visibility="visible">
+            <ImageView android:layout_width="24dp" android:layout_height="22dp"
+                       android:id="@+id/moreFuncShareImg"
+                       android:src="@drawable/more_func_share"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="#ffffff"
+                      android:text="分享"
+                      android:layout_marginTop="7dp"/>
+        </LinearLayout>
+        <!--<View android:layout_width="1px" android:layout_height="@dimen/forum_posts_activity_functions_min_height"-->
+        <!--android:background="@color/white"/>-->
+        <LinearLayout
+                android:id="@+id/moreFuncSort"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="true"
+                android:background="@drawable/forum_posts_func_bg">
+            <ImageView android:layout_width="24dp" android:layout_height="22dp"
+                       android:id="@+id/moreFuncSortImg"
+                       android:src="@drawable/more_func_alphabet"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="#ffffff"
+                      android:text="倒序查看"
+                      android:layout_marginTop="7dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/row2"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/forum_posts_activity_functions_min_height">
+
+        <LinearLayout
+                android:id="@+id/moreFuncReport"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="true"
+                android:background="@drawable/forum_posts_func_bg"
+                android:visibility="visible">
+            <ImageView android:layout_width="24dp" android:layout_height="22dp"
+                       android:id="@+id/moreFuncReportImg"
+                       android:src="@drawable/more_func_report"
+            />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="#ffffff"
+                      android:text="举报"
+                      android:layout_marginTop="7dp"/>
+        </LinearLayout>
+        <!--<View android:layout_width="1px" android:layout_height="@dimen/forum_posts_activity_functions_min_height"-->
+        <!--android:background="@color/white"/>-->
+        <LinearLayout
+                android:id="@+id/moreFuncDelete"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="true"
+                android:background="@drawable/forum_posts_func_bg">
+            <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="22dp"
+                    android:id="@+id/moreFuncDeleteImg"
+                    android:src="@drawable/more_func_delete"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="删除"
+                    android:textSize="12sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="7dp"/>
+        </LinearLayout>
+        <!--<View android:layout_width="1px" android:layout_height="@dimen/forum_posts_activity_functions_min_height"-->
+        <!--android:background="@color/white" android:visibility="visible"/>-->
+
+        <LinearLayout
+                android:id="@+id/moreFuncBest"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="true"
+                android:background="@drawable/forum_posts_func_bg">
+            <ImageView android:layout_width="24dp" android:layout_height="22dp"
+                       android:id="@+id/moreFuncBestImg"
+                       android:src="@drawable/more_func_best_default"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:textSize="12sp"
+                      android:textColor="#ffffff"
+                      android:text="加精"
+                      android:layout_marginTop="7dp"/>
+        </LinearLayout>
+
+        <!--占位块-->
+        <LinearLayout
+                android:id="@+id/block1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="false"
+                android:background="@drawable/forum_posts_func_bg"
+                android:visibility="gone"/>
+        <LinearLayout
+                android:id="@+id/block2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:clickable="false"
+                android:background="@drawable/forum_posts_func_bg"
+                android:visibility="gone"/>
+
+
+    </LinearLayout>
+</LinearLayout>

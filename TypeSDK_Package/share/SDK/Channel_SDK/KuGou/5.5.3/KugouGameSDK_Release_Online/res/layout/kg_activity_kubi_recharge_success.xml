@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kg="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/kg_common_title_bar" />
+
+    <ScrollView
+        android:id="@+id/kg_recharge_success_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/kg_layout_recharge_success"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/kg_common_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.kugou.game.sdk.ui.widget.GameFitGridRelativeLayout
+                android:id="@+id/kg_rl_gs_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/kg_iv_gs_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kg_gs_default_img" />
+
+                <TextView
+                    android:id="@+id/kg_tv_count_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/kg_common_white" />
+            </com.kugou.game.sdk.ui.widget.GameFitGridRelativeLayout>
+
+            <ImageView
+                android:id="@+id/kg_img_result_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:src="@drawable/kg_register_success_icon" />
+
+            <TextView
+                android:id="@+id/kg_tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="@string/kg_kubi_recharge_9"
+                android:textColor="#ff000022"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/kg_ll_recharge_success_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="visible" >
+
+                <!-- 账号，余额 -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp" >
+
+                    <TextView
+                        android:id="@+id/kg_tv_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:text="@string/kg_kubi_recharge_9"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kg_tv_remain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/kg_tv_account"
+                        android:layout_below="@+id/kg_tv_account"
+                        android:padding="5dp"
+                        android:text="@string/kg_kubi_recharge_9"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- 设置支付密码，title和两个密码输入框 -->
+
+                <LinearLayout
+                    android:id="@+id/kg_ll_set_pay_passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="为确保您的财产安全，请设置6位支付密码"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/kg_et_input_login_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/kg_btn_height"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/kg_sp_bg"
+                        android:hint="请输入登录密码"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textColorHint="@color/kg_common_gray_lighter"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/kg_et_input_pay_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/kg_btn_height"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/kg_sp_bg"
+                        android:hint="请设置6位数的支付密码"
+                        android:inputType="numberPassword"
+                        android:maxLength="6"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textColorHint="@color/kg_common_gray_lighter"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/kg_btn_sure"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/kg_selector_btn_blue"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_ime_option_done"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- 设置支付密码成功layout，显示安全评分 -->
+
+            <LinearLayout
+                android:id="@+id/kg_ll_set_passwd_success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/kg_ll_set_save_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/kg_tv_safety_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="您当前账号安全评分：20分"
+                            android:textColor="@color/kg_common_gray_lighter"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/kg_iv_phone_icon"
+                            android:layout_width="17dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/kg_security_phone_default" />
+
+                        <ImageView
+                            android:id="@+id/kg_iv_email_icon"
+                            android:layout_width="17dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/kg_security_email_default" />
+
+                        <ImageView
+                            android:id="@+id/kg_iv_problem_icon"
+                            android:layout_width="17dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/kg_security_question_default" />
+
+                        <ImageView
+                            android:id="@+id/kg_iv_idcard_icon"
+                            android:layout_width="17dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/kg_security_identity_default" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/kg_tv_tips_to_auth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="支付安全存在漏洞，请尽快设置手机身份证"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/kg_ll_no_tips_checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <CheckBox
+                            android:id="@+id/kg_iv_checkbox"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/kg_checkbox_selector"
+                            android:button="@null" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="不再提示"
+                            android:textColor="@color/kg_common_gray_lighter"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/kg_btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/kg_selector_btn_blue"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_ime_option_done"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="250dip"
+                android:layout_height="300dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loadingView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/kg_common_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

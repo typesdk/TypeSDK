@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.le.legamesdk.widget.LeMainViewParent
+        android:id="@+id/le_main_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/le_sdk_main_view_margin"
+        android:background="@drawable/le_main_view_border_line_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/le_main_view_action_bar"
+                layout="@layout/le_main_view_action_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_main_view_action_bar_height" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/le_main_view_bg"
+                android:padding="1px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/le_border_line_color"
+                android:padding="1px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/le_pay_select_info"
+                    style="@style/LeStyleBlack12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="@dimen/le_pay_select_margin_offset"
+                    android:layout_marginStart="@dimen/le_pay_select_margin_offset"
+                    android:text="@string/le_pay_select_info" />
+
+                <TextView
+                    android:id="@+id/le_pay_select_rmb_to_le_play_coin"
+                    style="@style/LeStyleOrange12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/le_pay_select_margin_offset"
+                    android:layout_marginRight="@dimen/le_pay_select_margin_offset"
+                    android:text="@string/le_sdk_rmb_to_le_play_coin" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_pay_select_height"
+                android:layout_marginEnd="@dimen/le_pay_select_margin_offset"
+                android:layout_marginLeft="@dimen/le_pay_select_margin_offset"
+                android:layout_marginRight="@dimen/le_pay_select_margin_offset"
+                android:layout_marginStart="@dimen/le_pay_select_margin_offset"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/le_pay_select_rmb_10"
+                    style="@style/LeStyleGraySelectedGreen14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/le_hollow_border_line_bg_rect"
+                    android:gravity="center"
+                    android:text="@string/le_pay_select_unit_rmb_10" />
+
+                <TextView
+                    android:id="@+id/le_pay_select_rmb_30"
+                    style="@style/LeStyleGraySelectedGreen14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/le_hollow_border_line_bg_rect"
+                    android:gravity="center"
+                    android:text="@string/le_pay_select_unit_rmb_30" />
+
+                <TextView
+                    android:id="@+id/le_pay_select_rmb_50"
+                    style="@style/LeStyleGraySelectedGreen14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/le_hollow_border_line_bg_rect"
+                    android:gravity="center"
+                    android:text="@string/le_pay_select_unit_rmb_50" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_pay_select_height"
+                android:layout_marginEnd="@dimen/le_pay_select_margin_offset"
+                android:layout_marginLeft="@dimen/le_pay_select_margin_offset"
+                android:layout_marginRight="@dimen/le_pay_select_margin_offset"
+                android:layout_marginStart="@dimen/le_pay_select_margin_offset"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/le_pay_select_rmb_100"
+                    style="@style/LeStyleGraySelectedGreen14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/le_hollow_border_line_bg_rect"
+                    android:gravity="center"
+                    android:text="@string/le_pay_select_unit_rmb_100" />
+
+                <TextView
+                    android:id="@+id/le_pay_select_rmb_300"
+                    style="@style/LeStyleGraySelectedGreen14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/le_hollow_border_line_bg_rect"
+                    android:gravity="center"
+                    android:text="@string/le_pay_select_unit_rmb_300" />
+
+                <TextView
+                    android:id="@+id/le_pay_select_rmb_500"
+                    style="@style/LeStyleGraySelectedGreen14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/le_hollow_border_line_bg_rect"
+                    android:gravity="center"
+                    android:text="@string/le_pay_select_unit_rmb_500" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_pay_select_height"
+                android:layout_margin="@dimen/le_pay_select_margin_offset"
+                android:background="@drawable/le_hollow_border_line_bg_rect"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/le_pay_select_unit"
+                    style="@style/LeStyleBlack14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center"
+                    android:text="@string/le_pay_select_unit_rmb" />
+
+                <EditText
+                    android:id="@+id/le_pay_select_value_edit"
+                    style="@style/LeStyleBlack16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@id/le_pay_select_unit"
+                    android:layout_toStartOf="@id/le_pay_select_unit"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/le_pay_select_value_hint"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:paddingLeft="6dp"
+                    android:paddingStart="6dp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/le_pay_select_next_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="@dimen/le_pay_select_margin_offset"
+                android:layout_marginLeft="@dimen/le_pay_select_margin_offset"
+                android:layout_marginRight="@dimen/le_pay_select_margin_offset"
+                android:layout_marginStart="@dimen/le_pay_select_margin_offset"
+                android:background="@drawable/le_solid_button_bg"
+                android:text="@string/le_sdk_next_content"
+                android:textColor="@color/lepay_white" />
+        </LinearLayout>
+    </com.le.legamesdk.widget.LeMainViewParent>
+
+</RelativeLayout>

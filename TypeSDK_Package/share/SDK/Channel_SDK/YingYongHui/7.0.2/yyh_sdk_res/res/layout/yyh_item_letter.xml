@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center"
+    android:background="@color/yyh_white"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/yyh_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/yyh_time"
+            android:layout_toStartOf="@+id/yyh_time"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="感恩回馈，再续前缘"
+            android:textColor="@color/yyh_gray_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/yyh_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2015-09-09"
+            android:textColor="@color/yyh_gray_dark"
+            android:textSize="11sp" />
+    </RelativeLayout>
+    <!--
+         <TextView
+        android:id="@+id/yyh_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/yyh_gray_dark"
+        android:text="今天天气好今天天气好晴朗"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    -->
+
+    <!-- <TextView
+        android:id="@+id/yyh_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="https://www.baidu.com"
+        android:textColor="@color/yyh_gray"
+        android:visibility="gone" /> -->
+
+</LinearLayout>

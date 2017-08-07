@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="@color/activity_default_background">
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/mg_mian_fragmentlayout"
+            android:layout_alignParentLeft="false"
+            android:layout_marginBottom="@dimen/main_content_margin_b"
+            android:layout_alignParentBottom="false"
+            android:visibility="visible">
+    </FrameLayout>
+
+    <!--tab-->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_bottom_h"
+            android:id="@+id/mainTab"
+            android:layout_weight="0"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/mg_main_table_back"
+    >
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:id="@+id/mg_recom_tabselect"
+                    android:layout_marginTop="@dimen/main_bottom_magin_t">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mg_recom_image"
+                        android:src="@drawable/mg_main_activity_selected"
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动"
+                        android:id="@+id/mg_recom_text"
+                        android:gravity="center"
+                        android:textSize="@dimen/main_detial_textsize"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:id="@+id/mg_category_tabselect"
+                    android:layout_marginTop="@dimen/main_bottom_magin_t">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mg_category_image"
+                        android:src="@drawable/mg_main_gift_normal"
+                />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="礼包"
+                        android:id="@+id/mg_category_text"
+                        android:gravity="center"
+                        android:textSize="@dimen/main_detial_textsize"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_weight="0"
+                android:id="@+id/mg_chart_tabselect"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/mg_main_account_normal"
+                android:layout_gravity="center">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mg_chart_image"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/mg_main_forum_normal"
+                    android:focusableInTouchMode="false"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mg_chart_text"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/main_detial_textsize"
+                    android:text="账号"
+                    android:layout_below="@+id/mg_chart_image"/>
+
+            <TextView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/bigCenterRound"
+                    android:gravity="center"
+                    android:background="@drawable/mygame_big_round"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"
+                    android:textSize="8sp"
+                    android:layout_alignTop="@+id/mg_chart_image"
+                    android:layout_alignRight="@+id/mg_chart_image"
+                    android:layout_marginRight="-19dp"
+                    android:layout_marginTop="-11dp"/>
+
+        </RelativeLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/fightSelect"
+                    android:layout_marginTop="@dimen/main_bottom_magin_t">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fightImage"
+                        android:src="@drawable/mg_main_strategy_normal"
+                />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="攻略"
+                        android:id="@+id/fightText"
+                        android:gravity="center"
+                        android:textSize="@dimen/main_detial_textsize"
+                />
+            </LinearLayout>
+            <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/mg_emulator_tabselect"
+                    android:clickable="true"
+                    android:layout_marginTop="@dimen/main_bottom_magin_t" android:gravity="center"
+            >
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mg_emulator_tabselect_layout"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="2dp">
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/mg_emulator_image"
+                            android:src="@drawable/mg_main_forum_normal"
+                    />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="社区"
+                            android:id="@+id/mg_emulator_text"
+                            android:gravity="center"
+                            android:textSize="@dimen/main_detial_textsize"
+                    />
+
+                </LinearLayout>
+                <!--android:background="@drawable/mygame_big_round"-->
+
+                <TextView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:id="@+id/unreadMessageBadge"
+                        android:gravity="center"
+                        android:background="@drawable/mygame_big_round"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone"
+                        android:textSize="8sp"
+                        android:layout_alignTop="@+id/mg_emulator_tabselect_layout"
+                        android:layout_alignRight="@+id/mg_emulator_tabselect_layout"
+                        android:layout_marginRight="-7dp"
+                        android:layout_marginTop="-3dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <VideoView android:layout_width="0dp" android:layout_height="0dp"/>
+
+
+    <!--bottom-->
+    <View android:layout_width="match_parent" android:layout_height="0dp"
+          android:id="@+id/bottom" android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

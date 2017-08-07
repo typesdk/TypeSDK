@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "match_parent"
+              android:layout_height = "match_parent"
+              android:orientation = "horizontal" >
+
+	<ProgressBar
+			android:id = "@+id/umipay_loading_progressbar"
+			style = "?android:attr/progressBarStyleSmall"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:indeterminate = "true" />
+
+	<TextView
+			android:id = "@+id/umipay_loading_textview"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:text = "@string/umipay_base_net_wait"
+			android:textSize = "12sp" />
+</LinearLayout >

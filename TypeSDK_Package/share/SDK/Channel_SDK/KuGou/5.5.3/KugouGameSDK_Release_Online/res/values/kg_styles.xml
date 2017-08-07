@@ -1,0 +1,193 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 来源于core -->
+    <style name="Theme.UPPay" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 来源于library -->
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="kg_SdkBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+
+    <style name="kg_user_center_dialog_button" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@color/kg_common_transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="kg_ProgressBar_Loading_Small" parent="@android:style/Widget.ProgressBar">
+        <item name="android:maxWidth">25.0dip</item>
+        <item name="android:maxHeight">25.0dip</item>
+        <item name="android:minWidth">25.0dip</item>
+        <item name="android:minHeight">25.0dip</item>
+        <item name="android:indeterminateDrawable">@anim/kg_loading_small</item>
+    </style>
+
+    <style name="kg_CustomProgressDialog" parent="kg_user_center_dialog_button">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="NotificationText" parent="android:TextAppearance.StatusBar.EventContent" />
+
+    <style name="NotificationTitle" parent="android:TextAppearance.StatusBar.EventContent.Title" />
+
+    <style name="kg_KYTheme_Widget_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/kg_common_transparent</item>
+    </style>
+    
+    	<style name="kg_Theme.CustomDialog" parent="android:style/Theme.Dialog">
+    	<item name="android:windowNoTitle">true</item>
+    </style> 
+
+    <!-- 来源于游戏中心 -->
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="kg_acSdkBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="kg_SdkTheme" parent="kg_acSdkBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="kg_KYTheme" parent="android:Theme.Light"></style>
+
+    <style name="kg_KYTheme.Divider">
+        <item name="android:background">@color/kg_common_divider</item>
+    </style>
+
+    <style name="kg_KYTheme.Divider.Horizontal" parent="kg_KYTheme.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="kg_KYTheme.Divider.Vertical" parent="kg_KYTheme.Divider">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="kg_MyActivity" parent="@style/kg_SdkTheme">
+        <item name="android:windowAnimationStyle">@style/kg_MyAnimation</item>
+    </style>
+
+    <style name="kg_MyAnimation">
+        <item name="android:activityOpenEnterAnimation">@anim/kg_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/kg_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/kg_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/kg_activity_close_exit</item>
+    </style>
+
+    <!-- 充值中心四个tab的style -->
+    <style name="kg_KYTheme.RadioButton.Tab" parent="@android:style/Widget.Button">
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    
+    <!-- 短信支付 -->
+    <style name="transcutestyle_vsofo" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    
+        <style name="Dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/translucent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/translucent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <style name="GridPasswordView" />
+
+    <style name="GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="GridPasswordView.EditText" parent="GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+    
+</resources>

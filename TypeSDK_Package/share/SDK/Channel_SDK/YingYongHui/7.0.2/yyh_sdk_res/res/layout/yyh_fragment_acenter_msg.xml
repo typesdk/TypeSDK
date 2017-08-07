@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingTop="15dp"
+              android:background="@drawable/yyh_corner_botton_white_bg"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:padding="0.75dp"
+            android:id="@+id/yyh_center_msg_rg"
+            android:layout_width="wrap_content"
+            android:background="@drawable/yyh_blue_frame_bg"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/yyh_center_msg_notify"
+                android:background="@drawable/yyh_redio_btn_blue_left"
+                android:button="@null"
+                android:layout_width="90dp"
+                android:gravity="center"
+                android:text="通知"
+                android:textColor="@color/yyh_text_selector_blue_white"
+                android:layout_height="30dp"/>
+
+            <RadioButton
+                android:id="@+id/yyh_center_msg_letter"
+                android:background="@drawable/yyh_redio_btn_blue_right"
+                android:button="@null"
+                android:text="私信"
+                android:textColor="@color/yyh_text_selector_blue_white"
+                android:gravity="center"
+                android:layout_width="90dp"
+                android:layout_height="30dp"/>
+        </RadioGroup>
+            <ImageView
+                android:id="@+id/yyh_center_msg_notify_unread"
+                android:layout_gravity="center_vertical"
+                android:layout_width="10dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:background="@drawable/yyh_corner_round_red_bg"
+                android:layout_height="10dp"/>
+            <ImageView
+                android:id="@+id/yyh_center_msg_letter_unread"
+                android:layout_gravity="center_vertical"
+                android:layout_width="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="103dp"
+                android:background="@drawable/yyh_corner_round_red_bg"
+                android:layout_height="10dp"/>
+        </FrameLayout>
+        <ImageView
+            android:id="@+id/yyh_center_msg_delete"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:src="@drawable/yyh_msg_delete"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="10dp"
+        android:id="@+id/yyh_center_msg_pagercontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/yyh_corner_botton_white_bg"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"/>
+</LinearLayout>

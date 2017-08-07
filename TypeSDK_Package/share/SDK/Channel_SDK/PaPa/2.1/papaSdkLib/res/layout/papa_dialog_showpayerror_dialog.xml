@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        >
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="@dimen/dp861"
+              android:layout_height="wrap_content"
+              android:paddingBottom="@dimen/dp51"
+        android:paddingTop="@dimen/dp51"
+        android:background="@color/white"
+        >
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notice"
+        android:textColor="#d79537"
+        android:textSize="@dimen/dp48"
+        android:layout_marginLeft="@dimen/dp39"
+        android:layout_marginBottom="@dimen/dp39"
+        />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:id="@+id/textView"
+                android:background="#d9d7c2"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp45"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/content"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/dp36"
+                android:layout_marginLeft="@dimen/dp45"
+                android:layout_marginRight="@dimen/dp39"
+                    />
+
+    </RelativeLayout>
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="@dimen/dp102"
+                 android:layout_marginTop="@dimen/dp45"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:id="@+id/lay_1"
+            >
+        <!--取消支付-->
+        <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/dp16"
+                android:background="@drawable/papa_cancel_exit_btn"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/dp39"
+                android:text="取消"
+                android:layout_marginLeft="@dimen/dp39"
+                />
+
+        <Button
+                android:id="@+id/downLoadBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp16"
+                android:background="@drawable/papa_pay_btn"
+                android:textSize="@dimen/dp39"
+                android:textColor="@color/white"
+                android:text="立即下载"
+                android:layout_marginRight="@dimen/dp39"
+                />
+
+        <!--继续支付-->
+
+
+    </LinearLayout>
+
+
+
+        <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/papa_pay_btn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp39"
+                android:text="取消"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                />
+
+
+
+
+    </FrameLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

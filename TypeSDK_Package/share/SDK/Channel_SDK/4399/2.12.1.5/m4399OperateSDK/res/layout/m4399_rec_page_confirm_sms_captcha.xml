@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/m4399RecPageStyle"
+    android:layout_width="@dimen/m4399_rec_page_width"
+    android:layout_height="@dimen/m4399_rec_page_height" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_title_height"
+        layout="@layout/m4399_rec_sec_confirm_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginTop="16dp"
+        android:background="@color/m4399_rec_color_white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+            <TextView
+                android:textColor="@color/m4399_rec_sdk_color_black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m4399_rec_edittext_height"
+                android:text="@string/m4399_rec_corp_name"/>
+            <TextView
+                android:textColor="@color/m4399_rec_sdk_color_black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m4399_rec_edittext_height"
+                android:layout_gravity="center_vertical"
+                android:text="@string/m4399_rec_corp_namecontents"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/m4399_rec_edittext_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edt_tel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/m4399_rec_edittext_bg"
+                android:gravity="center_vertical|left"
+                android:hint="@string/m4399_rec_sms_input_phone_tip"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="#111111"
+                android:textCursorDrawable="@null"
+                android:imeOptions="actionDone"
+                android:textSize="13sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_get_captcha"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/m4399_rec_get_captcha_btn_bg"
+                android:paddingLeft="@dimen/m4399_rec_liantong_cfm_captcha_padding"
+                android:paddingRight="@dimen/m4399_rec_liantong_cfm_captcha_padding"
+                android:textColor="@color/m4399_rec_liantong_get_captcha_btn_color"
+                android:enabled="false"
+                android:text="@string/m4399_rec_sms_get_captha_tip" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_captcha"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/m4399_rec_edittext_height"
+            android:background="@drawable/m4399_rec_edittext_bg"
+            android:gravity="center_vertical|left"
+            android:hint="@string/m4399_rec_sms_input_captha_tip"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:textColor="#111111"
+            android:textCursorDrawable="@null"
+            android:imeOptions="actionDone"
+            android:enabled="false"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_ope_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:visibility="invisible"
+            android:textColor="#fd0808" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <include
+            layout="@layout/m4399_rec_sec_mvcenter_separator"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:layout_height="@dimen/m4399_rec_separator_height" />
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/m4399_rec_sum_btns_eara_height"
+            android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+            android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+            android:layout_marginBottom="@dimen/m4399_rec_single_btn_marginBottom"
+            layout="@layout/m4399_rec_sec_single_btn_area" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_foot_height"
+        layout="@layout/m4399_rec_sec_standard_foot" />
+
+</LinearLayout>

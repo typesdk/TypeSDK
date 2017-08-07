@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout 
+	    android:layout_width="282.0dp"
+	    android:layout_height="67.0dp"
+	    android:background="@drawable/default_lb_logloading"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+	    
+	    <ImageView 
+	        android:id="@+id/lb_circle_iv"
+	        android:layout_width="17.0dp"
+	        android:layout_height="17.0dp"
+	        android:src="@drawable/default_lb_loading_circle"/>
+	    
+	    <TextView
+	        android:id="@+id/lb_msg_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#fafff4"
+	        android:textSize="14.0sp"
+	        android:layout_marginLeft="11.0dp"
+	        android:text="正在载入..."/>
+	</LinearLayout>
+</LinearLayout>

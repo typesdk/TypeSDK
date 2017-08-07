@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ComposerDark" parent="@android:style/Theme.Holo">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@color/tw__composer_white</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_white</item>
+    </style>
+    <style name="ComposerLight" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">@color/tw__composer_black</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_blue</item>
+    </style>
+</resources>

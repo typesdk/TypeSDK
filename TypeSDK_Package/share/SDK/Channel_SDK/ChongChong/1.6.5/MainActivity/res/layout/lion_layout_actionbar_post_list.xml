@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.actionbar.menu.list.ActionbarPostMenuListLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                       android:layout_width="match_parent"
+                                                                       android:layout_height="match_parent"
+                                                                       android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/lion_action_menu_post_media"
+        style="@style/lion_actionbar_menu_list_item"
+        android:gravity="center"
+        android:paddingLeft="0.0dip"
+        android:text="@string/lion_text_community_post_media"
+        android:textColor="@color/lion_common_text_gray" />
+
+    <View
+        android:layout_width="125.0dip"
+        android:layout_height="0.5dip"
+        android:background="@color/lion_common_line" />
+
+    <TextView
+        android:id="@id/lion_action_menu_post_normal"
+        style="@style/lion_actionbar_menu_list_item"
+        android:gravity="center"
+        android:paddingLeft="0.0dip"
+        android:text="@string/lion_text_community_post_normal"
+        android:textColor="@color/lion_common_text_gray" />
+
+</com.lion.ccpay.widget.actionbar.menu.list.ActionbarPostMenuListLayout>

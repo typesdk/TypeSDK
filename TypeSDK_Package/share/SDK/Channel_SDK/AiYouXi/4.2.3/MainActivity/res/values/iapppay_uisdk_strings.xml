@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+
+    <!-- account for set password -->
+    <string name="iapppay_ui_account_set_title_tv_master">设置支付密码</string>
+
+    <!-- account for small password -->
+    <string name="iapppay_ui_account_small_password_title_tv_master">设置密码</string>
+
+    <!-- account for small value -->
+    <string name="iapppay_ui_account_small_value_title_tv_master">设置小额免密</string>
+    
+</resources>

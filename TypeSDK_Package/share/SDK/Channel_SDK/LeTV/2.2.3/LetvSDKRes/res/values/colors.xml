@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 支付部分 -->
+    <color name="lepay_red">#FF0000</color>
+    <color name="lepay_white">#ffffff</color>
+    <color name="lepay_cashier_black">#000000</color>
+
+    <!-- 字体颜色 -->
+    <color name="lepay_banner_sales">#f2c86c</color>
+    <color name="lepay_banner_text">#c38c40</color>
+    <color name="lepay_actionbar_title_font_color">#000000</color>
+    <color name="lepay_bind_manage_add_font_color">#d6d6d6</color>
+    <color name="lepay_bottom_button_font_color">#ffffff</color>
+    <color name="lepay_item_bankname_font_color">#000000</color>
+    <color name="lepay_item_bankno_font_color">#8d8d8d</color>
+    <color name="lepay_et_cardinfo_font_color">#cecece</color>
+    <color name="lepay_tv_paymoney_font_color">#242424</color>
+    <color name="lepay_tv_paymoneyvalue_font_color">#fd4d4b</color>
+    <color name="lepay_tv_agree_font_color">#000000</color>
+    <color name="lepay_tv_note_font_color">#6b6b6b</color>
+    <color name="lepay_et_mobile_font_color">#959595</color>
+    <color name="lepay_et_validity_font_color">#959595</color>
+    <color name="lepay_paychannel_item_desc_font_color">#959595</color>
+    <color name="lepay_cashier_trade_title_font_color">#343434</color>
+    <color name="lepay_cashier_trade_desc_font_color">#aaaaaa</color>
+    <color name="lepay_cashier_trade_price_font_color">#f55d5d</color>
+    <color name="lepay_note_verify_cvv2_color">#ff333333</color>
+    <color name="lepay_common_dialog_font_color">#8b8a8a</color>
+    <color name="lepay_common_dialog_desc_font_color">#666666</color>
+    <color name="lepay_tv_password_dialog_forget_password_font_color">#0093dc</color>
+    <color name="lepay_tv_password_dialog_bank_font_color">#2f3737</color>
+    <color name="lepay_tv_desc_num_font_color">#333333</color>
+    <color name="lepay_tv_password_dialog_desc_font_color">#999999</color>
+    <color name="lepay_cashier_paytype_other_selector_font_color">#727272</color>
+    <color name="lepay_tv_password_dialog_money_font_color">#f45f60</color>
+    <color name="lepay_tv_agreement_dialog_desc_font_color">#303538</color>
+
+    <!-- 背景色值 -->
+    <color name="lepay_actionbar_bg_color">#e9e9e9</color>
+    <color name="lepay_page_layout_bg_color">#e9e9e9</color>
+    <color name="lepay_page_layout_bg_color2">#f7f7f7</color>
+    <color name="lepay_iv_password_dialog_line_bg_color">#f4f4f4</color>
+
+    <!-- 密码color -->
+    <color name="lepay_actionbar_leftbutton_select">#dcdcdc</color>
+    <color name="lepay_actionbar_leftbutton">#e9e9e9</color>
+    <color name="lepay_black">#000000</color>
+    <color name="cF45353">#F45353</color>
+    <color name="c717272">#717272</color>
+    <color name="c555555">#555555</color>
+    <color name="cB3B3B3">#B3B3B3</color>
+    <color name="c333333">#333333</color>
+    <color name="cc7c7c7">#c7c7c7</color>
+    <color name="cfff8ee">#fff8ee</color>
+    <color name="c00323232">#aa323232</color>
+    <color name="cFFA44F">#FFA44F</color>
+    <color name="cF2782D">#F2782D</color>
+    <color name="cd7d7d7">#d7d7d7</color>
+
+    <!-- 游戏券 -->
+    <color name="transparent">#01000000</color>
+    <color name="transparent_80">#80000000</color>
+    <color name="lepay_coupon_red">#fb474c</color>
+
+    <!-- 帐号部分 -->
+    <color name="leui_status_bar_background">#2a3147</color>
+    <color name="le_oauth_text_color_white">#ffffff</color>
+    <color name="le_oauth_status_bar_background">#2a3147</color>
+    <color name="le_oauth_account_background">#cc000000</color>
+    <color name="le_oauth_btn_pressed">#2395ee</color>
+    <color name="le_oauth_btn_normal">#2395ee</color>
+    <color name="le_oauth_spinner_drop_down_divider">#c2c2c2</color>
+    <color name="le_oauth_main_content_background_color">#f9f9f9</color>
+    <color name="le_oauth_button_bar_color">#f8f8f8</color>
+    <color name="le_oauth_account_manager_main_view_border_color">#c0c0c0</color>
+    <color name="le_oauth_account_manager_slogan_color">#5B6767</color>
+    <color name="le_oauth_account_manager_other_login_text_color">#2EB4EA</color>
+    <color name="le_oauth_account_manager_main_title_text_color">#2C2C2C</color>
+    <color name="le_oauth_loading_dot_green">#A3C31D</color>
+    <color name="le_oauth_loading_dot_gray">#5B6767</color>
+    <color name="le_oauth_loading_dot_red">#CA171D</color>
+    <color name="le_oauth_loading_dot_blue">#27A3D5</color>
+    <color name="le_oauth_orange_dark">#fa8700</color>
+    <color name="le_oauth_orange">#f19149</color>
+    <color name="le_oauth_orange_light">#f6b37f</color>
+
+    <!-- SDK窗体部分 -->
+    <color name="sdk_green">#80c45d</color>
+    <color name="sdk_gray">#747474</color>
+    <color name="sdk_thread">#e5e5e5</color>
+    <color name="sdk_black">#292929</color>
+    <color name="sdk_green_gray">#a6a6a6</color>
+    <color name="sdk_GreyWhite_has_alpha">#66FAFAFA</color>
+    <color name="sdk_transparent">#01000000</color>
+    <color name="sdk_color_purple_bd6aff">#bd6aff</color>
+    <color name="sdk_action_bar_tittle_color_555555">#B3ffffff</color>
+    <color name="sdk_title_green">#449e16</color>
+    <color name="sdk_gray_40">#404040</color>
+    <color name="sdk_gray_c6">#c6c6c6</color>
+    <color name="sdk_gray_65">#656565</color>
+    <color name="sdk_gray_47">#474747</color>
+
+    <!-- 边框线颜色 -->
+    <color name="le_border_line_color">#C7CED2</color>
+    <color name="le_main_view_bg">#f1f1f1</color>
+
+    <!-- 九宫格图标字体颜色 -->
+    <color name="le_main_common_text_color">#919191</color>
+    <color name="lesdk_gray">#d0cfcf</color>
+    <color name="lesdk_green_dark">#7bbb5a</color>
+    <color name="lesdk_green_light">#8dd568</color>
+    <color name="lesdk_gray_light">#dfdfdf</color>
+    <color name="lesdk_gray_dark">#A2A2A2</color>
+    <color name="lesdk_transparent_80">#80000000</color>
+    <color name="lesdk_transparent">#00000000</color>
+    <color name="lesdk_orange">#ffaf67</color>
+    <color name="line_color">#d9d9d9</color>
+
+</resources>

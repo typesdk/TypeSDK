@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:duration="200"
+        android:drawable="@drawable/m4399_ope_loading_001" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/m4399_ope_loading_002" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/m4399_ope_loading_003" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/m4399_ope_loading_004" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/m4399_ope_loading_005" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/m4399_ope_loading_006" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/m4399_ope_loading_007" />
+    <item
+        android:duration="200"
+        android:drawable="@drawable/m4399_ope_loading_008" />
+</animation-list>

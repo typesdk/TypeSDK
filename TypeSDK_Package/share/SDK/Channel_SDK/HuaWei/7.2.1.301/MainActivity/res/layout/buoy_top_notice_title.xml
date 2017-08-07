@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:id="@+id/top_notice_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="false"
+        android:orientation="horizontal">
+     </LinearLayout>
+     
+    <RelativeLayout
+        android:id="@+id/top_notice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="#b3ffffff">
+        
+        <ImageView 
+            android:id="@+id/top_notice_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="14dp"
+        	android:layout_marginBottom="14dp"
+        	android:layout_marginLeft="12dp"
+        	android:layout_marginRight="8dp"
+            android:src="@drawable/buoy_game_icon"/>
+	        
+        <com.huawei.gameservice.sdk.view.MarqeeTextView
+            android:id="@+id/top_notice_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="12dp"
+            android:layout_toRightOf="@+id/top_notice_image"
+            android:layout_alignParentRight="true"
+            
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:alpha="0.85"/>
+     </RelativeLayout>
+    
+</FrameLayout>

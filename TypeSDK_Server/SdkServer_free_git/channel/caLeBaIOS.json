@@ -1,0 +1,36 @@
+{
+  "version": "1.1.0.20151231",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "POST",
+      "in_params": {
+        "t": "",
+        "uid": ""
+      },
+      "out_url": "http://api.le890.com/index.php?m=api&a=validate_token",
+      "out_params": {
+        "appid": "",
+        "t": "",
+        "uid": ""
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "n_time": "",
+        "appid": "",
+        "o_id": "",
+        "t_fee": "",
+        "g_name": "",
+        "g_body": "",
+        "t_status": ""
+      },
+      "out_url": "http://api.le890.com/index.php?m=api&a=validate_token",
+      "out_params": {
+        "code": ""
+      }
+    }
+  ]
+}

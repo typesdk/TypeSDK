@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/month_area"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/month_up_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/mini_year_month_picker_button"
+            android:text="+"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/month_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/month_up_btn"
+            android:background="#ededec"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/month_down_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/month_text"
+            android:background="@drawable/mini_year_month_picker_button"
+            android:text="-"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/year_area"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/month_area" >
+
+        <Button
+            android:id="@+id/year_up_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/mini_year_month_picker_button"
+            android:text="+"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/year_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/year_up_btn"
+            android:background="#ededec"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/year_down_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/year_text"
+            android:background="@drawable/mini_year_month_picker_button"
+            android:text="-"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

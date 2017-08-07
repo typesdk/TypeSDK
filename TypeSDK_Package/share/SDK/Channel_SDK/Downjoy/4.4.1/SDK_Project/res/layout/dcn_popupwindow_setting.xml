@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dcn_popupwindow_up_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dcn_transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/dcn_popwindow_setting_triangle" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/dcn_popupwindow_up_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dcn_float_dropmenu_bg" />
+
+    <!--<include-->
+        <!--android:id="@+id/dcn_popupwindow_up_setting_ll"-->
+        <!--layout="@layout/dcn_popupwindow_setting_up_item_gridview" />-->
+</LinearLayout>

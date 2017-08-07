@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/m4399_rec_color_white"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="6dp"
+    android:paddingLeft="@dimen/m4399_rec_paddingLeft"
+    android:paddingRight="@dimen/m4399_rec_paddingRight">
+
+    <include layout="@layout/m4399_rec_sec_init_order_info" />
+
+    <LinearLayout
+        android:id="@+id/ll_coupon_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m4399_rec_coupou_usage_alert_a"
+            android:textColor="@color/m4399_rec_color_grey"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_coupon_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_coupon_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/m4399_rec_coupon_link_text_color"
+                android:textSize="16sp"
+                tools:text="1 Yuan 优惠券" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="6dp"
+                android:adjustViewBounds="true"
+                android:duplicateParentState="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/m4399_rec_coupon_goto_tips" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

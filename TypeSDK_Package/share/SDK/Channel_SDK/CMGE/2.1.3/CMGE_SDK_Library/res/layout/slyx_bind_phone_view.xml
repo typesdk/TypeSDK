@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+ 
+
+    <LinearLayout
+        android:id="@+id/slyx_bind_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80.0dip"
+        android:layout_marginRight="80.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/slyx_change_bind_dis_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_marginRight="5.0dip"
+                android:background="@drawable/slyx_info"
+                android:contentDescription="@string/slyx_img_des" />
+
+            <TextView
+                android:id="@+id/slyx_change_bind_dis_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffe59139"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/slyx_bind_user_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/slyx_login_account_info_shape"
+            android:orientation="horizontal"
+            android:padding="2.0dip" >
+
+            <ImageView
+                android:id="@+id/slyx_bind_user_img"
+                android:layout_width="18.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/slyx_user_icon_s"
+                android:contentDescription="@string/slyx_img_des" />
+
+            <EditText
+                android:id="@+id/slyx_bind_username_et"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/slyx_bind_user_img"
+                android:background="@null"
+                android:hint="@string/cmge_username"
+                android:inputType="text"
+                android:textColor="#ffa0a0a0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/slyx_bind_phone_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/slyx_login_account_info_shape"
+            android:orientation="horizontal"
+            android:padding="2.0dip" >
+
+            <ImageView
+                android:id="@+id/slyx_bind_phone_img"
+                android:layout_width="15.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/slyx_phone_icon_s"
+                android:contentDescription="@string/slyx_img_des" />
+
+            <Button
+                android:id="@+id/slyx_get_verfiy_code_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="4.0dip"
+                android:paddingLeft="4.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingTop="0dip"
+                android:paddingBottom="0dip"
+                android:background="@drawable/slyx_vcode_s"
+                android:gravity="center"
+                android:text="@string/slyx_vcode_submit_bt"
+                android:textColor="@drawable/slyx_vcode_color"
+                android:textSize="12.0sp" />
+
+            <EditText
+                android:id="@+id/slyx_bind_phonenumber_et"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toLeftOf="@+id/slyx_get_verfiy_code_bt"
+                android:layout_toRightOf="@+id/slyx_bind_phone_img"
+                android:background="@null"
+                android:hint="@string/cmge_input_phone"
+                android:inputType="phone"
+                android:textColor="#ffa0a0a0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/slyx_bind_vcode_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/slyx_login_account_info_shape"
+            android:orientation="horizontal"
+            android:padding="2.0dip" >
+
+            <ImageView
+                android:id="@+id/slyx_bind_vcode_img"
+                android:layout_width="15.0dip"
+                android:layout_height="20.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/slyx_vcode_icon_s"
+                android:contentDescription="@string/slyx_img_des" />
+
+            <EditText
+                android:id="@+id/slyx_bind_code_et"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/slyx_bind_vcode_img"
+                android:background="@null"
+                android:hint="@string/cmge_input_vcode"
+                android:inputType="number"
+                android:textColor="#ffa0a0a0" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/slyx_bind_submit_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginBottom="0.0dip"
+            android:layout_marginLeft="0.0dip"
+            android:layout_marginRight="0.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/slyx_login_bt_l"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:text="@string/slyx_bind_submit_bt"
+            android:textColor="#ffffffff"
+            android:textSize="22.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/slyx_bind_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0dip"
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginRight="0.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:padding="0.0dip"
+        android:text="@string/slyx_bind_info_dis"
+        android:textColor="#ffb5b5b5"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "version":"V1.0.2015_4_30.20160321",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+    "access_token" : ""
+    }
+    ,"out_url" : "https://graph.facebook.com/me"
+    ,"out_params" :
+    {
+      "access_token" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "time": ""
+        ,"sign": ""
+        ,"oid": ""
+        ,"doid" : ""
+        ,"dsid": ""
+        ,"dext": ""
+        ,"uid": ""
+        ,"money": ""
+        ,"coin": ""
+      }
+    ,"out_url" :"https://graph.facebook.com/me"
+    ,"out_params" :
+      {
+        "time": ""
+      ,"sign": ""
+      ,"oid": ""
+      ,"doid" : ""
+      ,"dsid": ""
+      ,"dext": ""
+      ,"uid": ""
+      ,"money": ""
+      ,"coin": ""
+      }
+    }
+  ]
+}

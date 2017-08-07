@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_check_result_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/m4399_rec_iab_install_title"
+        android:textColor="#ff555555"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_check_result_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/m4399_rec_iab_apk_not_installed"
+        android:textColor="#ff555555"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_upgrade_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/m4399_rec_iab_download_message"
+            android:textColor="#ff555555"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_upgrade_percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:gravity="center"
+            android:text="@string/m4399_rec_iab_download_percentage"
+            android:textColor="#ff555555"
+            android:textSize="17sp" />
+
+        <ProgressBar
+            android:id="@+id/pgb_upgrade_percentage"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:max="100"
+            android:background="@android:color/transparent"
+            android:progressDrawable="@drawable/m4399_rec_iab_progress_drawable"/>
+    </LinearLayout>
+
+</LinearLayout>

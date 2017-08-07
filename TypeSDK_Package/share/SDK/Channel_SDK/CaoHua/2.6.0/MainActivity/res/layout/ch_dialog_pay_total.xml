@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ch_dialog_pay_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ch_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ch_dialog_green_top_corner"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ch_my_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="草花充值中心"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ch_dialog_pay_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ch_dialog_right_close_sel" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ch_title_layout"
+        android:background="@drawable/ch_dialog_gray_bottom_corner"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="#d7d7d7" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/ch_dialog_pay_game_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="100金币"
+                    android:textColor="#FB6E0C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ch_dialog_pay_money"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="￥10"
+                    android:textColor="#FB6E0C"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#d7d7d7"
+                android:visibility="visible" />
+
+           <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="支付方式"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ch_dialog_pay_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25sp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="草花币余额：  100个"
+                    android:textColor="#FB6E0C"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ch_dialog_pay_layout_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="5dip"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/ch_dialog_pay_type_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:drawableTop="@drawable/ch_dialog_pay_chpay_icon"
+                    android:gravity="center"
+                    android:text="草花币"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/ch_dialog_pay_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/ch_dialog_pay_alipay_icon"
+                    android:gravity="center"
+                    android:text="支付宝"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/ch_dialog_pay_type_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"
+                    android:drawableTop="@drawable/ch_dialog_pay_unionpay_icon"
+                    android:gravity="center"
+                    android:text="银联"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ch_dialog_pay_layout_two"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/ch_dialog_pay_type_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/ch_dialog_pay_bypay_icon"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="绑银"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/ch_dialog_pay_type_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/ch_dialog_pay_wechat_icon"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="微信"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+           
+
+            <Button
+                android:id="@+id/ch_dailog_pay_sumbit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/ch_dialog_pay_btn"
+                android:textColor="@drawable/ch_dialog_green_font_bg" 
+                android:text="立即支付" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/ch_dialog_pay_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="客服中心:gm.caohua.com"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#25a953" />
+
+                <TextView
+                    android:id="@+id/ch_dialog_pay_quest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="4dp"
+                    android:drawableLeft="@drawable/ch_pay_question"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="充值常见问题"
+                    android:textColor="@drawable/ch_dialog_orange_font_bg"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

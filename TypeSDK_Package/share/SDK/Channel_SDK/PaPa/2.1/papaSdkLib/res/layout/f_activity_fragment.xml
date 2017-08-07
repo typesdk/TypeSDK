@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/activity_default_background">
+
+    <!--actionBar-->
+    <include layout="@layout/mg_forum_title_layout" android:id="@+id/actionbarLayout"/>
+
+    <view class="com.papa91.pay.widget.ForumLoadingView"
+          android:id="@+id/loadingView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+            <!--list-->
+            <view class="com.papa91.pay.widget.XListView"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/listView"
+                  android:listSelector="@android:color/transparent"
+                  android:divider="@android:color/transparent"
+                  android:cacheColorHint="@android:color/transparent"
+                  android:dividerHeight="0dp"
+                  android:focusable="true"
+                  android:focusableInTouchMode="true"
+                  android:descendantFocusability="afterDescendants"/>
+
+            <!--prevent window flickering about a second-->
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                         android:visibility="gone"
+                         android:id="@+id/videoContainer"
+                         android:background="@android:color/white">
+                <include android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:id="@+id/videoLayout"
+                         layout="@layout/video_layout"/>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+        <!--刷新按钮-->
+        <RelativeLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/refresh"
+                android:clickable="true"
+                android:background="@drawable/forum_refresh_bg"
+                android:gravity="center"
+                android:visibility="gone">
+            <ImageView
+                    android:id="@+id/refreshImg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/forum_refresh"
+                    android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <!--tab-->
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <view xmlns:android="http://schemas.android.com/apk/res/android"
+                  class="com.papa91.pay.widget.SlidingTabForumLayout"
+                  android:id="@+id/tabHover"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/mg_forum_forum_activity_sliding_tab_height"
+                  android:background="#ffffff"
+                  android:visibility="invisible"/>
+        </RelativeLayout>
+    </view>
+    <!--
+        &lt;!&ndash;bottom&ndash;&gt;
+        <View android:layout_width="match_parent" android:layout_height="0dp"
+              android:id="@+id/bottom" android:layout_alignParentBottom="true"/>-->
+</LinearLayout>

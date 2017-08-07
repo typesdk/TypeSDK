@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="5dp" >
+
+		<TextView
+			android:id="@+id/txt_wepay_version"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="版本号" />
+
+		<Button
+			android:id="@+id/btn_start"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="调用支付插件" />
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:padding="5dp" >
+
+			<Button
+				android:id="@+id/btn_adddata"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_weight="1"
+				android:hint="自动添加数据" />
+
+			<Button
+				android:id="@+id/btn_cleardata"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:layout_weight="1"
+				android:hint="清空数据" />
+		</LinearLayout>
+
+		<EditText
+			android:id="@+id/txt_token"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="token" />
+
+		<EditText
+			android:id="@+id/txt_jdpin"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="JDPin" />
+
+		<EditText
+			android:id="@+id/txt_outmerchantorder"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="外部商户订单号" />
+
+		<EditText
+			android:id="@+id/txt_merchantuserid"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="商户账户体系的用户ID" />
+
+		<EditText
+			android:id="@+id/txt_merchantsign"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="商户签名" />
+
+		<EditText
+			android:id="@+id/txt_merchantmobile"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="商户保存的手机号" />
+
+		<EditText
+			android:id="@+id/txt_merchantnum"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="商户号" />
+
+		<EditText
+			android:id="@+id/txt_merchantremark"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="商户备注" />
+
+		<EditText
+			android:id="@+id/txt_tradenum"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="交易号 " />
+
+		<EditText
+			android:id="@+id/btn_tradename"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="商品名称" />
+
+		<EditText
+			android:id="@+id/btn_tradedescription"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="交易描述" />
+
+		<EditText
+			android:id="@+id/btn_tradetime"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="交易时间" />
+
+		<EditText
+			android:id="@+id/btn_tradeamount"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="交易金额(分为单位)"
+			android:inputType="number" />
+
+		<EditText
+			android:id="@+id/btn_currency"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:hint="货币种类" />
+
+		<EditText
+			android:id="@+id/txt_notifyurl"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="外部通知URL" />
+	</LinearLayout>
+
+</ScrollView>

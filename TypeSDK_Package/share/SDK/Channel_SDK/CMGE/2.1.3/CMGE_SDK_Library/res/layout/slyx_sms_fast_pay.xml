@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cmge_sms_pay_bkg"
+    android:orientation="vertical" >
+    
+    <TextView android:id="@+id/cmge_fast_pay_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:gravity="left"
+        android:textColor="#505050" 
+        android:textSize="18sp"/>
+    
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#ffbfbfbf"/>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slyx_sms_dailog_bt_shape"
+        android:orientation="horizontal">
+        
+        <Button android:id="@+id/cmge_sms_dialog_left_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="#ffa2a2a2"
+            android:textSize="20sp"
+            android:padding="10dip"
+            android:background="@drawable/cmge_smspay_left_btn_sel"/>
+        
+        <LinearLayout android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="#ffbfbfbf"/>
+        
+        <Button android:id="@+id/cmge_sms_dialog_right_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定"
+            android:padding="10dip"
+            android:textSize="20sp"
+            android:textColor="#ff79b800"
+            android:background="@drawable/cmge_smspay_right_btn_sel"/>
+        
+    </LinearLayout>"
+    
+
+</LinearLayout>

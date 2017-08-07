@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/progress_default_background"/>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="2.0dip" />
+
+                <gradient
+                    android:angle="270.0"
+                    android:centerColor="#ff20CCFB"
+                    android:centerY="0.75"
+                    android:endColor="#ff20CCFB"
+                    android:startColor="#ff20CCFB" />
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@color/zy_pay_dialog_content_balance_textcolor" />
+    </item>
+
+</layer-list>

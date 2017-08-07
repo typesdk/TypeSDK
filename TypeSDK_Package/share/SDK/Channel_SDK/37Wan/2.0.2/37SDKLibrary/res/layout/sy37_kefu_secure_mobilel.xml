@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bindMobileLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/bindMobileBtnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLayout"
+        android:background="@drawable/sy37_layout_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2.0dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/sy37_binding_mobile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/fg_bind_mobile"
+            android:textColor="@color/s_orange"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/bindMobileBack"
+            style="@style/backBut" 
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobileLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bindMobileBtnLayout"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/sy37_bg_menu_two"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingBottom="5dip"
+                android:paddingLeft="8dip"
+                android:paddingTop="5dip"
+                android:text="@string/fg_mobile_no"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/fg_mobile"
+                android:layout_width="150dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/fg_secure_mobile_hint"
+                android:textColorHint="@color/s_light_gray"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textColor="@color/s_light_gray"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/fg_getCode"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="15.0dip"
+                android:background="#ffa200"
+                android:gravity="center"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/fg_secure_mobile_getcode"
+                android:textColor="@color/s_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingBottom="5dip"
+                android:paddingLeft="8dip"
+                android:paddingTop="5dip"
+                android:text="@string/fg_secure_code"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/fg_mobile_code"
+                android:layout_width="150dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/fg_secure_code_hint"
+                android:textColorHint="@color/s_light_gray"
+                android:singleLine="true"
+                android:textColor="@color/s_light_gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mobileSub"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/mobileLayout"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/sy37_kefu_submit"
+        android:text="@string/fg_bind_mobile_now"
+        android:textColor="@color/s_white"
+        android:textSize="23.0sp" />
+
+ 
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileSub"
+        android:layout_marginTop="4dip"
+        android:layout_marginLeft="5dp"
+        android:text="@string/fg_secure_mobile_tips_0"
+        android:textColor="@color/s_light_gray"
+        android:textSize="16sp" />
+
+</RelativeLayout>

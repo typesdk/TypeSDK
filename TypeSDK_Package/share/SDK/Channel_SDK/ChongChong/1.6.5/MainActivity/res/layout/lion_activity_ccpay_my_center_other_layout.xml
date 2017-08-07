@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.lion.ccpay.view.item.UserBalanceView
+        android:id="@+id/lion_activity_ccpay_my_center_balance"
+        style="@style/lion_style_user_center"
+        android:layout_marginTop="7.5dip"
+        android:background="@drawable/lion_common_frame_two_selector"
+        android:drawableLeft="@drawable/lion_icon_balance"
+        android:drawableRight="@drawable/lion_icon_refresh"
+        android:text="@string/lion_text_user_center_balance"/>
+
+    <com.lion.ccpay.view.item.UserBillView
+        style="@style/lion_style_user_center"
+        android:background="@drawable/lion_common_frame_bottom_selector"
+        android:drawableLeft="@drawable/lion_icon_bill"
+        android:text="@string/lion_text_user_center_bill"/>
+
+
+    <com.lion.ccpay.view.item.UserCouponView
+        android:id="@+id/lion_activity_ccpay_my_center_coupon"
+        style="@style/lion_style_user_center"
+        android:background="@drawable/lion_common_frame_bottom_selector"
+        android:drawableLeft="@drawable/lion_icon_coupon"
+        android:text="@string/lion_text_user_center_coupon"/>
+
+    <com.lion.ccpay.view.item.UserRechargeView
+        style="@style/lion_style_dlg_btn_right"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/lion_text_user_recharge"/>
+</LinearLayout>

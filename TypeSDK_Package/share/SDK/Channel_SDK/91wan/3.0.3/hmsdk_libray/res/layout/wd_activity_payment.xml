@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/wd_view_title_bar"/>
+
+    <FrameLayout
+            android:id="@+id/wd_fl_pay_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</LinearLayout>

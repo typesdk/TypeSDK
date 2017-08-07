@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/charge_re"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/coolpad_item_charge_bg"
+        android:clickable="true"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <TextView
+            android:id="@+id/sum_tv"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="this is allen"
+            android:textColor="@color/text_dark_80"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/sum_et"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/transparent"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="5"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/text_dark_80"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

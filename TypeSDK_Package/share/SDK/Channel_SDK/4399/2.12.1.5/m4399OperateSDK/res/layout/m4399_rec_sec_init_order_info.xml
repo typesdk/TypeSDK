@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/m4399_rec_color_yellow"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:text="10" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="4dp"
+        android:text="@string/m4399_rec_unit_yuan"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_raw_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/m4399_rec_color_grey"
+        android:textSize="@dimen/font_large"
+        android:visibility="gone"
+        android:text="@string/m4399_rec_one_yuan_coupon" />
+
+    <cn.m4399.recharge.ui.widget.FtnnCircleTextView
+        android:id="@+id/subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="3dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:layout_weight="1.0"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:text="@string/m4399_rec_good_subject"
+        android:textColor="#999999"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/role_info"
+        style="@style/m4399GameInfoTextStyle"
+        tools:text="luori366"
+        android:layout_marginBottom="2dp" />
+</LinearLayout>
+
+    

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="account_avatar_type">
+        <item>从相册选择</item>
+        <item>拍照</item>
+        <item>取消</item>
+    </array>
+</resources>

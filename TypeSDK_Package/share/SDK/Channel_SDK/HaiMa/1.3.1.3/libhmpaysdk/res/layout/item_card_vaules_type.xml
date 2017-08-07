@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/tv_card_values"
+          android:textColor="@color/card_type_text_color"
+          android:padding="5dp"
+          android:textSize="14sp"
+          android:gravity="center|left"
+          android:maxLines="1"
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+    />

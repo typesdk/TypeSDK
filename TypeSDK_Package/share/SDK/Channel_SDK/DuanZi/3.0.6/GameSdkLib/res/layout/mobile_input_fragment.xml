@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/login_mask_bg"
+              android:orientation="vertical">
+
+    <com.ss.android.sdk.common.ui.view.SwipeOverlayFrameLayout
+        android:id="@+id/swipe_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/login_panel">
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/login_panel_title"
+                    android:text="@string/register_by_mobile_title"/>
+                <LinearLayout
+                    android:id="@+id/mobile_frame"
+                    style="@style/login_panel_input_normal">
+
+                    <TextView
+                        android:id="@+id/mobile_tip"
+                        style="@style/login_panel_input_text"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0"
+                        android:text="@string/default_mcc"
+                        android:textColor="@color/biaozhunhong3"/>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="@color/heise3"/>
+
+                    <EditText
+                        android:id="@+id/mobile_input"
+                        style="@style/login_panel_input_text"
+                        android:maxLength="@integer/mobile_max_length"
+                        android:layout_marginLeft="8dp"
+                        android:hint="@string/mobile_hint"
+                        android:inputType="phone"/>
+
+                    <ImageView
+                        android:id="@+id/clear_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/clear_edit_view"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/next_btn"
+                    style="@style/login_panel_button"
+                    android:layout_marginTop="10dp"
+                    android:enabled="false"
+                    android:text="@string/next"/>
+
+                <LinearLayout
+                    android:id="@+id/user_agreement_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+
+                    <CheckBox
+                        android:id="@+id/user_agreement_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:checked="true"
+                        android:button="@drawable/select_login_btn"/>
+
+                    <TextView
+                        android:id="@+id/left_of_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/left_of_agreement"
+                        android:layout_marginLeft="5dp"
+                        style="@style/mobile_accent_link_text"
+                        android:textColor="@color/heise3"/>
+
+                    <TextView
+                        android:id="@+id/user_agreement_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        style="@style/mobile_accent_link_text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </com.ss.android.sdk.common.ui.view.SwipeOverlayFrameLayout>
+
+
+</LinearLayout>

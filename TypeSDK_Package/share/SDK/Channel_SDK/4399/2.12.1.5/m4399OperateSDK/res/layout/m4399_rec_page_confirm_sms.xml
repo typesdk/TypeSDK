@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/m4399RecPageStyle"
+    android:layout_width="@dimen/m4399_rec_page_width"
+    android:layout_height="@dimen/m4399_rec_page_height" 
+    android:baselineAligned="false">
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_title_height"
+        layout="@layout/m4399_rec_sec_text_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/m4399_rec_gridview_vspacing"
+                android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginTop="@dimen/m4399_rec_gridview_vspacing"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/sms_good_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/m4399_rec_sms_good_name"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/sms_good_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/m4399_rec_sms_good_price"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/m439_rec_hotline_prefix"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/sms_hotline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/m4399_rec_link_text_bg"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:text="@string/m4399_rec_sms_hotline"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+                layout="@layout/m4399_rec_sec_mvcenter_separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginTop="@dimen/m4399_rec_gridview_vspacing"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m4399_rec_sms_import_tips_head"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m4399_rec_sms_import_tips_one"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/sms_import_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m4399_rec_sms_import_tips_two"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m4399_rec_sms_import_tips_three"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/m4399_rec_single_btn_marginBottom"
+                android:layout_weight="1.0"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <include
+                    layout="@layout/m4399_rec_sec_mvcenter_separator"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/spacing_normal"
+                    android:layout_height="@dimen/m4399_rec_separator_height" />
+
+                <include
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/m4399_rec_sum_btns_eara_height"
+                    android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+                    android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+                    android:layout_marginBottom="@dimen/m4399_rec_single_btn_marginBottom"
+                    layout="@layout/m4399_rec_sec_single_btn_area" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_foot_height"
+        layout="@layout/m4399_rec_sec_standard_foot" />
+
+</LinearLayout>

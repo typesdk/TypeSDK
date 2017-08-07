@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/egame_usersdk_white"
+    android:layout_gravity="center">
+
+    <include layout="@layout/egame_user_sdk_title" />
+
+    <RadioGroup
+        android:id="@+id/rg_register_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_phone_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/egame_register_tab_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/phone_number"
+            android:textSize="16dp"
+            android:textColor="@drawable/egame_green_gary_color_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_username_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/egame_register_tab_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/username"
+            android:textSize="16dp"
+            android:textColor="@drawable/egame_green_gary_color_selector" />
+    </RadioGroup>
+	
+    <LinearLayout 
+        android:id="@+id/ll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    </LinearLayout>
+
+    <!-- <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        240版本注释
+        
+             <CheckBox
+            android:id="@+id/egame_register_cb"
+            style="@style/MyCheckBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:background="@null"
+            android:checked="true"
+            android:paddingLeft="6dp"
+            android:text="阅读并同意"
+            android:textColor="@color/egame_usersdk_regist_text"
+            android:textSize="15dp" />
+       
+
+        <TextView
+            android:id="@+id/egame_register_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/agree_egame_protocol"
+            android:textColor="#50b3f2"
+            android:textSize="15dp" />
+    </LinearLayout> -->
+
+    <!-- <Button
+        android:id="@+id/egame_input_varify_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/egame_btn_login_status"
+        android:enabled="false"
+        android:text="注册并进入游戏"
+        android:textColor="@color/egame_usersdk_white" />
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/egame_usersdk_light_gray"
+        android:textSize="13dp"
+        android:text="@string/egame_sms_tip"/>
+ -->
+</LinearLayout>

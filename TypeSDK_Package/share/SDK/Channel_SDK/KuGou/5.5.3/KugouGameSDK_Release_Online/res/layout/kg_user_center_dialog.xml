@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kg_user_center_dialog_corners"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/kg_common_dialog_title" />
+
+    <TextView
+        android:id="@+id/kg_get_activity_txt_one"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:background="@color/kg_common_background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/kg_get_activity_txt_two"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:background="@color/kg_common_background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/kg_get_activity_txt_three"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@color/kg_common_background"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:text="@string/kg_really_go"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/kg_user_center_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kg_common_background"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/kg_get_activity_txt_four_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:background="@color/kg_common_background"
+        android:fadingEdge="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:background="@color/kg_common_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kg_get_activity_txt_four"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/kg_common_background"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/kg_user_center_button_space_line" />
+
+    <LinearLayout
+        android:id="@+id/kg_user_center_button_all"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <include layout="@layout/kg_common_dialog_button" />
+    </LinearLayout>
+
+</LinearLayout>

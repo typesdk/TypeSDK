@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="tw__twitter_logo"/>
+    <color name="tw__composer_black">#ff292f33</color>
+    <color name="tw__composer_blue">#ff1da1f2</color>
+    <color name="tw__composer_blue_text">#ff1b95e0</color>
+    <color name="tw__composer_deep_gray">#ff8899A6</color>
+    <color name="tw__composer_light_gray">#ffccd6dd</color>
+    <color name="tw__composer_red">#ffe81c4f</color>
+    <color name="tw__composer_white">#ffffffff</color>
+    <dimen name="tw__card_font_size_medium">18sp</dimen>
+    <dimen name="tw__card_font_size_small">14sp</dimen>
+    <dimen name="tw__card_maximum_width">400dp</dimen>
+    <dimen name="tw__card_radius_medium">6dp</dimen>
+    <dimen name="tw__card_radius_small">4dp</dimen>
+    <dimen name="tw__card_spacing_large">16dp</dimen>
+    <dimen name="tw__card_spacing_medium">8dp</dimen>
+    <dimen name="tw__card_spacing_small">4dp</dimen>
+    <dimen name="tw__composer_avatar_size">32dp</dimen>
+    <dimen name="tw__composer_char_count_height">36dp</dimen>
+    <dimen name="tw__composer_close_size">48dp</dimen>
+    <dimen name="tw__composer_divider_height">1dp</dimen>
+    <dimen name="tw__composer_font_size_small">14sp</dimen>
+    <dimen name="tw__composer_logo_height">20dp</dimen>
+    <dimen name="tw__composer_logo_width">24dp</dimen>
+    <dimen name="tw__composer_spacing_large">16dp</dimen>
+    <dimen name="tw__composer_spacing_medium">8dp</dimen>
+    <dimen name="tw__composer_spacing_small">4dp</dimen>
+    <dimen name="tw__composer_tweet_btn_height">36dp</dimen>
+    <dimen name="tw__composer_tweet_btn_radius">4dp</dimen>
+    <string name="tw__composer_hint">What\'s Happening?</string>
+    <string name="tw__install">Install</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__play_store" translatable="false">Google Play</string>
+    <string name="tw__post_tweet">Tweet</string>
+    <style name="ComposerDark" parent="@android:style/Theme">
+        <item name="android:textColor">@color/tw__composer_white</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_white</item>
+    </style>
+    <style name="ComposerLight" parent="@android:style/Theme.Light">
+        <item name="android:textColor">@color/tw__composer_black</item>
+        <item name="android:textColorSecondary">@color/tw__composer_deep_gray</item>
+        <item name="android:textColorHint">@color/tw__composer_light_gray</item>
+        <item name="tw__twitter_logo">@drawable/tw__composer_logo_blue</item>
+    </style>
+    <style name="tw__CardAppInfoLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/tw__app_info_layout_border</item>
+        <item name="android:padding">@dimen/tw__card_spacing_medium</item>
+    </style>
+    <style name="tw__CardAppName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/tw__card_font_size_medium</item>
+        <item name="android:textColor">?android:attr/textColor</item>
+        <item name="android:layout_marginBottom">@dimen/tw__card_spacing_small</item>
+    </style>
+    <style name="tw__CardAppStoreName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:text">@string/tw__play_store</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textSize">@dimen/tw__card_font_size_small</item>
+    </style>
+    <style name="tw__CardInstallButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/tw__install</item>
+        <item name="android:textSize">@dimen/tw__card_font_size_small</item>
+        <item name="android:background">@drawable/tw__install_button_border</item>
+    </style>
+    <style name="tw__ComposerAvatar">
+        <item name="android:layout_width">@dimen/tw__composer_avatar_size</item>
+        <item name="android:layout_height">@dimen/tw__composer_avatar_size</item>
+        <item name="android:layout_marginRight">@dimen/tw__composer_spacing_large</item>
+        <item name="android:layout_marginTop">@dimen/tw__composer_spacing_large</item>
+        <item name="android:layout_marginBottom">@dimen/tw__composer_spacing_large</item>
+        <item name="android:background">@color/tw__composer_light_gray</item>
+    </style>
+    <style name="tw__ComposerCharCount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/tw__composer_char_count_height</item>
+        <item name="android:layout_marginRight">@dimen/tw__composer_spacing_large</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/tw__composer_deep_gray</item>
+        <item name="android:text">@string/tw__max_tweet_chars</item>
+        <item name="android:textSize">@dimen/tw__composer_font_size_small</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="tw__ComposerCharCountOverflow" parent="tw__ComposerCharCount">
+        <item name="android:textColor">@color/tw__composer_red</item>
+    </style>
+    <style name="tw__ComposerClose">
+        <item name="android:layout_width">@dimen/tw__composer_close_size</item>
+        <item name="android:layout_height">@dimen/tw__composer_close_size</item>
+        <item name="android:padding">@dimen/tw__composer_spacing_large</item>
+        <item name="android:src">@drawable/tw__composer_close</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="tw__ComposerDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tw__composer_divider_height</item>
+        <item name="android:background">@color/tw__composer_light_gray</item>
+    </style>
+    <style name="tw__ComposerToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/tw__composer_spacing_medium</item>
+        <item name="android:paddingBottom">@dimen/tw__composer_spacing_medium</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">right</item>
+    </style>
+    <style name="tw__ComposerTweetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/tw__composer_tweet_btn_height</item>
+        <item name="android:layout_marginRight">@dimen/tw__composer_spacing_large</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/tw__composer_white</item>
+        <item name="android:background">@drawable/tw__btn_composer_tweet</item>
+        <item name="android:text">@string/tw__post_tweet</item>
+        <item name="android:textSize">@dimen/tw__composer_font_size_small</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="tw__EditTweet">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/tw__composer_spacing_small</item>
+        <item name="android:layout_marginBottom">@dimen/tw__composer_spacing_small</item>
+        <item name="android:paddingLeft">@dimen/tw__composer_spacing_large</item>
+        <item name="android:paddingRight">@dimen/tw__composer_spacing_large</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:textColor">?android:attr/textColor</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:hint">@string/tw__composer_hint</item>
+        <item name="android:textColorHint">?android:attr/textColorHint</item>
+        <item name="android:imeOptions">actionSend</item>
+        <item name="android:imeActionLabel">@string/tw__post_tweet</item>
+    </style>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/anfan_defealut_bg"
+    android:paddingBottom="20dp" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
+        android:background="#39c5a9"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="最新公告"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@drawable/anfan_diag_close" />
+
+    <WebView
+        android:id="@+id/tv_wvcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:scrollbars="none"
+        android:singleLine="false"
+        android:textColor="#8f8b92"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/tv_wvcontent"
+        android:background="#D9DDE1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_wvcontent"
+        android:background="#D9DDE1" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/tv_wvcontent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#39c5a9"
+        android:gravity="center"
+        android:text="知道了"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

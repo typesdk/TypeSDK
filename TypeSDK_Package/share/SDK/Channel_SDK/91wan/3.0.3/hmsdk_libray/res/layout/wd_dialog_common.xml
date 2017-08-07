@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/wd_rl_dialog_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wd_bg_dialog_shape_corner"
+        android:paddingLeft="@dimen/dialog_padding"
+        android:paddingRight="@dimen/dialog_padding">
+
+    <LinearLayout
+            android:id="@+id/wd_ll_dialog_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <LinearLayout
+                android:id="@+id/wd_ll_dialog_top_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/title_template"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+            >
+
+
+                <TextView
+                        android:id="@+id/wd_tv_dialog_top_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="8dip"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/wd_color_blue"
+                        android:textSize="@dimen/wd_text_size_20"
+                        android:text="提示"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/wd_ll_dialog_content_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/wd_tv_dialog_top_message"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:textColor="@color/wd_color_gray_5"
+                    android:textIsSelectable="true"
+                    tools:ignore="NewApi"
+                    android:gravity="center"
+                    android:textSize="@dimen/wd_text_size_18"
+            android:text="您确定放弃此次支付吗？"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+                android:id="@+id/wd_ll_dialog_custom_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+        >
+
+            <Button
+                    android:id="@+id/wd_btn_dialog_confirm"
+                    android:layout_width="0dip"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/wd_bg_account_btn_blue_selector"
+                    android:text="确定"
+                    android:textColor="@color/wd_color_white"
+                    android:gravity="center"
+                    android:textSize="@dimen/wd_text_size_18"/>
+
+            <Button
+                    android:id="@+id/wd_btn_dialog_cancel"
+                    android:layout_width="0dip"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/wd_bg_account_btn_white_selector"
+                    android:text="取消"
+                    android:textColor="@color/wd_color_black_6"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:textSize="@dimen/wd_text_size_18"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

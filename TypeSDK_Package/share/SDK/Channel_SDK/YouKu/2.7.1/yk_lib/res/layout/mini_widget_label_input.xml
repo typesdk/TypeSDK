@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mini_widget_label_input"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/mini_element_default_height"
+    android:orientation="horizontal"
+    android:contentDescription="@string/yk_content_description_mini_root"
+    android:paddingLeft="@dimen/mini_margin_default"
+    android:paddingRight="@dimen/mini_margin_default" >
+
+    <TextView
+        android:id="@+id/mini_widget_label_input_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/mini_margin_default"
+        android:textColor="@color/mini_text_color_gray"
+        android:textSize="@dimen/mini_text_size_large" />
+
+    <com.alipay.android.mini.widget.CustomEditText
+        android:id="@+id/mini_widget_label_input_input"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:paddingBottom="@dimen/mini_margin_bottom"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="@dimen/mini_margin_top"
+        android:singleLine="true"
+        android:textColorHint="@color/mini_input_hint_color"
+        android:textSize="@dimen/mini_text_size_large" />
+
+</LinearLayout>

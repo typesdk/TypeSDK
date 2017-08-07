@@ -1,0 +1,92 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="PYWTheme_Widget_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="PYW" />
+
+    <style name="PYW.GridPasswordView" />
+
+    <style name="PYW.GridPasswordView.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/pyw_common_gray_light</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="PYW.GridPasswordView.EditText" parent="PYW.GridPasswordView.TextView">
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="PYW.GridPasswordView.Divider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+
+    <style name="LayoutWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PYW.Safe" />
+
+    <style name="PYW.Safe.Modify" parent="@style/LayoutWrap">
+        <item name="android:text">@string/pyw_safe_modify</item>
+        <item name="android:textColor">@color/pyw_yq_btn_blue_normal</item>
+    </style>
+
+    <style name="PYW.Safe.Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/pyw_common_title_height</item>
+        <item name="android:background">@drawable/pyw_selector_common_item_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PYW."></style>
+
+    <style name="PYW.Safe.Text" parent="@style/LayoutWrap">
+        <item name="android:textColor">@color/pyw_common_gray_light</item>
+        <item name="android:textSize">@dimen/pyw_common_large</item>
+    </style>
+
+    <style name="PYW.Safe.Image">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:src">@drawable/pyw_img_next</item>
+    </style>
+
+    <style name="PYWTheme_Activity_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>

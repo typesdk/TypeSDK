@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#66333333"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dip" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:layout_marginTop="15dip"
+        android:text="切换程序后悬浮球可再次出现"
+        android:textColor="@color/text_green"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <CheckBox  
+            android:id="@+id/change_xuanfu_cb"          
+            android:layout_width="30dip"
+            android:layout_height="30dip"           
+            android:button="@drawable/x7_change_xuanfu_cb_bg"
+            android:background="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:text="不再显示此提示"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/change_xuanfu_cancell_tv"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"         
+            android:background="@drawable/x7_change_xuanfu_cancell"
+            android:paddingBottom="7dip"
+            android:paddingLeft="25dip"
+            android:paddingRight="25dip"
+            android:paddingTop="7dip"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/change_xuanfu_ok_tv"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:layout_marginLeft="30dip"
+            android:background="@drawable/x7_change_xuanfu_ok"
+            android:paddingBottom="7dip"
+            android:paddingLeft="25dip"
+            android:paddingRight="25dip"
+            android:paddingTop="7dip"
+            android:text="确定"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:clickable="true" />
+    </LinearLayout>
+
+</LinearLayout>

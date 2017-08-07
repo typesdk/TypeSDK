@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/m4399_com_base_dialog_width"
+    android:layout_height="@dimen/m4399_com_base_dialog_height"
+    android:minHeight="180dp"
+    android:minWidth="256dp"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:id="@+id/base_dialog_title_erea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="24dp"
+        android:layout_marginLeft="@dimen/m4399_com_base_dialog_padding"
+        android:layout_marginRight="@dimen/m4399_com_base_dialog_padding"
+        android:layout_marginTop="@dimen/m4399_com_base_dialog_half_padding"
+        android:layout_marginBottom="@dimen/m4399_com_base_dialog_half_padding"
+        >
+    </FrameLayout>
+    
+    <ImageView
+        android:id="@+id/base_dialog_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#00ffffff"
+        android:contentDescription="@string/m4399_default_content_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/m4399_com_base_dialog_separator"/>
+
+    <FrameLayout
+        android:id="@+id/base_dialog_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:layout_margin="@dimen/m4399_com_base_dialog_padding"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/base_dialog_ll_btns_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/m4399_com_base_dialog_padding"
+        android:paddingLeft="@dimen/m4399_com_base_dialog_half_padding"
+        android:paddingRight="@dimen/m4399_com_base_dialog_half_padding"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/base_dialog_left_btn"
+           	style="@style/m4399BaseDialogBtnStyle"
+           	android:background="@drawable/m4399_com_base_dialog_white_btn_bg"/>
+
+        <Button
+            android:id="@+id/base_dialog_right_btn"
+            style="@style/m4399BaseDialogBtnStyle"
+            android:textColor="@android:color/white"
+            android:background="@drawable/m4399_com_base_dialog_yellow_btn_bg" />
+
+    </LinearLayout>
+
+</LinearLayout>

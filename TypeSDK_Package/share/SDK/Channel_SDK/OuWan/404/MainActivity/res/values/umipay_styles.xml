@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android = "http://schemas.android.com/apk/res/android" >
+
+	<style name = "UmipayTheme_NoFullscreen" parent = "@android:style/Theme.Light" >
+		<item name = "android:windowBackground" >@null</item >
+		<item name = "android:windowContentOverlay" >@null</item >
+		<item name = "android:windowNoTitle" >true</item >
+		<item name = "android:windowIsTranslucent" >true</item >
+		<item name = "android:windowAnimationStyle" >@android:style/Animation.Translucent</item >
+		<item name = "android:windowSoftInputMode" >stateHidden|adjustResize</item >
+		<item name = "android:configChanges" >keyboardHidden|orientation|screenSize</item >
+	</style >
+
+
+	<style name = "umipay_main_dialog_theme" parent = "@android:style/Theme.Dialog" >
+		<item name = "android:windowBackground" >@android:color/transparent</item >
+		<item name = "android:background" >@android:color/transparent</item >
+		<item name = "android:windowFullscreen" >true</item >
+		<item name = "android:windowNoTitle" >true</item >
+	</style >
+
+	<style name = "umipay_progress_dialog_theme" parent = "@android:style/Theme.Dialog" >
+		<item name = "android:windowFrame" >@null</item >
+		<item name = "android:windowIsFloating" >true</item >
+		<item name = "android:windowNoTitle" >true</item >
+		<item name = "android:windowFullscreen" >true</item>
+		<item name = "android:windowBackground" >@android:color/transparent</item >
+	</style >
+
+	<style name = "umipay_logininfo_dialog_theme" parent = "umipay_progress_dialog_theme" >
+		<item name="android:windowIsTranslucent">false</item><!--半透明-->
+		<item name="android:backgroundDimEnabled">false</item><!--模糊-->
+	</style >
+
+	<style name = "um_wr" >
+		<item name = "android:layout_width" >wrap_content</item >
+		<item name = "android:layout_height" >wrap_content</item >
+		<item name = "android:background" >@null</item >
+	</style >
+
+	<style name = "um_fi" >
+		<item name = "android:layout_width" >fill_parent</item >
+		<item name = "android:layout_height" >fill_parent</item >
+		<item name = "android:background" >@null</item >
+	</style >
+
+	<style name = "um_block" >
+		<item name = "android:layout_width" >fill_parent</item >
+		<item name = "android:layout_height" >wrap_content</item >
+		<item name = "android:background" >@null</item >
+	</style >
+
+	<style name = "um_insert" >
+		<item name = "android:layout_width" >fill_parent</item >
+		<item name = "android:layout_height" >fill_parent</item >
+		<item name = "android:background" >@null</item >
+	</style >
+
+	<!-- =线性布局 -->
+	<style name = "um_wr_h" parent = "um_wr" >
+		<item name = "android:orientation" >horizontal</item >
+	</style >
+	<!-- 水平方向 -->
+
+	<style name = "um_wr_v" parent = "um_wr" >
+		<item name = "android:orientation" >vertical</item >
+	</style >
+	<!-- 垂直方向 -->
+
+
+	<!-- ===========titlebar 布局 -->
+	<style name = "um_title_bar" parent = "um_block" >
+		<item name = "android:layout_height" >44dp</item >
+		<item name = "android:background" >@android:color/transparent</item >
+		<item name = "android:gravity" >center_vertical</item >
+	</style >
+
+	<style name = "um_title_bar_title" parent = "um_wr" >
+		<item name = "android:layout_width" >wrap_content</item >
+		<item name = "android:layout_height" >wrap_content</item >
+		<item name = "android:layout_marginTop" >35dp</item >
+		<item name = "android:layout_marginBottom" >35dp</item >
+	</style >
+
+	<!-- ============服务条款协议 布局 -->
+	<style name = "um_wr_agm" parent = "um_wr_h" >
+		<item name = "android:layout_marginBottom" >3dp</item >
+		<item name = "android:layout_marginTop" >3dp</item >
+		<item name = "android:layout_height" >30dp</item >
+		<item name = "android:layout_gravity" >center_vertical|left</item >
+		<item name = "android:gravity" >center_vertical</item >
+	</style >
+
+	<style name = "um_agm_cb" >
+		<item name = "android:layout_width" >35dp</item >
+		<item name = "android:layout_height" >35dp</item >
+		<item name = "android:button" >@null</item >
+		<item name = "android:checked" >true</item >
+		<item name = "android:layout_marginLeft" >-7dp</item >
+	</style >
+
+	<!--ouwan菜单style-->
+	<style name = "um_tab_content_ly" parent = "um_wr" >
+		<item name = "android:layout_gravity" >center_horizontal</item >
+		<item name = "android:baselineAligned" >false</item >
+		<item name = "android:orientation" >horizontal</item >
+		<item name = "android:visibility" >visible</item >
+	</style >
+
+	<style name = "um_tab_bound_bg" >
+		<item name = "android:layout_width" >21dp</item >
+		<item name = "android:layout_height" >40dp</item >
+		<item name = "android:layout_weight" >1</item >
+		<item name = "android:background" >@null</item >
+	</style >
+
+
+	<style name = "um_tab_btn" >
+		<item name = "android:layout_width" >48dp</item >
+		<item name = "android:layout_height" >fill_parent</item >
+		<item name = "android:paddingTop" >4dp</item >
+		<item name = "android:drawableTop" >@null</item >
+		<item name = "android:gravity" >center</item >
+		<item name = "android:textSize" >10sp</item >
+		<item name = "android:drawablePadding" >-8dp</item >
+	</style >
+
+	<style name = "um_tab_btn_container">
+		<item name = "android:layout_width" >30dp</item >
+		<item name = "android:layout_height" >50dp</item >
+		<item name = "android:gravity" >center_vertical</item >
+	</style >
+
+	<style name = "um_tab_btn_icon"  >
+		<item name = "android:layout_gravity" >left</item >
+		<item name = "android:layout_marginTop" >5dp</item >
+		<item name = "android:layout_width" >25dp</item >
+		<item name = "android:layout_height" >25dp</item >
+		<item name = "android:adjustViewBounds" >true</item >
+		<item name = "android:scaleType" >centerInside</item >
+	</style >
+
+	<style name = "um_tab_btn_text"  >
+		<item name = "android:layout_gravity" >left</item >
+		<item name = "android:layout_marginLeft" >3dp</item >
+		<item name = "android:paddingTop" >30dp</item >
+		<item name = "android:layout_width" >wrap_content</item >
+		<item name = "android:layout_height" >wrap_content</item >
+		<item name = "android:textColor" >@color/bg</item >
+		<item name = "android:textSize" >10sp</item >
+	</style >
+
+
+	<style name = "um_bubble">
+		<item name = "android:layout_width" >wrap_content</item >
+		<item name = "android:layout_height" >15dp</item >
+		<item name = "android:layout_marginRight" >4dp</item >
+		<item name = "android:layout_gravity" >top|right</item >
+		<item name = "android:gravity" >center</item >
+		<item name = "android:background" >@drawable/umipay_reddot</item >
+		<item name = "android:textSize" >8sp</item >
+		<item name = "android:textColor" >#FFFFFF</item >
+		<item name = "android:text" >0</item >
+	</style >
+	<style name = "um_tab_bubble" parent="um_bubble">
+		<item name = "android:layout_height" >12dp</item >
+		<item name = "android:layout_width" >12dp</item >
+		<item name = "android:layout_marginTop" >4dp</item >
+		<item name = "android:layout_marginRight" >2dp</item >
+		<item name = "android:background" >@drawable/umipay_reddot</item >
+	</style>
+	<!--银联支付style-->
+	<style name = "Theme.UPPay" parent = "android:style/Theme.Light" >
+		<item name = "android:windowNoTitle" >true</item >
+		<item name = "android:windowContentOverlay" >@null</item >
+	</style >
+	<!--银联支付style-->
+</resources >

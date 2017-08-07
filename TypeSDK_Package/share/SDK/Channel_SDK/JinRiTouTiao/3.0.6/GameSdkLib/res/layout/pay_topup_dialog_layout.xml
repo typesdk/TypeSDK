@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270.0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/pay_dialog_bg">
+    
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pay_dialog_back_bg"
+        android:minHeight="27dp"
+        android:minWidth="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="center">
+    </ImageView>
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/pay_dialog_title_textsize"
+        android:textColor="@color/pay_dialog_title_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/pay_topup_dialog_title">
+    </TextView>
+    
+    <include 
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        layout="@layout/pay_content_layout"/>
+    
+    <include 
+        android:id="@+id/topup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content"
+        layout="@layout/pay_topup_layout"/>
+    
+     <include 
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topup"
+        layout="@layout/pay_input_layout"/>
+     
+     <include 
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        layout="@layout/pay_input_layout"/>
+     
+     <include
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        layout="@layout/pay_button_layout"/>
+     
+     <include
+        android:id="@+id/consult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm"
+        layout="@layout/pay_consult_layout"/>
+     
+</RelativeLayout>

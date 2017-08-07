@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background" >
+
+    <include
+        android:id="@+id/pyw_bind_title"
+        layout="@layout/pyw_common_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pyw_bind_title"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pyw_tv_phoneno_title"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pyw_btn_binding_cancel"
+                android:layout_width="110dp"
+                android:layout_height="@dimen/pyw_common_btn_height"
+                android:background="@drawable/pyw_selector_btn_white_bg"
+                android:text="暂不绑定"
+                android:textColor="@color/pyw_common_gray_light"
+                android:textSize="@dimen/pyw_common_larger" />
+
+            <Button
+                android:id="@+id/pyw_btn_binding_confirm"
+                android:layout_width="110dp"
+                android:layout_height="@dimen/pyw_common_btn_height"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/pyw_selector_btn_blue_bg"
+                android:text="立即绑定"
+                android:textColor="@color/pyw_common_white"
+                android:textSize="@dimen/pyw_common_larger" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/pyw_layout_contact"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/pyw_common_editext_height"
+            android:layout_below="@id/pyw_layout_phoneno"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            layout="@layout/pyw_view_bottom_contact"
+            android:background="@drawable/pyw_img_service_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:id="@+id/pyw_tv_phoneno_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pyw_tv_tips_first"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:paddingTop="5dp"
+            android:text="@string/pyw_bind_phone_tips"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <TextView
+            android:id="@+id/pyw_tv_tips_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:text="@string/pyw_bindphone_tips_first"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textSize="@dimen/pyw_common_larger" />
+
+        <ImageView
+            android:id="@+id/pyw_iv_bindphone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/pyw_tv_tips_first"
+            android:layout_toLeftOf="@+id/pyw_tv_tips_first"
+            android:src="@drawable/pyw_img_bindphone_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

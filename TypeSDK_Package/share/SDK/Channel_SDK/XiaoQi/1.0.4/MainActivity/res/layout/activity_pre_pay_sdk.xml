@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_gray"
+    >
+            <!--    支付的标题 -->
+     <include 
+        android:id="@+id/main_title_rl"
+        layout="@layout/item_main_title_rl"        
+        />
+     
+    <ScrollView 
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"  
+      android:scrollbars="none"    
+        >
+       <LinearLayout 
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+       	android:layout_height="wrap_content"
+        android:orientation="vertical"              
+           > 
+          <!--     购买信息部分 -->
+      <TextView 
+         style="@style/act_pre_pay"
+         android:layout_height="60dip"
+         android:text="购买信息:"
+         android:background="@color/background_gray"  
+         android:textColor="#333333"             
+          /> 
+           
+      <TextView 
+         android:id="@+id/prepay_buytools_tv"
+         style="@style/act_pre_pay"       
+         android:text="购买道具：180砖礼包"             
+          />
+      
+       <TextView 
+         android:id="@+id/prepay_toolprice_tv"
+         style="@style/act_pre_pay"       
+         android:text=""             
+          />
+       
+       <TextView 
+         android:id="@+id/prepay_balance_tv"
+         style="@style/act_pre_pay"       
+         android:text="钱包余额：0.00元"             
+          /> 
+        <TextView 
+         android:id="@+id/prepay_topay_tv"
+         style="@style/act_pre_pay"       
+         android:text="需 支 付：10.00元"             
+          />
+        <TextView 
+         android:id="@+id/prepay_pingtaibi_tv"
+         style="@style/act_pre_pay"       
+         android:text="送平台币：10.00元(赠送至钱包余额)"
+         android:visibility="gone"             
+          />      
+         
+        <!--    选择支付方式部分部分 --> 
+         <TextView 
+         style="@style/act_pre_pay"
+         android:layout_height="60dip"
+         android:text="选择支付方式"
+         android:background="@color/background_gray"         
+          />  
+         
+         <com.smwl.smsdk.myview.PrePayItemReSDK
+             android:id="@+id/prepay_ali"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" 
+              android:clickable="true"                           
+              />
+          <com.smwl.smsdk.myview.PrePayItemReSDK
+             android:id="@+id/prepay_weixin"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" 
+             android:clickable="true"                           
+              />
+           <com.smwl.smsdk.myview.PrePayItemReSDK
+             android:id="@+id/prepay_yinlian"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:clickable="true"                            
+             />  
+             
+           <TextView 
+              android:id="@+id/fast_toPay"             
+             android:layout_width="match_parent"
+             android:layout_height="50dip"
+             android:layout_marginLeft="20dip"
+             android:layout_marginRight="20dip"
+             android:text="立即支付"
+             android:textColor="@color/white"
+             android:gravity="center"
+             android:background="@drawable/green_radio_bg" 
+             android:layout_marginTop="20dip" 
+             android:textSize="18sp"                        
+               />
+           
+            <TextView 
+              android:id="@+id/prepay_connection"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"            
+             android:text=""           
+             android:gravity="center"          
+             android:layout_marginTop="20dip" 
+             android:textColor="#333333"                                               
+               />                     
+           
+       </LinearLayout>         
+    </ScrollView>
+    
+
+</LinearLayout>

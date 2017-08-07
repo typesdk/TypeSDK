@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sogou_game_sdk_pay_popwin_item_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="33.5dp" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true"
+        android:paddingLeft="8dp"
+        android:textColor="@drawable/sogou_game_sdk_pay_popwin_text_selector"
+        android:textSize="13.5sp" />
+
+</RelativeLayout>

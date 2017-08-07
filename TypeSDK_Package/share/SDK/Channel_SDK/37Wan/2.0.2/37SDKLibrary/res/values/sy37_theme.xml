@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>  
+   <style name="theme" parent="android:Theme.Black">  
+      <item name="android:windowNoTitle">true</item>  
+      <item name="android:configChanges">keyboardHidden|orientation</item>  
+   </style>  
+</resources>
+<!-- name="android:configChanges">keyboardHidden|orientation -->

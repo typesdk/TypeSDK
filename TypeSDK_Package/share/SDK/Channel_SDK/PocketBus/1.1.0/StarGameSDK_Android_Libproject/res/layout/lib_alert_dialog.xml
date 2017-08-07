@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp">
+    <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:minHeight="160dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/lib_input_box_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <TextView
+                style="@style/LibTextStyle_PersonCenter"
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:lineSpacingExtra="12dp"
+                android:singleLine="false"
+                android:text="@string/lib_alert_dialog_msg"/>
+
+        <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+            <Button
+                    style="@style/LibButtonStyle_PersonCenter"
+                    android:id="@+id/negativeButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/lib_button_white_selector"
+                    android:singleLine="true"
+                    android:text="@string/lib_alert_dialog_negative_text"/>
+
+            <Button
+                    style="@style/LibButtonStyle_PersonCenter"
+                    android:id="@+id/positiveButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/lib_button_search_selector"
+                    android:textColor="@color/lib_white"
+                    android:singleLine="true"
+                    android:text="@string/lib_alert_dialog_positive_text"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

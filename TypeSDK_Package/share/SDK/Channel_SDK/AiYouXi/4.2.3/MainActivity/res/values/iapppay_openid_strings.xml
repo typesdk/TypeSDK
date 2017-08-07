@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- login -->
+    <string name="iapppay_openid_login_tip_login">请输入您的爱贝帐号和密码</string>
+    <string name="iapppay_openid_login_tip_mobile_register">你已支付成功！我们将为您创建账号%1$s，为保障您的银行卡安全，请设置支付密码</string>
+    <string name="iapppay_openid_login_tip_register">你已支付成功！为保证账户余额安全，请注册并设置支付密码</string>
+    <string name="iapppay_openid_login_tip_baidu_register">你已支付成功！注册爱贝账户以便收取活动赠送</string>
+    <string name="iapppay_openid_login_tip_wind_register">为提高交易额度，保障您的交易安全，请先完成注册</string>
+    <string name="iapppay_openid_login_tip_wind_control">为提高交易额度，保障您的交易安全，请先完成注册</string>
+    <string name="iapppay_openid_login_title_tv_login">登录账号</string>
+    <string name="iapppay_openid_login_title_title_register">注册爱贝账号</string>
+    <string name="iapppay_openid_login_title_tv_swith_account">切换账号</string>
+    <string name="iapppay_openid_login_title_tv_register">注册账号</string>
+    <string name="iapppay_openid_login_btn_complete">下一步</string>
+    <string name="iapppay_openid_login_btn_login">登  录</string>
+    <string name="iapppay_openid_login_tv_haved_login">点此登录</string>
+    <string name="iappay_openid_regist_tv_set_pwd">设置密码</string>
+    <string name="iappay_openid_regist_tv_confirm_pwd">确认密码</string>
+</resources>

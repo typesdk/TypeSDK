@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="my_activity_padding">8dp</dimen>
+    <dimen name="my_actionbar_heght">55dp</dimen>
+
+    <dimen name="nubia_ns_1_px">1px</dimen>
+    <dimen name="nubia_ns_10_sp">10sp</dimen>
+    <dimen name="nubia_ns_12_sp">12sp</dimen>
+    <dimen name="nubia_ns_14_sp">14sp</dimen>
+    <dimen name="nubia_ns_16_sp">16sp</dimen>
+    <dimen name="nubia_ns_18_sp">18sp</dimen>
+    <dimen name="nubia_ns_92_sp">92sp</dimen>
+
+    <dimen name="nubia_ns_1_dp">1dp</dimen>
+    <dimen name="nubia_ns_2_dp">2dp</dimen>
+    <dimen name="nubia_ns_3_dp">3dp</dimen>
+    <dimen name="nubia_ns_4_dp">4dp</dimen>
+    <dimen name="nubia_ns_6_dp">6dp</dimen>
+    <dimen name="nubia_ns_7_dp">7dp</dimen>
+    <dimen name="nubia_ns_8_dp">8dp</dimen>
+    <dimen name="nubia_ns_10_dp">10dp</dimen>
+    <dimen name="nubia_ns_12_dp">12dp</dimen>
+    <dimen name="nubia_ns_15_dp">15dp</dimen>
+    <dimen name="nubia_ns_16_dp">16dp</dimen>
+    <dimen name="nubia_ns_20_dp">20dp</dimen>
+    <dimen name="nubia_ns_22_dp">22dp</dimen>
+    <dimen name="nubia_ns_24_dp">24dp</dimen>
+    <dimen name="nubia_ns_28_dp">28dp</dimen>
+    <dimen name="nubia_ns_30_dp">30dp</dimen>
+    <dimen name="nubia_ns_32_dp">32dp</dimen>
+    <dimen name="nubia_ns_36_dp">36dp</dimen>
+    <dimen name="nubia_ns_40_dp">40dp</dimen>
+    <dimen name="nubia_ns_46_dp">46dp</dimen>
+    <dimen name="nubia_ns_48_dp">48dp</dimen>
+    <dimen name="nubia_ns_50_dp">50dp</dimen>
+    <dimen name="nubia_ns_52_dp">52dp</dimen>
+    <dimen name="nubia_ns_56_dp">56dp</dimen>
+    <dimen name="nubia_ns_60_dp">60dp</dimen>
+    <dimen name="nubia_ns_65_dp">65dp</dimen>
+    <dimen name="nubia_ns_70_dp">70dp</dimen>
+    <dimen name="nubia_ns_72_dp">72dp</dimen>
+    <dimen name="nubia_ns_74_dp">74dp</dimen>
+    <dimen name="nubia_ns_75_dp">75dp</dimen>
+    <dimen name="nubia_ns_80_dp">80dp</dimen>
+    <dimen name="nubia_ns_100_dp">100dp</dimen>
+    <dimen name="nubia_ns_106_dp">106dp</dimen>
+    <dimen name="nubia_ns_120_dp">120dp</dimen>
+    <dimen name="nubia_ns_147_dp">147dp</dimen>
+    <dimen name="nubia_ns_156_dp">156dp</dimen>
+    <dimen name="nubia_ns_252_dp">252dp</dimen>
+    <dimen name="nubia_ns_265_dp">265dp</dimen>
+    <dimen name="nubia_ns_102_dp">102dp</dimen>
+    <dimen name="nubia_ns_2_px">2px</dimen>
+    <dimen name="nubia_ns_54_dp">54dp</dimen>
+    <dimen name="nubia_ns_100_66_dp">100.66dp</dimen>
+    <dimen name="nubia_ns_203_dp">203dp</dimen>
+
+    <dimen name="nubia_header_distance">80dp</dimen>
+    <dimen name="nubia_focus_point_space">24px</dimen>
+    <dimen name="nubia_necessary_title_large_height">48dp</dimen>
+    <dimen name="nubia_necessary_title_small_height">48dp</dimen>
+    <dimen name="nubia_necessary_title_large_text">16sp</dimen>
+    <dimen name="nubia_necessary_title_small_text">16sp</dimen>
+    <dimen name="nubia_ns_193_dp">193dp</dimen>
+    <dimen name="nubia_ns_320_dp">320dp</dimen>
+    <dimen name="nubia_setting_switch_left_margin">270dp</dimen>
+
+    <dimen name="nubia_ns_22_6_dp">22.6dp</dimen>
+
+
+    <dimen name="nubia_logo_margin_top">40dp</dimen>
+    <dimen name="nubia_item_padding_side">16dp</dimen>
+    <dimen name="nubia_item_padding_top">6dip</dimen>
+    <dimen name="nubia_line_padding">56dp</dimen>
+    <dimen name="nubia_regist_email_btn_padding_left">40dp</dimen>
+    <dimen name="nubia_line_padding_top">8dip</dimen>
+    <dimen name="nubia_bottom_padding">6dip</dimen>
+    <dimen name="nubia_item_padding_left">4dip</dimen>
+    <dimen name="nubia_windows_status_bar_height">0dp</dimen>
+    <dimen name="nubia_account_margin_bottom">25dp</dimen>
+    <dimen name="nubia_start_fragment_layout_margin_top">100dp</dimen>
+    <dimen name="nubia_start_fragment_item_to_instructions">50dp</dimen>
+    <dimen name="nubia_nubia_button_gap">20dip</dimen>
+    <dimen name="nubia_ns_98_dp">98dp</dimen>
+    <dimen name="nubia_ns_25_dp">25dp</dimen>
+    <dimen name="nubia_ns_35_dp">35dp</dimen>
+    <dimen name="nubia_ns_43_dp">43dp</dimen>
+    <dimen name="nubia_ns_93_dp">93dp</dimen>
+    <dimen name="nubia_ns_210_dp">210dp</dimen>
+    <dimen name="nubia_ns_23_dp">23dp</dimen>
+    <dimen name="nubia_ns_19_dp">19dp</dimen>
+    <dimen name="nubia_ns_14_dp">14dp</dimen>
+
+</resources>

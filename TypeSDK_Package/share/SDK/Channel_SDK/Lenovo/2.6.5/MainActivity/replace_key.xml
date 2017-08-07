@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="replaceKey">
+    <replace dir="../MainActivity" includes="AndroidManifest.xml" encoding="UTF-8">
+        <replacefilter token="@package@" value="${package}"/>
+        <replacefilter token="@app_id@" value="${app_id}"/>
+    </replace>
+	<replace dir="../MainActivity/src/com/type/sdk/android" includes="TypeSDKHelper.java" encoding="UTF-8">
+        <replacefilter token="@channelName@" value="${channelName}"/>
+    </replace>
+</project>

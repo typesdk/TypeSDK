@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/hpay_progress_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:id="@+id/alert_progressBar_id"
+            android:layout_width="17dip"
+            android:layout_height="17dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:indeterminateDrawable="@drawable/hpay_progress_img_style"
+            android:indeterminateDuration="500"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:id="@+id/alert_text_show_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="15dip"
+            android:text="正在为您载入数据，请稍候"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

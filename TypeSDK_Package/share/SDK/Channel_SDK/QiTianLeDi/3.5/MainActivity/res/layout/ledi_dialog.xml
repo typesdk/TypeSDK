@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/C_white" >
+
+        <LinearLayout
+            android:id="@+id/c1wan_log_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/float_window_grey"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="官网公告"
+                android:textColor="#03be03" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/c1wan_log_dialog_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="#03be03"
+            android:text="确定"
+            android:textSize="15sp" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/c1wan_log_dialog_btn"
+            android:layout_below="@id/c1wan_log_dialog_title" >
+
+            <TextView
+                android:id="@+id/c1wan_log_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp"
+                android:text="test"
+                android:textColor="@color/B_black"
+                android:textSize="12sp" />
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

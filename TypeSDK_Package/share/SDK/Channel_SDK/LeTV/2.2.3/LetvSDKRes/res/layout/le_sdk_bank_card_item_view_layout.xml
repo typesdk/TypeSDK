@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.le.legamesdk.activity.bankcard.BankCardItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/le_border_line_bg_round_five_dp"
+    android:orientation="vertical" >
+
+    <!-- com.le.legamesdk.activity.bankcard.BankCardItemView -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <Button
+            android:id="@+id/le_sdk_bank_card_unbind_btn"
+            style="@style/LeStyleGreenPressGreenDark14"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_10"
+            android:background="@drawable/le_hollow_border_line_bg_green_press"
+            android:text="@string/le_sdk_unbind_text" />
+
+        <ImageView
+            android:id="@+id/le_sdk_bank_card_logo"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_10"
+            android:contentDescription="@string/le_sdk_bank_logo_content_description" />
+
+        <TextView
+            android:id="@+id/le_sdk_bank_card_name"
+            style="@style/LeStyleGrayDark14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_toEndOf="@id/le_sdk_bank_card_logo"
+            android:layout_toRightOf="@id/le_sdk_bank_card_logo" />
+
+        <TextView
+            android:id="@+id/le_sdk_bank_card_type"
+            style="@style/LeStyleGrayDark12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/le_sdk_bank_card_name"
+            android:layout_toEndOf="@id/le_sdk_bank_card_logo"
+            android:layout_toRightOf="@id/le_sdk_bank_card_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_margin="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/le_sdk_bank_card_hide_number"
+            style="@style/LeStyleGrayDark12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/le_sdk_hide_number_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/le_sdk_bank_card_number"
+            style="@style/LeStyleGrayDark18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</com.le.legamesdk.activity.bankcard.BankCardItemView>

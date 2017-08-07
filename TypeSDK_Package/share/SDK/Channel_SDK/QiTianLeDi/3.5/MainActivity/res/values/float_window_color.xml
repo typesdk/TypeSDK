@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="float_window_white">#fff</color>
+    <color name="float_window_black">#000</color>
+    <color name="float_window_grey">#f4f4f4</color>
+    <color name="float_window_hint_grey">#a0a0a0</color>
+    <color name="float_window_transparent">#0fff</color>
+    <color name="float_window_blue">#00f</color>
+    <color name="float_window_yellow">#ea6</color>
+
+</resources>

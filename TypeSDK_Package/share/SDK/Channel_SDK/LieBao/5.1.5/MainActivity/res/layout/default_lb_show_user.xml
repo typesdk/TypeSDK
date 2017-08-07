@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01000000">
+    
+    <!--注册 -->
+    <RelativeLayout
+        android:id="@+id/lb_login_layout"
+        android:layout_width="282.0dp"
+        android:layout_height="299.0dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/default_lb_login"      
+        android:paddingLeft="16.0dp"
+        android:paddingRight="16.0dp"
+        android:paddingTop="20.0dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/lb_logo"
+            android:layout_width="113.0dp"
+            android:layout_height="45.0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6.0dp"
+            android:background="@drawable/default_lb_logo_icon" />
+
+        <RelativeLayout
+            android:id="@+id/lb_account_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_logo"
+            android:layout_marginTop="19.0dp" >
+
+            <TextView
+                android:id="@+id/lb_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="11.0dp"
+                android:paddingTop="11.0dp"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:layout_below="@id/lb_account_et"
+                android:background="#bebeb9" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lb_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_account_layout"
+            android:layout_marginTop="7.0dp" >
+
+            <TextView
+                android:id="@+id/lb_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="11.0dp"
+                android:paddingTop="11.0dp"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:layout_below="@id/lb_password_et"
+                android:background="#bebeb9" />
+
+            <TextView
+                android:id="@+id/lb_switch_password_tv"
+                android:layout_width="19.0dp"
+                android:layout_height="19.0dp"
+                android:layout_alignRight="@id/lb_password_et"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11.0dp"
+                android:background="@drawable/default_lb_switch_password" />
+        </RelativeLayout>
+           
+        <TextView
+            android:id="@+id/lb_login_tv"
+            android:layout_width="match_parent"
+            android:layout_height="34.0dp"
+            android:layout_alignLeft="@+id/lb_password_layout"
+            android:layout_below="@+id/lb_password_layout"
+            android:layout_marginTop="17.0dp"
+            android:background="@drawable/default_lb_login_button_selector"
+            android:gravity="center"
+            android:text="进入游戏"
+            android:textColor="#fff008"
+            android:textSize="15.0sp" />
+      
+        <TextView
+            android:id="@+id/lb_logsuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="截图已保存"
+            android:textColor="#21ac35"
+            android:textSize="12.0sp" 
+            android:layout_marginTop="14.0dp"
+			android:layout_centerHorizontal="true"
+            android:layout_below="@id/lb_login_tv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请妥善保管您的帐号密码"
+            android:textColor="#919191"
+            android:textSize="12.0sp"
+            android:layout_below="@id/lb_logsuccess"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

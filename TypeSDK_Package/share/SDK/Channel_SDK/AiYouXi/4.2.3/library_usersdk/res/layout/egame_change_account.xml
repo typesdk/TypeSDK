@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <Button
+        android:id="@+id/egame_btn_change_account"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:background="@android:color/white"
+        android:drawablePadding="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="切换账号"
+        android:textSize="14dp"
+        android:textColor="@color/text_green" />
+
+</LinearLayout>

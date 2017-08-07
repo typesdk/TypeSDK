@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/ch_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ch_dialog_title_grean_bg" >
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/ch_slogon" />
+
+    </RelativeLayout>
+    
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+	
+    <RelativeLayout
+        android:id="@+id/ch_dialog_rl_fast"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ch_dialog_edit_bg"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" >
+
+        <ImageView
+            android:id="@+id/ch_dialog_icon_user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ch_icon_user" />
+        <ImageView
+            android:id="@+id/ch_dialog_pull_down_logo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:padding="3dp"
+            android:src="@drawable/ch_dialog_register_pull_down_logo" />
+
+        <EditText
+            android:id="@+id/ch_dialog_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ch_dialog_icon_user"
+            android:layout_toLeftOf="@id/ch_dialog_pull_down_logo"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:ems="10"
+            android:hint="请输入账户名/手机号"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/ch_text"
+            android:textColorHint="@color/ch_text_hint"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/ch_dialog_edit_bg"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" >
+
+        <ImageView
+            android:id="@+id/ch_dialog_icon_pwd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ch_icon_pwd" />
+        
+        <TextView
+            android:id="@+id/ch_dialog_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:text="忘记账号/密码"
+            android:padding="4dp"
+            android:background="@drawable/ch_dialog_pay_btn"
+            android:textColor="@drawable/ch_dialog_green_font_bg"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ch_dialog_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/ch_dialog_icon_pwd"
+            android:layout_toLeftOf="@+id/ch_dialog_forget_password"
+            android:background="@null"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="@color/ch_text"
+            android:textColorHint="@color/ch_text_hint"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ch_dialog_fastregist"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/ch_btn_green"
+            android:gravity="center"
+            android:text="快速注册"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/ch_dialog_entergame"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/ch_btn_orange"
+            android:gravity="center"
+            android:text="登录游戏"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

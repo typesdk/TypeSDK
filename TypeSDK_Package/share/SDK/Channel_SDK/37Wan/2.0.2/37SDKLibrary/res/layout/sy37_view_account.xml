@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/commonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/login"
+                    android:layout_width="90dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:gravity="center"
+                    android:text="@string/fg_login_title"
+                    android:textColor="@color/s_orange"
+                    android:textSize="@dimen/but_text_size" />
+
+                <View
+                    android:id="@+id/left"
+                    android:layout_width="90dip"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="13dp"
+                    android:background="#ff8a00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center"
+                    android:text="@string/fg_account_manager"
+                    android:textColor="@color/s_gray"
+                    android:singleLine="true"
+                    android:textSize="@dimen/but_text_size" />
+
+                <View
+                    android:id="@+id/right"
+                    android:layout_width="90dip"
+                    android:layout_height="2dip"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="13dp"
+                    android:scaleType="matrix"
+                    android:background="#ff8a00"
+                    android:visibility="invisible"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/header"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <com.sy37sdk.widget.BaseViewPager
+                android:id="@+id/dateViews"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ProgressBar
+                android:id="@+id/waiting"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="30dip"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/sy37_kefu_progress" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

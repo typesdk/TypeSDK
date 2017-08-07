@@ -1,0 +1,99 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/egame_pwcheckbox_selector</item>
+    </style>
+	
+    <style name="MyCheckBox2" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/egame_agreecheckbox_selector</item>
+    </style>
+<!--          <item name="android:paddingLeft">2dip</item>   -->
+    
+    <style name="popup_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+	<style name="myProgressBarStyleLarge" >
+	　　<item name="android:indeterminateDrawable">@drawable/egame_progress_large</item>
+	　　<item name="android:minWidth">76dip</item>
+	　　<item name="android:maxWidth">76dip</item>
+	　　<item name="android:minHeight">76dip</item>
+	　　<item name="android:maxHeight">76dip</item>
+	</style>
+	
+	 <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+	
+	 <style name="pop_style">
+        <item name="android:textSize">@dimen/pop_font_size</item>
+        <item name="android:textColor">@color/egame_usersdk_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:checked">true</item>
+        <item name="android:padding">@dimen/pop_padding_up</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+<!--         <item name="android:drawablePadding">@dimen/pop_padding_drawable</item> -->
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">@drawable/egame_floatview_btn_press</item>
+    </style>
+    
+    <style name="Widget"></style>
+	 
+	 <style name="Widget.TabPageIndicator" parent="Widget">
+        <item name="android:gravity">center</item>
+        <!-- <item name="android:background">@drawable/vpi__tab_indicator</item> -->
+        <item name="android:paddingLeft">18dip</item>
+        <item name="android:paddingRight">18dip</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextAppearance.TabPageIndicator" parent="Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/egame_vpi__dark_theme</item>
+    </style>
+    
+    
+     <style name="TitleStyle">
+        <!-- TAB文字大小 -->
+        <item name="android:textSize">@dimen/dp_16</item>
+        <!-- TAB文字颜色 -->
+        <item name="android:textColor">@drawable/egame_indicator_title_color_selector</item>
+    </style>
+    
+	 <style name="MYGAME_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+	 
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/kg_common_title_bar" >
+    </include>
+
+    <WebView
+        android:id="@+id/kg_wv_game_forum"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.kugou.game.sdk.ui.widget.TipsLayout
+        android:id="@+id/kg_tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

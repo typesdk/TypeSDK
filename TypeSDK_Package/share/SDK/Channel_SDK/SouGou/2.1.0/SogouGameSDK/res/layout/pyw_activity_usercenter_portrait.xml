@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background" >
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/pyw_layout_head"
+        android:layout_width="match_parent"
+        android:background="@color/pyw_yq_title_bg"
+        android:layout_height="@dimen/pyw_common_title_height" >
+
+        <TextView
+            android:id="@+id/pyw_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/pyw_usercenter"
+            android:textColor="@color/pyw_common_black"
+            android:textSize="@dimen/pyw_common_larger" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:paddingTop="@dimen/pyw_log_padding"
+            android:paddingBottom="@dimen/pyw_log_padding"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/pyw_img_sdk_logo" />
+
+          <LinearLayout
+            android:id="@+id/pyw_layout_common_title_bar_back"
+            android:layout_width="@dimen/pyw_common_title_height"
+            android:layout_height="@dimen/pyw_common_title_height"
+            android:background="@drawable/pyw_selector_common_item_bg"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pyw_img_arrow_left" />
+        </LinearLayout>
+    </RelativeLayout>
+    -->
+
+    <include
+        android:id="@+id/pyw_layout_common_title"
+        layout="@layout/pyw_common_title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/pyw_layout_common_title"
+        android:background="@color/pyw_common_item_divider" />
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_switchaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pyw_layout_common_title"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pyw_img_no_leftrightframe_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/PYW.Safe.Layout"
+            android:background="@drawable/pyw_selector_common_item_bg"
+            android:paddingBottom="1px"
+            android:paddingLeft="20dp"
+            android:paddingTop="1px" >
+
+            <TextView
+                android:id="@+id/pyw_tv_account"
+                style="@style/PYW.Safe.Text" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/PYW.Safe.Modify"
+                android:text="@string/pyw_usercenter_switchaccount" />
+
+            <ImageView style="@style/PYW.Safe.Image" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pyw_layout_switchaccount"
+        android:background="@drawable/pyw_img_no_leftrightframe_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_voucher"
+            style="@style/PYW.Safe.Layout" >
+
+            <ImageView
+                style="@style/PYW.Safe.Image"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/pyw_img_voucher" />
+
+            <TextView
+                style="@style/PYW.Safe.Text"
+                android:text="@string/pyw_usercenter_voucher" />
+
+            <TextView
+                android:id="@+id/my_voucher_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="(共0张)"
+                android:textColor="@color/pyw_common_gray_light"
+                android:textSize="@dimen/pyw_common_medium" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView style="@style/PYW.Safe.Image" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:background="@color/pyw_common_item_divider" />
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_safe"
+            style="@style/PYW.Safe.Layout" >
+
+            <ImageView
+                style="@style/PYW.Safe.Image"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/pyw_img_safe" />
+
+            <TextView
+                style="@style/PYW.Safe.Text"
+                android:text="@string/pyw_usercenter_safe" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView style="@style/PYW.Safe.Image" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pyw_page_edge_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:text="@string/pyw_page_edge_text"
+        android:textColor="@color/pyw_common_gray_lighter"
+        android:textSize="@dimen/pyw_common_medium" />
+
+    <include
+        android:id="@+id/pyw_layout_contact"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/pyw_common_editext_height"
+        android:layout_above="@+id/pyw_page_edge_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        layout="@layout/pyw_view_bottom_contact"
+        android:background="@drawable/pyw_img_service_bg"
+        android:paddingLeft="20dp" />
+
+    <com.pengyouwan.sdk.ui.widget.TipsLayout
+        android:id="@+id/pyw_layout_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pyw_common_title"
+        android:visibility="gone" />
+
+</RelativeLayout>

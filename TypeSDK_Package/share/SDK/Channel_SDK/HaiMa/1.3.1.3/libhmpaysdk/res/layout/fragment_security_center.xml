@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/security_center_top_linear"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/security_center_icon"/>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/UserRegisterSecond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/security_center_security_level"/>
+
+                    <TextView
+                        android:id="@+id/security_center_level_value_tv"
+                        style="@style/UserRegisterSecond"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/security_center_security_level_low"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/security_center_login_name_tv"
+                    style="@style/UserRegisterSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/security_center_login_name"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/user_register_divide_line_color"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/common_bottom"
+        layout="@layout/include_common_bottom"></include>
+
+    <include
+        android:id="@+id/security_center_middle"
+        layout="@layout/include_security_center_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/common_bottom"
+        android:layout_below="@id/security_center_top_linear"
+        ></include>
+
+</RelativeLayout>

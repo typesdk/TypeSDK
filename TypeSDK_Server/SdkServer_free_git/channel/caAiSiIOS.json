@@ -1,0 +1,47 @@
+{
+  "version":"2.1.1.20160506",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "token" : ""
+    }
+    ,"out_url" :"https://pay.i4.cn/member_third.action"
+    ,"out_params" :
+    {
+      "token" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "account" : ""
+      ,"amount" : ""
+      ,"app_id" :""
+      ,"billno"  : ""
+      ,"order_id" : ""
+      ,"role" : ""
+      ,"status" : ""
+      ,"zone" : ""
+      ,"sign": ""
+      }
+    ,"out_url" : "https://pay.i4.cn/member_third.action"
+    ,"out_params" :
+      {
+        "account" : ""
+      ,"amount" : ""
+      ,"app_id" :""
+      ,"billno"  : ""
+      ,"order_id" : ""
+      ,"role" : ""
+      ,"status" : ""
+      ,"zone" : ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

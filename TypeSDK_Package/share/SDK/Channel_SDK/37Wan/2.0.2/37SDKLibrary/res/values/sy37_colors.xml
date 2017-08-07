@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_checked">#FFFFFFFF</color>
+    <color name="button_uncheck">#666666</color>
+    <color name="kefu_blue">#58a8dd</color>
+    <color name="kefu_black">#ff333333</color>
+    <color name="kefu_gray">#c1c1c1</color>
+    <color name="kefu_green">#5ab75c</color>
+    <color name="kefu_yellow">#ef942b</color>
+    <color name="black">#FF000000</color>
+    <color name="dkgray">#FF444444</color>
+    <color name="gray">#FF888888</color>
+    <color name="ltgray">#FFCCCCCC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="magenta">#FFFF00FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#FFFFAC22</color>
+    <color name="blackground">#FFD3D2D2</color>
+
+    <!-- 1.6.0 -->
+    <color name="s_orange">#ff8a00</color>
+    <color name="s_gray">#747474</color>
+    <color name="s_light_gray"> #b2b2b2</color>
+    <color name="s_white">#ffffff</color>
+    <color name="s_gray_btn_bg">#c6c6c6</color>
+    <!--color name="s_orange_btn_bg">#ffa200</color-->
+
+
+	 <!-- 洋葱头背景色 -->
+    <color name="float_window_bg">#ffa911</color>
+<!--     <color name="float_window_bg">#4fc1e9</color>   蓝色-->
+
+
+</resources>

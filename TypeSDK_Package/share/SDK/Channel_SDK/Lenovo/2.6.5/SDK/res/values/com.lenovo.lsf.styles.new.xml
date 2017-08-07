@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="com_lenovo_lsf_account_setting_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF333333</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="com_lenovo_lsf_account_setting_text_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FF9d9d9d</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+</resources>

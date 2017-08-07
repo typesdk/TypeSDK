@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="com_lenovo_lsf_pay_app_name">V币中心</string><!-- QQ use it -->
+    
+    <!-- pay -->
+    <string name="com_lenovo_lsf_pay_charge_record">充值记录</string>
+    <string name="com_lenovo_lsf_pay_record">购买记录</string>
+    
+    <string name="com_lenovo_lsf_pay_charge_detail">充值详情</string>
+    <string name="com_lenovo_lsf_pay_detail">购买详情</string>
+    <string name="com_lenovo_lsf_pay_record_orderid">流水单号</string>
+    <string name="com_lenovo_lsf_pay_record_charge_mount">充值金额</string>
+    <string name="com_lenovo_lsf_pay_record_charge_datetime">充值时间</string>
+    <string name="com_lenovo_lsf_pay_record_pay_mount">消费金额</string>
+    <string name="com_lenovo_lsf_pay_record_productname_text">商品名称</string>
+    
+    <string name="com_lenovo_lsf_pay_trade_record_success">成功</string>
+    <string name="com_lenovo_lsf_pay_trade_record_failed">失败</string>
+    <string name="com_lenovo_lsf_pay_vb_charge">充值V币</string>
+    <string name="com_lenovo_lsf_pay_traderecord_bankcard_text">银行卡</string>
+    <string name="com_lenovo_lsf_pay_goods_zhifubao_text">支付宝</string>
+    <string name="com_lenovo_lsf_pay_goods_caifutong_text">财付通</string>
+    <string name="com_lenovo_lsf_pay_goods_weixin_text">微信</string>
+    <string name="com_lenovo_lsf_pay_goods_chargecard_text">手机充值卡</string>
+    <string name="com_lenovo_lsf_pay_goods_gamecard_text">游戏点卡</string>
+    <string name="com_lenovo_lsf_pay_charge_type">充值方式</string>
+    <string name="com_lenovo_lsf_pay_charge_amount">选择金额</string>
+    <string name="com_lenovo_lsf_pay_charge_deno">选择面额</string>
+    <string name="com_lenovo_lsf_pay_loading_cashier">正在连接支付中心，请稍后...</string>
+    <string name="com_lenovo_lsf_pay_computer">电脑充值</string>
+    <string name="com_lenovo_lsf_pay_network_unconnent">网络连接失败，请检查网络！</string>
+    <string name="com_lenovo_lsf_pay_dlg_ok_text">确定</string>
+    <string name="com_lenovo_lsf_pay_dlg_cancel_text">取消</string>
+    <string name="com_lenovo_lsf_pay_dlg_title_text">提示</string>
+    <string name="com_lenovo_lsf_pay_input_amount_null_error1">输入的金额不能为空,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_input_amount_null_error">您输入的金额不正确,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_input_deno_null_error">您输入的面额不正确,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_input_amount_small_error">输入的最小金额为1元,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_input_amount_big_error">输入的金额不能超过1000元,请重新输入!</string>
+    <string name="com_lenovo_lsf_pay_input_amount_format_error">您输入的金额不合法,请重新输入!"</string>
+    <string name="com_lenovo_lsf_pay_v_name">V币</string>
+    <string name="com_lenovo_lsf_pay_tenpay_loading_text">正在加载财付通，请稍候...</string>
+    <string name="com_lenovo_lsf_pay_pay_processing_text">正在处理中...</string>
+    <string name="com_lenovo_lsf_pay_pay_finish_text">该订单已经处理成功</string>
+    <string name="com_lenovo_lsf_pay_error_goods_expired_text">商品价格已过期，正在重新获取...</string>
+    <string name="com_lenovo_lsf_pay_pay_retry_text">商品价格刷新完成，请重新支付</string>
+    <string name="com_lenovo_lsf_pay_query_waiting_text">正在查询充值结果，请稍候...</string>
+    <string name="com_lenovo_lsf_pay_query_now_text">立即查询</string>
+    <string name="com_lenovo_lsf_pay_query_waiting_to_account_text">充值未成功，请稍后查询或重试</string>
+    <string name="com_lenovo_lsf_pay_query_wait_text">确认</string>
+    <string name="com_lenovo_lsf_pay_error_remote_call_failed_text">调用远程服务失败</string>
+    <string name="com_lenovo_lsf_pay_charge_scale">兑换比例：1元=10V币</string>
+    <string name="com_lenovo_lsf_pay_charge_immediately">立即充值</string>
+    <string name="com_lenovo_lsf_pay_phone_card_charge_tips">充值卡金额将全部充入账户</string>
+    <string name="com_lenovo_lsf_pay_phone_card_charge_num_tips">请输入手机充值卡号</string>
+    <string name="com_lenovo_lsf_pay_phone_card_charge_password_tips">请输入手机充值卡密码</string>
+    <string name="com_lenovo_lsf_pay_phone_card_type_mobile">移动</string>
+    <string name="com_lenovo_lsf_pay_phone_card_type_union">联通</string>
+    <string name="com_lenovo_lsf_pay_phone_card_type_tel">电信</string>
+    <string name="com_lenovo_lsf_pay_card_input_error">%1$s输入应为数字,请重新输入！</string>
+    <string name="com_lenovo_lsf_pay_pleast_input_id">请输入卡号</string>
+    <string name="com_lenovo_lsf_pay_pleast_input_pwd">请输入卡密码</string>
+    <string name="com_lenovo_lsf_pay_card_no_min_error_1">卡号长度应为%1$s位.</string>
+    <string name="com_lenovo_lsf_pay_card_pwd_min_error_1">卡密长度应为%1$s位.</string>
+    <string name="com_lenovo_lsf_pay_card_no_min_error">卡号长度应最小为%1$s位.</string>
+    <string name="com_lenovo_lsf_pay_card_pwd_min_error">卡密长度应最小为%1$s位.</string>
+    <string name="com_lenovo_lsf_pay_error_cardno">卡号长度错误,请重新输入！</string>
+    <string name="com_lenovo_lsf_pay_error_cardpassword">密码长度错误,请重新输入！</string>
+    <string name="com_lenovo_lsf_pay_error_pwd_to_cardno">卡号对应的密码错误，请重新输入！</string>
+    <string name="com_lenovo_lsf_pay_computer_charge_web_tip">访问网址</string>
+    <string name="com_lenovo_lsf_pay_computer_charge_web">vb.lenovo.com</string>
+    <string name="com_lenovo_lsf_pay_computer_charge_account_tip">联想帐号</string>
+    <string name="com_lenovo_lsf_pay_other_charge_type">选择其它充值方式</string>
+    <string name="com_lenovo_lsf_pay_trade_record_loadmore">查看更多</string>
+    <string name="com_lenovo_lsf_pay_trade_record_refresh">下拉刷新</string>
+    <string name="com_lenovo_lsf_pay_trade_record_refresh_time">上次更新时间：</string>
+    <string name="com_lenovo_lsf_pay_xlistview_header_hint_normal">下拉刷新</string>
+    <string name="com_lenovo_lsf_pay_xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="com_lenovo_lsf_pay_xlistview_header_hint_loading">正在加载。。。</string>
+    <string name="com_lenovo_lsf_pay_xlistview_header_last_time">上次更新时间：</string>
+    <string name="com_lenovo_lsf_pay_xlistview_footer_hint_normal">查看更多</string>
+    <string name="com_lenovo_lsf_pay_xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="com_lenovo_lsf_pay_traderecord_detail_text">订单详情  &#62;</string>
+    <string name="com_lenovo_lsf_pay_traderecord_detail_productname_text">商品名称:</string>
+    <string name="com_lenovo_lsf_pay_traderecord_detail_productvalue_text">商品价值：</string>
+    <string name="com_lenovo_lsf_pay_traderecord_detail_tradestatus_text">交易状态：</string>
+    <string name="com_lenovo_lsf_pay_traderecord_no_pay_tip_text">没有购买记录。</string>
+    <string name="com_lenovo_lsf_pay_traderecord_no_charge_tip_text">没有充值记录。</string>
+    <string name="com_lenovo_lsf_pay_game_card_charge_num_tips">游戏点卡卡号</string>
+    <string name="com_lenovo_lsf_pay_game_card_charge_password_tips">游戏点卡密码</string>
+    <string name="com_lenovo_lsf_pay_game_card_charge_tips">请确保所选面额与卡实际面额一致,否则将可能充值失败、意外销卡或资金损失</string>
+    <string name="com_lenovo_lsf_pay_input_correct_deno">输入面额范围应为1~1000元</string>
+    <string name="com_lenovo_lsf_pay_charge_result">充值结果</string>
+    <string name="com_lenovo_lsf_pay_charge_success">充值成功</string>
+    <string name="com_lenovo_lsf_pay_charge_failed">充值失败</string>
+    <string name="com_lenovo_lsf_pay_charge_canceled">用户取消充值</string>
+    <string name="com_lenovo_lsf_pay_charge_success_desc">您可以在联想V币中心查询余额和购买记录,系统将在5秒内自动跳转至V币中心</string>
+    <string name="com_lenovo_lsf_pay_return_to_vb_center">返回V币中心</string>
+    <string name="com_lenovo_lsf_pay_click_when_not_return">如未跳转请点击</string>
+    <string name="com_lenovo_lsf_pay_charge_failed_desc">抱歉您的充值失败了，你可以</string>
+    <string name="com_lenovo_lsf_pay_charge_continue">继续充值</string>
+    <string name="com_lenovo_lsf_pay_charge_return">返回</string>
+    <string name="com_lenovo_lsf_pay_record_query">查询记录</string>
+    <string name="com_lenovo_lsf_pay_liquan_activity">优惠活动</string>
+    <string name="com_lenovo_lsf_pay_my_liquan">我的优惠</string>
+    <string name="com_lenovo_lsf_pay_vb_unit">V币</string>
+    <string name="com_lenovo_lsf_pay_game_card_other_amount_tips">或输入其他面额</string>
+    <string name="com_lenovo_lsf_pay_vb_info_title">什么是联想V币</string>
+    <string name="com_lenovo_lsf_pay_vb_info_tips">V币是联想官方唯一指定虚拟币（1元人民币=10V币），可以购买联想平台所有虚拟产品和增值业务，包括：主题、游戏、彩票等（不含手机、电脑等实体商品）。</string>
+    <string name="com_lenovo_lsf_pay_charge_progress_auto_return">%1$s秒自动查询</string>
+    <string name="com_lenovo_lsf_pay_charge_progress_3m_arrive">预计3分钟到账</string>
+    <string name="com_lenovo_lsf_pay_charge_progress_checking">验证中，请求已提交</string>
+    <string name="com_lenovo_lsf_pay_result_charging_desc">正在充值：%1$sV币</string>
+    <string name="com_lenovo_lsf_pay_result_not_account_desc">还没有到账，请放心款不会丢失，我们会在两个工作日内为您核实。</string>
+    <string name="com_lenovo_lsf_pay_result_kefu">客服电话：</string>
+    <string name="com_lenovo_lsf_pay_charge_progress_30s_no_arrive">还没到账，过会再试</string>
+    <string name="com_lenovo_lsf_pay_back_vbi_text">预计将到账</string>
+    <string name="com_lenovo_lsf_pay_fee_rate_4_charge">扣除%1$s元手续费.</string>
+    
+    <string name="com_lenovo_lsf_pay_phone_charge_tips_up">充话费</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_tips_down">联想话费充值实惠多多</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_title">充值手机话费</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_input_tips">请输入手机号码</string>
+    <string name="com_lenovo_lsf_pay_tv_lenovo_preferential_tips">联想特惠: </string>
+    <string name="com_lenovo_lsf_pay_tv_lenovo_preferential_unit">元</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_choose_pay_type">选择支付方式</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_lenovo_charge">联想充值:</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_charge_amount">金额:</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_number">充值号码:</string>
+    <string name="com_lenovo_lsf_pay_phone_charge_yinlian_online">银联在线支付</string>
+    
+    
+    <string name="com_lenovo_lsf_pay_default_provence">北京市</string>
+    <string name="com_lenovo_lsf_pay_default_operator">中国移动</string>
+    <string name="com_lenovo_lsf_pay_unknown_operator">无法正确识别的运营商</string>
+    <string name="com_lenovo_lsf_pay_commit_operator_info">提交运营商信息</string>
+    
+    <string name="com_lenovo_lsf_pay_yixun_title_text">充值说明</string>
+    <string name="com_lenovo_lsf_pay_yixun_warning2_tip">2 每笔短信充值，运营商收取通讯费用</string>
+    <string name="com_lenovo_lsf_pay_yixun_confirm_tip">点击\"确认充值\"后，系统会发送一条短信息给运营商完成充值服务</string>
+    <string name="com_lenovo_lsf_pay_yixun_success_tip">支付成功</string>
+    <string name="com_lenovo_lsf_pay_yixun_success_charge_tip">已经成功充值</string>
+    <string name="com_lenovo_lsf_pay_yixun_failed_tip">支付失败</string>
+    <string name="com_lenovo_lsf_pay_yixun_sms_send_tip">正在为您发送短信</string>
+    <string name="com_lenovo_lsf_pay_yixun_search_result_tip">正在查询是否到帐</string>
+    <string name="com_lenovo_lsf_pay_yixun_search_wait_tip">请您稍等...</string>
+    <string name="com_lenovo_lsf_pay_yixun_back_text">返回</string>
+    <string name="com_lenovo_lsf_pay_confirm_text">确认充值</string>
+    <string name="com_lenovo_lsf_pay_yixun_wait_confirm_text">等待充值确认</string>
+    <string name="com_lenovo_lsf_pay_yixun_service_text">本服务由北京易讯无限信息技术股份有限公司提供 服务电话：4007767080</string>
+    <string name="com_lenovo_lsf_pay_yixun_service1_text">本服务由北京易讯无限信息技术股份有限公司提供</string>
+    <string name="com_lenovo_lsf_pay_yixun_service2_text">服务电话：4007767080</string>
+    <string name="com_lenovo_lsf_pay_yixun_goods_name_text">充值:</string>
+    <string name="com_lenovo_lsf_pay_yixun_charge_amout_text">金额:</string>
+    <string name="com_lenovo_lsf_pay_yixun_reminder_text"><u>短信充值提醒</u></string>
+    <string name="com_lenovo_lsf_pay_yixun_amount_reminder_text"> (不包含通讯费用)</string>
+    
+    <string name="com_lenovo_lsf_pay_yixun_wait_again_text">再次获取通知</string>
+    <string name="com_lenovo_lsf_pay_yixun_retry_text">未获取到运营商订单信息，正尝试再次获取</string>
+    <string name="com_lenovo_lsf_pay_yixun_getorder_success_text">已获取订单信息</string>
+    <string name="com_lenovo_lsf_pay_yixun_checkorder_text">正在核对订单信息</string>
+    <string name="com_lenovo_lsf_pay_yixun_wait_timeout_text">等待超时</string>
+    <string name="com_lenovo_lsf_pay_yixun_wait_timeout_tip_text">还没有到帐，请放心款不会丢失，我们会在两个工作日内为您核实。如有其他疑问请拨打</string>
+    <string name="com_lenovo_lsf_pay_yixun_warning_tip">
+        
+        <![CDATA[ <Font color=\"#757575\">1 由于运营商会收取渠道费用，</Font> <Font color=\"#ff9600\">%1$s元兑换%2$sV币</Font>]]>
+
+    </string>
+    <string name="com_lenovo_lsf_pay_weixin_needinstall_text">请先安装微信6.0.2以上版本，再进行微信充值</string>
+    <string name="com_lenovo_lsf_pay_weixin_version_low_text">您的微信版本过低，请先安装微信6.0.2以上版本，再进行微信充值</string>
+    
+    <string name="com_lenovo_lsf_pay_product_label">商品：</string>
+    <string name="com_lenovo_lsf_pay_order_label">售价：</string>
+    <string name="com_lenovo_lsf_pay_account_label">帐号：</string>
+    <string name="com_lenovo_lsf_pay_need_price_label">还需要支付：</string>
+    <string name="com_lenovo_lsf_pay_balance_label">余额</string>
+    <string name="com_lenovo_lsf_pay_security_label">您处于联想安全支付环境，请放心支付！</string>
+    <string name="com_lenovo_lsf_pay_cashier_title">联想收银台</string>
+    <string name="com_lenovo_lsf_pay_charge_pay_Type_title">充值并支付方式</string>
+    <string name="com_lenovo_lsf_pay_success">支付成功</string>
+    <string name="com_lenovo_lsf_pay_failed">支付失败</string>
+    <string name="com_lenovo_lsf_pay_canceled">用户取消支付</string>
+    <string name="com_lenovo_lsf_pay_info_tips">正在生成支付信息</string>
+    <string name="com_lenovo_lsf_pay_gps_title">获取位置</string>
+	<string name="com_lenovo_lsf_pay_gps_content">继续操作将会获取您的位置，是否继续？</string>
+	
+	<string name="com_lenovo_lsf_pay_social_action">特权优惠</string>
+	<string name="com_lenovo_lsf_pay_social_loading">加载中...</string>
+	<string name="com_lenovo_lsf_pay_social_product_title">联想用户专享购</string>
+	<string name="com_lenovo_lsf_pay_action_record">我的订单</string>
+	<string name="com_lenovo_lsf_pay_benefit_detail_price">产品价格：￥</string>
+	<string name="com_lenovo_lsf_pay_loading_cashier_error">无法连接支付中心，请稍后再试</string>
+	<string name="com_lenovo_lsf_pay_charge_pay_tequan_type_title">支付方式</string>
+	<string name="com_lenovo_lsf_pay_charge_tequan_pay_value">支付金额：</string>
+	<string name="com_lenovo_lsf_pay_upay_service1_text">本服务由北京优森移动互联网技术有限公司提供</string>
+    <string name="com_lenovo_lsf_pay_upay_service2_text">服务电话：4000010733</string>
+	
+    
+    <string name="com_lenovo_lsf_pay_tgt_error">当前登录已过期，请重新登录</string>
+    <string name="com_lenovo_lsf_pay_vb_center">V币中心</string>
+    <string name="com_lenovo_lsf_pay_lenovouser_btn_ok">确定</string>
+    <string name="com_lenovo_lsf_pay_no_such_permission_phone_state">没有电话权限，请到“设置”->“应用管理”->%1$s->“权限管理”，打开相应权限</string>
+    <string name="com_lenovo_lsf_pay_no_such_permission_location">没有您的位置权限，请到“设置”->“应用管理”->%1$s->“权限管理”，打开相应权限</string>
+    <string name="com_lenovo_lsf_pay_cur_app_name">当前应用名字</string>
+    <string name="com_lenovo_lsf_pay_sms_init_failed">短信支付初始化失败</string>
+    <string name="com_lenovo_lsf_pay_no_such_permission_contacts">没有通讯录权限，请到“设置”->“应用管理”->%1$s->“权限管理”，打开相应权限</string>
+    <string name="com_lenovo_lsf_pay_comfire_alipay_quick">是否使用支付宝免密支付？</string>
+    <string name="com_lenovo_lsf_pay_alipay_quick_faile_unsign">您已取消使用支付宝免密支付，正在为您加载支付宝支付...</string>
+        <string name="com_lenovo_lsf_pay_weixin_loading_text">正在加载微信，请稍候...</string>
+    
+</resources>

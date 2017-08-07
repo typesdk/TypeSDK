@@ -1,0 +1,342 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="sogou_game_sdk_head_title" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_white</item>
+    </style>
+
+    <!-- 4.0以下只能用:Theme.Dialog ，4.0以上推荐使用 :Theme.Holo.Light.Dialog -->
+    <style name="Activity_MyDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="sogou_game_sdk_loading_FullHeightDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="sogou_game_sdk_login_FullHeightDialog" parent="@style/sogou_game_sdk_loading_FullHeightDialog"></style>
+
+    <style name="sogou_game_sdk_login_Transparent">
+        <item name="android:theme">@android:style/Theme.Translucent.NoTitleBar.Fullscreen</item>
+    </style>
+
+    <style name="sogou_game_sdk_login_main_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_main_font_color</item>
+    </style>
+
+    <style name="sogou_game_sdk_login_button_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_white</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_left_side_font_s" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_pay_left_side_font_color_s</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_left_side_font_d" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_pay_left_side_font_color_d</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_bt_red" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_white</item>
+    </style>
+
+    <style name="sogou_game_sdk_bindin_bt_red" parent="@android:style/Widget.Button">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">112dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">24dip</item>
+        <item name="android:textColor">@color/sogou_game_sdk_white</item>
+    </style>
+
+    <style name="sogou_game_sdk_bindin_bt_red1" parent="@android:style/Widget.Button">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginRight">18dip</item>
+        <item name="android:layout_marginLeft">18dip</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_white</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_label_tv" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#3B3B3B</item>
+    </style>
+
+    <style name="sogou_game_sdk_bindin_tv" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#D11301</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="sogou_game_sdk_bindin_edit" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_input_font_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/sogou_game_sdk_input_background</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginLeft">24dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:layout_marginRight">24dip</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_record" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_pay_record_main_font</item>
+    </style>
+    <!-- 支付 选择金额 -->
+    <style name="sogou_game_sdk_pay_spinner_style">
+        <item name="android:background">@drawable/sogou_game_sdk_pay_spinner_selector</item>
+        <item name="android:paddingLeft">5dip</item>
+    </style>
+
+    <style name="sogou_game_sdk_list_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_list_font_color</item>
+    </style>
+
+    <style name="sogou_game_sdk_input_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_input_font_color</item>
+    </style>
+
+    <style name="sogou_game_sdk_button_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_white</item>
+    </style>
+
+    <style name="sogou_game_sdk_main_font" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_main_font_color</item>
+    </style>
+
+    <style name="sogou_game_sdk_float_menu" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_white</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_s20_c3d3d3d" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_3d3d3d</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_bonus_balance" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">14.5sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_3d3d3d</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_voucher" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignBaseline">@id/sogou_game_sdk_pay_money</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">11dp</item>
+        <item name="android:layout_toRightOf">@id/sogou_game_sdk_pay_money</item>
+        <item name="android:text">@string/sogou_game_sdk_pay_use_voucher</item>
+        <item name="android:textColor">@color/sogou_game_sdk_font_red</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_s18_c3d3d3d" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_3d3d3d</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_s22_c3d3d3d" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_3d3d3d</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_s20_c7b7b7b" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_7b7b7b</item>
+    </style>
+
+    <style name="sogou_game_sdk_textview_s20_c595959" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_595959</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_s20_cffffff" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_white</item>
+    </style>
+
+    <style name="sogou_game_sdk_game_info_screen" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">113dp</item>
+        <item name="android:layout_height">173dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/sogou_game_sdk_app_default_icon</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_s20_c72f2a" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_c72f2a</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_s18_c72f2a" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_c72f2a</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_s16_c595959" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_595959</item>
+    </style>
+
+    <style name="sogou_game_sdk_pay_s20_c595959" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">13.5sp</item>
+        <item name="android:textColor">@color/sogou_game_sdk_color_595959</item>
+    </style>
+
+    <style name="sogou_game_sdk_exit_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/sogou_game_sdk_exit_dialog_bg</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="sogou_game_sdk_SpeedyPerfectAccountDialog_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/sogou_game_sdk_exit_dialog_bg</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="sogou_game_sdk_bindin_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/sogou_game_sdk_exit_dialog_bg</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="sogou_game_sdk_base_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="sogou_game_sdk_voucher_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/sogou_game_sdk_login_bg</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="sogou_game_sdk_activity_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@drawable/sogou_game_sdk_exit_dialog_bg</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="Theme.UPPay" parent="android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="sogou_game_sdk_login_speedy" parent="@android:style/Theme.Dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否悬浮在activity上   false: dialog 布满整个屏幕， true，显示指定大小 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题   false 的时候，在没有给定title的情况下，会比true的情况显示要长（title显示了，没有内容而已）， -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 背景颜色 -->
+        <item name="android:windowBackground">@drawable/sogou_game_sdk_exit_dialog_bg</item>
+        <!-- 模糊 false： 整个界面不会有遮罩层 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 灰度  当android:backgroundDimEnabled=true时，这个参数才有用，值越大，遮罩层颜色越深。 -->
+        <item name="android:backgroundDimAmount">0</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 背景缓存颜色 -->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="sg_push_notification_text">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="sg_push_notification_title">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 游戏猫 -->
+    <style name="gamecat_Widget"></style>
+
+    <style name="gamecat_button_common_orange">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/gamecat_button_shape_unpressed</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/gamecat_white</item>
+    </style>
+
+    <style name="gamecat_item_input_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/gamecat_color_333</item>
+        <item name="android:textColorHint">@color/gamecat_hint_color</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="sogou_game_sdk_recharge_record_cb_theme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/sogou_game_sdk_recharge_record_cb</item>
+    </style>
+
+    <style name="sogou_game_sdk_auto_sign_in_cb_theme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/sogou_game_sdk_auto_sign_in_cb</item>
+    </style>
+
+    <style name="sogou_game_sdk_bottom_dialog_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/sogou_game_sdk_bottom_dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/sogou_game_sdk_bottom_dialog_exit</item>
+    </style>
+
+</resources>

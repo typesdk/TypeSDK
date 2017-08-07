@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gfan_no_padding_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/wv_gift_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"></WebView>
+
+    <ProgressBar
+        android:id="@+id/pb_webview_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</FrameLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_gift_center_activity.xml -->

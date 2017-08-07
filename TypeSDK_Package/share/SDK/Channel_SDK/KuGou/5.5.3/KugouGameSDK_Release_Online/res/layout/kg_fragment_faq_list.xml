@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/kg_layout_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.kugou.game.sdk.ui.widget.InnerListView
+                android:id="@+id/kg_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/kg_common_divider"
+                android:dividerHeight="1dp"
+                android:listSelector="@color/kg_common_transparent" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/kg_common_divider" />
+
+            <include layout="@layout/kg_layout_footer_faq" />
+        </LinearLayout>
+
+        <com.kugou.game.sdk.ui.widget.TipsLayout
+            android:id="@+id/kg_tips_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login"
+    android:layout_width="320dip"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true" >
+
+    <LinearLayout
+        android:id="@+id/lg_login"
+        android:layout_width="320dip"
+        android:layout_height="280dip"
+        android:background="@drawable/sdk_login_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/sdk_login_title_bg" >
+
+            <ImageView
+                android:id="@+id/lg_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:src="@drawable/sdk_login_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/lg_logo"
+                android:text="@string/pp_login_title"
+                android:textColor="@color/text_title"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/lg_exit"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/sdk_login_close_bg_selector"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sdk_login_icon_close" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginTop="10dip" >
+
+                <ImageView
+                    android:id="@+id/lg_username_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/sdk_login_icon_yonghu" />
+
+                <EditText
+                    android:id="@+id/lg_username_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/lg_username_iv"
+                    android:background="@drawable/sdk_login_input_bg_selector"
+                    android:hint="@string/pp_login_input_name_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/text_focused"
+                    android:textColorHint="@color/text_normal"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/lg_select_username"
+                    android:layout_width="40dip"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sdk_login_icon_jiantou" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginTop="10dip" >
+
+                <ImageView
+                    android:id="@+id/lg_password_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/sdk_login_icon_mima" />
+
+                <EditText
+                    android:id="@+id/lg_password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/lg_password_iv"
+                    android:background="@drawable/sdk_login_input_bg_selector"
+                    android:hint="@string/pp_login_input_password_hint"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/text_focused"
+                    android:textColorHint="@color/text_normal"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/lg_show_password"
+                    android:layout_width="40dip"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sdk_login_eye_selector" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/lg_login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/sdk_login_btn_green_selector"
+                android:text="@string/pp_login_immediately"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/lg_register_btn"
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/sdk_login_btn_xt_selector"
+                android:text="@string/pp_register"
+                android:textColor="@color/sdk_text_selector"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lg_forget_password_tv"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:text="@string/pp_forget_password"
+                android:textColor="@color/sdk_text_selector"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lg_logining"
+        android:layout_width="320dip"
+        android:layout_height="150dip"
+        android:background="@drawable/sdk_login_loading_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/sdk_login_progress"
+                android:indeterminateOnly="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pp_account"
+                        android:textColor="#ffe5e5e5"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/lg_username_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:textColor="#ffe5e5e5"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pp_logining"
+                    android:textColor="#ffe4e224"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <Button
+                android:id="@+id/lg_switch_account_btn"
+                android:layout_width="100dip"
+                android:layout_height="35dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/sdk_login_btn_xt_selector"
+                android:text="@string/pp_switch_account"
+                android:textColor="@color/sdk_text_selector"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

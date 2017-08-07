@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/yk_toast_bg"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/YK_GameSDK_30PX"
+        android:layout_marginRight="@dimen/YK_GameSDK_14PX"
+        android:src="@drawable/yk_toast_icon" />
+
+    <TextView
+        android:id="@+id/yk_toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/YK_GameSDK_30PX"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/yk_bg_color_white"
+        android:textSize="@dimen/YK_GameSDK_30PX" />
+
+</LinearLayout>

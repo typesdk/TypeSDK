@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1ω</item>
+        <item quantity="other">%dω</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1λ</item>
+        <item quantity="other">%dλ</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1δ</item>
+        <item quantity="other">%dδ</item>
+    </plurals>
+    <string name="tw__like_tweet">Μου αρέσει αυτό το Tweet</string>
+    <string name="tw__liked_tweet">Αναίρεση επιλογής \"Μου αρέσει\"</string>
+    <string name="tw__loading_tweet">Φόρτωση Tweet</string>
+    <string name="tw__pause">παύση</string>
+    <string name="tw__play">αναπαραγωγή</string>
+    <string name="tw__replay">εκ νέου αναπαραγωγή</string>
+    <string name="tw__retweeted_by_format">Έγινε Retweet από το χρήστη %1$s</string>
+    <string name="tw__share_content_format">Δείτε το Tweet του χρήστη  \@%1$s https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">Tweet από το χρήστη %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Κοινοποίηση Tweet</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Γράψτε ένα Tweet με πολυμέσο</string>
+</resources>

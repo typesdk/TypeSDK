@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ly_color_transparent">#00000000</color>
+    <color name="ly_color_cc000000">#cc000000</color>
+    <color name="ly_color_80000000">#80000000</color>
+    <color name="ly_color_b3000000">#b3000000</color>
+    <color name="ly_color_e6000000">#e6000000</color>
+    <color name="ly_color_11000000">#11000000</color>
+    <color name="ly_color_51ffffff">#51ffffff</color>
+    <color name="ly_color_ff5a00">#19c5ae</color>
+    <color name="ly_color_beff5a00">#0a8895</color>
+    <drawable name="ly_color_3b3b3b">#3b3b3b</drawable>
+    <drawable name="ly_color_ff3c3c">#ff3c3c</drawable>
+    <color name="ly_color_2c67eb">#2c67eb</color>
+    <color name="ly_color_513d3c">#513d3c</color>
+    <drawable name="ly_color_282828">#282828</drawable>
+    <drawable name="ly_color_cc2d2d">#cc2d2d</drawable>
+    <color name="ly_color_b3ffffff">#b3ffffff</color>
+    <color name="ly_color_4dffffff">#4dffffff</color>
+    <color name="ly_color_a3a3a3">#a3a3a3</color>
+    <color name="ly_color_555555">#0f4e46</color>
+    <color name="ly_color_e5e5e5">#e5e5e5</color>
+    <color name="ly_color_5e5e5e">#5e5e5e</color>
+    <color name="ly_color_cfcfcf">#cfcfcf</color>
+    <color name="ly_color_000000">#000000</color>
+    <color name="ly_color_e0e0e0">#e0e0e0</color>
+    <color name="ly_color_f5f5f5">#f5f5f5</color>
+    <color name="ly_color_ffffff">#ffffff</color>
+    
+    <color name="ly_fragment_pay_switch_background">#fafafc</color>
+
+    <!--  
+    <color name="ly_color_ff5a00">#ff5a00</color>
+    <color name="ly_color_555555">#555555</color>
+    <color name="ly_color_beff5a00">#beff5a00</color>
+    <color name="ly_color_ff7b33">#ff7b33</color>
+    -->
+</resources>

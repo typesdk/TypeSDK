@@ -1,0 +1,10 @@
+<resources>
+	<dimen name="com_lenovo_pay_goods_marginLeft">18dp</dimen>
+	<dimen name="com_lenovo_pay_goods_marginTop">16dp</dimen>
+	<dimen name="com_lenovo_pay_goods_fontsize">16sp</dimen>
+	<dimen name="com_lenovo_pay_button_fontsize">18sp</dimen>
+	<dimen name="com_lenovo_pay_button_height">60dp</dimen>
+	<dimen name="com_lenovo_pay_goods_item_space">4dp</dimen>
+	<dimen name="com_lenovo_pay_goods_line_space">12dp</dimen>
+	<dimen name="com_lenovo_pay_title_height">40dp</dimen>
+</resources>

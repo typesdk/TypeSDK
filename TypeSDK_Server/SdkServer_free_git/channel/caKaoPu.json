@@ -1,0 +1,52 @@
+{
+  "version":"6.0.7.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "devicetype" : ""
+    ,"imei" : ""
+    ,"channelkey":""
+    ,"openid":""
+    ,"token":""
+    }
+    ,"out_url" : "http://sdk.geturl.kpzs.com/api/CheckUserValidate"
+    ,"out_params" :
+    {
+      "devicetype" : ""
+    ,"imei" : ""
+    ,"tagid" : ""
+    ,"tag" : ""
+    ,"appid":""
+    ,"channelkey":""
+    ,"openid":""
+    ,"token":""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "username": ""
+      ,"kpordernum": ""
+      ,"ywordernum": ""
+      ,"status" : ""
+      ,"paytype": ""
+      ,"amount": ""
+      ,"gameserver": ""
+      ,"paytime": ""
+      ,"gamename": ""
+      }
+    ,"out_url" :"http://sdk.geturl.kpzs.com/api/CheckUserValidate"
+    ,"out_params" :
+      {
+        "code": ""
+      ,"msg": ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

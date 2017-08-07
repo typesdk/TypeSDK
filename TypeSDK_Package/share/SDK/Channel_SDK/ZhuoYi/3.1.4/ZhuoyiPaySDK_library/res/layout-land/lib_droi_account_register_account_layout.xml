@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+     <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/lib_droi_account_land_titleBackground"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/title_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="onBack"
+            android:layout_marginLeft="@dimen/lib_droi_account_land_title_marginleft"
+            android:background="@drawable/lib_droi_account_back_arrow" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/lib_droi_account_register_title"
+            android:textSize="@dimen/lib_droi_account_land_title_textSize"
+            android:textColor="@color/lib_droi_account_land_titleColor" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left_land"
+        android:layout_marginRight="@dimen/lib_droi_account_global_margin_right_land"
+        android:layout_marginTop="@dimen/lib_droi_account_global_margin_top"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/lib_droi_account_edittext_selector"
+           android:orientation="horizontal">
+        
+            <!-- 
+            <TextView android:layout_width="wrap_content"
+                 android:layout_height="41dp"
+                 android:layout_marginLeft="12dp"
+                 android:layout_marginRight="12dp"
+                 android:text="@string/lib_droi_account_register_account_title"
+                 android:gravity="center_vertical"
+                 android:textColor="@color/lib_droi_account_text_green_color"
+                 android:textSize="15sp"/>
+             -->
+            
+        <com.droi.account.view.AccountAutoCompleteTextView
+           android:id="@+id/lib_droi_account_account_name"
+           android:layout_width="match_parent"
+           android:layout_height="41dp"
+           android:layout_gravity="center_horizontal"
+           android:background="@drawable/lib_droi_account_edittext_selector"
+           android:enabled="true"
+           android:focusable="true"
+           android:focusableInTouchMode="true"
+           android:singleLine="true"
+           android:paddingLeft="5dp"
+           android:paddingRight="5dp"
+           android:textColorHint="@color/lib_droi_account_edit_text_color"
+           android:hint="@string/lib_droi_account_register_account_phone_hint"
+           android:textSize="14sp" />   
+           </LinearLayout> 
+            
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="12dp"
+           android:orientation="horizontal">
+           
+             <CheckBox android:id="@+id/lib_droi_account_user_contract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:button="@drawable/lib_droi_account_checkbox_selector"/>
+             
+             <TextView android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/lib_droi_account_register_user_secrecy_agreement"
+                 android:textColor="#7a7e83"/>
+                
+             <TextView android:id="@+id/lib_droi_account_privacy_policy"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/lib_droi_account_user_items_privacy_text"
+                 android:textColor="@drawable/lib_droi_account_text_view_selector" />
+       </LinearLayout>
+       
+       <Button android:id="@+id/lib_droi_account_ok" 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="43dp"
+           android:layout_gravity="center_horizontal"
+           android:text="@string/lib_droi_account_ok"
+           android:textColor="@android:color/white"
+           android:background="@drawable/lib_droi_account_button_selector"/>
+        
+    </LinearLayout>
+    
+       
+</LinearLayout>

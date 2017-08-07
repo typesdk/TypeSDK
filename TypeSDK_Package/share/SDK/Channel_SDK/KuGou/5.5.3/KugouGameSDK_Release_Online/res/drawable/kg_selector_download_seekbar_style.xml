@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 进度条背景 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#ccc" />
+            <!--
+			渐变
+			<gradient 
+				android:startColor="@color/red"
+				android:endColor="@color/green"
+				android:centerColor="@color/yellow"
+				android:centerX="33%"
+				android:centerY="33%"
+				android:angle="45" />
+            -->
+            <stroke
+                android:dashGap="0dip"
+                android:dashWidth="0dip"
+                android:width="0dip"
+                android:color="#333333" />
+            <!-- 圆角 -->
+            <corners
+                android:radius="10dp" />
+
+            <padding
+                android:bottom="0dip"
+                android:left="0dip"
+                android:right="0dip"
+                android:top="0dip" />
+        </shape>
+    </item>
+
+    <!-- 次进度条 -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="#ccc" />
+                <!--
+			渐变
+			<gradient 
+				android:startColor="@color/red"
+				android:endColor="@color/green"
+				android:centerColor="@color/yellow"
+				android:centerX="33%"
+				android:centerY="33%"
+				android:angle="45" />
+                -->
+                <stroke
+                    android:dashGap="0dip"
+                    android:dashWidth="0dip"
+                    android:width="0dip"
+                    android:color="@android:color/white" />
+                <!-- 圆角 -->
+                <corners
+                android:radius="10dp" />
+
+                <padding
+                    android:bottom="0dip"
+                    android:left="0dip"
+                    android:right="0dip"
+                    android:top="0dip" />
+            </shape>
+        </clip>
+    </item>
+
+    <!-- 主进度条 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="#00a8ff" />
+                <!--
+			渐变
+			<gradient 
+				android:startColor="@color/red"
+				android:endColor="@color/green"
+				android:centerColor="@color/yellow"
+				android:centerX="33%"
+				android:centerY="33%"
+				android:angle="45" />
+                -->
+                <stroke
+                    android:dashGap="0dip"
+                    android:dashWidth="0dip"
+                    android:width="0dip"
+                    android:color="@android:color/white" />
+                <!-- 圆角 -->
+                <corners
+                android:radius="10dp" />
+
+                <padding
+                    android:bottom="0px"
+                    android:left="0px"
+                    android:right="0px"
+                    android:top="0px" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

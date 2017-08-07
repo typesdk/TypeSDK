@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <dimen name="payeco_smaller_textsize">14.0sp</dimen>
+    <dimen name="payeco_small_textsize">15.0sp</dimen>
+    <dimen name="payeco_normal_textsize">16.0sp</dimen>
+    <dimen name="payeco_middle_textsize">17.0sp</dimen>
+    <dimen name="payeco_large_textsize">18.0sp</dimen>
+    <dimen name="payeco_larger_textsize">22.0sp</dimen>
+    <dimen name="payeco_button_textsize">18.0sp</dimen>
+    <dimen name="payeco_pw_textsize">20.0sp</dimen>
+    <dimen name="payeco_pwkeyboard_button_textsize">15.0sp</dimen>
+</resources>

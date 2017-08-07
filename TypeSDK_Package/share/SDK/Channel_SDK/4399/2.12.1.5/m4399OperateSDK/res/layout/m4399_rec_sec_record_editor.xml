@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <TextView
+        style="@style/m4399RecordEditorBtnStyle"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="6dp"
+        android:text="@string/m4399_rec_record_editor_operation"/>
+
+    <Button
+        android:id="@+id/btn_paste"
+        style="@style/m4399RecordEditorBtnStyle"
+        android:background="@drawable/m4399_rec_record_editer_btn_bg"
+        android:layout_marginBottom="6dp"
+        android:text="@string/m4399_rec_record_editor_paste"/>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/m4399RecordEditorBtnStyle"
+        android:text="@string/m4399_rec_record_editor_cancel" />
+
+</LinearLayout>

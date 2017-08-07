@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/sogou_game_sdk_reg_account_perfect_close_view1_s" android:state_pressed="false"/>
+    <item android:drawable="@drawable/sogou_game_sdk_reg_account_perfect_close_view1_d" android:state_pressed="true"/>
+    <item android:drawable="@drawable/sogou_game_sdk_reg_account_perfect_close_view1_d" android:state_focused="true"/>
+    <item android:drawable="@drawable/sogou_game_sdk_reg_account_perfect_close_view1_s"/>
+
+</selector>

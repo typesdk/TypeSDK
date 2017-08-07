@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<selector xmlns:android="http://schemas.android.com/apk/res/android">  
+    <item android:state_pressed="true" android:color="@color/pyw_vocher_nouse_txt_color"></item>  
+    <item android:color="@color/pyw_common_gray_light"></item>  
+</selector> 

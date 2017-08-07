@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sogou_game_sdk_tv_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#000"
+    android:textSize="14sp"
+    android:padding="15dp">
+    
+
+</TextView>

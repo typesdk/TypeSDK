@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+        >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/mg_forum_popupwindow_height"
+            android:background="@drawable/bg_popupwindow"
+            >
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="删除"
+                android:textColor="#545454"
+                android:textSize="13sp"
+                android:id="@+id/btn_forum_comment_delete"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+        <View android:layout_height="match_parent"
+              android:layout_width="1px"
+              android:background="#e0e0e0"
+              android:layout_marginBottom="5dp"
+              android:layout_marginTop="5dp"
+              android:id="@+id/divider_forum_comment_1"
+                />
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="回复"
+                android:textColor="#545454"
+                android:textSize="13sp"
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_forum_comment"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+        <View android:layout_height="match_parent"
+              android:layout_width="1px"
+              android:background="#e0e0e0"
+              android:layout_marginBottom="5dp"
+              android:layout_marginTop="5dp"
+              android:id="@+id/divider_2"
+                />
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="举报"
+                android:textColor="#545454"
+                android:textSize="13sp"
+                android:background="@android:color/transparent"
+                android:id="@+id/btn_forum_report"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

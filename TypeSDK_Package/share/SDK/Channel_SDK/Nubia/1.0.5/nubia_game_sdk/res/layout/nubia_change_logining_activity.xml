@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nubia_ns_50_dp"
+    android:layout_marginTop="@dimen/nubia_ns_1_dp"
+    android:background="@color/nubia_color_black_54"
+    android:layout_gravity="center_vertical">
+    <TextView
+        android:id="@+id/LoginingAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/nubia_doing_login"
+        android:textColor="@color/nubia_color_white_100"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/changeAccount"
+            android:layout_width="@dimen/nubia_ns_70_dp"
+            android:text="@string/nubia_chang_account"
+            android:layout_height="@dimen/nubia_ns_30_dp"
+            android:textColor="@color/nubia_color_white_100"
+            android:background="@color/nubia_color_black_87"
+            android:layout_marginRight="@dimen/nubia_ns_20_dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/nubia_ns_30_dp" />
+    </RelativeLayout>
+
+<ProgressBar
+    android:id="@+id/changeAccountProgress"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:indeterminateDrawable="@drawable/my_progress_large"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

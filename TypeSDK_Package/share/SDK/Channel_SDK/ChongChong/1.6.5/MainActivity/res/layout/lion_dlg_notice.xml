@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/lion_dlg_margin"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/lion_style_dlg_title"
+        android:text="@string/lion_dlg_notice"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lion_common_dialog_content_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="80.0dip"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/lion_dlg_notice_content"
+                android:layout_width="match_parent"
+                android:layout_height="80.0dip"
+                android:gravity="center"
+                android:minHeight="80.0dip"
+                android:textColor="#707070"
+                android:textSize="14.0sp"/>
+        </ScrollView>
+
+        <include layout="@layout/lion_dlg_two_btn"/>
+    </LinearLayout>
+
+</LinearLayout>

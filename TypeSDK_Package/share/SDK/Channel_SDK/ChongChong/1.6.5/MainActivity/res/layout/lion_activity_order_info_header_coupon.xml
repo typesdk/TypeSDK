@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/lion_activity_order_info_header_coupon"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/lion_activity_order_info_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:text="@string/lion_text_wallet_order_privilege_notice_2"
+        android:textSize="16.0sp"/>
+
+    <include layout="@layout/lion_activity_order_info_privilege_dividers"/>
+
+    <LinearLayout
+        android:id="@+id/lion_activity_order_info_header_coupon_type_2_discount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/lion_common_white_2_gray_selector"
+        android:orientation="horizontal"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="15.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lion_activity_order_info_header_coupon_type_2_discount_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/lion_icon_radio_selector"
+            android:drawablePadding="5.0dip"
+            android:gravity="center|right"
+            android:text="@string/lion_text_wallet_order_privilege_notice_4"
+            android:textSize="14.0sp"/>
+
+        <TextView
+            android:id="@+id/lion_activity_order_info_header_coupon_type_2_discount_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:textSize="14.0sp"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/lion_activity_order_info_header_coupon_type_2_discount_layout_line"
+        layout="@layout/lion_layout_line"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/lion_activity_order_info_header_coupon_type_2_coupon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/lion_common_white_2_gray_selector"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/lion_activity_order_info_header_coupon_type_2_coupon_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/lion_common_white_2_gray_selector"
+            android:drawableLeft="@drawable/lion_icon_radio_selector"
+            android:drawablePadding="5.0dip"
+            android:gravity="center|right"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:text="@string/lion_text_wallet_order_privilege_notice_5"
+            android:textSize="14.0sp"/>
+
+        <TextView
+            android:id="@+id/lion_activity_order_info_header_coupon_type_2_coupon_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/lion_common_white_2_gray_selector"
+            android:drawableRight="@drawable/lion_arrow_right_gray"
+            android:gravity="center|right"
+            android:paddingRight="15.0dip"
+            android:textSize="14.0sp"/>
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/lion_activity_order_info_header_coupon_type_2_coupon_layout_line"
+        layout="@layout/lion_layout_line"
+        android:visibility="gone"/>
+
+</LinearLayout>

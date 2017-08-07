@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:background="@drawable/ch_float_popup_background_left"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ch_dialog_float_logout"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ch_float_icon_circle"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ch_dialog_float_logout" />
+            </LinearLayout>
+
+            <TextView
+                android:background="@drawable/ch_float_icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="隐藏"
+                android:textColor="@color/ch_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ch_dialog_float_strategy"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ch_float_icon_circle"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ch_dialog_float_strategy" />
+            </LinearLayout>
+
+            <TextView
+                android:background="@drawable/ch_float_icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="攻略"
+                android:textColor="@color/ch_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ch_dialog_float_gift"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ch_float_icon_circle"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ch_dialog_float_gift" />
+            </LinearLayout>
+
+            <TextView
+                android:background="@drawable/ch_float_icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="礼包"
+                android:textColor="@color/ch_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ch_dialog_float_main"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ch_float_icon_circle"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ch_dialog_float_main" />
+            </LinearLayout>
+
+            <TextView
+                android:background="@drawable/ch_float_icon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="主页"
+                android:textColor="@color/ch_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+        <View
+            android:id="@+id/ch_dialog_float_icon"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:background="@color/ch_transparent"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</FrameLayout>

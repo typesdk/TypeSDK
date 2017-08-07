@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_alignParentTop = "true"
+		android:layout_alignParentLeft = "true"
+		android:layout_marginTop = "8dp"
+		android:gravity = "center" >
+
+	<ImageView
+			android:layout_width = "30dp"
+			android:layout_height = "40dp"
+			android:layout_margin="2dp"
+			android:clickable = "false"
+			android:src = "@drawable/umipay_owan_logo" />
+
+	<TextView
+			android:id="@+id/umipay_ouwan_title_logo_tv"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:clickable = "false"
+			android:gravity = "center"
+			android:text = "@string/umipay_ouwan"
+			android:textColor = "@color/umipay_light_gold"
+			android:textSize = "18sp" />
+
+	<View
+			android:layout_width = "1dp"
+			android:layout_height = "16dp"
+			android:background = "@color/umipay_silver"
+			android:layout_gravity = "center_vertical"
+			android:layout_marginLeft = "8dp"
+			android:layout_marginRight = "8dp" />
+
+	<TextView
+			android:id = "@+id/umipay_title_tv"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:clickable = "false"
+			android:gravity = "center"
+			android:layout_marginLeft = "4dp"
+			android:text = "@string/umipay_title"
+			android:textColor = "@color/strip"
+			android:textSize = "16sp" />
+
+</LinearLayout >

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.le.legamesdk.widget.LeMainViewParent
+        android:id="@+id/le_main_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/le_sdk_main_view_margin" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:id="@+id/le_main_view_action_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_main_view_action_bar_height"
+                android:layout_alignParentTop="true"
+                layout="@layout/le_main_view_action_bar_layout" />
+
+            <com.le.legamesdk.widget.LeListView
+                android:id="@+id/le_sdk_binding_bank_card_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/le_main_view_action_bar"
+                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="6dp"
+                android:background="@color/sdk_transparent"
+                android:cacheColorHint="@color/sdk_transparent"
+                android:clickable="false"
+                android:descendantFocusability="beforeDescendants"
+                android:divider="#00000000"
+                android:dividerHeight="10dp"
+                android:listSelector="@color/sdk_transparent"
+                android:scrollbars="none"
+                android:scrollingCache="false" />
+
+            <TextView
+                android:id="@+id/le_bank_card_error_txt"
+                style="@style/LeStyleGray14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </com.le.legamesdk.widget.LeMainViewParent>
+
+</RelativeLayout>

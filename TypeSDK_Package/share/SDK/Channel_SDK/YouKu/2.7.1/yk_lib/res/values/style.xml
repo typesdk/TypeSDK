@@ -1,0 +1,13 @@
+<resources>
+     <style name="ProgressBar_horizontal_yk" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progressbar_horizontal_yk</item>
+    </style>
+      <style name="dialogWindowAnim_yk" parent="android:Animation" mce_bogus="1">  
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim_yk</item>  
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim_yk</item>  
+    </style> 
+</resources>

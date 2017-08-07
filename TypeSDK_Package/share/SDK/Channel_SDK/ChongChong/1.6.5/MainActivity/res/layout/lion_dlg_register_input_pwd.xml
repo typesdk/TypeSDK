@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/lion_common_white_frame_nor"
+              android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/lion_dlg_edit_account_pwd"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/lion_dlg_input"
+        android:layout_weight="1.0"
+        android:background="@null"
+        android:drawableLeft="@drawable/lion_icon_pwd_gray"
+        android:drawablePadding="7.5dip"
+        android:hint="@string/lion_hint_pwd"
+        android:inputType="textPassword"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:textColor="@color/lion_common_black"
+        android:textColorHint="@color/lion_common_text_gray"
+        android:textSize="14.0sp"/>
+
+    <ImageView
+        android:id="@+id/lion_dlg_input_scan_pwd"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:scaleType="center"
+        android:src="@drawable/lion_common_scan_selector"/>
+
+</LinearLayout>

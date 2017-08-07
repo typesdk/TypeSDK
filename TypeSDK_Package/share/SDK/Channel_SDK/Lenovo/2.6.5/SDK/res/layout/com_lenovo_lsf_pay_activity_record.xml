@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/com_lenovo_lsf_pay_appcolor"
+	android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_charge_tips" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#f3f3f3"
+        android:visibility="gone"
+        android:orientation="vertical"> 
+	    <TextView 
+	        android:id="@+id/tv_charge_type"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:gravity="center_vertical"
+	        android:layout_marginLeft="16dp"/> 
+    </LinearLayout> 
+        
+   <com.lenovo.lsf.pay.ui.widget.XListView 
+        android:id="@+id/xListView" 
+        android:layout_below="@id/ll_charge_tips"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+   
+   <LinearLayout
+        android:id="@+id/ll_no_record" 
+        android:layout_below="@id/ll_charge_tips"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="84dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+	    <ImageView 
+	        android:id="@+id/iv_norecord_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/com_lenovo_lsf_pay_no_content"
+	        android:contentDescription="@null"/> 
+	   <TextView 
+		    android:id="@+id/no_traderecord_tv"
+		    android:layout_gravity="center"
+		    android:layout_width="wrap_content"
+		    android:gravity="center"
+		    android:layout_height="wrap_content"
+		    android:textColor="#757575"
+		    android:layout_marginTop="20dp"/>  
+	</LinearLayout>
+
+</RelativeLayout>

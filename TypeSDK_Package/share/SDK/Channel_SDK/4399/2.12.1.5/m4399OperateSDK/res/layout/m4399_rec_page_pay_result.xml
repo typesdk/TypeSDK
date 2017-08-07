@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/m4399RecPageStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_rec_title_height"
+        layout="@layout/m4399_rec_sec_main_page_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="@integer/m4399_rec_result_frag_result_weight"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pay_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1"
+            android:text="@string/m4399_rec_pay_failed_tips"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/warm_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/m4399_rec_result_on_process"
+        android:textColor="#999999"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginTop="12dp"
+        android:layout_weight="3.5"
+        android:gravity="center_horizontal|top"
+        android:orientation="horizontal" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/m4399_rec_result_order_area" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_rec_foot_height"
+        android:background="@drawable/m4399_rec_mvcenter_foot_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/m4399_rec_paddingLeft"
+        android:paddingRight="@dimen/m4399_rec_paddingRight" >
+
+        <ImageView
+            android:id="@+id/sdk_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/m4399_rec_sdk_help" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m439_rec_hotline_prefix"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <TextView
+                android:id="@+id/sdk_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/m4399_rec_link_text_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/m4399_rec_hotline_4399"
+                android:textColor="#32beff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sdk_help_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:background="@drawable/m4399_rec_link_text_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="right"
+            android:text="@string/m4399_rec_faq_link"
+            android:textColor="#32beff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="190dp"
+    android:background="@drawable/kg_login_dialog_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/kg_iv_loading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/kg_loading"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/kg_tv_logining"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kg_iv_loading"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/kg_logining"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/kg_tv_username"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kg_tv_logining"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/kg_tv_change_account"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/kg_login_dialog_change_account_bg_seletor"
+        android:drawableLeft="@drawable/kg_change_account"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:text="@string/kg_change_account"
+        android:textColor="#d0d0d0" />
+
+</RelativeLayout>

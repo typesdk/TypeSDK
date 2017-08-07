@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.FooterView xmlns:android="http://schemas.android.com/apk/res/android"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:background="@color/lion_common_gray"
+                                  android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lion_layout_footerview"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:background="@drawable/lion_common_transparent_selector"
+        android:gravity="center"
+        android:minHeight="40.0dip"
+        android:text="@string/lion_text_loading"
+        android:textColor="@color/lion_common_black"
+        android:textSize="14.0sp" />
+
+</com.lion.ccpay.widget.FooterView>

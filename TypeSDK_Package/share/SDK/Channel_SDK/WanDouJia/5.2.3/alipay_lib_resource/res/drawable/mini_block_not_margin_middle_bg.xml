@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- normal -->
+    <item android:drawable="@drawable/mini_block_not_margin_middle" android:state_enabled="true" android:state_focused="false" android:state_pressed="false" android:state_selected="false"/>
+    <item android:drawable="@drawable/mini_block_not_margin_middle" android:state_enabled="true" android:state_focused="false" android:state_pressed="false" android:state_selected="true"/>
+
+    <!-- focus -->
+    <item android:drawable="@drawable/mini_block_not_margin_middle_press" android:state_enabled="true" android:state_focused="true" android:state_pressed="false" android:state_selected="false"/>
+    <item android:drawable="@drawable/mini_block_not_margin_middle_press" android:state_enabled="true" android:state_focused="true" android:state_pressed="false" android:state_selected="true"/>
+
+    <!-- click -->
+    <item android:drawable="@drawable/mini_block_not_margin_middle_press" android:state_enabled="true" android:state_pressed="true"/>
+
+</selector>

@@ -1,0 +1,304 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.qihoo"
+    android:installLocation="auto"
+    android:versionCode="150"
+    android:versionName="1.5.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 亲加sdk所需权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 添加360SDK必需要的权限。begin -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <!-- payment -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <!-- 浮窗 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 微信分享相关 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!-- qiku start -->
+    <!-- 系统账户操作权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 系统设置操作权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <!-- qiku end -->
+
+
+    <!-- QDAS打点SDK所需权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- 添加360SDK必需要的权限。end -->
+
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.type.sdk.android.qihoo.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <!-- 添加360SDK必需的activity：com.qihoopay.insdk.activity.ContainerActivity -->
+        <activity
+            android:name="com.qihoo.gamecenter.sdk.activity.ContainerActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode|layoutDirection"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+
+            <!-- 支付宝签约后自动跳转到sdk配置 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- android host的值必须为游戏的包名 -->
+                <data android:host="@package@" />
+                <!-- android scheme的值必须不能变 -->
+                <data android:scheme="qihooonlinepay" />
+            </intent-filter>
+        </activity>
+
+        <!-- payment activities begin -->
+        <!-- 添加360SDK必需的activity：com.qihoopp.qcoinpay.QcoinActivity -->
+        <activity
+            android:name="com.qihoopp.qcoinpay.QcoinActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- alipay sdk end -->
+
+
+        <!-- 微信支付界面 -->
+        <activity
+            android:name="com.iapppay.pay.channel.weixinpay.WeixinWapPayActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.junnet.heepay.ui.activity.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.junnet.heepay.ui.activity.WechatPaymentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.ipaynow.plugin.activity.PayMethodActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <!-- 以下两个Activity是SDK插件化使用的代理Activity -->
+        <activity
+            android:name="com.qihoo.sdkplugging.host.HostProxyActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode|layoutDirection"
+            android:label="360SDK"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.qihoo.sdkplugging.host.proxy.activity.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- payment activities end -->
+
+        <meta-data
+            android:name="QHOPENSDK_APPKEY"
+            android:value="@app_key@" >
+        </meta-data>
+        <meta-data
+            android:name="QHOPENSDK_PRIVATEKEY"
+            android:value="@private_key@" >
+        </meta-data>
+        <meta-data
+            android:name="QHOPENSDK_APPID"
+            android:value="@app_id@" >
+        </meta-data>
+
+        <!-- 如下是360游戏实时推送SDK必要声明，不可修改 -->
+        <receiver
+            android:name="com.qihoo.psdk.local.QBootReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.qihoo.psdk.app.QStatActivity"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="com.qihoo.psdk.remote.QRemoteService"
+            android:exported="true"
+            android:process=":QRemote" >
+            <intent-filter>
+                <action android:name="com.qihoo.psdk.service.action.remote" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.qihoo.psdk.local.QLocalService"
+            android:exported="true"
+            android:process=":QLocal" >
+            <intent-filter>
+                <action android:name="com.qihoo.psdk.service.action.local" />
+            </intent-filter>
+        </service>
+        <!-- 推送SDK end -->
+
+
+        <!-- 微信SDK -->
+        <!-- 微信相关的activity，如果游戏接入微信分享需要在游戏工程内实现这个activity，请直接使用demo中的代码实现，并放在游戏的工程的对应路径下。 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 从微信开放平台申请的appid，游戏需要去申请自己的appid -->
+        <meta-data
+            android:name="QHOPENSDK_WEIXIN_APPID"
+            android:value="@wx_app_id@" >
+        </meta-data>
+        <!-- 微信SDK end -->
+
+
+        <!-- UpdateLib start -->
+        <activity
+            android:name="com.qihoo.updatesdk.lib.UpdateTipDialogActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.qihoo.appstore.updatelib.CheckUpdateService"
+            android:exported="false" />
+        <!-- UpdateLib end -->
+
+
+        <!-- gameunion plugin start -->
+        <activity
+            android:name="com.qihoo.gameunionforsdk.SimpleWebView"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode|layoutDirection"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- gameunion plugin end -->
+
+
+        <!-- 默认参数，不需要修改，直接复制就行 -->
+        <meta-data
+            android:name="DC_APPKEY"
+            android:value="02522a2b2726fb0a03bb19f2d8d9524d" />
+    </application>
+
+</manifest>

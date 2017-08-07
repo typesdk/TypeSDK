@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp127"
+            android:background="#c80c0c0c"
+            >
+
+        <Button
+                android:layout_width="@dimen/dp262"
+                android:layout_height="@dimen/dp90"
+                android:text="切换账号"
+                android:id="@+id/changeAccount"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/papalogin_greenbutn_seleter"
+                android:layout_marginRight="@dimen/dp63"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp45"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 正在登录..."
+                android:id="@+id/loginMessage"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/sp36"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_marginLeft="@dimen/dp27"
+                />
+
+        <ImageView
+                android:layout_width="@dimen/dp78"
+                android:layout_height="@dimen/dp78"
+                android:id="@+id/imageView"
+                android:layout_centerVertical="true"
+                android:src="@drawable/papa_notice_icon"
+                android:layout_marginLeft="@dimen/dp36"
+                />
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            />
+</LinearLayout>

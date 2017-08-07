@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/anfan_defealut_bg"
+        android:padding="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="300dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tv_msg"
+        android:background="#e5e5e5" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/anfan_defealut_bg"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#e5e5e5" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@color/anfan_defealut_bg"
+            android:gravity="center"
+            android:textColor="@color/anfan_c23c9ae"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

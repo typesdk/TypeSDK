@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cmge_mc_acct_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="4dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/cmge_mc_acct_info_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/cmge_m_acct_info"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/cmge_mc_acct_info_img"
+            android:layout_width="18.0dip"
+            android:layout_height="18.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dip"
+            android:layout_toLeftOf="@+id/cmge_mc_acct_info_txt"
+            android:background="@drawable/slyx_info"
+            android:contentDescription="@string/slyx_img_des"
+            android:padding="0dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cmge_mc_acct_operation_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dip"
+        android:orientation="vertical"
+        android:padding="0dip"
+        android:visibility="gone" >
+
+        <!-- modify password -->
+
+        <LinearLayout
+            android:id="@+id/cmge_mc_modify_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dip"
+            android:orientation="vertical"
+            android:padding="0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="4.0dip"
+                android:padding="2.0dip" >
+
+                <ImageView
+                    android:id="@+id/cmge_mc_modify_img"
+                    android:layout_width="35.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/slyx_mc_modify_icon"
+                    android:contentDescription="@string/slyx_img_des" />
+
+                <TextView
+                    android:id="@+id/cmge_mc_modify_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:layout_toRightOf="@+id/cmge_mc_modify_img"
+                    android:text="@string/cmge_m_modify_password"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/cmge_mc_modify_go"
+                    android:layout_width="16.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/slyx_mc_arrow_right_s"
+                    android:contentDescription="@string/slyx_img_des"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/slyx_line"
+                android:orientation="horizontal"
+                android:padding="0.0dip" />
+        </LinearLayout>
+
+        <!-- end -->
+
+
+        <!-- bind phone -->
+
+        <LinearLayout
+            android:id="@+id/cmge_mc_bind_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dip"
+            android:orientation="vertical"
+            android:padding="0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="4.0dip"
+                android:padding="2.0dip" >
+
+                <ImageView
+                    android:id="@+id/cmge_mc_bind_img"
+                    android:layout_width="35.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/slyx_mc_bind_icon"
+                    android:contentDescription="@string/slyx_img_des" />
+
+                <TextView
+                    android:id="@+id/cmge_mc_bind_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:layout_toRightOf="@+id/cmge_mc_bind_img"
+                    android:text="@string/cmge_m_bind_phone"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/cmge_mc_bind_go"
+                    android:layout_width="16.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/slyx_mc_arrow_right_s"
+                    android:contentDescription="@string/slyx_img_des"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip" />
+            </RelativeLayout>
+
+            <!-- end -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/slyx_line"
+                android:orientation="horizontal"
+                android:padding="0.0dip" />
+        </LinearLayout>
+
+        <!-- change phone -->
+
+        <LinearLayout
+            android:id="@+id/cmge_mc_change_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dip"
+            android:orientation="vertical"
+            android:padding="0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="4.0dip"
+                android:padding="2.0dip" >
+
+                <ImageView
+                    android:id="@+id/cmge_mc_change_img"
+                    android:layout_width="35.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/slyx_mc_change_icon"
+                    android:contentDescription="@string/slyx_img_des" />
+
+                <TextView
+                    android:id="@+id/cmge_mc_change_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:layout_toRightOf="@+id/cmge_mc_change_img"
+                    android:text="@string/cmge_m_change_phone"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/cmge_mc_change_go"
+                    android:layout_width="16.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/slyx_mc_arrow_right_s"
+                    android:contentDescription="@string/slyx_img_des"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/slyx_line"
+                android:orientation="horizontal"
+                android:padding="0.0dip" />
+        </LinearLayout>
+
+        <!-- end -->
+
+
+        <!-- unbind phone -->
+
+        <LinearLayout
+            android:id="@+id/cmge_mc_unbind_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dip"
+            android:orientation="vertical"
+            android:padding="0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="4.0dip"
+                android:padding="2.0dip" >
+
+                <ImageView
+                    android:id="@+id/cmge_mc_unbind_img"
+                    android:layout_width="35.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/slyx_mc_unbind_icon"
+                    android:contentDescription="@string/slyx_img_des" />
+
+                <TextView
+                    android:id="@+id/cmge_mc_unbind_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:layout_toRightOf="@+id/cmge_mc_unbind_img"
+                    android:text="@string/cmge_m_unbind_phone"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/cmge_mc_unbind_go"
+                    android:layout_width="16.0dip"
+                    android:layout_height="24.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/slyx_mc_arrow_right_s"
+                    android:contentDescription="@string/slyx_img_des"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/slyx_line"
+                android:orientation="horizontal"
+                android:padding="0.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slyx_mc_autologin_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dip"
+            android:orientation="vertical"
+            android:padding="0dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="4.0dip"
+                android:padding="2.0dip" >
+
+                <ImageView
+                    android:id="@+id/slyx_mc_autologin_img"
+                    android:layout_width="35.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/slyx_mc_autologin_icon"
+                    android:contentDescription="@string/slyx_img_des" />
+
+                <TextView
+                    android:id="@+id/slyx_mc_unbind_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:layout_toRightOf="@id/slyx_mc_autologin_img"
+                    android:text="@string/slyx_mc_autologin_des"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <com.cmge.sdk.login.views.SwitchButton
+                    android:id="@+id/slyx_mc_autologin_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/slyx_line"
+                android:orientation="horizontal"
+                android:padding="0.0dip" />
+        </LinearLayout>
+        <!-- end -->
+
+    </LinearLayout>
+
+</LinearLayout>

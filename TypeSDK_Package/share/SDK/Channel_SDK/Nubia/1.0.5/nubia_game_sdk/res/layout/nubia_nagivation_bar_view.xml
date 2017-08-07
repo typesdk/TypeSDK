@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nubia_nagivation_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/nubia_windows_status_bar_height"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:id="@+id/nubia_nagivation_bar_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="42dp"
+                android:layout_height="55dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/nubia_nagivation_bar_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nubia_sys_previous_pressed" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nubia_nagivation_bar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="@style/NubiaTextStyle_16sp_white_alpha100"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/nubia_nagivation_bar_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/nubia_account_text_title_color"
+            android:visibility="gone" />
+    </LinearLayout>

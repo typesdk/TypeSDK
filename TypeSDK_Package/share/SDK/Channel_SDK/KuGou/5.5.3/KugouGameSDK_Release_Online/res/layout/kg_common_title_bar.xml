@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/kg_common_title_bar"
+        android:background="@color/kg_common_title_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/kg_layer_back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/kg_titlebar_btn_selector"
+            android:paddingLeft="14dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/kg_titlebar_back"/>
+
+        <TextView
+            android:id="@+id/kg_layer_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/kg_layer_right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/kg_layer_help_image"
+            android:background="@drawable/kg_titlebar_btn_selector"
+            android:padding="5dp"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/kg_layer_help_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/kg_titlebar_btn_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/kg_titlebar_helpicon" />
+        
+        <ImageView
+            android:id="@+id/kg_layer_vip_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+			android:layout_toLeftOf="@id/kg_layer_right_image"
+            android:background="@drawable/kg_titlebar_btn_selector"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/kg_img_title_vip_icon" />
+        <TextView
+            android:id="@+id/kg_layer_gs_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+			android:layout_toLeftOf="@id/kg_layer_help_image"
+            android:background="@drawable/kg_selector_gs_btn"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text="高级客户服务"
+            android:textSize="@dimen/kg_common_little"
+            android:textColor="@color/kg_common_white" />
+    </RelativeLayout>
+
+</LinearLayout>

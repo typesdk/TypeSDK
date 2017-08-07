@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.zhuoyi"
+    android:versionCode="314"
+    android:versionName="3.1.4"
+    android:installLocation="auto" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <!-- ZhuoYi sdk -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <!-- end -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.type.sdk.android.zhuoyi.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="true" />
+        </activity>
+
+        <!-- sdk begin -->
+        <!-- 帐号相关 -->
+        <provider
+            android:name="com.droi.account.DroiAccountProvider"
+            android:authorities="@package@.droidatabase"
+            android:exported="true" />
+
+        <!-- 登录页面横屏弹框显示 使用 Layout-land下资源布局文件 -->
+        <activity
+            android:name="com.droi.account.authenticator.AuthenticatorActivity"
+            android:configChanges="orientation"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:label="@string/lib_droi_account_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.droi.account.setup.ActivitySettings"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/lib_droi_account_settings_activity_title" >
+            <intent-filter>
+                <action android:name="com.freeme.account.sdk.activity.setup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.droi.account.setup.AccountSettings"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/lib_droi_account_settings_activity_title" >
+        </activity>
+        <activity
+            android:name="com.droi.account.login.RegisterActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.login.AccountCheckActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.login.SecurityCodeActivity"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.login.PasswordSetActivity"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <activity
+            android:name="com.droi.account.login.WelcomeActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:label="@string/lib_droi_account_login_account_title" />
+        <activity
+            android:name="com.droi.account.login.DeleteAccountActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.login.FindCodeActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.login.FindCodeEmailActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.login.SendEmailActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.setup.SetPwdWhenBinded"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.setup.TestGetBindInfo"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.setup.UserInfoUpdated"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.droi.account.setup.EditAddressActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/lib_droi_account_edit_address_title" />
+        <activity
+            android:name="com.droi.account.setup.AddressListActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/lib_droi_account_my_address_text" />
+        <activity
+            android:name="com.droi.account.login.PrivacyPolicy"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher" />
+        <activity
+            android:name="com.droi.account.login.SendActiveEmailActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.droi.account.login.EmailInputActivity"
+            android:excludeFromRecents="true" />
+        <activity
+            android:name="com.droi.account.updateself.UpdateSelfActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/lib_droi_account_ic_launcher"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.droi.account.shared.ChangeAccountActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/lib_droi_account_change_account_title" >
+            <intent-filter>
+                <action android:name="droi.account.intent.action.CHANGE_ACCOUNT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- public api -->
+        <activity
+            android:name="com.droi.account.procedure.BindAccountActivity"
+            android:excludeFromRecents="true"
+            android:exported="true" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.droi.account.auth.DroiAuthPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+
+        <service
+            android:name="com.droi.account.authenticator.AuthenticationService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/lib_droi_account_authenticator" />
+        </service>
+
+        <receiver android:name="com.droi.account.shared.DroiAccountReceiver" >
+            <intent-filter>
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 帐号相关 END -->
+        <activity
+            android:name="com.zhuoyou.pay.sdk.RechargeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" >
+            
+        </activity>
+
+        <receiver
+            android:name="com.zhuoyou.pay.sdk.AccountUpdateReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="droi.account.sdk.intent.action.ACCOUNT_LOGINPAY_SUCCESS" />
+                <action android:name="droi.account.sdk.intent.action.CHANGE_ACCOUNT" />
+                <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
+                <action android:name="droi.account.sdk.intent.action.ACCOUNT_UPDATED" />
+                <action android:name="droi.account.sdk.intent.action.ACCOUNT_DELETED" />
+                <action android:name="droi.account.intent.syncinfo.PHONE_BINDED" />
+                <action android:name="droi.account.intent.syncinfo.LOGIN_CANCELLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.zhuoyi.system.promotion.activity.PromHomeWapScreenActivity"
+            android:allowTaskReparenting="true"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="system.king.com"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.zhuoyi.system.promotion.activity.PromCommonShortcutActivity"
+            android:allowTaskReparenting="true"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="system.king.com"
+            android:theme="@style/zy_transparent" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zhuoyi.system.promotion.activity.PromDesktopAdActivity"
+            android:allowTaskReparenting="true"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|navigation"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="system.king.com"
+            android:theme="@style/zy_transparent" >
+        </activity>
+
+        <receiver android:name="com.zhuoyi.system.promotion.receiver.PackageInstallationReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zhuoyi.system.promotion.receiver.PromBootReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.zhuoyi.system.receiver.PhoneStatReceiver" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.ANY_DATA_STATE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.zhuoyi.system.service.ZyService" />
+
+        <provider
+            android:name="com.zhuoyi.system.promotion.provider.PromWebContentProvider"
+            android:authorities="@package@"
+            android:exported="false" />
+
+        <meta-data
+            android:name="zy_cp_id"
+            android:value="s001" />
+        <meta-data
+            android:name="zy_appid"
+            android:value="sdkzf0" />
+        <meta-data
+            android:name="zy_channel_id"
+            android:value="sdkzfpu01" />
+        <meta-data
+            android:name="ZY_LOTUSEED_APPKEY"
+            android:value="lapkey" />
+        <!-- 上面这几个meta-data配置只需拷贝即可，无需修改 -->
+        <!-- 必选我司分配 -->
+        <meta-data
+            android:name="zy_app_id"
+            android:value="@app_id@" />
+        <meta-data
+            android:name="zy_app_key"
+            android:value="@app_key@" />
+        <meta-data
+            android:name="zy_channel"
+            android:value="@sdk_cp_id@" />
+
+        <!-- sdk end -->
+
+    </application>
+
+</manifest>

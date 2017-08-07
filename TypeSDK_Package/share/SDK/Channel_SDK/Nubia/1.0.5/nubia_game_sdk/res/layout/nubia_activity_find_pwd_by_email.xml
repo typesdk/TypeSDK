@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nubia_window_background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/common_find_pwd_email"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/nubia_color_blue_100" >
+        <include layout="@layout/nubia_header_background" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <LinearLayout
+                android:id="@+id/title2_find_pwd_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/nubia_item_padding_side"
+                android:layout_marginRight="@dimen/nubia_item_padding_side"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="通过邮箱验证找回"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/nubia_color_black_87" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/title2_find_pwd_email"
+                android:background="@color/nubia_color_black_10" />
+
+            <LinearLayout
+                android:id="@+id/email_email_find_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/title2_find_pwd_email"
+                android:layout_marginLeft="@dimen/nubia_item_padding_side"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/email_find_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/nubia_mail"
+                    android:hint="个人邮箱"
+                    android:imeOptions="actionNext"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textCursorDrawable="@drawable/nubia_cursor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/email_email_find_pwd"
+                android:layout_marginLeft="@dimen/nubia_line_padding"
+                android:background="@color/nubia_color_black_10" />
+
+            <LinearLayout
+                android:id="@+id/cache_code_find_pwd_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/email_email_find_pwd"
+                android:layout_marginLeft="@dimen/nubia_item_padding_side"
+                android:layout_marginRight="@dimen/nubia_item_padding_side"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/cache_code_find_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/nubia_mms"
+                    android:hint="点击图片可刷新"
+                    android:imeOptions="actionDone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textCursorDrawable="@drawable/nubia_cursor" />
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical">
+                    <ImageView
+                        android:layout_weight="1"
+                        android:id="@+id/nubia_captcha_find_pwd_email_bitmap"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:button="@null"
+                        android:checked="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:drawableRight="@drawable/my_check_pwd_hide"
+                        android:layout_marginRight="@dimen/nubia_ns_10_dp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/cache_code_find_pwd_email"
+                android:layout_marginLeft="@dimen/nubia_line_padding"
+                android:background="@color/nubia_color_black_10" />
+
+            <Button
+                android:id="@+id/switch_phone_retrieve"
+                android:layout_width="wrap_content"
+                android:layout_height="?android:listPreferredItemHeightSmall"
+                android:layout_below="@id/cache_code_find_pwd_email"
+                android:layout_marginLeft="@dimen/nubia_item_padding_side"
+                android:layout_marginRight="@dimen/nubia_item_padding_side"
+                android:background="@null"
+                android:text="通过短信验证找回"
+                android:textColor="@color/nubia_color_blue_100"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/nubia_line_padding_top"
+        android:background="@color/nubia_color_black_10" />
+
+    <include layout="@layout/nubia_single_bottom_button" />
+
+</LinearLayout>

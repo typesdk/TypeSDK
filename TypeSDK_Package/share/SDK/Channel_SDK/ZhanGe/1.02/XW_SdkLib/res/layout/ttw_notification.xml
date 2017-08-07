@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<LinearLayout  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:layout_width="match_parent"  
+  android:layout_height="wrap_content"
+  android:orientation="vertical"  
+  >  
+<TextView android:id="@+id/down_tv"   
+               android:layout_width="wrap_content"      
+               android:layout_height="fill_parent"   
+               android:textSize="16sp"   
+               android:textColor="@android:color/white"  
+               android:text="游戏下载中"  
+               /> 
+	  <LinearLayout
+	       android:layout_width="wrap_content"  
+		   android:layout_height="wrap_content"  
+		   android:orientation="horizontal"  >                
+		<ProgressBar android:id="@+id/pb"   
+		             android:layout_width="255dip"   
+		             android:layout_height="10dip"   
+		             style="?android:attr/progressBarStyleHorizontal"  
+		             android:layout_gravity="center_vertical"/>  
+		             
+		<TextView  
+		        android:id="@+id/tv_percent"  
+		        android:layout_width="wrap_content"  
+		        android:layout_height="wrap_content"  
+		        android:text="0%"  
+		        android:textColor="@android:color/white"  
+		        android:layout_toRightOf="@id/pb"  
+		        android:layout_centerHorizontal="true"  
+		        android:layout_marginTop="5dp" 
+		        android:layout_marginLeft="10dp"  
+		      />  
+	</LinearLayout> 
+</LinearLayout>  

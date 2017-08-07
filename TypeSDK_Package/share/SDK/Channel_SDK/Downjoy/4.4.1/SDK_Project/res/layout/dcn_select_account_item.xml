@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dcn_select_account_item_selector"
+    android:minHeight="60dp"
+    android:padding="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/dcn_select_account_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/dcn_select_account_passport"
+                    android:textColor="#464646"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/dcn_select_account_tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#ff7f21"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dcn_select_account_tv_mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/dcn_select_account_default_radio"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:button="@drawable/dcn_select_account_radio_selector" />
+
+                    <TextView
+                        android:id="@+id/dcn_select_account_radio_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/dcn_select_account_default_radio"
+                        android:text="@string/dcn_select_account_radio_txt"
+                        android:textColor="@color/dcn_select_account_radio_txt_selector"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/dcn_select_account_tv_last_app_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/dcn_select_account_last_app_label"
+                    android:textColor="#464646"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:id="@+id/dcn_select_account_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:singleLine="true"
+                    android:textColor="#acacac"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/dcn_select_account_tv_lastapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/dcn_select_account_tv_date"
+                    android:layout_toRightOf="@id/dcn_select_account_tv_last_app_label"
+                    android:paddingRight="4dp"
+                    android:singleLine="true"
+                    android:text="@string/dcn_select_account_last_app_none"
+                    android:textColor="#acacac"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/dcn_select_account_edit_bg"
+                android:gravity="center_vertical"
+                android:minHeight="24dp">
+
+                <TextView
+                    android:id="@+id/dcn_select_account_btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/dcn_select_account_add_mark_btn"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="4dp"
+                    android:text="@android:string/ok"
+                    android:textColor="@color/dcn_white"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/dcn_select_account_remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/dcn_select_account_btn_ok"
+                    android:background="@drawable/dcn_transparent"
+                    android:hint="@string/dcn_select_account_add_mark"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="#464646"
+                    android:textColorHint="#acacac"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/dcn_click_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:minHeight="24dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dcn_delete"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/dcn_select_account_item_btn_selector"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@id/dcn_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/dcn_select_account_item_delete" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_voucher_background_color">
+
+    <RelativeLayout
+        android:id="@+id/game_voucher_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/game_voucher_bottom_color"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/game_voucher_instant_use_bt"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/game_voucher_use"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/font_size_middle"
+            android:textColor="@color/user_register_button_disable_text_color"
+            android:background="@drawable/game_voucher_instant_use_shape"/>
+
+    </RelativeLayout>
+
+    <com.haimawan.paysdk.library.PullToRefreshListView
+        android:id="@+id/game_voucher_content_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_above="@id/game_voucher_bottom_ll"
+        android:layout_margin="10dp">
+
+    </com.haimawan.paysdk.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/game_voucher_no_data_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/game_voucher_no_data_background_shape"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/game_voucher_no_data"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/font_size_middle"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/game_voucher_no_data_content"
+            android:textSize="@dimen/font_size_small"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qr_code"/>
+    </LinearLayout>
+
+</RelativeLayout>

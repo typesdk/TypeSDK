@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                android:gravity="center_horizontal">
+
+    <com.sogou.wan.common.NetworkImageView
+        android:id="@+id/sogou_game_sdk_game_info_screen_0"
+        style="@style/sogou_game_sdk_game_info_screen"/>
+
+    <com.sogou.wan.common.NetworkImageView
+        android:id="@+id/sogou_game_sdk_game_info_screen_1"
+        style="@style/sogou_game_sdk_game_info_screen"
+        android:layout_toRightOf="@id/sogou_game_sdk_game_info_screen_0"/>
+
+    <com.sogou.wan.common.NetworkImageView
+        android:id="@+id/sogou_game_sdk_game_info_screen_2"
+        style="@style/sogou_game_sdk_game_info_screen"
+        android:layout_toRightOf="@id/sogou_game_sdk_game_info_screen_1"/>
+
+    <com.sogou.wan.common.NetworkImageView
+        android:id="@+id/sogou_game_sdk_game_info_screen_3"
+        style="@style/sogou_game_sdk_game_info_screen"
+        android:layout_toRightOf="@id/sogou_game_sdk_game_info_screen_2"/>
+
+    <com.sogou.wan.common.NetworkImageView
+        android:id="@+id/sogou_game_sdk_game_info_screen_4"
+        style="@style/sogou_game_sdk_game_info_screen"
+        android:layout_toRightOf="@id/sogou_game_sdk_game_info_screen_3"/>
+
+</RelativeLayout>

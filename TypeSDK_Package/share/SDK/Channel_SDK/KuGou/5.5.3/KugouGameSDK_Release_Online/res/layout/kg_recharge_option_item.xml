@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kg_selector_item_click" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+         >
+
+        <TextView
+            android:id="@+id/kg_tv_recharge_option"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:ellipsize="middle"
+            android:minWidth="150dip"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+        
+        <ImageView
+            android:id="@+id/kg_ib_recharge_option"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/kg_option_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

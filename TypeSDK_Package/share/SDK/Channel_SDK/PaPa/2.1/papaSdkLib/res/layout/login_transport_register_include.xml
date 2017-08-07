@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/dp52"
+        >
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp117"
+            android:gravity="center_vertical"
+            android:background="@drawable/papalogin_editback"
+            >
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/accountEdit"
+                android:paddingLeft="@dimen/dp150"
+                android:textSize="@dimen/sp40"
+                android:textColorHint="#c4c4c4"
+                android:textColor="#3c3c3c"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                />
+
+        <ImageView
+                android:layout_width="@dimen/dp57"
+                android:layout_height="wrap_content"
+                android:id="@+id/userIcon"
+                android:src="@drawable/papalogin_username_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp36"
+                />
+
+        <TextView
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp52"
+                android:text="New Text"
+                android:id="@+id/textView"
+                android:background="#c4c4c4"
+                android:layout_toRightOf="@+id/userIcon"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp36"
+                />
+
+     <!--   <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/moreUser"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp37"
+                android:src="@drawable/more_user_butn"
+                android:layout_marginRight="10dp"
+                />-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp117"
+            android:layout_marginTop="@dimen/dp57"
+            android:gravity="center_vertical"
+            android:background="@drawable/papalogin_editback"
+            android:id="@+id/relativeLayout"
+            >
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/passEdit"
+                android:paddingLeft="@dimen/dp150"
+                android:textSize="@dimen/sp40"
+                android:textColorHint="#c4c4c4"
+
+                android:textColor="#3c3c3c"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:maxLength="16"
+                android:enabled="true"
+                />
+
+        <ImageView
+                android:layout_width="@dimen/dp57"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/papalogin_passicon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp36"
+                />
+
+        <TextView
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp52"
+                android:text="New Text"
+                android:id="@+id/textView2"
+                android:background="#c4c4c4"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp36"
+                />
+
+      <!--  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/forgetPass"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp25"
+                android:src="@drawable/more_user_butn"
+                android:text="忘记密码？"
+                android:textColor="#f9a435"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/dp37"
+                />-->
+    </RelativeLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp117"
+            android:layout_marginTop="@dimen/dp57"
+
+
+            >
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp117"
+                android:text="快速游戏"
+                android:id="@+id/reginFinish"
+                android:background="@drawable/papalogin_redbutn_seleter"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp46"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp67"
+            android:layout_marginTop="@dimen/dp57"
+            android:id="@+id/zz"
+            >
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*建议您截图保存帐号密码信息"
+                    android:singleLine="true"
+                    android:textColor="#f9a435"
+                    android:ellipsize="none"
+                    android:textSize="@dimen/sp40"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:text="其他方式登录："
+                    android:singleLine="true"
+                    android:textColor="@color/grey_2"
+                    android:ellipsize="none"
+                    android:textSize="@dimen/sp40"
+                    android:visibility="gone"
+                    /><!--#616161-->
+
+            <ImageView
+                    android:layout_width="@dimen/dp64"
+                    android:layout_height="@dimen/dp64"
+                    android:id="@+id/accountlogin"
+                    android:src="@drawable/usericon"
+                    android:layout_marginLeft="@dimen/dp22"
+                    android:visibility="gone"
+                    />
+
+
+
+        </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                      android:text="返回登录"
+                      android:textColor="#3a85e2"
+                      android:id="@+id/backlogin"
+                      android:textSize="@dimen/sp40"
+                      android:gravity="center"
+                    />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

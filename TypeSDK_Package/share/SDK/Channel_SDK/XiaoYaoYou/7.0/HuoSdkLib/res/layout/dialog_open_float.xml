@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="6dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_circle_rect_white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="温馨提示"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/content_text"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="悬浮窗权限未开启，请在权限管理中找到悬浮窗，并开启。"
+            android:textColor="#666666"
+            android:textSize="12sp"
+
+            />
+
+        <View android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="10dp"
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/layout_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#666666"
+                />
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"></View>
+            <TextView
+                android:id="@+id/confirm_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="去开启"
+                android:textColor="#77CA51"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

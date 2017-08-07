@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/sogou_game_sdk_btn_line_orange_pre" android:state_pressed="true"/>
+    <item android:drawable="@drawable/sogou_game_sdk_btn_line_orange"/>
+
+</selector>

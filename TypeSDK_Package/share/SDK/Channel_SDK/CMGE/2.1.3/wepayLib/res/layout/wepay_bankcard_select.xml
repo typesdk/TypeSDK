@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_picker"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wepay_title_high"
+        android:background="@color/wepay_bg_message"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/wepay_space_large"
+        android:paddingRight="@dimen/wepay_space_large" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/wepay_picker_select_bank"
+            android:textColor="@color/wepay_txt_main"
+            android:textSize="@dimen/wepay_txt_large" />
+
+        <TextView
+            android:id="@+id/txt_select_bank"
+            android:layout_width="62dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wepay_first_btn_bg"
+            android:gravity="center"
+            android:text="@string/wepay_sure"
+            android:textColor="@color/wepay_first_btn_txt"
+            android:textSize="@dimen/wepay_txt_middle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center" >
+
+        <com.wangyin.wepay.widget.picker.WheelView
+            android:id="@+id/picker_bankcard_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.wangyin.wepay.widget.picker.WheelView
+            android:id="@+id/picker_bank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

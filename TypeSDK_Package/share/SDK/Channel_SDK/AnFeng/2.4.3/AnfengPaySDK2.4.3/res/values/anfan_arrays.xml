@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <array name="anfan_pay_icons">
+        <item>@drawable/af_paytype_01</item>
+        <item>@drawable/af_paytype_00</item>
+        <item>@drawable/af_paytype_02</item>
+        <item>@drawable/af_paytype_03</item>
+        <item>@drawable/af_paytype_04</item>
+        <item>@drawable/af_paytype_05</item>
+        <item>@drawable/af_paytype_06</item>
+    </array>
+
+</resources>

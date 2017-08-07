@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人中心 操作列表项 by.zhengxu -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/m4399_ope_usercenter_action_item_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/usercenter_action_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/m4399_default_content_description" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/usercenter_action_item_image"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/usercenter_action_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/m4399_ope_usercenter_black"
+            android:textSize="16sp" />
+<!-- 
+        <TextView
+            android:id="@+id/usercenter_action_item_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usercenter_action_item_title"
+            android:text="@string/m4399_ope_pop_close_warning"
+            android:textColor="@color/m4399_ope_dialog_text_grey"
+            android:textSize="8sp" /> -->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/usercenter_action_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/m4399_ope_usercenter_orange"
+        android:textColor="@color/m4399_ope_dialog_text_grey"
+        android:textSize="16sp" />
+
+    <cn.m4399.operate.ui.widget.SlideSwitchsButton
+        android:id="@+id/usercenter_action_slide_switches_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

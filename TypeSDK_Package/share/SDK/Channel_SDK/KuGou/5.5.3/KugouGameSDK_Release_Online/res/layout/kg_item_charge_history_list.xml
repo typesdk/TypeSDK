@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="@color/kg_common_gray_more_lighter" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/kg_tv_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/kg_common_gray_darker"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/kg_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/kg_tv_option"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:gravity="left"
+            android:minWidth="60dp"
+            android:singleLine="true"
+            android:textColor="@color/kg_common_orange"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/kg_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/kg_tv_money"
+            android:layout_below="@id/kg_tv_money"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/kg_common_gray_more_lighter"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/kg_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/kg_tv_option"
+            android:layout_alignTop="@id/kg_tv_time"
+            android:layout_toLeftOf="@id/kg_tv_time"
+            android:singleLine="true"
+            android:textColor="@color/kg_common_gray_more_lighter"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/kg_common_gray_more_lighter" />
+
+        <TextView
+            android:id="@+id/kg_view_bottom_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/kg_common_gray_more_lighter" />
+    </RelativeLayout>
+
+</LinearLayout>

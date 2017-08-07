@@ -1,0 +1,36 @@
+{
+  "version": "3.0.3.20161020",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "POST",
+      "in_params": {
+        "token": ""
+      },
+      "out_url": "http://longxiasy.com/sdk.php/LoginNotify/login_verify",
+      "out_params": {
+        "user_id": "",
+        "token": ""
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "out_trade_no": "",
+        "price": "",
+        "pay_status": "",
+        "signType": "",
+        "sign": ""
+      },
+      "out_url": "http://longxiasy.com/sdk.php/LoginNotify/login_verify",
+      "out_params": {
+        "out_trade_no": "",
+        "price": "",
+        "pay_status": "",
+        "signType": "",
+        "sign": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mvcenter>
+    <paytype id="0">
+        <unit>m4399_rec_unit_youbi</unit>
+        <page title="m4399_rec_youbi_exchange" />
+    </paytype>
+    <paytype id="39">
+        <page title="m4399_rec_qq_wallet" />
+    </paytype>
+    <paytype id="54">
+        <shortname>m4399_rec_wx</shortname>
+        <page title="m4399_rec_wx_paytype_short_name" />
+        <instructiron insLink="m4399_rec_ins_link_wx" insTitle="m4399_rec_ins_link_wx_title" />
+    </paytype>
+    <paytype id="72">
+        <shortname>m4399_rec_junka</shortname>
+        <page title="m4399_rec_junkacz" />
+        <instructiron insLink="m4399_rec_ins_link_junka" insTitle="m4399_rec_ins_junka_title" />
+    </paytype>
+    <paytype id="73">
+        <shortname>m4399_rec_yidongka</shortname>
+        <page title="m4399_rec_mobilecardcz" />
+        <instructiron insLink="m4399_rec_ins_link_yidongka" insTitle="m4399_rec_ins_yidongka_title" />
+    </paytype>
+    <paytype id="74">
+        <shortname>m4399_rec_liantong</shortname>
+        <page title="m4399_rec_mobilecardcz" />
+        <instructiron insLink="m4399_rec_ins_link_liantongka" insTitle="m4399_rec_ins_liantongka_title" />
+    </paytype>
+    <paytype id="75">
+        <shortname>m4399_rec_dianxin</shortname>
+        <page title="m4399_rec_mobilecardcz"/>
+        <instructiron insLink="m4399_rec_ins_link_dianxinka" insTitle="m4399_rec_ins_dianxinka_title" />
+    </paytype>
+    <paytype id="76">
+        <page title="m4399_rec_caifutongcz" />
+    </paytype>
+    <paytype id="77">
+        <page title="m4399_rec_zhifubaozc" />
+    </paytype>
+    <paytype id="79">
+        <shortname>m4399_rec_duanxincz</shortname>
+        <page title="m4399_rec_duanxincz" />
+        <instructiron insLink="m4399_rec_ins_link_sms_dianxin" insTitle="m4399_rec_ins_sms_dianxin_title" />
+        <telephone>m4399_rec_hotline_dianxin</telephone>
+    </paytype>
+    <paytype id="117">
+        <shortname>m4399_rec_duanxincz</shortname>
+        <page title="m4399_rec_duanxincz" />
+        <instructiron insLink="m4399_rec_ins_link_sms_dianxin" insTitle="m4399_rec_ins_sms_dianxin_title" />
+    </paytype>
+    <paytype id="80">
+        <shortname>m4399_rec_duanxincz</shortname>
+        <page title="m4399_rec_duanxincz" />
+        <instructiron insLink="m4399_rec_ins_link_sms_liantong" insTitle="m4399_rec_ins_sms_liantong_title" />
+        <telephone>m4399_rec_hotline_liantong</telephone>
+    </paytype>
+    <paytype id="118">
+        <shortname>m4399_rec_duanxincz</shortname>
+        <page title="m4399_rec_duanxincz" />
+        <instructiron insLink="m4399_rec_ins_link_sms_liantong" insTitle="m4399_rec_ins_sms_liantong_title" />
+    </paytype>
+    <paytype id="86">
+        <shortname>m4399_rec_duanxincz</shortname>
+        <page title="m4399_rec_duanxincz" />
+        <instructiron insLink="m4399_rec_ins_link_sms_yidong" insTitle="m4399_rec_ins_sms_yidong_title" />
+        <telephone>m4399_rec_hotline_yidong</telephone>
+    </paytype>
+    <paytype id="116">
+        <shortname>m4399_rec_duanxincz</shortname>
+        <page title="m4399_rec_duanxincz" />
+        <instructiron insLink="m4399_rec_ins_link_sms_yidong" insTitle="m4399_rec_ins_sms_yidong_title" />
+    </paytype>
+    <!-- paytype id="84">
+        <shortname>m4399_rec_duanxincz</shortname>
+        <page title="m4399_rec_duanxincz" />
+        <instructiron insLink="m4399_rec_ins_link_sms_yidong" insTitle="m4399_rec_ins_sms_yidong_title" />
+        <telephone>m4399_rec_hotline_yidong</telephone>
+    </paytype-->
+    <paytype id="89">
+        <shortname>m4399_rec_wx</shortname>
+        <page title="m4399_rec_wx_paytype_short_name" />
+        <instructiron insLink="m4399_rec_ins_link_wx" insTitle="m4399_rec_ins_link_wx_title" />
+    </paytype>
+    <paytype id="-1">
+        <description>This is an unregister pay type, which be consider sms-type.</description>
+        <shortname>m4399_rec_duanxincz</shortname>
+        <page title="m4399_rec_duanxincz" />
+        <instructiron insLink="m4399_rec_ins_link_sms_yidong" insTitle="m4399_rec_ins_sms_yidong_title" />
+    </paytype>
+    <paytype id="126">
+        <page title="m4399_rec_rec_wycz"/>
+    </paytype>
+    <paytype id="222">
+        <shortname>m4399_rec_yikatong</shortname>
+        <page title="m4399_rec_yikatongcz" />
+        <instructiron insLink="m4399_rec_ins_link_yikatong" insTitle="m4399_rec_ins_yikatong_title"/>
+    </paytype>
+    <paytype id="710">
+        <page title="m4399_rec_rec_wycz"/>
+    </paytype>
+</mvcenter>

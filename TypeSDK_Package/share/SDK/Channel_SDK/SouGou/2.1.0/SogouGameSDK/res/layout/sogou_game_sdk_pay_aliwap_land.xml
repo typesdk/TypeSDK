@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 网银在线 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sogou_game_sdk_white"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/sogou_game_sdk_aliwap_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="192dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/sogou_game_sdk_pay_aliwap" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_aliwap_user"
+            style="@style/sogou_game_sdk_pay_label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_aliwap_icon"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="14dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/sogou_game_sdk_pay_user" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_aliwap_money"
+            style="@style/sogou_game_sdk_pay_label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_aliwap_user"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/sogou_game_sdk_pay_money" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_aliwap_goods"
+            style="@style/sogou_game_sdk_pay_label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_aliwap_money"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/sogou_game_sdk_pay_goods" />
+        <TextView
+            android:id="@+id/sogou_game_sdk_aliwap_product"
+            style="@style/sogou_game_sdk_pay_label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_aliwap_goods"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/sogou_game_sdk_pay_product" />
+
+        <LinearLayout
+            android:id="@+id/sogou_game_sdk_aliwap_rg_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_aliwap_product"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="7dp" >
+
+            <RadioGroup
+                android:id="@+id/sogou_game_sdk_aliwap_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/sogou_game_sdk_aliwap_rg_debit_card"
+                    style="@style/sogou_game_sdk_pay_label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/sogou_game_sdk_radio_button"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="0dp"
+                    android:text="@string/sogou_game_sdk_pay_debit_card" />
+
+                <RadioButton
+                    android:id="@+id/sogou_game_sdk_aliwap_rg_credit_card"
+                    style="@style/sogou_game_sdk_pay_label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sogou_game_sdk_radio_button"
+                    android:drawablePadding="5dp"
+                    android:text="@string/sogou_game_sdk_pay_credit_card" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sogou_game_sdk_aliwap_input"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_aliwap_rg_ll"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/sogou_game_sdk_input_bg"
+            android:hint="@string/sogou_game_sdk_pay_other_amount"
+            android:imeOptions="actionGo"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sogou_game_sdk_aliwap_pay_ok"
+            style="@style/sogou_game_sdk_pay_bt_red"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_aliwap_input"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/sogou_game_sdk_bt_red"
+            android:text="@string/sogou_game_sdk_pay_confirm" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_links_feedback"
+            style="@style/sogou_game_sdk_pay_label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_aliwap_pay_ok"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="20dp"
+            android:text="@string/sogou_game_sdk_pay_feedback" />
+    </RelativeLayout>
+
+</ScrollView>

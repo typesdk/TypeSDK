@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_LL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/jolo_sdk_bg"
+    >
+
+    <ImageButton
+        android:id="@+id/action_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="26dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/jolo_sdk_bg"
+        android:src="@drawable/jolo_back" />
+
+    <ImageView
+        android:id="@+id/jolo_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/jolo_logo" />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@id/jolo_logo_iv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:text="@string/jolo_tel_land"
+        android:textColor="@color/jolo_white"/>
+	
+</RelativeLayout>

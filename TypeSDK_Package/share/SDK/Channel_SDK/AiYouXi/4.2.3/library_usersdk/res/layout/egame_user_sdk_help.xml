@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/egame_usersdk_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/egame_user_sdk_activity_title_green" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/list_bg"
+        android:orientation="vertical"
+        android:paddingTop="3dp" >
+
+        <!-- 客服 -->
+
+        <LinearLayout
+            android:id="@+id/customer_detail_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/egame_list_item_selector"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8" >
+
+            <!-- 客服标题 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_bg_title_list" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginRight="@dimen/dp_6"
+                        android:background="@drawable/egame_ico_label_list_green" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/customer_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:gravity="center"
+                        android:text="客服"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="@dimen/dp_16" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 客服第一行 -->
+
+            <RelativeLayout
+                android:id="@+id/customer_detail_first_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="112dp" >
+
+                <ImageView
+                    android:id="@+id/customer_detail_icon_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:contentDescription="@string/egame_des_imageview"
+                    android:src="@drawable/egame_ico_game_service" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_toRightOf="@id/customer_detail_icon_first"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/customer_detail_name_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/customer_detail_icon_first"
+                        android:text="游戏客服"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="@dimen/dp_16" />
+
+                    <TextView
+                        android:id="@+id/customer_detail_content_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/customer_detail_icon_first"
+                        android:layout_toRightOf="@+id/customer_detail_icon_first"
+                        android:paddingRight="15.5dp"
+                        android:text="@string/egame_customer_content"
+                        android:textColor="@color/egame_usersdk_regist_text"
+                        android:textSize="@dimen/dp_14" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 分割线 -->
+
+            <ImageView
+                android:id="@+id/customer_detail_horizon_line_first"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_line_service" />
+
+            <!-- 客服第二行 -->
+
+            <RelativeLayout
+                android:id="@+id/customer_detail_second_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="112dp" >
+
+                <ImageView
+                    android:id="@+id/customer_detail_icon_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:contentDescription="@string/egame_des_imageview"
+                    android:src="@drawable/egame_ico_playcn_service" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_toRightOf="@id/customer_detail_icon_second"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/customer_detail_name_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="爱游戏平台客服"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="@dimen/dp_16" />
+
+                    <TextView
+                        android:id="@+id/customer_detail_content_second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/customer_detail_name_second"
+                        android:layout_alignTop="@+id/customer_detail_icon_second"
+                        android:text="玩家交流反馈群QQ群：215390079\n客服电话：4008-289-289"
+                        android:textColor="@color/egame_usersdk_regist_text"
+                        android:textSize="@dimen/dp_14" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- 分割线 -->
+
+            <ImageView
+                android:id="@+id/customer_detail_horizon_line_second"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_line_service" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dp" >
+
+                <LinearLayout
+                    android:id="@+id/customer_detail_pro_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/customer_detail_pro_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/egame_ico_common_problem" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/customer_detail_pro_icon"
+                        android:paddingLeft="3dp"
+                        android:text="常见问题"
+                        android:textColor="#50b3f2"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/customer_detail_goforum_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="66dp"
+            android:background="@drawable/egame_list_item_selector"
+            android:clickable="true"
+            android:padding="15.5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="3dp"
+                android:text="去论坛反馈"
+                android:textColor="@color/egame_usersdk_dark_gray"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/egame_ico_category_arrow_right"
+                android:paddingRight="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

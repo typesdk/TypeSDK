@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <!-- 设置背景形状 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <!-- 设置背景颜色 -->
+            <solid android:color="#EEF9F1" />
+        </shape></item>
+    <!-- 按下状态的设置 -->
+    <item android:state_pressed="true"><shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/ch_gray" />
+        </shape></item>
+
+</selector>

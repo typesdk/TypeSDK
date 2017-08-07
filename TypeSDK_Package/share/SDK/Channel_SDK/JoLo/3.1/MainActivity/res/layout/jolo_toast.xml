@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"   
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="@drawable/jolo_tip_bg">
+    
+    <TextView
+        android:id="@+id/toast_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:text="@string/jolo_suc_fast_reg"
+        android:textColor="@color/jolo_white" />
+
+</RelativeLayout>

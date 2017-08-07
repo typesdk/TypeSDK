@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <dimen name="m4399_rec_page_height">315dp</dimen>
+    <dimen name="m4399_rec_page_width">464dp</dimen>
+    <dimen name="m4399_rec_title_height">42dp</dimen>
+    <dimen name="m4399_rec_separator_height">1dp</dimen>
+    <dimen name="m4399_rec_paddingTop">7dp</dimen>
+    <dimen name="m4399_rec_paddingBottom">7dp</dimen>
+    <dimen name="m4399_rec_paddingLeft">16dp</dimen>
+    <dimen name="m4399_rec_paddingRight">16dp</dimen>
+    <dimen name="m4399_rec_payment_icon_size">72dp</dimen>
+    <dimen name="m4399_rec_payment_icon_padding">7dp</dimen>
+    <dimen name="m4399_rec_table_paddingTop">7dp</dimen>
+    <dimen name="m4399_rec_foot_height">25dp</dimen>
+    <dimen name="m4399_rec_edittext_height">34dp</dimen>
+    <dimen name="m4399_rec_sum_btns_eara_height">38dp</dimen>
+    <dimen name="m4399_rec_btns_hspacing">7dp</dimen>
+    <dimen name="m4399_rec_btns_vspacing">12dp</dimen>
+    <dimen name="m4399_rec_gridview_hspacing">8dp</dimen>
+    <dimen name="m4399_rec_gridview_half_vspacing">8dp</dimen>
+    <dimen name="m4399_rec_gridview_vspacing">8dp</dimen>
+    <dimen name="m4399_rec_gridview_item_height">39dp</dimen>
+    <dimen name="m4399_rec_dialog_height">200dp</dimen>
+    <dimen name="m4399_rec_dialog_width">275dp</dimen>
+    <dimen name="m4399_rec_dialog_spacing">7dp</dimen>
+    <dimen name="m4399_rec_record_entry_offset">34dp</dimen>
+
+</resources>

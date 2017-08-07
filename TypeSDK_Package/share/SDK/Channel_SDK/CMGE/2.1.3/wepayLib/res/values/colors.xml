@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主色 -->
+    <color name="wepay_main_normal">#d9434b</color>
+    <color name="wepay_main_line">#e6e6e6</color>
+    <color name="wepay_main_pressed">#ce2730</color>
+    <color name="wepay_main_deep">#b33138</color>
+
+    <!-- 其他 -->
+    <color name="wepay_other_normal">#ffffff</color>
+    <color name="wepay_other_pressed">#eeeeee</color>
+    <color name="wepay_other_deep">#dddddd</color>
+    <color name="wepay_bg_horizontal_progress">#d9434b</color>
+
+    <!-- 辅助色 -->
+    <color name="wepay_assist_caption">#34cdff</color>
+    <color name="wepay_assist_success">#00e592</color>
+    <color name="wepay_assist_warn">#ffcf5d</color>
+    <color name="wepay_assist_fail">#ff6e76</color>
+    <color name="wepay_assist_normal">#6a717a</color>
+
+    <!-- 背景色 -->
+    <color name="wepay_bg_content">#ffffff</color>
+    <color name="wepay_bg_main">#f0f0f0</color>
+    <color name="wepay_bg_title">#f1f1f1</color>
+    <color name="wepay_bg_bottom">#f9f9f9</color>
+    <color name="wepay_bg_menu">#f0f2ee</color>
+    <color name="wepay_bg_list_pressed">#dddddd</color>
+    <color name="wepay_bg_message">#f0f0f0</color>
+    <color name="wepay_bg_parent">#90000000</color>
+    <color name="wepay_bg_operate_button">#559fed</color>
+    <color name="wepay_bg_operate_button_pressed">#2180e4</color>
+    <color name="wepay_bg_operate_button_unenable">#d2e1f0</color>
+    <color name="wepay_bg_repeat_button_pressed">#2180e4</color>
+    <color name="wepay_bg_repeat_button_unenable">#cccccc</color>
+    <color name="wepay_bg_toast">#b0000000</color>
+
+    <!-- 文字颜色 -->
+    <color name="wepay_txt_title">#000000</color>
+    <color name="wepay_txt_operate">#ffffff</color>
+    <color name="wepay_txt_operate_pressed">#ffffff</color>
+    <color name="wepay_txt_operate_unenable">#f1f1f1</color>
+    <color name="wepay_txt_repeat_button_pressed">#ffffff</color>
+    <color name="wepay_txt_second_button_pressed">#ffffff</color>
+    <color name="wepay_txt_repeat_button_unenable">#d2e1f0</color>
+    <color name="wepay_txt_second_button_unenable">#cccccc</color>
+    <color name="wepay_txt_unenable">#dddddd</color>
+    <color name="wepay_txt_menu_pressed">#c1c1c1</color>
+    <color name="wepay_txt_main">#555555</color>
+    <color name="wepay_txt_second">#989898</color>
+    <color name="wepay_txt_warn">#ff6e76</color>
+    <color name="wepay_txt_amount">#d9434b</color>
+    <color name="wepay_txt_link">#559fed</color>
+    <color name="wepay_txt_hint">#cccccc</color>
+    <color name="wepay_txt_msg_hint">#989898</color>
+    <color name="wepay_txt_title_default">#323232</color>
+    <color name="wepay_txt_title_focused">#559fed</color>
+    <color name="wepay_txt_blue">#559fed</color>
+    <color name="wepay_txt_toast">#ffffff</color>
+
+    <!-- 协议 -->
+    <drawable name="wepay_bg_link_normal">#7b87a6</drawable>
+    <drawable name="wepay_bg_link_pressed">#c1c1c1</drawable>
+    <drawable name="wepay_bg_link_unable">#dddddd</drawable>
+
+    <!-- 键盘颜色 -->
+    <color name="wepay_key_text">#ff555555</color>
+    <color name="wepay_key_bg">#ffdddddd</color>
+    <color name="wepay_key_light_bg">#fff0f0f0</color>
+
+    <!-- 分割线通用颜色 -->
+    <color name="wepay_divider_common">#eeeeee</color>
+    <color name="wepay_divider_msg">#dddddd</color>
+
+    <!-- 光标颜色 -->
+    <color name="wepay_edittext_cursor">#559fed</color>
+
+    <!-- weight tableview -->
+    <color name="wepay_bg_pressed">#dddddd</color>
+
+</resources>

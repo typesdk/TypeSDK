@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.floating.FWLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:background="@drawable/lion_common_floating_bg"
+                                         android:gravity="center"
+                                         android:minHeight="45.0dip">
+
+    <TextView
+        android:id="@+id/lion_layout_floating_record_icon"
+        style="@style/lion_layout_floating_item"
+        android:background="@drawable/lion_common_floating_left_selector"
+        android:drawableTop="@drawable/lion_floating_back"
+        android:text="@string/lion_text_back"/>
+
+    <TextView
+        android:id="@+id/lion_layout_floating_record_user"
+        style="@style/lion_layout_floating_item"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/lion_layout_floating_record_record"
+        style="@style/lion_layout_floating_item"
+        android:background="@drawable/lion_common_floating_selector"
+        android:drawableTop="@drawable/lion_floating_record"
+        android:text="@string/lion_text_floating_record"/>
+
+    <TextView
+        android:id="@+id/lion_layout_floating_record_screen_shot"
+        style="@style/lion_layout_floating_item"
+        android:background="@drawable/lion_common_floating_right_selector"
+        android:drawableTop="@drawable/lion_floating_screen_shot"
+        android:text="@string/lion_text_floating_screen_shot"/>
+</com.lion.ccpay.widget.floating.FWLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 个人中心 用户操作列表北京  by.zhengxu  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#FFF5F5F5" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/m4399_ope_usercenter_white" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/personal_Layout"
+    style="@style/gfan_no_padding_bg"
+    android:orientation="vertical"
+    tools:context="com.mappn.sdk.uc.PersonalCenterActivity">
+
+    <TextView
+        style="@style/gfan_title_style"
+        android:text="个人中心" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="@dimen/gfan_uc_bg_padding">
+
+        <com.mappn.sdk.uc.CircleImageView
+            android:id="@+id/user_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gfan_floatview_icon"
+            app:gfan_civ_border_color="#5a6c7a"
+            app:gfan_civ_border_width="2dp" />
+
+        <LinearLayout
+            android:id="@+id/user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/user_icon"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:text="机锋网友"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/user_name_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="#ffffff"
+                android:textCursorDrawable="@drawable/gfan_color_cursor"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/user_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:visibility="invisible"
+                android:src="@drawable/gfan_personal_edit" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/user_layout"
+            android:layout_below="@id/user_layout"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            android:text="手机号:"
+            android:textColor="#FFC3C4C4" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/gfan_uc_bg_padding"
+        android:paddingRight="@dimen/gfan_uc_bg_padding"
+
+        android:scrollbars="none">
+
+        <com.mappn.sdk.uc.FullListView
+            android:id="@+id/user_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gfan_btn_white_bg"
+            android:overScrollMode="never"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"></com.mappn.sdk.uc.FullListView>
+    </ScrollView>
+
+</LinearLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_personal_center_activity.xml -->

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="com_lenovo_pay_title_balance_text">余额:</string>
+    <string name="com_lenovo_pay_title_charge_text">充值并支付</string>
+    <string name="com_lenovo_pay_goods_pay_text">支付</string>
+    <string name="com_lenovo_pay_goods_cancel_text">取消</string>
+    <string name="com_lenovo_pay_goods_name_text">商品:</string>
+    <string name="com_lenovo_pay_goods_order_text">售价:</string>
+    <string name="com_lenovo_pay_price_unit_text">V币</string>
+    <string name="com_lenovo_pay_gamecard_sure_pay_text">确认支付</string>
+    <string name="com_lenovo_pay_loading_cashier_text">正在连接支付中心，请稍候...</string>
+    <string name="com_lenovo_pay_no_sufficient_funds">V币余额不足，请前往充值.</string>
+    <string name="com_lenovo_pay_gp_text">前往</string>
+    <string name="com_lenovo_pay_vcoin_pay_tip">您将使用V币支付%1$s%2$s\u0020（1元=%3$s）,请确认.</string>
+    <string name="com_lenovo_pay_vcoin_pay_fee_tip">您将使用V币支付%1$s%2$s\u0020（其中%3$s为支付手续费, 1元=%4$s）, 请确认.</string>
+    <string name="com_lenovo_pay_vcoin_pay_finish_tip">您已成功支付了\u0020%1$s\u0020V币.</string>
+    <string name="com_lenovo_pay_exit_pay_tip_text">确定放弃本次支付?</string>
+    <string name="com_lenovo_pay_processing_text">正在处理中...</string>
+    <string name="com_lenovo_pay_paying_text">正在支付中...</string>
+    <string name="com_lenovo_pay_paying_aftercharging_text">您已充值完毕，正在支付中...</string>
+    <string name="com_lenovo_pay_finish_text">本次支付已经完成</string>
+    <string name="com_lenovo_pay_retry_text">商品价格刷新完成，请重新支付</string>
+    <string name="com_lenovo_pay_balancing_text">帐号已过期，正在刷新...</string>
+    <string name="com_lenovo_pay_retry_balancing_text">账户已刷新完成，请重新支付</string>
+    <string name="com_lenovo_pay_idapk_prompt_text">尚未安装联想支付插件，是否下载并安装？</string>
+    <string name="com_lenovo_pay_idapk_signature_prompt_text">您手机上安装的应用不是官方发布联想用户中心，请从乐商店下载用户中心安装，是否卸载这个应用？</string>
+    <string name="com_lenovo_pay_downloading_text">正在下载联想帐号，请稍候...</string>
+    <string name="com_lenovo_pay_zuk_downloading_text">正在下载ZUK帐号，请稍候...</string>
+    <string name="com_lenovo_pay_moto_downloading_text">正在下载MOTO帐号，请稍候...</string>
+    
+    <!-- error -->
+    <string name="com_lenovo_pay_error_network_failed_text">网络连接失败，请检查网络！</string>
+    <string name="com_lenovo_pay_error_goods_expired_text">商品价格已过期，正在重新获取...</string>
+    <string name="com_lenovo_pay_error_account_expired_text">帐号已过期，请重新登录。</string>
+    <string name="com_lenovo_pay_error_no_apk_text">尚未安装联想支付插件，无法进行充值。</string>
+    <string name="com_lenovo_pay_idapk_lowversion_text">您的联想帐号版本过低，无法进行充值。是否现在下载并安装？</string>
+    <string name="com_lenovo_pay_error_download_idapk_text">联想帐号下载失败，请检查网络连接并稍后重试</string>
+    <string name="com_lenovo_pay_error_zuk_download_idapk_text">ZUK帐号下载失败，请检查网络连接并稍后重试</string>
+    <string name="com_lenovo_pay_error_moto_download_idapk_text">MOTO帐号下载失败，请检查网络连接并稍后重试</string>
+    <string name="com_lenovo_pay_error_insufficient_aftercharging_text">充值后V币余额不足</string>
+    
+    <string name="com_lenovo_pay_dlg_ok_text">确定</string>
+    <string name="com_lenovo_pay_dlg_cancel_text">取消</string>
+    <string name="com_lenovo_pay_dlg_title_text">提示</string>
+    <string name="com_lenovo_pay_cashier_title_text">联想收银台</string>
+    <string name="com_lenovo_pay_update_title_text">版本更新</string>
+    <string name="com_lenovo_pay_dlg_tip_title_text">提示</string>
+    <string name="com_lenovo_pay_title_account_text">帐号:</string>
+    <string name="com_lenovo_pay_dlg_change_text">快速切换</string>
+   <string name="com_lenovo_pay_account_warning_tip">
+        
+        <![CDATA[ 您当前游戏登录的帐号：  <Font color=\"#4c96e0\">%1$s,</Font>与当前手机登录的联想帐号不一致，请在帐号设置中切换帐号，再进行充值。]]>
+
+    </string>
+    <string name="com_lenovo_pay_update_tip_text">您的联想帐号版本需要更新。</string>
+    <string name="com_lenovo_pay_zuk_update_tip_text">您的ZUK帐号版本需要更新。</string>
+    <string name="com_lenovo_pay_update_btn_text">更新</string>
+    <string name="com_lenovo_pay_intallupdate_wait_text">正在等待安装完成</string>
+     <string name="com_lenovo_pay_loginning_cashier_text">正在登入联想收银台</string>
+    <string name="com_lenovo_pay_account_different_title">帐号不一致</string>
+    <string name="com_lenovo_pay_account_apk_offline_tip">获取不到您的账户信息，请点击登录联想帐号并完成支付。</string>
+    <string name="com_lenovo_pay_account_zuk_apk_offline_tip">获取不到您的账户信息，请点击登录ZUK帐号并完成支付。</string>
+    <string name="com_lenovo_pay_cashbalance_tip">
+        
+        <![CDATA[可使用礼券<Font color=\"#4c96e0\"> %1$s </Font>V币券]]>
+
+    </string>
+     <string name="com_lenovo_pay_get_login_info_text">正在载入登陆进程...</string>
+     <string name="com_lenovo_pay_account_permission_tip">没有"读取帐号信息"权限，请在系统设置-应用权限管理中开启权限，才能正常支付</string>
+     <string name="com_lenovo_pay_account_permission_html_tip">"读取账户信息"权限已被禁止，为您跳转浏览器支付</string>
+     <string name="com_lenovo_plugin_downloading_text">正在下载支付插件，请稍候...</string>
+     <string name="com_lenovo_plugin_error_download_text">支付插件下载失败，请检查网络连接并稍后重试</string>
+      <string name="com_lenovo_plugin_pay_update_tip_text">您的支付插件需要更新。</string>
+     <string name="com_lenovo_pay_plugin_lowversion_text">您的支付插件版本过低，无法进行充值。请通过网页充值</string>
+          
+     <string name="com_lenovo_plugin_pay_download_tip_text">您需要下载支付插件。</string>
+     <string name="com_lenovo_pay_plugin_download_text">您没有安装支付插件，无法进行充值。是否现在下载并安装？</string> 
+     <string name="com_lenovo_pay_idapk_wrong_version_text">您的联想帐号版本过低，无法进行充值。请通过网页充值</string>
+             <string name="com_lenovo_pay_plugin_download_title_text">下载</string>
+</resources>

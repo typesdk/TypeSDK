@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bindEmailLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <LinearLayout
+        android:id="@+id/bindEmailBtnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLayout"
+        android:background="@drawable/sy37_layout_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2.0dip" >
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/sy37_binding_email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/fg_bind_email"
+            android:textColor="@color/s_orange"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bindEmailBack"
+            style="@style/backBut"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bindEmailBtnLayout"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/sy37_bg_edit"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:paddingLeft="8dip"
+            android:text="@string/fg_secure_email"
+            android:textColor="@color/s_gray"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fg_email"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/fg_secure_email_hint"
+            android:textColorHint="@color/s_light_gray"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/s_light_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/emailSub"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/emailLayout"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/sy37_kefu_submit"
+        android:text="@string/fg_submit"
+        android:textColor="@color/s_white"
+        android:textSize="23sp" />
+
+    <ScrollView
+        style="@style/Layout_Text"
+        android:layout_below="@id/emailSub"
+        android:layout_alignLeft="@id/emailSub"
+		android:overScrollMode="never"   
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dip" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fg_secure_email_tips"
+        android:textColor="@color/s_light_gray"
+        android:textSize="16sp" />
+    </ScrollView>
+
+</RelativeLayout>

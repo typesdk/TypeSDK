@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yyh_corner_white_bg"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/yyh_activity_close" />
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="35dp"
+        android:text="绑定手机号"
+        android:textColor="@color/yyh_black"
+        android:textSize="18dp" />
+
+    <com.appchina.usersdk.WidgetSetPasswordLayout
+        android:id="@+id/yyh_dialog_set_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page_title"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/yyh_dialog_submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/yyh_dialog_set_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/yyh_btn_blue_bg"
+        android:text="登录"
+        android:textColor="@color/yyh_white"
+        android:textSize="14dp" />
+
+</RelativeLayout>

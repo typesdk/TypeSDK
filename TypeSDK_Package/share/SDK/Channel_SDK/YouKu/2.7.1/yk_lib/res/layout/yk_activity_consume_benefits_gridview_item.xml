@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"   
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent"
+         android:background="@color/yk_white">  
+<LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent"
+         android:background="@drawable/yk_gridview_item_bg"
+         android:orientation="vertical">  
+         <ImageView   android:id="@+id/yk_consume_benefits_gridview_item_img" 
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scaleType="centerCrop"
+               android:layout_centerHorizontal="true"
+               android:layout_marginRight="1px"
+               android:src="@drawable/yk_consume_benaefit_present_default">   
+         </ImageView>  
+         <TextView   android:id="@+id/yk_consume_benefits_gridview_item_txt"
+               android:layout_width="match_parent"   
+               android:layout_height="@dimen/YK_GameSDK_70PX"   
+               android:text="@string/yk_text_0"
+               android:textColor="@color/yk_textColorforItemTitle"
+               android:textSize="@dimen/YK_GameSDK_26PX"
+               android:maxLines="2"
+               android:maxLength="17"
+               android:layout_gravity="center"
+               android:gravity="center">  
+         </TextView>  
+</LinearLayout>  
+</RelativeLayout>  

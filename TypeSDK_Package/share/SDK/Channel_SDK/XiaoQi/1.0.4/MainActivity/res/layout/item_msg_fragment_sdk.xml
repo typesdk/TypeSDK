@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="@dimen/activity_horizontal_width"
+    android:layout_height="70dip">
+    
+	<RelativeLayout
+	    android:layout_width="@dimen/activity_horizontal_width"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white" 
+	    android:layout_centerHorizontal="true"
+	    
+	    >
+    <TextView
+        android:id="@+id/msg_fragment_messagetitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        android:text="感谢下载小7手游平台"
+        android:textColor="#000000"
+        android:paddingLeft="15dip"
+	    android:paddingRight="15dip"
+        android:textSize="14sp" />
+    <TextView 
+        android:id="@+id/msg_fragment_messagetime_tv"
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/msg_fragment_messagetitle_tv"
+        android:layout_marginTop="5dip"
+        android:textColor="#000000"
+        android:paddingLeft="15dip"
+	    android:paddingRight="15dip"
+	    android:textSize="12sp"
+        android:text="2016-06-18 18:08:08"
+        
+        />
+    <View 
+        android:id="@+id/msg_fragment_line"
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_height="1dip"
+        android:background="#22000000" 
+        android:layout_marginTop="10dip"
+        android:layout_below="@+id/msg_fragment_messagetime_tv"
+        />
+</RelativeLayout>
+
+</RelativeLayout>

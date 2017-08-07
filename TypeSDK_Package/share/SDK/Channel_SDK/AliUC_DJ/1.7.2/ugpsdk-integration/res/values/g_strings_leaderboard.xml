@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Leaderboard -->
+    <string name="gc_leaderboard_apply_empty_content">暂无好友申请！</string>
+    <string name="gc_leaderboard_search_empty_content">无搜索结果</string>
+    <string name="gc_leaderboard_contacts_empty_content">无通讯录好友</string>
+    <string name="gc_leaderboard_create_record">去创造记录吧！</string>
+    <string name="gc_leaderboard_friend">好友排行榜</string>
+    <string name="gc_leaderboard_player">玩家排行榜</string>
+    <string name="gc_leaderboard_land_friend">好\n友\n排\n行\n榜</string>
+    <string name="gc_leaderboard_land_player">玩\n家\n排\n行\n榜</string>
+    <string name="gc_leaderboard_invite">邀请</string>
+    <string name="gc_leaderboard_invited">已邀请</string>
+    <string name="gc_leaderboard_error_loading">加载数据错误！</string>
+    <string name="gc_leaderboard_loading">正在加载...</string>
+    <string name="gc_leaderboard_item_data_is_null">该条目数据获取失败</string>
+    <string name="gc_leaderboard_invite_friend">手机通讯录中的好多朋友都还没有玩过这个游戏哦！</string>
+    <string name="gc_leaderboard_check_contacts">查看手机通讯录</string>
+    <string name="gc_leaderboard_add_friend_title">添加好友</string>
+    <string name="gc_leaderboard_add_friend_from_contacts">从手机通讯录中添加好友　>></string>
+    <string name="gc_leaderboard_search_friend">搜索添\n加好友</string>
+    <string name="gc_leaderboard_search_hint">手机号/邮箱/个性帐号</string>
+    <string name="gc_leaderboard_search_result_title">TA想与你成为好友</string>
+    <string name="gc_leaderboard_apply_accept">同意</string>
+    <string name="gc_leaderboard_apply_ignore">忽略</string>
+    <string name="gc_leaderboard_friend_request">想与你成为好友</string>
+    <string name="gc_leaderboard_btn_add_friend">加为好友</string>
+    <string name="gc_leaderboard_btn_friend">已是好友</string>
+    <string name="gc_leaderboard_search_result">搜索结果</string>
+    <string name="gc_leaderboard_current_rank">当前等级：</string>
+    <string name="gc_leaderboard_start_game">开始游戏</string>
+    <string name="gc_leaderboard_list_item_add">加好友</string>
+    <string name="gc_leaderboard_search_edittext_null">请输入要搜索的用户帐号！</string>
+    <string name="gc_leaderboard_processing">正在处理，请稍候...</string>
+    <string name="gc_leaderboard_add_friend_success">请求成功！</string>
+    <string name="gc_leaderboard_waiting_check">等待验证</string>
+    <string name="gc_leaderboard_default_nick_name">匿名</string>
+    <string name="gc_leaderboard_empty_score">暂无成绩</string>
+    <string name="gc_leaderboard_notify_apply_title">好友申请</string>
+    <string name="gc_leaderboard_notify_invite_title">好友邀请</string>
+    <string name="gc_leaderboard_current_high_score">您的最高记录　{0}</string>
+    <string name="gc_leaderboard_friend_accept_ok">接受成功，您已和TA成为好友！</string>
+    <string name="gc_leaderboard_friend_accept_failed">接受失败！</string>
+    <string name="gc_leaderboard_friend_reject_ok">忽略成功！</string>
+	<string name="gc_leaderboard_friend_reject_failed">忽略失败！</string>
+	<string name="gc_leaderboard_commit_score_ok">分数上传成功！ </string>
+	<string name="gc_leaderboard_commit_score_failed">分数上传失败！ </string>
+	<string name="gc_leaderboard_not_adressbook">通讯录好友获取失败！</string>
+	<string name="gc_leaderboard_login_need">您需要登录移动用户中心，才能完成本次操作！</string>
+	<string name="gc_leaderboard_contacts_search">通讯录\n内搜索</string>
+	<string name="gc_leaderboard_contacts_search_hint">搜索</string>
+	<string name="gc_leaderboard_contacts_next_page">正在加载下一页...</string>
+	<string name="gc_leaderboard_empty_friend_scores">暂无排行信息！</string>
+</resources>

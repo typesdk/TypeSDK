@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                android:id = "@+id/umipay_main_content_rl"
+                android:layout_width = "@dimen/umipay_main_diglog_width"
+                android:layout_height = "280dp"
+                android:paddingLeft = "@dimen/umipay_main_diglog_marginLeft"
+                android:paddingRight = "@dimen/umipay_main_diglog_marginRight"
+                android:background = "@drawable/umipay_background_stroke" >
+
+	<FrameLayout
+			android:id = "@+id/umipay_main_content"
+			android:layout_width = "match_parent"
+			android:layout_height = "match_parent"
+			android:layout_centerHorizontal = "true"
+			android:layout_centerVertical = "true"
+			/>
+</RelativeLayout >

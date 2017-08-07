@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pay_white">#ffffffff</color>
+    <color name="pay_title_bg">#000000</color>
+    <color name="pay_background">#EEEEEE</color>
+    <color name="pay_title_back_text">#DB4C80</color>
+    <color name="lib_pay_order_finished">#1078d8</color>
+    <color name="lib_pay_order_unfinished">#fd5a25</color>
+</resources>

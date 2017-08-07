@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1E0CBD23-D205-4087-A875-C703B72218CF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDKPackage</RootNamespace>
+    <AssemblyName>SDKPackage</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\OperationsAdmin\Operations\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PListNet, Version=2.0.6166.27818, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PListNet.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="ADMIN\Users.aspx" />
+    <Content Include="api\resettask.aspx" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Cookies.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Facebook.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Google.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.OAuth.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.Twitter.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\SDKPackage.Data.dll" />
+    <Content Include="bin\SDKPackage.Data.pdb" />
+    <Content Include="bin\SDKPackage.dll" />
+    <Content Include="bin\SDKPackage.Entity.dll" />
+    <Content Include="bin\SDKPackage.Entity.pdb" />
+    <Content Include="bin\SDKPackage.Facade.dll" />
+    <Content Include="bin\SDKPackage.Facade.pdb" />
+    <Content Include="bin\SDKPackage.IData.dll" />
+    <Content Include="bin\SDKPackage.IData.pdb" />
+    <Content Include="bin\SDKPackage.Kernel.dll" />
+    <Content Include="bin\SDKPackage.Kernel.pdb" />
+    <Content Include="bin\SDKPackage.pdb" />
+    <Content Include="bin\SDKPackage.Utils.dll" />
+    <Content Include="bin\SDKPackage.Utils.pdb" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="build\css\custom.css" />
+    <Content Include="build\css\custom.min.css" />
+    <Content Include="build\js\custom.js" />
+    <Content Include="build\js\custom.min.js" />
+    <Content Include="css\bootstrap-admin-theme-change-size.css" />
+    <Content Include="css\bootstrap-admin-theme-small.css" />
+    <Content Include="css\bootstrap-admin-theme.css" />
+    <Content Include="css\bootstrap-error-page.css" />
+    <Content Include="css\bootstrap-small.css" />
+    <Content Include="css\bootstrap-switch-small.css" />
+    <Content Include="css\bootstrap-theme-switch.css" />
+    <Content Include="css\bootstrap-theme-switch.min.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\datepicker.fixes.css" />
+    <Content Include="css\DT_bootstrap.css" />
+    <Content Include="css\uniform.default.fixes.css" />
+    <Content Include="DownLoad\DownLoadAndroidPackage.aspx" />
+    <Content Include="DownLoad\DownLoadIOSPackage.aspx" />
+    <Content Include="Facility\Log.aspx" />
+    <Content Include="Facility\ShortcutHelper.aspx" />
+    <Content Include="Facility\UpdateSVNLog.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\Ubuntu-LICENSE.txt" />
+    <Content Include="GameConfig\AddGamePlatfrom.aspx" />
+    <Content Include="GameConfig\GameChannelPackageManage.aspx" />
+    <Content Include="GameConfig\GameConfig.aspx" />
+    <Content Include="GameConfig\GameList.aspx" />
+    <Content Include="GameConfig\GamePlatformConfig.aspx" />
+    <Content Include="GameConfig\GamePlatformIcon.aspx" />
+    <Content Include="GameConfig\GamePlatformReplaceKey.aspx" />
+    <Content Include="GameIcon\GameIconList.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="ICSharpCode.SharpZipLib.dll" />
+    <Content Include="images\bg-input-focus.png" />
+    <Content Include="images\bg-input.png" />
+    <Content Include="images\sprite.png" />
+    <Content Include="img\er.gif" />
+    <Content Include="img\ok.gif" />
+    <Content Include="img\scz.gif" />
+    <Content Include="img\upimg.jpg" />
+    <Content Include="img\wait.gif" />
+    <Content Include="img\wn.png" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="js\datepicker\daterangepicker.js" />
+    <Content Include="js\flot\curvedLines.js" />
+    <Content Include="js\flot\date.js" />
+    <Content Include="js\flot\jquery.flot.orderBars.js" />
+    <Content Include="js\flot\jquery.flot.spline.js" />
+    <Content Include="js\maps\gdp-data.js" />
+    <Content Include="js\maps\jquery-jvectormap-2.0.3.min.js" />
+    <Content Include="js\maps\jquery-jvectormap-us-aea-en.js" />
+    <Content Include="js\maps\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="js\moment\moment.min.js" />
+    <Content Include="Models\Games.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Games.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PJConfig\AddMyVersion.aspx" />
+    <Content Include="PJConfig\AddPlatform.aspx" />
+    <Content Include="PJConfig\KeyConfig.aspx" />
+    <Content Include="PJConfig\PlatformVersion.aspx" />
+    <Content Include="PJConfig\Web.config" />
+    <Content Include="ADMIN\Web.config" />
+    <Content Include="GameConfig\Web.config" />
+    <Content Include="PJPackage\GameProjectVersionManage.aspx" />
+    <Content Include="PJPackage\GameVersionAdd.aspx" />
+    <Content Include="PJPackage\sdkPackageLog.aspx" />
+    <Content Include="PJPackage\SelectFinalPlace.aspx" />
+    <Content Include="PJPackage\SelectGame.aspx" />
+    <Content Include="PJPackage\SelectGameVersionList.aspx" />
+    <Content Include="PJPackage\SelectPlace.aspx" />
+    <Content Include="PJPackage\SelectPlatform.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="js\maps\us-unemployment.json" />
+    <Content Include="PJPackage\PackageInfoList.aspx" />
+    <Content Include="PJPackage\SelectPackageInfo.aspx" />
+    <Content Include="SystemManagement\SystemManagement.aspx" />
+    <Content Include="TaskManage.aspx" />
+    <Content Include="WS\WSNativeWeb.asmx" />
+    <Content Include="PJPackage\Web.config" />
+    <Content Include="GameIcon\Web.config" />
+    <Content Include="PJPackage\UpdateGameZip.ashx" />
+    <Content Include="Facility\Web.config" />
+    <Content Include="Admin.Master" />
+    <Content Include="fonts\Ubuntu-Bold.ttf" />
+    <Content Include="fonts\Ubuntu-BoldItalic.ttf" />
+    <Content Include="fonts\Ubuntu-Italic.ttf" />
+    <Content Include="fonts\Ubuntu-Light.ttf" />
+    <Content Include="fonts\Ubuntu-LightItalic.ttf" />
+    <Content Include="fonts\Ubuntu-Medium.ttf" />
+    <Content Include="fonts\Ubuntu-MediumItalic.ttf" />
+    <Content Include="fonts\Ubuntu-Regular.ttf" />
+    <Content Include="bin\SDKPackage.dll.config" />
+    <None Include="Properties\PublishProfiles\package.pubxml" />
+    <None Include="Properties\PublishProfiles\Release.pubxml" />
+    <Content Include="PJConfig\Platform.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <Content Include="Upload_Img.ashx" />
+    <Content Include="SystemManagement\Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Windows.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="api\resettask.aspx.cs">
+      <DependentUpon>resettask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="api\resettask.aspx.designer.cs">
+      <DependentUpon>resettask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownLoad\DownLoadAndroidPackage.aspx.cs">
+      <DependentUpon>DownLoadAndroidPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownLoad\DownLoadAndroidPackage.aspx.designer.cs">
+      <DependentUpon>DownLoadAndroidPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DownLoad\DownLoadIOSPackage.aspx.cs">
+      <DependentUpon>DownLoadIOSPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownLoad\DownLoadIOSPackage.aspx.designer.cs">
+      <DependentUpon>DownLoadIOSPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facility\Log.aspx.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facility\Log.aspx.designer.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facility\ShortcutHelper.aspx.cs">
+      <DependentUpon>ShortcutHelper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facility\ShortcutHelper.aspx.designer.cs">
+      <DependentUpon>ShortcutHelper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facility\UpdateSVNLog.aspx.cs">
+      <DependentUpon>UpdateSVNLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facility\UpdateSVNLog.aspx.designer.cs">
+      <DependentUpon>UpdateSVNLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameConfig\AddGamePlatfrom.aspx.cs">
+      <DependentUpon>AddGamePlatfrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameConfig\AddGamePlatfrom.aspx.designer.cs">
+      <DependentUpon>AddGamePlatfrom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameConfig\GameChannelPackageManage.aspx.cs">
+      <DependentUpon>GameChannelPackageManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameConfig\GameChannelPackageManage.aspx.designer.cs">
+      <DependentUpon>GameChannelPackageManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameConfig\GameConfig.aspx.cs">
+      <DependentUpon>GameConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameConfig\GameConfig.aspx.designer.cs">
+      <DependentUpon>GameConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameConfig\GameList.aspx.cs">
+      <DependentUpon>GameList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameConfig\GameList.aspx.designer.cs">
+      <DependentUpon>GameList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameConfig\GamePlatformConfig.aspx.cs">
+      <DependentUpon>GamePlatformConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameConfig\GamePlatformConfig.aspx.designer.cs">
+      <DependentUpon>GamePlatformConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameConfig\GamePlatformIcon.aspx.cs">
+      <DependentUpon>GamePlatformIcon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameConfig\GamePlatformIcon.aspx.designer.cs">
+      <DependentUpon>GamePlatformIcon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameConfig\GamePlatformReplaceKey.aspx.cs">
+      <DependentUpon>GamePlatformReplaceKey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameConfig\GamePlatformReplaceKey.aspx.designer.cs">
+      <DependentUpon>GamePlatformReplaceKey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameIcon\GameIconList.aspx.cs">
+      <DependentUpon>GameIconList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameIcon\GameIconList.aspx.designer.cs">
+      <DependentUpon>GameIconList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameIcon\IconCreate.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Games.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Games.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="PJConfig\AddMyVersion.aspx.cs">
+      <DependentUpon>AddMyVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJConfig\AddMyVersion.aspx.designer.cs">
+      <DependentUpon>AddMyVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJConfig\AddPlatform.aspx.cs">
+      <DependentUpon>AddPlatform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJConfig\AddPlatform.aspx.designer.cs">
+      <DependentUpon>AddPlatform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJConfig\IconCreate.cs" />
+    <Compile Include="PJConfig\KeyConfig.aspx.cs">
+      <DependentUpon>KeyConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJConfig\KeyConfig.aspx.designer.cs">
+      <DependentUpon>KeyConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJConfig\Platform.aspx.cs">
+      <DependentUpon>Platform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJConfig\Platform.aspx.designer.cs">
+      <DependentUpon>Platform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJConfig\PlatformVersion.aspx.cs">
+      <DependentUpon>PlatformVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJConfig\PlatformVersion.aspx.designer.cs">
+      <DependentUpon>PlatformVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJConfig\PSCSPsdImage.cs" />
+    <Compile Include="PJPackage\GameProjectVersionManage.aspx.cs">
+      <DependentUpon>GameProjectVersionManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\GameProjectVersionManage.aspx.designer.cs">
+      <DependentUpon>GameProjectVersionManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\GameVersionAdd.aspx.cs">
+      <DependentUpon>GameVersionAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\GameVersionAdd.aspx.designer.cs">
+      <DependentUpon>GameVersionAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\sdkPackageLog.aspx.cs">
+      <DependentUpon>sdkPackageLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\sdkPackageLog.aspx.designer.cs">
+      <DependentUpon>sdkPackageLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\SelectFinalPlace.aspx.cs">
+      <DependentUpon>SelectFinalPlace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\SelectFinalPlace.aspx.designer.cs">
+      <DependentUpon>SelectFinalPlace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\SelectGame.aspx.cs">
+      <DependentUpon>SelectGame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\SelectGame.aspx.designer.cs">
+      <DependentUpon>SelectGame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\SelectGameVersionList.aspx.cs">
+      <DependentUpon>SelectGameVersionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\SelectGameVersionList.aspx.designer.cs">
+      <DependentUpon>SelectGameVersionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\SelectPlace.aspx.cs">
+      <DependentUpon>SelectPlace.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\SelectPlace.aspx.designer.cs">
+      <DependentUpon>SelectPlace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\SelectPlatform.aspx.cs">
+      <DependentUpon>SelectPlatform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\SelectPlatform.aspx.designer.cs">
+      <DependentUpon>SelectPlatform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\PackageInfoList.aspx.cs">
+      <DependentUpon>PackageInfoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\PackageInfoList.aspx.designer.cs">
+      <DependentUpon>PackageInfoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\SelectPackageInfo.aspx.cs">
+      <DependentUpon>SelectPackageInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PJPackage\SelectPackageInfo.aspx.designer.cs">
+      <DependentUpon>SelectPackageInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PJPackage\UpdateGameZip.ashx.cs">
+      <DependentUpon>UpdateGameZip.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="SystemManagement\SystemManagement.aspx.cs">
+      <DependentUpon>SystemManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemManagement\SystemManagement.aspx.designer.cs">
+      <DependentUpon>SystemManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskManage.aspx.cs">
+      <DependentUpon>TaskManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaskManage.aspx.designer.cs">
+      <DependentUpon>TaskManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload_Img.ashx.cs">
+      <DependentUpon>Upload_Img.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Windows.Master.cs">
+      <DependentUpon>Windows.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Windows.Master.designer.cs">
+      <DependentUpon>Windows.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WS\WSNativeWeb.asmx.cs">
+      <DependentUpon>WSNativeWeb.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\zh-Hans\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="TaskLog\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\Games.dbml.layout">
+      <DependentUpon>Games.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\SDKPackage.Kernel\SDKPackage.Kernel.csproj">
+      <Project>{fdc1353a-8dc4-4fbb-876b-33670072fd8f}</Project>
+      <Name>SDKPackage.Kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\SDKPackage.Utils\SDKPackage.Utils.csproj">
+      <Project>{0897ba51-3eea-4a16-8a49-1af741b668af}</Project>
+      <Name>SDKPackage.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\SDKPackage.Data\SDKPackage.Data.csproj">
+      <Project>{24423906-2ec7-4187-a28e-362c46f584c4}</Project>
+      <Name>SDKPackage.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\SDKPackage.Entity\SDKPackage.Entity.csproj">
+      <Project>{a1ade8a1-c286-4c3f-9516-2a3035f63892}</Project>
+      <Name>SDKPackage.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\SDKPackage.Facade\SDKPackage.Facade.csproj">
+      <Project>{08db320b-3c0c-44bd-b33e-7fcd12a58555}</Project>
+      <Name>SDKPackage.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\SDKPackage.IData\SDKPackage.IData.csproj">
+      <Project>{9791d6ca-bef3-46e7-9e17-f025452b054b}</Project>
+      <Name>SDKPackage.IData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

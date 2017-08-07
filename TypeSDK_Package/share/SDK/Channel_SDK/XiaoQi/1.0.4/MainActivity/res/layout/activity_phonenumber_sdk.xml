@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id="@+id/phonenumber_title_rl"
+        layout="@layout/item_main_title_rl"        
+        />
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" 
+        >
+    <RelativeLayout
+        android:layout_marginTop="25dip"
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/phonenumber_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/activity_phonenumber" />
+
+        <EditText
+            android:id="@+id/phonenumber_et_telephonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/phonenumber_iv"
+            android:background="@null"
+            android:textSize="14sp"
+            android:inputType="number"
+            style="@style/et_tc_textColorHint"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="请输入11位手机号码" />
+        <View
+        android:id="@+id/phonenumber_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"       
+        android:layout_marginRight="15dip"
+        android:background="@color/line" 
+        android:layout_below="@+id/phonenumber_iv"
+        android:layout_marginLeft="15dip"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <EditText 
+            android:id="@+id/phonenumber_et_code"
+            android:layout_width="200dip"
+            android:layout_height="50dip"
+            android:background="@null"
+            android:hint="验证码输入框"
+            android:textSize="14sp"
+            style="@style/et_tc_textColorHint"
+            android:layout_marginLeft="20dip"
+            android:imeOptions="flagNoExtractUi"
+            />
+        <Button 
+            android:id="@+id/phonenumber_btn_getcode"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@color/text_green"
+            android:text="获取验证码"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginRight="15sp"
+            />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/phonenumber_btn_ensurebound" 
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dip"
+        android:background="@drawable/green_radio_bg"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:text="确定绑定"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        />
+    
+    <TextView 
+        android:layout_marginTop="20dip"
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_green"
+        android:layout_height="30dip"
+        android:gravity="center_vertical"
+        android:text="绑定后，可以通过手机号登录及找回密码"
+        />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

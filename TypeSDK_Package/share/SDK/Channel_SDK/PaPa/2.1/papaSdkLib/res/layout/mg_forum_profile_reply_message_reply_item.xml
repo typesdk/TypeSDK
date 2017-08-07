@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@android:color/white"
+                  android:paddingLeft="52dp"
+                  android:paddingRight="@dimen/mg_forum_post_item_padding"
+                  android:paddingBottom="@dimen/mg_forum_post_item_padding"
+            >
+
+        <!--android:paddingLeft="48dp"-->
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp">
+
+            <View android:layout_height="1px"
+                  android:layout_width="match_parent"
+                  android:background="#cccccc"
+                  android:layout_marginBottom="8dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_gravity="top"
+                  android:visibility="gone"
+                  android:id="@+id/comment_reply_divider"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/comment_reply_container">
+
+                <include layout="@layout/comment_reply_item"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View android:layout_width="match_parent" android:layout_height="2px"
+          android:background="#cccccc"
+          android:layout_alignParentBottom="true"/>
+</RelativeLayout>

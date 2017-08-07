@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/iw_content_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/user_register_phone"
+                style="@style/sdkLoginRule"
+                android:layout_marginLeft="@dimen/normal_margin_16"
+                android:layout_marginTop="@dimen/normal_margin_16"
+                android:text="请在下面输入绑定的手机号:" />
+
+            <RelativeLayout
+                android:id="@+id/phone_username_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_margin_8"
+                android:layout_marginRight="@dimen/normal_margin_8"
+                android:layout_marginTop="@dimen/normal_margin_8"
+                android:background="@drawable/lvansdk_login_input" >
+
+                <ImageView
+                    android:id="@+id/rec_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/lvansdk_phone"
+                    android:src="@drawable/lvansdk_phone" />
+
+                <EditText
+                    android:id="@+id/txt_mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/normal_margin_48"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/rec_phone"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/lvansdk_vertical_line"
+                    android:drawablePadding="8dp"
+                    android:hint="请输入手机号码"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/user_text_size" >
+                </EditText>
+
+                <LinearLayout
+                    android:id="@+id/rec_verifylin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="1dp" >
+
+                    <Button
+                        android:id="@+id/rec_verify"
+                        android:layout_width="85dp"
+                        android:layout_height="@dimen/normal_margin_48"
+                        android:background="@drawable/lvansdk_verify_btn_bg"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="获取验证码"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rec_password_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_margin_8"
+                android:layout_marginRight="@dimen/normal_margin_8"
+                android:layout_marginTop="@dimen/normal_margin_8"
+                android:background="@drawable/lvansdk_login_input" >
+
+                <ImageView
+                    android:id="@+id/rec_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/lvansdk_verifcode"
+                    android:src="@drawable/lvansdk_verifcode" />
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/normal_margin_48"
+                    android:layout_toRightOf="@id/rec_pwd"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/lvansdk_vertical_line"
+                    android:drawablePadding="8dp"
+                    android:hint="请输入验证码"
+                    android:paddingLeft="16dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/user_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/recver_btn"
+            style="@style/sdkLoginGreenButton"
+            android:layout_below="@id/iw_content_panel"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/normal_margin_8"
+            android:layout_marginRight="@dimen/normal_margin_8"
+            android:layout_marginTop="@dimen/normal_margin_16"
+            android:background="@drawable/lvansdk_btn_style_one_normal"
+            android:text="@string/next_btn_str_fv" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_margin_16"
+            android:layout_below="@id/recver_btn"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</FrameLayout>

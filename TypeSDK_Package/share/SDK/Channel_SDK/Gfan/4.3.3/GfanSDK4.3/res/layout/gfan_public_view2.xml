@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/gfan_uc_bg_padding"
+        android:paddingRight="@dimen/gfan_uc_bg_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gfan_uc_view_space_small"
+            android:background="@drawable/gfan_edit_layout_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_username"
+                style="@style/gfan_edit_style"
+                android:layout_width="match_parent"
+                android:hint="请输入账号（6-16位）"
+                android:maxLength="16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gfan_edit_layout_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/gfan_edit_style"
+                android:layout_width="match_parent"
+                android:hint="请输入密码（6-16位）"
+                android:inputType="textPassword"
+                android:maxLength="16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gfan_uc_view_space_small"
+            android:background="@drawable/gfan_edit_layout_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_password2"
+                style="@style/gfan_edit_style"
+                android:layout_width="match_parent"
+                android:hint="请再次输入密码（6-16位）"
+                android:inputType="textPassword"
+                android:maxLength="16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gfan_uc_view_space_small"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_phonenumer"
+                style="@style/gfan_edit_style"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/gfan_edit_layout_bg"
+                android:hint="请输入手机号（推荐 可选）"
+                android:inputType="number"
+                android:maxLength="11" />
+
+
+            <TextView
+                android:id="@+id/verifycodeBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gfan_edit_layout_height"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/gfan_cyan_selector"
+                android:enabled="true"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/gfan_col_00b0ff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gfan_edit_layout_bg"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_verifycode"
+                style="@style/gfan_edit_style"
+                android:layout_width="match_parent"
+                android:hint="请输入验证码" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gfan_uc_view_space"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancelBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gfan_edit_layout_height"
+                android:layout_weight="1"
+                android:background="@drawable/gfan_yellow_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/gfan_btn_text_size" />
+
+            <TextView
+                android:id="@+id/registBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gfan_edit_layout_height"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/gfan_blue_selector"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/gfan_btn_text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_public_view2.xml -->

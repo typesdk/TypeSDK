@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_recharge_record_game_name_parent_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="反恐精英:全球攻势"
+        android:textColor="@color/sogou_game_sdk_color_111111"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_recharge_record_money_parent_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/sogou_game_sdk_recharge_record_game_name_parent_tv"
+        android:layout_marginTop="10dp"
+        android:text="支付99元"
+        android:textColor="@color/sogou_game_sdk_color_888888"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_recharge_record_time_parent_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="2016-12-25 10:25:34"
+        android:textColor="@color/sogou_game_sdk_color_888888"
+        android:textSize="10sp" />
+
+    <CheckBox
+        android:id="@+id/sogou_game_sdk_recharge_record_parent_cb"
+        style="@style/sogou_game_sdk_recharge_record_cb_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="false"
+        android:focusable="false" />
+
+</RelativeLayout>

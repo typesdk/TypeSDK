@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="#3c3c3c"
+    >
+        
+   
+   
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="20dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sdk_back"
+            android:gravity="center"
+            android:paddingBottom="6dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="6dip"
+            android:src="@drawable/sdk_back_conner" />
+    
+    <ImageView 
+        android:id="@+id/iv_ingame"
+        android:layout_width="wrap_content"
+        android:src="@drawable/sdk_charge_help"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"/>
+
+    <TextView
+        android:id="@+id/tv_charge_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_back"
+        android:layout_centerHorizontal="true"
+        android:text="充值中心"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+     >
+	
+    <ImageView 
+        android:id="@+id/egame_progress_userpic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        />
+    <LinearLayout
+        android:id="@+id/egame_ll_account"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/egame_progresstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/egame_usersdk_dark_gray"
+            android:text="爱游戏账号" />
+
+        <TextView
+            android:id="@+id/egame_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13888888888"
+            android:textSize="16dp"
+            android:textColor="@color/text_green" />
+    </LinearLayout>
+	
+    <TextView 
+        android:id="@+id/egame_newlogin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/egame_usersdk_dark_gray"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="6dp"
+        android:textSize="13dp"
+        android:text="@string/egame_new_login"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:id="@+id/egame_progress_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/egame_progress"
+            style="@style/myProgressBarStyleLarge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:indeterminateDuration="700" />
+
+        <TextView
+            android:id="@+id/egame_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="16dp"
+            android:singleLine="true"
+            android:text="登录中..." />
+
+    </LinearLayout>
+	
+    <Button 
+        android:id="@+id/egame_pgbt"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:textColor="@color/egame_usersdk_white"
+        android:textSize="14dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/egame_btn_login_status"
+        android:visibility="gone"
+        android:text="@string/egame_fast_login"
+        android:layout_marginBottom="12dp"
+        />
+    
+</LinearLayout>

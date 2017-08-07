@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+    <!--头-->
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff99720">
+
+        <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/papa_back_btn"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <!--左侧-->
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            <ScrollView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/side_bg_papa"
+                    android:scrollbars="none"
+                    android:id="@+id/scroll"
+                    >
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                    <!--微信卡-->
+                    <LinearLayout
+                            android:id="@+id/aliSwitch"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/side_bg_selected_papa"
+                            android:gravity="center">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="支付宝"
+                                android:textColor="#ff9e5200"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/webChatSwitch"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:background="@drawable/side_bg_papa"
+                            >
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="微信支付"
+                                android:textColor="#ff9e5200"/>
+                    </LinearLayout>
+                    <!--银联卡-->
+                    <LinearLayout
+                            android:id="@+id/pabiSwitch"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/side_bg_papa"
+                            android:gravity="center"
+                            >
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="啪啪"
+                                android:textColor="#ff9e5200"
+                                android:id="@+id/papatext"
+                                />
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/unionSwitch"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/side_bg_papa"
+                            android:gravity="center">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="银联卡"
+                                android:textColor="#ff9e5200"
+                                android:id="@+id/yinlian"
+                                />
+                    </LinearLayout>
+                    <!--支付宝-->
+                    <!--先玩后付-->
+                    <LinearLayout
+                            android:id="@+id/creditCardSwitch"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/side_bg_papa"
+                            android:gravity="center">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="信用卡"
+                                android:textColor="#ff9e5200"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/mo9Switch"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/side_bg_papa"
+                            android:gravity="center">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="先玩后付"
+                                android:textColor="#ff9e5200"/>
+                    </LinearLayout>
+
+                    <!--信用卡-->
+
+                    <!--充值卡-->
+                    <LinearLayout
+                            android:id="@+id/rechargeSwitch"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/side_bg_papa"
+                            android:gravity="center">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="话费卡"
+                                android:textColor="#ff9e5200"
+                                android:id="@+id/huafei"
+                                />
+                    </LinearLayout>
+
+                    <!--骏网卡-->
+                    <LinearLayout
+                            android:id="@+id/junwangSwitch"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/side_bg_papa"
+                            android:gravity="center">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="骏网卡"
+                                android:textColor="#ff9e5200"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <!--右侧-->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:orientation="vertical">
+
+            <!--支付信息-->
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/expand_bg_papa"
+                    android:id="@+id/zzzxxx"
+                    >
+                <!--金额-->
+                <TextView
+                        android:id="@+id/payMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="10元"
+                        android:textColor="#ffff0000"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/message"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#6e5336"
+                        android:layout_toLeftOf="@+id/payMoney"
+                        />
+
+                <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/notice_image"
+                        android:layout_alignParentRight="false"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:layout_toLeftOf="@+id/noPhone"
+                        />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您的账号存在安全风险"
+                        android:id="@+id/noPhone"
+                        android:textColor="#ff557bcd"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp30"
+                        android:drawablePadding="@dimen/dp10"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        />
+            </RelativeLayout>
+
+            <!--内容布局-->
+            <FrameLayout
+                    android:id="@+id/mainContent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+            </FrameLayout>
+
+            <TextView
+                    android:id="@+id/amtLimit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单笔支付金额最高不得超过2000元"
+                    android:textColor="#ff5d5d5d"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:layout_marginBottom="@dimen/dp15"
+                    />
+
+
+            <!--支付按钮-->
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp120"
+                    android:src="@drawable/xypay_confirm_papa"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/startPay"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

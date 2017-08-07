@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/lion_activity_choice_photo"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/lion_common_white"
+          android:horizontalSpacing="5.0dip"
+          android:numColumns="3"
+          android:padding="15.0dip"
+          android:scrollbars="none"
+          android:verticalSpacing="5.0dip"/>

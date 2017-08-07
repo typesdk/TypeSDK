@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/float_window_balance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@drawable/float_window_edittextbg_black"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/balance_touxiang"
+            android:layout_width="90dp"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/balance_touxiang_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/float_window_touxiang" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/float_window_balance_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/float_window_ledi_account"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/title_font_medium" />
+
+                <TextView
+                    android:id="@+id/float_window_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="@dimen/title_font_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/float_window_ledi_balance_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/float_window_ledi_balance"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/title_font_medium" />
+
+                <TextView
+                    android:id="@+id/float_window_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="@dimen/title_font_medium" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ledi_g_buy_recharge_text_rechargelebi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/ledi_recharge_lebi"
+                android:textColor="@color/float_window_blue"
+                android:textSize="@dimen/title_font_medium"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/ledi_g_buy_recharge_discount_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ledi_money_list_down"
+                android:onClick="discountlist" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

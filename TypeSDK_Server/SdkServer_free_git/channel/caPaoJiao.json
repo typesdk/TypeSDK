@@ -1,0 +1,28 @@
+{
+  "version":"v3.6.2.1.20160701",
+  "actions":[ {
+      "name":"Login"
+      ,"method":"GET"
+      ,"in_params":{
+        "token":""
+      }
+      ,"out_url" :"http://ng.sdk.paojiao.cn/api/user/token.do"
+      ,"out_params" :{
+        "token" : "",
+        "appId":"",
+        "sign":""
+      }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":{
+        "sign": ""
+    }
+    ,"out_url" :"http://ng.sdk.paojiao.cn/api/user/token.do"
+    ,"out_params" :{
+
+      }
+    }
+  ]
+}

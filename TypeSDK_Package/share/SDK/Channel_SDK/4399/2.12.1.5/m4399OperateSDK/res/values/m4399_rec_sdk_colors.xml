@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="m4399_rec_color_white">#ffffffff</color>
+	<color name="m4399_rec_color_half_white">#88ffffff</color>
+	<color name="m4399_rec_color_grey">#ff999999</color>
+	<color name="m4399_rec_color_yellow">#ffff7f17</color>
+	<color name="m4399_rec_title_bg_color">#ffff9515</color>
+	<color name="m4399_rec_sdk_color_black">#ff000000</color>
+	<color name="m4399_rec_dialog_separator_bg">#ff4e4e4e</color>
+	<color name="m4399_rec_foot_bg_color">#fff4f4f4</color>
+	<color name="m4399_rec_link_text_light">#55177bbd</color>
+	<color name="m4399_rec_color_history_record_item_bg">#99999999</color>
+	<color name="m4399_rec_record_editer_btn_bg_normal">#eeeeeeee</color>
+	
+</resources>

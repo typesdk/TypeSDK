@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"    
+    android:background="@color/m4399_rec_color_white"
+    android:focusable="true"
+    android:gravity="center"
+    android:focusableInTouchMode="true" >
+
+    <EditText
+        android:id="@+id/serial"
+		style="@style/m4399RecInputAreaStyle"
+		android:layout_marginRight="@dimen/m4399_rec_btns_hspacing"
+		android:textCursorDrawable="@null"
+		android:imeOptions="actionNext"
+        android:hint="@string/m4399_rec_input_card_serial">
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwd"
+     	style="@style/m4399RecInputAreaStyle"
+     	android:textCursorDrawable="@null"
+     	android:imeOptions="actionDone"
+        android:hint="@string/m4399_rec_input_card_psword"/>
+
+</LinearLayout>

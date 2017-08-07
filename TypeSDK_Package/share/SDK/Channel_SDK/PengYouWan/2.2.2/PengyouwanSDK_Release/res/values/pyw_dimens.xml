@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- 普通顶部标题的高度 -->
+    <dimen name="pyw_common_title_height">42dp</dimen>
+    <dimen name="pyw_log_padding">12dp</dimen>
+    <!-- 通用字体大小 -->
+    <!-- 超级大字号，作为抢眼信息来用 -->
+    <dimen name="pyw_text_size_super">24sp</dimen>
+    <!-- 超级字号，一般用于最大标题 -->
+    <dimen name="pyw_common_super">20sp</dimen>
+    <!-- 稍大字号，一般用于用户输入 -->
+    <dimen name="pyw_common_larger">18sp</dimen>
+    <!-- 大字号，一般用于一级标题 -->
+    <dimen name="pyw_common_large">16sp</dimen>
+    <!-- 中字号，一般用于二级标题 -->
+    <dimen name="pyw_common_medium">14sp</dimen>
+    <!-- 小字号，一般用于三级标题，介绍性文字 -->
+    <dimen name="pyw_common_small">12sp</dimen>
+    <!-- 超小字号 -->
+    <dimen name="pyw_common_little">10sp</dimen>
+    <!-- 适配字号 -->
+    <dimen name="pyw_common_adapter_little">10sp</dimen>
+    <!-- 列表项高度 -->
+    <dimen name="pyw_common_item_height">70dip</dimen>
+    <!-- 列表图标宽度 -->
+    <dimen name="pyw_common_icon_width_and_height">55dip</dimen>
+    <!-- 游戏图标宽度 -->
+    <dimen name="pyw_common_larger_icon_width_and_height">60dip</dimen>
+    <!-- 通用按钮高度 -->
+    <dimen name="pyw_common_btn_height">38dip</dimen>
+    <!-- 弹出框的按钮宽高 -->
+    <dimen name="pyw_dialog_btn_width">80dip</dimen>
+    <dimen name="pyw_dialog_btn_height">35dip</dimen>
+    <!-- 通用文本编辑框的高度 -->
+    <dimen name="pyw_common_editext_height">40dip</dimen>
+    <!-- 通用文本编辑框的宽度 -->
+    <dimen name="pyw_common_editext_width">300dip</dimen>
+    <!-- 悬浮窗宽 -->
+    <dimen name="pyw_float_width">25dp</dimen>
+    <!-- 悬浮窗高 -->
+    <dimen name="pyw_float_height">50dp</dimen>
+    <!-- 账号管理界面item宽度 -->
+    <dimen name="pyw_grid_item_width">130dp</dimen>
+    <!-- 账号管理界面item高度 -->
+    <dimen name="pyw_grid_item_height">49dp</dimen>
+
+    <!-- 常用dp值 -->
+    <dimen name="pyw_dp_15">5dp</dimen>
+    <dimen name="pyw_dp_18">6dp</dimen>
+    <dimen name="pyw_dp_21">7dp</dimen>
+    <dimen name="pyw_dp_24">8dp</dimen>
+    <dimen name="pyw_dp_27">9dp</dimen>
+    <dimen name="pyw_dp_30">10dp</dimen>
+    <dimen name="pyw_dp_36">12dp</dimen>
+    <dimen name="pyw_dp_39">13dp</dimen>
+    <dimen name="pyw_dp_45">15dp</dimen>
+    <dimen name="pyw_dp_48">16dp</dimen>
+    <dimen name="pyw_dp_42">14dp</dimen>
+    <dimen name="pyw_dp_49">16dp</dimen>
+    <dimen name="pyw_dp_51">17dp</dimen>
+    <dimen name="pyw_dp_54">18dp</dimen>
+    <dimen name="pyw_dp_57">19dp</dimen>
+    <dimen name="pyw_dp_60">20dp</dimen>
+    <dimen name="pyw_dp_66">22dp</dimen>
+    <dimen name="pyw_dp_69">23dp</dimen>
+    <dimen name="pyw_dp_72">24dp</dimen>
+    <dimen name="pyw_dp_75">25dp</dimen>
+    <dimen name="pyw_dp_78">26dp</dimen>
+    <dimen name="pyw_dp_92">31dp</dimen>
+    <dimen name="pyw_dp_99">33dp</dimen>
+    <dimen name="pyw_dp_102">34dp</dimen>
+    <dimen name="pyw_dp_105">35dp</dimen>
+    <dimen name="pyw_dp_114">38dp</dimen>
+    <dimen name="pyw_dp_118">39dp</dimen>
+    <dimen name="pyw_dp_120">40dp</dimen>
+    <dimen name="pyw_dp_128">42dp</dimen>
+    <dimen name="pyw_dp_129">43dp</dimen>
+    <dimen name="pyw_dp_132">44dp</dimen>
+    <dimen name="pyw_dp_147">49dp</dimen>
+    <dimen name="pyw_dp_159">53dp</dimen>
+    <dimen name="pyw_dp_180">60dp</dimen>
+    <dimen name="pyw_dp_189">63dp</dimen>
+    <dimen name="pyw_dp_204">68dp</dimen>
+    <dimen name="pyw_dp_207">69dp</dimen>
+    <dimen name="pyw_dp_213">71dp</dimen>
+    <dimen name="pyw_dp_228">76dp</dimen>
+    <dimen name="pyw_dp_234">78dp</dimen>
+    <dimen name="pyw_dp_237">79dp</dimen>
+    <dimen name="pyw_dp_261">87dp</dimen>
+    <dimen name="pyw_dp_312">104dp</dimen>
+    <dimen name="pyw_dp_339">113dp</dimen>
+    <dimen name="pyw_dp_390">130dp</dimen>
+    <dimen name="pyw_dp_402">134dp</dimen>
+    <dimen name="pyw_dp_414">138dp</dimen>
+    <dimen name="pyw_dp_786">262dp</dimen>
+    <dimen name="pyw_dp_822">274dp</dimen>
+    <dimen name="pyw_dp_909">303dp</dimen>
+    <dimen name="pyw_dp_942">314dp</dimen>
+
+    <!-- 常用px值 -->
+    <dimen name="pyw_common_33">11sp</dimen>
+
+    <!-- 常用sp值 -->
+    <dimen name="pyw_sp_66">22sp</dimen>
+
+</resources>

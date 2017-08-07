@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/slyx_dragon_icon"
+        android:layout_width="38dip"
+        android:layout_height="39dip"
+        android:background="@drawable/slyx_dragon_img"
+        android:contentDescription="@string/slyx_img_des" />
+    <ImageView
+        android:id="@+id/slyx_dragon_icon_hide"
+        android:layout_width="18dip"
+        android:layout_height="32dip"
+        android:visibility="gone"
+        android:background="@drawable/slyx_dragon_img_hide_right"
+        android:contentDescription="@string/slyx_img_des" />
+</FrameLayout>

@@ -1,0 +1,42 @@
+/*
+ * Error page styles
+ *
+ * Created on : 2014-04-25
+ * Author     : Meritoo.pl, http://www.meritoo.pl
+ */
+
+/** Error page, e.g. 404 error */
+html.error-page{
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+html.error-page body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+html.error-page .container-fluid{
+    display: table;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+html.error-page .row-fluid{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+html.error-page .centering{
+    float: none;
+    margin: 0 auto;
+}
+html.error-page h2.without-margin{
+    margin-top: 0;
+}
+html.error-page .centering hr{
+    width: 75%;
+}

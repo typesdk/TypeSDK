@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.wogame"
+    android:versionCode="310"
+    android:versionName="3.1.0"
+    android:installLocation="auto" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <!-- WoGame权限要求 start -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 移动SDK新增权限要求如下： -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- WoGame权限要求 end -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.type.sdk.android.wogame.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+        </activity>
+		
+		<!-- WoGame配置开启启动界面 start -->
+        <activity
+            android:name="com.unicom.dcLoader.welcomeview"
+            android:configChanges="keyboardHidden|screenSize|navigation|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="sensor"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="UNICOM_DIST_ACTIVITY"
+                android:value="com.type.sdk.android.wogame.MainActivity" />
+        </activity>
+        <!-- WoGame配置开启启动界面 end -->
+		
+        <!-- WoGame注册Activity/Service start -->
+        <activity
+            android:name="com.unipay.account.ui.generic.GenericActivity"
+            android:configChanges="screenSize|orientation" >
+        </activity>
+        <activity
+            android:name="com.unipay.account.ui.generic.GenericFragmentActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+
+        <service
+            android:name="com.unipay.account.ui.generic.GenericFloatIconService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name="com.unicom.wostore.unipay.paysecurity.SecurityActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <service android:name="com.unicom.wostore.unipay.paysecurity.SecurityServiceFramework" />
+        <service
+            android:name="com.unicom.wostore.unipay.paysecurity.UpdateService"
+            android:process=":unicomuptsrv" />
+        <!-- WoGame注册Activity/Service end -->
+
+
+        <!-- WoGame注册支付宝Activity start -->
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- alipay sdk end -->
+        <!-- WoGame注册支付宝Activity end -->
+
+
+        <!-- WoGame配置支付能力开关 start -->
+        <meta-data
+            android:name="wostore_billing_otherpay"
+            android:value="true" />
+        <meta-data
+            android:name="wostore_billing_chinaunicom"
+            android:value="true" />
+        <meta-data
+            android:name="wostore_billing_chinamobile"
+            android:value="false" />
+        <meta-data
+            android:name="wostore_billing_chinatele"
+            android:value="false" />
+        <!-- WoGame配置支付能力开关 end -->
+
+
+        
+    </application>
+
+</manifest>

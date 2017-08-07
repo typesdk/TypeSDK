@@ -1,0 +1,36 @@
+{
+  "version":"7.0.0.20160325",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "ticket" : ""
+    }
+    ,"out_url_1" :"http://api.appchina.com/appchina-usersdk/user/get.json"
+    ,"out_url_2" :"http://api.appchina.com/appchina-usersdk/user/v2/get.json"
+
+    ,"out_params" :
+    {
+      "ticket" : ""
+    ,"app_id" : ""
+    ,"app_key" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "transdata": ""
+      }
+    ,"out_url" :"http://api.appchina.com/appchina-usersdk/user/get.json"
+    ,"out_params" :
+      {
+        "transdata": ""
+      }
+    }
+  ]
+}

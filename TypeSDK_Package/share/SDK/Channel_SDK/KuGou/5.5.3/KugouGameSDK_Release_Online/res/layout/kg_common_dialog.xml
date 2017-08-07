@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kg_sp_bg" >
+
+    <RelativeLayout
+        android:id="@+id/kg_common_diaog_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kg_common_dialog_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/kg_kugou_dialogtitle_default_bg" >
+
+        <TextView
+            android:id="@+id/kg_common_dialog_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/kg_warm_hint_1"
+            android:textColor="@color/kg_common_black"
+            android:textSize="@dimen/kg_common_dialog_title_size" />
+
+        <ImageView
+            android:id="@+id/kg_common_dialog_close_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="12dp"
+            android:src="@drawable/kg_selector_close_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/kg_common_divider" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/kg_common_dialog_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View style="@style/kg_KYTheme.Divider.Horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/kg_common_dialog_btn_ok"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/kg_selector_bottom_left_filleted_corner_retangle"
+                android:shadowColor="#ff000fff"
+                android:text="@string/kg_dialog_ensure"
+                android:textColor="@color/kg_common_gray_lighter"
+                android:textSize="@dimen/kg_common_large" />
+
+            <View
+                android:id="@+id/kg_common_dialog_btn_divider"
+                style="@style/kg_KYTheme.Divider.Vertical" />
+
+            <Button
+                android:id="@+id/kg_common_dialog_btn_cancel"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/kg_selector_bottom_right_filleted_corner_retangle"
+                android:shadowColor="#ff000fff"
+                android:text="@string/kg_dialog_cancel"
+                android:textColor="@color/kg_common_blue"
+                android:textSize="@dimen/kg_common_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

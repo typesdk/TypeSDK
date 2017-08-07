@@ -1,0 +1,225 @@
+<manifest ...
+	<!-- 该文件是接入九游SDK AndroidManifest.xml需要添加的声明，请参考接入-->
+	<!-- 根据经验，大多数支付问题都是配置不正确引起的。配置好了之后，请拷贝env_check.py脚本到工程根目录运行检查-->
+	<!-- 如遇到问题，请参考demo工程，或咨询九游的技术接口人-->
+	
+	<!-- 九游SDK接入声明添加开始-->
+
+	<supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="true"
+            android:smallScreens="true" />
+    
+    <!-- 支付SDK内部权限添加开始 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 支付SDK内部权限添加结束 -->
+
+    <!-- 运营商SDK权限添加开始 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 运营商SDK权限添加結束 -->
+	
+	
+
+    <!-- 以下声明添加到 <application>标签下 -->
+    <application
+        <activity
+            android:name="您的启动Activity"
+            ... >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+			
+			<!--移动咪咕运营商sdk如果配置闪屏，需要添加开始 -->
+            <intent-filter>
+                <action android:name="android.intent.action.CHINAMOBILE_OMS_GAME" />
+                <category android:name="android.intent.category.CHINAMOBILE_GAMES" />
+            </intent-filter>
+			<!--移动咪咕运营商sdk如果配置了闪屏，需要添加结束 -->
+        </activity>
+		
+        <!-- 以下声明是SDK内部声明，最好不要更改，直接拷贝过去 -->
+        <!-- 支付sdk相关 -->
+        <activity
+            android:name="cn.uc.paysdk.SDKActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden|adjustResize" >
+        </activity>
+        <service android:name="cn.uc.paysdk.service.SDKService" >
+        </service>
+        
+        <!-- 游戏sdk相关 -->
+        <activity android:name="cn.uc.gamesdk.sa.activity.ProxyActivity" 
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+
+            <intent-filter>
+                <action android:name="cn.uc.gamesdk.sdkweb" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- From SDK 1.4.0 for crash log-->
+        <service android:name="com.uc.crashsdk.CrashLogFilesUploader"
+           android:process=":TProcess">
+        </service>
+        <!-- From SDK 1.4.0 for crash log-->
+        
+        <!-- 支付宝sdk相关 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!-- now 微信SDK支付2.x相关添加开始 -->
+        <activity
+            android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <!-- now 微信SDK支付2.x相关添加结束 -->
+        <!-- 以上声明是SDK内部声明，最好不要更改，直接拷贝过去 -->
+		
+        <!-- 中国电信SDK支付相关添加开始 -->
+        <!-- 中国电信渠道号 :需要根据实际修改-->
+        <meta-data android:name="EGAME_CHANNEL" android:value="您申请到的渠道号"/>
+        <!-- 以下是屏蔽电信其他支付方式的配置， 电信平台游戏请根据要求酌情打开-->
+        <meta-data android:name="EGAME_UNINS" android:value="false"/>
+        <meta-data android:name="EGAME_ALIPAY" android:value="false"/>
+        <meta-data android:name="EGAME_UNIPAY" android:value="false"/>
+        <meta-data android:name="EGAME_NOWWECHATPAY" android:value="false" />
+
+     
+        <!-- 根据游戏实际情况修改screenOrientation属性 -->
+        <activity
+            android:name="cn.egame.terminal.paysdk.EgamePayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="unspecified"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <receiver android:name="cn.egame.terminal.sdk.EgameCoreReceiver" >
+            <intent-filter android:priority="1001" >
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.egame.terminal.sdk.RECEIVER_CMD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="cn.egame.terminal.sdk.EgameCoreService"
+            android:process=":egameCore" >
+            <intent-filter>
+                <action android:name="cn.egame.terminal.sdk.SERVICE_CMD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <!-- 根据游戏实际情况修改screenOrientation属性 -->
+        <activity
+            android:name="cn.egame.terminal.sdk.EgameCoreActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:process=":egameCore"
+            android:screenOrientation="behind"
+            android:taskAffinity=":egameCore"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <!-- 中国电信SDK支付相关添加结束 -->
+        
+        <!-- 中国联通SDK支付相关添加开始   -->
+        <activity
+            android:name="com.unicom.wostore.unipay.paysecurity.SecurityActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="screenSize|orientation">
+        </activity>
+        
+        <service  android:name="com.unicom.wostore.unipay.paysecurity.SecurityServiceFramework"/>
+		
+		<receiver android:name="com.unicom.xiaowo.SecurityReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+                         
+            <intent-filter>
+                <action android:name="com.unicom.xiaowo.security.RECEIVER_CMD" />
+            </intent-filter>
+        </receiver>
+        
+		<meta-data android:name="wostore_billing_otherpay" android:value="false"/>
+		<meta-data android:name="wostore_billing_chinaunicom" android:value="true"/>
+		<meta-data android:name="wostore_billing_chinamobile"  android:value="false" />
+		<meta-data android:name="wostore_billing_chinatele"  android:value="false" />
+		<!-- 中国联通SDK支付相关添加结束 -->
+		
+		<!-- 移动咪咕SDK26005支付相关添加开始 -->
+		<activity android:name="cn.cmgame2_0.launch_model.shortcut.main.MiguHomeActivity"
+	        android:screenOrientation="portrait"
+	        android:launchMode="singleInstance"
+	        android:theme="@android:style/Theme.Dialog">
+	        <intent-filter>
+	            <action android:name="android.intent.action.MAIN"/>
+	            <category android:name="cn.cmgame2_0.category.migu_home"/>
+	        </intent-filter>
+        </activity>
+        <service
+            android:name="cn.cmgame.billing.service.GameService">
+        </service>
+		<!-- 移动咪咕支付SDK26005版本相关添加结束 -->
+
+    </application>
+
+</manifest>

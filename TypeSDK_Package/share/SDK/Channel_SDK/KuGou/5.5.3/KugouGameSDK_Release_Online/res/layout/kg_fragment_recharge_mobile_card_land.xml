@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:orientation="vertical" >
+
+    
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loadingView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/kg_common_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />
+    
+    <include layout="@layout/kg_common_tips_bar_land" />"
+
+    <ScrollView
+        android:id="@+id/kg_layout_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/kg_land_padding"
+            android:paddingRight="@dimen/kg_land_padding" >
+            
+            <include layout="@layout/kg_common_recharge_preferential_bar_land"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kg_recharge_select_tips"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/kg_btn_recharge_ratio"
+                        android:layout_width="85dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/kg_selector_frame_gray"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="@string/kg_recharge_ratio"
+                        android:textSize="12sp"
+                        android:textColor="@color/kg_common_gray_more_lighter" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/kg_img_mobile_card_ratio_icon" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/kg_btn_recharge_platform"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/kg_selector_card"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="12dp"
+                            android:text="@string/kg_recharge_china_mobile"
+                            android:textColor="@color/kg_common_gray_lighter" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/kg_img_recharge_mode_arrow"
+                            android:textColor="@color/kg_common_gray_lighter" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:id="@+id/kg_btn_recharge_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/kg_selector_card"
+                            android:gravity="left|center_vertical"
+                            android:paddingLeft="12dp"
+                            android:text="@string/kg_recharge_10_yun" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/kg_img_recharge_mode_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/kg_et_recharge_mobile_sn_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/kg_btn_height"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/kg_selector_card"
+                        android:digits="@string/kg_nums"
+                        android:gravity="center_vertical"
+                        android:hint="@string/kg_recharge_mobile_sn_rule"
+                        android:inputType="phone"
+                        android:paddingLeft="12dp"
+                        android:singleLine="true"
+                        android:imeOptions="actionNext"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/kg_common_hint_color"
+                        android:textSize="16dip" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/kg_et_recharge_mobile_passwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/kg_btn_height"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/kg_selector_card"
+                        android:digits="@string/kg_nums"
+                        android:gravity="center_vertical"
+                        android:hint="@string/kg_recharge_mobile_passwd_rule"
+                        android:inputType="phone"
+                        android:paddingLeft="12dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/kg_common_hint_color"
+                        android:textSize="16dip" >
+                    </EditText>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/kg_tv_recharge_mobile_error_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/kg_recharge_error_tips_2"
+                    android:textColor="@color/kg_common_orange"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/kg_tv_recharge_can_get_youbi"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/kg_kubi_recharge_5"
+                    android:textColor="@color/kg_common_gray_lighter"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/kg_btn_recharge_submit"
+                    android:layout_width="300dp"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:layout_below="@+id/kg_tv_recharge_can_get_youbi"
+                    android:background="@drawable/kg_selector_btn_blue"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_confirm_recharge"
+                    android:textColor="#ffffffff"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

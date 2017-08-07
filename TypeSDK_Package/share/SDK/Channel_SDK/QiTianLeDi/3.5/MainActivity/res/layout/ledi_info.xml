@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ledi_phone_number"
+    android:orientation="vertical"
+    android:paddingLeft="10dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" 
+        >
+
+        <TextView
+            android:id="@+id/info_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60元"
+            android:layout_marginTop="10dp"
+            android:textColor="#e74807"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/info_value_old_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignBottom="@id/info_value"
+            android:layout_toRightOf="@id/info_value" >
+
+            <TextView
+                android:id="@+id/info_value_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="原价:"
+                android:textColor="#000"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/info_value_old_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/info_value_old"
+                android:text="100元"
+                android:textColor="#000"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:background="#000" >
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|top"
+            android:id="@+id/leid_info_fold_image" >
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ledi_info_googs_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+   >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            >
+
+            <TextView
+                android:id="@+id/info_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="商品  :"
+                android:textColor="#766d32"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/info_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/info_title_name"
+                android:text="1000"
+                android:textColor="#766d32"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/info_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/info_goods"
+                android:text="元宝"
+                android:textColor="#766d32"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:id="@+id/ledi_info_coupons_layout"
+            
+            >
+
+            <CheckBox
+                android:id="@+id/ledi_gift_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ledi_remember_password_bg"
+                android:checked="true"
+                android:textColor="#555555"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/ledi_giftmain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ledi_giftremain"
+                android:textColor="#f00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ledi_gift_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2元"
+                android:textColor="#f00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ledi_gift_money"
+                android:text="@string/ledi_giftremain2"
+                android:textColor="#f00"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

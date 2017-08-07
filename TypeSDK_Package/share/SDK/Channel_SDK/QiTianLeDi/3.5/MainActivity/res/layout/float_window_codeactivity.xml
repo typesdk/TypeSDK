@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/float_window_grey"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/float_window_activity_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+         android:gravity="center_horizontal"
+         android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/float_window_code_content"
+                android:textColor="@color/float_window_black"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/float_window_edit_code"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/float_window_edittextbg_black"
+                android:hint="@string/float_window_hint_input_code"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/float_window_hint_grey"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/float_window_btn_bond"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/float_window_btn_bond_share_selector"
+                android:text="@string/float_window_btn_bond"
+                android:textColor="@color/float_window_white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/float_window_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/float_window_code_content"
+                android:textColor="@color/float_window_black"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/float_window_txt_code"
+                    android:textColor="@color/float_window_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/float_window_text_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a5df54asd2wer54sad"
+                    android:textColor="@color/float_window_blue"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/float_window_btn_share"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/float_window_btn_bond_share_selector"
+                android:text="@string/float_window_btn_share"
+                android:textColor="@color/float_window_white"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|top" >
+
+    
+    <include
+        android:id="@+id/managerLayout"
+        layout="@layout/sy37_kefu_account_manager_menu"
+        android:visibility="visible" />
+    
+    <include
+        android:id="@+id/modifyLayout"
+        android:layout_below="@id/managerLayout"
+        layout="@layout/sy37_kefu_modifyperson"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/walletView"
+        android:layout_below="@id/managerLayout"
+        layout="@layout/sy37_kefu_wallet"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/listViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/managerLayout"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/listViewBtnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_layout_white_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="2.0dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:src="@drawable/sy37_my_gift" />
+
+            <TextView
+                android:id="@+id/listViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fg_mygift"
+                android:textColor="@color/s_orange"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/listViewBack"
+                style="@style/backBut" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/netload"
+            android:layout_below="@id/listViewBtnLayout"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            layout="@layout/sy37_netload" />
+
+        <com.sy37sdk.widget.ViewpageListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listViewBtnLayout"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@drawable/sy37_icon_list_diver"
+            android:paddingBottom="10dip"
+            android:scrollbars="none" >
+        </com.sy37sdk.widget.ViewpageListView>
+
+        <!--  
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/listView"
+            android:background="@drawable/sy37_icon_list_diver" />
+            -->
+    </RelativeLayout>
+
+	<include
+	    android:id="@+id/modifyPWLayout"
+	    android:layout_below="@id/managerLayout"
+	    android:layout_marginBottom="7dip"
+	    android:layout_marginLeft="7dip"
+	    android:layout_marginRight="7dip"
+	    layout="@layout/sy37_kefu_modifypw" 
+	    android:visibility="gone" 
+	    />
+
+</RelativeLayout>

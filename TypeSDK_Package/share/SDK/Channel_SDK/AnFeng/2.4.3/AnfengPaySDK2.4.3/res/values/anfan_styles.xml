@@ -1,0 +1,49 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.</style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">        All customizations that are NOT specific to a particular API-level can go here.</style>
+
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar">
+        <item name="android:minWidth">38dip</item>
+        <item name="android:maxWidth">38dip</item>
+        <item name="android:minHeight">38dip</item>
+        <item name="android:maxHeight">38dip</item>
+    </style>
+
+    <!-- logo透明样式 -->
+    <style name="anfan_Transparent">
+        <item name="android:windowBackground">@color/progressdialog_background</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowFullscreen">true</item> -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="anfan_update">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="anfan_float_menu">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <!-- <item name="android:padding">3dp</item> -->
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="@drawable/egame_btn_click_selector" />
+
+    <TextView
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/egame_usersdk_regist_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_60"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/egame_ico_pop_camera"
+        android:gravity="center"
+        android:text="@string/egame_user_take_photo" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@id/camera"
+        android:background="#33000000" />
+
+    <TextView
+        android:id="@+id/photo"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@id/line2"
+        android:background="@drawable/egame_btn_click_selector" />
+
+    <TextView
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/egame_usersdk_regist_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_60"
+        android:layout_below="@id/line2"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/egame_ico_pop_album"
+        android:gravity="center"
+        android:text="@string/egame_user_use_photos" />
+
+</RelativeLayout>

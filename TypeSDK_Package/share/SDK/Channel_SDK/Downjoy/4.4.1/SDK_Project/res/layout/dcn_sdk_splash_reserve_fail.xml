@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_img"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="6dp"
+        android:text="@string/dcn_init_message_failed"
+        android:textColor="#ccc"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/dcn_splash_tv_retry_reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="retry"
+        android:paddingBottom="6dp"
+        android:text="@string/dcn_splash_retry"
+        android:textColor="#aaa"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/dcn_splash_tv_try_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ReserveLine"
+        android:paddingBottom="6dp"
+        android:text="@string/dcn_splash_MainLine"
+        android:textColor="#aaa"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/dcn_splash_tv_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:onClick="ReserveLine"
+        android:text="@string/dcn_splash_feedback"
+        android:textColor="#aaa"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

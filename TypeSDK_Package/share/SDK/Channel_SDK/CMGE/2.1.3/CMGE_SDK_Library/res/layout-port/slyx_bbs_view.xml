@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/cmge_bbs_pbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/cmge_pbar_draw" />
+
+    <WebView
+        android:id="@+id/cmge_bbs_webview"
+        android:background="#fff2ebdc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

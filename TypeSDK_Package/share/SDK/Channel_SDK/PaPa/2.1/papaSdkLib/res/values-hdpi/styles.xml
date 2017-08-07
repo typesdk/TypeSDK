@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextViewStyle_line_H">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#f0f0f0</item>
+    </style>
+    <style name="TextViewStyle_line_V">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#f0f0f0</item>
+    </style>
+</resources>

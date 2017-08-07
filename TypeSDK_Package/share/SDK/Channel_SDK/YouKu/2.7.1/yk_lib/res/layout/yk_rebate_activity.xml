@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#c0000000" >
+	<LinearLayout 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerInParent="true"
+    	android:gravity="center"
+    	android:orientation="vertical">
+    	<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/yk_rebate_title_img"
+                android:layout_width="@dimen/YK_GameSDK_474PX"
+                android:layout_height="@dimen/YK_GameSDK_119PX"
+                android:background="@drawable/yk_rebate_title"
+                android:layout_marginLeft="@dimen/YK_GameSDK_13PX" />
+
+            <ImageView
+                android:id="@+id/yk_rebate_back_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/yk_rebate_title_img"
+                android:background="#00000000"
+                android:minHeight="@dimen/YK_GameSDK_80PX"
+                android:minWidth="@dimen/YK_GameSDK_80PX" />
+        </RelativeLayout>
+
+    	<LinearLayout android:id="@+id/yk_rebate_layout"
+    	    android:layout_width="@dimen/YK_GameSDK_428PX"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical"
+    	    android:background="@drawable/yk_rebate_adapter_bg"
+    	    android:padding="@dimen/YK_GameSDK_28PX"
+    	    >
+    	    <TextView android:id="@+id/yk_rebate_rebate_title"
+    	        android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:text="充值返利得优豆"
+    	    	android:textSize="@dimen/YK_GameSDK_28PX"
+    	    	android:textColor="#ffe66c"/>
+    	    <TextView android:id="@+id/yk_rebate_rebate_content"
+    	        android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:text="付费金额已达活动要求，稍后查看优豆余额"
+    	    	android:textSize="@dimen/YK_GameSDK_22PX"
+    	    	android:textColor="#ffe66c"
+    	    	android:layout_marginTop="@dimen/YK_GameSDK_10PX"/>
+    	    
+    	</LinearLayout>    	<LinearLayout android:id="@+id/yk_convert_layout"
+    	    android:layout_width="@dimen/YK_GameSDK_428PX"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical"
+    	    android:background="@drawable/yk_rebate_adapter_bg"
+    	    android:padding="@dimen/YK_GameSDK_28PX"
+    	    >
+    	    <TextView android:id="@+id/yk_rebate_convert_title"
+    	        android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:text="充值返利得优豆"
+    	    	android:textSize="@dimen/YK_GameSDK_28PX"
+    	    	android:textColor="#ffe66c"/>
+    	    <TextView android:id="@+id/yk_rebate_convert_content"
+    	        android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:text="付费金额已达活动要求，稍后查看优豆余额"
+    	    	android:textSize="@dimen/YK_GameSDK_22PX"
+    	    	android:textColor="#ffe66c"
+    	    	android:layout_marginTop="@dimen/YK_GameSDK_10PX"/>
+    	    
+    	</LinearLayout>
+    	<LinearLayout android:id="@+id/yk_bonus_layout"
+    	    android:layout_width="@dimen/YK_GameSDK_428PX"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical"
+    	    android:background="@drawable/yk_rebate_adapter_bg"
+    	    android:padding="@dimen/YK_GameSDK_28PX"
+    	    >
+    	    <TextView android:id="@+id/yk_rebate_bonus_title"
+    	        android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:text="充值返利得优豆"
+    	    	android:textSize="@dimen/YK_GameSDK_28PX"
+    	    	android:textColor="#ffe66c"/>
+    	    <TextView android:id="@+id/yk_rebate_bonus_content"
+    	        android:layout_width="wrap_content"
+    	    	android:layout_height="wrap_content"
+    	    	android:text="付费金额已达活动要求，稍后查看优豆余额"
+    	    	android:textSize="@dimen/YK_GameSDK_22PX"
+    	    	android:textColor="#ffe66c"
+    	    	android:layout_marginTop="@dimen/YK_GameSDK_10PX"/>
+    	    
+    	</LinearLayout>
+
+
+<!-- 	    
+	    <TextView
+	        android:id="@+id/yk_rebate_content_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/yk_rebate_content_bg"
+	        android:singleLine="false"
+			android:maxEms="23" 
+	        android:textColor="#000000"
+	        android:layout_below="@+id/yk_rebate_img"/>
+	    <TextView
+	        android:id="@+id/yk_rebate_hit_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/yk_text_rebate_tips"
+	        android:textColor="@color/yk_bg_color_white"
+	        android:textSize="@dimen/YK_GameSDK_16PX"
+	        android:layout_below="@+id/yk_rebate_content_txt"
+	        android:layout_marginTop="@dimen/YK_GameSDK_20PX"
+	        android:layout_marginBottom="@dimen/YK_GameSDK_20PX"
+	         /> -->
+	</LinearLayout>
+</RelativeLayout>

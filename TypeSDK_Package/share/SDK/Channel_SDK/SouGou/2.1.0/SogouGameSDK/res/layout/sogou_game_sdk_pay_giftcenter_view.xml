@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sogou_game_sdk_white"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/sogou_game_sdk_pay_giftcenter_head_view" />
+
+        <ScrollView
+            android:id="@+id/sogou_game_sdk_pay_giftcenter_view_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="4dp"
+                    android:background="#e8e8e8" />
+
+                <com.sogou.gamecenter.sdk.views.MyListView
+                    android:id="@+id/sogou_game_sdk_pay_giftcenter_view_gift_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#e8e8e8"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@color/sogou_game_sdk_transparent"
+                    android:scrollbars="none" />
+
+                <ProgressBar
+                    android:id="@+id/sogou_game_sdk_pay_view_loading1"
+                    style="?android:attr/progressBarStyleInverse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminateBehavior="repeat"
+                    android:indeterminateDrawable="@drawable/passport_activity_base_loading"
+                    android:indeterminateOnly="true" />
+
+                <LinearLayout
+                    android:id="@+id/sogou_game_sdk_pay_giftcenter_empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/sogou_game_sdk_pay_giftcenter_empty_msg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/sogou_game_sdk_pay_giftcenter_empty_msg"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_float_account_message_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000-00-00"
+        android:textColor="@color/sogou_game_sdk_color_999999"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_float_account_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sogou_game_sdk_float_account_message_date"
+        android:layout_marginTop="5dp"
+        android:text="00:00:00"
+        android:textColor="@color/sogou_game_sdk_color_999999"
+        android:textSize="13sp"/>
+
+    <ImageView
+        android:id="@+id/sogou_game_sdk_float_account_message_unread_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sogou_game_sdk_float_account_message_date"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/sogou_game_sdk_float_account_my_message_unread"/>
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_float_account_message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sogou_game_sdk_float_account_message_unread_iv"
+        android:layout_marginLeft="7dp"
+        android:text="这是标题"
+        android:textColor="@color/sogou_game_sdk_color_c72f2a"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_float_account_message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/sogou_game_sdk_float_account_message_title"
+        android:layout_below="@id/sogou_game_sdk_float_account_message_title"
+        android:layout_marginTop="7dp"
+        android:text="这是正文"
+        android:textColor="@color/sogou_game_sdk_color_666666"
+        android:textSize="15sp"/>
+</RelativeLayout>

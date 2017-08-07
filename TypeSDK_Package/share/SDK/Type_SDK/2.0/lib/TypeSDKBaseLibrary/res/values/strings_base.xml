@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">TypeSDKBaseSrc</string>
+    <string name="accessibility_service_description">开启后将自动安装游戏更新，无需手动操作。</string>
+    <string name="accessibility_service_label">自动安装</string>
+</resources>

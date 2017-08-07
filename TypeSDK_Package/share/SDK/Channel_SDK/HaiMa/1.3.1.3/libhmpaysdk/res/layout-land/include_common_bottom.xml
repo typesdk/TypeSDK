@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_alignParentBottom="true">
+
+    <TextView
+        android:id="@+id/user_service_qq"
+        style="@style/UserRegisterThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_register_service_QQ"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            style="@style/UserRegisterThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_register_service_weixin"/>
+
+        <TextView
+            style="@style/UserRegisterThird"
+            android:id="@+id/common_service_weixin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_register_service_weixin_num"
+            android:textColor="@color/user_register_service_clause_color"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

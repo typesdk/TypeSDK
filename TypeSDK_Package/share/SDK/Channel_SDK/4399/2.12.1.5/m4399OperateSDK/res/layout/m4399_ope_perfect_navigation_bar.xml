@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!--  个人中心 导航栏 by.zhengxu  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/m4399_ope_usercenter_nav_bar_bg"
+    android:paddingRight="20dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/navigation_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/navigation_back"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/m4399_ope_nav_back" />
+
+        <TextView
+            android:id="@+id/navigation_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:textColor="@color/m4399_ope_usercenter_white"
+            android:text="@string/m4399_ope_perfect_info_title"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/navigation_right_view_group"
+        android:layout_width="96dp"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/m4399_ope_nav_btn_selector"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/navigation_submit_loading"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="4dp"
+            android:indeterminateDrawable="@drawable/m4399_progress_submit_drawable"
+            android:max="10000"/>
+
+        <TextView
+            android:id="@+id/back_to_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF8F5005"
+            android:textSize="16sp"
+            android:text="@string/m4399_ope_perfect_info_submit"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

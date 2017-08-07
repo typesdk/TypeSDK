@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pyw_login_dialog_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_transparent"
+    android:orientation="vertical"
+    android:paddingBottom="26dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/pyw_shape_radius_content_accountmanager_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pyw_tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/pyw_selector_top_radius_item_bg"
+            android:gravity="center"
+            android:text="登录此账号"
+            android:textColor="#333333"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <View
+            android:id="@+id/pyw_view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/pyw_common_item_divider" />
+
+        <TextView
+            android:id="@+id/pyw_tv_psw"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/pyw_selector_common_item_bg"
+            android:gravity="center"
+            android:text="设置独立密码"
+            android:textColor="#333333"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/pyw_common_item_divider" />
+
+        <TextView
+            android:id="@+id/pyw_tv_unbind"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/pyw_selector_bottom_radius_item_bg"
+            android:gravity="center"
+            android:text="解绑此账号"
+            android:textColor="@color/pyw_common_red"
+            android:textSize="@dimen/pyw_common_large" />
+        
+         <View
+            android:id="@+id/pyw_view_delete_divider"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/pyw_common_item_divider" />
+
+        <TextView
+            android:id="@+id/pyw_tv_delete"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/pyw_selector_bottom_radius_item_bg"
+            android:gravity="center"
+            android:text="删除此账号"
+            android:textColor="@color/pyw_common_red"
+            android:textSize="@dimen/pyw_common_large" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pyw_tv_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/pyw_selector_btn_white_bigradius_bg"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#333333"
+        android:textSize="@dimen/pyw_common_large" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+{
+  "version":"1.0.3.20151018",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "suid" : ""
+    ,"deviceid" : ""
+    ,"token" : ""
+    }
+    ,"out_url" : "http://m.game.weibo.cn/api/sdk/user/check.json"
+    ,"out_params" :
+    {
+      "suid" : ""
+    ,"deviceid" : ""
+    ,"token" : ""
+    ,"appkey" : ""
+    ,"signature" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "order_id" : ""
+      ,"amount" : ""
+      ,"order_uid" : ""
+      ,"source" : ""
+      ,"actual_amount" : ""
+      ,"pt" : ""
+      ,"signature" : ""
+      }
+    ,"out_url" :"http://m.game.weibo.cn/api/sdk/user/check.json"
+    ,"out_params" :
+      {
+        "order_id" : ""
+      ,"amount" : ""
+      ,"order_uid" : ""
+      ,"source" : ""
+      ,"actual_amount" : ""
+      ,"pt" : ""
+      ,"signature" : ""
+      }
+    }
+  ]
+}

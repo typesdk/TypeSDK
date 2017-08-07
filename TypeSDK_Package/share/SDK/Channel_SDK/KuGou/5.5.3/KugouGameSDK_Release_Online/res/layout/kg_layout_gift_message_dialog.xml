@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kg_gift_message_dialog_bg"
+        android:orientation="vertical" >
+
+
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kg_cdkey"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/kg_gift_dialog_tv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textColor="@color/kg_common_orange"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/kg_gift_dialog_button_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/kg_selector_btn_blue"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp"
+                android:text="@string/kg_copy"
+                android:textColor="@color/kg_common_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/kg_taohao_success"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#DDDDDD" />
+
+        <TextView
+            android:id="@+id/kg_gift_dialog_bottom_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kg_selector_btn_common"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/kg_i_got_it"
+            android:textColor="@color/kg_common_blue"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

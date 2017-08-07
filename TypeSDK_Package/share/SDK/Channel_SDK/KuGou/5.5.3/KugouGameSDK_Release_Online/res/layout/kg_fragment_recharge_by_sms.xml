@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:orientation="vertical" >
+    
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loadingView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/kg_common_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <include layout="@layout/kg_common_tips_bar" />
+
+    <ScrollView
+        android:id="@+id/kg_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+        	android:paddingLeft="15dp"
+        	android:paddingRight="15dp"
+        	android:paddingBottom="10dp" >
+
+            <include layout="@layout/kg_common_recharge_preferential_bar" />
+
+            <LinearLayout
+                android:id="@+id/kg_layout_recharge_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/kg_choose_charge_num_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/kg_choose_charge_num"
+                    android:textColor="@color/kg_common_gray_lighter"
+                    android:textSize="15sp" />
+
+                <com.kugou.game.sdk.ui.widget.InnerGridView
+                    android:id="@+id/kg_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:listSelector="@color/kg_common_transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/kg_tv_recharge_can_get_youbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="15dp"
+                android:text="@string/kg_kubi_recharge_5"
+                android:textColor="@color/kg_common_gray_lighter"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/kg_btn_summit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/kg_btn_height"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/kg_selector_btn_blue"
+                android:shadowColor="#ff000fff"
+                android:text="@string/kg_confirm_recharge"
+                android:textColor="#ffffffff"
+                android:textSize="16dp" />
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/kg_game_sms_desc_1"
+                android:textColor="@color/kg_common_gray_lighter"
+                android:textSize="15sp" />
+            
+            <TextView 
+                android:id="@+id/kg_sms_recharge_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/kg_game_sms_desc_2"
+                android:textColor="@color/kg_common_orange"
+                android:textSize="14sp" />"
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/kg_game_sms_desc_3"
+                android:textColor="@color/kg_common_gray_lighter"
+                android:textSize="14sp" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+
+    
+</LinearLayout>

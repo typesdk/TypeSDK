@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hpay_dy_fl_layout"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <!-- 输入手机号 -->
+
+    <LinearLayout
+        android:id="@+id/hpay_dy_ll_inputphone"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hpay_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/hpay_dy_tv_inputphone_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center_vertical|left"
+            android:textColor="@color/hpay_title_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/hpay_dy_et_inputphone"
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/hpay_edit"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="10dip"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hpay_dy_tv_inputphone_wxts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:textColor="@color/hpay_wxts_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/hpay_line_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginBottom="3dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/hpay_dy_inputPhone_cancel"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/hpay_bg_color"
+                android:gravity="center"
+                android:textColor="@color/hpay_cancel_wz_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/hpay_line_color" >
+            </ImageView>
+
+            <Button
+                android:id="@+id/hpay_dy_btn_inputphone_next"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/hpay_bg_color"
+                android:gravity="center"
+                android:textColor="@color/hpay_ok_wz_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 提交验证码 -->
+
+    <LinearLayout
+        android:id="@+id/hpay_dy_ll_submit_sms"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hpay_bg"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hpay_dy_tv_submit_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/hpay_title_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/hpay_dy_tv_submit_goodscontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textColor="@color/hpay_title_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hpay_dy_tv_submit_payprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/hpay_title_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/hpay_dy_tv_submit_paypricecontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textColor="@color/hpay_title_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hpay_dy_tv_submit_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/hpay_title_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/hpay_dy_tv_submit_phonecontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textColor="@color/hpay_title_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hpay_dy_tv_submit_yzm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/hpay_title_color"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/hpay_dy_et_submit_yzmcontent"
+                android:layout_width="90dip"
+                android:layout_height="42dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/hpay_edit"
+                android:gravity="center_vertical|left"
+                android:hint=""
+                android:imeOptions="actionDone"
+                android:maxLength="6"
+                android:paddingLeft="5dip" />
+
+            <Button
+                android:id="@+id/hpay_dy_btn_submit_getyzm"
+                android:layout_width="60dip"
+                android:layout_height="42dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/hpay_getyzm_bg"
+                android:gravity="center"
+                android:textColor="@color/hpay_title_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hpay_tv_sb_wxts_dy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="15dip"
+            android:autoLink="phone"
+            android:textColor="@color/hpay_wxts_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/hpay_line_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginBottom="3dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/hpay_dy_sb_cancel"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/hpay_bg_color"
+                android:gravity="center"
+                android:textColor="@color/hpay_cancel_wz_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/hpay_line_color" >
+            </ImageView>
+
+            <Button
+                android:id="@+id/hpay_btn_sb_ok_dy"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/hpay_bg_color"
+                android:gravity="center"
+                android:textColor="@color/hpay_ok_wz_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

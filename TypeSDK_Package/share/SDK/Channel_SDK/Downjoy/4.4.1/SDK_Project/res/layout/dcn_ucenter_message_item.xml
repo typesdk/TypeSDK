@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/dcn_message_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/dcn_ic_message_system" />
+
+
+    <TextView
+        android:id="@+id/dcn_ucenter_message_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/dcn_message_tag"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/dcn_light_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dcn_ucenter_message_tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dcn_ucenter_message_tv_title"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/dcn_message_tag"
+        android:lineSpacingMultiplier="1.3"
+        android:textColor="@color/dcn_message_content_color"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/dcn_ucenter_message_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dcn_ucenter_message_tv_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/dcn_message_tag"
+        android:gravity="right"
+        android:singleLine="true"
+        android:textColor="@color/dcn_upgrad_subtitle"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/dcn_ucenter_message_tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dcn_ucenter_message_tv_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:singleLine="true"
+        android:text="@string/dcn_to_detail"
+        android:textColor="#ff7800"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_divider_size"
+        android:layout_below="@+id/dcn_ucenter_message_tv_date"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/dcn_message_tag"
+        android:background="@color/dcn_color_login_box_gb" />
+</RelativeLayout>

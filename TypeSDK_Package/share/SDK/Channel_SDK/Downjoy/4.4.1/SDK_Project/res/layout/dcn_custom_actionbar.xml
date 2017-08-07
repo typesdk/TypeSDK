@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dcn_actionbar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_title_height"
+        android:background="@color/dcn_orange_common">
+
+        <Button
+            android:id="@+id/dcn_actionbar_btn_back_game"
+            android:layout_width="@dimen/dcn_webview_title_back_width"
+            android:layout_height="@dimen/dcn_webview_title_back_width"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/dcn_webview_title_back"
+            android:clickable="true" />
+
+        <FrameLayout
+            android:id="@+id/dcn_actionbar_menu_group"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/dcn_actionbar_iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/dcn_webview_title_setting"
+                android:button="@null"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/dcn_actionbar_tv_count"-->
+            <!--android:layout_width="12dip"-->
+            <!--android:layout_height="12dip"-->
+            <!--android:layout_gravity="top|right"-->
+            <!--android:background="@drawable/dcn_actionbar_msg_count_bg"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="10sp"-->
+            <!--android:visibility="visible" />-->
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/dcn_dcn_actionbar_menu_group_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/dcn_actionbar_menu_group"
+            android:layout_toRightOf="@id/dcn_actionbar_btn_back_game"
+            android:background="@drawable/dcn_back_btn_selector">
+
+            <TextView
+                android:id="@+id/dcn_actionbar_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="@string/dcn_game_forum"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

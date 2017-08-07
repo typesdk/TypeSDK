@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 进度条背景 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#C5C5C5" />
+
+            <stroke
+                android:dashGap="0dip"
+                android:dashWidth="1dip"
+                android:width="0dip"
+                android:color="@color/kg_common_background_dark" />
+            <!-- 圆角 -->
+            <corners
+                android:bottomLeftRadius="2dip"
+                android:bottomRightRadius="2dip"
+                android:topLeftRadius="2dip"
+                android:topRightRadius="2dip" />
+
+            <padding
+                android:bottom="0dip"
+                android:left="0dip"
+                android:right="0dip"
+                android:top="0dip" />
+        </shape>
+    </item>
+    <!-- 次进度条 -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <solid android:color="#ffffff" />
+
+                <stroke
+                    android:dashGap="0dip"
+                    android:dashWidth="0dip"
+                    android:width="0dip"
+                    android:color="@android:color/white" />
+                <!-- 圆角 -->
+                <corners
+                    android:bottomLeftRadius="2dip"
+                    android:bottomRightRadius="2dip"
+                    android:topLeftRadius="2dip"
+                    android:topRightRadius="2dip" />
+
+                <padding
+                    android:bottom="0dip"
+                    android:left="0dip"
+                    android:right="0dip"
+                    android:top="0dip" />
+            </shape>
+        </clip>
+    </item>
+
+    <!-- 主进度条 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/kg_common_orange" />
+
+                <stroke
+                    android:dashGap="0dip"
+                    android:dashWidth="0dip"
+                    android:width="0dip"
+                    android:color="@android:color/white" />
+                <!-- 圆角 -->
+                <corners
+                    android:bottomLeftRadius="2dip"
+                    android:bottomRightRadius="2dip"
+                    android:topLeftRadius="2dip"
+                    android:topRightRadius="2dip" />
+
+                <padding
+                    android:bottom="0px"
+                    android:left="0px"
+                    android:right="0px"
+                    android:top="0px" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

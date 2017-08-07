@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <color name="ewan_supersdk_blue_shadow">#FF959395</color>
+    <color name="ewan_supersdk_white">#FFFFFFFF</color>
+    <color name="ewan_supersdk_black">#00000000</color>
+    <color name="ewan_supersdk_grey">#ffcecece</color>
+    <color name="ewan_supersdk_blue">#FF6699CC</color>
+    <color name="ewan_supersdk_background">#FF113751</color>
+ 	<color name="ewan_supersdk_bindrole_font_color">#FF473228</color>
+        
+	<style name="supersdk_dialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>边框
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:textSize">16dip</item>
+        <item name="android:textColor">@color/ewan_supersdk_blue_shadow</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- <item name="android:windowContentOverlay">@null</item> -->
+	</style>
+</resources>

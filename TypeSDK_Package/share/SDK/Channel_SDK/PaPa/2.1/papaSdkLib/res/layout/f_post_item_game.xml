@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:paddingLeft="@dimen/mg_forum_post_item_padding"
+              android:paddingRight="@dimen/mg_forum_post_item_padding"
+              android:paddingTop="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:descendantFocusability="blocksDescendants"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relateLayoutApp"
+                    android:background="@drawable/forum_post_game_bg"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:clickable="true">
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/mgListviewItemIcon"
+                android:src="@drawable/main_normal_icon"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app_list_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/mgListviewItemIcon"
+                android:layout_toLeftOf="@+id/rLayoutRight"
+        >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="纪念碑谷破解版"
+                    android:singleLine="true"
+                    android:id="@+id/mgListviewItemAppname"
+                    style="@style/TextViewStyle_12sp_black"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout2"
+                    android:visibility="gone"
+                    android:layout_marginTop="2dp">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/appSize"
+                        android:layout_marginTop="@dimen/my_game_appsizemagin_t"
+                        android:layout_weight="1"
+                        style="@style/TextViewStyle_10sp"
+                        android:text="1"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/loding_info"
+                        android:padding="0dp"
+                        android:layout_marginTop="@dimen/my_game_lodingtextmagin_t"
+                        android:layout_weight="0"
+                        style="@style/TextViewStyle_10sp"/>
+            </LinearLayout>
+
+
+            <ProgressBar
+                    style="@style/progress_zip_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_game_progress_h"
+                    android:id="@+id/progressBarZip"
+                    android:progress="0"
+                    android:visibility="gone"/>
+
+            <ProgressBar
+                    style="@style/progress_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/my_game_progress_h"
+                    android:id="@+id/progressBar"
+                    android:progress="0"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/tipsLayout"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="-1dp">
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/mgListviewItemDescribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:text=""
+                    style="@style/TextViewStyle_10sp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/rLayoutRight"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/collection_margin"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible">
+
+            <ImageView
+                    android:focusable="false"
+                    android:id="@+id/mgListviewItemInstall"
+                    android:layout_weight="0"
+                    android:textColor="@android:color/white"
+                    style="@style/DownloadImageButnBigStyle"
+                    android:src="@drawable/download_game"
+                    android:focusableInTouchMode="true"
+                    android:paddingBottom="13dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5M"
+                    android:id="@+id/mgListviewItemSize"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="11dp"
+                    android:layout_centerHorizontal="true"
+                    style="@style/TextViewStyle_10sp"/>
+        </RelativeLayout>
+
+        <View
+                style="@style/TextViewStyle_line_H"
+                android:id="@+id/line"
+                android:layout_alignBottom="@+id/rLayoutRight"
+                android:visibility="gone"></View>
+    </RelativeLayout>
+
+
+</LinearLayout>

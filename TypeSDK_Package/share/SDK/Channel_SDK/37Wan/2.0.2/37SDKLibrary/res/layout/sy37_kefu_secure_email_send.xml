@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sendEmailLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dip"
+    android:layout_marginRight="3dip" >
+
+    <LinearLayout
+        android:id="@+id/sendEmailBtnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLayout"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/sy37_layout_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_weight="1.0"
+            android:text="@string/fg_bind_email"
+            android:textColor="@color/s_orange"
+            android:textSize="17.0sp" />
+
+        <Button
+            android:id="@+id/sendEmailBack"
+            style="@style/backBut" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sendEmailLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendEmailBtnLayout"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/sy37_bg_kefu_list"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:textColor="@color/kefu_black"
+            android:textSize="16sp" />
+
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendEmailSub"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/sendEmailLayout"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/sy37_kefu_submit"
+        android:text="@string/fg_confirm"
+        android:textColor="#ff6a3600"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

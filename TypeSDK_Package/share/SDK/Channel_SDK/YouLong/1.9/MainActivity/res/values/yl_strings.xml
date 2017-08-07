@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="coupon">选择代金券</string>
+    <string name="warn_info1">您有 %1$s 张代金券即将过期!</string>
+    <string name="warn_info2">您有 %1$s 张代金券可使用!</string>
+
+    <!-- 悬浮球 -->
+    <string name="window_icon">Window icon</string>
+    <string name="hide">Hide</string>
+    <string name="close">Close</string>
+    <string name="corner">Corner</string>
+    <string name="maximize">Maximize</string>
+
+    <!-- 盛付通 -->
+    <string name="smc_tip_1">正在启用安全支付服务</string>
+    <string name="smc_tip_2">正在建立安全网络连接</string>
+    <string name="smc_tip_3">努力加载中，请稍候…</string>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "version":"V1.0.2015_9_24.20160321",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "access_token" : ""
+    }
+    ,"out_url" : "https://api.twitter.com/1.1"
+    ,"out_params" :
+    {
+      "access_token" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "time": ""
+      ,"sign": ""
+      ,"oid": ""
+      ,"doid" : ""
+      ,"dsid": ""
+      ,"dext": ""
+      ,"uid": ""
+      ,"money": ""
+      ,"coin": ""
+      }
+    ,"out_url" :"https://api.twitter.com/1.1"
+    ,"out_params" :
+      {
+        "time": ""
+      ,"sign": ""
+      ,"oid": ""
+      ,"doid" : ""
+      ,"dsid": ""
+      ,"dext": ""
+      ,"uid": ""
+      ,"money": ""
+      ,"coin": ""
+      }
+    }
+  ]
+}

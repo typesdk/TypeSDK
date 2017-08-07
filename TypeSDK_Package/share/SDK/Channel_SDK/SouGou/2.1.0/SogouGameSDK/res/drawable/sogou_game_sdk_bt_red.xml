@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false" android:drawable="@drawable/sogou_game_sdk_gray"></item>
+    <item android:drawable="@drawable/sogou_game_sdk_btn_orange_d" android:state_pressed="false"/>
+    <item android:drawable="@drawable/sogou_game_sdk_btn_orange_s" android:state_pressed="true"/>
+    <item android:drawable="@drawable/sogou_game_sdk_btn_orange_s" android:state_focused="true"/>
+    <item android:drawable="@drawable/sogou_game_sdk_btn_orange_d"/>
+
+</selector>

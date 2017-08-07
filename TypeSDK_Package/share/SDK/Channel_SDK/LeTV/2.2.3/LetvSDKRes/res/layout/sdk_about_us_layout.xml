@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.le.legamesdk.widget.LeMainViewParent
+        android:id="@+id/le_main_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/le_border_line_bg" >
+
+        <RelativeLayout
+            android:id="@+id/about_us"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/le_about_us_service_hotline"
+                style="@style/LeStyleBlack14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="36dp"
+                android:layout_marginTop="@dimen/le_main_view_action_bar_height"
+                android:gravity="center_horizontal" />
+
+            <include
+                android:id="@+id/le_main_view_action_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_main_view_action_bar_height"
+                android:layout_alignParentTop="true"
+                layout="@layout/le_main_view_action_bar_layout" />
+
+            <ImageView
+                android:id="@+id/letvsdk_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/le_main_view_action_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="42dp"
+                android:layout_marginTop="42dp"
+                android:contentDescription="@string/le_oauth_account_manager_le_logo_description"
+                android:src="@drawable/sdk_about_us_logo" />
+
+            <TextView
+                android:id="@+id/le_about_us_sdk_version"
+                style="@style/LeStyleBlack16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/letvsdk_logo"
+                android:layout_marginTop="@dimen/le_main_view_action_bar_height"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+    </com.le.legamesdk.widget.LeMainViewParent>
+
+</RelativeLayout>

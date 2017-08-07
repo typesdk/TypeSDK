@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/user_register_button_disable_text_color">
+
+    <LinearLayout
+        android:id="@+id/user_center_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_center_account_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/user_center_account_name"
+                android:textSize="@dimen/font_size_middle"/>
+
+            <TextView
+                android:id="@+id/user_center_vip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_center_vip_bg_shape"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="@string/user_center_vip_level"
+                android:textColor="@color/user_register_get_verify_num_button_color"
+                android:textSize="9dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/user_center_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_center_money"
+            android:textSize="@dimen/font_size_middle"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/user_center_coin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_center_coin"
+            android:textSize="@dimen/font_size_middle"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/user_center_divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/user_center_top_ll"
+        android:background="@color/user_register_divide_line_color"/>
+
+
+    <GridView
+        android:id="@+id/user_center_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_center_divide_line"
+        android:numColumns="4">
+
+    </GridView>
+
+    <FrameLayout
+        android:id="@+id/user_center_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.haimawan.paysdk.custom.MyViewPager
+            android:id="@+id/user_center_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_center_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textColor="@android:color/white"/>
+
+            <LinearLayout
+                android:id="@+id/user_center_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

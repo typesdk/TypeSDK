@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.sogou.gamecenter.sdk.views.MyExpandableListView
+        android:id="@+id/sogou_game_sdk_recharge_record_dialog_elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:childDivider="@color/sogou_game_sdk_color_gray1"
+        android:divider="@color/sogou_game_sdk_color_gray1"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/sogou_game_sdk_transparent"
+        android:scrollbars="none" >
+    </com.sogou.gamecenter.sdk.views.MyExpandableListView>
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_image_empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:drawablePadding="25dp"
+        android:drawableTop="@drawable/sogou_game_sdk_image_empty"
+        android:text="暂无充值记录" />
+
+</RelativeLayout>

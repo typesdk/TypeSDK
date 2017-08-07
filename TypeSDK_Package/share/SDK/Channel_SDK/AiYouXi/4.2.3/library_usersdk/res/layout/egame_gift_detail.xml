@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/egame_usersdk_white" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/egame_user_sdk_activity_title" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_bar"
+        layout="@layout/egame_user_sdk_activity_loading"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/list_bg"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/ll_egame_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:background="@drawable/egame_list_item_selector"
+                android:paddingBottom="@dimen/dp_12" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_gift_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_game_icon"
+                        android:layout_width="@dimen/dp_64"
+                        android:layout_height="@dimen/dp_64"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:background="@drawable/egame_ico_game_icon_default"
+                        android:contentDescription="@string/egame_des_imageview" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/iv_game_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/btn_get_num"
+                        android:layout_toRightOf="@+id/iv_game_icon" >
+
+                        <TextView
+                            android:id="@+id/game_gift_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/egame_usersdk_dark_gray"
+                            android:textSize="@dimen/dp_16" />
+
+                        <LinearLayout
+                            android:id="@+id/egame_gift_item_remain_ll"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/game_gift_name"
+                            android:layout_marginBottom="@dimen/dp_2"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ProgressBar
+                                android:id="@+id/egame_gift_item_progressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="@dimen/dp_130"
+                                android:layout_height="@dimen/dp_4"
+                                android:background="@drawable/egame_progress_bg"
+                                android:progressDrawable="@drawable/egame_progress_green" />
+
+                            <TextView
+                                android:id="@+id/egame_gift_item_remain_textView"
+                                android:layout_width="@dimen/dp_56"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_6"
+                                android:textColor="#aaaaaa"
+                                android:textSize="@dimen/dp_10" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_search_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/game_gift_name"
+                            android:layout_marginTop="@dimen/dp_11"
+                            android:textColor="@color/egame_orange"
+                            android:textSize="@dimen/dp_12" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/btn_get_num"
+                        android:layout_width="@dimen/dp_56"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:gravity="center"
+                        android:text="@string/egame_get_num"
+                        android:textColor="@color/egame_gift_get_text_color_seletor"
+                        android:textSize="@dimen/dp_14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_activate_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_below="@+id/rl_gift_detail"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/egame_online_activation_bg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/tv_activate_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:text="@string/egame_active_code"
+                        android:textColor="@color/egame_usersdk_regist_text"
+                        android:textSize="@dimen/dp_13" />
+
+                    <TextView
+                        android:id="@+id/tv_activate_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_activate_title"
+                        android:textColor="#67bf4b"
+                        android:textSize="@dimen/dp_13" />
+
+                    <Button
+                        android:id="@+id/btn_copy_activate_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/egame_gift_btn_green_selector"
+                        android:text="@string/egame_copy"
+                        android:textColor="@color/egame_usersdk_white"
+                        android:textSize="@dimen/dp_13" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_list_item_selector"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/egame_bg_title_list"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:background="@drawable/egame_ico_label_list_green"
+                        android:contentDescription="@string/egame_des_imageview" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:gravity="center"
+                        android:text="@string/egame_gift_get_period"
+                        android:textColor="@color/egame_usersdk_regist_text"
+                        android:textSize="@dimen/dp_16" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/egame_giftdetail_getPeriod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_13"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_13"
+                    android:textColor="@color/egame_usersdk_dark_gray"
+                    android:textSize="@dimen/dp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_list_item_selector"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/egame_bg_title_list"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:background="@drawable/egame_ico_label_list_green"
+                        android:contentDescription="@string/egame_des_imageview" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:gravity="center"
+                        android:text="@string/egame_gift_content"
+                        android:textColor="@color/egame_usersdk_regist_text"
+                        android:textSize="@dimen/dp_16" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/egame_giftdetail_giftcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_13"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_13"
+                    android:textColor="@color/egame_usersdk_dark_gray"
+                    android:textSize="@dimen/dp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_list_item_selector"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/egame_bg_title_list"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:background="@drawable/egame_ico_label_list_green"
+                        android:contentDescription="@string/egame_des_imageview" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:gravity="center"
+                        android:text="@string/egame_gift_exchange_date"
+                        android:textColor="@color/egame_usersdk_regist_text"
+                        android:textSize="@dimen/dp_16" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/egame_giftdetail_exchangetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_13"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_13"
+                    android:textColor="@color/egame_usersdk_dark_gray"
+                    android:textSize="@dimen/dp_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_list_item_selector"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/egame_bg_title_list"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_16"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:background="@drawable/egame_ico_label_list_green"
+                        android:contentDescription="@string/egame_des_imageview" >
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:gravity="center"
+                        android:text="@string/egame_gift_use"
+                        android:textColor="@color/egame_usersdk_regist_text"
+                        android:textSize="@dimen/dp_16" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/egame_giftdetail_usemethd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_13"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_13"
+                    android:textColor="@color/egame_usersdk_dark_gray"
+                    android:textSize="@dimen/dp_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:background="@drawable/egame_bg_titlebar_tabbar_shadow"
+        android:contentDescription="@string/egame_des_imageview" />
+
+</RelativeLayout>

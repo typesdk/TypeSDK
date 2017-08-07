@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0087d1"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/spinner_item_checked_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/dropdown_radio_selector" />
+
+    <TextView
+        android:id="@+id/voucher_name"
+        android:layout_width="wrap_content"        
+        android:layout_height="wrap_content"    
+        android:layout_toRightOf="@id/spinner_item_checked_image"
+        android:paddingLeft="10dip"
+        android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:text="TextView1TextView1代金券代金券代金券代金券代金券代金券"    
+        android:textColor="@color/_gray"    
+        android:textSize="14sp" /> 
+    <TextView
+        android:id="@+id/voucher_state"
+        android:layout_width="wrap_content"        
+        android:layout_height="wrap_content"    
+        android:layout_alignParentRight="true"
+        android:paddingRight="2dip"
+        android:gravity="center_vertical"
+        android:minHeight="45dp"
+        android:text="TextView"    
+        android:textColor="@color/_red"    
+        android:textSize="14sp" 
+        android:visibility="visible"/> 
+
+</RelativeLayout>

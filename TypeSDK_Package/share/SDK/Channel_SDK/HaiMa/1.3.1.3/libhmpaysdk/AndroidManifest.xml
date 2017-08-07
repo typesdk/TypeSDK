@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haimawan.paysdk" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true" >
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.MessageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="HMPay message"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar" />
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.VoucherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="HMPay voucher"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar" />
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.RechargeReCardAct"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="false"
+            android:label="HMPay recharge return card"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar" />
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.WebViewActivity"
+            android:label="HMPay Main"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar" />
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.UserModuleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="HMPay Login"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.UserCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="HMPay user center"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.GiftBagActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="HMPay user center"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar" />
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.RechargeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="HMPay recharge"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar" />
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="HMPay user center"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar" />
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.QuickPayDialogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Paysdk.AppTheme.Dialog" />
+
+        <!-- Union Pay Activity BEGIN -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- Union Pay Activity END -->
+
+
+        <!-- ==== alipay sdk_config start ==== -->
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <!-- ==== alipay sdk_config end ==== -->
+
+
+        <!-- huiyuan weixin start -->
+        <activity
+            android:name="com.heepay.plugin.activity.WeChatNotityActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- huiyuan weixin end -->
+        <activity
+            android:name="com.haimawan.paysdk.ui.activity.PrepaidCardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Paysdk.AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

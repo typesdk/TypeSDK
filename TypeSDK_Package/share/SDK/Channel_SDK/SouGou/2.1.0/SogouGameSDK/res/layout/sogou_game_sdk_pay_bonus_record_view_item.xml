@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_pay_bonus_record_item_type"
+        style="@style/sogou_game_sdk_pay_s20_c3d3d3d"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_pay_bonus_record_item_amount"
+        style="@style/sogou_game_sdk_pay_s20_c3d3d3d"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="@string/sogou_game_sdk_pay_bonus_record_item_amount" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_pay_bonus_record_item_time"
+        style="@style/sogou_game_sdk_pay_s20_c3d3d3d"
+        android:layout_width="0dp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_weight="3" />
+
+</LinearLayout>

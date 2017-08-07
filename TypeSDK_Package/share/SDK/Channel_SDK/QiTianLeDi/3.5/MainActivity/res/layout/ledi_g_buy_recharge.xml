@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/black" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ededed"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:gravity="center"
+                    android:text="@string/ledi_back_game"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/ledi_payment_center"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--
+         <include
+        android:id="@+id/float_window_balance_include"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        layout="@layout/float_window_activity_balance"
+        android:gravity="center" />
+
+
+
+    -->
+
+    <LinearLayout
+        android:id="@+id/float_window_balance_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/float_window_balance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/float_window_edittextbg_black"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/balance_touxiang"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/balance_touxiang_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/float_window_touxiang" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/float_window_ledi_balance_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/float_window_ledi_balance"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/title_font_medium" />
+
+                    <TextView
+                        android:id="@+id/float_window_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="@dimen/title_font_medium" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/float_window_balance_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/float_window_ledi_coupon"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/title_font_medium" />
+
+                    <TextView
+                        android:id="@+id/float_window_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="@dimen/title_font_medium" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ledi_g_buy_recharge_text_rechargelebi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/ledi_recharge_lebi"
+                    android:textColor="@color/float_window_blue"
+                    android:textSize="@dimen/title_font_medium"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/ledi_g_buy_recharge_discount_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/ledi_money_list_down"
+                    android:onClick="discountlist" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_discount_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/float_window_balance_include"
+        android:background="@drawable/float_window_edittextbg_black"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ledi_money_discount_listtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f00"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    <!--
+             <ViewStub
+        android:id="@+id/float_window_discount_include"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/float_window_balance_include"
+       android:layout="@layout/ledi_money_discount_list_value"
+        android:inflatedId="@+id/ledi_money_discount_list_value"
+        android:gravity="center" />
+
+
+
+    -->
+
+
+    <!--
+    <LinearLayout
+        android:id="@+id/float_window_balance"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/title"
+        android:background="@drawable/ledi_phone_number"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/balance_touxiang"
+            android:layout_width="90dp"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/balance_touxiang_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ledi_user_bg" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ledi_account"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/float_window_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ledi_Testaccount"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ledi_balance"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/float_window_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ledi_money"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ledi_g_buy_recharge_text_rechargelebi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/ledi_recharge_lebi"
+            android:textColor="@color/float_window_blue"
+            android:visibility="gone"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+
+    -->
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/layout_discount_layout"
+        android:orientation="horizontal" >
+
+        <ScrollView
+            android:id="@+id/lift"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/float_window_edittextbg_black"
+            android:orientation="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/lift_zhifubao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/ledi_left_menu_bg"
+                    android:gravity="center"
+                    android:onClick="left_onclick" >
+
+                    <TextView
+                        android:id="@+id/lift_zhifubao_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ledi_zhifubao"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lift_caifutong"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:onClick="left_onclick"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/lift_caifutong_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ledi_caifutong"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lift_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:onClick="left_onclick" >
+
+                    <TextView
+                        android:id="@+id/lift_debitcard_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ledi_debit"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lift_xinyong_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:onClick="left_onclick" >
+
+                    <TextView
+                        android:id="@+id/lift_credit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ledi_credit"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lift_phone_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:onClick="left_onclick" >
+
+                    <TextView
+                        android:id="@+id/lift_phonecard_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ledi_phone_card"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lift_game_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:onClick="left_onclick" >
+
+                    <TextView
+                        android:id="@+id/lift_gamecard_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ledi_game_card"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lift_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:onClick="left_onclick" >
+
+                    <TextView
+                        android:id="@+id/lift_info_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/ledi_roof"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lift_person"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:onClick="left_onclick" >
+
+                    <TextView
+                        android:id="@+id/lift_person_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ledi_person"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/right"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff" >
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ededed"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/ledi_kindly_reminder"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ledi_money_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ledi_reminder"
+            android:textColor="#000"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

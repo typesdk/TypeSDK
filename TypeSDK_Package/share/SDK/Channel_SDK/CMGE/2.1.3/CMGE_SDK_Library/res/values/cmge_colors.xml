@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="cmge_login_panel_color">#ebece2</color>
+    
+    <color name="slyx_block_sele_yes">#ff202022</color>
+    <color name="slyx_block_sele_no">#ff313133</color>
+    <color name="cmge_translant">#00000000</color>
+    <color name="cmge_company_sele_yes">#ffebeae3</color>
+    <color name="cmge_company_sele_no">#ffe3e2dc</color>
+    <color name="cmge_color_white">#ffffffff</color>
+    <color name="cmge_color_grey">#fff4f4f4</color>
+    
+    <color name="slyx_color_bacgrount">#ff1b1c1e</color>
+    <color name="slyx_color_start">#763b18</color>
+    <color name="slyx_color_start_s">#542710</color>
+    <color name="slyx_color_login">#eb6a29</color>
+    <color name="slyx_color_login_s">#bd5520</color>
+    <color name="slyx_color_login_popuwin_bt">#000000</color>
+    <color name="slyx_color_login_popuwin_bt_s">#313132</color>
+    <color name="slyx_background_translant_color">#bb1b1c1e</color>
+    
+</resources>

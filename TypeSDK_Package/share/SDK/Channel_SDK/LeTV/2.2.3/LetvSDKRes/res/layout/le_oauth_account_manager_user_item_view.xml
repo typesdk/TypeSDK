@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.le.accountoauth.widget.AccountManagerUserItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+
+    <com.le.accountoauth.widget.RoundImageView
+        android:id="@+id/le_oauth_account_manager_user_item_avatar"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/le_oauth_head_default_icon" />
+
+    <TextView
+        android:id="@+id/le_oauth_account_manager_user_item_name"
+        style="@style/LeOauthAccountManagerUserName"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/le_oauth_account_manager_user_item_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:text="你好我是乐视" />
+</com.le.accountoauth.widget.AccountManagerUserItemView>

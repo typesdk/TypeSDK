@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/m4399_rec_dialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/ask_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_rec_title_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="@string/m4399_rec_call_phone_tips"
+        android:textColor="@color/m4399_rec_color_white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tel_number"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/m4399_rec_hotline_4399"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</LinearLayout>

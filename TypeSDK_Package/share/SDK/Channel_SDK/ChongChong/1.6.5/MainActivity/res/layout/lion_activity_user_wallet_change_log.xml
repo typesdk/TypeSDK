@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/lion_activity_user_wallet_change_log"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lion_activity_user_wallet_change_log_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/lion_common_frame_two_selector"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/lion_text_user_change_log"
+                android:textColor="@color/lion_common_basic_red"
+                android:textSize="16.0sp"/>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="25.0dip"
+                android:background="@color/lion_common_line"/>
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/lion_text_user_change_log_money"
+                android:textColor="@color/lion_common_basic_red"
+                android:textSize="16.0sp"/>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="25.0dip"
+                android:background="@color/lion_common_line"/>
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/lion_text_user_change_log_time"
+                android:textColor="@color/lion_common_basic_red"
+                android:textSize="16.0sp"/>
+        </LinearLayout>
+
+        <include layout="@layout/lion_layout_framelayout"/>
+    </LinearLayout>
+
+</FrameLayout>

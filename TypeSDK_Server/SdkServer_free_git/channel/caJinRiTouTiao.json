@@ -1,0 +1,33 @@
+{
+  "version":"v3.0.6_e1c6b35.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "uid" : "",
+      "access_token" : ""
+
+    }
+    ,"out_url" :"https://open.snssdk.com/partner_sdk/check_user/"
+    ,"out_params" :
+    {
+      "uid" : "",
+      "access_token" : "",
+      "client_key" : "",
+      "check_safe" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {}
+    ,"out_url" :"https://open.snssdk.com/partner_sdk/check_user/"
+    ,"out_params" :
+      {}
+    }
+  ]
+}

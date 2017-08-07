@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="30dp"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/recharge_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/recharge_bar"
+        layout="@layout/dialog_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/order_money" >
+
+                <TextView
+                    android:id="@+id/bag_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="订单金额："
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bag_title"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/dotted_line_bg"
+                    android:tileMode="repeat" />
+
+                <TextView
+                    android:id="@+id/recharge_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/recharge_game"
+                    android:layout_below="@+id/recharge_game"
+                    android:layout_marginTop="5dp"
+                    android:text="帐 号："
+                    android:textColor="@color/recharge_gray" />
+
+                <TextView
+                    android:id="@+id/recharge_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/imageView1"
+                    android:layout_toRightOf="@+id/bag_title"
+                    android:text="30"
+                    android:textColor="@color/orange"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/recharge_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/bag_title"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_marginTop="10dp"
+                    android:text="游 戏："
+                    android:textColor="@color/recharge_gray" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/pay"
+                layout="@layout/activity_payment_v_pay"
+                android:visibility="gone" />
+
+            <GridView
+                android:id="@+id/recharge_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#00000000"
+                android:cacheColorHint="#00000000"
+                android:numColumns="4"
+                android:verticalSpacing="10dp" >
+            </GridView>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/recharge_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

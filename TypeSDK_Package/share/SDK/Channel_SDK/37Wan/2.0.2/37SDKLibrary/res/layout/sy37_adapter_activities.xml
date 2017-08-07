@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:padding="3dip"
+    android:paddingLeft="3dip"
+    android:paddingRight="3dip">
+	
+    <!--ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_margin="3dip"
+        android:src="@drawable/icon_default" /-->
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:singleLine="true"
+        android:textColor="@color/kefu_black"
+        android:textSize="@dimen/kefu_list_title"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title"
+        android:layout_alignBottom="@+id/desc"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+         android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/kefu_gray"
+        android:textSize="@dimen/bottom_text_size" />
+    <TextView
+        android:id="@+id/desc"
+        android:layout_alignLeft="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toLeftOf="@id/time"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:textColor="@color/kefu_gray"
+        android:textSize="@dimen/bottom_text_size" />
+
+
+</RelativeLayout>

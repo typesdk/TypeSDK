@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Mdialog" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowBackground">@color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+    </style>
+
+    <style name="TransparentActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="ContentOverlay" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:stretchMode">spacingWidth</item>
+        <!-- item name="@android:style/Theme.Light.NoTitleBar.Fullscreen">true</item -->
+        <item name="android:theme">@android:style/Theme.Light.NoTitleBar.Fullscreen</item>
+    </style>
+
+    <style name="progressBarHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/sy37_progress_horizontal</item>
+        <item name="android:minHeight">15dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="kefu_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

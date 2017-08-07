@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/yyh_corner_botton_white_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/yyh_empty"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/yyh_gray_dark"
+        android:text="暂无信息"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ListView
+        android:id="@+id/yyh_lv_center_msg_nofity"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:divider="@color/yyh_gray"
+        android:dividerHeight="1px"
+        android:scrollbars="none"
+        android:background="@color/yyh_white"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

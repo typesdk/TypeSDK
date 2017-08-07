@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lion_dlg_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/lion_style_dlg_title"
+            android:text="@string/lion_dlg_update_phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lion_common_dialog_content_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:id="@+id/lion_dlg_tv_phone_notice"
+                    style="@style/lion_style_dlg_phone_notice"
+                    android:text="@string/lion_dlg_bind_phone_check_first" />
+
+                <LinearLayout
+                    android:id="@+id/lion_dlg_ll_bind_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lion_dlg_already_bind_phone" />
+
+                    <TextView
+                        android:id="@+id/lion_dlg_tv_bind_phonenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lion_common_basic_red" />
+                </LinearLayout>
+
+                <include layout="@layout/lion_dlg_input_security_code" />
+
+                <include layout="@layout/lion_dlg_two_btn" />
+
+                <TextView
+                    android:id="@+id/lion_dlg_tv_contact_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="left"
+                    android:text="@string/lion_dlg_contact_service" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

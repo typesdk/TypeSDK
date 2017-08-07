@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:drawablePadding="@dimen/mini_margin_default"
+    android:gravity="center"
+    android:textColor="@color/mini_text_link"
+    android:textSize="@dimen/mini_text_size_link" />

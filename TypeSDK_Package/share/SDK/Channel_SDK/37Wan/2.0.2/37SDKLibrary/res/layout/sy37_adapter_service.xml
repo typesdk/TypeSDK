@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/sy37_icon_go"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:singleLine="true"
+        android:textColor="@color/kefu_black"
+        android:textSize="@dimen/kefu_list_title" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/sy37_icon_list_diver" 
+        android:layout_below="@+id/title"
+        ></LinearLayout>
+
+</RelativeLayout>

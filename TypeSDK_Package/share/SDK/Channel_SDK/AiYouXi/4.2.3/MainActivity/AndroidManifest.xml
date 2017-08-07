@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.egame"
+    android:versionCode="423"
+    android:versionName="4.2.3"
+    android:installLocation="auto" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <!-- egame user -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+	<!-- end -->
+	
+	<!-- egame pay -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+	<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<uses-permission android:name="android.permission.NFC" />
+	<!-- end -->
+	
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.type.sdk.android.egame.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+		
+		<!-- egame splash -->
+		<!-- V4.1.2新增游戏启动爱游戏欢迎界面activity：EgameLaunchActivity,即把游戏原来的启动activity路径 换成  EgameLaunchActivity的路径，并重新配置游戏本身的activity-->
+        <!-- 启动游戏的绝对路径 -->
+        <meta-data
+            android:name="EGAME_LAUNCH_ACTIVITY"
+            android:value="com.type.sdk.android.egame.MainActivity" />
+
+        <!-- 根据游戏实际情况修改screenOrientation属性 -->
+        <activity
+            android:name="cn.egame.terminal.paysdk.EgameLaunchActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<!-- end -->
+        
+        <!-- egame user Activity -->
+		<activity
+            android:name="egame.terminal.usersdk.customview.FloatViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="egame.terminal.usersdk.customview.floatview.EgameBrowserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+		<!-- end -->
+		
+		<!-- egame pay -->
+		<!-- 根据游戏实际情况修改screenOrientation属性 -->
+		<activity 
+			android:name="cn.egame.terminal.paysdk.EgamePayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" 
+			android:screenOrientation="sensorLandscape" 
+			android:configChanges="orientation|keyboardHidden|screenSize"> 
+		</activity>
+
+
+		<receiver
+            android:name="cn.egame.terminal.sdk.EgameCoreReceiver">
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cn.egame.terminal.sdk.RECEIVER_CMD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="cn.egame.terminal.sdk.EgameCoreService"
+            android:process=":egameCore" >
+            <intent-filter>
+                <action android:name="cn.egame.terminal.sdk.SERVICE_CMD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+		<!-- 根据游戏实际情况修改screenOrientation属性 -->
+        <activity
+            android:name="cn.egame.terminal.sdk.EgameCoreActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:process=":egameCore"
+            android:screenOrientation="sensorLandscape"
+            android:taskAffinity=":egameCore"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+		<!-- egame pay end-->
+		
+		<!-- aibei pay -->
+		<!-- 微支付SDK界面 -->
+        <!-- 登录界面 -->
+        <activity
+            android:name="com.iapppay.openid.channel.ipay.ui.LoginActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:launchMode="singleTask" >
+        </activity>
+        <!-- 注册界面 -->
+        <activity
+            android:name="com.iapppay.openid.channel.ipay.ui.RegistActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:launchMode="singleTask" >
+        </activity>
+        <!-- 注册界面 》设置登录支付密码 -->
+        <activity
+            android:name="com.iapppay.openid.channel.ipay.ui.RegSetPwdActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:launchMode="singleTask">
+        </activity>
+        <!-- 显示网页界面 -->
+        <activity
+            android:name="com.iapppay.openid.channel.ipay.ui.WebActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.iapppay.ui.activity.AccountCheckPasswordActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation" />
+        <activity
+            android:name="com.iapppay.pay.channel.weixinpay.WeixinWapPayActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:configChanges="screenSize|orientation|keyboard|navigation" />
+        <activity
+            android:name="com.iapppay.ui.activity.AccountModifyPasswordActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation" />
+        <activity
+            android:name="com.iapppay.ui.activity.AccountSmallAmountPasswordActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation" />
+        <activity
+            android:name="com.iapppay.ui.activity.AccountSmallAmountValueActivty"
+            android:configChanges="screenSize|orientation|keyboard|navigation" />
+        <activity
+            android:name="com.iapppay.ui.activity.ServiceCenterActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation" />
+        <activity
+            android:name="com.iapppay.fastpay.ui.InputBankCarNoActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.iapppay.fastpay.ui.InputBankCarMoreInfoActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.iapppay.fastpay.ui.VerificationCodeActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.iapppay.fastpay.ui.CommonWebActivity" >
+        </activity>
+
+        <!-- 收银台-普通 -->
+        <activity
+            android:name="com.iapppay.ui.activity.normalpay.PayHubActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+         <!-- 收银台-爱贝快付-->
+        <activity
+            android:name="com.iapppay.ui.activity.minipay.MiniPayHubActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <!-- 收银台-爱贝币 -->
+        <activity
+            android:name="com.iapppay.ui.activity.iapppay.IAppPayHubActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        
+        <!-- 选择充值金额界面 -->
+        <activity
+            android:name="com.iapppay.ui.activity.SelectAmountActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.iapppay.ui.activity.minipay.BankCardActivity" 
+              android:configChanges="screenSize|orientation|keyboard|navigation"
+            />
+        <activity
+            android:name="com.iapppay.ui.activity.normalpay.ChargeActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:launchMode="singleTask" >
+        </activity>
+        <!-- 游戏卡和话费卡界面-->
+        <activity
+            android:name="com.iapppay.pay.channel.gamepay.GamepayActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation"
+            android:launchMode="singleTask" >
+        </activity>
+				<!-- 银联支付结果返回-->
+        <activity
+            android:name="com.iapppay.pay.channel.uppay.UpPayResultActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent" />
+		<!-- aibei pay end -->
+		
+		<!-- weixin pay -->
+		<activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="behind"
+            android:configChanges="orientation|screenSize">
+        </activity>
+		<!-- weixin pay end -->
+		
+		<!-- yinglian pay -->
+		<!-- 银联V3.3.2 -->
+		<activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+		<!-- yinglian pay end -->
+		
+		  <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+		
+		<meta-data android:name="EGAME_CHANNEL" android:value="10000000"  />
+		<!-- end -->
+
+    </application>
+
+</manifest>

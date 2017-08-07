@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tw__composer_hint">Ce se întâmplă?</string>
+    <string name="tw__install">Instalează</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__post_tweet">Scrie un Tweet</string>
+</resources>

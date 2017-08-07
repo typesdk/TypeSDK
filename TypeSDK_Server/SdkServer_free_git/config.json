@@ -1,0 +1,32 @@
+{
+  "url": "127.0.0.1",
+  "port": 40000,
+  "dbconfig": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "typesdk_db",
+    "user": "root",
+    "password": "typesdk.com",
+    "multipleStatements": true
+  },
+  "redisconfig": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "pass": "typesdk.com"
+  },
+  "dotConf": {
+    "sdkMonitorName": "SDK_MONITOR",
+    "incrementValue": 1,
+    "info": "打点"
+  },
+
+  "rsmqConfig": {
+    "ns": "yingYongBaoMQ"
+  },
+
+  "rsmqWorkerConfig": {
+    "ns": "yingYongBaoMQ"
+  },
+
+  "qName": "yingYongBao"
+}

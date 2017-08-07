@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kg_gamecenter_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/kg_common_title_bar" />
+
+    <WebView
+        android:id="@+id/kg_topic_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/kg_common_transparent"
+        android:layerType="software"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" 
+        android:visibility="gone"/>
+
+    <com.kugou.game.sdk.ui.widget.TipsLayout
+        android:id="@+id/kg_tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+{
+    "version":"3.21.20151018",
+    "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "uid" : ""
+    }
+    ,"out_url" :"http://127.0.0.1"
+    ,"out_params" :
+    {
+      "uid":""
+      ,"timestamp" : ""
+      ,"sign" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "callbackInfo": ""
+      ,"openId": ""
+      ,"orderId" : ""
+      ,"orderStatus": ""
+      ,"payType": ""
+      ,"amount": ""
+      ,"sign": ""
+      }
+    ,"out_url" :"http://127.0.0.1"
+    ,"out_params" :
+      {
+        "callbackInfo": ""
+      ,"openId": ""
+      ,"orderId" : ""
+      ,"orderStatus": ""
+      ,"payType": ""
+      ,"amount": ""
+     ,"sign": ""
+      }
+    }
+  ]
+}

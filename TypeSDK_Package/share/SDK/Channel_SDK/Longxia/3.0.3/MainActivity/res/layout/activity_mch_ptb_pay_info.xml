@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F3F1F1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3c3c3c" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:text=" 交易详情"
+                android:textColor="#ffffff"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_marginLeft="10sp"
+                android:text=" 平台币安全支付"
+                android:textColor="#a0a0a0"
+                android:textSize="15sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="10sp" >
+            </TextView>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0.5sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:background="#000000" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txt_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" 完成"
+            android:textColor="#ffffff"
+            android:textSize="22sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:background="#a0a0a0"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:background="#a0a0a0"
+            android:gravity="left" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mch_wx_pay"
+                android:text=""
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付成功"
+                android:textColor="#00FF00"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.15"
+        android:text="￥0.01"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:text="" />
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5sp"
+            android:layout_marginLeft="18sp"
+            android:layout_marginRight="20sp"
+            android:text="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp" >
+
+            <TextView
+                android:id="@+id/te2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平台币"
+                android:textColor="#a0a0a0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_ptb_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0.01"
+                android:textColor="#a0a0a0"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp" >
+
+            <TextView
+                android:id="@+id/tex2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品"
+                android:textColor="#a0a0a0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="平台币"
+                android:textColor="#a0a0a0"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp" >
+
+            <TextView
+                android:id="@+id/texs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易方式"
+                android:textColor="#a0a0a0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textiew4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="平台币"
+                android:textColor="#a0a0a0"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:gravity="left|center_vertical" >
+
+            <TextView
+                android:id="@+id/textV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单号"
+                android:textColor="#a0a0a0"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_tradeno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="111111111111"
+                android:textColor="#a0a0a0"
+                android:textSize="15sp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:background="#e4e4e4"
+        android:gravity="left|center_vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/id_viewpage2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e4e4e4" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e4e4e4" >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/mch_button_selector"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10sp"
+        android:background="#e4e4e4"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e4e4e4"
+        android:gravity="center"
+        android:text="徐州梦创信息科技有限公司" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/itemContainer"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/wepay_widget_height"
+	android:gravity="center_vertical"
+	android:orientation="horizontal" >
+
+	<View
+		android:layout_width="@dimen/wepay_padding_middle"
+		android:layout_height="wrap_content" />
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center_vertical"
+		android:orientation="horizontal" >
+
+		<com.wangyin.wepay.widget.image.CPImageView
+			android:id="@+id/image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/wepay_margin_h_middle"
+			android:maxHeight="40dp"
+			android:maxWidth="40dp"
+			android:visibility="gone" />
+
+		<TextView
+			android:id="@+id/title"
+			style="@style/wepay_content_page_large_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/wepay_margin_h_middle"
+			android:singleLine="true" />
+
+		<TextView
+			android:id="@+id/subtitle"
+			style="@style/wepay_content_page_small_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/wepay_margin_h_middle"
+			android:singleLine="true"
+			android:visibility="gone" />
+
+		<TextView
+			android:id="@+id/content"
+			style="@style/wepay_content_page_large_count_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|right"
+			android:layout_marginRight="@dimen/wepay_margin_h_middle"
+			android:singleLine="true"
+			android:visibility="visible" />
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/chevron"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="@dimen/wepay_margin_h_middle"
+		android:background="@drawable/wepay_common_select_arrow"
+		android:visibility="gone"/>
+	<ImageView
+		android:id="@+id/img_selected"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="@dimen/wepay_margin_h_middle"
+		android:background="@drawable/wepay_item_selected" 
+		android:visibility="gone"/>
+
+</LinearLayout>

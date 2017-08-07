@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pay_dialog_item_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/pay_dialog_item_center_bg_normal"
+        android:orientation="horizontal" >
+        <com.ss.android.sdk.pay.view.JustifyTextView
+            android:id="@+id/input_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="36.0dp"
+            android:textColor="@color/pay_dialog_label_name_color"
+            android:textSize="@dimen/pay_dialog_label_textsize"
+            android:singleLine="true"
+            android:text="@string/pay_input_card_number_label"/>
+        <EditText 
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:maxLength="100"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:hint="@string/pay_input_card_number_hint"
+            android:textSize="14sp"
+            android:textColor="@color/pay_input_text_color"
+            android:textColorHint="@color/pay_input_text_hint_color"/>
+    </LinearLayout>
+</LinearLayout>

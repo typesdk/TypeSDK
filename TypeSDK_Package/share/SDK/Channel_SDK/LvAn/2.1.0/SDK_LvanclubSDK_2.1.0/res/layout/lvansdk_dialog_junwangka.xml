@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/iw_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/junwang_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="骏网卡支付"
+        android:textColor="#00c0ed"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/linejunwang"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#00c0ed" />
+
+   <TextView
+            android:id="@+id/junwangcard_textview_paycount"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/lvansdk_junwangka"
+            android:drawableRight="@drawable/lvansdk_login_pull"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/txt_card50"
+            android:textColor="#5d5d5d"
+            android:textSize="15sp" />
+
+        <!-- 支付金额 -->
+
+        <LinearLayout
+            android:id="@+id/junwang_linar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/lvansdk_pay_input_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="@string/txt_cardno"
+                android:textColor="#5d5d5d"
+                android:textSize="15sp" />
+
+            <com.lvanclub.opensdk.utils.ClearEditText
+                android:id="@+id/junwang_input_cardno"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:focusableInTouchMode="true"
+                android:hint="@string/txt_inputno"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textColor="#a0a0a0"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/junwang_linar2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/junwang_linar1"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/lvansdk_pay_input_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="@string/txt_cardpwd"
+                android:textColor="#5d5d5d"
+                android:textSize="15sp" />
+
+            <com.lvanclub.opensdk.utils.ClearEditText
+                android:id="@+id/junwang_input_cardpwd"
+                android:layout_width="fill_parent"
+                 android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:focusableInTouchMode="true"
+                android:hint="@string/txt_inputpwd"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textColor="#a0a0a0"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/lvansdk_cancel_bg"
+            android:gravity="center"
+            android:scaleType="fitXY"
+            android:text="取消支付"
+            android:textColor="#999"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/lvansdk_ok_bg"
+            android:gravity="center"
+            android:text="确定支付"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

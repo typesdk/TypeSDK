@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lepay_page_layout_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/lepay_actionbar"
+        layout="@layout/lepay_actionbar" >
+    </include>
+
+    <WebView
+        android:id="@+id/lepay_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

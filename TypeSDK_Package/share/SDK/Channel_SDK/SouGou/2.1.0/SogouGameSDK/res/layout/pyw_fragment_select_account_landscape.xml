@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background" >
+
+    <GridView
+        android:id="@+id/pyw_gv_select_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/pyw_common_background"
+        android:horizontalSpacing="20dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:paddingTop="30dp"
+        android:verticalSpacing="20dp" >
+    </GridView>
+
+    <com.pengyouwan.sdk.ui.widget.TipsLayout
+        android:id="@+id/pyw_layout_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pyw_common_title"
+        android:visibility="gone" />
+
+</RelativeLayout>

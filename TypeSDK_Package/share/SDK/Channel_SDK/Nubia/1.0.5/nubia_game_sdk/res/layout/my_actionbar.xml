@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/my_colors_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_actionbar_heght"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/my_ib_back"
+            android:layout_width="38.66dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/my_selector_arrow_l" />
+
+        <TextView
+            android:id="@+id/my_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/my_colors_actionbar_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

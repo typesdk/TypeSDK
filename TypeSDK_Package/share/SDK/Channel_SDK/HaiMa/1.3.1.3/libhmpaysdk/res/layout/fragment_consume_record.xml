@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_register_button_disable_text_color">
+
+    <ListView
+        android:id="@+id/consume_record_content_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/user_register_divide_line_color"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/consume_record_no_record_hint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/consume_record_no_record"
+        android:visibility="gone"/>
+
+</RelativeLayout>

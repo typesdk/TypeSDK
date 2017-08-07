@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:paddingLeft="@dimen/f_padding_lr"
+              android:paddingRight="@dimen/f_padding_lr">
+
+    <View android:layout_width="@dimen/f_comment_avatar_size"
+          android:layout_height="1px"
+          android:layout_marginRight="10dp"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_normal_icon"
+            android:scaleType="fitXY"
+            android:id="@+id/comment_img"
+            android:layout_marginTop="@dimen/f_comment_image_margin_tb"
+            android:layout_marginBottom="@dimen/f_comment_image_margin_tb"/>
+
+</LinearLayout>

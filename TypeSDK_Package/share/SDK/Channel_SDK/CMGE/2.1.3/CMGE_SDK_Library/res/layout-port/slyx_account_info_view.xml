@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/slyx_color_bacgrount"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/slyx_account_info_canecl_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/slyx_account_info_cancel"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/slyx_close_button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/slyx_account_info_logo_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slyx_account_info_canecl_view"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="12dp" >
+
+            <ImageView
+                android:layout_width="158dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:background="@drawable/slyx_logo"
+                android:contentDescription="img" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/slyx_account_info_account_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/slyx_account_info_logo_view"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/slyx_account_info_title_view"
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                android:background="#313133"
+                android:enabled="false"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:text="账号："
+                android:textColor="#A0A0A0" />
+
+            <TextView
+                android:id="@+id/slyx_account_info_account"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_toRightOf="@id/slyx_account_info_title_view"
+                android:background="#313133"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textColor="#e36321" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/slyx_account_info_password_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/slyx_account_info_account_view"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="24dp" >
+
+            <TextView
+                android:id="@+id/slyx_account_info_password_title_view"
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                android:background="#313133"
+                android:enabled="false"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="密码："
+                android:textSize="16sp"
+                android:textColor="#a0a0a0" />
+
+            <TextView
+                android:id="@+id/slyx_account_info_password"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:textSize="16sp"
+                android:layout_toRightOf="@id/slyx_account_info_password_title_view"
+                android:background="#313133"
+                android:enabled="false"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#e36321" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/slyx_account_info_password_view"
+            android:layout_centerInParent="true"
+            android:id="@+id/slyx_user_account_info_txt"
+            android:enabled="false"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textSize="16sp"
+            android:text="@string/slyx_user_account_info_title"
+            android:textColor="@color/cmge_color_grey" />
+
+        <Button
+            android:id="@+id/slyx_user_account_info_btn"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"
+            android:layout_height="36.0dip"
+            android:textColor="@color/cmge_color_grey"
+            android:layout_below="@id/slyx_user_account_info_txt"
+            android:background="@drawable/slyx_login_bt_l"
+            android:text="@string/slyx_user_account_info_btn_txt" />
+    </RelativeLayout>
+
+</LinearLayout>

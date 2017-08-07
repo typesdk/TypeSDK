@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <TextView 
+        android:id="@+id/lb_select_circle_tv"
+        android:layout_width="5.0dp"
+        android:layout_height="5.0dp"
+        android:background="@drawable/default_lb_select_circle"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14.0dp"
+        android:layout_marginRight="5.0dp"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="47.0dp"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/lb_select_circle_tv">
+
+        <TextView
+            android:id="@+id/lb_username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#626262"
+            android:textSize="13.0sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7.0dp"/>
+
+        <TextView
+            android:id="@+id/lb_later_game_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_username_tv"
+            android:textColor="#c2c2c2"
+            android:textSize="10.0sp" 
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9.0dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lb_delete_layout"
+        android:layout_width="28.0dp"
+        android:layout_height="47.0dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/default_lb_delete"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/lib_white_normal"
+        >
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content">
+        <TextView
+                android:textSize="17sp"
+                android:textColor="#242424"
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:singleLine="false"
+                android:text="@string/lib_alert_dialog_input_id_number"/>
+        <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/lib_ID_number_input_edit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:hint="@string/lib_ID_number_input"
+                android:background="@drawable/lib_white_with_corner_background"
+                />
+        <Button
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                style="@style/LibButtonStyle"
+                android:id="@+id/lib_id_number_ensure_button"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:background="@drawable/lib_button_search_selector"
+                android:text="@string/lib_confirm"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cmge_pay_help"
+            android:textColor="#e59139"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cmge_pay_help"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dip"
+            android:layout_marginTop="5dip"
+            android:layout_gravity="left"
+            android:textSize="11sp" />
+    </LinearLayout>

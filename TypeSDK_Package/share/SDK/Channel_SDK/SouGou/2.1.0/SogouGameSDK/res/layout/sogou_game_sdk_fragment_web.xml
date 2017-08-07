@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sogou_game_sdk_base_dialog_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/sogou_game_sdk_fragment_nav"
+        layout="@layout/sogou_game_sdk_fragment_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/sogou_game_sdk_fragment_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/sogou_game_sdk_fragment_iv_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@anim/anim_webview_loading"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_fragment_tv_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_fragment_iv_web"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/sogou_game_sdk_color_999999"
+            android:textSize="15sp"
+            android:text="努力加载中..." />
+    </RelativeLayout>
+
+</LinearLayout>

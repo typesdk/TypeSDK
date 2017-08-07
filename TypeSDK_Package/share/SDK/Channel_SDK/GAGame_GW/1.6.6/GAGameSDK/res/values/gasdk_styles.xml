@@ -1,0 +1,210 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="myTransparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="text_welcome_white">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/gasdk_button_rel</item>
+    </style>
+    
+    <style name="text_welcome_twitter">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/gasdk_button_twitter</item>
+    </style>
+
+    <style name="text_login_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/login_edit_text_1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">20dip</item>
+    </style>
+
+    <style name="text_listview_username">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_dialog_del">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/button_state_pressed_true</item>
+    </style>
+
+    <style name="text_dialog_del_yesorno">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dialog_deltext_yesorno</item>
+    </style>
+
+    <style name="text_dialog_exit_back">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dialog_exit_back_text</item>
+        <item name="android:background">@color/dialog_exit_back_background</item>
+    </style>
+
+    <style name="text_dialog_exit_yes">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dialog_exit_yes_text</item>
+        <item name="android:background">@color/dialog_exit_yes_background</item>
+    </style>
+
+    <style name="text_username_edit">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/login_edit_text_2</item>
+        <item name="android:textColorHint">@color/login_edit_text_2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">12dip</item>
+        <item name="android:background">@null</item>
+        <item name="android:ems">9</item>
+        <item name="android:hint">@string/login_edit_1</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <style name="text_bind_edit">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/login_edit_text_2</item>
+        <item name="android:textColorHint">@color/login_edit_text_2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:ems">9</item>
+        <item name="android:hint">@string/login_edit_1</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_password_edit">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/login_edit_text_2</item>
+        <item name="android:textColorHint">@color/login_edit_text_2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+        <item name="android:background">@null</item>
+        <item name="android:hint">@string/login_edit_2</item>
+        <item name="android:imeOptions">flagNoExtractUi|actionDone</item>
+        <item name="android:password">true</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_registered_title">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/button_state_pressed_false</item>
+    </style>
+
+    <style name="text_registered_1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/login_edit_text_1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@+id/login_edit_lin_3</item>
+        <item name="android:layout_below">@+id/login_edit_lin_3</item>
+        <item name="android:layout_marginTop">2dip</item>
+        <item name="android:text">@string/registered_text_1</item>
+    </style>
+
+    <style name="text_registered_2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/registered_text_2</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignBaseline">@+id/tv_1</item>
+        <item name="android:layout_alignBottom">@+id/tv_1</item>
+        <item name="android:layout_toRightOf">@+id/tv_1</item>
+        <item name="android:text">@string/registered_text_2</item>
+    </style>
+
+    <style name="text_protocol_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_webview_title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_protocol_tv">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/protocol_text</item>
+    </style>
+
+    <style name="text_protocol_button_tv">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_protocol_bady_tv">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_float_button">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_function">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/registered_text_2</item>
+    </style>
+
+    <style name="login_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/load_bg</item>
+    </style>
+
+    <style name="exit_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/load_bg</item>
+    </style>
+
+    <style name="float_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

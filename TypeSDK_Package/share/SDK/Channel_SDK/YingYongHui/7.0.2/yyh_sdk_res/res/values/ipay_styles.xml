@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ipay_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/ipay_transparent</item>
+        <item name="android:background">@color/ipay_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:paddingTop">35dip</item>
+        <item name="android:paddingBottom">35dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:paddingRight">15dip</item>
+    </style>
+
+</resources>

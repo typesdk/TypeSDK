@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="egame_usersdk_white">#ffffff</color>
+    <color name="egame_usersdk_green">#67bf4b</color>
+    <color name="egame_usersdk_light_gray">#bbbbbb</color>
+    <color name="egame_usersdk_light_blue">#50b3f2</color>
+    <color name="egame_usersdk_dark_gray">#505050</color>
+    <color name="egame_usersdk_light_red">#fa5555</color>
+    <color name="mesgpush_title">#67bf4b</color>
+    <color name="egame_usersdk_regist_text">#777777</color>
+    <color name="egame_usersdk_version">#888888</color>
+    <color name="mesgpush_other">#888888</color>
+    <color name="text_green">#74c73d</color>
+    <color name="list_bg">#ebebeb</color>
+    <color name="egame_touming_color">#00000000</color>
+    <color name="egame_orange">#ff642e</color>
+    <color name="egame_input_box_gray">#aaaaaa</color>
+    
+    <color name="egame_index_normal">#bbbbbb</color>
+    <color name="UnderlinePageIndicator">#70b010</color>
+    
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="egame_fast_login_title">#3e9604</color>
+    <color name="egame_fast_login_btn_text">#ff9a2d</color>
+    <color name="egame_dark_green">#49b203</color>
+    <color name="egame_fast_login_yellow_text">#ffde00</color>
+
+</resources>

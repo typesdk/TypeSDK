@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:padding="5dip"
+    android:paddingLeft="3dip"
+    android:paddingRight="3dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_margin="3dip"
+        android:src="@drawable/sy37_icon_default" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/bottom_text_size" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#293842"
+                android:textSize="@dimen/kefu_list_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dip"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/bottom_text_size" />
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dip"
+                android:textColor="#a0a0a0"
+                android:textSize="@dimen/bottom_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:layout_margin="3dip"
+        android:background="#d6dbd6" />
+
+    <TextView
+        android:id="@+id/downicon"
+        android:layout_width="60dip"
+        android:layout_height="35dip"
+        android:background="@drawable/sy37_kefu_submit"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_marginLeft="3dip"
+        android:paddingTop="2dip"
+        android:text="@string/fg_down_text"
+        android:textColor="@color/s_white"
+        android:textSize="14sp" />
+
+</LinearLayout>

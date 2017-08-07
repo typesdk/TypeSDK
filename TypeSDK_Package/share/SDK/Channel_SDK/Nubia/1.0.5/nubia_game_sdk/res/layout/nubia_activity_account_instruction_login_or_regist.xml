@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/nubia_windows_status_bar_height"
+    android:paddingLeft="@dimen/nubia_item_padding_side"
+    android:paddingRight="@dimen/nubia_item_padding_side"
+    android:background="@color/nubia_window_background">
+
+    <ImageView
+        android:id="@+id/account_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/nubia_start_fragment_layout_margin_top"
+        android:src="@drawable/nubia_logo_for_white" />
+
+    <TextView
+        android:id="@+id/instructions_login_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_title"
+        android:layout_marginTop="@dimen/nubia_start_fragment_layout_margin_top"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="nubia 账户可以备份、恢复联系人、短信、日程、系统设置等个人数据"
+        android:textColor="@color/nubia_color_black_87" />
+
+    <Button
+        android:id="@+id/account_login_instruction"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/instructions_login_instruction"
+        android:layout_marginTop="@dimen/nubia_start_fragment_item_to_instructions"
+        android:background="@drawable/nubia_ns_button_big_blue"
+        android:text="@string/my_btn_login"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/account_regist_instruction"
+        style="@style/NubiaaccountSetupButton"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/account_login_instruction"
+        android:layout_marginTop="@dimen/nubia_nubia_button_gap"
+        android:text="@string/my_btn_register" />
+
+
+
+</RelativeLayout>

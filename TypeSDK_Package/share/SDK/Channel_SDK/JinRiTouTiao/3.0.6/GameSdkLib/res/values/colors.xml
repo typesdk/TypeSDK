@@ -1,0 +1,278 @@
+<resources>
+    <color name="pay_dialog_bg">#fafafa</color>
+    <color name="pay_dialog_title_color">@color/heise1</color>
+    <color name="pay_dialog_label_name_color">@color/heise3</color>
+    <color name="pay_dialog_commodity_name_color">@color/heise1</color>
+    <color name="pay_dialog_commodity_price_color">@color/biaozhunhong3</color>
+    <color name="pay_dialog_item_bg_normal">#ffffff</color>
+    <color name="pay_dialog_item_bg_pressed">#eeeeee</color>
+    <color name="pay_dialog_item_divider">#e6e6e6</color>
+    <color name="pay_dialog_item_text_color">@color/heise1</color>
+    <color name="pay_exit_alert_dialog_title_color">@color/heise1</color>
+    <color name="pay_exit_alert_dialog_content_color">@color/heise1</color>
+    <color name="pay_exit_alert_dialog_cancle_color">@color/heise1</color>
+    <color name="pay_exit_alert_dialog_continue_color">#ff5149</color>
+    <color name="pay_env_monitor_dialog_content_color">@color/heise1</color>
+    <color name="pay_input_text_color">@color/heise3</color>
+    <color name="pay_input_text_hint_color">@color/heise5</color>
+    <color name="pay_button_stroke_color">@color/biaozhunhong3</color>
+    <color name="pay_button_bg_color_pressed">@color/biaozhunhong3_pressed</color>
+    <color name="pay_button_bg_color_normal">@color/biaozhunhong3</color>
+    <color name="pay_button_text_color">@color/baise2</color>
+    <color name="pay_consult_label_color">@color/heise1</color>
+    <color name="pay_consult_telephone_color">@color/lanseqianse1</color>
+    <color name="pay_topup_item_stroke_color">@color/biaozhunhong3</color>
+    <color name="pay_topup_item_bg_color_pressed">@color/biaozhunhong3</color>
+    <color name="pay_topup_item_bg_color_normal">@color/transparent</color>
+    <color name="pay_topup_item_text_color_pressed">@color/baise2</color>
+    <color name="pay_topup_item_text_color_normal">@color/biaozhunhong3</color>
+    
+    <color name="biaozhunhong1">#d43d3d</color>
+    <color name="biaozhunhong1_pressed">#b11919</color>
+    <color name="biaozhunhong1_selected">#b11919</color>
+    <color name="biaozhunhong1_disable">#f2c4c4</color>
+    
+    <color name="biaozhunhong2">#d43d3d</color>
+    <color name="biaozhunhong2_pressed">#fca9a9</color>
+    <color name="biaozhunhong2_selected">#fca9a9</color>
+    <color name="biaozhunhong2_disable">#f2c4c4</color>
+    
+    <color name="biaozhunhong3">#f05b5b</color>
+    <color name="biaozhunhong3_pressed">#f5aaaa</color>
+    <color name="biaozhunhong3_selected">#f5aaaa</color>
+    <color name="biaozhunhong3_disable">#f7caca</color>
+    
+    <color name="lianghongse1">#fe3232</color>
+    <color name="lianghongse1_pressed">#d43d3d</color>
+    <color name="lianghongse1_selected">#d43d3d</color>
+    <color name="lianghongse1_disable">#ffc1c1</color>
+    
+    <color name="lanseshense1">#3c6598</color>
+    <color name="lanseshense1_pressed">#233f66</color>
+    <color name="lanseshense1_selected">#233f66</color>
+    <color name="lanseshense1_disable">#c4d0e0</color>
+    
+    <color name="lanseshense2">#314c83</color>
+    <color name="lanseshense2_pressed">#95a3be</color>
+    <color name="lanseshense2_selected">#95a3be</color>
+    <color name="lanseshense2_disable">#bdc5d6</color>
+    
+    <color name="lanseqianse1">#2a90d7</color>
+    <color name="lanseqianse1_pressed">#3c6598</color>
+    <color name="lanseqianse1_selected">#3c6598</color>
+    <color name="lanseqianse1_disable">#ffc1c1</color>
+    
+    <color name="lanseqianse2">#2a90d7</color>
+    <color name="lanseqianse2_pressed">#a7c9e9</color>
+    <color name="lanseqianse2_selected">#a7c9e9</color>
+    <color name="lanseqianse2_disable">#ffc1c1</color>
+    
+    <color name="guanggaohuangse1">#ffb400</color>
+    <color name="guanggaohuangse1_pressed">#ffd97f</color>
+    <color name="guanggaohuangse1_selected">#ffd97f</color>
+    <color name="guanggaohuangse1_disable">#ffe8b2</color>
+    
+    <color name="guanggaohuangse2">#ffdc38</color>
+    <color name="guanggaohuangse2_pressed">#ffed9b</color>
+    <color name="guanggaohuangse2_selected">#ffed9b</color>
+    <color name="guanggaohuangse2_disable">#fff4c3</color>
+    
+    <color name="heise1">#464646</color>
+    <color name="heise1_pressed">#707070</color>
+    <color name="heise1_selected">#707070</color>
+    <color name="heise1_disable">#999999</color>
+    
+    <color name="heise2">#707070</color>
+    <color name="heise2_pressed">#999999</color>
+    <color name="heise2_selected">#999999</color>
+    <color name="heise2_disable">#cacaca</color>
+    
+    <color name="heise3">#999999</color>
+    <color name="heise3_pressed">#cacaca</color>
+    <color name="heise3_selected">#cacaca</color>
+    <color name="heise3_disable">#dcdcdc</color>
+    
+    <color name="heise4">#b4b4b4</color>
+    <color name="heise4_pressed">#dcdcdc</color>
+    <color name="heise4_selected">#dcdcdc</color>
+    <color name="heise4_disable">#eeeeee</color>
+    
+    <color name="heise5">#cacaca</color>
+    <color name="heise5_pressed">#ebebeb</color>
+    <color name="heise5_selected">#ebebeb</color>
+    <color name="heise5_disable">#ebebeb</color>
+    
+    <color name="heise6">#dcdcdc</color>
+    <color name="heise6_pressed">#ebebeb</color>
+    <color name="heise6_selected">#ebebeb</color>
+    <color name="heise6_disable">#ebebeb</color>
+    
+    <color name="heise7">#888888</color>
+    <color name="heise7_pressed">#cacaca</color>
+    <color name="heise7_selected">#cacaca</color>
+    <color name="heise7_disable">#dcdcdc</color>
+    
+    <color name="heise8">#090909</color>
+    <color name="heise8_pressed">#707070</color>
+    <color name="heise8_selected">#707070</color>
+    <color name="heise8_disable">#999999</color>
+    
+    <color name="heise9">#000000</color>
+    <color name="heise9_pressed">#707070</color>
+    <color name="heise9_selected">#707070</color>
+    <color name="heise9_disable">#999999</color>
+    
+    <color name="baise1">#fafafa</color>
+    <color name="baise1_pressed">#eeeeee</color>
+    <color name="baise1_selected">#eeeeee</color>
+    <color name="baise1_disable">#eeeeee</color>
+    
+    <color name="baise2">#ffffff</color>
+    <color name="baise2_pressed">#eeeeee</color>
+    <color name="baise2_selected">#eeeeee</color>
+    <color name="baise2_disable">#eeeeee</color>
+    
+    <color name="fengexian1">#fafafa</color>
+    <color name="fengexian2">#dddddd</color>
+    <color name="fengexian3">#8d8d8d</color>
+    <color name="fengexian4">#afafaf</color>
+    <color name="fengexian5">#e6e6e6</color>
+    
+    <color name="biankuangxian1">#dcdcdc</color>
+    <color name="biankuangxian1_pressed">#ebebeb</color>
+    <color name="biankuangxian1_selected">#ebebeb</color>
+    <color name="biankuangxian1_disable">#ebebeb</color>    
+    
+    <color name="biankuangxian2">#cacaca</color>
+    <color name="biankuangxian2_pressed">#ebebeb</color>
+    <color name="biankuangxian2_selected">#ebebeb</color>
+    <color name="biankuangxian2_disable">#ebebeb</color>    
+    
+    <color name="biankuangxian3">#999999</color>
+    <color name="biankuangxian3_pressed">#cacaca</color>
+    <color name="biankuangxian3_selected">#cacaca</color>
+    <color name="biankuangxian3_disable">#dcdcdc</color>    
+    
+    <color name="dihuise1">#fafafa</color>
+    <color name="dihuise1_pressed">#eeeeee</color>
+    
+    <color name="dihuise2">#eeeeee</color>
+    <color name="dihuise2_pressed">#dcdcdc</color>
+    
+    <color name="dihuise3">#ebebeb</color>
+    <color name="dihuise3_pressed">#dedede</color>
+    
+    <color name="dihuise4">#dddddd</color>
+    <color name="dihuise4_pressed">#cacaca</color>
+    
+    <color name="dihuise5">#f0f0f0</color>
+    <color name="dihuise5_pressed">#f5f5f5</color>
+    
+    <color name="dihuise6">#e3e3e5</color>
+    <color name="dihuise6_pressed">#d4d4d4</color>
+    
+    <color name="dihuise7">#cacaca</color>
+    <color name="dihuise7_pressed">#ebebeb</color>
+    
+    <color name="dihuise8">#ffffff</color>
+    <color name="dihuise8_pressed">#eeeeee</color>
+    
+    <color name="dongtaiding1">#888888</color>
+    <color name="dongtaiding1_pressed">#314c83</color>
+    <color name="dongtaiding1_selected">#314c83</color>
+    <color name="dongtaiding1_disable">#dcdcdc</color> 
+<color name="gallery_background">#111111</color>
+    <color name="gallery_alpha">#B0000000</color>
+    <color name="white">#ffffff</color>
+    <color name="lighter_gray">#FFD3D3D3</color>
+    <color name="gray">#808080</color>
+    <color name="darkgray">#A9A9A9</color>
+    <color name="lightgray">#D3D3D3</color>
+    <color name="sandybrown">#F4A460</color>
+    <color name="dimgray">#696969</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="simple_333333">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="simple_eeeeee">#eeeeee</color>
+    <color name="simple_cccccc">#cccccc</color>
+    <color name="pull_to_refresh_label_color">#99ccff</color>
+<color name="login_mask_bg">@color/transparent</color>
+    <color name="login_activity_bg">#b2000000</color>
+    <color name="login_panel_bg">#eff2f2f4</color>
+    <color name="progress_dialog_bg">#fafafa</color>
+
+    
+    <color name="login_divider">#707070</color>
+    <color name="login_divider_night">#707070</color>
+    <color name="login_accent_color">#fe3232</color>
+    <color name="login_accent_color_pressed">#d43d3d</color>
+    <color name="login_accent_color_night">#935656</color>
+    <color name="login_accent_color_pressed_night">#d43d3d</color>
+    <color name="edit_text_color">#707070</color>
+    <color name="edit_text_color_night">#707070</color>
+    <color name="edit_hint_color">@color/heise3</color>
+    <color name="edit_hint_color_night">#707070</color>
+    <color name="mobile_highlight_text">@color/login_accent_color</color>
+    <color name="mobile_highlight_text_night">#935656</color>
+    <color name="loading_text">#fafafa</color>
+    <color name="default_text">#464646</color>
+    <color name="default_text_night">#707070</color>
+
+    
+    <color name="yejiantongyong1">#707070</color>
+    <color name="yejiantongyong1_pressed">#505050</color>
+    <color name="yejiantongyong1_selected">#505050</color>
+    <color name="yejiantongyong1_disable">#505050</color>
+
+    <color name="yejianheise1">#505050</color>
+    <color name="yejianheise1_pressed">#363636</color>
+    <color name="yejianheise1_selected">#363636</color>
+    <color name="yejianheise1_disable">#363636</color>
+
+    <color name="yejianheise2">#cacaca</color>
+    <color name="yejianheise2_pressed">#999999</color>
+    <color name="yejianheise2_selected">#999999</color>
+    <color name="yejianheise2_disable">#999999</color>
+
+    <color name="yejianfengexian1">#363636</color>
+    <color name="yejianfengexian2">#464646</color>
+
+    <color name="yejiandise1">#252525</color>
+    <color name="yejiandise1_pressed">#303030</color>
+
+    <color name="yejiandise2">#303030</color>
+    <color name="yejiandise2_pressed">#505050</color>
+
+    <color name="yejianhongse1">#935656</color>
+    <color name="yejianhongse1_pressed">#574848</color>
+    <color name="yejianhongse1_selected">#574848</color>
+    <color name="yejianhongse1_disable">#574848</color>
+
+    <color name="yejianhongse2">#651414</color>
+    <color name="yejianhongse2_pressed">#451c1c</color>
+    <color name="yejianhongse2_selected">#451c1c</color>
+    <color name="yejianhongse2_disable">#451c1c</color>
+
+    <color name="yejianlanse1">#67778b</color>
+    <color name="yejianlanse1_pressed">#4d5866</color>
+    <color name="yejianlanse1_selected">#4d5866</color>
+    <color name="yejianlanse1_disable">#4d5866</color>
+
+    <color name="yejianlanse2">#3c6598</color>
+    <color name="yejianlanse2_pressed">#31455f</color>
+    <color name="yejianlanse2_selected">#31455f</color>
+    <color name="yejianlanse2_disable">#31455f</color>
+
+    <color name="yejianhuangse1">#956900</color>
+    <color name="yejianhuangse1_pressed">#5d4712</color>
+    <color name="yejianhuangse1_selected">#5d4712</color>
+    <color name="yejianhuangse1_disable">#5d4712</color>
+
+    <color name="yejiandongtaiding1">#707070</color>
+    <color name="yejiandongtaiding1_pressed">#67778b</color>
+    <color name="yejiandongtaiding1_selected">#67778b</color>
+    <color name="yejiandongtaiding1_disable">#505050</color>
+
+</resources>

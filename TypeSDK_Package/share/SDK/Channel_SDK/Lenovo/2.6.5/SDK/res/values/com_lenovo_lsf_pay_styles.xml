@@ -1,0 +1,76 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+<!--     <style name="com_lenovo_lsf_setting_item">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:background">@drawable/com_lenovo_lsf_pay_list_item_selector</item>
+    </style>
+
+    <style name="com_lenovo_lsf_divider_title">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#d1d1d1</item>
+    </style> -->
+
+    <style name="lsf_pay_ui" parent="android:Theme.Light">
+        <item name="android:windowTitleSize">41dp</item>
+        <item name="android:windowFullscreen">false</item>
+        <!--
+        	<item name="android:windowBackground">@color/com_lenovo_lsf_pay_appcolor</item>
+		<item name="android:windowTitleBackgroundStyle">@style/lsf_pay_uititlebackground</item>
+		<item name="android:windowNoTitle">true</item>
+        -->
+    </style>
+
+    <style name="lsf_pay_ui.no_title">
+        <item name="android:windowNoTitle">true</item>
+                <item name="android:windowFullscreen">true</item> <!-- 除去背景色 -->
+        
+        <!--
+        <item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+        -->
+    </style>
+    <style name="com_lenovo_lsf_theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item> <!-- 除去背景色 -->
+        
+    </style>
+    <style name="com_lenovo_lsf_pay_LenovoSDKDialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@android:color/white</item>
+	</style>
+	<style name="lsf_pay_ui.translate" parent="@android:style/Theme">
+        <item name="android:windowIsTranslucent">true</item> <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+        <item name="android:windowAnimationStyle">@null</item> <!-- 除去动画 -->
+        <item name="android:backgroundDimEnabled">false</item><!-- 模糊 -->
+        <item name="android:colorBackgroundCacheHint">@null</item><!-- 背景缓存颜色 -->
+        <item name="android:color">@color/com_lenovo_lsf_pay_next_button</item><!-- 背景透明 -->
+    </style>
+</resources>

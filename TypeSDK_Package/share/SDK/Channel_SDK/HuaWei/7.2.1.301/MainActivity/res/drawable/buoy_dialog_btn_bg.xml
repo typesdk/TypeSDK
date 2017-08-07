@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:state_pressed="true" android:drawable="@drawable/buoy_dialog_pressed_emui" />
+	<item android:state_focused="true"  android:state_enabled="false" android:drawable="@drawable/buoy_dialog_disabled_emui" />
+	<item android:state_focused="true"  android:state_enabled="true" android:drawable="@drawable/buoy_dialog_pressed_emui" />
+	<item android:state_enabled="false" android:state_focused="false" android:drawable="@drawable/buoy_dialog_disabled_emui" />
+	<item android:drawable="@drawable/buoy_dialog_normal_emui"/>
+</selector-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="10dp" />
+             <stroke
+       			 android:width="1px"
+     			 android:color="#ffb2b2b2" />
+            <solid android:color="#0C000000" />
+        </shape>
+   </item>
+   
+   <item>
+     <shape android:id="@android:id/background" >
+     <corners android:radius="10dp" />
+      <stroke
+        android:width="1px"
+        android:color="#ffb2b2b2" />
+     <solid android:color="#05000000" />
+	</shape>
+   </item>
+</selector>

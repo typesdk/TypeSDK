@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modifyLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sy37_bg_menu_four"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_nick"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/newNick"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/fg_nick_hint"
+                android:maxLength="20"
+                android:paddingLeft="8.0dip"
+                android:singleLine="true"
+                android:textColor="@color/s_light_gray"
+                android:textColorHint="@color/s_light_gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_sex"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <CheckedTextView
+                android:id="@+id/isMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:drawableLeft="@drawable/sy37_icon_kefu_check"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="@string/fg_sex_boy"
+                android:textColor="@color/s_light_gray"
+                android:textSize="18sp" />
+
+            <CheckedTextView
+                android:id="@+id/isWoman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:drawableLeft="@drawable/sy37_icon_kefu_check"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dip"
+                android:text="@string/fg_sex_girl"
+                android:textColor="@color/s_light_gray"
+                android:textSize="18sp" />
+
+            <CheckedTextView
+                android:id="@+id/isSecret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableLeft="@drawable/sy37_icon_kefu_check"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dip"
+                android:text="@string/fg_sex_secret"
+                android:textColor="@color/s_light_gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/birdayLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_birthday"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/newBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:enabled="false"
+                android:hint="@string/fg_birthday_hint"
+                android:inputType="date"
+                android:maxLength="20"
+                android:paddingLeft="4.0dip"
+                android:singleLine="true"
+                android:textColor="@color/s_light_gray"
+                android:textColorHint="@color/s_light_gray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/sy37_user_set_down_bg_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:text="@string/fg_mobile_no"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/newMobile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/fg_mobile_no_hint"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="4.0dip"
+                android:singleLine="true"
+                android:textColor="@color/s_light_gray"
+                android:textColorHint="@color/s_light_gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout_1"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/modifyBack"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:background="@drawable/sy37_reg"
+            android:text="@string/fg_cancel"
+            android:textColor="@color/s_white"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/modifyPersonSub"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/sy37_kefu_submit"
+            android:text="@string/fg_submit"
+            android:textColor="@color/s_white"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+</RelativeLayout>

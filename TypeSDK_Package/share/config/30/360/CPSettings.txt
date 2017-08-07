@@ -1,0 +1,13 @@
+﻿{
+"app_id":"201696301",
+"app_key":"08158bf9f09b919790a63f10c381be52",
+"check_update_url":"http://www.typesdk.com/",
+"cp_id":"1001",
+"pay_call_back_url":"http://demo.typesdk.com:40000/1001/3/Pay",
+"platform":"unity",
+"sdk_name":"360",
+"sdk_request_and_support":"support_exit_window",
+"channel_id":"3",
+"channelName":"qihoo",
+"switchconfig_url":"http://demo.typesdk.com:30003/getConfig/1001/3/config.txt"
+}

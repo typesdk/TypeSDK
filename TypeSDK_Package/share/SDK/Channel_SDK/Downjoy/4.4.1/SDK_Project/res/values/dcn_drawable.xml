@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="dcn_select_account_add_mark_btn_pressed">#e66c00</drawable>
+    <drawable name="dcn_select_account_add_mark_btn_normal">#ff7800</drawable>
+</resources>

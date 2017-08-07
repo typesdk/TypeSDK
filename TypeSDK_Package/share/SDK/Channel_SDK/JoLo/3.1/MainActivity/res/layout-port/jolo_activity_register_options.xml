@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/jolo_sdk_bg" >
+
+     <Button
+         android:id="@+id/register_phone_btn"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="30dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="30dp"
+         android:background="@drawable/jolo_orange_bg"
+         android:gravity="center"
+         android:paddingTop="8dp"
+         android:layout_gravity="center_horizontal"
+      	 android:paddingBottom="8dp"
+         android:text="@string/jolo_register_phone"
+         android:textColor="@color/jolo_white"
+         android:textSize="18sp" />
+
+     <Button
+         android:id="@+id/register_n_btn"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="30dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="15dp"
+         android:background="@drawable/jolo_bluefreen_bg"
+         android:layout_gravity="center_horizontal"
+         android:gravity="center"
+         android:paddingTop="8dp"
+      	 android:paddingBottom="8dp"
+         android:text="@string/jolo_register_normal"
+         android:textColor="@color/jolo_white"
+         android:textSize="18sp" />
+     
+     <Button
+         android:id="@+id/register_fast_btn"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="30dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="15dp"
+         android:background="@drawable/jolo_green_bg"
+         android:layout_gravity="center_horizontal"
+         android:gravity="center"
+         android:paddingTop="8dp"
+      	 android:paddingBottom="8dp"
+         android:text="@string/jolo_fast_register"
+         android:textColor="@color/jolo_white"
+         android:textSize="18sp" />
+     
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp" >
+
+        <CheckBox
+            android:id="@+id/register_agree_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/jolo_checkbox_selector"
+            android:checked="true"
+            android:paddingLeft="20dp"
+            android:text="@string/jolo_register_agree"
+            android:textColor="@color/cmmn_green"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/read_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="goLink"
+            android:text="@string/jolo_register_rule"
+            android:textColor="@color/cmmn_green"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
+

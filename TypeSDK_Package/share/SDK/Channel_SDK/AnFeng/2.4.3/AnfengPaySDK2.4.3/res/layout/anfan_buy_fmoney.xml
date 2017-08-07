@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/anfan_defealut_bg" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="充值账户 ："
+                    android:textColor="@color/anfan_c999999"
+                    android:textSize="16sp" />
+
+                <com.anfeng.pay.view.ClearEditText
+                    android:id="@+id/et_uid"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="充值F币的账户,默认为当前账户"
+                    android:maxLength="25"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#CCCCCC"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line12"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/white"
+                android:paddingLeft="25dp"
+                android:paddingTop="5dp"
+                android:text="请选择充值数量:"
+                android:textColor="@color/anfan_c999999"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/bt_amount_0"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/anfan_button_bg_amount"
+                    android:text="10F币"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/bt_amount_1"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/anfan_button_bg_amount"
+                    android:text="20F币"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/bt_amount_2"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/anfan_button_bg_amount"
+                    android:text="50F币"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="5dp" >
+
+                <Button
+                    android:id="@+id/bt_amount_3"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/anfan_button_bg_amount"
+                    android:text="100F币"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/bt_amount_4"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/anfan_button_bg_amount"
+                    android:text="300F币"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/bt_amount_5"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/anfan_button_bg_amount"
+                    android:text="500F币"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line14"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp" >
+
+                <EditText
+                    android:id="@+id/et_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/af_paytype_normal_bg"
+                    android:gravity="center"
+                    android:hint="其它数量,最少充值1个"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:numeric="integer"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#CCCCCC"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="F币"
+                    android:textColor="@color/anfan_c999999"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:paddingBottom="5dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="5dp"
+                android:text="选择充值方式"
+                android:textColor="@color/anfan_c999999" />
+
+            <com.anfeng.pay.view.MyGridView
+                android:id="@+id/gv_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:stretchMode="columnWidth" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom" >
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/anfan_button_bg_blue"
+            android:text="@string/anfan_recharge_dianka_6"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.video.MediaController xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_layout_media_controller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:clickable="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lion_layout_media_controller_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A0000000" >
+
+        <ImageButton
+            android:id="@+id/lion_layout_media_controller_back"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:background="@drawable/lion_common_transparent_selector"
+            android:src="@drawable/lion_nav_back" />
+
+        <TextView
+            android:id="@+id/lion_layout_media_controller_title"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center|left"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lion_layout_media_controller_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#A0000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/lion_layout_media_controller_bottom_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:background="@null"
+            android:src="@drawable/lion_common_video_play_selector" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lion_layout_media_controller_time_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5.0dip"
+                android:textColor="@color/lion_common_white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.lion.ccpay.widget.video.VideoSeekBar
+                android:id="@+id/lion_layout_media_controller_progress"
+                android:layout_width="0.0dip"
+                android:layout_height="15.0dip"
+                android:layout_weight="1.0"
+                android:progressDrawable="@drawable/lion_common_progress"
+                android:thumb="@drawable/lion_video_thumb" />
+
+            <TextView
+                android:id="@+id/lion_layout_media_controller_time_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5.0dip"
+                android:textColor="@color/lion_common_white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/lion_layout_media_controller_bottom_rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5.0dip"
+                android:background="@null"
+                android:src="@drawable/lion_video_rotate" />
+
+            <ImageButton
+                android:id="@+id/lion_layout_media_controller_tolandscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/lion_common_video_full_screen_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lion_layout_media_controller_screen_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="#A0000000"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/lion_layout_media_controller_screen_off"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:background="@drawable/lion_common_transparent_selector"
+            android:padding="5.0dip"
+            android:scaleType="center"
+            android:src="@drawable/lion_common_video_lock_selector" />
+
+        <ImageView
+            android:id="@+id/lion_layout_media_controller_rotate"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:background="@drawable/lion_common_transparent_selector"
+            android:padding="5.0dip"
+            android:scaleType="center"
+            android:src="@drawable/lion_video_rotate" />
+    </LinearLayout>
+
+</com.lion.ccpay.widget.video.MediaController>

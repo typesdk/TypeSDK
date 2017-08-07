@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/slyx_pay_dailog_shape"
+     >
+     <TextView
+            android:id="@+id/slyx_paysuccess_des"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#535353"   
+            android:textSize="18sp"
+            android:padding="20dip"
+            />
+         <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slyx_img_line">
+         </LinearLayout>
+             <Button
+            android:id="@+id/slyx_paysuccess_comfirm"
+            android:layout_width="fill_parent"
+            android:textSize="20sp"
+            android:background="@drawable/slyx_pay_dailog_bt_bg"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:padding="10dip"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:layout_height="50dip"
+            android:textColor="#eb6a29"
+            android:text="@string/slyx_confirm" />
+      
+</LinearLayout>

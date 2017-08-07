@@ -1,0 +1,32 @@
+{
+  "version":"5.0.20160704",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "GET",
+      "in_params": {
+        "id": 0,
+        "tokenid": ""
+      },
+      "out_url": "http://hx.sdk.gdegame.com:51880/users/checkTokenID",
+      "out_params": {
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "order": {
+          "order": "",
+          "sign": "",
+          "sign_type": ""
+        },
+        "sign" : "",
+        "sign_type": ""
+      },
+      "out_url": "http://hx.sdk.gdegame.com:51880/users/checkTokenID",
+      "out_params": {
+      }
+    }
+  ]
+}

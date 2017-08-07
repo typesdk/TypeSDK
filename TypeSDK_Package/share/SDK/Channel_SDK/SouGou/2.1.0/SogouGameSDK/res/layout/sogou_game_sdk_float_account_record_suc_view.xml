@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/sogou_game_sdk_float_account_record_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/sogou_game_sdk_color_gray1"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/sogou_game_sdk_transparent"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_float_account_record_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="此分类暂无记录。"
+        android:visibility="gone"
+        android:textColor="@color/sogou_game_sdk_color_ff6a00"
+        android:textSize="12sp"/>
+</RelativeLayout>
+

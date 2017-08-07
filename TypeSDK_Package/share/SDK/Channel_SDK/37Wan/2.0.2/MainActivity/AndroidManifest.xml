@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="202"
+    android:versionName="2.0.2"
+    package="com.type.sdk.android.meizu"
+	android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+    
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+		
+	<uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />  
+	
+	<!-- sdk begin -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<!-- sdk end -->
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+		
+        <activity
+            android:name="com.type.sdk.android.meizu.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="sensorLandscape" >
+			
+			 <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        
+        <!-- 透明的activity 用于银联支付的回调 -->
+        <activity 
+            android:name="com.sy37sdk.core.PayCallBackActivity" 
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize|screenLayout"
+            android:theme="@style/Theme.Transparent"/>
+        
+        <activity
+            android:name="com.sy37sdk.views.SY37web"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        
+        <service android:name="com.sy37sdk.service.SyncService" />
+        <service android:name="com.sy37sdk.service.FloatWindowService" />
+
+        <receiver android:name="com.sy37sdk.receiver.NotifyReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+    
+         <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+       <!-- alipay sdk end -->
+        		
+    </application>
+
+</manifest>

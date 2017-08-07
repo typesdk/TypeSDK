@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+        >
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/mg_forum_profile_message_tv"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="6dp"
+            android:textColor="#3b3b3b" android:textSize="@dimen/mg_forum_profile_message_text_size"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1.2"
+            />
+
+    <!-- textColor="#6a6a6a"-->
+
+    <View android:layout_width="match_parent" android:layout_height="2px"
+          android:background="#ebebeb"
+          android:layout_alignParentBottom="true" android:id="@+id/mg_forum_profile_message_divider"/>
+
+</RelativeLayout>

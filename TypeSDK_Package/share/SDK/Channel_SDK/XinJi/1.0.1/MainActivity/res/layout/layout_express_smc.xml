@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <WebView
+        android:id="@+id/mainwebview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/splash_layout"
+        android:background="@drawable/smc_splash"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/linearLayout"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#535353" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:indeterminateDrawable="@anim/smc_progress"
+                android:max="10000" />
+        </LinearLayout>
+
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/linearLayout" />
+    </RelativeLayout>
+
+</RelativeLayout>

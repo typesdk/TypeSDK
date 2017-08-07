@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+            android:id="@+id/lib_main"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/lib_title_background">
+
+        <TextView
+                android:id="@+id/lib_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:textColor="@color/lib_white"
+                android:textSize="18sp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/lib_top_return_selector"/>
+
+        <TextView
+                android:id="@+id/lib_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="@color/lib_white"
+                android:textSize="19sp"/>
+
+        <com.stargame.sdk.ui.view.ViewProgress
+                android:id="@+id/lib_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/lib_middle"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                android:background="@drawable/lib_message_refresh"/>
+
+        <LinearLayout
+                android:id="@+id/lib_right_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:visibility="gone">
+
+            <TextView
+                    android:id="@+id/lib_right_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/lib_title_right_text_color"
+                    android:textSize="17sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/lib_extra_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/lib_right_layout"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"/>
+    </RelativeLayout>
+    <ProgressBar
+            android:id="@+id/lib_webview_progressbar"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="2dp"
+            style="@style/LibProgressBar_Horizontal"/>
+</LinearLayout>

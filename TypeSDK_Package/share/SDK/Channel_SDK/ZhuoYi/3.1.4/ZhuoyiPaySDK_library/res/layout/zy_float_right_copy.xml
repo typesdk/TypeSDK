@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/zy_float_image_btn_right"
+        android:layout_width="@dimen/zy_float_image_width"
+        android:layout_height="@dimen/zy_float_image_height"
+        android:layout_centerVertical="true"
+        android:background="@drawable/zy_float_image_nor" />
+
+    <ImageView
+        android:id="@+id/zy_point_right"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/zy_red_point"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m4399_ope_coupon_valid_date">有效期：%s</string>
+    <string name="m4399_ope_coupon_date_format">yyyy.MM.dd</string>
+    <string name="m4399_ope_coupon_date_year_split">.</string>
+
+</resources>

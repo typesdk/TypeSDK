@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/sogou_game_sdk_white"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_view"
+        layout="@layout/sogou_game_sdk_head"></include>
+
+    <com.sogou.gamecenter.sdk.util.RefreshListView
+        android:id="@+id/sogou_game_sdk_pay_voucher_view_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_view"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="13dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:listSelector="@color/sogou_game_sdk_transparent"
+        android:scrollbars="none">
+    </com.sogou.gamecenter.sdk.util.RefreshListView>
+
+    <LinearLayout
+        android:id="@+id/sogou_game_sdk_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_view"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/myapp_non_download_img"/>
+
+        <TextView
+            android:id="@+id/txt_empty_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="44dp"
+            android:text="@string/blank_page_manager_msg"
+            android:textColor="#999999"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</RelativeLayout>

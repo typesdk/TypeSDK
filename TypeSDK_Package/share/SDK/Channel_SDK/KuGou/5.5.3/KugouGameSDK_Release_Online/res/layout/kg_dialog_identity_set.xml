@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kg_dialog_layout"
+    android:layout_width="280dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kg_kugou_dialog_default_bg"
+    android:minHeight="190dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/kg_kugou_dialogtitle_default_bg" >
+
+        <TextView
+            android:id="@+id/kg_tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/kg_dialog_title_id_check"
+            android:textColor="@color/kg_common_black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/kg_iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/kg_titlebar_btn_selector"
+            android:gravity="center"
+            android:src="@drawable/kg_img_close"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="20"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kg_dialog_message_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:text=" 提示：填写后不可修改，请认真填写"
+                android:textColor="@color/kg_common_orange"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/kg_et_user_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/kg_sp_bg"
+                android:ems="10"
+                android:hint="请输入登录密码"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/kg_common_gray_more_lighter"
+                android:textSize="@dimen/kg_common_medium" />
+
+            <TextView
+                android:id="@+id/kg_dialog_tv_passowrd_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/kg_common_red"
+                android:textSize="13sp"
+                android:visibility="gone" />
+            
+            <EditText
+                android:id="@+id/kg_et_user_real_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/kg_sp_bg"
+                android:ems="10"
+                android:hint="请输入姓名"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/kg_common_gray_more_lighter"
+                android:textSize="@dimen/kg_common_medium" />
+
+            <TextView
+                android:id="@+id/kg_dialog_tv_realname_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/kg_common_red"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/kg_et_user_id_num"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/kg_sp_bg"
+                android:ems="10"
+                android:hint="请输入身份证（限18位）"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/kg_common_gray_more_lighter"
+                android:textSize="@dimen/kg_common_medium" />
+
+            <TextView
+                android:id="@+id/kg_dialog_tv_idnum_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/kg_common_red"
+                android:textSize="13sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/kg_dialog_line"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="1px"
+        android:background="@color/kg_common_gray_normal" />
+
+    <include layout="@layout/kg_common_dialog_bottom_bar" />
+
+</LinearLayout>

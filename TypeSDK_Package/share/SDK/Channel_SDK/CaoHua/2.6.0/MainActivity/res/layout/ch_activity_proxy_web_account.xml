@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="#0fb03e" >
+
+    <RelativeLayout
+        android:id="@+id/ch_web_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#0fb03e" >
+
+        <ImageButton
+            android:id="@+id/ch_web_title_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:src="@drawable/ch_dialog_goback" />
+
+        <TextView
+            android:id="@+id/ch_web_title_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/ch_web_title_back"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/ch_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/ch_gray" 
+        android:layout_below="@+id/ch_web_title_bar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/ch_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:background="@drawable/ch_account_bg"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/ch_account_img"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true" >
+
+                    <com.chsdk.ui.widget.CornerImageView
+                        android:id="@+id/ch_account_img_anchor"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ch_account" />
+
+                    <ImageView
+                        android:id="@+id/ch_account_img_cover"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        android:layout_alignRight="@+id/ch_account_img_anchor"
+                        android:src="@drawable/ch_account_unofficial" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/ch_account_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ch_account_img"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:drawablePadding="2dp"
+                    android:text="划船不用桨"
+                    android:textColor="@color/ch_white"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/ch_account_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ch_account_nick_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/ch_white"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ch_account_user_name"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/ch_white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/ch_account_chb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="0个"
+                            android:textColor="@color/ch_green"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/ch_account_chb_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="草花币"
+                            android:textColor="@color/ch_gray_black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/ch_account_chd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="0个"
+                            android:textColor="@color/ch_green"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/ch_account_chd_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="草花豆"
+                            android:textColor="@color/ch_gray_black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/ch_account_silver"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="0个"
+                            android:textColor="@color/ch_green"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/ch_account_silver_des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="绑银"
+                            android:textColor="@color/ch_gray_black"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ch_web_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ProgressBar
+                    android:id="@+id/ch_web_progress"
+                    style="@style/ch_style_horizontal_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:indeterminate="false"
+                    android:max="100" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ch_web_video_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/ch_web_progress_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/ch_anim_rotate_cycle"
+        android:indeterminateDuration="1000" />
+</RelativeLayout>

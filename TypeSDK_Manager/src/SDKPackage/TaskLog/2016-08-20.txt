@@ -1,0 +1,54 @@
+2016-08-20 09:56:54 任务ID:12601 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e6%9c%aa%e8%83%bd%e6%89%be%e5%88%b0%e8%b7%af%e5%be%84%e2%80%9cD%3a%5cPackage%5cSDK%5cGde_SDK%5c1.2.1%5clib%5cGalaxySDKBaseLibrary%5cAndroidManifest.xml%e2%80%9d%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86%e3%80%82","data":null}
+
+2016-08-20 09:59:04 任务ID:12602 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e6%9c%aa%e8%83%bd%e6%89%be%e5%88%b0%e8%b7%af%e5%be%84%e2%80%9cD%3a%5cPackage%5cSDK%5cGde_SDK%5c1.2.1%5clib%5cGalaxySDKBaseLibrary%5cAndroidManifest.xml%e2%80%9d%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86%e3%80%82","data":null}
+
+2016-08-20 09:59:07 任务ID:12603 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e6%9c%aa%e8%83%bd%e6%89%be%e5%88%b0%e8%b7%af%e5%be%84%e2%80%9cD%3a%5cPackage%5cSDK%5cGde_SDK%5c1.2.1%5clib%5cGalaxySDKBaseLibrary%5cAndroidManifest.xml%e2%80%9d%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86%e3%80%82","data":null}
+
+2016-08-20 09:59:10 任务ID:12604 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e6%9c%aa%e8%83%bd%e6%89%be%e5%88%b0%e8%b7%af%e5%be%84%e2%80%9cD%3a%5cPackage%5cSDK%5cGde_SDK%5c1.2.1%5clib%5cGalaxySDKBaseLibrary%5cAndroidManifest.xml%e2%80%9d%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86%e3%80%82","data":null}
+
+2016-08-20 09:59:11 任务ID:12605 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e6%9c%aa%e8%83%bd%e6%89%be%e5%88%b0%e8%b7%af%e5%be%84%e2%80%9cD%3a%5cPackage%5cSDK%5cGde_SDK%5c1.2.1%5clib%5cGalaxySDKBaseLibrary%5cAndroidManifest.xml%e2%80%9d%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86%e3%80%82","data":null}
+
+2016-08-20 09:59:11 任务ID:12606 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e6%9c%aa%e8%83%bd%e6%89%be%e5%88%b0%e8%b7%af%e5%be%84%e2%80%9cD%3a%5cPackage%5cSDK%5cGde_SDK%5c1.2.1%5clib%5cGalaxySDKBaseLibrary%5cAndroidManifest.xml%e2%80%9d%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86%e3%80%82","data":null}
+
+2016-08-20 09:59:12 任务ID:12607 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e6%9c%aa%e8%83%bd%e6%89%be%e5%88%b0%e8%b7%af%e5%be%84%e2%80%9cD%3a%5cPackage%5cSDK%5cGde_SDK%5c1.2.1%5clib%5cGalaxySDKBaseLibrary%5cAndroidManifest.xml%e2%80%9d%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86%e3%80%82","data":null}
+
+2016-08-20 09:59:12 任务ID:12608 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e6%9c%aa%e8%83%bd%e6%89%be%e5%88%b0%e8%b7%af%e5%be%84%e2%80%9cD%3a%5cPackage%5cSDK%5cGde_SDK%5c1.2.1%5clib%5cGalaxySDKBaseLibrary%5cAndroidManifest.xml%e2%80%9d%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86%e3%80%82","data":null}
+
+2016-08-20 10:00:37 任务ID:12609 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e6%9c%aa%e8%83%bd%e6%89%be%e5%88%b0%e8%b7%af%e5%be%84%e2%80%9cD%3a%5cPackage%5cSDK%5cGde_SDK%5c1.2.1%5clib%5cGalaxySDKBaseLibrary%5cAndroidManifest.xml%e2%80%9d%e7%9a%84%e4%b8%80%e9%83%a8%e5%88%86%e3%80%82","data":null}
+
+2016-08-20 10:06:27 任务ID:12610 目标IP:0.0.0.0 Android
+ msg:{"status":"error99","msg":"%e5%af%b9%e8%b7%af%e5%be%84%e2%80%9c2.xml%e2%80%9d%e7%9a%84%e8%ae%bf%e9%97%ae%e8%a2%ab%e6%8b%92%e7%bb%9d%e3%80%82","data":null}
+
+2016-08-20 10:33:45 任务ID:12611 目标IP:0.0.0.0 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"12611","Channel":"360","GameID":"DemoGame","ChannelVersion":"w1.3.0_468","GameVersion":"1.0_20160820215626566","IconID":"DemoGame_Default","BatchNo":"20160820221424127","SdkVer":"1.2.1","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+
+2016-08-20 11:01:17 任务ID:12611 目标IP:0.0.0.0 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"12611","Channel":"360","GameID":"DemoGame","ChannelVersion":"w1.3.0_468","GameVersion":"1.0_20160820215626566","IconID":"DemoGame_Default","BatchNo":"20160820221424127","SdkVer":"1.2.1","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+
+2016-08-20 11:02:03 任务ID:12612 目标IP:0.0.0.0 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"12612","Channel":"360","GameID":"DemoGame","ChannelVersion":"w1.3.0_468","GameVersion":"1.0_20160820215626566","IconID":"DemoGame_Default","BatchNo":"20160820222425797","SdkVer":"1.2.1","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+
+2016-08-20 11:02:12 任务ID:12613 目标IP:0.0.0.0 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"12613","Channel":"360","GameID":"DemoGame","ChannelVersion":"w1.3.0_468","GameVersion":"1.0_20160820215626566","IconID":"DemoGame_Default","BatchNo":"20160820223147357","SdkVer":"1.2.1","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+
+2016-08-20 11:02:33 任务ID:12614 目标IP:0.0.0.0 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"12614","Channel":"360","GameID":"DemoGame","ChannelVersion":"w1.3.0_468","GameVersion":"1.0_20160820215626566","IconID":"DemoGame_Default","BatchNo":"20160820223501966","SdkVer":"1.2.1","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+
+2016-08-20 11:02:38 任务ID:12615 目标IP:0.0.0.0 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"12615","Channel":"360","GameID":"DemoGame","ChannelVersion":"w1.3.0_468","GameVersion":"1.0_20160820215626566","IconID":"DemoGame_Default","BatchNo":"20160820230105908","SdkVer":"1.2.1","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+
+2016-08-20 11:10:15 任务ID:12611 目标IP:0.0.0.0 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"12611","Channel":"360","GameID":"DemoGame","ChannelVersion":"1.3.0_468_1","GameVersion":"1.0_20160820215626566","IconID":"DemoGame_Default","BatchNo":"20160820221424127","SdkVer":"1.2.1","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+
+2016-08-20 11:10:58 任务ID:12612 目标IP:0.0.0.0 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"12612","Channel":"360","GameID":"DemoGame","ChannelVersion":"1.3.0_468_1","GameVersion":"1.0_20160820215626566","IconID":"DemoGame_Default","BatchNo":"20160820222425797","SdkVer":"1.2.1","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+

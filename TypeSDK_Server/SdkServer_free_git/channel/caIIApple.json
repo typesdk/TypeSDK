@@ -1,0 +1,59 @@
+{
+  "version":"",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "user_id" : ""
+    ,"session" : ""
+    }
+    ,"out_url" : "http://ucenter.iiapple.com/foreign/oauth/verification.php"
+    ,"out_params" :
+    {
+      "user_id" : ""
+    ,"session" : ""
+    ,"game_id" : ""
+    ,"_sign" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "transaction" : ""
+      ,"payType" : ""
+      ,"userId" : ""
+      ,"serverNo" : ""
+      ,"amount" : ""
+      ,"cardPoint" : ""
+      ,"gameUserId" : ""
+      ,"transactionTime" : ""
+      ,"gameExtend" : ""
+      ,"platform" : ""
+      ,"status" : ""
+      ,"currency" : ""
+      ,"_sign" : ""
+      }
+    ,"out_url" :"http://ucenter.iiapple.com/foreign/oauth/verification.php"
+    ,"out_params" :
+      {
+        "transaction" : ""
+      ,"payType" : ""
+      ,"userId" : ""
+      ,"serverNo" : ""
+      ,"amount" : ""
+      ,"cardPoint" : ""
+      ,"gameUserId" : ""
+      ,"transactionTime" : ""
+      ,"gameExtend" : ""
+      ,"platform" : ""
+      ,"status" : ""
+      ,"currency" : ""
+      ,"_sign" : ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false" android:color="@color/sogou_game_sdk_color_ff6a00"/>
+    <item android:state_pressed="true" android:color="@color/sogou_game_sdk_white"/>
+
+</selector>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:fitsSystemWindows="true"
+              android:background="@color/activity_default_background">
+    <include layout="@layout/mg_forum_title_layout"/>
+
+    <view class="com.papa91.pay.widget.ForumLoadingView"
+          android:id="@+id/loadingView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+        <view class="com.papa91.pay.widget.XListView"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/mg_forum_profile_message_list"
+              android:listSelector="@android:color/transparent"
+              android:divider="@android:color/transparent"
+              android:dividerHeight="0dp"
+              android:descendantFocusability="beforeDescendants"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:layout_weight="1.0"/>
+    </view>
+
+</LinearLayout>

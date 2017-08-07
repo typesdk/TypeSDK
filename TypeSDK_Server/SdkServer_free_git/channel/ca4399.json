@@ -1,0 +1,47 @@
+{
+  "version":"2.7.0.3.20160226",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "uid" : ""
+    ,"state" : ""
+    }
+    ,"out_url" : "http://m.4399api.com/openapi/oauth-check.html"
+    ,"out_params" :
+    {
+      "uid" : ""
+    ,"state" : ""
+    ,"key" : ""
+    ,"sign" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+      "orderid" : ""
+      ,"p_type" : ""
+      ,"uid" : ""
+      ,"money" : ""
+      ,"gamemoney" : ""
+      ,"time":""
+      ,"sign":""
+      }
+    ,"out_url" :"http://cp.com/sdkpay"
+    ,"out_params" :
+      {
+        "orderid" : ""
+      ,"p_type" : ""
+      ,"uid" : ""
+      ,"money" : ""
+      ,"gamemoney" : ""
+      ,"time":""
+      ,"sign":""
+      }
+    }
+  ]
+}

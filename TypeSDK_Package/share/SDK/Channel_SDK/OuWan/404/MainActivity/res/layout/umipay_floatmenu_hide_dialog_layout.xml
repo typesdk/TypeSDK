@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "250dp"
+              android:layout_height = "wrap_content"
+              android:background ="#57000000"
+              android:orientation = "vertical" >
+
+	<TextView
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="10dp"
+			android:text="@string/umipay_floatmenu_dialog_title"
+			android:textColor = "#ffffff"
+			android:textSize = "15sp" />
+    <ImageView
+        android:id="@+id/umipay_floatmenu_techImageView"
+        android:src="@drawable/umipay_floatmenu_hide_tips"
+        android:layout_marginLeft="10dp"
+        android:layout_width ="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+	<LinearLayout
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_centerVertical = "true"
+			android:background = "@null"
+			android:gravity = "center_vertical"
+			android:orientation="horizontal">
+		<CheckBox
+				android:id = "@+id/umipay_floatmenudialog_checkBox"
+				android:layout_width = "18dp"
+				android:layout_height = "18dp"
+				android:background = "@drawable/umipay_checkbox_default"
+				android:button = "@null"
+				android:checked = "false"/>
+
+
+		<TextView
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginLeft = "3dp"
+				android:clickable = "false"
+				android:textSize="15sp"
+				android:text = "@string/umipay_floatmenu_dialog_checkbox"/>
+		</LinearLayout >
+
+
+	    <Button
+			    android:id = "@+id/umipay_floatmenu_btn"
+			    android:layout_width = "match_parent"
+			    android:layout_height = "35dp"
+			    android:layout_gravity="center"
+			    android:layout_margin="10dp"
+			    android:layout_alignParentRight = "true"
+			    android:layout_centerVertical = "true"
+			    android:background = "@drawable/umipay_floatmenu_dialog_btn_hide"
+			    android:text = "@string/umipay_floatmenu_dialog_button"
+			    android:textColor = "#ffffff"
+			    android:textSize = "15sp" />
+</LinearLayout >

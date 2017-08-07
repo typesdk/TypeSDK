@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/mg_forum_profile_message_main"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:paddingTop="4dp"
+              android:paddingLeft="14dp"
+              android:paddingRight="14dp"
+              android:paddingBottom="14dp"
+              android:clickable="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/post_profile_post_profile"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f2f2f2"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp">
+
+        <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/post_profile_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/main_normal_icon"
+                android:layout_marginLeft="8dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text=""
+                android:id="@+id/post_profile_message" android:layout_toRightOf="@+id/post_profile_image"
+                android:layout_alignTop="@+id/post_profile_image"
+                android:textColor="#3b3b3b" android:textSize="@dimen/mg_forum_profile_post_message_text_size"
+                android:lineSpacingExtra="1dp"
+                android:lineSpacingMultiplier="1.2"
+                android:ellipsize="end" android:maxLines="3"
+        />
+    </RelativeLayout>
+</LinearLayout>

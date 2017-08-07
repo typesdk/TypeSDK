@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mini_text_color_gray">#333333</color>
+    <color name="mini_hint_color">#b2b2b2</color>
+    <color name="mini_error_hint_color">#ffffff</color>
+    <color name="mini_error_input">#FF0000</color>
+    <color name="mini_text_shadow">#fefefe</color>
+    <color name="mini_text_white">#ffffff</color>
+    <color name="mini_text_black">#000000</color>
+    <color name="mini_button_text_disable">#aaaaaa</color>
+    <color name="mini_button_text_normal">#ffffff</color>
+    <color name="mini_text_link">#2861d7</color>
+    <color name="mini_list_bg_color">#bababa</color>
+    <color name="mini_page_bg_color">#ededed</color>
+    <color name="mini_input_hint_color">#cccccc</color>
+    <color name="mini_win_background">#00000000</color>
+    <color name="mini_card_defaultuse">#FF9933</color>
+
+    <drawable name="mini_list_devider">#bababa</drawable>
+    <drawable name="mini_page_bg_color">#ededed</drawable>
+    <drawable name="mini_win_background_draw">#00000000</drawable>
+
+    <color name="mini_color_gray">#666666</color>
+    <color name="mini_color_light_gray">#999999</color>
+    <color name="mini_text_color_desc">#999999</color>
+    <color name="mini_cardlimit_text_color">#000000</color>
+    <color name="mini_cardlimit_money_color">#666666</color>
+    <color name="mini_card_edti_bk">#31373e</color>
+    <color name="mini_card_edit_pop_shadow">#59000000</color>
+
+    <color name="setting_translucent_bg">#e0000000</color>
+    
+    
+    <color name="B_black">#FF000000</color>
+    <color name="C_white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+              android:padding="0dp">
+
+    <LinearLayout
+            android:id="@+id/last_page_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+
+        <TextView
+                android:id="@+id/last_page_view"
+                style="@style/PayBottomTextViewStyle"
+                android:text="@string/pay_last_page_order"
+                />
+
+        <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="#d6d6d6"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/select_page_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/select_page_view"
+                style="@style/PayBottomTextViewStyle"
+                android:text="@string/pay_select_page_order"/>
+
+        <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:background="#d6d6d6"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/next_page_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/next_page_view"
+                style="@style/PayBottomTextViewStyle"
+                android:text="@string/pay_next_page_order"/>
+    </LinearLayout>
+
+</LinearLayout>

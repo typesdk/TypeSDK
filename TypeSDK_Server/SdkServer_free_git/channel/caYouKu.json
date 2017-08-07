@@ -1,0 +1,41 @@
+{
+  "version":"v2.6.1.20160427",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "sessionid" : ""
+    }
+    ,"out_url" : "http://sdk.api.gamex.mobile.youku.com/game/user/infomation"
+    ,"out_params" :
+    {
+      "sessionid" : ""
+    ,"appkey" : ""
+    ,"sign" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "apporderID": ""
+      ,"uid": ""
+      ,"price": ""
+      ,"sign" : ""
+
+      }
+    ,"out_url" :"http://sdk.api.gamex.mobile.youku.com/game/user/infomation"
+    ,"out_params" :
+      {
+        "apporderID": ""
+      ,"uid": ""
+      ,"price": ""
+      ,"sign" : ""
+      }
+    }
+  ]
+}

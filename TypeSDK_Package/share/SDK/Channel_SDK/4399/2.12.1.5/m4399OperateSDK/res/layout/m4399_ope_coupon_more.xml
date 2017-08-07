@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/m4399_ope_coupon_how_to_get"
+        android:textColor="#54c727"
+        android:textSize="@dimen/m4399_ope_coupon_more_tv_size" />
+
+    <ImageView
+        android:layout_width="@dimen/m4399_ope_coupon_arrow_width"
+        android:layout_height="@dimen/m4399_ope_coupon_arrow_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/m4399_ope_coupon_go" />
+
+</LinearLayout>

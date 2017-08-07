@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lepay_fillparent"
+    android:background="@color/lepay_page_layout_bg_color"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/lepay_actionbar"
+        layout="@layout/lepay_actionbar" />
+    
+      <RelativeLayout 
+        android:id="@+id/lepay_fastpay_pwd_open_area"
+        style="@style/lepay_width_fillparent"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/lepay_layout_ditu">
+        
+        <ImageView
+            android:id="@+id/lepay_iv_pwdopen"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="10.5dp"
+            android:layout_marginLeft="17.5dp"
+            android:layout_marginBottom="10.5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_pwd_open"/>
+        
+        <TextView 
+            android:id="@+id/lepay_tv_pwdopen"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="0.0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/lepay_iv_pwdopen"
+            android:layout_centerVertical="true"
+            android:textColor="@color/lepay_item_bankno_font_color"
+            android:textSize="@dimen/lepay_item_bankno_font_size" 
+            android:layout_gravity="center_vertical"
+            android:text="@string/lepay_fastpay_pwd_open"
+            />
+        
+        <ImageView
+            android:id="@+id/lepay_iv_pwdopen_icon_extension"
+            style="@style/lepay_wrapparent"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_extension"/>
+        
+     </RelativeLayout>
+</LinearLayout>

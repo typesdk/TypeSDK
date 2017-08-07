@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <com.downjoy.widget.ClipBgRelativeLayout
+        android:id="@+id/dcn_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dcn_login_bg_default"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:id="@+id/dcn_title_layer"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <LinearLayout
+                    android:id="@+id/dcn_exit"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/dcn_popup_closed_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dcn_back"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/dcn_back_btn_selector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@null"
+                        android:src="@drawable/dcn_back_ic" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.downjoy.widget.vollyextend.CircleNetworkImageView
+                    android:id="@+id/dcn_user_avatar"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@null"
+                    android:background="@drawable/dcn_shape_circle"
+                    android:src="@drawable/dcn_logo" />
+
+                <ImageView
+                    android:id="@+id/dcn_login_loadding_anim_iv"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    android:src="@drawable/dcn_login_loading" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dcn_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:measureWithLargestChild="true"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/dcn_content_login"
+                    layout="@layout/dcn_login" />
+
+                <include
+                    android:id="@+id/dcn_content_login_by_phone"
+                    layout="@layout/dcn_login_by_phone_smscode"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/dcn_content_register_by_name"
+                    layout="@layout/dcn_register_by_name"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/dcn_content_register_by_phone"
+                    layout="@layout/dcn_register_by_phone"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/dcn_content_register_by_email"
+                    layout="@layout/dcn_register_by_email"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/dcn_content_logining"
+                    layout="@layout/dcn_logining"
+                    android:visibility="gone" />
+
+                <include
+                    android:id="@+id/dcn_content_certification"
+                    layout="@layout/dcn_register_certification"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <!-- 登录显示可选方式 start -->
+
+            <LinearLayout
+                android:id="@+id/dcn_login_mode_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dcn_login_padding_left_right"
+                android:paddingRight="@dimen/dcn_login_padding_left_right">
+
+                <!--<com.downjoy.widget.DashedLine-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.downjoy.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/dcn_login_ext_qq_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/dcn_login_by_qq_selector"
+                        android:clickable="true"
+                        android:contentDescription="@null" />
+
+                    <com.downjoy.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/dcn_login_ext_weibo_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/dcn_login_ext_qq_iv"
+                        android:background="@drawable/dcn_login_by_weibo_selector"
+                        android:clickable="true"
+                        android:contentDescription="@null" />
+
+                    <com.downjoy.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/dcn_login_ext_phone_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/dcn_login_ext_weibo_iv"
+                        android:background="@drawable/dcn_login_by_phone_selector"
+                        android:clickable="true"
+                        android:contentDescription="@null" />
+
+                    <com.downjoy.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/dcn_login_ext_name_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/dcn_login_ext_phone_iv"
+                        android:background="@drawable/dcn_login_by_name_selector"
+                        android:clickable="true"
+                        android:contentDescription="@null"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/dcn_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/dcn_register_count"
+                        android:textColor="@color/dcn_white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 登录显示可选方式 end -->
+            <!-- 注册显示可选方式 start -->
+
+            <LinearLayout
+                android:id="@+id/dcn_register_mode_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dcn_login_padding_left_right"
+                android:paddingRight="@dimen/dcn_login_padding_left_right"
+                android:visibility="gone">
+
+                <!--<com.downjoy.widget.DashedLine-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp" />-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/dcn_register_mode"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="@string/dcn_register_method_other"-->
+                    <!--android:textColor="#7c7c7c"-->
+                    <!--android:textSize="15sp" />-->
+
+                    <com.downjoy.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/dcn_register_ext_phone_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/dcn_login_by_phone_selector"
+                        android:clickable="true"
+                        android:contentDescription="@null" />
+
+                    <com.downjoy.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/dcn_register_ext_name_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/dcn_register_ext_phone_iv"
+                        android:background="@drawable/dcn_login_by_name_selector"
+                        android:clickable="true"
+                        android:contentDescription="@null" />
+
+                    <com.downjoy.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/dcn_register_ext_email_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toRightOf="@id/dcn_register_ext_name_iv"
+                        android:background="@drawable/dcn_login_by_email_selector"
+                        android:clickable="true"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/dcn_register_have_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:clickable="true"
+                        android:text="@string/dcn_login_exist_account"
+                        android:textColor="@color/dcn_white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 注册显示可选方式 start -->
+        </LinearLayout>
+    </com.downjoy.widget.ClipBgRelativeLayout>
+    <!-- 公告 -->
+
+    <com.downjoy.widget.AnnView
+        android:id="@+id/dcn_annView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dcn_login_background"
+        android:visibility="gone" />
+
+</FrameLayout>

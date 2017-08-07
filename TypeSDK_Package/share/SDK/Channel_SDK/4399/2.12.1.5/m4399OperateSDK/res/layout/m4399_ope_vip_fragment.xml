@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/m4399_ope_vip_page_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/m4399_ope_vip_page_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@drawable/m4399_ope_vip_page_top_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/m4399_ope_qq" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vip_qq_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/m4399_ope_bind_white"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/vip_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/m4399_ope_bind_white"
+                    android:textSize="@dimen/m4399_ope_vip_tv_size_two" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/vip_no_prompt"
+                android:layout_width="100dp"
+                android:layout_height="43dp"
+                android:background="@drawable/m4399_ope_vip_close_btn_bg"
+                android:gravity="center"
+                android:text="@string/m4399_ope_vip_nolonger_show"
+                android:textColor="@color/m4399_ope_bind_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/m4399_ope_huangguan" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/vip_info_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/m4399_ope_perfect_center_text"
+        android:textSize="16sp" />
+
+    <include layout="@layout/m4399_ope_vip_perfect_btn" />
+
+
+    <View style="@style/m4399PerfectLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/vip_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/m4399_ope_vip_button_bg_left"
+            android:gravity="center"
+            android:text="@string/m4399_ope_vip_next_time"
+            android:textColor="#dd000000"
+            android:textSize="@dimen/m4399_ope_vip_tv_size_two" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/m4399_ope_perfect_line" />
+
+        <LinearLayout
+            android:id="@+id/vip_contact_client"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/m4399_ope_vip_button_bg_right"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/alert_sure_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m4399_ope_vip_contact_qq"
+                android:textColor="#54c727"
+                android:textSize="@dimen/m4399_ope_vip_tv_size_two" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

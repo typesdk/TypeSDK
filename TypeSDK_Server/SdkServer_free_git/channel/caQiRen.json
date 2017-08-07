@@ -1,0 +1,39 @@
+{
+  "version": "1.0.20161214",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "POST",
+      "in_params": {
+        "uin": "",
+        "token": ""
+      },
+      "out_url": "http://lm.7rgame.com:81/token_verify",
+      "out_params": {
+        "uin": "",
+        "token": ""
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "order_id": "",
+        "uin": "",
+        "amount": "",
+        "trade_status": "",
+        "extra_param": "",
+        "sign": ""
+      },
+      "out_url": "http://lm.7rgame.com:81/token_verify",
+      "out_params": {
+        "order_id": "",
+        "uin": "",
+        "amount": "",
+        "trade_status": "",
+        "extra_param": "",
+        "sign": ""
+      }
+    }
+  ]
+}

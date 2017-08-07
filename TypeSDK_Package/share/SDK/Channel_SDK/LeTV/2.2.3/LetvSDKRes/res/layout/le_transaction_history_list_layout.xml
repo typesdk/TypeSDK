@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F1F3" >
+
+    <com.le.legamesdk.widget.LeListView
+        android:id="@+id/transaction_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sdk_transparent"
+        android:cacheColorHint="@color/sdk_transparent"
+        android:clickable="false"
+        android:descendantFocusability="beforeDescendants"
+        android:divider="#00000000"
+        android:dividerHeight="4dp"
+        android:listSelector="@color/sdk_transparent"
+        android:scrollingCache="false" />
+
+    <TextView
+        android:id="@+id/le_transaction_error_txt"
+        style="@style/LeStyleGray14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

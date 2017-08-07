@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/kg_common_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/kg_formal_account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+        android:id="@+id/kg_usercenter_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:background="@color/kg_common_title_back"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/kg_layout_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="5dp" >
+
+                <com.kugou.game.sdk.ui.widget.RoundImageView
+                    android:id="@+id/kg_iv_user_photo"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_alignBottom="@+id/kg_iv_vip_head"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="1dip"
+                    android:src="@drawable/kg_person_photo" />
+
+                <ImageView
+                    android:id="@+id/kg_iv_vip_head"
+                    android:layout_width="71dip"
+                    android:layout_height="74dip"
+                    android:src="@drawable/kg_vip_head"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/relativeLayout1" >
+
+                <TextView
+                    android:id="@+id/kg_tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/kg_tv_username"
+                    android:layout_below="@+id/kg_tv_username"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="@string/kg_usercenter_kubi_balance"
+                    android:textColor="@color/kg_common_white"
+                    android:textSize="@dimen/kg_common_medium"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/kg_tv_kubi_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/kg_tv_balance"
+                    android:layout_alignBottom="@+id/kg_tv_balance"
+                    android:layout_toRightOf="@+id/kg_tv_balance"
+                    android:textColor="@color/kg_common_white"
+                    android:textSize="@dimen/kg_common_medium" />
+
+                <TextView
+                    android:id="@+id/kg_tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:textColor="@color/kg_common_white"
+                    android:textSize="@dimen/kg_common_large"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/kg_common_white"
+            android:splitMotionEvents="false" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:splitMotionEvents="false" >
+
+                <RelativeLayout
+                    android:id="@+id/kg_layout_usercenter_kubi_recharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kg_user_center_background_but_selector" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" >
+
+                        <ImageView
+                            android:id="@+id/kg_iv_kubi_recharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/kg_img_kubi_recharge" />
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/kg_iv_kubi_recharge"
+                            android:layout_centerHorizontal="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/kg_tv_layout_kubi_recharge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:gravity="center_vertical"
+                                android:text="@string/kg_kubi_recharge"
+                                android:textColor="@drawable/kg_user_center_text_bg_selector"
+                                android:textSize="@dimen/kg_common_medium" />
+
+                            <TextView
+                                android:id="@+id/kg_tv_kubi_recharge_preferential"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/kg_common_gray_lighter"
+                                android:textSize="@dimen/kg_common_small" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/kg_common_gray_most_lighter" />
+
+                <RelativeLayout
+                    android:id="@+id/kg_layout_account_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kg_user_center_background_but_selector" >
+
+                    <TextView
+                        android:id="@+id/kg_tv_account_security"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/kg_img_account_safe"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/kg_usercenter_account_safety"
+                        android:textColor="@drawable/kg_user_center_text_bg_selector"
+                        android:textSize="@dimen/kg_common_medium" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/kg_common_gray_most_lighter" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:splitMotionEvents="false" >
+
+                <RelativeLayout
+                    android:id="@+id/kg_layout_cost_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kg_user_center_background_but_selector" >
+
+                    <TextView
+                        android:id="@+id/kg_user_center_cost_record_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/kg_img_cost_record"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/kg_consume_record"
+                        android:textColor="@drawable/kg_user_center_text_bg_selector"
+                        android:textSize="@dimen/kg_common_medium" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/kg_common_gray_most_lighter" />
+
+                <RelativeLayout
+                    android:id="@+id/kg_layout_my_messages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kg_user_center_background_but_selector" >
+
+                    <TextView
+                        android:id="@+id/kg_tv_my_messages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/kg_img_my_message"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/kg_usercenter_mynews"
+                        android:textColor="@drawable/kg_user_center_text_bg_selector"
+                        android:textSize="@dimen/kg_common_medium" />
+
+                    <TextView
+                        android:id="@+id/kg_tv_my_messages_count"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignRight="@+id/kg_tv_my_messages"
+                        android:layout_alignTop="@+id/kg_tv_my_messages"
+                        android:background="@drawable/kg_bg_red_circle"
+                        android:gravity="center"
+                        android:text="99"
+                        android:textColor="#ffffffff"
+                        android:textSize="@dimen/kg_common_small" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/kg_common_gray_most_lighter" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:splitMotionEvents="false" >
+
+                <RelativeLayout
+                    android:id="@+id/kg_layout_personal_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kg_user_center_background_but_selector" >
+
+                    <TextView
+                        android:id="@+id/kg_tv_personal_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/kg_img_user_info"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/kg_personal_info"
+                        android:textColor="@drawable/kg_user_center_text_bg_selector"
+                        android:textSize="@dimen/kg_common_medium" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/kg_common_gray_most_lighter" />
+
+                <RelativeLayout
+                    android:id="@+id/kg_layout_common_change_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kg_user_center_background_but_selector" >
+
+                    <TextView
+                        android:id="@+id/kg_user_center_changer_account_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/kg_img_change_account"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/kg_change_account"
+                        android:textColor="@drawable/kg_user_center_text_bg_selector"
+                        android:textSize="@dimen/kg_common_medium" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kg_informal_account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/kg_layout_temporary_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kg_user_center_background_but_selector" >
+
+            <TextView
+                android:id="@+id/kg_tv_temporary_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/kg_img_temporary_account"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/kg_usercenter_actiuser"
+                android:textSize="@dimen/kg_common_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/kg_tv_temporary_account"
+                android:text="@string/kg_usercenter_informal_account_tip"
+                android:textColor="@color/kg_common_red"
+                android:textSize="@dimen/kg_common_small" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/kg_common_gray_most_lighter" />
+
+        <RelativeLayout
+            android:id="@+id/kg_layout_land_change_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kg_user_center_background_but_selector" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/kg_img_change_account"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:text="@string/kg_change_account"
+                android:textSize="@dimen/kg_common_large" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/kg_common_gray_most_lighter" />
+    </LinearLayout>
+
+</LinearLayout>

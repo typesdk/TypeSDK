@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff2ebdc"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_marginRight="5.0dip"
+                android:background="@drawable/slyx_info"
+                android:contentDescription="@string/slyx_img_des" />
+
+            <TextView
+                android:id="@+id/slyx_already_binded_dis_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffe59139"
+                android:textSize="13.0sp" />
+            
+        </LinearLayout>
+
+       
+</LinearLayout>

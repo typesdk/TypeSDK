@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/com_lenovo_pay_process_bg">
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp" >
+
+
+        <TextView
+            android:id="@+id/title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/com_lenovo_pay_dlg_tip_title_text"
+            android:textColor="@color/com_lenovo_pay_goods_label"
+            android:textSize="@dimen/com_lenovo_pay_goods_fontsize" />
+
+        <View
+            android:id="@+id/layout_title_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/com_lenovo_pay_gray" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/com_lenovo_pay_goods_marginTop"
+            android:layout_marginLeft="@dimen/com_lenovo_pay_goods_marginLeft"
+            android:layout_marginRight="@dimen/com_lenovo_pay_goods_marginLeft"
+            android:layout_marginTop="@dimen/com_lenovo_pay_goods_marginTop"
+        android:layout_below="@+id/layout_title" >
+
+        <EditText
+            android:id="@+id/txt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/com_lenovo_pay_goods_label"
+            android:textSize="@dimen/com_lenovo_pay_goods_fontsize" />
+
+        <ImageView
+            android:id="@+id/txt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/com_lenovo_pay_delete" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layout_text"
+        android:background="@color/com_lenovo_pay_gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/com_lenovo_pay_button_height"
+        android:layout_below="@id/view_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/com_lenovo_pay_transparent_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/com_lenovo_pay_dlg_cancel_text"
+            android:textColor="@color/com_lenovo_pay_button"
+            android:textSize="@dimen/com_lenovo_pay_button_fontsize" />
+
+        <View
+            android:id="@+id/lenovodialog_ok_cancel_mid"
+            android:layout_width="1px"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/com_lenovo_pay_gray" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/com_lenovo_pay_transparent_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/com_lenovo_pay_dlg_ok_text"
+            android:textColor="@color/com_lenovo_pay_button"
+            android:textSize="@dimen/com_lenovo_pay_button_fontsize" />
+    </LinearLayout>
+
+</RelativeLayout>

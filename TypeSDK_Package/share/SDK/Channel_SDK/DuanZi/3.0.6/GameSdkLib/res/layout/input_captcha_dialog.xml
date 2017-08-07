@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/login_mask_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/login_panel"
+        android:layout_gravity="center">
+        <LinearLayout
+            style="@style/login_panel_input_normal"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="0dp"
+            android:layout_marginTop="0dp">
+            <ImageView
+                android:id="@+id/captcha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/bg_captcha_edit"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/login_panel_input_secondary">
+
+            <EditText
+                android:id="@+id/captcha_edit"
+                android:inputType="text"
+                android:hint="@string/input_captcha_title"
+                style="@style/login_panel_input_text"/>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="12dp"
+                android:background="@color/heise3"/>
+
+            <Button
+                android:id="@+id/change_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_captcha"
+                style="@style/action_light_small_btn"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/cancel"
+                style="@style/login_panel_button"
+                android:text="@string/label_cancel"/>
+
+            <TextView
+                android:id="@+id/ok"
+                style="@style/login_panel_button"
+                android:layout_marginLeft="5dp"
+                android:text="@string/label_confirm"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/nubia_window_background">
+
+    <FrameLayout
+        android:id="@+id/common"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/nubia_color_blue_100" >
+        <include layout="@layout/nubia_header_background" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/user_view"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/nubia_item_padding_side"
+                android:layout_marginTop="@dimen/nubia_item_padding_top"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/my_et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/nubia_name"
+                    android:gravity="center_vertical"
+                    android:hint="@string/my_et_phone_email_hint"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textCursorDrawable="@drawable/nubia_cursor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/user_view"
+                android:layout_marginLeft="@dimen/nubia_line_padding"
+                android:background="@color/nubia_color_black_10" />
+
+            <LinearLayout
+                android:id="@+id/password_view"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/user_view"
+                android:layout_marginLeft="@dimen/nubia_item_padding_side"
+                android:layout_marginRight="@dimen/nubia_item_padding_side"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/my_et_password"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/nubia_password"
+                    android:hint="@string/nubia_et_phone_password_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textCursorDrawable="@drawable/nubia_cursor" />
+
+                <TextView
+                    android:id="@+id/show_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/password_view"
+                android:layout_marginLeft="@dimen/nubia_line_padding"
+                android:background="@color/nubia_color_black_10" />
+
+            <cn.nubia.sdk.activity.ui.NubiaUserAgreementView
+                android:id="@+id/nubia_user_agreement_view"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:layout_below="@id/password_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/nubia_user_agreement_view"
+                android:layout_marginLeft="@dimen/nubia_line_padding"
+                android:background="@color/nubia_color_black_10"/>
+
+            <Button
+                android:id="@+id/nubia_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nubia_user_agreement_view"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="@dimen/nubia_regist_email_btn_padding_left"
+                android:layout_marginRight="@dimen/nubia_item_padding_side"
+                android:background="@null"
+                android:text="忘记密码？"
+                android:textColor="@color/nubia_color_blue_100"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/nubia_forget_password"
+                android:layout_marginLeft="@dimen/nubia_line_padding"
+                android:background="@color/nubia_color_black_10"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/nubia_line_padding_top"
+        android:background="@color/nubia_color_black_10" />
+
+    <include layout="@layout/nubia_bottom_bar" />
+
+</LinearLayout>

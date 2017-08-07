@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/lib_background"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:orientation="vertical">
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_gravity="center_horizontal">
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+            <TextView
+                    android:id="@+id/lib_temp_update_tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/lib_text_black"
+                    android:textSize="17sp"
+                    android:text="@string/lib_temp_update_tip"
+                    android:visibility="gone"
+                    />
+
+            <com.stargame.sdk.ui.view.EditTextWithClearButton
+                    style="@style/LibEditTextStyle"
+                    android:id="@+id/lib_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textNoSuggestions"
+                    android:hint="@string/lib_input_email_or_phone"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+            <com.stargame.sdk.ui.view.EditTextWithClearButton
+                    style="@style/LibEditTextStyle"
+                    android:id="@+id/lib_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textNoSuggestions"
+                    android:hint="@string/lib_input_password"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+            style="@style/LibButtonStyle"
+            android:id="@+id/lib_confirm"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/lib_button_red_background"
+            android:text="@string/lib_confirm"/>
+</RelativeLayout>

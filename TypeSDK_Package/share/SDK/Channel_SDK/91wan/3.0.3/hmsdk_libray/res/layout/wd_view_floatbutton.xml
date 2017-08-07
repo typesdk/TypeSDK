@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" >
+
+    <LinearLayout
+        android:id="@+id/wd_ll_float_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="@dimen/wd_margin_3"
+        android:layout_marginTop="@dimen/wd_margin_3"
+        android:background="@drawable/wd_float_menu_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/wd_tv_float_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wd_margin_6"
+            android:layout_marginRight="@dimen/wd_margin_6"
+            android:paddingRight="@dimen/wd_margin_8"
+            android:clickable="true"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/wd_float_menu_account"
+            android:text="@string/wd_account"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/wd_text_size_7" />
+
+        <!--<TextView-->
+                <!--android:id="@+id/wd_tv_float_gift"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/wd_margin_6"-->
+                <!--android:layout_marginRight="@dimen/wd_margin_6"-->
+                <!--android:clickable="true"-->
+                <!--android:drawablePadding="2dp"-->
+                <!--android:drawableTop="@drawable/wd_float_menu_gift"-->
+                <!--android:text="@string/wd_gift"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:textSize="@dimen/wd_text_size_7"-->
+                <!--android:visibility="visible"/>-->
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/wd_fl_float_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/wd_iv_float_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/wd_image_float_logo" />
+    </FrameLayout>
+
+</FrameLayout>

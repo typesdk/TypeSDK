@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.le.legamesdk.widget.LeMainViewParent
+        android:id="@+id/le_main_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/le_sdk_main_view_margin"
+        android:background="@drawable/le_main_view_border_line_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/le_main_view_action_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_main_view_action_bar_height"
+                layout="@layout/le_main_view_action_bar_layout" />
+
+            <TextView
+                android:id="@+id/le_unbind_verify_info"
+                style="@style/LeStyleBlack18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/le_verify_info_end" />
+
+            <TextView
+                android:id="@+id/le_unbind_phone_phone_text"
+                style="@style/LeStyleBlack18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="@dimen/margin_15"
+                android:background="@drawable/le_hollow_border_line_bg_round"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/le_unbind_phone_verify_code_btn"
+                    style="@style/LeVerifyButtonText"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/title_activity_binding_phone_verify_code" />
+
+                <View
+                    android:id="@+id/le_unbind_phone_line"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toLeftOf="@id/le_unbind_phone_verify_code_btn"
+                    android:layout_toStartOf="@id/le_unbind_phone_verify_code_btn"
+                    android:background="@color/le_border_line_color" />
+
+                <EditText
+                    android:id="@+id/le_unbind_phone_verify_code_edit"
+                    style="@style/LeStyleBlack16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@id/le_unbind_phone_line"
+                    android:layout_toStartOf="@id/le_unbind_phone_line"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/title_activity_binding_phone_verify_code_hint"
+                    android:inputType="number"
+                    android:paddingLeft="4dp"
+                    android:paddingStart="4dp"
+                    android:maxLength="6" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/le_unbind_phone_next_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_button_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_15"
+                android:background="@drawable/le_solid_button_bg"
+                android:text="@string/le_sdk_next_content"
+                android:textColor="@color/lepay_white" />
+        </LinearLayout>
+    </com.le.legamesdk.widget.LeMainViewParent>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1시간</item>
+        <item quantity="other">%d시간</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1분</item>
+        <item quantity="other">%d분</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1초</item>
+        <item quantity="other">%d초</item>
+    </plurals>
+    <string name="tw__like_tweet">마음에 들어요</string>
+    <string name="tw__liked_tweet">마음에 들어요 취소</string>
+    <string name="tw__loading_tweet">트윗을 불러오는 중</string>
+    <string name="tw__pause">일시 정지</string>
+    <string name="tw__play">재생</string>
+    <string name="tw__relative_date_format_long">yy/MM/dd</string>
+    <string name="tw__relative_date_format_short">MMM d일</string>
+    <string name="tw__replay">재시작</string>
+    <string name="tw__retweeted_by_format">%1$s 님이 리트윗함</string>
+    <string name="tw__share_content_format">\@%1$s 님의 트윗 보기: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">%1$s (\@%2$s) 님의 트윗</string>
+    <string name="tw__share_tweet">트윗 공유하기</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">트윗 미디어</string>
+</resources>

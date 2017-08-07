@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/lion_layout_user_anti_addict_system_already"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lion_common_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip">
+
+            <TextView
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/lion_text_user_anti_addict_system_notice_name"
+                android:textColor="@color/lion_common_black"
+                android:textSize="16.0sp"/>
+
+            <com.lion.ccpay.view.item.UserRealNameView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/lion_common_text_gray"
+                android:textSize="14.0sp"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/lion_layout_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip">
+
+            <TextView
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/lion_text_user_anti_addict_system_notice_card"
+                android:textColor="@color/lion_common_black"
+                android:textSize="16.0sp"/>
+
+            <com.lion.ccpay.view.item.UserRealCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/lion_common_text_gray"
+                android:textSize="14.0sp"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/lion_layout_line"/>
+
+        <com.lion.ccpay.widget.UserAuthIconLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:background="@drawable/lion_common_frame_bottom_nor"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip">
+
+            <TextView
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/lion_text_user_anti_addict_system_notice_icon"
+                android:textColor="@color/lion_common_black"
+                android:textSize="16.0sp"/>
+
+            <TextView
+                android:id="@+id/lion_layout_user_anti_addict_system_already_icon_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/lion_text_user_anti_addict_system_checked"
+                android:textColor="@color/lion_common_text_gray"
+                android:textSize="14.0sp"/>
+
+        </com.lion.ccpay.widget.UserAuthIconLayout>
+    </LinearLayout>
+</LinearLayout>

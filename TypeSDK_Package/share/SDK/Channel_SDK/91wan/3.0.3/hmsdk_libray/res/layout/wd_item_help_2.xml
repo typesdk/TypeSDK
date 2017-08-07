@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wd_pay_help_2_item_bg_2"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/wd_icon_show_2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/wd_pay_help_front_collapse"/>
+
+    <TextView
+        android:id="@+id/wd_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/wd_icon_show_2"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#0000ff"
+        android:text="000" />
+
+    <ImageView
+        android:id="@+id/wd_icon_2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/wd_pay_help_behind_collapse"/>
+
+</RelativeLayout>

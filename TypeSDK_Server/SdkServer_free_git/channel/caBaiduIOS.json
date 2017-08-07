@@ -1,0 +1,62 @@
+{
+    "actions":[
+        {
+            "name":"Login"
+        ,"method":"GET"
+        ,"in_params":
+        {
+            "Uin" : ""
+        ,"SessionId" : ""
+        }
+        ,"out_url" :"http://service.sj.91.com/usercenter/AP.aspx"
+        ,"out_params" :
+        {
+            "Act" : 0
+        ,"Uin" : ""
+        ,"SessionId" : ""
+        ,"Sign" : ""
+        }
+        }
+    ,{
+            "name":"Pay"
+        ,"method":"POST"
+        ,"in_params":
+            {
+                "AppId" : 0
+            ,"Act" : ""
+            ,"ProductName" : ""
+            ,"ConsumeStreamId" : ""
+            ,"CooOrderSerial" :""
+            ,"Uin" :""
+            ,"GoodsId" :""
+            ,"GoodsInfo" :""
+            ,"GoodsCount" :""
+            ,"OriginalMoney" :""
+            ,"OrderMoney" :""
+            ,"Note" :""
+            ,"PayStatus" :""
+            ,"CreateTime" :""
+            ,"Sign" :""
+            }
+        ,"out_url" :"http://service.sj.91.com/usercenter/AP.aspx"
+        ,"out_params" :
+            {
+                "AppId" : 0
+            ,"Act" : ""
+            ,"ProductName" : ""
+            ,"ConsumeStreamId" : ""
+            ,"CooOrderSerial" :""
+            ,"Uin" :""
+            ,"GoodsId" :""
+            ,"GoodsInfo" :""
+            ,"GoodsCount" :""
+            ,"OriginalMoney" :""
+            ,"OrderMoney" :""
+            ,"Note" :""
+            ,"PayStatus" :""
+            ,"CreateTime" :""
+            ,"Sign" :""
+            }
+        }
+    ]
+}

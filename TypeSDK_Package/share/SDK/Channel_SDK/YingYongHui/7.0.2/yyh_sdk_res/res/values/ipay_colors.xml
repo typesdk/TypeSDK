@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基本色 -->
+    <color name="ipay_transparent">#00000000</color>
+    <color name="ipay_transparent_75">#bf000000</color>
+    <color name="ipay_color_value_1">#ffffff</color>
+    <color name="ipay_color_value_2">#ededed</color>
+    <color name="ipay_color_value_2_0">#f6f6f6</color>
+    <color name="ipay_color_value_2_1">#3c4653</color>
+    <color name="ipay_color_value_2_2">#303a48</color>
+    <color name="ipay_color_value_2_3">#5f6975</color>
+	<color name="ipay_color_value_2_4">#f8f8f8</color>
+    <color name="ipay_color_value_3">#cdcdcd</color>
+    <color name="ipay_color_value_4">#a4a4a4</color>
+    <color name="ipay_color_value_5">#767676</color>
+    <color name="ipay_color_value_6">#000000</color>
+    <color name="ipay_color_value_7">#2cbae7</color>
+    <color name="ipay_color_value_7_1">#1096c7</color>
+    <color name="ipay_color_value_7_2">#00c2ff</color>
+    <color name="ipay_color_value_7_3">#deeff4</color>
+    <color name="ipay_color_value_7_4">#80acb9</color>
+    <color name="ipay_color_value_7_5">#0c6cc5</color>
+    <color name="ipay_color_value_8">#eb5353</color>
+    <color name="ipay_color_value_8_1">#f5eaea</color>
+    <color name="ipay_color_value_8_2">#f18d0b</color>
+    <color name="ipay_color_value_8_3">#ef772e</color>
+    <color name="ipay_color_value_9">#18ca20</color>
+    <color name="ipay_color_value_9_1">#02ae00</color>
+    
+    <color name="ipay_color_listview_item">#faf7ed</color>
+    
+</resources>

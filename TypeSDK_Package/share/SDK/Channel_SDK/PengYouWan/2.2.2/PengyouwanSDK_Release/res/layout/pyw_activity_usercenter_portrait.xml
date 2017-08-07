@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pyw_layout_common_title"
+        layout="@layout/pyw_common_title_bar" />
+
+    <com.pengyouwan.sdk.ui.widget.TipsLayout
+        android:id="@+id/pyw_layout_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pyw_layout_common_title"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/pyw_layout_common_title"
+        android:background="@color/pyw_common_item_divider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pyw_layout_common_title"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/pyw_layout_switchaccount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pyw_common_title_height"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pyw_img_no_leftrightframe_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" >
+
+                <TextView
+                    android:id="@+id/pyw_tv_account"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    style="@style/PYW.Safe.Text" />
+
+
+                <Button
+                    android:id="@+id/pyw_btn_manage_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/pyw_selector_btn_manager_radius_bg"
+                    android:minWidth="96dp"
+                    android:padding="4dp"
+                    android:text="游戏账号管理"
+                    android:textColor="@color/pyw_common_white" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pyw_layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pyw_layout_switchaccount"
+                android:background="@drawable/pyw_img_no_leftrightframe_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/pyw_layout_voucher"
+                    style="@style/PYW.Safe.Layout" >
+
+                    <TextView
+                        style="@style/PYW.Safe.Text"
+                        android:layout_marginLeft="20dp"
+                        android:text="查看代金券" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/pyw_tv_usemoney"
+                        style="@style/PYW.Safe.Text"
+                        android:text="无"
+                        android:textColor="@color/pyw_common_gray_lighter" />
+
+                    <ImageView style="@style/PYW.Safe.Image" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/pyw_common_item_divider" />
+
+                <LinearLayout
+                    android:id="@+id/pyw_layout_loginpassword"
+                    style="@style/PYW.Safe.Layout"
+                    android:background="@drawable/pyw_selector_common_item_bg"
+                    android:paddingLeft="20dp" >
+
+                    <TextView
+                        style="@style/PYW.Safe.Text"
+                        android:text="@string/pyw_safe_loginpassword" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/pyw_tv_modify_login"
+                        style="@style/PYW.Safe.Text"
+                        android:text="修改"
+                        android:textColor="@color/pyw_common_orange_lighter" />
+
+                    <ImageView style="@style/PYW.Safe.Image" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/pyw_common_item_divider" />
+
+                <LinearLayout
+                    android:id="@+id/pyw_layout_paypassword"
+                    style="@style/PYW.Safe.Layout"
+                    android:background="@drawable/pyw_selector_common_item_bg" >
+
+                    <TextView
+                        style="@style/PYW.Safe.Text"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/pyw_safe_paypassword" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/pyw_tv_modify_pay"
+                        style="@style/PYW.Safe.Text"
+                        android:text="不可用"
+                        android:textColor="@color/pyw_common_gray_lighter" />
+
+                    <ImageView style="@style/PYW.Safe.Image" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pyw_txt_usercenter_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pyw_layout_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/pyw_usercenter_prompt"
+                android:textColor="#888888"
+                android:textSize="@dimen/pyw_common_little"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/pyw_ll_change_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pyw_txt_usercenter_prompt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17dp"
+                android:background="@color/pyw_common_white"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/pyw_btn_change_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/pyw_selector_common_item_bg"
+                    android:text="注 销"
+                    android:textColor="#ff5858"
+                    android:textSize="@dimen/pyw_common_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pyw_layout_bottom_portrait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pyw_ll_change_account"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/pyw_layout_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pyw_service_phone"
+                    android:textColor="@color/pyw_common_black_ligther"
+                    android:textSize="@dimen/pyw_common_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/pyw_service_qq"
+                    android:textColor="@color/pyw_common_black_ligther"
+                    android:textSize="@dimen/pyw_common_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pyw_layout_bottom_landscape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pyw_ll_change_account"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/pyw_layout_contacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:padding="15dp"
+                    android:text="@string/pyw_service_phone"
+                    android:textColor="@color/pyw_common_gray_light"
+                    android:textSize="@dimen/pyw_common_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="@string/pyw_service_qq"
+                    android:textColor="@color/pyw_common_gray_light"
+                    android:textSize="@dimen/pyw_common_large" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/pyw_selector_common_item_bg"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+     >
+
+    <TextView
+        android:id="@+id/pyw_tv_accountname"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/pyw_common_gray_light"
+        android:textSize="@dimen/pyw_common_large" />
+	<ImageView 
+	    android:id="@+id/pyw_iv_delect"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:padding="25dp"
+	    android:scaleType="centerInside"
+	    android:src="@drawable/pyw_img_close"
+	    />
+</LinearLayout>

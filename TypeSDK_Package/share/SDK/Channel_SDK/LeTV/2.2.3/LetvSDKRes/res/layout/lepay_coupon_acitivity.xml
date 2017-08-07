@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lepay_fillparent"
+    android:background="@color/lepay_page_layout_bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" >
+
+    <include
+        android:id="@+id/lepay_actionbar1"
+        layout="@layout/lepay_actionbar" />
+
+    <Button
+        android:id="@+id/lepay_cancle_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lepay_actionbar1"
+        android:layout_marginLeft="@dimen/lepay_activity_horizontal_margin"
+        android:layout_marginRight="@dimen/lepay_activity_horizontal_margin"
+        android:layout_marginTop="@dimen/lepay_activity_horizontal_margin"
+        android:background="@drawable/lepay_layout_ditu"
+        android:text="@string/lepay_no_use_coupon"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/lepay_coupon_listview"
+        style="@style/lepay_fillparent"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lepay_confirm_btn"
+        android:layout_below="@+id/lepay_cancle_btn"
+        android:layout_marginLeft="@dimen/lepay_activity_horizontal_margin"
+        android:layout_marginRight="@dimen/lepay_activity_horizontal_margin"
+        android:layout_marginTop="@dimen/lepay_activity_horizontal_margin"
+        android:cacheColorHint="@color/transparent"
+        android:clickable="false"
+        android:divider="@null"
+        android:descendantFocusability="beforeDescendants"
+        android:listSelector="@color/transparent"
+        android:scrollingCache="false" >
+    </ListView>
+
+    <Button
+        android:id="@+id/lepay_confirm_btn"
+        style="@style/lepay_cashier_button_bottom_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/lepay_button_page_selector"
+        android:text="@string/lepay_confirm"
+        android:textColor="@color/lepay_bottom_button_font_color"
+        android:textSize="@dimen/lepay_bottom_button_font_size"
+        android:visibility="visible" />
+
+</RelativeLayout>

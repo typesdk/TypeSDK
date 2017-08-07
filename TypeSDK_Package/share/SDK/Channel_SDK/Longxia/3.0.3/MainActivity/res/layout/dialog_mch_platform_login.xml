@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="用户登录"
+            android:textColor="#FFB400"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mc_platform_input_back"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/mc_platform_login_user" />
+
+        <EditText
+            android:id="@+id/edt_mc_platform_login_account"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint="请输入账号"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mc_platform_input_back"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/mc_platform_login_lock" />
+
+        <EditText
+            android:id="@+id/edt_mc_platform_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:password="true"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:id="@+id/btn_mc_save_password"
+            android:layout_width="16dp"
+            android:layout_height="13dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txt_mc_save_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_mc_save_password"
+            android:text="记住密码"
+            android:textColor="#FFB400"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_mc_platform_forgment_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="#00000000"
+            android:text="忘记密码点击找回"
+            android:textColor="#FFB400"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:id="@+id/btn_mc_platform_login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/mch_button_selector"
+            android:text="立即登录"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_mc_platform_toquickregister"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:text=" &lt;用户注册我已阅读并接受《雄鹰游戏服务条款》"
+            android:textColor="#00ffffff" />
+        <Button
+            android:id="@+id/btn_mc_platform_toregister"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="#00000000"
+            android:text="手机号快速注册>"
+            android:textColor="#FFB400"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

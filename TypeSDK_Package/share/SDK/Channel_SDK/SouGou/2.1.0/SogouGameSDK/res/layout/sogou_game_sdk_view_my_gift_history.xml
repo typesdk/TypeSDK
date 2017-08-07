@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="暂无数据"
+            android:textColor="@color/sogou_game_sdk_color_666666"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/sogou_game_sdk_ll_history_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/sogou_game_sdk_tb_get"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/sogou_game_sdk_selector_btn_yellow_white_corner"
+                android:checked="true"
+                android:textColor="@drawable/sogou_game_sdk_selector_text_white_black"
+                android:textOff="已领取"
+                android:textOn="已领取"
+                android:textSize="15sp" />
+
+            <ToggleButton
+                android:id="@+id/sogou_game_sdk_tb_tao"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/sogou_game_sdk_selector_btn_yellow_white_corner"
+                android:textColor="@drawable/sogou_game_sdk_selector_text_white_black"
+                android:textOff="已淘号"
+                android:textOn="已淘号"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <com.sogou.gamecenter.sdk.views.listviewpro.PullLoadListView
+            android:id="@+id/sogou_game_sdk_lv_gift_get_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/sogou_game_sdk_ll_history_type"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:divider="@color/sogou_game_sdk_color_eeeeee"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none" />
+
+        <com.sogou.gamecenter.sdk.views.listviewpro.PullLoadListView
+            android:id="@+id/sogou_game_sdk_lv_gift_tao_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/sogou_game_sdk_ll_history_type"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:divider="@color/sogou_game_sdk_color_eeeeee"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

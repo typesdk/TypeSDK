@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.community.CommunityCommentLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_layout_comment_item_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lion_common_frame_two_nor"
+    android:orientation="vertical"
+    android:paddingLeft="15.0dip"
+    android:paddingRight="15.0dip"
+    android:paddingTop="10.0dip" >
+
+    <include layout="@layout/lion_layout_subject_item_custom_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="60.0dip" >
+
+        <com.lion.ccpay.widget.reply.PostContentView
+            android:id="@+id/lion_layout_comment_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10.0dip"
+            android:textColor="@color/lion_common_black"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/lion_layout_comment_item_content_imgs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/lion_layout_comment_item_content_replay_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lion_common_basic_bg"
+            android:orientation="vertical"
+            android:padding="3.75dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35.0dip"
+        android:gravity="center" >
+
+        <include layout="@layout/lion_layout_comment_item_info" />
+    </LinearLayout>
+
+</com.lion.ccpay.widget.community.CommunityCommentLayout>

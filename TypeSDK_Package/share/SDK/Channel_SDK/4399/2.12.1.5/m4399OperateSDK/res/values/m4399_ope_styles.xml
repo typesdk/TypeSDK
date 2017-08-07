@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="m4399TransparentStyle" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/m4399_ope_transparent</item>
+        <item name="android:background">@color/m4399_ope_transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="m4399BindPhonePageStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/m4399_ope_page_bg</item>
+        <item name="android:baselineAligned">false</item>
+    </style>
+
+    <style name="m4399ActivationPageStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/m4399_ope_activation_page_bg</item>
+        <item name="android:baselineAligned">false</item>
+    </style>
+
+
+    <style name="m4399BindEditStyle">
+        <item name="android:textColorHint">@color/m4399_ope_bind_hint</item>
+        <item name="android:textSize">@dimen/m4399_ope_bind_label_font_size</item>
+        <item name="android:paddingLeft">@dimen/m4399_ope_bind_edit_padding</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/m4399_ope_bind_edit_font_color</item>
+    </style>
+
+    <style name="m4399BindPhoneEditStyle">
+        <item name="android:textColorHint">@color/m4399_ope_bind_hint</item>
+        <item name="android:textSize">@dimen/m4399_ope_bind_label_font_size</item>
+        <item name="android:paddingLeft">@dimen/m4399_ope_bind_edit_padding</item>
+        <item name="android:background">@drawable/m4399_ope_bind_input_bg</item>
+        <item name="android:layout_marginLeft">@dimen/m4399_ope_bind_label_margin</item>
+        <item name="android:textColor">@color/m4399_ope_bind_edit_font_color</item>
+    </style>
+
+    <style name="m4399LoadingStyle">
+        <item name="android:minHeight">30dp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:max">10000</item>
+        <item name="android:indeterminateDrawable">@drawable/m4399_ope_loading</item>
+    </style>
+
+    <style name="m4399LoadingSureStyle">
+        <item name="android:minWidth">22dp</item>
+        <item name="android:minHeight">23dp</item>
+        <item name="android:max">10000</item>
+        <item name="android:indeterminateDrawable">@drawable/m4399_ope_loading_sure_button</item>
+    </style>
+
+    <style name="m4399PerfectLaStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:background">@color/m4399_ope_usercenter_white</item>
+    </style>
+
+    <style name="m4399PerfectTextLeft">
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">#dd000000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="m4399PerfectTextCenter">
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">@color/m4399_ope_perfect_center_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">@color/m4399_ope_perfect_center_text_hint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="m4399PerfectLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/m4399_ope_perfect_line</item>
+    </style>
+
+    <style name="m4399PerfectDel">
+        <item name="android:layout_width">@dimen/m4399_ope_perfect_clear_img_size</item>
+        <item name="android:layout_height">@dimen/m4399_ope_perfect_clear_img_size</item>
+        <item name="android:background">@drawable/m4399_ope_perfect_ic_delete</item>
+    </style>
+
+</resources>

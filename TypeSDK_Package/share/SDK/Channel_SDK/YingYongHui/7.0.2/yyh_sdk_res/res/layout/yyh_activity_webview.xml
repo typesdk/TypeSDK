@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/drawer_layout"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent"
+              >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/yyh_corner_top_blue_bg"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/yyh_exit"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yyh_clear_white"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/tView_atyWeb_title"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/yyh_white"
+            android:text="豆券充值"
+            android:layout_centerHorizontal="true"
+            android:layout_height="35dp"/>
+    </RelativeLayout>
+    <WebView
+        android:background="@drawable/yyh_corner_botton_white_bg"
+        android:id="@+id/wView_atyWeb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

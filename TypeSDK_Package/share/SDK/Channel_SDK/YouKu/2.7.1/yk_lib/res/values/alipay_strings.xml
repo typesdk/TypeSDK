@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="msp_str_null" />
+    <string name="msp_app_name">支付宝快捷支付服务</string>
+    <string name="msp_error_title_default">提示</string>
+    <string name="msp_action_settings">设置</string>
+    <string name="msp_xlistview_header_hint_normal">下拉刷新</string>
+    <string name="msp_xlistview_header_last_time">上次更新时间：</string>
+    <string name="msp_xlistview_footer_hint_normal">查看更多</string>
+    <string name="msp_close">关闭</string>
+    <string name="msp_memo_user_cancel">操作已经取消。</string>
+    <string name="msp_memo_app_cancel">程序或者数据出现问题。</string>
+    <string name="msp_memo_server_cancel">系统繁忙，请稍后再试。</string>
+    <string name="msp_memo_repeat_pay">同一订单禁止同时多次支付。</string>
+    <!-- 以下提示debug专用 -->
+    <string name="msp_mini_safty_code_info">安全码是打印在信用卡背面签名区的一组数字，一般是后3位或后4位数字</string>
+    <string name="msp_mini_safty_code_title">安全码说明</string>
+    <string name="msp_mini_read_protocal_title">选择阅读协议</string>
+    <string name="msp_mini_choose_identitify">选择证件类别</string>
+    <string name="msp_mini_card_type_text">卡类型</string>
+    <string name="confirm_title">提示</string>
+    <string name="cardUnbing">解除绑定</string>
+    <string name="cardDefaultuse">默认使用该卡支付</string>
+    <string name="cardCancle">取消</string>
+
+    <!-- weibo : WeiboChannelInfo, ali : AliChannelInfo, common : CommonChannelInfo -->
+    <string name="channel">CommonChannelInfo</string>
+
+</resources>

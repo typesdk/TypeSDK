@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/background_gray"
+    >
+            <!--    充值的标题 -->
+     <include 
+        android:id="@+id/main_title_rl"
+        layout="@layout/item_main_title_rl"        
+        />
+     
+    <ScrollView 
+
+      
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" 
+
+      android:scrollbars="none"         
+        >
+       <LinearLayout 
+        android:layout_width="@dimen/activity_horizontal_width"
+       	android:layout_height="wrap_content"
+        android:orientation="vertical"  
+        android:layout_gravity="center_horizontal"                  
+          > 
+          <!--     充值金额部分 -->
+      <TextView 
+         android:id="@+id/pay_zhongzhi_word"
+         style="@style/act_pre_pay"
+         android:layout_height="60dip"
+         android:text="充值金额（单位：元）"
+         android:background="@color/background_gray"  
+         android:textColor="#333333" 
+         android:clickable="true"            
+          />
+       
+      <LinearLayout 
+         android:id="@+id/chongzhi_ll1"
+         android:layout_width="fill_parent"
+         android:layout_height="50dip" 
+         android:orientation="horizontal"  
+         android:background="@color/white"  
+         android:paddingLeft="15dip"   
+         android:paddingRight="15dip"                             
+         >      
+        <TextView 
+         android:id="@+id/chongzhi_tv1_100"       
+         style="@style/act_chongzhi_tv"
+         android:text="100" 
+         android:textColor="@color/white"   
+         android:background="@drawable/green_radio_bg"         
+         />  
+
+          
+        <TextView 
+         android:id="@+id/chongzhi_tv1_200"
+         style="@style/act_chongzhi_tv"                                                     
+         android:text="200"                        
+         android:layout_marginLeft="15dip"
+         />             
+       <TextView 
+         android:id="@+id/chongzhi_tv1_300"                                                                  
+         android:text="300"                
+         style="@style/act_chongzhi_tv" 
+         android:layout_marginLeft="15dip"
+         />                  
+      </LinearLayout>  
+       <!-- android:textColor="@drawable/wordcolor_bg"  
+        android:background="@drawable/green_white_bg"    -->  
+         <LinearLayout 
+         android:id="@+id/chongzhi_ll2"
+         android:layout_width="fill_parent"
+         android:layout_height="50dip" 
+         android:orientation="horizontal"  
+         android:background="@color/white"  
+         android:paddingLeft="15dip"   
+         android:paddingRight="15dip"                            
+         >      
+        <TextView 
+         android:id="@+id/chongzhi_tv2_500"       
+         style="@style/act_chongzhi_tv"        
+         android:text="500"             
+         />  
+          
+        <TextView 
+         android:id="@+id/chongzhi_tv2_1000"
+         style="@style/act_chongzhi_tv"                                                     
+         android:text="1000"                        
+         android:layout_marginLeft="15dip"
+         />             
+       <TextView 
+         android:id="@+id/chongzhi_tv2_2000"                                                                  
+         android:text="2000"                
+         style="@style/act_chongzhi_tv" 
+         android:layout_marginLeft="15dip"
+         />                  
+      </LinearLayout> 
+      
+       <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="#ffffff"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+           >  
+       <EditText
+           android:id="@+id/chongzhi_et"
+           android:layout_marginTop="10dip" 
+           android:layout_marginBottom="10dip"
+           android:layout_height="40dip"
+           android:layout_width="fill_parent"
+           android:background="@drawable/white_green_kuang"
+           android:hint="自定义金额（1~9999元）"          
+           android:gravity="left|center_vertical"  
+           android:textSize="16sp"  
+           android:inputType="number"  
+           android:maxLength="4"  
+           android:paddingLeft="55dip"  
+           style="@style/et_tc_textColorHint"
+           android:imeOptions="flagNoExtractUi"        
+             />  
+       </LinearLayout>                                                
+        <!--    选择充值方式部分部分 --> 
+         <TextView 
+          android:id="@+id/pay_way_word"
+         style="@style/act_pre_pay"
+         android:layout_height="60dip"
+         android:text="选择支付方式"
+         android:background="@color/background_gray"  
+         android:textColor="#333333" 
+         android:clickable="true"       
+          />          
+         <com.smwl.smsdk.myview.PrePayItemReSDK
+             android:id="@+id/prepay_ali"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" 
+              android:clickable="true"                            
+              />
+          <com.smwl.smsdk.myview.PrePayItemReSDK
+             android:id="@+id/prepay_weixin"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"  
+              android:clickable="true"                           
+              />
+           <com.smwl.smsdk.myview.PrePayItemReSDK
+             android:id="@+id/prepay_yinlian"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" 
+              android:clickable="true"                            
+             />  
+             
+           <TextView 
+             android:id="@+id/fast_toPay"
+             android:layout_width="match_parent"
+             android:layout_height="50dip"
+             android:layout_marginLeft="20dip"
+             android:layout_marginRight="20dip"
+             android:text="立即支付"
+             android:textColor="@color/white"
+             android:gravity="center"
+             android:background="@drawable/green_radio_bg" 
+             android:layout_marginTop="20dip" 
+             android:textSize="18sp"                        
+               />
+           
+            <TextView                
+             android:id="@+id/prepay_connection"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"            
+             android:text=""           
+             android:gravity="center"          
+             android:layout_marginTop="20dip"  
+             android:textColor="#333333"                                              
+               />
+                                
+       </LinearLayout>         
+    </ScrollView>
+    
+
+</LinearLayout>

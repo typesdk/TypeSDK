@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.pps"
+    android:versionCode="441"
+    android:versionName="4.4.1"
+	android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" /> 
+    
+    <!-- 微信支付 -->
+    <uses-permission android:name="android.webkit.permission.PLUGIN" /> 
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> 
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> 
+    <uses-permission android:name="android.permission.READ_SMS" />
+    
+    <!-- 创建桌面快捷图标 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />  
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />  
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.type.sdk.android.iqiyi.TypeSDKSplash"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.type.sdk.android.iqiyi.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="iqiyi.Main" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <!-- 竖屏 android:screenOrientation="sensorPortrait"  -->
+        <!-- 横屏 android:screenOrientation="sensorLandscape"  -->
+        <!-- 登录与充值 -->
+        <activity
+            android:name="com.iqiyigame.plugin.GameProxyActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.iqiyigame.plugin.GameProxyFragmentActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.iqiyi.sdk.platform.PermissionCheckActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+        
+        <!-- 银联 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="sensorLandscape" />
+        <!-- 银联 -->
+        <!-- 现在支付-微信支付 -->
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="orientation|screenSize">
+        </activity>
+        <!-- 现在支付-微信支付 -->
+        
+        <service android:name="com.iqiyigame.plugin.GamePluginUpdateService"/>
+        <service android:name="com.iqiyi.sdk.platform.GamePushAdsService"/>
+        <service android:name="com.iqiyigame.plugin.GameProxyService"/>
+        <!-- 登录与充值 -->
+
+    </application>
+
+</manifest>

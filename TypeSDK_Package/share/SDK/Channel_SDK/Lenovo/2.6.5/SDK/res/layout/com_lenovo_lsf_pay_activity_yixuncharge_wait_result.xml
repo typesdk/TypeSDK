@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/com_lenovo_lsf_pay_next_button"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@color/com_lenovo_lsf_pay_next_button" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/base_title_imb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/com_lenovo_lsf_pay_backfalse"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/base_title_imb"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#191919"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:background="@color/com_lenovo_lsf_pay_goods_bg" >
+
+        <LinearLayout
+            android:id="@+id/layout_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_goods_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/goods_item_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/com_lenovo_lsf_pay_yixun_goods_name_text"
+                    android:textColor="#191919"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/goods_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_lenovo_lsf_pay_goods_item_space"
+                    android:text="1"
+                    android:textColor="#191919"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/goods_order_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/com_lenovo_lsf_pay_yixun_charge_amout_text"
+                    android:textColor="#191919"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/goods_order_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/com_lenovo_lsf_pay_goods_item_space"
+                    android:layout_marginRight="@dimen/com_lenovo_lsf_pay_goods_item_space"
+                    android:text="2"
+                    android:textColor="#191919"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/layout_goods"
+            android:background="#e8e8e8" />
+
+        <ImageView
+            android:id="@+id/send_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divide_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/com_lenovo_lsf_pay_search_msg_icon" />
+
+        <TextView
+            android:id="@+id/sms_send_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/send_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/com_lenovo_lsf_pay_yixun_sms_send_tip"
+            android:textColor="#191919"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/search_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sms_send_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/com_lenovo_lsf_pay_yixun_search_result_tip"
+            android:textColor="#757575"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/wait_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_tip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/com_lenovo_lsf_pay_yixun_search_wait_tip"
+            android:textColor="#757575"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@id/pay_charge_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp"
+            android:layout_above="@+id/nullid"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:enabled="false"
+            android:text="@string/com_lenovo_lsf_pay_yixun_wait_confirm_text"
+            android:textColor="#ffffff"
+            android:background="@drawable/com_lenovo_lsf_pay_btn_selector_up"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@id/nullid"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

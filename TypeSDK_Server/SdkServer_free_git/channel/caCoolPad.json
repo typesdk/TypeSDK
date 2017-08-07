@@ -1,0 +1,33 @@
+{
+  "version":"2.1.2.20170104",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "code" : ""
+    }
+    ,"out_url" : "https://openapi.coolyun.com/oauth2/token"
+    ,"out_params" :
+    {
+      "code" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "transdata" : ""
+      ,"sign" : ""
+      }
+    ,"out_url" :"https://openapi.coolyun.com/oauth2/token"
+    ,"out_params" :
+      {
+        "transdata" : ""
+      ,"sign" : ""
+      }
+    }
+  ]
+}

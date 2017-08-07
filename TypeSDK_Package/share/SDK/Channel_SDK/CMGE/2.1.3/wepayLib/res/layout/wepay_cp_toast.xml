@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wepay_toast_bg" >
+
+    <TextView
+        android:id="@+id/txt_tip"
+        style="@style/wepay_txt_normal"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:maxWidth="250dp"
+        android:paddingLeft="@dimen/wepay_space_large"
+        android:paddingRight="@dimen/wepay_space_large"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:textColor="@color/wepay_txt_toast"
+        android:textSize="14sp" />
+</FrameLayout>

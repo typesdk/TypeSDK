@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/lib_complete_account_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lib_login_background"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+    <TextView
+            android:id="@+id/lib_text"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:text="@string/lib_temp_account_tips"
+            android:textColor="@color/lib_white"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:id="@+id/lib_complete_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lib_text"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/lib_complete_temp_account"
+            android:textColor="@color/lib_white"
+            android:textSize="18sp"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/lib_arrow"/>
+
+</RelativeLayout>

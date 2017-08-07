@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.le.legamesdk.activity.history.TransactionItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/lepay_white" >
+
+    <!-- com.le.legamesdk.activity.history.TransactionItemView  RelativeLayout -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/le_border_line_color" />
+
+    <TextView
+        android:id="@+id/le_transaction_item_appName"
+        style="@style/LeStyleBlack16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="right|end"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/le_transaction_item_price"
+            style="@style/LeStyleOrange16"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/le_transaction_item_create_time"
+            style="@style/LeStyleGray14"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/le_border_line_color" />
+
+</com.le.legamesdk.activity.history.TransactionItemView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/icon"
+         android:layout_width="55dip"
+        android:layout_height="55dip"
+        android:layout_margin="5dip"
+        android:src="@drawable/sy37_icon_default" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3.0dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff000000"
+            android:textSize="14.0sp" />
+	
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fg_deadline"
+                android:textColor="#ff999999"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff999999"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3.0dip"
+                android:text="@string/fg_surplus"
+                android:textColor="#ff999999"
+                android:textSize="12.0sp" />
+
+            <LinearLayout
+                android:id="@+id/loaidng_progress_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="10dip"
+                android:background="@drawable/sy37_bg_kefu_progess_b"
+                android:padding="0dip" >
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="@style/progressBarHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dip"
+                    android:layout_margin="1px"
+                    android:max="100"
+                    android:progress="30" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/getGift"
+        android:layout_width="65.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/sy37_btn_kefu_blue"
+        android:text="@string/fg_give_gift"
+        android:textColor="#ffffffff"
+        android:focusable="false"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

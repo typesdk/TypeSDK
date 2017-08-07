@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#268ee0"
+    android:layout_marginTop="@dimen/wd_margin_30"
+    android:layout_marginBottom="@dimen/wd_margin_30">
+
+    <RelativeLayout
+        android:id="@+id/welfare_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/welfare_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/wd_ic_title_back"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/welfare_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="福利小站"
+            android:textColor="@color/wd_color_white"
+            android:textSize="18sp"
+        />
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/welfare_title"
+        />
+    <WebView
+        android:scrollbars="none"
+        android:id="@+id/welfare_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progressBar1"/>
+
+</RelativeLayout>

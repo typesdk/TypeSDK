@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="60.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/_yl_loading_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:lineSpacingMultiplier="1.5"
+                android:minHeight="60.0dip"
+                android:textColor="#ff666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffd0d0d0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="12.0dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_icon"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/login_button_regist_by_phone"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#ffffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

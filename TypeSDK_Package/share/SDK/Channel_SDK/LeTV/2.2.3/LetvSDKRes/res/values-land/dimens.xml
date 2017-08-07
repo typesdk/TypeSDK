@@ -1,0 +1,13 @@
+<resources>
+
+    <dimen name="le_oauth_account_manager_le_logo_margin_top">20dp</dimen>
+    <dimen name="le_oauth_account_manager_slogan_margin_top">12dp</dimen>
+    <dimen name="le_oauth_account_manager_main_view_margin_top">32dp</dimen>
+    <dimen name="le_oauth_account_manager_other_login_margin_top">20dp</dimen>
+    <dimen name="le_oauth_account_manager_main_view_height">150dp</dimen>
+    <dimen name="le_oauth_loading_le_logo_margin_top">72dp</dimen>
+    <dimen name="le_oauth_loading_other_login_margin_top">46dp</dimen>
+    <dimen name="le_sdk_main_view_margin">10dp</dimen>
+    <dimen name="le_pay_select_height">44dp</dimen>
+    <dimen name="le_pay_select_margin_offset">10dp</dimen>
+</resources>

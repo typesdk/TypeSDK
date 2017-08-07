@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/dcn_shape_dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dcn_feedback_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="@string/dcn_dialog_problem_feedback"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:text="@string/dcn_center_custom_service"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dcn_service_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:text="kf.d.cn"
+            android:textStyle="bold"
+            android:textColor="@color/dcn_orange_v403"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+        android:text="@string/dcn_service_detail"
+        android:textColor="@drawable/dcn_dialog_textcolor"
+        android:textSize="10sp" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dcn_feedback_imagePhone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dcn_dialog_feedback_phone" />
+
+            <TextView
+                android:id="@+id/dcn_feedback_textPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="12dp"
+                android:text="2881268150"
+                android:textColor="@color/dcn_gray_dark"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dcn_feedback_ll_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dcn_feedback_imageqq"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dcn_dialog_feedback_qq" />
+
+            <TextView
+                android:id="@+id/dcn_feedback_textqq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="12dp"
+                android:text="028-83112436"
+                android:textColor="@color/dcn_gray_dark"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd" />
+
+    <Button
+        android:id="@+id/dcn_feedback_but_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="12dp"
+        android:paddingTop="6dp"
+        android:background="@android:color/transparent"
+        android:text="@string/dcn_make_sure"
+        android:textColor="@drawable/dcn_dialog_textcolor"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

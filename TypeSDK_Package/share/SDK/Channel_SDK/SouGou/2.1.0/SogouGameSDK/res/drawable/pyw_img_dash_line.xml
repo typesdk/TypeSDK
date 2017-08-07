@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <size
+        android:height="15px"
+        android:width="15px" />
+
+    <solid android:color="@color/pyw_common_item_divider" />
+
+</shape>

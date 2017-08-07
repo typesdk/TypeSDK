@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="m4399RecInputAreaStyle">
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">@dimen/m4399_rec_edittext_height</item>
+	    <item name="android:layout_weight">2.6</item>
+	    <item name="android:paddingLeft">10dp</item>
+	    <item name="android:gravity">center_vertical|left</item>
+	    <item name="android:background">@drawable/m4399_rec_edittext_bg_normal</item>
+	    <item name="android:textSize">13sp</item>
+	    <item name="android:textColor">#111111</item>
+	    <item name="android:inputType">number</item> 
+	</style> 
+	
+	<style name="m4399RecSerPwdAreaStyle">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">0dp</item>
+	    <item name="android:layout_weight">2.6</item>
+	    <item name="android:layout_marginBottom">10dp</item>
+	    <item name="android:paddingLeft">10dp</item>
+	    <item name="android:gravity">center_vertical|left</item>
+	    <item name="android:background">@drawable/m4399_rec_edittext_bg</item>
+	    <item name="android:textSize">13sp</item>
+	    <item name="android:textColor">#111111</item>
+	    <item name="android:inputType">number</item> 
+	</style>
+	
+    <style name="m4399RecGridviewContainerStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:gravity">center</item>
+	</style>
+	
+<!-- 	<style name=""> -->
+<!-- 	    <item name=""></item> -->
+<!-- 	</style> -->
+</resources>

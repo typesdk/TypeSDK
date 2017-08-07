@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/lion_layout_line"
+      android:layout_width="match_parent"
+      android:layout_height="0.5dip"
+      android:background="@color/lion_common_line"
+      android:minHeight="0.5dip"/>

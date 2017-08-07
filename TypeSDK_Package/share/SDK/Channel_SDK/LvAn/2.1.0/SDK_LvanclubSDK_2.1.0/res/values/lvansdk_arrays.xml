@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="junwangka_items">  
+<item>1元</item> 
+<item>5元</item>  
+<item>6元</item>  
+<item>10元</item>  
+<item>15元</item>  
+<item>20元</item>  
+<item>30元</item>  
+<item>50元</item>  
+<item>100元</item>  
+<item>200元</item>  
+<item>300元</item>  
+<item>500元</item>  
+<item>1000元</item> 
+</string-array> 
+
+ <string-array name="spinner_ip">
+        <item>http://192.168.31.221:8060</item>
+        <item>http://124.193.184.93:8060</item>
+        <item>http://192.168.31.112:8060</item>
+        <item>http://192.168.23.41:8080 </item>
+        <item>http://192.168.23.117:8080</item>
+        <item>http://192.168.23.72:8080</item>
+        <item>http://124.193.184.92:8060</item>
+        <item>http://124.193.184.93:8088</item>
+        <item>http://192.168.21.51:8080</item>
+        <item>https://www.paypalm.cn</item>
+        <item>http://124.193.184.93:8000</item>
+        <item>http://192.168.10.105:8080</item>
+        <item>http://192.168.31.42:8060</item>
+    </string-array>
+    
+</resources>

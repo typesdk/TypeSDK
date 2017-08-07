@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dcn_dialog_common_width"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="@dimen/dcn_dialog_common_height"
+    android:background="@drawable/dcn_shape_dialog_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/dcn_dialog_image_theme"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/dcn_dialog_switch_line" />
+
+    <TextView
+        android:id="@+id/dcn_dialog_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:text="@string/dcn_dialog_reserve_doing"
+        android:textColor="#333"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dcn_dialog_tv_content"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/dcn_dialog_reserve_doing_content"
+        android:textColor="#999"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd" />
+
+    <RelativeLayout
+        android:id="@+id/dcn_rl_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dcn_dialog_common_interval"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/dcn_layout2_but1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:text="@string/dcn_dialog_reserve_logout"
+                    android:textColor="@drawable/dcn_dialog_textcolor"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dcn_dialog_reserve_line"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#ddd"
+                android:text="|" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/dcn_layout2_but2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:text="@string/dcn_get_it"
+                    android:textColor="@drawable/dcn_dialog_textcolor"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dcn_rl_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dcn_dialog_common_interval"
+        android:layout_marginTop="12dp"
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/dcn_layout1_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="@string/dcn_dialog_reserve_logout"
+            android:textColor="@drawable/dcn_dialog_textcolor"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

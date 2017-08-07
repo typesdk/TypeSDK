@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/user_register_other_way_register_tv"
+        style="@style/UserRegisterFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_register_other_way_register"
+        android:layout_alignParentRight="true"
+        android:gravity="end"/>
+
+    <RelativeLayout
+        android:id="@+id/user_register_addition_content_ll"
+        style="@style/MatchWrap"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/user_register_protocol_ll"
+            style="@style/WrapWrap.Horizontal"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                style="@style/UserRegisterThird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_register_agreee_text"/>
+
+            <TextView
+                style="@style/UserRegisterThird"
+                android:id="@+id/user_register_service_clause_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_register_service_clause_text"
+                android:textColor="@color/user_register_service_clause_color"/>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/user_register_common_bottom"
+            layout="@layout/include_common_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_register_protocol_ll"
+            android:layout_alignLeft="@id/user_register_protocol_ll"></include>
+
+    </RelativeLayout>
+</merge>

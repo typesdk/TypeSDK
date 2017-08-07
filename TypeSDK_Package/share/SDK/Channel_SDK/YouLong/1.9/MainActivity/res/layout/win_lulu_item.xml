@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/win_item_lin"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/win_item_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/win_bbs"
+            style="@style/win_item"
+            android:layout_marginLeft="25dp"
+            android:drawableTop="@drawable/win_bbs"
+            android:text="社区" />
+
+        <Button
+            android:id="@+id/win_giftbag"
+            style="@style/win_item"
+            android:drawableTop="@drawable/win_giftbag"
+            android:text="礼包"/>
+
+        <Button
+            android:id="@+id/win_person"
+            style="@style/win_item"
+            android:drawableTop="@drawable/win_person"
+            android:text="个人中心" />
+    </LinearLayout>
+
+</FrameLayout>

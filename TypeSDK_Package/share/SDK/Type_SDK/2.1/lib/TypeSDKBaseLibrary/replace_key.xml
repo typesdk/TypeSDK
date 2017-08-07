@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="replaceKey_base">
+	  <echo message="==================replace BaseLibrary BaseMainActivity.java====================="/>
+    <replace dir="./src/com/type/sdk/android" includes="BaseMainActivity.java" encoding="UTF-8">
+        <replacefilter token="@gameMainActivity@" value="${gameMainActivity}"/>
+    </replace>
+    
+</project>

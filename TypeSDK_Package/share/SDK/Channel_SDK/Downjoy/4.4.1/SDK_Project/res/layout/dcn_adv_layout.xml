@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dcn="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dcn_shape_dialog_bottom_round_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dcn_ads_group"
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <com.downjoy.widget.RecycleViewPager
+                android:id="@+id/dcn_adv_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.downjoy.widget.IndexView
+                android:id="@+id/dcn_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/dcn_detail"
+                android:layout_width="@dimen/dcn_dialog_common_btn_width"
+                android:layout_height="@dimen/dcn_dialog_common_btn_height"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/dcn_selector_dialog_btn"
+                android:text="@string/dcn_detail"
+                android:textColor="@color/dcn_orange_common"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/dcn_adv_fl_close"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/dcn_adv_ib_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@null"
+            android:src="@drawable/dcn_popup_closed_selector" />
+    </FrameLayout>
+</FrameLayout>

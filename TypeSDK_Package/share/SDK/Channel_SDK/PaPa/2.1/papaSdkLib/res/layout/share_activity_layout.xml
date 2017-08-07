@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fitsSystemWindows="true"
+        android:background="@color/white">
+
+    <!--<RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/papa_title_back"
+            android:id="@+id/title">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grid_text"
+                android:textSize="18dp"
+                android:layout_marginLeft="50dp"/>
+
+
+        <LinearLayout
+                android:id="@+id/layout_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:gravity="center">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享"
+                    android:id="@+id/share_textview"
+                    android:textColor="@color/main_yello_color"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+            />
+
+            <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/shareImg"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/papa_share_selecter"
+                    android:visibility="visible"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/back_imag"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_icon"
+                android:scaleType="fitCenter"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"/>
+    </RelativeLayout>-->
+
+    <include layout="@layout/mg_forum_title_layout" android:id="@+id/actionbarLayout" android:visibility="visible"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/actionbarLayout"
+            android:id="@+id/weblayout">
+
+        <view class="com.papa91.pay.widget.LJWebView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/web"/>
+
+        <include layout="@layout/loding_layout_include"/>
+
+        <include layout="@layout/failed_layout_include"/>
+    </RelativeLayout>
+
+    <FrameLayout
+            android:id="@+id/video_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"/>
+</RelativeLayout>

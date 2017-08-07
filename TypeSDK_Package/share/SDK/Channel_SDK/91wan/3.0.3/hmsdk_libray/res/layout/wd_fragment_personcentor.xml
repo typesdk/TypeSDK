@@ -1,0 +1,251 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/wd_margin_10"
+    android:layout_marginTop="@dimen/wd_margin_10"
+    android:background="#268ee0"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/presoncenter_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wd_margin_3"
+        android:layout_marginTop="@dimen/wd_margin_10"
+        android:text="个人中心"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/wd_text_size_16" />
+
+    <Button
+        android:id="@+id/personcenter_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/wd_margin_8"
+        android:background="@drawable/wd_personcenter_btn_blue_selector"
+        android:paddingBottom="@dimen/wd_margin_5"
+        android:paddingLeft="@dimen/wd_margin_15"
+        android:paddingRight="@dimen/wd_margin_15"
+        android:paddingTop="@dimen/wd_margin_5"
+        android:text="返回游戏"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/wd_text_size_14" />
+
+    <ImageView
+        android:id="@+id/personcenter_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personcenter_title_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/wd_margin_20"
+        android:src="@drawable/wd_personcenter_avatar" />
+
+    <TextView
+        android:id="@+id/personcenter_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personcenter_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/wd_margin_18"
+        android:text="账号：wd123456"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/wd_text_size_16" />
+
+    <RelativeLayout
+        android:id="@+id/personcenter_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/personcenter_account"
+        android:layout_marginLeft="@dimen/wd_margin_25"
+        android:layout_marginRight="@dimen/wd_margin_25"
+        android:layout_marginTop="@dimen/wd_margin_20"
+        android:background="@drawable/wd_personcenter_btn_blue_selector2"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/personcenter_account_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wd_margin_30"
+            android:gravity="center_vertical"
+            android:src="@drawable/personcenter_account_avatar" />
+
+        <TextView
+            android:id="@+id/personcenter_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/wd_margin_20"
+            android:layout_toRightOf="@id/personcenter_account_icon"
+            android:background="@null"
+            android:text="修改密码"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wd_text_size_14" />
+
+        <ImageView
+            android:id="@+id/personcenter_more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/wd_margin_20"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/personcenter_more_avatar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personcenter_bind_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/personcenter_change_pwd"
+        android:layout_marginLeft="@dimen/wd_margin_25"
+        android:layout_marginRight="@dimen/wd_margin_25"
+        android:layout_marginTop="@dimen/wd_margin_20"
+        android:background="@drawable/wd_personcenter_btn_blue_selector2"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/personcenter_bind_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/wd_margin_30"
+            android:src="@drawable/personcenter_phone_avatar" />
+
+        <TextView
+            android:id="@+id/personcenter_bind_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/wd_margin_20"
+            android:layout_toRightOf="@id/personcenter_bind_icon"
+            android:background="@null"
+            android:text="绑定手机"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wd_text_size_14" />
+
+        <ImageView
+            android:id="@+id/personcenter_more_icon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/wd_margin_20"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/personcenter_more_avatar" />
+
+        <TextView
+            android:id="@+id/personcenter_bind_attion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/wd_margin_5"
+            android:layout_marginTop="1dp"
+            android:layout_toLeftOf="@id/personcenter_more_icon_1"
+            android:text="未绑定"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wd_text_size_10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personcenter_voucher"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/personcenter_bind_phone"
+        android:layout_marginLeft="@dimen/wd_margin_25"
+        android:layout_marginRight="@dimen/wd_margin_25"
+        android:layout_marginTop="@dimen/wd_margin_20"
+        android:background="@drawable/wd_personcenter_btn_blue_selector2"
+        android:clickable="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/personcenter_voucher_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/wd_margin_30"
+            android:gravity="center_vertical"
+            android:src="@drawable/personcenter_voucher_avatar" />
+
+        <TextView
+            android:id="@+id/personcenter_voucher_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/wd_margin_25"
+            android:layout_toRightOf="@id/personcenter_voucher_icon"
+            android:background="@null"
+            android:text="代金券"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/wd_text_size_14" />
+
+        <ImageView
+            android:id="@+id/personcenter_more_icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/wd_margin_20"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/personcenter_more_avatar" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/personcenter_mind_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personcenter_voucher"
+        android:layout_marginLeft="@dimen/wd_margin_30"
+        android:layout_marginRight="@dimen/wd_margin_30"
+        android:layout_marginTop="@dimen/wd_margin_10"
+        android:maxLines="2"
+        android:text="友情提示：找回密码需要先绑定手机，然后再登录界面的忘记密码中找回密码."
+        android:textColor="#99ffffff"
+        android:textSize="@dimen/wd_text_size_10" />
+
+    <Button
+        android:id="@+id/personcenter_switch_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/wd_margin_20"
+        android:layout_marginLeft="@dimen/wd_margin_25"
+        android:layout_marginRight="@dimen/wd_margin_25"
+        android:background="@drawable/wd_personcenter_btn_white_selector"
+        android:text="切换账号"
+        android:textColor="#268ee0"
+        android:textSize="@dimen/wd_text_size_16"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="版本号：3.0.3"
+            android:textColor="@color/wd_color_black_3"
+            android:textSize="@dimen/wd_text_size_12" />
+
+        <TextView
+            android:id="@+id/personcenter_QA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/wd_margin_25"
+            android:text="常见问题"
+            android:textColor="@color/wd_color_black_3"
+            android:textSize="@dimen/wd_text_size_12" />
+    </RelativeLayout>
+
+</RelativeLayout>

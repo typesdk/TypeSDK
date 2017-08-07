@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:info="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kg_common_background"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/kg_layout_bind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/kg_layout_account_security_head" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/kg_common_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/kg_login_security"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <com.kugou.game.sdk.ui.widget.UserInfoView
+                android:id="@+id/kg_item_security_phone"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                info:item_divider_visible="true"
+                info:item_title="@string/kg_security_phone"
+                info:item_title_detail="@string/kg_security_phone_tip" />
+
+            <com.kugou.game.sdk.ui.widget.UserInfoView
+                android:id="@+id/kg_item_security_email"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                info:item_divider_visible="true"
+                info:item_title="@string/kg_security_email"
+                info:item_title_detail="@string/kg_security_email_tip" />
+
+            <com.kugou.game.sdk.ui.widget.UserInfoView
+                android:id="@+id/kg_item_security_question"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                info:item_divider_visible="true"
+                info:item_title="@string/kg_security_question"
+                info:item_title_detail="@string/kg_security_question_tip" />
+
+            <com.kugou.game.sdk.ui.widget.UserInfoView
+                android:id="@+id/kg_item_modify_psd"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                info:item_divider_visible="true"
+                info:item_title="@string/kg_modify_psd" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/kg_common_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/kg_pay_security"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+
+            <com.kugou.game.sdk.ui.widget.UserInfoView
+                android:id="@+id/kg_item_pay_psd"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="5dp"
+                info:item_divider_visible="true"
+                info:item_title="@string/kg_security_pay_psd"
+                info:item_title_detail="@string/kg_security_pay_psd_tip" />
+        </LinearLayout>
+
+        <com.kugou.game.sdk.ui.widget.TipsLayout
+            android:id="@+id/kg_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</ScrollView>

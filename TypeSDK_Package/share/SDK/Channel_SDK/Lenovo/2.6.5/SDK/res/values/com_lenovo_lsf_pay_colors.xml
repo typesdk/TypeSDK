@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="com_lenovo_lsf_pay_goods_bg">#FFFFFF</color>
+    <color name="com_lenovo_lsf_pay_goods_label">#0b7cd9</color>
+    <color name="com_lenovo_lsf_pay_goods_unit">#757575</color>
+    <color name="com_lenovo_lsf_pay_goods_border_line">#ffd1d1d1</color>
+    <color name="com_lenovo_lsf_pay_next_button">#0b7cd9</color>
+    <color name="com_lenovo_lsf_pay_result_text">#ffffffff</color>
+    <color name="com_lenovo_lsf_pay_transparent_all">#00000000</color>
+    <color name="com_lenovo_lsf_pay_white_pure">#ffffff</color>
+    <color name="com_lenovo_lsf_pay_text_color_black">#000000</color>
+    <color name="com_lenovo_lsf_pay_title_bg">#606B7F</color>
+    <color name="com_lenovo_lsf_pay_appcolor">#f3f3f3</color>
+    <color name="com_lenovo_lsf_pay_color_text_gray">#626262</color>
+    <color name="com_lenovo_lsf_pay_content_text_font_color">#DB000000</color>
+    <color name="com_lenovo_lsf_pay_list_item_gray">#a3a3a3</color>
+    <color name="com_lenovo_lsf_pay_item">#ffffff</color>
+    <color name="com_lenovo_lsf_pay_title_text">#FFFFFF</color>
+    <color name="com_lenovo_lsf_pay_phone_card_normal">#757575</color>
+    <color name="com_lenovo_lsf_pay_phone_card_choosed">#191919</color>
+    <color name="com_lenovo_lsf_pay_phone_card_line_normal">#a3a3a3</color>
+    <color name="phone_card_line_choosed">#0b7cda</color>
+    <color name="com_lenovo_lsf_pay_record_detail_text">#757575</color>
+    <color name="com_lenovo_lsf_pay_devider_between_title_and_content">#d1d1d1</color>
+    <color name="com_lenovo_pay_lsf_next_button">#0b7cd9</color>
+</resources>

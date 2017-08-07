@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pyw_login_dialog_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background"
+    android:paddingBottom="20dp" >
+
+    <include
+        android:id="@+id/pyw_layout_commont_title"
+        layout="@layout/pyw_common_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_login_psw"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyw_layout_commont_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pyw_img_edittext_normal_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <EditText
+            android:id="@+id/pyw_et_login_psw"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pyw_common_editext_height"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="@string/pyw_regex_code"
+            android:hint="@string/pyw_login_psw_hint"
+            android:inputType="textPassword"
+            android:maxLength="12"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textColorHint="@color/pyw_common_hint_color"
+            android:textSize="@dimen/pyw_common_large" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/pyw_iv_login_password_icon"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/pyw_img_psw_visible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pyw_btn_login"
+        android:layout_width="280dp"
+        android:layout_height="@dimen/pyw_common_btn_height"
+        android:layout_below="@id/pyw_layout_login_psw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pyw_selector_btn_blue_bg"
+        android:text="完成注册"
+        android:textColor="@color/pyw_common_white"
+        android:textSize="@dimen/pyw_common_larger" />
+
+</RelativeLayout>

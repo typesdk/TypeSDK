@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "wrap_content"
+              android:layout_height = "30dp"
+              android:layout_gravity = "center_vertical|left"
+              android:layout_marginBottom = "3dp"
+              android:layout_marginTop = "3dp"
+              android:gravity = "center_vertical"
+              android:orientation = "horizontal"
+		>
+
+	<CheckBox
+			android:id = "@+id/umipay_agreemeng_checkbox"
+			android:layout_width = "35dp"
+			android:layout_height = "35dp"
+			android:background = "@drawable/umipay_checkbox_default"
+			android:button = "@null"
+			android:checked = "true"
+			/>
+
+	<TextView
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:text = "@string/umipay_reg_agreement_tip"
+			android:textColor = "#999999"
+			android:textSize = "12sp"
+			/>
+
+	<TextView
+			android:id = "@+id/umipay_agreemeng_textview"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:text = "@string/umipay_reg_agreement"
+			android:textColor = "#444"
+			android:textSize = "12sp"
+			/>
+
+</LinearLayout >

@@ -1,0 +1,43 @@
+{
+  "version":"3.2.2.1.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "token" : ""
+    }
+    ,"out_url" :"http://sdk.muzhiwan.com/oauth2/getuser.php"
+    ,"out_params" :
+    {
+      "token" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "appkey": ""
+      ,"orderID": ""
+      ,"money": ""
+      ,"uid": ""
+      ,"sign": ""
+      }
+    ,"out_url" :"http://sdk.muzhiwan.com/oauth2/getuser.phpy"
+    ,"out_params" :
+      {
+        "appkey": ""
+      ,"orderID": ""
+      ,"productName": ""
+      ,"productDesc":""
+      ,"productID": ""
+      ,"money": ""
+      ,"uid": ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

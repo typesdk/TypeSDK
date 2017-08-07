@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/mini_webview_back_disable" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/mini_webview_back" android:state_enabled="true"></item>
+    <item android:drawable="@drawable/mini_webview_back_disable" android:state_enabled="false"></item>
+
+</selector>

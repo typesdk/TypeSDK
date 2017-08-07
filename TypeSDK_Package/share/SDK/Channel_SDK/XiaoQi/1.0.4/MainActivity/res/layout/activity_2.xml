@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:id="@+id/root"
+    tools:context=".MainActivitySDK" >
+    
+     <TextView       
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:text="用户登录成功跳到模拟游戏的主页面"
+        android:background="#6600ee00" 
+        android:textSize="20sp"
+        android:layout_gravity="center"        
+       />
+  
+    <TextView
+        android:layout_marginTop="20dip"
+        android:id="@+id/tv3"      
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:text="跳到sdk的个人中心"
+        android:background="#668800ff" 
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:clickable="true"
+       />
+     <TextView
+        android:layout_marginTop="20dip"
+        android:id="@+id/xiaofei"      
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:text="玩家购买道具，调sdk的消费接口"
+        android:background="#66ff0000" 
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:clickable="true"
+       />
+     
+       <TextView
+        android:layout_marginTop="20dip"
+        android:id="@+id/xuan"      
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:text="产生悬浮框"
+        android:background="#66ff0000" 
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:clickable="true"
+       />
+       
+
+</LinearLayout>

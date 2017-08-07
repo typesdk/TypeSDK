@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/managerLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/personInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/backGameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3.0dip"
+            android:background="@drawable/sy37_layout_white_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/kefu_account"
+                android:textColor="@color/s_orange"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/backToGame"
+                style="@style/backBut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_layout_white_bg"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/user_set_top_layout_One"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@drawable/sy37_icon_default_head"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dip"
+                        android:text="@string/fg_account"
+                        android:textColor="@color/s_gray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="75.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dip"
+                        android:singleLine="true"
+                        android:textColor="@color/s_orange"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:gravity="left" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/fg_nick"
+                        android:textColor="@color/s_gray"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/userNick"
+                        android:layout_width="75.0dip"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="@color/s_orange"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_set_center_layout_One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personInfo"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/giftLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_btn_user_set_center_bg_up"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:src="@drawable/sy37_my_gift" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fg_mygift"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/sy37_user_set_center_right_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/walletLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_btn_user_set_center_bg_center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:src="@drawable/sy37_my_wallet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fg_wallet"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/sy37_user_set_center_right_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/modifyPersonLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_btn_user_set_center_bg_center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:src="@drawable/sy37_my_information" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fg_modify_info"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/sy37_user_set_center_right_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pwLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_btn_user_set_center_bg_down"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:src="@drawable/sy37_change_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/fg_modify_pw"
+                android:textColor="@color/s_gray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/sy37_user_set_center_right_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

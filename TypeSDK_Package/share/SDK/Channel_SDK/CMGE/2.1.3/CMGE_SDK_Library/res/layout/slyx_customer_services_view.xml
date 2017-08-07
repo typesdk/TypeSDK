@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/slyx_mc_services_container"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <LinearLayout android:id="@+id/slyx_s_1"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal" >
+
+            <TextView android:id="@+id/slyx_s_1_1"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="@string/slyx_mc_s_1"
+                      android:textColor="#ff626262"
+                      android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slyx_s_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/slyx_s_2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/slyx_mc_s_2"
+                android:textColor="#ffa0a0a0"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cmge_s_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cmge_s_hotline_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cmge_hotline"
+                android:textColor="#ffe59139"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/slyx_s_qq_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/slyx_qq"
+                android:textColor="#ffe59139"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cmge_s_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cmge_s_4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cmge_mc_s_4"
+                android:textColor="#ffb5b5b5"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+        
+        
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

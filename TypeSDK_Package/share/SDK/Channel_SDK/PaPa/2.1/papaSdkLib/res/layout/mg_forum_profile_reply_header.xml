@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <View android:layout_width="match_parent" android:layout_height="10dp" android:id="@+id/forum_post_divider"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:id="@+id/layout_posts_top"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="8dp"
+            >
+        <view class="com.papa91.pay.widget.RoundedImageView" android:layout_width="42dp"
+              android:layout_height="42dp" android:id="@+id/forum_post_avatar_src"
+              android:src="@drawable/main_normal_icon"
+              android:scaleType="fitCenter"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称"
+                    android:id="@+id/forum_post_nickname" android:textColor="@color/forum_nickname_color" android:textSize="15sp"
+                    android:gravity="center_vertical" android:layout_gravity="top"/>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间"
+                    android:id="@+id/forum_post_add_time" android:textColor="#6a6a6a" android:textSize="12sp"
+                    android:layout_gravity="bottom" android:gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/forum_post_func_container"
+                android:visibility="gone">
+            <ImageView
+                    android:id="@+id/forum_post_reply"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/reply"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

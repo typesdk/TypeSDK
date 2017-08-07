@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+             android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:minWidth="@dimen/dp861"
+        >
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:text="确定退出"
+        android:id="@+id/title"
+        android:textColor="#3b3b3b"
+        android:textSize="@dimen/dp48"
+        android:visibility="visible"
+        />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付尚未完成,您确定放弃此次支付吗?"
+            android:id="@+id/content"
+            android:textSize="@dimen/dp40"
+            android:textColor="#3b3b3b"
+            />
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/papa_dialog_line"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <!--取消支付-->
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/exitCancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/papa_cancel_exit_btn"
+                    android:minWidth="@dimen/dp348"
+                    android:scaleType="fitXY"
+                    />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消支付"
+                    android:textColor="#ff5d5d5d"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/cancle"
+                    />
+        </RelativeLayout>
+
+        <!--继续支付-->
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+            <ImageView
+                    android:id="@+id/exitCertainBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/papa_pay_btn"
+                    android:minWidth="@dimen/dp348"
+                    android:scaleType="fitXY"
+                    />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="继续支付"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/ok"
+                    />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

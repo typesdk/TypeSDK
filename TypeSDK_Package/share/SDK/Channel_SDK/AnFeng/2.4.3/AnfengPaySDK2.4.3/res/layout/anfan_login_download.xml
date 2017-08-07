@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+     android:paddingLeft="10dp"
+ android:paddingTop="5dp"
+    android:drawableLeft="@drawable/af_ico_down"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:singleLine="true"
+    android:drawablePadding="5dp"
+    android:textColor="#8f8b92"
+    android:textSize="14sp" />

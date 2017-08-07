@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    >
+    <ImageView
+        android:id="@+id/pj_iv_redpoint"
+        android:src="@drawable/pj_image_redpoint"
+        android:layout_alignTop="@id/pj_iv_icon"
+        android:layout_alignRight="@id/pj_iv_icon"
+        android:layout_width="8dp"
+        android:visibility="gone"
+        android:layout_marginLeft="40dp"
+        android:layout_height="8dp" />
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/pj_menu_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pj_float_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/pj_float_view_icon_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/pj_image_float_logo"
+            />
+
+        <ImageView
+            android:id="@+id/pj_float_view_icon_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pj_anim_background"
+            />
+    </FrameLayout>
+
+</FrameLayout>

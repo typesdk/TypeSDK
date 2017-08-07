@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/lib_black">
+
+        <ImageButton
+                android:id="@+id/backward_btn"
+                style="@style/LibGameDataImageView"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/lib_gamedata_backward"/>
+
+        <ImageButton
+                android:id="@+id/forward_btn"
+                style="@style/LibGameDataImageView"
+                android:layout_toRightOf="@id/backward_btn"
+                android:background="@drawable/lib_gamedata_forward"/>
+
+        <ImageButton
+                android:id="@+id/refresh_btn"
+                style="@style/LibGameDataImageView"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/lib_gamedata_refresh"/>
+
+        <Button
+                android:id="@+id/close_btn"
+                style="@style/LibGameDataImageView"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/lib_gamedata_back"
+                android:textColor="@color/lib_white"
+                android:textSize="17sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/lib_gamedata_close"/>
+
+        <ImageButton
+                android:id="@+id/home_btn"
+                style="@style/LibGameDataImageView"
+                android:layout_toLeftOf="@id/close_btn"
+                android:background="@drawable/lib_gamedata_home"/>
+    </RelativeLayout>
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/LibGameDataProgressbar"
+            android:indeterminateOnly="false"/>
+
+    <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+</LinearLayout>

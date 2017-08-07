@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_6"
+    android:paddingBottom="@dimen/dp_6"
+    android:orientation="horizontal" 
+    android:gravity="center"
+    android:background="@drawable/egame_btn_green_selector"
+    >
+    
+    <TextView android:id="@+id/tv_city" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/dp_18"
+        android:layout_gravity="center"
+        android:text=""/>
+    
+</LinearLayout>

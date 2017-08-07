@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/yk_white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0px"
+        android:background="@color/yk_title_line" />
+
+    <RelativeLayout
+        android:id="@+id/yk_pay_detail_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/YK_GameSDK_119PX"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/YK_GameSDK_20PX"
+        android:paddingTop="@dimen/YK_GameSDK_10PX" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_arrow" >
+
+            <RelativeLayout
+                android:id="@+id/item_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_goodsname_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yk_text_ykgame_pay"
+                    android:textColor="#717171"
+                    android:textSize="@dimen/YK_GameSDK_30PX" />
+                
+                <TextView android:id="@+id/item_rebate_already_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yk_text_rebate_already"
+                    android:textSize="@dimen/YK_GameSDK_25PX"
+                    android:textColor="@color/yk_white"
+                    android:background="@drawable/yk_paylist_bt_blue"
+                    android:layout_toLeftOf="@+id/item_isSuccess_txt"
+                    android:layout_marginRight="@dimen/YK_GameSDK_20PX"
+                    android:paddingLeft="@dimen/YK_GameSDK_15PX"
+                    android:paddingRight="@dimen/YK_GameSDK_15PX"
+                    />
+
+                <TextView
+                    android:id="@+id/item_isSuccess_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/yk_text_ykgame_pay"
+                    android:textColor="@color/yk_paylist_bt_bg_blue"
+                    android:textSize="@dimen/YK_GameSDK_30PX"
+                    android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/item_line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_line1" >
+
+                <TextView
+                    android:id="@+id/item_price_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/YK_GameSDK_6PX"
+                    android:text="@string/yk_text_ykgame_pay"
+                    android:textColor="#717171"
+                    android:textSize="@dimen/YK_GameSDK_30PX" />
+
+                <TextView
+                    android:id="@+id/item_time_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="@dimen/YK_GameSDK_10PX"
+                    android:text="@string/yk_text_ykgame_pay"
+                    android:textColor="@color/yk_edit_text_hint"
+                    android:textSize="@dimen/YK_GameSDK_24PX" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/item_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/YK_GameSDK_26PX"
+            android:src="@drawable/yk_pay_detail_item_arrow_down" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:orientation="vertical">
+<!--         android:visibility="gone" > -->
+
+        <ImageView
+            android:id="@+id/yk_pay_detail_item_curve_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yk_pay_detail_item_curve" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+        	android:padding="@dimen/YK_GameSDK_20PX" >
+
+            <TextView
+                android:id="@+id/item_orderid_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yk_text_ykgame_pay"
+                android:textColor="#717171"
+                android:textSize="@dimen/YK_GameSDK_30PX" />
+
+            <RelativeLayout android:id="@+id/item_illustrate_layout"
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/item_orderid_txt"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" 
+	            android:paddingTop="@dimen/YK_GameSDK_6PX">
+	            <TextView
+	                android:id="@+id/item_tips_txt"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/yk_text_ykgame_pay"
+	                android:textColor="#717171"
+	                android:textSize="@dimen/YK_GameSDK_30PX" />
+            </RelativeLayout>
+            
+            <LinearLayout android:id="@+id/item_rebate_row1"
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/item_illustrate_layout"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" 
+	            android:paddingTop="@dimen/YK_GameSDK_10PX">
+                <TextView
+                    android:id="@+id/item_rebate_amount_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yk_text_ykgame_pay"
+                    android:textColor="@color/yk_white"
+                    android:background="@drawable/yk_paylist_bt_blue"
+                    android:layout_marginRight="@dimen/YK_GameSDK_10PX"
+                    android:textSize="@dimen/YK_GameSDK_24PX"
+                    android:paddingLeft="@dimen/YK_GameSDK_15PX"
+                    android:paddingRight="@dimen/YK_GameSDK_15PX"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/item_rebate_bonus_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yk_text_ykgame_pay"
+                    android:textColor="@color/yk_white"
+                    android:background="@drawable/yk_paylist_bt_orange"
+                    android:layout_marginRight="@dimen/YK_GameSDK_10PX"
+                    android:textSize="@dimen/YK_GameSDK_24PX"
+                    android:paddingLeft="@dimen/YK_GameSDK_15PX"
+                    android:paddingRight="@dimen/YK_GameSDK_15PX"
+                    android:singleLine="true"/>
+                 <TextView
+                    android:id="@+id/item_rebate_convert_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yk_text_prompt_buy_msg"
+                    android:textColor="@color/yk_white"
+                    android:background="@drawable/yk_paylist_bt_pink"
+                    android:layout_marginRight="@dimen/YK_GameSDK_10PX"
+                    android:textSize="@dimen/YK_GameSDK_24PX"
+                    android:paddingLeft="@dimen/YK_GameSDK_15PX"
+                    android:paddingRight="@dimen/YK_GameSDK_15PX"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/item_rebate_row2"
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/item_rebate_row1"
+	            android:layout_centerVertical="true"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal" 
+	            android:paddingTop="@dimen/YK_GameSDK_10PX">
+                <TextView
+                    android:id="@+id/item_rebate_convert2_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yk_text_prompt_buy_msg"
+                    android:textColor="@color/yk_white"
+                    android:background="@drawable/yk_paylist_bt_pink"
+                    android:layout_marginRight="@dimen/YK_GameSDK_10PX"
+                    android:textSize="@dimen/YK_GameSDK_24PX"
+                    android:paddingLeft="@dimen/YK_GameSDK_15PX"
+                    android:paddingRight="@dimen/YK_GameSDK_15PX"
+                    android:singleLine="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

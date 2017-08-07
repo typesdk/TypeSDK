@@ -1,0 +1,141 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme.NoBackgroundAndTitleMain" parent="android:Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="exit_login_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="LoadingDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/_yl_loading_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="WarnInfoStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@drawable/_bg_topwarn</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+
+    <style name="recharge_pay_btn">
+        <item name="android:background">@drawable/recharge_btn</item>
+        <item name="android:textColor">@color/white</item>  
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="pay_record_title">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/padding_3dp</item>
+        <item name="android:textColor">@color/win_bar_yellow</item>
+        <item name="android:textSize">@dimen/edit_text_14sp</item>
+    </style>
+
+    <style name="pay_record_content">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/padding_3dp</item>
+        <item name="android:textColor">@color/personal_text1</item>
+        <item name="android:textSize">@dimen/label_text_12sp</item>
+    </style>
+
+    <style name="personal_tv_hint">
+        <item name="android:paddingRight">@dimen/padding_3dp</item>
+        <item name="android:textColor">#656565</item>
+        <item name="android:textSize">@dimen/edit_text_14sp</item>
+    </style>
+
+    <style name="personal_tv_left">
+        <item name="android:textColor">@color/personal_text1</item>
+        <item name="android:textSize">@dimen/label_text_16sp</item>
+    </style>
+
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/menushow</item>
+        <item name="android:windowExitAnimation">@anim/menuhide</item>
+    </style>
+
+    <style name="login_editview">
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="login_button_port">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="login_button_land">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="login_top_text">
+        <item name="android:textColor">#737373</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="login_top_image">
+        <item name="android:layout_width">115dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+    <style name="login_top_view">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:background">#cfcfcf</item>
+    </style>
+    <style name="win_item">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawablePadding">2dp</item>
+    </style>
+
+</resources>

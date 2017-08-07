@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/com_lenovo_pay_process_bg">
+
+    <ImageView
+        android:id="@+id/img_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+    	android:layout_marginTop="8dp"
+        android:src="@drawable/com_lenovo_pay_process_icon" />
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/com_lenovo_pay_progress_pb_circle" />
+
+    <TextView
+        android:id="@+id/txt_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb_progress"
+        android:gravity="center_horizontal"
+        android:text="Progress..."
+        android:textColor="#191919"
+        android:paddingBottom="28dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>

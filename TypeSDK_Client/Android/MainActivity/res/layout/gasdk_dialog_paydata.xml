@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="290dip"
+        android:layout_height="275dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gasdk_login_rel" >
+
+        <LinearLayout
+            android:id="@+id/paydata_lin"
+            android:layout_width="260dip"
+            android:layout_height="44dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/paydata_imagebutton_1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/gasdk_login_beck" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_registered_title"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="@string/text_paydata_1" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/paydata_lin"
+            android:layout_alignRight="@+id/paydata_lin"
+            android:layout_below="@+id/paydata_lin"
+            android:layout_margin="10dp" >
+
+            <ListView
+                android:id="@+id/paydata_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/paydata_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/text_paydata_5"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

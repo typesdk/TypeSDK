@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_marginTop="10dip">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dip"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/sdk_name"
+        android:src="@android:drawable/btn_radio" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/image" 
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sdk_name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fg_account_hint"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

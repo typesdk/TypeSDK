@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 m</item>
+        <item quantity="other">%d m</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <string name="tw__like_tweet">M\'agrada el tuit</string>
+    <string name="tw__liked_tweet">Desfés l\'agradament</string>
+    <string name="tw__loading_tweet">S\'està carregant el tuit</string>
+    <string name="tw__pause">atura temporalment</string>
+    <string name="tw__play">reprodueix</string>
+    <string name="tw__replay">torna a reproduir</string>
+    <string name="tw__retweeted_by_format">Retuitat per %1$s</string>
+    <string name="tw__share_content_format">Dóna un cop d\'ull al tuit de \@%1$s: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">Tuit de %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Comparteix el tuit</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Tuit amb contingut multimèdia</string>
+</resources>

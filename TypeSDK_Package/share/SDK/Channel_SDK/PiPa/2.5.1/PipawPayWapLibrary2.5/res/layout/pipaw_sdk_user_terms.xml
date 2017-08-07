@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/terms"
+    android:layout_width="match_parent"
+    android:layout_height="330dip"
+    android:layout_centerInParent="true"
+    android:background="@drawable/sdk_login_bg"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/sdk_login_title_bg" >
+
+        <LinearLayout
+            android:id="@+id/terms_back"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/sdk_back_bg_selector"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sdk_login_icon_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pp_terms_title"
+            android:textColor="@color/text_title"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="15dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pp_terms"
+                android:textColor="#ffd9d9d9"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/terms_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:textColor="#ffd9d9d9"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/terms_disagree_btn"
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/sdk_login_btn_green_selector"
+            android:text="@string/pp_disagree"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/terms_agree_btn"
+            android:layout_width="100dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/sdk_login_btn_green_selector"
+            android:text="@string/pp_agree"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

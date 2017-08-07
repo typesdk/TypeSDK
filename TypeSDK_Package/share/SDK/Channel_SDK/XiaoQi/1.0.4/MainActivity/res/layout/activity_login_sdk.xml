@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/login_title_rl"
+        layout="@layout/login_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dip"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/login_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dip"
+                    android:src="@drawable/activity_login_user" />
+
+                <EditText
+                    android:id="@+id/login_et_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_toRightOf="@+id/login_iv"
+                    android:background="@null"
+                    android:hint="用户名/手机号"
+                    android:maxLength="20"
+                    android:textSize="16sp"
+                    android:imeOptions="flagNoExtractUi|actionNext" 
+                    style="@style/et_tc_textColorHint"/>
+
+                <ImageView
+                    android:id="@+id/login_iv_deleteuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:padding="10dip"
+                    android:src="@drawable/activity_login_delete"
+                    android:visibility="invisible" />
+
+                <View
+                    android:id="@+id/login_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_below="@+id/login_iv"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white" >
+
+                <ImageView
+                    android:id="@+id/login_iv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dip"
+                    android:src="@drawable/activity_loginpsd" />
+
+                <EditText
+                    android:id="@+id/login_et_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_toRightOf="@+id/login_iv_1"
+                    android:background="@null"
+                    android:hint="请输入登录密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textSize="16sp"
+                    android:imeOptions="flagNoExtractUi"
+                    style="@style/et_tc_textColorHint"/>
+
+                <ImageView
+                    android:id="@+id/login_iv_deletepassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:clickable="true"
+                    android:padding="10dip"
+                    android:src="@drawable/activity_login_delete"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/login_checkbox"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="true"
+                android:text="记住密码"
+                android:textColor="#808080"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="320dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/green_radio_bg"
+                android:text="立即登录"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/login_tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingBottom="10dip"
+                    android:paddingRight="50dip"
+                    android:paddingTop="10dip"
+                    android:text="快速注册"
+                    android:textColor="@color/text_green"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/login_tv_forgetpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="50dip"
+                    android:paddingTop="10dip"
+                    android:text="忘记密码"
+                    android:textColor="@color/text_green"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            
+             
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content" >
+                 <!--
+				<TextView
+                    android:id="@+id/login_tv_website"
+                    android:layout_width="fill_parent"       
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"                  
+                    android:text=""
+                    android:textColor="@color/text_green"
+                    android:textSize="14sp"
+                    android:gravity="center_horizontal"/>
+                    -->
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/login_line_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="130dip"
+                    android:layout_marginRight="55dip"
+                    android:background="#00000000" />
+                
+            </RelativeLayout>
+            
+          
+            <TextView
+                android:id="@+id/login_tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:layout_gravity="center_horizontal"              
+                android:layout_marginTop="10dip"
+                android:textColor="@color/text_green"
+                android:textSize="14sp" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

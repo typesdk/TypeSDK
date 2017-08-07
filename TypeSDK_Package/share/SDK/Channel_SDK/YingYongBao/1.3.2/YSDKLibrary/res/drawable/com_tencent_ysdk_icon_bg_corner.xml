@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="6dp"
+             android:topRightRadius="6dp"
+             android:bottomLeftRadius="6dp"
+             android:bottomRightRadius="6dp"/>
+    <solid android:color="#edf2f4"/>
+</shape><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/drawable/com_tencent_ysdk_icon_bg_corner.xml -->

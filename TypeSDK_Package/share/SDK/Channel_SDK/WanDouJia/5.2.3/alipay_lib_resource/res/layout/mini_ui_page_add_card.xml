@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mini="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mini_page_bg_color"
+    android:contentDescription="@string/mini_str_null"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mini_card_title_bg"
+        android:contentDescription="@string/mini_str_null" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mini_page_add_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mini_page_add_title"
+                android:textColor="@color/mini_text_white"
+                android:textSize="@dimen/mini_text_size_xx_large" />
+
+            <TextView
+                android:id="@+id/mini_page_add_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mini_text_white"
+                android:textSize="@dimen/mini_text_size_x_small"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.alipay.android.mini.widget.MiniLabelInput
+        android:id="@+id/mini_page_add_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mini_margin_default"
+        android:layout_marginRight="@dimen/mini_margin_default"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/mini_input_bg"
+        android:contentDescription="@string/mini_str_null"
+        mini:labelName="@string/mini_card_no"
+        mini:maxInputLength="100"
+        mini:miniInputHint="@string/mini_page_add_hint" />
+
+    <TextView
+        android:id="@+id/mini_page_add_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mini_add_card_margin_left"
+        android:layout_marginRight="@dimen/mini_margin_right"
+        android:layout_marginTop="@dimen/mini_margin_6"
+        android:text="@string/mini_page_add_tips"
+        android:textColor="@color/mini_text_color_desc"
+        android:textSize="@dimen/mini_text_size_small" />
+
+    <Button
+        android:id="@+id/mini_page_add_confirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mini_margin_default"
+        android:layout_marginRight="@dimen/mini_margin_default"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/mini_btn_confirm_bg_selector"
+        android:text="@string/mini_page_next"
+        android:textColor="@drawable/mini_btn_confirm_text_color_selector"
+        android:textSize="@dimen/mini_text_size_xx_large" />
+    
+    <TextView
+        android:id="@+id/mini_page_add_other_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mini_margin_left"
+        android:layout_marginRight="@dimen/mini_margin_right"
+        android:layout_marginTop="@dimen/mini_margin_6"
+        android:text="@string/mini_page_add_other_pay"
+        android:textColor="@color/mini_text_link"
+        android:textSize="@dimen/mini_text_size_small" />
+
+</LinearLayout>

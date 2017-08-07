@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.actionbar.ActionbarNormalLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.lion.ccpay.widget.actionbar.ActionbarTitleLayout
+        android:id="@+id/lion_layout_actionbar_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dip" >
+
+        <com.lion.ccpay.widget.actionbar.ActionbarNormalTitleContentLayout
+            android:layout_width="match_parent"
+            android:layout_height="48.0dip"
+            android:layout_alignParentBottom="true" >
+
+            <TextView
+                android:id="@+id/lion_layout_actionbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/lion_common_white"
+                android:textSize="20.0sp" />
+
+            <ImageView
+                android:id="@+id/lion_layout_actionbar_back"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/lion_common_transparent_selector"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/lion_nav_back" />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="48.0dip"
+                android:layout_alignParentRight="true"
+                layout="@layout/lion_layout_actionbar_menu"
+                android:minWidth="48.0dip" />
+        </com.lion.ccpay.widget.actionbar.ActionbarNormalTitleContentLayout>
+    </com.lion.ccpay.widget.actionbar.ActionbarTitleLayout>
+
+</com.lion.ccpay.widget.actionbar.ActionbarNormalLayout>

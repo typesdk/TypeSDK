@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="textwidth" format="integer" />
+    <attr name="typeface">
+        <enum name="normal" value="0" />
+        <enum name="sans" value="1" />
+        <enum name="serif" value="2" />
+        <enum name="monospace" value="3" />
+    </attr>
+
+    <declare-styleable name="EcoGallery">
+        <attr name="gravity" format="integer" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="unselectedAlpha" format="float" />
+        <attr name="spacing" format="dimension" />
+    </declare-styleable>
+
+    <attr name="ecoGalleryStyle" format="reference" />
+
+    <declare-styleable name="CustomAbsSpinner">
+        <attr name="entries" format="reference" />
+    </declare-styleable>
+
+    <attr name="customAbsSpinnerStyle" format="reference" />
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="selectedTabTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ItemSettingRelativelayout">
+        <attr name="switchBtnMarginRight" format="dimension" />
+        <attr name="itemTitleMarginLeft" format="dimension" />
+        <attr name="itemDescripMarginLeft" format="dimension" />
+        <attr name="itemDescripShow" format="boolean" />
+        <attr name="itemStateShow" format="boolean" />
+        <attr name="itemTitleText" format="reference|string" />
+        <attr name="itemDescripText" format="reference|string" />
+        <attr name="itemStateText" format="reference|string" />
+        <attr name="itemStateTextColor" format="reference" />
+        <attr name="itemRootBackground" format="reference" />
+        <attr name="itemDescribTextColor" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="clock_view">
+        <attr name="num_0" format="reference" />
+        <attr name="num_1" format="reference" />
+        <attr name="num_2" format="reference" />
+        <attr name="num_3" format="reference" />
+        <attr name="num_4" format="reference" />
+        <attr name="num_5" format="reference" />
+        <attr name="num_6" format="reference" />
+        <attr name="num_7" format="reference" />
+        <attr name="num_8" format="reference" />
+        <attr name="num_9" format="reference" />
+        <attr name="colon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer" />
+        <attr name="rv_rippleDuration" format="integer" />
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0" />
+            <enum name="doubleRipple" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+    </declare-styleable>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nanlus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/YK_GameSDK_552PX"
+    android:layout_height="wrap_content"
+    android:background="@color/yk_ykbgColor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/yk_title_include" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/yk_title_line" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/yk_tv_error_include" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/YK_GameSDK_36PX"
+            android:layout_marginRight="@dimen/YK_GameSDK_36PX"
+            android:layout_marginTop="@dimen/YK_GameSDK_8PX" >
+
+            <com.youku.gamesdk.widget.EditTextWithErr
+                android:id="@+id/et_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/yk_text_hint_user_name"
+                android:tag="user_special#20" />
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/yk_ed_clear"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/YK_GameSDK_36PX"
+        android:layout_marginRight="@dimen/YK_GameSDK_36PX"
+        android:layout_marginTop="@dimen/YK_GameSDK_36PX" >
+
+        <com.youku.gamesdk.widget.EditTextWithErr
+            android:id="@+id/et_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/yk_text_hint_csmm_reg"
+            android:tag="password_visible#16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/YK_GameSDK_36PX"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/reg_tv_hink"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/yk_text_a_zcxy"
+            android:textColor="@drawable/yk_tv_hink_protocol_selector"
+            android:textSize="@dimen/YK_GameSDK_18PX" />
+ <!-- yk_text_a_zcxy -->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/YK_GameSDK_20PX"
+        android:layout_marginLeft="@dimen/YK_GameSDK_36PX"
+        android:layout_marginRight="@dimen/YK_GameSDK_36PX"
+        android:layout_marginTop="@dimen/YK_GameSDK_32PX"
+        android:background="@color/yk_ykbgColor"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/YK_GameSDK_88PX"
+            android:layout_weight="1"
+            android:background="@drawable/yk_btn_blue_selector"
+            android:text="@string/yk_text_btn_ljzc"
+            android:textColor="@color/yk_btn_text_white"
+            android:textSize="@dimen/YK_GameSDK_30PX" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/yk_title_line" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yk_ykbgColor"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_other_login"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/YK_GameSDK_110PX"
+            android:background="@drawable/yk_btn_white_selector"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/yk_text_btn_yk_user_login"
+            android:textColor="@color/yk_button_text"
+            android:textSize="@dimen/YK_GameSDK_26PX" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="18dp" 
+    android:background="@color/egame_usersdk_white"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/egame_tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="注册完成"
+            android:textColor="@color/egame_usersdk_green"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/egame_yaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的登录账号:"
+                android:textColor="@color/egame_usersdk_dark_gray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/egame_register_success_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="手机号码"
+                android:textColor="@color/egame_usersdk_dark_gray"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/egame_register_success_enter_game"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/egame_btn_light_green_status"
+            android:text="进入游戏"
+            android:textColor="@color/egame_usersdk_white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/egame_register_success_download_egame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/egame_btn_light_yellow_status"
+            android:text="下载爱游戏客户端"
+            android:textColor="@color/egame_usersdk_white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

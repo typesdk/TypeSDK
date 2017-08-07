@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lion_common_basic_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lion_activity_change_log_detail_value"
+            android:layout_width="match_parent"
+            android:layout_height="80.0dip"
+            android:background="@drawable/lion_common_frame_bottom_nor"
+            android:gravity="center|left"
+            android:paddingLeft="15.0dip"
+            android:textSize="40.0dip" />
+
+        <LinearLayout
+            android:id="@+id/lion_activity_change_log_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/lion_common_frame_top_nor"
+            android:orientation="vertical"
+            android:paddingTop="0.5dip" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

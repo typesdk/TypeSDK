@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:paddingLeft="@dimen/mg_forum_post_item_padding"
+              android:paddingRight="@dimen/mg_forum_post_item_padding"
+              android:paddingTop="3dp"
+              android:paddingBottom="4dp"
+        >
+
+    <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:id="@+id/forum_post_best"
+            android:src="@drawable/icon_best_solid"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="标题"
+              android:id="@+id/forum_post_subject"
+              android:gravity="center_vertical"
+              android:textColor="#3b3b3b"
+              android:textSize="@dimen/mg_forum_post_subject_text_size"
+              android:singleLine="false"
+              android:ellipsize="end"
+              android:lineSpacingMultiplier="1.2"
+            />
+    <!--android:lineSpacingExtra="2dp"
+    android:lineSpacingMultiplier="1.2"-->
+
+</LinearLayout>

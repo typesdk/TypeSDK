@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sogou.wan.common.NetworkImageView
+        android:id="@+id/sogou_game_sdk_iv_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sogou_game_sdk_ads_default_icon"/>
+
+    <ImageView
+        android:id="@+id/sogou_game_sdk_iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/sogou_game_sdk_ads_close" />
+</RelativeLayout>

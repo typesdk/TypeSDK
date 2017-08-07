@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dcn_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/dcn_actionbar"
+        layout="@layout/dcn_message_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_title_height" />
+
+    <RelativeLayout
+        android:id="@+id/dcn_ads_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.downjoy.widget.RecycleViewPager
+            android:id="@+id/dcn_adv_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.downjoy.widget.IndexView
+            android:id="@+id/dcn_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+        <ImageView
+            android:id="@+id/dcn_message_image_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dcn_message_margin"
+            android:src="@drawable/dcn_message_delete" />
+    </RelativeLayout>
+
+    <com.downjoy.widget.pulltorefresh.PullSwipeListView
+        android:id="@+id/dcn_message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ddd"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+</LinearLayout>

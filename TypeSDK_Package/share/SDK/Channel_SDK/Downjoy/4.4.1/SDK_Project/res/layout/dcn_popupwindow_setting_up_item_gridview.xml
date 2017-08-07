@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/dcn_float_dropmenu_bg"
+        android:paddingLeft="5dp">
+
+        <GridView
+            android:id="@+id/dcn_popupwindow_up_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dcn_popupwindow_up_listView"
+            android:layout_centerVertical="true"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@drawable/dcn_pop_setting_gridview_selector"
+            android:numColumns="5" />
+    </RelativeLayout>
+</LinearLayout>

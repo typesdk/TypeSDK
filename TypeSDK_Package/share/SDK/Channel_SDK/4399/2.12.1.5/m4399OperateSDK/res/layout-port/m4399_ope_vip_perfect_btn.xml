@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/vip_perfect_info"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@drawable/m4399_ope_vip_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:id="@+id/vip_pefect_prompt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/m4399_ope_vip_tv_size_two"
+            android:textColor="@color/m4399_ope_perfect_nickname_text"
+            />
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="22dp"
+            android:src="@drawable/m4399_ope_vip_arrow_right"/>
+</LinearLayout>

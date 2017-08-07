@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/m4399RecPageStyle"
+    android:layout_width="@dimen/m4399_rec_page_width"
+    android:layout_height="@dimen/m4399_rec_page_height" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_title_height"
+        layout="@layout/m4399_rec_sec_confirm_title" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        layout="@layout/m4399_rec_sec_init_order_info" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_separator_height"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        layout="@layout/m4399_rec_sec_mvcenter_separator" />
+
+    <LinearLayout
+        style="@style/m4399RecGridviewContainerStyle"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        android:gravity="top"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/rmd_gridview"
+            style="@style/m4399RecWyBankBtnStyle"
+            android:listSelector="@drawable/m4399_rec_pm_item_bg" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/m4399_rec_sec_mvcenter_separator"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:layout_height="@dimen/m4399_rec_separator_height" />
+
+        <include
+            layout="@layout/m4399_rec_sec_single_btn_area"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/m4399_rec_sum_btns_eara_height"
+            android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+            android:layout_marginBottom="@dimen/m4399_rec_single_btn_marginBottom"
+            android:layout_marginRight="@dimen/m4399_rec_paddingLeft" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_foot_height"
+        layout="@layout/m4399_rec_sec_standard_foot" />
+
+</LinearLayout>

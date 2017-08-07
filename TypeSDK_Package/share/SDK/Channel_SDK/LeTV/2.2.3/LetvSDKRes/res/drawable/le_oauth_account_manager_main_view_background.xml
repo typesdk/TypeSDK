@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners android:radius="10dp" />
+
+    <solid android:color="@color/le_oauth_text_color_white" />
+
+    <stroke
+        android:width="1px"
+        android:color="@color/le_oauth_account_manager_main_view_border_color" />
+
+</shape>

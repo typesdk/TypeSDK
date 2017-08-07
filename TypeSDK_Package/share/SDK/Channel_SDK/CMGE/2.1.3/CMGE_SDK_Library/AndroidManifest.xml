@@ -1,0 +1,185 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cmge.sdk"
+    android:versionCode="8"
+    android:versionName="CMGE_SDK_CN_1.0.2" >
+
+    <!-- package="com.cmge.sdk" com.youkia.death.ar com.youkia.death.ar.wxapi   com.coolplay.zrspddz.cmge  com.zrspysz.dz com.cmge.deerhunter2014 -->
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <!--
+                                注：如果targetSdkVersion > 12， 请将下面所有activity中的 android:configChanges的值
+         
+                              从  "orientation|keyboardHidden" 改为     "orientation|keyboardHidden|screenSize"    
+    -->
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="PROJECT_ID"
+            android:value="1" />
+        <meta-data
+            android:name="SERVICES_PHONE"
+            android:value="135-221-46643" />
+        <meta-data
+            android:name="SERVICES_QQ"
+            android:value="757279327" />
+        <!-- android:name="com.cmge.sdk.TempActivity" -->
+
+
+        <!-- android:theme="@style/slyx_login_activity" -->
+        <activity
+            android:name="com.cmge.sdk.CmgeSdkDemo"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cmge.sdk.login.ManagementCenterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.cmge.sdk.login.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.cmge.sdk.pay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+
+            <!--
+         QQ支付必备        <intent-filter>
+               <action android:name="android.intent.action.VIEW" />
+               <category android:name="android.intent.category.BROWSABLE"/> 
+               <category android:name="android.intent.category.DEFAULT"/> 
+               <data android:scheme="qwallet1000000437"/> 
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cmge.sdk.pay.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        
+        <!-- qq -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1102004419" />
+                <!-- 100380359 100381104 222222 -->
+
+            </intent-filter>
+        </activity>
+
+        <!-- end qq -->
+
+        <!-- 京东框支付插件 -->
+        <activity
+            android:name="com.wangyin.wepay.kuang.ui.WePayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WePayTheme" >
+        </activity>
+        <!-- 京东框支付插件 -->
+
+
+        <!-- 爱拍 -->
+        <activity android:name="net.appplus.sdk.ContainerActivity" />
+
+        <meta-data
+            android:name="aipai.hidebar"
+            android:value="true" />
+        <meta-data
+            android:name="aipai.gameid"
+            android:value="5557" />
+        <meta-data
+            android:name="aipai.apk-channel"
+            android:value="0x1" />
+        <meta-data
+            android:name="aipai.sns"
+            android:value="0x3F" />
+        <meta-data
+            android:name="aipai.game-activity"
+            android:value="com.cmge.sdk.CmgeSdkDemo" />
+        <!-- 爱拍 end -->
+    </application>
+
+</manifest>

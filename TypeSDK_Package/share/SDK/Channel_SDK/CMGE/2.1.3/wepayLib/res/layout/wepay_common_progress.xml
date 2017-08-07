@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wepay_cp_progressdialog_bg"
+    android:gravity="center_horizontal"
+    android:minWidth="120dp"
+    android:orientation="vertical"
+    android:padding="@dimen/wepay_space_large" >
+
+    <ImageView
+        android:id="@+id/loadingImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/wepay_loading" />
+
+    <TextView
+        android:id="@+id/id_tv_loadingmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wepay_space_large"
+        android:textSize="@dimen/wepay_txt_middle" />
+
+</LinearLayout>

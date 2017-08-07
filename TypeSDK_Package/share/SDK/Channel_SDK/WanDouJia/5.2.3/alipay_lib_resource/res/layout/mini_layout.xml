@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mini_layout"
+    android:contentDescription="mini_layout_relativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:layout_gravity="center_horizontal" >
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/slyx_color_bacgrount"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/slyx_reg_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="0dip" >
+        
+        <include layout="@layout/slyx_phone_acount_info_view"/>
+
+
+        <LinearLayout
+            android:id="@+id/slyx_reg_terms_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2.0dip" >
+
+            <CheckBox
+                android:id="@+id/slyx_reg_cb_sele"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/slyx_cb_sele"
+                android:button="@null"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/slyx_reg_txt_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="@string/cmge_reg_user_terms_read"
+                android:textColor="#ff626262"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/slyx_reg_txt_protocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:text="@string/cmge_reg_user_terms"
+                android:textColor="#ffe59139"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

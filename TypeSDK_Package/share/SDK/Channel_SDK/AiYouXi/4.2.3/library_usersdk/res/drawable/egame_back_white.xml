@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/egame_btn_back_white_white_normal" android:state_window_focused="false"></item>
+    <item android:drawable="@drawable/egame_btn_back_white_pressed" android:state_pressed="true"></item>
+
+</selector>

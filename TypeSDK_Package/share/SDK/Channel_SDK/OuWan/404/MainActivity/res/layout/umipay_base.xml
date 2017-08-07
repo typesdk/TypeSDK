@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		android:id = "@+id/umipay_base"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		android:layout_width = "fill_parent"
+		android:layout_height = "fill_parent"
+		android:background = "@null" >
+
+	<RelativeLayout
+			android:id = "@+id/umipay_base_content"
+			android:layout_width = "fill_parent"
+			android:layout_height = "fill_parent"
+			android:background = "@null"
+			>
+	</RelativeLayout >
+
+	<LinearLayout
+			android:id = "@+id/umipay_loading_progress_ly"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_alignParentBottom = "true"
+			android:layout_centerHorizontal = "true"
+			android:layout_marginBottom = "30dp"
+			android:background = "#9000"
+			android:gravity = "center"
+			>
+
+		<ProgressBar
+				android:id = "@+id/umipay_loading_pregressbar"
+				style = "?android:attr/progressBarStyleSmall"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:indeterminate = "true"
+				/>
+
+		<TextView
+				android:id = "@+id/umipay_loading_textview"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginLeft = "3dp"
+				android:text = "@string/umipay_base_net_wait"
+				android:textSize = "12sp"
+				/>
+	</LinearLayout >
+</RelativeLayout >

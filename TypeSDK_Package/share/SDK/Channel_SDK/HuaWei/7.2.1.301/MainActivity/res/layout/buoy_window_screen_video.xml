@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/buoy_svid_button_bg" />
+
+    <ImageView
+        android:id="@+id/svid_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:src="@drawable/buoy_svid_status_normal" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/svid_status"
+        android:layout_marginLeft="3dp"
+        android:layout_centerVertical="true"
+        android:textSize="14dp"
+        android:textColor="@color/buoy_white" />
+	
+</RelativeLayout>

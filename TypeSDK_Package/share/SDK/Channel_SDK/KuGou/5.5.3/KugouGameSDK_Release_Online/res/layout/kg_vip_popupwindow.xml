@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kg_shape_frame_gray"
+    android:orientation="vertical" >
+
+    <com.kugou.game.sdk.ui.widget.SelectableRoundedImageView
+        android:id="@+id/kg_layer_vip_image"
+        android:layout_width="230dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/kg_topic_default_img" />
+    
+    <TextView 
+        android:id="@+id/kg_vip_tips_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/kg_btn_height"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/kg_selector_blue_frame"
+        android:textColor="@color/kg_common_blue"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="replaceKey" >
+
+    <replace
+        dir="../MainActivity"
+        encoding="UTF-8"
+        includes="AndroidManifest.xml" >
+
+        <replacefilter
+            token="@app_id@"
+            value="${app_id}" />
+
+        <replacefilter
+            token="@app_key@"
+            value="${app_key}" />
+
+        <replacefilter
+            token="@product_id@"
+            value="${product_id}" />
+
+        <replacefilter
+            token="@sdk_cp_id@"
+            value="${sdk_cp_id}" />
+
+        <replacefilter
+            token="@package@"
+            value="${package}" />
+
+        <replacefilter
+            token="@sdk_name@"
+            value="${sdk_name}" />
+
+        <replacefilter
+            token="@channelName@"
+            value="${channelName}" />
+    </replace>
+	
+	<replace dir="../MainActivity/src/com/type/sdk/android" includes="TypeSDKHelper.java" encoding="UTF-8">
+        <replacefilter token="@channelName@" value="${channelName}"/>
+    </replace>
+
+</project>

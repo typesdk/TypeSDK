@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ToastBgColor">#FF424242</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="progressdialog_background">#00000000</color>
+    <color name="anfan_green_btn_bg_normal">#39C5A9</color>
+    <color name="anfan_green_btn_bg_pressed">#16A085</color>
+    <color name="anfan_defealut_bg">#f3f3f3</color>
+    <color name="anfan_c23c9ae">#23c9ae</color>
+    <color name="anfan_c999999">#999999</color>
+    <color name="anfan_c2C3E50">#2C3E50</color>
+    <color name="anfan_cEDEFF1">#EDEFF1</color>
+    <color name="anfan_cD9DDE1">#D9DDE1</color>
+    <color name="anfan_c8f8b92">#8f8b92</color>
+    <color name="anfan_cBBC2CA">#BBC2CA</color>
+    <color name="anfan_ce5e5e5">#e5e5e5</color>
+
+</resources>

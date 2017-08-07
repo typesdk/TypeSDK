@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/passport_view_cleantextview_et"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:ellipsize="end"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:textColor="@color/passport_color_view_cleantextview_text"
+        android:textSize="15sp" >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/passport_view_cleantextview_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="5dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="5dip"
+        android:src="@drawable/passport_btn_clear"
+        android:visibility="invisible" />
+
+</LinearLayout>

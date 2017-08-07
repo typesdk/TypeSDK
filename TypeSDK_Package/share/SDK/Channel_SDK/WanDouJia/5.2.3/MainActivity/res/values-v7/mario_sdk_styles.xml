@@ -1,0 +1,9 @@
+<resources>
+
+    <!--
+        for Android 2.1.x
+    -->
+    <style name="MarioSDKBaseTheme" parent="android:Theme.Light.NoTitleBar">
+    </style>
+
+</resources>

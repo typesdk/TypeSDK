@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="68dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:id="@+id/img_alipay"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/sdk_alipay"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支付宝"
+        android:layout_below="@+id/img_alipay"
+        android:textColor="@color/black"
+        android:id="@+id/tv_pay_type"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        
+        />
+
+	<ImageView
+	    android:layout_width="15dp"
+	    android:layout_height="15dp"
+	    android:layout_alignRight="@+id/img_alipay"
+	    android:layout_alignTop="@+id/img_alipay"
+	    android:layout_marginTop="2dp"
+	    android:layout_marginRight="2dp"
+	    android:id="@+id/img_check_pay"
+	    android:background="@drawable/sdk_check_pay" />
+
+</RelativeLayout>

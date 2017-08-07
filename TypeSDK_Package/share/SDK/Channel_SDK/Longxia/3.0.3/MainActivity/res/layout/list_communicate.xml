@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_communicate"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/iv_ico_left"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/yzx_person" />
+
+        <TextView
+            android:id="@+id/tv_name_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="小强"
+            android:textSize="12dp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" 
+        android:gravity="left"
+        android:layout_weight="30"
+        >
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/yzx_green_leftbubble"
+            android:text="在吗？饭在吗？中午去哪里吃饭"
+            android:textColor="#666872" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/iv_ico_right"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/yzx_person" />
+
+        <TextView
+            android:id="@+id/tv_name_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="小强"
+            android:textSize="12dp" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

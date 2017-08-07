@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/m4399RecPageStyle"
+    android:layout_width="@dimen/m4399_rec_page_width"
+    android:layout_height="@dimen/m4399_rec_page_height" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_rec_title_height"
+        android:background="@drawable/m4399_rec_mvcenter_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_record_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/m4399_rec_return_btn_bg"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/m4399_rec_paddingRight"
+            android:paddingRight="@dimen/m4399_rec_paddingRight" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/m4399_rec_left_arrow" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/m4399_rec_my_order"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_record_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/m4399_rec_paddingTop"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/m4399_rec_paddingTop"
+                android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginTop="@dimen/m4399_rec_paddingTop"
+                android:text="@string/m4399_rec_history_order_hint"
+                android:textSize="17sp" />
+
+            <include
+                android:id="@+id/area_order_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m4399_rec_record_item_height"
+                android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+                layout="@layout/m4399_rec_item_record_header" />
+
+            <ListView
+                android:id="@+id/lv_order_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+                android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+                android:background="@drawable/m4399_rec_record_body_bg"
+                android:divider="@color/m4399_rec_color_history_record_item_bg"
+                android:dividerHeight="1dp"
+                android:padding="1dp"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/m4399_rec_no_record_indicator"
+            android:text="@string/m4399_rec_no_record"
+            android:textColor="#333333"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_rec_foot_height"
+        layout="@layout/m4399_rec_sec_mvcenter_foot" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/anfan_float_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/af_float_bg_right"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/anfan_menu_center"
+        style="@style/anfan_float_menu" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/af_icon_welfare" />
+
+        <TextView
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/anfan_float_menu_center"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/anfan_menu_gift"
+        style="@style/anfan_float_menu" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/af_icon_helper"/>
+
+        <TextView
+             android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/anfan_float_menu_gift"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+ 
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/ly_color_beff5a00" android:state_pressed="true"/>
+    <item android:drawable="@color/ly_color_ff5a00" android:state_pressed="false"/>
+   
+    <!--
+    <item android:drawable="@drawable/ly_color_cc2d2d" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ly_color_ff3c3c" android:state_pressed="false"/>
+    -->
+
+</selector>

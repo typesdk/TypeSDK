@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dcn_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/dcn_floating_menu_ly"
+        android:layout_width="@dimen/dcn_float_menu_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/dcn_float_bg_right_up"
+        android:orientation="horizontal">
+
+        <GridView
+            android:id="@+id/dcn_floating_menu_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4" />
+
+        <Button
+            android:id="@+id/dcn_float_task"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dcn_shape_float_btn_orange_normal"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/dcn_float_sign"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/dcn_shape_float_btn_blue_normal"
+            android:text="@string/dcn_float_sign"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

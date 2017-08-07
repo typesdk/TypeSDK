@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/loding_faile"
+        android:layout_below="@+id/common_bar_layout"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingBottom="60dp">
+
+    <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/relodingimag"
+            android:src="@drawable/reload_butn_selector"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络连接失败，再试试吧~"
+            android:id="@+id/failedMessage"
+            android:textColor="#908f8f"
+            android:layout_marginTop="15dp"
+            android:textSize="14sp"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:id="@+id/lodingBackImage"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="#cdcdcd"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setNetwork"
+            android:src="@drawable/set_net_butn"/>
+
+    <TextView
+            android:id="@+id/setting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="随便逛逛"
+            android:visibility="gone"
+            android:textColor="#fa923e"
+            android:textSize="13sp"
+            android:gravity="center"
+            />
+</LinearLayout>

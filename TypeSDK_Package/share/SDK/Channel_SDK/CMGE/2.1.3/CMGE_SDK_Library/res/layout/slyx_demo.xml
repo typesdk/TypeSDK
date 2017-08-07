@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffeae7e2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff2ecdb"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="窗口登陆模块" />
+
+        <TextView
+            android:id="@+id/DemoMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffff0000" />
+
+        <Button
+            android:id="@+id/testLoginModuleBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="登陆模块" />
+
+        <LinearLayout
+            android:id="@+id/slyx_demo_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/slyx_demo_propsid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入道具id"
+                android:inputType="text"
+                android:padding="0.0dip"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/slyx_demo_money"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入money"
+                android:inputType="text"
+                android:padding="0.0dip"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/paymentBtnOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="定额支付" />
+
+            <Button
+                android:id="@+id/paymentBtnOneF"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="快冲定额支付" />
+
+            <Button
+                android:id="@+id/paymentBtnTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="不定额支付" />
+
+            <Button
+                android:id="@+id/openMBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="打开用户管理中心" />
+
+            <Button
+                android:id="@+id/bindMBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="绑定手机" />
+            
+            <Button
+                android:id="@+id/openfloat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="打开浮标" />
+            
+            <Button
+                android:id="@+id/closefloat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="关闭浮标" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.cmge.sdk.login.FloatControlView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</FrameLayout>

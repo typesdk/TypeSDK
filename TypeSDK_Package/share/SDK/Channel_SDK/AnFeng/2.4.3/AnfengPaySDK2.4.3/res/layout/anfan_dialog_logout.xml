@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/anfan_defealut_bg" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#39c5a9"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="退出游戏"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@drawable/anfan_diag_close" />
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_close" >
+
+        <ImageView
+            android:id="@+id/iv_main"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            android:src="@color/anfan_defealut_bg" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@id/iv_close"
+            android:background="@color/anfan_defealut_bg"
+            android:gravity="center"
+            android:text="确定退出游戏吗?"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fl_main"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#F1C40F"
+            android:gravity="center"
+            android:text="立即退出"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_other"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#39C5A9"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

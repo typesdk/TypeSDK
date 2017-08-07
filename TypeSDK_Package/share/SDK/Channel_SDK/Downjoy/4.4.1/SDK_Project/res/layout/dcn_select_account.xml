@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/dcn_login_background"
+        android:orientation="vertical">
+
+        <com.downjoy.widget.TitleLayer
+            android:id="@+id/dcn_float_settings_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height" />
+
+        <ListView
+            android:id="@+id/dcn_accounts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/dcn_transparent"
+            android:dividerHeight="4dp"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/dcn_login_padding_left_right"
+            android:paddingRight="@dimen/dcn_login_padding_left_right" />
+
+    </LinearLayout>
+</FrameLayout>

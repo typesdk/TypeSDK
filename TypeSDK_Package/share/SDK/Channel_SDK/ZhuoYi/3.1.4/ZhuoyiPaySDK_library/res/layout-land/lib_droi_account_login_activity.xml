@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:background="@drawable/lib_droi_account_login_land" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/lib_droi_account_app_name"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lib_droi_account_login_account_hint_icon"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/lib_droi_account_login_icon_left"
+                android:layout_marginRight="@dimen/lib_droi_account_login_icon_right"
+                android:src="@drawable/lib_droi_account_login_account_icon_land" />
+
+            <com.droi.account.widget.AccountEditText
+                android:id="@+id/lib_droi_account_username_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:enabled="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="@color/lib_droi_account_text_color"
+                android:hint="@string/lib_droi_account_login_account_hint"
+                android:singleLine="true"
+                android:textColorHint="@color/lib_droi_account_edit_text_color"
+                android:textSize="15sp" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/lib_droi_account_login_password_hint_icon"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/lib_droi_account_login_icon_left"
+                android:layout_marginRight="@dimen/lib_droi_account_login_icon_right"
+                android:src="@drawable/lib_droi_account_login_password_icon_land" />
+
+            <EditText
+                android:id="@+id/lib_droi_account_password_edit"
+                style="@style/LibDroiAccountPasswordStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:hint="@string/lib_droi_account_login_password_hint"
+                android:textColor="@color/lib_droi_account_text_color"
+                android:textColorHint="@color/lib_droi_account_edit_text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lib_droi_account_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/lib_droi_account_button_selector_land"
+            android:onClick="handleLogin"
+            android:text="@string/lib_droi_account_login"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/lib_droi_account_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/lib_droi_account_forget_code"
+                android:textColor="#5e709e"
+                android:textSize="13sp" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/lib_droi_account_column_line_land" />
+
+            <TextView
+                android:id="@+id/lib_droi_account_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/lib_droi_account_register_account"
+                android:textColor="#5e709e"
+                android:textSize="13sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lib_droi_account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+		android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/lib_droi_account_btn_qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/lib_droi_account_btn_qq_normal_land"
+            android:onClick="QQLogin"
+            android:paddingRight="25dp"
+            android:text="@string/lib_droi_account_login_qq_login"
+            android:textColor="@color/lib_droi_account_login_title"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/lib_droi_account_btn_weixin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/lib_droi_account_btn_weixin_normal_land"
+            android:onClick="WeChatLogin"
+            android:paddingRight="25dp"
+            android:text="@string/lib_droi_account_login_weixin_login"
+            android:textColor="@color/lib_droi_account_login_title"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/lib_droi_account_btn_weibo_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/lib_droi_account_btn_weibo_normal_land"
+            android:onClick="WeiboLogin"
+            android:text="@string/lib_droi_account_login_weibo_login"
+            android:textColor="@color/lib_droi_account_login_title"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

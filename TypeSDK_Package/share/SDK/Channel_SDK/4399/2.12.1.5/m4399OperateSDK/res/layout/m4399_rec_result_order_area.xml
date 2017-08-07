@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/pay_eorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/m4399_rec_eorder_land_formatter"
+        android:textColor="#999999"
+        android:textSize="15sp" />
+
+</LinearLayout>

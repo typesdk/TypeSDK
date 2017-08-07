@@ -1,0 +1,45 @@
+{
+  "version":"2.2.1.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "token" : "",
+      "uid":""
+    }
+    ,"out_url" :"http://api.sdk.pyw.cn/Cpapi/check"
+    ,"out_params" :
+    {
+      "token" : ""
+      ,"uid" : ""
+      ,"tid":""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {}
+    ,"out_url" :"http://api.sdk.pyw.cn/Cpapi/check"
+    ,"out_params" :
+      {
+        "app_key": ""
+      ,"product_id": ""
+      ,"amount": ""
+      ,"app_uid" : ""
+      ,"app_ext1": ""
+      ,"app_ext2": ""
+      ,"user_id": ""
+      ,"order_id": ""
+      ,"gateway_flag": ""
+      ,"sign_type": ""
+      ,"app_order_id": ""
+      ,"sign_return": ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,655 @@
+var _ = require('lodash');
+var chai = require('chai');
+var expect = chai.expect;
+var _parser = require('../lib/cron-parser');
+
+describe('cron parser', function() {
+	describe('parse', function() {
+		var parser;
+		beforeEach(function() {
+			parser = new _parser();
+		});
+
+		describe('wildcards ', function() {
+			it('should parse * * * * *', function() {
+				var parse = parser.parse('* * * * *');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * * * *', function() {
+				var parse = parser.parse('* * * * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+		});
+
+		describe('seconds', function() {
+			it('should parse 0 * * * * *', function() {
+				var parse = parser.parse('0 * * * * *');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse 0,1,2,3,4,5 * * * * *', function() {
+				var parse = parser.parse('0,1,2,3,4,5 * * * * *');
+				expect(parse.fields.seconds).to.deep.equal([0, 1, 2, 3, 4, 5]);
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse 0-5 * * * * *', function() {
+				var parse = parser.parse('0-5 * * * * *');
+				expect(parse.fields.seconds).to.deep.equal([0, 1, 2, 3, 4, 5]);
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse */2 * * * * *', function() {
+				var parse = parser.parse('*/2 * * * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 2));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse 0,1,2,3,4,5,10-15 * * * * *', function() {
+				var parse = parser.parse('0,1,2,3,4,5,10-15 * * * * *');
+				expect(parse.fields.seconds).to.deep.equal([0, 1, 2, 3, 4, 5].concat(_.range(10, 16, 1)));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('shouldn\'t parse 60 * * * * *', function() {
+				expect(function() {
+					var parse = parser.parse('60 * * * * *');
+				}).to.throw(Error);
+			});
+		});
+
+		describe('minutes', function() {
+			it('should parse * 0 * * * *', function() {
+				var parse = parser.parse('* 0 * * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * 0,1,2,3,4,5 * * * *', function() {
+				var parse = parser.parse('* 0,1,2,3,4,5 * * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal([0, 1, 2, 3, 4, 5]);
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * 0-5 * * * *', function() {
+				var parse = parser.parse('* 0-5 * * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 6, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * */2 * * * *', function() {
+				var parse = parser.parse('* */2 * * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 2));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * 0,1,2,3,4,5,10-15 * * * *', function() {
+				var parse = parser.parse('* 0,1,2,3,4,5,10-15 * * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal([0, 1, 2, 3, 4, 5].concat(_.range(10, 16, 1)));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('shouldn\'t parse * 60 * * * *', function() {
+				expect(function() {
+					var parse = parser.parse('* 60 * * * *');
+				}).to.throw;
+			});
+		});
+
+		describe('hours', function() {
+			it('should parse * * 0 * * *', function() {
+				var parse = parser.parse('* * 0 * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal([0]);
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * 0,1,2,3,4,5 * * *', function() {
+				var parse = parser.parse('* * 0,1,2,3,4,5 * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal([0, 1, 2, 3, 4, 5]);
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * 0-5 * * *', function() {
+				var parse = parser.parse('* * 0-5 * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 6, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * */2 * * *', function() {
+				var parse = parser.parse('* * */2 * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 2));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * 0,1,2,9-11 * * *', function() {
+				var parse = parser.parse('* * 0,1,2,9-11 * * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal([0, 1, 2].concat(_.range(9, 12, 1)));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('shouldn\'t parse * * 24 * * *', function() {
+				expect(function() {
+					var parse = parser.parse('* * 24 * * *');
+				}).to.throw;
+			});
+
+			describe('for daylight savings time', function() {
+				it('shouldn\'t get stuck on dst'); //mostly just a reminder to do a bunch of work around DST
+			});
+		});
+
+		describe('day of month', function() {
+			it('should parse * * * 1 * *', function() {
+				var parse = parser.parse('* * * 1 * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal([1]);
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * 1,2,3,4,5 * *', function() {
+				var parse = parser.parse('* * * 1,2,3,4,5 * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal([1, 2, 3, 4, 5]);
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * 1-5 * *', function() {
+				var parse = parser.parse('* * * 1-5 * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal([1, 2, 3, 4, 5]);
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * */2 * *', function() {
+				var parse = parser.parse('* * * */2 * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 2)); //boundary is 31, obviously not for every month...
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * 1,2,9-11 * *', function() {
+				var parse = parser.parse('* * * 1,2,9-11 * *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal([1,2].concat(_.range(9, 12, 1)));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * L * *');
+			it('should parse * * * 15W * *');
+
+			describe('for different months', function() {
+				describe('jan', function() {
+					it('should parse * * 0 31 * *');
+
+					it('should parse * * 0 L * *');
+
+					it('shouldn\'t parse * * 0 32 * *', function() {
+						expect(function() {
+							var parse = parser.parse('* * 0 32 * *');
+						}).to.throw;
+					});
+				});
+
+				describe('feb', function() {
+					it('should parse * * 1 31 * *');
+
+					it('should parse * * 1 L * *');
+
+					it('shouldn\'t parse * * 1 29 * * when not leap year', function() {
+						expect(function() {
+							var parse = parser.parse('* * 1 25 * *');
+						}).to.throw;
+					});
+
+					it('should parse * * 1 29 * * when leap year');
+				});
+
+				describe('mar', function() {
+					it('should parse * * 2 31 * *');
+					it('should parse * * 2 L * *');
+					it('shouldn\'t parse * * 2 32 * *');
+				});
+
+				describe('apr', function() {
+					it('should parse * * 3 30 * *');
+					it('should parse * * 3 L * *');
+					it('shouldn\'t parse * * 3 31 * *');
+				});
+
+				describe('may', function() {
+					it('should parse * * 4 31 * *');
+					it('should parse * * 4 L * *');
+					it('shouldn\'t parse * * 4 32 * *');
+				});
+
+				describe('jun', function() {
+					it('should parse * * 5 30 * *');
+					it('should parse * * 5 L * *');
+					it('shouldn\'t parse * * 5 31 * *');
+				});
+
+				describe('jul', function() {
+					it('should parse * * 6 31 * *');
+					it('should parse * * 6 L * *');
+					it('shouldn\'t parse * * 6 32 * *');
+				});
+
+				describe('aug', function() {
+					it('should parse * * 7 31 * *');
+					it('should parse * * 7 L * *');
+					it('shouldn\'t parse * * 7 32 * *');
+				});
+
+				describe('sep', function() {
+					it('should parse * * 8 30 * *');
+					it('should parse * * 8 L * *');
+					it('shouldn\'t parse * * 8 31 * *');
+				});
+
+				describe('oct', function() {
+					it('should parse * * 9 31 * *');
+					it('should parse * * 9 L * *');
+					it('shouldn\'t parse * * 9 32 * *');
+				});
+
+				describe('nov', function() {
+					it('should parse * * 10 30 * *');
+					it('should parse * * 10 L * *');
+					it('shouldn\'t parse * * 10 31 * *');
+				});
+
+				describe('dec', function() {
+					it('should parse * * 11 31 * *');
+					it('should parse * * 11 L * *');
+					it('shouldn\'t parse * * 11 32 * *');
+				});
+			});
+		});
+
+		describe('month', function() {
+			it('should parse * * * * 1 *', function() {
+				var parse = parser.parse('* * * * 1 *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal([1]);
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * * 1,2,3,4,5 *', function() {
+				var parse = parser.parse('* * * * 1,2,3,4,5 *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal([1, 2, 3, 4, 5]);
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * * 1-5 *', function() {
+				var parse = parser.parse('* * * * 1-5 *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal([1, 2, 3, 4, 5]);
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * * */2 *', function() {
+				var parse = parser.parse('* * * * */2 *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 2));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * * 1,2,9-11 *', function() {
+				var parse = parser.parse('* * * * 1,2,9-11 *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal([1,2].concat(_.range(9, 12, 1)));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * * jan *', function() {
+				var parse = parser.parse('* * * * jan *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal([1]);
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * * jan,feb,mar *', function() {
+				var parse = parser.parse('* * * * jan,feb,mar *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal([1,2,3]);
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * * jan-mar *', function() {
+				var parse = parser.parse('* * * * jan-mar *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal([1,2,3]);
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse * * * * jan-mar,oct *', function() {
+				var parse = parser.parse('* * * * jan-mar,oct *');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal([1,2,3,10]);
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+		});
+
+		describe('day of week', function() {
+			it('should parse * * * * * 0', function() {
+				var parse = parser.parse('* * * * * 0');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([0]);
+			});
+
+			it('should parse * * * * * 0,1,2,3,4,5', function() {
+				var parse = parser.parse('* * * * * 0,1,2,3,4,5');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([0, 1, 2, 3, 4, 5]);
+			});
+
+			it('should parse * * * * * 0-5', function() {
+				var parse = parser.parse('* * * * * 0-5');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([0, 1, 2, 3, 4, 5]);
+			});
+
+			it('should parse * * * * * */2', function() {
+				var parse = parser.parse('* * * * * */2');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 2));
+			});
+
+			it('should parse * * * * * 1,2,4-6', function() {
+				var parse = parser.parse('* * * * * 1,2,4-6');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([1, 2].concat(_.range(4, 7, 1)));
+			});
+
+			it('should parse * * * * * L');
+
+			it('should parse * * * * * 2#1');
+
+			it('should parse * * * * * mon', function() {
+				var parse = parser.parse('* * * * * mon');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([1]);
+			});
+
+			it('should parse * * * * * mon,tue,wed', function() {
+				var parse = parser.parse('* * * * * mon,tue,wed');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([1, 2, 3]);
+			});
+
+			it('should parse * * * * * mon-wed', function() {
+				var parse = parser.parse('* * * * * mon-wed');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([1, 2, 3]);
+			});
+
+			it('should parse * * * * * mon-wed,fri', function() {
+				var parse = parser.parse('* * * * * mon-wed,fri');
+				expect(parse.fields.seconds).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.minutes).to.deep.equal(_.range(0, 60, 1));
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([1, 2, 3, 5]);
+			});
+		});
+
+		describe('aliases', function() {
+			it('should parse @yearly', function() {
+				var parse = parser.parse('@yearly');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal([0]);
+				expect(parse.fields.dayOfMonth).to.deep.equal([1]);
+				expect(parse.fields.month).to.deep.equal([1]);
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse @YEARLY', function() {
+				var parse = parser.parse('@YEARLY');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal([0]);
+				expect(parse.fields.dayOfMonth).to.deep.equal([1]);
+				expect(parse.fields.month).to.deep.equal([1]);
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse @monthly', function() {
+				var parse = parser.parse('@monthly');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal([0]);
+				expect(parse.fields.dayOfMonth).to.deep.equal([1]);
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse @MONTHLY', function() {
+				var parse = parser.parse('@MONTHLY');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal([0]);
+				expect(parse.fields.dayOfMonth).to.deep.equal([1]);
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse @weekly', function() {
+				var parse = parser.parse('@weekly');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal([0]);
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([0]);
+			});
+
+			it('should parse @WEEKLY', function() {
+				var parse = parser.parse('@WEEKLY');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal([0]);
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal([0]);
+			});
+
+			it('should parse @daily', function() {
+				var parse = parser.parse('@daily');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal([0]);
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse @DAILY', function() {
+				var parse = parser.parse('@daily');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal([0]);
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse @hourly', function() {
+				var parse = parser.parse('@hourly');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('should parse @HOURLY', function() {
+				var parse = parser.parse('@HOURLY');
+				expect(parse.fields.seconds).to.deep.equal([0]);
+				expect(parse.fields.minutes).to.deep.equal([0]);
+				expect(parse.fields.hours).to.deep.equal(_.range(0, 24, 1));
+				expect(parse.fields.dayOfMonth).to.deep.equal(_.range(1, 32, 1));
+				expect(parse.fields.month).to.deep.equal(_.range(1, 13, 1));
+				expect(parse.fields.dayOfWeek).to.deep.equal(_.range(0, 8, 1));
+			});
+
+			it('shouldn\'t parse @BACON', function() {
+				expect(function() {
+					var parse = parser.parse('@BACON');
+				}).to.throw;
+			});
+		});
+	});
+
+	describe('next', function() {
+	});
+});

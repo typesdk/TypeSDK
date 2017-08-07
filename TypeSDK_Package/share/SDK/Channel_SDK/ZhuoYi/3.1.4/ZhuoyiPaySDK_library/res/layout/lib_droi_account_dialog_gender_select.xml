@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="64dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/lib_droi_account_dialog_center_btn_normal"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/lib_droi_account_gender_dialog_title"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#DDDDDD" />
+
+        <RadioButton
+            android:id="@+id/man"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lib_droi_account_dialog_btn_center"
+            android:button="@null"
+            android:drawableRight="@drawable/lib_droi_account_gender_checked"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/lib_droi_account_dialog_man" />
+
+        <RadioButton
+            android:id="@+id/woman"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lib_droi_account_dialog_btn_center"
+            android:button="@null"
+            android:drawableRight="@drawable/lib_droi_account_gender_checked"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/lib_droi_account_dialog_woman" />
+
+        <RadioButton
+            android:id="@+id/secret"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/lib_droi_account_dialog_btn_center"
+            android:button="@null"
+            android:drawableRight="@drawable/lib_droi_account_gender_checked"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/lib_droi_account_dialog_secret" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lib_droi_account_dialog_btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/lib_droi_account_dialog_btn_center"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="@string/lib_droi_account_dialog_cancel"
+        android:textSize="16sp" />
+
+</LinearLayout>

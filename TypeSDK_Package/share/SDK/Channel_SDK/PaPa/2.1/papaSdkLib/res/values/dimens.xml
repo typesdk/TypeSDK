@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="f_gameinfo_download_btn_width">60dp</dimen>
+    <dimen name="f_padding_lr">16dp</dimen>
+    <dimen name="f_comment_avatar_size">30dp</dimen>
+    <dimen name="f_comment_image_margin_tb">4dp</dimen>
+    <!--首页 -->
+    <dimen name="main_title_textsize">15sp</dimen>
+    <dimen name="main_butn_textsize">12sp</dimen>
+    <dimen name="main_detial_textsize">10sp</dimen>
+
+    <dimen name="main_bottom_h">69dp</dimen>
+    <dimen name="main_magin_bottom_h">50dp</dimen>
+    <dimen name="main_bottom_magin_t">26dp</dimen>
+    <dimen name="main_bottom_shadow_h">81dp</dimen>
+    <dimen name="main_bottom_fight_h">56dp</dimen>
+    <dimen name="main_bottom_fighttext_magin_b">6dp</dimen>
+
+    <!--mg_forum_item-->
+    <dimen name="mg_forum_item_divider">10dp</dimen>
+    <dimen name="mg_forum_item_padding">16dp</dimen>
+    <dimen name="mg_forum_item_video_padding_top">4dp</dimen>
+    <dimen name="mg_forum_item_video_padding_bottom">4dp</dimen>
+    <dimen name="mg_forum_item_info_margin_left">16sp</dimen>
+    <dimen name="mg_forum_item_info_num_margin_left">7dp</dimen>
+    <!--mg_forum_forums_layout.xml-->
+    <dimen name="mg_forum_forums_item_padding">7sp</dimen>
+    <!--mg_forum_post_item.xml-->
+    <dimen name="mg_forum_post_item_padding">@dimen/mg_forum_item_padding</dimen>
+    <dimen name="fight_top_height">125dp</dimen>
+    <!--mg_forum_ad_layout.xml-->
+    <dimen name="mg_forum_ad_item_margin">8dp</dimen>
+
+    <dimen name="my_detail_upload">58dp</dimen>
+    <dimen name="my_papa_point">18dp</dimen>
+    <dimen name="my_papa_text_point">10sp</dimen>
+
+    <dimen name="exclusive_tag_height">130sp</dimen>
+
+    <!-- forum_posts_activity_functions.xml-->
+    <dimen name="forum_posts_activity_functions_min_height">65dp</dimen>
+    <dimen name="forum_posts_activity_gameinfo_download_width">60dp</dimen>
+
+    <!-- mg_forum_item_for_welcome.xml-->
+    <dimen name="mg_forum_item_count_text_size">10dp</dimen>
+    <dimen name="mg_forum_item_count_margin_left">5dp</dimen>
+    <dimen name="mg_forum_item_count_item_margin_left">7dp</dimen>
+    <dimen name="mg_forum_item_desc_text_size">10dp</dimen>
+    <dimen name="mg_forum_item_topic_height">100dp</dimen>
+    <dimen name="mg_forum_item_topic_divider_width">7dp</dimen>
+    <dimen name="mg_forum_item_topic_item_width">138dp</dimen>
+    <dimen name="mg_forum_item_topic_item_height">75dp</dimen>
+    <!-- mg_forum_ext_func_popwindow.xml-->
+    <dimen name="mg_forum_ext_func_width">263dp</dimen>
+    <dimen name="mg_forum_ext_func_item_height">50dp</dimen>
+    <dimen name="mg_forum_ext_func_item_tv_size">16sp</dimen>
+    <dimen name="mg_forum_ext_func_item_divider">1px</dimen>
+
+    <!--mg_forum_forum_activity.xml-->
+    <dimen name="mg_forum_forum_activity_header_height">146dp</dimen>
+    <dimen name="mg_forum_forum_activity_sliding_top_height">98dp</dimen>
+    <dimen name="mg_forum_forum_activity_sliding_tab_height">48dp</dimen>
+    <!--mg_forum_title_layout.xml-->
+    <dimen name="mg_forum_title_layout_actionbar_height">48dp</dimen>
+    <!--mg_forum_forum_post_a_comment_reply_popwindow.xml-->
+    <dimen name="mg_forum_forum_post_a_comment_reply_popwindow_width">280dp</dimen>
+    <dimen name="mg_forum_forum_post_a_comment_reply_popwindow_height">34dp</dimen>
+    <dimen name="mg_forum_forum_post_a_comment_reply_popwindow_btn_width">62dp</dimen>
+    <dimen name="mg_forum_forum_post_a_comment_reply_popwindow_btn_height">24dp</dimen>
+    <dimen name="mg_forum_forum_post_a_comment_reply_popwindow_btn_text_size">12dp</dimen>
+    <dimen name="mg_forum_forum_post_a_comment_reply_popwindow_padding">6dp</dimen>
+    <!--share_posts_activity.xml-->
+    <dimen name="share_posts_a_hlistview_padding">12dp</dimen>
+    <dimen name="share_posts_a_hlistview_divider_width">6dp</dimen>
+    <dimen name="mg_forum_avatar_round_width">4dp</dimen>
+    <dimen name="mg_forum_avatar_round_stroke_width">2px</dimen>
+    <dimen name="mg_forum_popupwindow_height">40dp</dimen>
+    <!--video_layout.xml-->
+    <dimen name="video_back_size">34dp</dimen>
+    <dimen name="video_play_center_size">54dp</dimen>
+    <dimen name="video_loading_size">54dp</dimen>
+    <!--mediacontroller.xml-->
+    <dimen name="mediacontroller_height">40dp</dimen>
+    <!--帖子字体大小-->
+    <dimen name="mg_forum_forum_nickname_text_size">17dp</dimen>
+    <dimen name="mg_forum_forum_top_text_size">13dp</dimen>
+    <dimen name="mg_forum_post_nickname_text_size">14dp</dimen>
+    <dimen name="mg_forum_post_addtime_text_size">12dp</dimen>
+    <dimen name="mg_forum_post_subject_text_size">17dp</dimen>
+    <dimen name="mg_forum_post_message_text_size">16dp</dimen>
+    <dimen name="mg_forum_comment_message_text_size">16dp</dimen>
+    <dimen name="mg_forum_comment_reply_text_size">14dp</dimen>
+    <dimen name="mg_forum_profile_message_text_size">16dp</dimen>
+    <dimen name="mg_forum_profile_post_message_text_size">16dp</dimen>
+
+
+    <!---->
+
+    <dimen name="app_list_margin">12dp</dimen>
+    <dimen name="my_game_progressmagin_t">2dp</dimen>
+    <dimen name="my_game_appsizemagin_t">5dp</dimen>
+    <dimen name="my_game_item_h">65dp</dimen>
+    <dimen name="my_game_more_h">39dp</dimen>
+    <dimen name="my_game_itemmagin_l_r">5dp</dimen>
+    <dimen name="my_game_itemmagin_other">8dp</dimen>
+    <dimen name="my_game_textmaginimage_other">8dp</dimen>
+    <dimen name="my_game_butnmagin_b">10dp</dimen>
+    <dimen name="my_game_butnmagin_l">20dp</dimen>
+    <dimen name="my_game_starmagin_t_b">4dp</dimen>
+    <dimen name="my_game_progress_h">4dp</dimen>
+    <dimen name="my_game_lodingtextmagin_t">6dp</dimen>
+    <dimen name="detail_appname_layout_magin_l">115dp</dimen>
+    <dimen name="collection_margin">20dp</dimen>
+
+    <dimen name="recom_lisitem_text_magintop">5dp</dimen>
+    <dimen name="recom_lisitem_infotext_magintop">5dp</dimen>
+    <dimen name="recom_lisitem_first_textmagin">5dp</dimen>
+    <dimen name="recom_lisitem_textmagin_t">6dp</dimen>
+    <dimen name="recom_list_icon_size">50dp</dimen>
+    <dimen name="recom_bout_magin_l">10dp</dimen>
+    <dimen name="recom_bout_butnpading_b">4dp</dimen>
+    <dimen name="recom_bout_h">87dp</dimen>
+    <dimen name="install_butn_w">49dp</dimen>
+    <dimen name="install_butn_h">48dp</dimen>
+    <dimen name="firstview_magin">10dp</dimen>
+    <dimen name="recomlist_item_magin">5dp</dimen>
+    <dimen name="recom_appitem_h">74dp</dimen>
+    <dimen name="recomlist_loding_h">50dp</dimen>
+    <dimen name="recomlist_loding_image_h">22dp</dimen>
+    <dimen name="recomlist_starmin_image_h">10dp</dimen>
+
+    <dimen name="progress_drawable_w">20dp</dimen>
+    <dimen name="progress_drawable_h">20dp</dimen>
+
+    <dimen name="start_game_dialog_butnmagin_l_r">20dp</dimen>
+    <dimen name="round_large_size">14dp</dimen>
+    <dimen name="round_small_size">10dp</dimen>
+    <dimen name="round_point_size">6dp</dimen>
+    <dimen name="round_pointmagin_l_r_size">2dp</dimen>
+    <dimen name="main_content_margin_b">45dp</dimen>
+
+
+    <dimen name="web_loding_progress_h">3dp</dimen>
+
+
+    <dimen name="main_textsize_14sp">14sp</dimen>
+    <dimen name="download_icon_border">1dp</dimen>
+</resources>

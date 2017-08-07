@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/egame_list_item_selector"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp_15"
+    android:paddingBottom="@dimen/dp_15"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingRight="@dimen/dp_18"
+     >
+
+    <ImageView
+        android:id="@+id/egame_mesg_listiv"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:focusable="false"
+        android:background="@drawable/egame_user_message_logo" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/egame_messagelist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="测试用消息标题"
+            android:textColor="@color/egame_usersdk_dark_gray"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/egame_messagelist_comefrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:text="来自 系统"
+            android:textColor="@color/egame_usersdk_light_gray"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/egame_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:text="刚刚"
+            android:textColor="@color/egame_usersdk_light_gray"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+</LinearLayout>

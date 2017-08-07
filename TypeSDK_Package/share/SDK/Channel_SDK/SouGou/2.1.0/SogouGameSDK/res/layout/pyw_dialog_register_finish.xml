@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pyw_img_finish" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/pyw_regist_success"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textSize="@dimen/pyw_common_super" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyw_layout_finish"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pyw_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="lkjlasdfasdf"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <TextView
+            android:id="@+id/pyw_tv_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="lkjlf"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pyw_btn_entergame"
+        android:layout_width="280dp"
+        android:layout_height="@dimen/pyw_common_btn_height"
+        android:layout_below="@id/pyw_layout_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pyw_selector_btn_blue_bg"
+        android:text="进入游戏"
+        android:textColor="@color/pyw_common_white"
+        android:textSize="@dimen/pyw_common_larger" />
+
+</RelativeLayout>

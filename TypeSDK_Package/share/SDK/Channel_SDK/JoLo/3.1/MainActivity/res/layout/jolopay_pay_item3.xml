@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jolopay_list_bg"
+    android:paddingBottom="8dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="8dip" >
+
+    <ImageView
+        android:id="@+id/pay_channel_iv"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/jolopay_channel_gbao"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/pay_channel_more"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/jolopay_arrow_right"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/pay_channel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@id/pay_channel_iv"
+        android:textColor="@color/jolopay_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pay_gbao_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3dip"
+        android:layout_toLeftOf="@id/pay_channel_more"
+        android:textColor="@color/jolopay_red"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pay_discount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dip"
+        android:layout_toLeftOf="@id/pay_gbao_tv"
+        android:textColor="#ff2900"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

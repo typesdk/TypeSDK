@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gfan_no_padding_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/tv_card_tab1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/gfan_cards_box_selector"
+            android:gravity="center"
+            android:text="已领"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <TextView
+            android:id="@+id/tv_card_tab2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/gfan_cards_box_selector"
+            android:gravity="center"
+            android:text="已淘"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <WebView
+            android:id="@+id/wv_cards_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"></WebView>
+
+        <ProgressBar
+            android:id="@+id/pb_webview_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+</LinearLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_cards_box_activity.xml -->

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.le.legamesdk.widget.LeMainViewParent
+        android:id="@+id/le_main_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/le_border_line_bg" >
+
+        <LinearLayout
+            android:id="@+id/message_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/le_main_view_action_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_main_view_action_bar_height"
+                layout="@layout/le_main_view_action_bar_layout" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ScrollView
+                    android:id="@+id/content_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btn_go"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/banner_imageview"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/banner_default"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/banner_title_textview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="8dp"
+                                android:text=""
+                                android:textColor="@color/sdk_black"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/banner_content_textview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/top"
+                            android:lineSpacingExtra="8dp"
+                            android:paddingLeft="18dp"
+                            android:paddingRight="18dp"
+                            android:text=""
+                            android:textColor="@color/sdk_gray"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/error_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/sdk_green_gray"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_message_detail_go"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="去看看"
+                    android:textColor="@color/lepay_white"
+                    android:textSize="@dimen/lepay_et_cardinfo_font_size"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.le.legamesdk.widget.LeMainViewParent>
+
+</RelativeLayout>

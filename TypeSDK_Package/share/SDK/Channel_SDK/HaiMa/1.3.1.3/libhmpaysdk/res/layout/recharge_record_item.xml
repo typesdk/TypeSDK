@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/recharge_record_time_tv"
+            style="@style/UserRegisterThird"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/recharge_record_time"
+            android:lineSpacingExtra="6dp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/recharge_record_recharge_money_hint_tv"
+                style="@style/UserRegisterThird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/recharge_record_recharge_money_hint"
+                android:paddingTop="3dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/recharge_record_recharge_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recharge_record_recharge_money"
+                android:textSize="17sp"
+                android:textColor="@color/user_register_phone_num_color"
+                android:layout_toRightOf="@id/recharge_record_recharge_money_hint_tv" />
+
+            <TextView
+                android:id="@+id/recharge_record_donate_money_hint_tv"
+                style="@style/UserRegisterThird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recharge_record_recharge_money_hint_tv"
+                android:text="@string/recharge_record_donate_money_hint"
+                android:paddingTop="3dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/recharge_record_donate_money_tv"
+                android:textSize="17sp"
+                android:textColor="@color/user_register_phone_num_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recharge_record_donate_money"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/recharge_record_recharge_money_hint_tv"
+                android:layout_alignBottom="@id/recharge_record_donate_money_hint_tv"
+                android:layout_toRightOf="@id/recharge_record_recharge_money_hint_tv" />
+
+            <TextView
+                android:id="@+id/recharge_record_os_hint_tv"
+                style="@style/UserRegisterThird"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recharge_record_recharge_money_hint_tv"
+                android:text="@string/recharge_record_os_hint"
+                android:paddingTop="2dp"
+                android:layout_toRightOf="@id/recharge_record_donate_money_tv"
+                android:layout_alignBottom="@id/recharge_record_donate_money_tv"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recharge_record_pay_state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recharge_record_pay_state_true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:textSize="@dimen/font_size_middle"/>
+
+            <TextView
+                android:id="@+id/recharge_record_pay_way_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recharge_record_pay_way"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/font_size_small"/>
+        </LinearLayout>
+
+</LinearLayout>

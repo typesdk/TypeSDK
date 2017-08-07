@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="220dp"
+	android:background="@drawable/wepay_kuang_bg"
+	android:orientation="vertical" >
+
+	<com.wangyin.wepay.widget.CPActionBar
+		android:id="@+id/bar_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<FrameLayout
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:layout_weight="1" >
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" >
+
+			<com.wangyin.wepay.widget.tableview.CPTableView
+				android:id="@+id/tableview_jd_bankcard"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+		</ScrollView>
+
+		<TextView
+			android:id="@+id/txt_no_card"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/wepay_bankcard_select_newcard_nocard"
+			android:textColor="@color/wepay_txt_main"
+			android:textSize="@dimen/wepay_txt_large"
+			android:visibility="gone" />
+	</FrameLayout>
+
+	<View
+		style="@style/wepay_divider_line"
+		android:layout_width="match_parent" />
+
+	<TextView
+		android:id="@+id/txt_add_new_bankcard"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/wepay_space_xxxxlarge"
+		android:background="@drawable/wepay_kuang_bottom_bar_bg"
+		android:gravity="center"
+		android:text="@string/wepay_bankcard_select_newcard"
+		android:textColor="@color/wepay_txt_blue"
+		android:textSize="@dimen/wepay_txt_large" />
+
+</LinearLayout>

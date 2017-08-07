@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/egame_activity_ttrl"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_54"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/egame_activity_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/egame_titlebar_egame_text"
+        android:gravity="left|center_vertical"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/egame_activity_titiletv"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/egame_activity_logo"
+        android:background="@drawable/egame_back_status"
+        android:clickable="true"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/egame_usersdk_green"
+        android:textSize="@dimen/dp_18"
+        android:visibility="gone" />
+
+    <!--
+         <Button
+        android:id="@+id/egame_activity_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/egame_btn_activity_btn_no"
+        android:focusable="false" />
+    -->
+
+    <ImageView
+        android:id="@+id/egame_activity_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:focusable="false"
+        android:src="@drawable/egame_btn_activity_btn_no" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/kg_common_title_bar" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/kg_layout_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/kg_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/kg_common_transparent" />
+    </LinearLayout>
+
+    <com.kugou.game.sdk.ui.widget.TipsLayout
+        android:id="@+id/kg_tips_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

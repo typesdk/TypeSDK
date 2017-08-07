@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+		  android:color="#FFFFFFFF" />
+			<!-- 
+			渐变
+			<gradient 
+				android:startColor="@color/red"
+				android:endColor="@color/green"
+				android:centerColor="@color/yellow"
+				android:centerX="33%"
+				android:centerY="33%"
+				android:angle="45" />
+			 -->
+			<stroke
+				android:width="0dip"
+				android:color="#FFDADADA"
+				android:dashWidth="0dip"
+				android:dashGap="0dip" />
+				<!-- 圆角 -->
+			<corners 
+				android:bottomRightRadius="5dip" 
+				android:bottomLeftRadius="5dip" 
+				android:topLeftRadius="5dip" 
+				android:topRightRadius="5dip" />
+		    <padding 
+		    	android:left="0dip" 
+		    	android:top="0dip" 
+		    	android:right="0dip" 
+		    	android:bottom="0dip" /> 
+		    <size 
+		    	android:height="10dip"
+		    	android:width="2dip"/>
+</shape>

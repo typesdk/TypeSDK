@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hpay_dy_ll_layout"
+    android:layout_width="@dimen/m4399_rec_page_width"
+    android:layout_height="@dimen/m4399_rec_page_height"
+    android:background="@drawable/m4399_rec_page_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_title_height"
+        android:background="@drawable/m4399_rec_mvcenter_title_bg" >
+
+        <ImageView
+            android:id="@+id/hpay_dy_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+            android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+            android:scaleType="fitCenter"
+            android:src="@drawable/m4399_rec_cancel" />
+
+        <TextView
+            android:id="@+id/hpay_dy_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/hpay_dy_tv_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/hpay_dy_tv_goodscontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/hpay_dy_tv_payprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/hpay_dy_tv_paypricecontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:textColor="#ff7f17"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hpay_dy_tv_bhtxf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:textColor="#333333"
+                    android:text="@string/m4399_rec_corp_name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:text="@string/m4399_rec_corp_namecontents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/hpay_line_color" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="4dip"
+                android:layout_marginTop="4dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/hpay_dy_et_inputphone"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/m4399_rec_edittext_bg"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingLeft="10dip"
+                    android:textColor="#111111"
+                    android:textSize="15sp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/hpay_dy_btn_getyzm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/m4399_rec_get_captcha_btn_bg"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/m4399_rec_liantong_cfm_captcha_padding"
+                    android:paddingRight="@dimen/m4399_rec_liantong_cfm_captcha_padding"
+                    android:textColor="@color/m4399_rec_liantong_get_captcha_btn_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/hpay_dy_et_yzm"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="4dip"
+                android:background="@drawable/m4399_rec_edittext_bg"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="10dip"
+                android:textColor="#111111"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/hpay_dy_tv_yzm_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:textColor="#FD0808" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/m4399_rec_single_btn_marginBottom"
+                android:layout_marginTop="@dimen/m4399_rec_single_btn_marginBottom"
+                android:layout_weight="1.0"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/hpay_dy_btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/m4399_rec_sum_btns_eara_height"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/m4399_rec_right_btn_bg"
+                    android:gravity="center"
+                    android:textColor="@color/m4399_rec_confirm_btn_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/hpay_dy_tv_wxts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_rec_foot_height"
+        android:background="@drawable/m4399_rec_mvcenter_foot_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/m4399_rec_paddingLeft"
+        android:paddingRight="@dimen/m4399_rec_paddingLeft" >
+
+        <ImageView
+            android:id="@+id/hpay_dy_iv_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/m4399_rec_sdk_help" />
+
+        <TextView
+            android:id="@+id/hpay_dy_tv_kfrx"
+            style="@style/m4399RecFooterTextStyle"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/hpay_dy_tv_kfrx_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/m4399_rec_link_text_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical|left"
+            android:textColor="#32beff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/m4399_rec_sdk_ftnn_logo" />
+    </LinearLayout>
+
+</LinearLayout>

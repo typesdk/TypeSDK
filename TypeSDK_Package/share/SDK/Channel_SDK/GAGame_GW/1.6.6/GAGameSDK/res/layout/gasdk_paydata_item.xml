@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/paydata_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/paydata_time"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/paydata_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paydata_time"
+        android:text="@string/text_paydata_2"
+        android:textColor="@color/paydata_time"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/paydata_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paydata_time"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@+id/paydata_tv1"
+        android:textColor="@color/paydata_name"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/paydata_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paydata_tv1"
+        android:text="@string/text_paydata_3"
+        android:textColor="@color/paydata_time"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/paydata_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paydata_tv1"
+        android:layout_marginLeft="3dip"
+        android:layout_toRightOf="@+id/paydata_tv2"
+        android:textColor="@color/paydata_name"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/paydata_ruslt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paydata_price"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/paydata_ruslt"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:background="@drawable/gasdk_pay_line" />
+
+</RelativeLayout>

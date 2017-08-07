@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_80">
+
+    <!-- <com.le.legamesdk.widget.LeMainViewParent -->
+
+    <com.le.legamesdk.widget.LeMainViewParent
+        android:id="@+id/le_main_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/le_sdk_main_view_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/auto_update_top_parent"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/le_sdk_auto_update_top_bg">
+
+                <TextView
+                    style="@style/LeStyleWhite24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/le_sdk_auto_update_title_text" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/auto_update_bottom_parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_main_view_action_bar_height"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/auto_update_next_say_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/le_sdk_next_say"
+                    android:textColor="@color/le_gary_pressed_black_text_color"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/auto_update_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/line_color" />
+
+                <Button
+                    android:id="@+id/auto_update_next_update_now"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="@string/le_sdk_update_now"
+                    android:textColor="@color/le_green_pressed_text_color"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/auto_update_horizontal_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@id/auto_update_bottom_parent"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:id="@+id/auto_update_content_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/auto_update_horizontal_line"
+                android:layout_below="@id/auto_update_top_parent"
+                android:layout_margin="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/LeStyleBlack14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/le_sdk_update_content" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fillViewport="true"
+                    android:scrollbars="none">
+
+                    <TextView
+                        android:id="@+id/auto_update_content"
+                        style="@style/LeStyleGrayDark14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:paddingBottom="@dimen/margin_10" />
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.le.legamesdk.widget.LeMainViewParent>
+
+</RelativeLayout>

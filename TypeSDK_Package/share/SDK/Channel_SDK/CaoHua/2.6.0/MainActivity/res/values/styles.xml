@@ -1,0 +1,51 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	
+	<style name="ch_base_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/ch_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    
+	<style name="ch_no_bg_style" parent="ch_base_style">
+	    <item name="android:backgroundDimEnabled">false</item> 
+	</style>
+	
+	<style name="ch_anim_toast" parent="@android:style/Animation.Toast">
+        <item name="android:windowEnterAnimation">@anim/ch_toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/ch_toast_exit</item>
+    </style>
+    
+    <style name="ch_style_float_popup_rigth_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/ch_float_popup_enter_right</item>
+        <item name="android:windowExitAnimation">@anim/ch_float_popup_exit_right</item>
+    </style>
+    
+    <style name="ch_style_float_popup_left_anim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/ch_float_popup_enter_left</item>
+        <item name="android:windowExitAnimation">@anim/ch_float_popup_exit_left</item>
+    </style>
+    
+    <style name="ch_style_horizontal_progress" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/ch_progress_horizontal</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+</resources>

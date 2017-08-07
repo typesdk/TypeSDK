@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pyw_login_dialog_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_white"
+    android:paddingLeft="@dimen/pyw_dp_234"
+    android:paddingRight="@dimen/pyw_dp_234"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="@dimen/pyw_dp_118"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pyw_img_bind_success_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="友友的游戏账号已绑定成功了哟！"
+                android:textColor="@color/pyw_common_gray_darker"
+                android:textSize="@dimen/pyw_common_large" />
+
+            <TextView
+                android:id="@+id/pyw_tv_passcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="您的手机："
+                android:textColor="@color/pyw_common_gray_lighter"
+                android:textSize="@dimen/pyw_common_medium" />
+
+            <TextView
+                android:id="@+id/pyw_tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dp"
+                android:text="您可以使用手机号码登录朋友玩和所有游戏"
+                android:textColor="@color/pyw_common_gray_lighter"
+                android:textSize="@dimen/pyw_common_medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pyw_btn_back_usercenter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_btn_height"
+        android:background="@drawable/pyw_selector_btn_blue_bg"
+        android:text="返回"
+        android:textColor="@color/pyw_common_white"
+        android:textSize="@dimen/pyw_common_large" />
+
+</LinearLayout>

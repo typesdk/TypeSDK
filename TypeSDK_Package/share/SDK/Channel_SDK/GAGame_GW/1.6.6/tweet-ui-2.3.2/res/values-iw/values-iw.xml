@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">שעה אחת</item>
+        <item quantity="other">%d שעות</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">דקה אחת</item>
+        <item quantity="other">%d דקות</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">שנייה אחת</item>
+        <item quantity="other">%d שניות</item>
+    </plurals>
+    <string name="tw__like_tweet">סמן ציוץ כאהוב</string>
+    <string name="tw__liked_tweet">בטל סימון כאהוב</string>
+    <string name="tw__loading_tweet">טוען ציוץ</string>
+    <string name="tw__pause">לעצור</string>
+    <string name="tw__play">לנגן</string>
+    <string name="tw__relative_date_format_long">d.M.y</string>
+    <string name="tw__relative_date_format_short">d. MMM</string>
+    <string name="tw__replay">לנגן מחדש</string>
+    <string name="tw__retweeted_by_format">צויץ מחדש על-ידי %1$s</string>
+    <string name="tw__share_content_format">בוא לראות את הציוץ של ‎\@%1$s‏: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">ציוץ של %1$s‏ (‎\@%2$s)</string>
+    <string name="tw__share_tweet">שתף ציוץ</string>
+    <string name="tw__tweet_content_description">%1$s‏. %2$s‏. %3$s</string>
+    <string name="tw__tweet_media">המדיה של הציוץ</string>
+</resources>

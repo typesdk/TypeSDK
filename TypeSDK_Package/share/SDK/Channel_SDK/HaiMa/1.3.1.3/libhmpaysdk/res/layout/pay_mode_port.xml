@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+
+        <TextView
+            android:id="@+id/pay_frequently_mode_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pay_item_title_layout_height"
+            android:paddingLeft="@dimen/pay_margin_window"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/font_size_mini"
+            android:background="@color/pay_fragment_background"
+            android:text="@string/pay_frequently_used_mode"
+            android:textColor="@color/pay_mode_title"
+            android:visibility="gone"/>
+
+
+        <RadioButton
+            android:id="@+id/pay_frequently_mode_radio"
+            style="@style/payModeRadio"
+            android:drawableLeft="@drawable/pay_icon_wx"
+            android:text="@string/pay_mode_wx"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/pay_other_mode_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pay_item_title_layout_height"
+            android:paddingLeft="@dimen/pay_margin_window"
+            android:gravity="center_vertical"
+            android:text="@string/pay_other_used_mode"
+            android:textSize="@dimen/font_size_mini"
+            android:textColor="@color/pay_mode_title"
+            android:background="@color/pay_fragment_background"/>
+
+        <RadioButton
+            android:id="@+id/pay_other_mode_radio_1"
+            style="@style/payModeRadio"
+            android:drawableLeft="@drawable/pay_icon_wx"
+            android:text="@string/pay_mode_wx"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/pay_other_mode_radio_2"
+            style="@style/payModeRadio"
+            android:drawableLeft="@drawable/pay_icon_zf"
+            android:text="@string/pay_mode_zf"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/pay_other_mode_radio_3"
+            style="@style/payModeRadio"
+            android:drawableLeft="@drawable/pay_icon_yl"
+            android:text="@string/pay_mode_yl"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/pay_other_mode_radio_4"
+            style="@style/payModeRadio"
+            android:drawableLeft="@drawable/pay_icon_pp"
+            android:text="@string/pay_mode_pp"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/pay_other_mode_radio_5"
+            style="@style/payModeRadio"
+            android:drawableLeft="@drawable/pay_icon_zfm"
+            android:text="@string/pay_mode_zfm"
+            android:visibility="gone"/>
+        <RadioButton
+            android:id="@+id/pay_other_mode_radio_6"
+            style="@style/payModeRadio"
+            android:drawableLeft="@drawable/pay_icon_zfm"
+            android:text="@string/pay_mode_zfm"
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/pay_other_mode_radio_7"
+            style="@style/payModeRadio"
+            android:drawableLeft="@drawable/pay_icon_zfm"
+            android:text="@string/pay_mode_zfm"
+            android:visibility="gone"/>
+    </RadioGroup>
+    </ScrollView>
+</LinearLayout>

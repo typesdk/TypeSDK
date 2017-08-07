@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:dcn="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dcn_white"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/dcn_actionbar"
+            layout="@layout/dcn_message_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height"
+            android:background="#f4f4f4f4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="@string/dcn_whole_setting" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="@string/dcn_message_pop_remind"
+                android:textColor="#333"
+                android:textSize="@dimen/dcn_edit_text_size" />
+
+            <com.downjoy.widget.CustomSlipButton
+
+                android:id="@+id/dcn_message_set_all_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_divider_size"
+            android:background="#ddd" />
+
+        <LinearLayout
+            android:id="@+id/dcn_message_set_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dcn_white"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dcn_title_height"
+                android:background="#f4f4f4f4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/dcn_message_setting" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dcn_divider_size"
+                android:background="#ddd" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_divider_size"
+            android:background="#ddd" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height"
+            android:background="#f4f4f4f4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/dcn_adv_setting" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="@string/dcn_login_notice"
+                android:textColor="#333"
+                android:textSize="@dimen/dcn_edit_text_size" />
+
+            <com.downjoy.widget.CustomSlipButton
+                android:id="@+id/dcn_message_set_login_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_divider_size"
+            android:background="#ddd" />
+
+    </LinearLayout>
+</ScrollView>

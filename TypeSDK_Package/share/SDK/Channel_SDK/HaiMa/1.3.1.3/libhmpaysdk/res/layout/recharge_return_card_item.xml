@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/recharge_return_card_unselected_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                        <TextView
+                            android:id="@+id/recharge_return_card_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_middle"
+                            android:text="@string/recharge_return_card_title"/>
+
+                        <TextView
+                            android:id="@+id/recharge_return_card_title_description_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textSize="@dimen/font_size_middle"
+                            android:text="@string/recharge_return_card_title_description"/>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/recharge_return_card_divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/myprops_listview_divider_line_shape"></View>
+
+                <TextView
+                    android:id="@+id/recharge_return_card_content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="@dimen/font_size_mini"
+                    android:drawableLeft="@drawable/game_voucher_rule"
+                    android:drawablePadding="8dp"
+                    android:text="@string/recharge_return_card_content"/>
+
+                <TextView
+                    android:id="@+id/recharge_return_card_date_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawableLeft="@drawable/game_voucher_date"
+                    android:drawablePadding="8dp"
+                    android:textSize="@dimen/font_size_mini"
+                    android:text="@string/recharge_return_card_date"/>
+
+                </LinearLayout>
+
+        <ImageView
+            android:id="@+id/recharge_return_card_tag_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/recharge_return_card_outdate"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"/>
+
+</FrameLayout>

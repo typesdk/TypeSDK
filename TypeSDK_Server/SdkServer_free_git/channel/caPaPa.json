@@ -1,0 +1,27 @@
+{
+  "version":"2.1.20160805",
+  "actions":[ {
+      "name":"Login"
+      ,"method":"POST"
+      ,"in_params":{
+        "token":""
+      }
+      ,"out_url" :"https://sdkapi.papa91.com/auth/check_token"
+      ,"out_params" :{
+        "token" : "",
+        "uid":""
+      }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":{
+        "sign": ""
+    }
+    ,"out_url" :"https://sdkapi.papa91.com/auth/check_token"
+    ,"out_params" :{
+
+      }
+    }
+  ]
+}

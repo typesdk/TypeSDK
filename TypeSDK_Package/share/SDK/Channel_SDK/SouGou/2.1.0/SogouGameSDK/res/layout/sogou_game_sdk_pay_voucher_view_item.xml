@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content" >
+
+    <CheckBox
+        android:id="@+id/sogou_game_sdk_voucher_item_cb"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:background="@null"
+        android:button="@drawable/sogou_game_sdk_voucher_item_checkbox" />
+
+    <RelativeLayout
+        android:id="@+id/sogou_game_sdk_voucher_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/sogou_game_sdk_pay_voucher_y" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_voucher_item_tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="@string/sogou_game_sdk_pay_voucher_view_tv"
+            android:textColor="@color/sogou_game_sdk_color_000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_voucher_item_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_pay_voucher_item_tv_des"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="@string/sogou_game_sdk_pay_voucher_view_tv"
+            android:textColor="@color/sogou_game_sdk_color_676767"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

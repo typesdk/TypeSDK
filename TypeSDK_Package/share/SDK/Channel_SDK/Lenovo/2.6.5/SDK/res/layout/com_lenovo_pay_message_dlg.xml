@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/com_lenovo_pay_process_bg">
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/com_lenovo_pay_goods_marginTop"
+            android:layout_marginLeft="@dimen/com_lenovo_pay_goods_marginLeft"
+            android:layout_marginRight="@dimen/com_lenovo_pay_goods_marginLeft"
+            android:layout_marginTop="@dimen/com_lenovo_pay_goods_marginTop"
+            android:text="@string/com_lenovo_pay_exit_pay_tip_text"
+            android:textColor="@color/com_lenovo_pay_goods_label"
+            android:textSize="@dimen/com_lenovo_pay_goods_fontsize" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layout_text"
+        android:background="@color/com_lenovo_pay_gray" />
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/com_lenovo_pay_button_height"
+        android:layout_below="@id/view_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/com_lenovo_pay_transparent_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/com_lenovo_pay_dlg_ok_text"
+            android:textColor="@color/com_lenovo_pay_button"
+            android:textSize="@dimen/com_lenovo_pay_button_fontsize" />
+    </LinearLayout>
+
+</RelativeLayout>

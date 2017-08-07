@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.haomeng"
+    android:versionCode="303"
+    android:versionName="3.0.3"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- SDK -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- SDK end -->
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        
+         <activity
+            android:name="com.type.sdk.android.haomeng.TypeSDKSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.type.sdk.android.haomeng.MainActivity"
+           android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="91.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <!-- SDK Activity -->
+        <activity
+            android:name="com.weedong.gamesdk.ui.WdAccountActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/wd_activity_dialog_style" />
+        <activity
+            android:name="com.weedong.gamesdk.ui.WdFindPassActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/wd_activity_dialog_style" />
+        <activity
+            android:name="com.weedong.gamesdk.ui.WdBindingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/wd_activity_dialog_style" />
+        <activity
+            android:name="com.weedong.gamesdk.ui.WdUpdateActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/wd_activity_dialog_style" />
+        <activity
+            android:name="com.weedong.gamesdk.ui.FlowViewFunctionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/wd_activity_dialog_style" />
+        <activity
+            android:name="com.weedong.gamesdk.ui.WdOAuthLoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/WdPayTheme" />
+        <activity
+            android:name="com.weedong.gamesdk.ui.WdVoucherActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/wd_activity_dialog_style" />
+        <activity
+            android:name="com.weedong.gamesdk.ui.WdPaymentActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/WdPayTheme"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="tencent@package@" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.weedong.gamesdk.service.FloatButtonService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.weedong.gamesdk.ui.WdHelpActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/wd_activity_dialog_style" />
+        <activity
+            android:name="com.weedong.gamesdk.ui.WdProtocolActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/wd_activity_dialog_style" />
+
+        <!-- 微信支付 -->
+        <activity
+            android:name="com.heepay.plugin.activity.WeChatNotityActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!-- 银联 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 京东支付 -->
+        <activity
+            android:name="com.wangyin.wepay.kuang.ui.WePayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WePayTheme" />
+        <!-- SDK end -->
+
+    </application>
+
+</manifest>

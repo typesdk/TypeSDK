@@ -1,0 +1,53 @@
+{
+  "version":"2.0.0.20151018",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "token" : ""
+      ,"ssoid" : ""
+    }
+    ,"out_url" :"http://i.open.game.oppomobile.com/gameopen/user/fileIdInfo"
+    ,"out_params" :
+    {
+      "oauth_consumer_key" : ""
+    ,"oauth_nonce" : ""
+    ,"oauth_signature_method" : ""
+    ,"oauth_token" : ""
+    ,"oauth_timestamp" : ""
+    ,"oauth_version" : ""
+    ,"access_token_secret" : ""
+    ,"oauth_signature":""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "notifyId" : ""
+      ,"partnerOrder" : ""
+      ,"productName" :""
+      ,"productDesc"  : ""
+      ,"price" : ""
+      ,"count": ""
+      ,"attach": ""
+      ,"sign": ""
+      }
+    ,"out_url" :"http://i.open.game.oppomobile.com/gameopen/user/fileIdInfo"
+    ,"out_params" :
+      {
+        "notifyId" : ""
+      ,"partnerOrder" : ""
+      ,"productName" :""
+      ,"productDesc"  : ""
+      ,"price" : ""
+      ,"count": ""
+      ,"attach": ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

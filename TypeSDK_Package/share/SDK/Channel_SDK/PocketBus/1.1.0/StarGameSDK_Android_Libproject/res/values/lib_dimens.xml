@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--MessageList-->
+    <dimen name="lib_message_width">215dp</dimen>
+    <dimen name="lib_message_audio_width_other_to_me">175dp</dimen>
+    <dimen name="lib_message_audio_width_me_to_other">170dp</dimen>
+
+    <dimen name="lib_layout_margin_left_right">15dp</dimen>
+</resources>

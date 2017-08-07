@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+    <view class="com.papa91.pay.widget.video.MyVideoView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/video"
+          android:background="@android:color/transparent"
+          android:visibility="gone"/>
+
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent"
+               android:id="@+id/cover"
+               android:src="@drawable/main_normal_icon"
+               android:scaleType="fitXY"
+               android:visibility="visible"/>
+
+    <include android:id="@+id/loadingLayout"
+             android:layout_width="@dimen/video_loading_size"
+             android:layout_height="@dimen/video_loading_size"
+             layout="@layout/video_loading_progress"
+             android:layout_centerInParent="true"/>
+
+    <ImageView
+            android:id="@+id/play"
+            android:layout_width="@dimen/video_play_center_size"
+            android:layout_height="@dimen/video_play_center_size"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mediacontroller_play_center"/>
+
+    <!--<view class="com.join.android.app.component.video.MediaController"-->
+    <!--android:id="@+id/mediaController"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:visibility="gone"/>-->
+
+    <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/video_back_size"
+            android:layout_height="@dimen/video_back_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:visibility="gone"
+            android:background="@drawable/detial_mini_backbutn_selecter"/>
+
+</RelativeLayout>

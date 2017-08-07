@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <WebView
+		android:id="@+id/web_internal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+	
+	<ProgressBar 
+	    android:id="@+id/progressbar_internal"
+	    android:layout_width="match_parent"
+	    android:layout_height="3dp"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    />
+    
+    <include 
+	    android:id="@+id/webview_errorview"
+	    layout="@layout/wepay_webview_error_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="gone"
+	    />
+
+</FrameLayout>

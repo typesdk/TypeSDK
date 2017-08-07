@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/qrcode_dialog_background_shape">
+
+
+        <ImageView
+            android:id="@+id/qrcode_dialog_close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/qr_code_dialog_close"
+            android:layout_marginBottom="15dp"/>
+
+    <ImageView
+        android:id="@+id/qrcode_dialoag_code_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_below="@id/qrcode_dialog_close_iv"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/qr_code"/>
+
+    <TextView
+        android:id="@+id/qrcode_dialog_weixin_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qrcode_dialoag_code_iv"
+        android:text="@string/user_login_weixin_service"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/qrcode_dialog_weixin_tv"
+        android:text="@string/user_login_long_press_hint"/>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/gfan_no_padding_bg"
+    android:orientation="vertical"
+    tools:context="com.mappn.sdk.uc.MyGfanTicket">
+    <TextView
+        style="@style/gfan_title_style"
+        android:text="我的机锋券" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/gfan_textview_bg"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/gfan_uc_bg_lr_margin"
+    android:layout_marginRight="@dimen/gfan_uc_bg_lr_margin"
+    android:layout_marginTop="@dimen/gfan_uc_view_space">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/gfan_text_style"
+                android:text="通用券："/>
+            <TextView
+                android:id="@+id/tv_universal_ticket"
+                android:layout_width="wrap_content"
+                style="@style/gfan_text_style"
+                android:layout_weight="1"
+                android:text="0"
+             />
+
+        </LinearLayout>
+    <View
+    android:layout_width="match_parent"
+        android:background="#C1C1C1"
+    android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/gfan_text_style"
+            android:text="活动券："/>
+        <TextView
+            android:id="@+id/tv_activity_ticket"
+            android:layout_width="wrap_content"
+            style="@style/gfan_text_style"
+            android:layout_weight="1"
+            android:text="0"
+
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#C1C1C1"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical|left"
+
+            style="@style/gfan_text_style"
+            android:text="定向券："/>
+        <TextView
+            android:id="@+id/tv_vectored_ticket"
+            android:layout_width="wrap_content"
+            style="@style/gfan_text_style"
+            android:layout_weight="1"
+            android:text="0"
+
+            />
+
+    </LinearLayout></LinearLayout>
+    </ScrollView>
+</LinearLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_my_ticket_activty.xml -->

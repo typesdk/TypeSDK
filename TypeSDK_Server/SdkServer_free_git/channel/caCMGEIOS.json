@@ -1,0 +1,56 @@
+{
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "userid" : ""
+    ,"sign" : ""
+    }
+    ,"out_url" : "http://g.typesdk.com:51880/users/checkTokenID"
+    ,"out_params" :
+    {
+      "userid" : ""
+    ,"timestamp" : ""
+    ,"sign" : ""
+    ,"appkey" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "openId" : ""
+      ,"roleId" : ""
+      ,"orderId" : ""
+      ,"orderStatus" : ""
+      ,"payType" : ""
+      ,"payId" : ""
+      ,"payName" : ""
+      ,"amount" : ""
+      ,"currency" : ""
+      ,"payTime" : ""
+      ,"paySUTime" : ""
+      ,"sign" : ""
+      }
+    ,"out_url" :"http://127.0.0.1"
+    ,"out_params" :
+      {
+        "openId" : ""
+      ,"roleId" : ""
+      ,"orderId" : ""
+      ,"orderStatus" : ""
+      ,"payType" : ""
+      ,"payId" : ""
+      ,"payName" : ""
+      ,"amount" : ""
+      ,"currency" : ""
+      ,"payTime" : ""
+      ,"paySUTime" : ""
+      ,"sign" : ""
+      }
+    }
+  ]
+}

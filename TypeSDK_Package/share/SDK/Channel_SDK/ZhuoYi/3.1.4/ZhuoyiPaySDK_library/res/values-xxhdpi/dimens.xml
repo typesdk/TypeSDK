@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="lib_droi_account_activity_horizontal_margin">16dp</dimen>
+    <dimen name="lib_droi_account_activity_vertical_margin">16dp</dimen>
+    <dimen name="lib_droi_account_qq_sina_login_font_size">16sp</dimen>
+    <!-- global -->
+    <dimen name="lib_droi_account_global_margin_left">20dp</dimen>
+    <dimen name="lib_droi_account_global_margin_right">20dp</dimen>
+    <dimen name="lib_droi_account_global_margin_top">30dp</dimen>
+    <dimen name="lib_droi_account_global_button_width">200dp</dimen>
+    <dimen name="lib_droi_account_global_button_height">50dp</dimen>
+    <dimen name="lib_droi_account_welcome_btn_register_margin_top">30dp</dimen>
+    <dimen name="lib_droi_account_login_icon_left">12dp</dimen>
+    <dimen name="lib_droi_account_login_icon_right">13dp</dimen>
+
+    <!-- layout-land -->
+    <dimen name="lib_droi_account_global_margin_left_land">120dp</dimen>
+    <dimen name="lib_droi_account_global_margin_right_land">120dp</dimen>
+    <dimen name="lib_droi_account_global_margin_left_layout">30dp</dimen>
+    <dimen name="lib_droi_account_global_margin_right_layout">30dp</dimen>
+    
+    <dimen name="zy_float_content_parent_marginleft">25dp</dimen>
+    <dimen name="zy_float_content_parent_marginright">18dp</dimen>
+    <dimen name="zy_float_padding_right">0dp</dimen>
+
+</resources>

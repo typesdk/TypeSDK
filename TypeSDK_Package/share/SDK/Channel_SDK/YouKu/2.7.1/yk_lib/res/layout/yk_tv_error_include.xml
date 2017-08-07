@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/YK_GameSDK_48PX"
+        android:background="@color/yk_text_error_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/YK_GameSDK_6PX"
+        android:paddingLeft="@dimen/YK_GameSDK_56PX"
+        android:paddingTop="@dimen/YK_GameSDK_6PX"
+        android:textColor="@color/yk_text_error_prompt"
+        android:textSize="@dimen/YK_GameSDK_22PX"
+        android:visibility="invisible" />
+<!--  android:text="@string/yk_text_verify_wrong  -->
+</RelativeLayout>

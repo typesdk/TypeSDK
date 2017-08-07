@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/GfanSDK/SDK/src/main/res/values/gfan_color.xml -->
+    <eat-comment/>
+    <color name="gfan_blue">#35A8E3</color>
+    <color name="gfan_col_0099ff">#0099ff</color>
+    <color name="gfan_col_00b0ff">#00b0ff</color>
+    <color name="gfan_col_ffffff">#ffffff</color>
+    <declare-styleable name="gfan_CircleImageView"><attr format="dimension" name="gfan_civ_border_width"/><attr format="color" name="gfan_civ_border_color"/><attr format="boolean" name="gfan_civ_border_overlay"/><attr format="color" name="gfan_civ_fill_color"/></declare-styleable>
+    <!-- From: file:/E:/GfanSDK/SDK/src/main/res/values/gfan_dimens.xml -->
+    <eat-comment/>
+    <dimen name="gfan_btn_text_size">20sp</dimen>
+    <dimen name="gfan_notification_distance">20dp</dimen>
+    <dimen name="gfan_uc_view_space">20dp</dimen>
+    <dimen name="gfan_uc_view_space_small">10dp</dimen>
+    <!-- From: file:/E:/GfanSDK/SDK/src/main/res/values/gfan_styles.xml -->
+    <eat-comment/>
+    <style name="gfan_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/gfan_uc_bg_lr_margin</item>
+        <item name="android:layout_marginRight">@dimen/gfan_uc_bg_lr_margin</item>
+        <item name="android:layout_marginTop">@dimen/gfan_uc_bg_tb_margin</item>
+        <item name="android:layout_marginBottom">@dimen/gfan_uc_bg_tb_margin</item>
+        <item name="android:background">@drawable/gfan_login_layout_bg</item>
+        <item name="android:paddingLeft">@dimen/gfan_uc_bg_lr_margin</item>
+        <item name="android:paddingRight">@dimen/gfan_uc_bg_lr_margin</item>
+
+    </style>
+    <style name="gfan_cancel_bg">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/gfan_uc_bg_lr_margin</item>
+        <item name="android:layout_marginRight">@dimen/gfan_uc_bg_lr_margin</item>
+        <item name="android:layout_marginTop">@dimen/gfan_uc_bg_tb_margin</item>
+        <item name="android:layout_marginBottom">@dimen/gfan_uc_bg_tb_margin</item>
+        <item name="android:paddingLeft">@dimen/gfan_uc_bg_lr_margin</item>
+        <item name="android:paddingRight">@dimen/gfan_uc_bg_lr_margin</item>
+
+    </style>
+    <style name="gfan_edit_style">
+        <item name="android:background">@drawable/gfan_edit_layout_bg</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">#b4b4b4</item>
+        <item name="android:layout_height">@dimen/gfan_edit_layout_height</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textCursorDrawable">@drawable/gfan_color_cursor</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="gfan_no_padding_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/gfan_uc_bg_lr_margin</item>
+        <item name="android:layout_marginRight">@dimen/gfan_uc_bg_lr_margin</item>
+        <item name="android:layout_marginTop">@dimen/gfan_uc_bg_tb_margin</item>
+        <item name="android:layout_marginBottom">@dimen/gfan_uc_bg_tb_margin</item>
+        <item name="android:background">@drawable/gfan_login_layout_bg</item>
+    </style>
+    <style name="gfan_popwin_anim_style_left">
+        <item name="android:windowEnterAnimation">@anim/gfan_floatview_menu_show_left</item>
+    </style>
+    <style name="gfan_popwin_anim_style_right">
+        <item name="android:windowEnterAnimation">@anim/gfan_floatview_menu_show_right</item>
+    </style>
+    <style name="gfan_progress_hud" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="gfan_records_of_consumption">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="gfan_text_style">
+        <item name="android:background">@drawable/gfan_textview_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#434343</item>
+        <item name="android:layout_height">@dimen/gfan_edit_layout_height</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+    <style name="gfan_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

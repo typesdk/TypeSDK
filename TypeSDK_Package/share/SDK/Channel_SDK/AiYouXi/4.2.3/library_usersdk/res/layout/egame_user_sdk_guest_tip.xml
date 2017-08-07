@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/egame_login_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="18dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical" 
+    android:background="@color/egame_usersdk_white"
+    android:layout_gravity="center">
+
+    <include layout="@layout/egame_user_sdk_title" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance"
+        android:textColor="@color/egame_usersdk_regist_text"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/egame_continue_guest_login"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance"
+        android:layout_weight="1"
+        android:background="@drawable/egame_btn_login_status"
+        android:text="@string/egame_continue_guest_login"
+        android:textColor="@color/egame_usersdk_white"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance">
+
+        <TextView
+            android:id="@+id/tv_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/egame_recommend_use"
+            android:textColor="@color/egame_usersdk_light_gray"
+            android:textSize="10dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_recommend"
+            android:background="@drawable/egame_shapr_gray_line" 
+            android:layout_marginRight="5dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_recommend"
+            android:background="@drawable/egame_shapr_gray_line" 
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/egame_loginbt_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/egame_login"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/egame_btn_frame_green_selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/egame_account_login"
+            android:textColor="@color/text_green"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/egame_register"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/egame_btn_frame_green_selector"
+            android:text="@string/str_egame_fast_register"
+            android:textColor="@color/text_green"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

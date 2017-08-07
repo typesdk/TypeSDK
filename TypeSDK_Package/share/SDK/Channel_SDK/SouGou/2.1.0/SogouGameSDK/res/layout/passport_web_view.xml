@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/passport_activity_base_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10.0dp"
+        android:paddingRight="10.0dp" >
+
+        <FrameLayout
+            android:id="@+id/passport_activity_base_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/passport_activity_base_title_left_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onBack"
+                android:padding="5dp"
+                android:src="@drawable/passport_btn_back" />
+
+            <TextView
+                android:id="@+id/passport_activity_base_title_left_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/passport_activity_base_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:id="@+id/passport_activity_base_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/passport_activity_base_title_right_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRefresh"
+                android:padding="5dp"
+                android:src="@drawable/passport_btn_refresh" />
+
+            <TextView
+                android:id="@+id/passport_activity_base_title_right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <WebView
+            android:id="@+id/login_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ProgressBar
+                android:id="@+id/passport_view_loading"
+                style="?android:attr/progressBarStyleInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/passport_activity_base_loading"
+                android:indeterminateOnly="true" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="25dp" >
+
+        <TextView
+            android:id="@+id/tx_mch_receive_pack_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您领取的游戏礼包码为:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tx_mch_receive_pack_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/mch_receive_pack_dialog_code"
+                android:padding="5dp"
+                android:text="123456"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+            
+            <Button
+                android:id="@+id/btn_mch_receive_pack"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#ff0000"
+                android:text="复制"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_mch_receive_pack_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="已领取"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_mch_close_receive"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/mch_close_receive" />
+
+</RelativeLayout>

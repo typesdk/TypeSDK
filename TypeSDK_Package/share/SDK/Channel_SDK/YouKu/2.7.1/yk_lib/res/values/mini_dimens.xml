@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="mini_margin_1">1dp</dimen>
+    <dimen name="mini_margin_3">3dp</dimen>
+    <dimen name="mini_margin_13">13dp</dimen>
+    <dimen name="mini_margin_textview_13">9dp</dimen>
+    <dimen name="mini_margin_textview_6">3dp</dimen>
+    <dimen name="mini_margin_6">6dp</dimen>
+    <dimen name="mini_margin_10">10dp</dimen>
+    <dimen name="mini_margin_left">14dp</dimen>
+    <dimen name="mini_margin_15">15dp</dimen>
+    <dimen name="mini_margin_19">19dp</dimen>
+    <dimen name="mini_margin_20">20dp</dimen>
+    <dimen name="mini_margin_top">10dp</dimen>
+    <dimen name="mini_margin_right">14dp</dimen>
+    <dimen name="mini_margin_bottom">10dp</dimen>
+    <dimen name="mini_margin_default">10dp</dimen>
+    <dimen name="mini_add_card_margin_left">21dp</dimen>
+    <dimen name="mini_margin_27">27dp</dimen>
+    <dimen name="mini_margin_42">42dp</dimen>
+    <!-- 控件默认高度 -->
+    <dimen name="mini_element_default_height">44dp</dimen>
+    <!-- 窗口高度 -->
+    <dimen name="mini_win_default_height">233dp</dimen>
+    <!-- 窗口宽度 -->
+    <dimen name="mini_win_default_width">280dp</dimen>
+    <!-- title高度 -->
+    <dimen name="mini_title_height">47dp</dimen>
+    <!-- 字体大小 -->
+    <dimen name="mini_text_size_xx_large">20sp</dimen>
+    <dimen name="mini_text_size_large">16sp</dimen>
+    <dimen name="mini_text_size_medium">15sp</dimen>
+    <dimen name="mini_text_size_small">13sp</dimen>
+    <dimen name="mini_text_size_x_small">12sp</dimen>
+    <dimen name="mini_text_size_link">17sp</dimen>
+    <dimen name="mini_text_size_14">14sp</dimen>
+
+    <!-- list item left icon size -->
+    <dimen name="item_left_icon_large">32dp</dimen>
+    <dimen name="item_left_icon_small">29dp</dimen>
+
+</resources>

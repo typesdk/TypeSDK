@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/_yl_loading_bg"
+    android:orientation="vertical" >
+	
+    <!-- 标题 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	
+        <TextView
+            android:id="@+id/alert_dialog_tv_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/hint_text_color"
+            android:text="确认退出支付"/>
+		
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/login_et_line"
+            />
+    </LinearLayout>
+    
+    <!-- 信息 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/alert_dialog_tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/hint_text_color"
+            android:text="交易未完成,是否结束支付?" />
+
+   </LinearLayout>
+   
+    <!-- 确认和取消按钮 -->
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/alert_dialog_btn_continue"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_send_checkverify_selector"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"
+            android:text="继续支付" />
+        
+        <Button
+            android:id="@+id/alert_dialog_btn_close"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_paymeny_close_selector"
+           	android:textColor="@android:color/white"
+           	android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:text="确认退出" />
+   </LinearLayout>
+
+</LinearLayout>

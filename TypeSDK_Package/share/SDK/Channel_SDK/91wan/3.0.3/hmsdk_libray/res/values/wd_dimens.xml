@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="dialog_padding">25dp</dimen>
+    <dimen name="wd_padding_25">25dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="wd_text_size_28">28sp</dimen>
+    <dimen name="wd_text_size_26">26sp</dimen>
+    <dimen name="wd_text_size_24">24sp</dimen>
+    <dimen name="wd_text_size_22">22sp</dimen>
+    <dimen name="wd_text_size_20">20sp</dimen>
+    <dimen name="wd_text_size_19">19sp</dimen>
+    <dimen name="wd_text_size_18">18sp</dimen>
+    <dimen name="wd_text_size_17">17sp</dimen>
+    <dimen name="wd_text_size_16">16sp</dimen>
+    <dimen name="wd_text_size_15">15sp</dimen>
+    <dimen name="wd_text_size_14">14sp</dimen>
+    <dimen name="wd_text_size_13">13sp</dimen>
+    <dimen name="wd_text_size_12">12sp</dimen>
+    <dimen name="wd_text_size_11">11sp</dimen>
+    <dimen name="wd_text_size_10">10sp</dimen>
+    <dimen name="wd_text_size_9">9sp</dimen>
+    <dimen name="wd_text_size_8">8sp</dimen>
+    <dimen name="wd_text_size_7">7sp</dimen>
+
+    <!-- 边距 -->
+    <dimen name="wd_margin_40">40dp</dimen>
+    <dimen name="wd_margin_30">30dp</dimen>
+    <dimen name="wd_margin_28">28dp</dimen>
+    <dimen name="wd_margin_27">27dp</dimen>
+    <dimen name="wd_margin_26">26dp</dimen>
+    <dimen name="wd_margin_25">25dp</dimen>
+    <dimen name="wd_margin_22">22dp</dimen>
+    <dimen name="wd_margin_20">20dp</dimen>
+    <dimen name="wd_margin_19">19dp</dimen>
+    <dimen name="wd_margin_18">18dp</dimen>
+    <dimen name="wd_margin_17">17dp</dimen>
+    <dimen name="wd_margin_16">16dp</dimen>
+    <dimen name="wd_margin_15">15dp</dimen>
+    <dimen name="wd_margin_13">13dp</dimen>
+    <dimen name="wd_margin_12">12dp</dimen>
+    <dimen name="wd_margin_11">11dp</dimen>
+    <dimen name="wd_margin_10">10dp</dimen>
+    <dimen name="wd_margin_9">9dp</dimen>
+    <dimen name="wd_margin_8">8dp</dimen>
+    <dimen name="wd_margin_7">7dp</dimen>
+    <dimen name="wd_margin_6">6dp</dimen>
+    <dimen name="wd_margin_5">5dp</dimen>
+    <dimen name="wd_margin_4">4dp</dimen>
+    <dimen name="wd_margin_3">3dp</dimen>
+    <dimen name="wd_title_bar_text_line_margin">1dp</dimen>
+
+    <!-- 正方形宽高 -->
+    <dimen name="wd_wh_13">13dp</dimen>
+    <dimen name="wd_wh_20">20dp</dimen>
+    <dimen name="wd_wh_30">30dp</dimen>
+
+    <dimen name="wd_password_edittext_w">318dp</dimen>
+    <dimen name="wd_password_edittext_h">53dp</dimen>
+
+    <dimen name="wd_divid_line_h">0.5dp</dimen>
+
+    <!-- title -->
+    <dimen name="wd_title_h">50dp</dimen>
+    <dimen name="wd_title_mini_h">45dp</dimen>
+
+    <!-- 框架定义 -->
+    <dimen name="wd_button_heigth">50dp</dimen>
+    <dimen name="wd_title_line_heigth">1dp</dimen>
+
+    <!-- 主界面定义 -->
+    <dimen name="wd_height_50">50dp</dimen>
+    <dimen name="wd_height_38">38dp</dimen>
+    <dimen name="wd_height_48">48dp</dimen>
+
+    <dimen name="wd_dialog_padding">15dp</dimen>
+
+
+    <!-- 标题高度 -->
+    <dimen name="wepay_title_high">40dp</dimen>
+    <dimen name="wepay_content_width">298dp</dimen>
+    <dimen name="wepay_dialog_width">280dp</dimen>
+    <dimen name="wepay_content_height">40dp</dimen>
+
+    <!-- TextSize -->
+    <dimen name="wepay_txt_small">12sp</dimen>
+    <dimen name="wepay_txt_middle">14sp</dimen>
+    <dimen name="wepay_txt_large">16sp</dimen>
+    <dimen name="wepay_txt_xlarge">18sp</dimen>
+    <dimen name="wepay_txt_xxlarge">24sp</dimen>
+    <dimen name="wepay_txt_xxxlarge">30sp</dimen>
+    <dimen name="wepay_txt_xxxxlarge">36sp</dimen>
+
+    <!-- 间距 -->
+    <dimen name="wepay_space_xsmall">1dp</dimen>
+    <dimen name="wepay_space_small">4dp</dimen>
+    <dimen name="wepay_space_middle">8dp</dimen>
+    <dimen name="wepay_space_large">12dp</dimen>
+    <dimen name="wepay_space_xlarge">16dp</dimen>
+    <dimen name="wepay_space_xxlarge">24dp</dimen>
+    <dimen name="wepay_space_xxxlarge">32dp</dimen>
+    <dimen name="wepay_space_xxxxlarge">40dp</dimen>
+    <dimen name="wepay_space_xxxxxlarge">48dp</dimen>
+
+
+    <!-- 组件 -->
+    <dimen name="wepay_cp_checkcode_height">42dp</dimen>
+    <dimen name="wepay_cp_checkcode_width">44dp</dimen>
+    <dimen name="wepay_cp_checkcode_space">1dp</dimen>
+
+    <!-- key -->
+    <dimen name="wepay_key_height">48dp</dimen>
+
+    <!-- image-->
+    <dimen name="wepay_image_small">30dp</dimen>
+
+    <!-- 分割线 -->
+    <dimen name="wepay_divider_line_height">1dp</dimen>
+    <!-- 按钮 -->
+    <dimen name="wepay_operate_button_height">32dp</dimen>
+    <dimen name="wepay_operate_button_width">65dp</dimen>
+    <dimen name="wepay_dialog_button_height">36dp</dimen>
+    <!-- weight -->
+    <dimen name="wepay_widget_height">40dp</dimen>
+    <dimen name="wepay_padding_middle">15dp</dimen>
+    <dimen name="wepay_margin_h_middle">15dp</dimen>
+    <!-- toast -->
+    <dimen name="wepay_toast_height">36dp</dimen>
+    <!-- 银行卡信息 -->
+    <dimen name="wepay_space_logo_bankname">16dp</dimen>
+
+    <!-- 带左侧文本的输入框左侧padding -->
+    <dimen name="wepay_padding_input_edit">125dp</dimen>
+
+</resources>

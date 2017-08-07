@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/com_tencent_ysdk_icon_floatwindow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--消息的Item-->
+    <RelativeLayout
+        android:id="@+id/com_tencent_ysdk_icon_xiaoxi_item"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        >
+
+        <ImageView
+            android:id="@+id/com_tencent_ysdk_icon_xiaoxi_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="26dp"
+            android:src="@drawable/com_tencent_ysdk_icon_xiaoxi_icon"
+            />
+
+        <TextView
+            android:id="@+id/com_tencent_ysdk_icon_xiaoxi_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/com_tencent_ysdk_icon_xiaoxi_icon"
+            android:layout_marginLeft="10dp"
+            android:text="@string/message_text"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/com_tencent_ysdk_icon_xiaoxi_rednum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-6dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/com_tencent_ysdk_icon_xiaoxi_word"
+            android:background="@drawable/com_tencent_ysdk_icon_rednum"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            />
+    </RelativeLayout>
+
+    <!--竖的Item-->
+    <LinearLayout
+        android:id="@+id/com_tencent_ysdk_icon_float_view_vertical_Item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <!--加速和录屏-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/com_tencent_ysdk_icon_jiasu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="17.5dp"
+                android:layout_height="25dp"
+                android:src="@drawable/com_tencent_ysdk_icon_jiasuicon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="加速"
+                android:textColor="#FFFF"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="17dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/com_tencent_ysdk_icon_fenge"
+            />
+
+        <LinearLayout
+            android:id="@+id/com_tencent_ysdk_icon_close_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/com_tencent_ysdk_icon_close"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="关闭"
+                android:textColor="#FFFF"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/com_tencent_ysdk_icon_floatmenu_view.xml -->

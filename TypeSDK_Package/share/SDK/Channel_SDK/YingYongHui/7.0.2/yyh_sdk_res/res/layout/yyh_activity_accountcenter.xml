@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/yyh_corner_top_blue_bg" >
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/yyh_activity_close" />
+
+        <com.appchina.usersdk.WidgetCircleImageView
+            android:id="@+id/niv_icon"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/yyh_defult" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/niv_icon"
+            android:layout_toLeftOf="@+id/yyh_btn_chongzhi"
+            android:layout_toRightOf="@+id/niv_icon"
+            android:layout_toStartOf="@+id/yyh_btn_chongzhi"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp" >
+
+            <TextView
+                android:id="@+id/yyh_tv_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="悲伤的奥利奥"
+                android:textColor="@color/yyh_white" />
+
+            <TextView
+                android:id="@+id/yyh_tv_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="YYH10230243"
+                android:textColor="@color/yyh_white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/yyh_tv_sum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:singleLine="true"
+                android:text="余额：0.0豆子"
+                android:textColor="@color/yyh_white"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/yyh_btn_chongzhi"
+            android:layout_width="83dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/yyh_btn_white_bg"
+            android:text="@string/yyh_btn_chongzhi"
+            android:textColor="@color/yyh_white" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@color/yyh_blue"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yyh_center_tv_act"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yyh_tv_act"
+                android:textColor="@color/yyh_white"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/yyh_center_tv_account"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yyh_tv_account"
+                android:textColor="@color/yyh_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/yyh_center_tv_gift"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/yyh_tv_gift"
+                android:textColor="@color/yyh_white"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/yyh_center_tv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/yyh_tv_msg"
+                    android:textColor="@color/yyh_white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/yyh_center_msg_unread"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/yyh_corner_round_red_bg"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/yyh_center_cursor"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:scaleType="matrix"
+            android:src="@drawable/yyh_cursor" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/yyh_corner_botton_white_bg"
+        android:paddingBottom="5dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/yyh_center_pagercontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+</LinearLayout>

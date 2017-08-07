@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="68dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent" >
+
+    <com.huawei.gameservice.sdk.view.floatwindow.WebImageView 
+        android:id="@+id/tab_icon"
+        android:layout_width="48dp"
+        android:layout_centerHorizontal="true"
+        android:background="#1A000000"
+        android:layout_height="48dp"/>
+    
+    <TextView
+        android:id="@+id/tab_textview"
+        android:layout_below="@+id/tab_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="false"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxEms="3" />
+    
+    <ImageView 
+        android:id="@+id/tab_redpoint"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/buoy_red_dot"
+        android:layout_toRightOf="@+id/tab_textview"
+        android:layout_alignTop="@+id/tab_textview"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"/>
+
+</RelativeLayout>

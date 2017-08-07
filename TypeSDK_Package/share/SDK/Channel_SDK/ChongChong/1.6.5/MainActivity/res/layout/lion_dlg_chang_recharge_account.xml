@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.CustomChangeAccountLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/lion_dlg_margin" >
+
+    <TextView
+        style="@style/lion_style_dlg_title"
+        android:text="@string/lion_dlg_chang_recharge_account" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lion_common_dialog_content_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="7.5dip"
+            android:text="@string/lion_dlg_chang_recharge_account_notices"
+            android:textColor="@color/lion_common_text_gray"
+            android:textSize="14.0sp" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lion_dlg_margin"
+            layout="@layout/lion_dlg_input_account" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:layout_marginTop="@dimen/lion_dlg_margin"
+                layout="@layout/lion_dlg_two_btn" />
+
+            <com.lion.ccpay.widget.MoreAccountLayout
+                android:id="@+id/lion_dlg_change_recharge_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/lion_common_white_frame_nor"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.lion.ccpay.widget.CustomChangeAccountLayout>

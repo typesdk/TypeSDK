@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/des_title"
+            style="@style/sogou_game_sdk_bindin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/des_title"
+            android:textColor="@color/sogou_game_sdk_color_000000"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/sogou_game_sdk_close_view_btn"
+            style="@style/sogou_game_sdk_bindin_tv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/sogou_game_sdk_bt_close" />
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/sogou_game_sdk_user_view"
+        android:layout_width="310dp"
+        android:layout_height="230dp"
+        android:layout="@layout/sogou_game_sdk_bindind_user_view" />
+
+    <ViewStub
+        android:id="@+id/sogou_game_sdk_sogou_view"
+        android:layout_width="310dp"
+        android:layout_height="230dp"
+        android:layout="@layout/sogou_game_sdk_regist_main_p" />
+
+    <RelativeLayout
+        android:id="@+id/sogou_game_sdk_bindin_other_tv"
+        android:layout_width="match_parent"
+        android:layout_height="35.5dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/sogou_game_sdk_login_speedy_bottom_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/sogou_game_sdk_bindin_other"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

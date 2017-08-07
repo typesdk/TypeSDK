@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="#0fb03e" >
+
+    <RelativeLayout
+        android:id="@+id/ch_web_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#0fb03e" >
+
+        <ImageButton
+            android:id="@+id/ch_web_title_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:src="@drawable/ch_dialog_goback" />
+
+        <TextView
+            android:id="@+id/ch_web_title_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/ch_web_title_back"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/ch_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ch_web_layout"
+        android:windowSoftInputMode="adjustResize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ch_white" 
+        android:layout_below="@+id/ch_web_title_bar" >
+
+        <ProgressBar
+            android:id="@+id/ch_web_progress"
+            style="@style/ch_style_horizontal_progress"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:indeterminate="false"
+            android:max="100" />
+
+        <ProgressBar
+            android:id="@+id/ch_web_progress_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@anim/ch_anim_rotate_cycle"
+            android:indeterminateDuration="1000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:windowSoftInputMode="adjustResize"
+        android:id="@+id/ch_web_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ch_web_title_bar" />
+
+</RelativeLayout>

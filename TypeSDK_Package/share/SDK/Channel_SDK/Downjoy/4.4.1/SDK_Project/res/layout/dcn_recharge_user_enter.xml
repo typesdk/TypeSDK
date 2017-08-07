@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dcn_login_background"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <com.downjoy.widget.TitleLayer
+            android:id="@+id/dcn_recharge_user_enter_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dcn_login_padding_left_right"
+            android:paddingRight="@dimen/dcn_login_padding_left_right">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/dcn_recharge_user_enter_label"
+                android:textColor="@color/dcn_light_black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/dcn_login_box_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/dcn_yuan" />
+
+                <View
+                    android:layout_width="@dimen/dcn_divider_size"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/dcn_color_login_box_gb" />
+
+                <EditText
+                    android:id="@+id/dcn_user_enter_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/dcn_recharge_user_enter_value"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="@color/dcn_light_black"
+                    android:textColorHint="@color/dcn_login_edit_hint"
+                    android:textSize="@dimen/dcn_edit_text_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dcn_switch_account_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dcn_login_padding_left_right"
+            android:paddingRight="@dimen/dcn_login_padding_left_right">
+
+            <Button
+                android:id="@+id/dcn_cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/dcn_edit_verify_btn_selector"
+                android:text="@string/dcn_dialog_cancel"
+                android:textColor="@color/dcn_henp_chapter_sencond_level_content"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/dcn_confirm_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/dcn_orange_btn_selector"
+                android:text="@string/dcn_recharge_user_enter_confirm"
+                android:textColor="#fff4ee"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

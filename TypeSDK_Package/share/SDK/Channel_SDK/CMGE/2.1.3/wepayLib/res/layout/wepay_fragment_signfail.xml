@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginLeft="@dimen/wepay_space_large"
+    android:layout_marginRight="@dimen/wepay_space_large"
+    android:background="@drawable/wepay_kuang_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/wepay_space_large"
+    android:paddingRight="@dimen/wepay_space_large" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/wepay_space_large"
+            android:padding="@dimen/wepay_space_large" >
+
+            <TextView
+                android:id="@+id/txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wepay_space_xxxlarge"
+        android:layout_marginBottom="@dimen/wepay_space_middle"
+        android:layout_marginTop="@dimen/wepay_space_middle"
+        android:background="@drawable/wepay_first_btn_bg"
+        android:text="确定"
+        android:textColor="@color/wepay_first_btn_txt"
+        android:textSize="@dimen/wepay_txt_large" />
+
+</LinearLayout>

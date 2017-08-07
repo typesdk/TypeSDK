@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/float_window_grey"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="40dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#e4e4e4"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/float_window_img_bond_phone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/float_window_account_number"
+            android:textColor="@color/float_window_black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/float_window_textview_account_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="@color/float_window_black"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:text="@string/float_window_phone"
+                android:textColor="@color/float_window_black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/float_window_account_textview_identifycode"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/float_window_identify_code"
+                android:textColor="@color/float_window_black"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/float_window_account_layout_phone_number"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/float_window_edittextbg_yellow"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/float_window_account_edittext_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:hint="@string/float_window_hint_input_phone_number"
+                    android:numeric="integer"
+                    android:textColor="@color/float_window_black"
+                    android:textColorHint="@color/float_window_hint_grey"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/float_window_account_layout_msg_identifycode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/float_window_edittextbg_yellow"
+                    android:gravity="left|center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/float_window_account_edittext_msg_identify_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="@string/float_window_hint_identify_code"
+                        android:textColor="@color/float_window_black"
+                        android:textColorHint="@color/float_window_hint_grey"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/float_window_account_button_get_identify_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/float_window_btn_identify_code_selector"
+                    android:gravity="center"
+                    android:text="@string/float_window_get_identify_code"
+                    android:textColor="@color/float_window_white"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/float_window_text_bindforfindpwd"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/float_window_account_bond_phone_btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/float_window_btn_bond_share_selector"
+            android:gravity="center"
+            android:text="@string/float_window_sure"
+            android:textColor="@color/float_window_white" />
+
+        <Button
+            android:id="@+id/float_window_account_bond_phone_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/float_window_btn_cancel_selector"
+            android:gravity="center"
+            android:text="@string/float_window_cancel"
+            android:textColor="@color/float_window_white" />
+    </LinearLayout>
+
+</LinearLayout>

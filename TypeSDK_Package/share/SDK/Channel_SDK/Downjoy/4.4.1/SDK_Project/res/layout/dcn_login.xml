@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dcn_login_padding_left_right"
+    android:paddingRight="@dimen/dcn_login_padding_left_right" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dcn_login_user"
+                 />
+
+            <View
+                android:layout_width="@dimen/dcn_divider_size"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/dcn_color_login_box_gb"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/dcn_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="@string/dcn_register_name_digits"
+                android:ems="10"
+                android:hint="@string/dcn_login_input_name_hint"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="@color/dcn_login_edit_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dcn_edit_text_size" />
+
+            <LinearLayout
+                android:id="@+id/dcn_delete_name"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_edit_delete" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dcn_select_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="right" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dcn_select_account_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_divider_size"
+            android:background="@color/dcn_login_split" />
+
+        <LinearLayout
+            android:id="@+id/dcn_login_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dcn_login_password"
+                 />
+
+            <View
+                android:layout_width="@dimen/dcn_divider_size"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/dcn_color_login_box_gb"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/dcn_password"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/dcn_login_input_password_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="@color/dcn_login_edit_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dcn_edit_text_size" />
+
+            <LinearLayout
+                android:id="@+id/dcn_delete_password"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dcn_edit_delete"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/dcn_forget_password"-->
+                <!--android:minWidth="55dip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:gravity="center"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="30dip"-->
+                    <!--android:background="@drawable/dcn_edit_verify_btn_selector"-->
+                    <!--android:gravity="center"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:text="@string/dcn_forget_password"-->
+                    <!--android:textColor="#acacac"-->
+                    <!--android:textSize="10sp"-->
+                    <!--android:paddingLeft="4dip"-->
+                	<!--android:paddingRight="2dip" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/dcn_forget_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="right" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dcn_login_search_password" />
+            </LinearLayout>
+
+            <com.downjoy.widget.SlipSwitch
+                android:id="@+id/dcn_password_switch"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dcn_interval_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_divider_size"
+        android:background="@color/dcn_login_split" />
+
+    <Button
+        android:id="@+id/dcn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dcn_selector_login_btn"
+        android:text="@string/dcn_label_login"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

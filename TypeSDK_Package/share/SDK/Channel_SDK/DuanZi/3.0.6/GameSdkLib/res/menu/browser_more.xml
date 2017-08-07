@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/refresh"
+          android:title="@string/browser_popup_menu_refresh"/>
+
+    <item android:id="@+id/copylink"
+          android:title="@string/browser_popup_menu_copy_link"/>
+
+    <item android:id="@+id/openwithbrowser"
+          android:title="@string/browser_popup_menu_open_with_browser"/>
+
+</menu>

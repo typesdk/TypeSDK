@@ -1,0 +1,332 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightransparent"
+    android:gravity="center"
+    android:layoutAnimation="@anim/coolpad_anim_coolcoin_pay" >
+
+    <LinearLayout
+        android:id="@+id/head_rl"
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:orientation="vertical" >
+
+        <!-- <include layout="@layout/coolpad_pay_navigation" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/coolpad_roundcorner_top_blue_bg"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/back_re"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical" >
+
+                <ImageView
+                    android:id="@+id/back_iv"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/coolpad_back_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tittle_re"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tittle_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/coolpad_white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/more_re"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" >
+
+                <com.yulong.paysdk.widget.RoundImageView
+                    android:id="@+id/user_head_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/coolpad_account_default"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/main_sv"
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pay_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/wares_payment_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/coolpad_white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp" >
+
+                    <TextView
+                        android:id="@+id/goods_name_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:singleLine="true"
+                        android:textColor="@color/pay_text_darkgray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/goods_payment_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:ellipsize="end"
+                        android:gravity="right|center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/pay_text_red"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/coupon_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/coolpad_item_click"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/coolpad_coupon_name_re"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/coolpad_coupon_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/coolpad_coupon_name"
+                            android:textColor="@color/pay_text_darkgray"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/coolpad_coupon_new_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/coolpad_coupon_name_tv"
+                            android:gravity="center"
+                            android:textColor="@color/text_gray_99"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/coupon_add_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@+id/coupon_delete_re"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/coolpad_delete" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/coupon_choice_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:gravity="right|center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/pay_text_darkgray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/coolpad_goninto" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/coupon_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/coolpad_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/coolpad_delete" />
+
+                    <TextView
+                        android:id="@+id/coupon_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/pay_text_darkgray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/coolpad_white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/coolpad_add" />
+
+                        <TextView
+                            android:id="@+id/goods_coupon_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/pay_text_darkgray"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/usecoolbi_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/coolbi_select_iv"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:src="@drawable/coolpad_coolbi_select_bg" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/pay_text_darkgray"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:paddingLeft="25dp"
+                        android:text="@string/coolpad_pay_type"
+                        android:textColor="@color/text_dark_80"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/ad_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="#660000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/coolpad_white"
+                    android:cacheColorHint="@null"
+                    android:divider="@color/list_divider"
+                    android:dividerHeight="1px"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/server_info_re"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/coolpad_roundcorner_bottom_white_bg"
+            android:gravity="center"
+            android:textColor="@color/text_dark_51" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="7dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/pass_left_line"
+        android:layout_width="1dp"
+        android:layout_height="6dp"
+        android:layout_alignParentLeft="true"
+        android:background="@color/yk_text_line_include" />
+
+    <ImageView
+        android:id="@+id/pass_right_line"
+        android:layout_width="1dp"
+        android:layout_height="6dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/yk_text_line_include" />
+
+    <ImageView
+        android:id="@+id/pass_mid_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/yk_text_line_include" />
+
+</RelativeLayout>

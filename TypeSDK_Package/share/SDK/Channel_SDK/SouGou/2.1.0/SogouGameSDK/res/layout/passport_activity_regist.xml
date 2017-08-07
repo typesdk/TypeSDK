@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EAEAEA" >
+
+    <RelativeLayout
+        android:id="@+id/passport_activity_regist_page_account"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:visibility="invisible" >
+
+        <com.sogou.passportsdk.view.PassportTextViewWithClean
+            android:id="@+id/passport_activity_regist_page_account_et"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:layout_marginTop="21dip"
+            android:background="@drawable/passport_activity_regist_bg_et"
+            android:gravity="center"
+            android:tag="请输入您的手机号_phone" />
+
+        <Button
+            android:id="@+id/passport_activity_regist_page_account_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:layout_below="@id/passport_activity_regist_page_account_et"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/passport_activity_regist_btn_enable"
+            android:text="下一步"
+            android:textColor="@color/passport_color_view_linkedbtn_btn_disable"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/passport_activity_regist_page_psw"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:visibility="invisible" >
+
+        <com.sogou.passportsdk.view.PassportTextViewWithClean
+            android:id="@+id/passport_activity_regist_page_psw_verifycode_et"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:layout_marginTop="21dip"
+            android:background="@drawable/passport_activity_regist_bg_et"
+            android:gravity="center"
+            android:tag="请输入您的验证码" />
+
+        <com.sogou.passportsdk.view.PassportTextViewWithClean
+            android:id="@+id/passport_activity_regist_page_psw_psw_et"
+            android:layout_width="fill_parent"
+            android:layout_height="44dip"
+            android:layout_below="@id/passport_activity_regist_page_psw_verifycode_et"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/passport_activity_regist_bg_et"
+            android:gravity="center"
+            android:tag="请输入您的密码_psw" />
+
+        <LinearLayout
+            android:id="@+id/passport_activity_regist_page_psw_btngroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passport_activity_regist_page_psw_psw_et"
+            android:layout_marginTop="15dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/passport_activity_regist_page_psw_retrieve_btn"
+                android:layout_width="0dip"
+                android:layout_height="44dip"
+                android:layout_weight="1"
+                android:background="@drawable/passport_activity_regist_btn_retrieve"
+                android:text="重获验证码"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="20dip"
+                android:layout_height="1dip" />
+
+            <Button
+                android:id="@+id/passport_activity_regist_page_psw_accept_btn"
+                android:layout_width="0dip"
+                android:layout_height="44dip"
+                android:layout_weight="1"
+                android:background="@drawable/passport_activity_regist_btn_enable"
+                android:text="同意条款并注册"
+                android:textColor="@color/passport_color_view_linkedbtn_btn_disable"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/passport_activity_regist_page_psw_read_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passport_activity_regist_page_psw_btngroup"
+            android:layout_margin="15dip"
+            android:text="隐私协议条款"
+            android:textColor="#6EA7E7" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/passport_activity_regist_page_protocol"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" >
+
+        <WebView
+            android:id="@+id/passport_activity_regist_page_protocol_wv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+</RelativeLayout>

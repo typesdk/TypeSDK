@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical" 
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <include
+                android:id="@+id/game_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                layout="@layout/ledi_info" />
+
+            <RelativeLayout
+                android:id="@+id/game_yunying_rel"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ledi_phone_number_select"
+                android:onClick="select_yunying_onclick"
+                android:paddingLeft="8dp" >
+
+                <TextView
+                    android:id="@+id/phone_parvalue_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ledi_carrieroperator"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/game_yunying_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/phone_parvalue_tv"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/game_yunying_imgbtn"
+                    android:background="@drawable/ledi_pg_shuxian" />
+
+                <ImageButton
+                    android:id="@+id/game_yunying_imgbtn"
+                    android:layout_width="18dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ledi_choose_img" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/game_value_rel"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ledi_phone_number_select"
+                android:onClick="select_value_onclick"
+                android:paddingLeft="8dp" >
+
+                <TextView
+                    android:id="@+id/phone_parvalue_game_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ledi_par_value"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/game_value_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/phone_parvalue_game_tv"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/game_value_imgbtn"
+                    android:background="@drawable/ledi_pg_shuxian" />
+
+                <ImageButton
+                    android:id="@+id/game_value_imgbtn"
+                    android:layout_width="18dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ledi_choose_img" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ledi_phone_number"
+                android:paddingLeft="8dp" >
+
+                <TextView
+                    android:id="@+id/game_kahao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ledi_card_number"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/game_kahao_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/game_kahao"
+                    android:background="#0000"
+                    android:hint="@string/ledi_input_card_number"
+                    android:numeric="integer"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ledi_phone_number"
+                android:paddingLeft="8dp" >
+
+                <TextView
+                    android:id="@+id/game_mima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/ledi_password"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/game_password_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/game_mima"
+                    android:background="#0000"
+                    android:hint="@string/ledi_input_password"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/game_phonenumber_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ledi_phone_number"
+            android:hint="@string/ledi_input_phone_number"
+            android:paddingLeft="10dp"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:visibility="invisible"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/game_bootom_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ledi_recharge_bottom_bg"
+            android:gravity="center"
+            android:onClick="bootomBtnOnclick"
+            android:text="@string/ledi_once_payment"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>

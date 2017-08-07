@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/dp52"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp117"
+            android:gravity="center_vertical"
+            android:background="@drawable/papalogin_editback"
+            >
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/username"
+                android:paddingLeft="@dimen/dp150"
+                android:textSize="@dimen/sp40"
+                android:textColorHint="#c4c4c4"
+                android:hint="啪啪账号/手机账号"
+                android:textColor="#3c3c3c"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:background="#00000000"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:dropDownSelector="#ffffff"
+                />
+
+        <ImageView
+                android:layout_width="@dimen/dp57"
+                android:layout_height="wrap_content"
+                android:id="@+id/userIcon"
+                android:src="@drawable/papalogin_username_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp36"
+                />
+
+        <TextView
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp52"
+                android:text="New Text"
+                android:id="@+id/textView"
+                android:background="#c4c4c4"
+                android:layout_toRightOf="@+id/userIcon"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp36"
+                />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/moreUser"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp37"
+                android:src="@drawable/more_user_butn"
+
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp117"
+            android:layout_marginTop="@dimen/dp57"
+            android:gravity="center_vertical"
+            android:background="@drawable/papalogin_editback"
+            android:id="@+id/relativeLayout"
+            >
+
+        <EditText
+                android:layout_width="@dimen/dp750"
+                android:layout_height="match_parent"
+                android:id="@+id/passEdit"
+                android:paddingLeft="@dimen/dp150"
+                android:textSize="@dimen/sp40"
+                android:textColorHint="#c4c4c4"
+                android:hint="请输入密码"
+                android:textColor="#3c3c3c"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:maxLength="16"
+                />
+
+        <ImageView
+                android:layout_width="@dimen/dp57"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/papalogin_passicon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp36"
+                />
+
+        <TextView
+                android:layout_width="@dimen/dp1"
+                android:layout_height="@dimen/dp52"
+                android:text="New Text"
+                android:id="@+id/textView2"
+                android:background="#c4c4c4"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp36"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/forgetPass"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp25"
+                android:src="@drawable/more_user_butn"
+                android:text="忘记密码？"
+                android:textColor="#f9a435"
+                android:gravity="center_vertical"
+
+                />
+    </RelativeLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp117"
+                android:layout_marginTop="@dimen/dp57"
+                >
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp117"
+                        android:text="快速游戏"
+                        android:id="@+id/onekeyRegin"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/dp15"
+                        android:background="@drawable/papalogin_redbutn_seleter"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp46"
+                        android:visibility="gone"
+                        />
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="进入游戏"
+                        android:id="@+id/login"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/papalogin_redbutn_seleter"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp46"
+                        />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp57"
+                android:id="@+id/zz"
+                ><!--@dimen/dp67-->
+
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:layout_weight="1"
+                              android:gravity="center_vertical"
+                              android:visibility="invisible"
+                        >
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3"
+                                android:text="其他方式登录："
+                                android:singleLine="true"
+                                android:textColor="@color/grey_2"
+                                android:ellipsize="none"
+                                android:textSize="@dimen/sp40"
+                                /><!--#616161-->
+
+                        <ImageView
+                                android:layout_width="@dimen/dp110"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/phone"
+                                android:src="@drawable/phoneicon"
+                                />
+
+
+                </LinearLayout>
+
+
+              <!--  <TextView android:layout_width="wrap_content" android:layout_height="match_parent"
+                          android:text="返回登录"
+                          android:textColor="#3a85e2"
+                          android:id="@+id/backlogin"
+                          android:textSize="@dimen/sp40"
+                          android:gravity="center_vertical"
+                        />-->
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/backlogin"
+                        android:background="@drawable/papalogin_type_bg"
+                        android:gravity="center_vertical"
+                        />
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+    <ImageView
+            android:id="@+id/stargame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lib_floatview_logo_selector"/>
+
+    <View
+            android:id="@+id/floatViewBg1"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:clickable="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:background="@drawable/lib_view_floatview_animation_bg"/>
+
+    <View
+            android:id="@+id/floatViewBg2"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:clickable="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:background="@drawable/lib_view_floatview_animation_bg"/>
+
+    <View
+            android:id="@+id/floatViewBg3"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:clickable="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:visibility="gone"
+            android:background="@drawable/lib_view_floatview_animation_bg"/>
+</RelativeLayout>
+

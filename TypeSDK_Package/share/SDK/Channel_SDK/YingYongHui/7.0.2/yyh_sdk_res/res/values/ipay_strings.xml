@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 全局变量 -->
+    <string name="ipay_common_pay_fail">支付失败，请重试。</string>
+    <string name="ipay_common_dialog_title">提  示</string>
+    <string name="ipay_network_unconnent">网络连接失败，请检查网络！</string>
+    <string name="ipay_common_loading">正在加载%s...</string>
+    <string name="ipay_network_error">系统繁忙，请稍候再试...</string>
+    
+    <!-- game pay -->
+   	<string name="ipay_sub_game_chargefeee_tips">本次支付%1$s元，其中%2$s元为通道手续费，实际到账%3$s元</string>
+   	<string name="ipay_sub_game_final_rate_msg_new">支付%1$s元，其中支付商品%2$s元(含%3$s元手续费)，剩余%4$s元将充值%5$s%6$s(其中%7$s元为手续费)</string>
+   	<string name="ipay_sub_game_final_rate_msg_3_without">支付%1$s元，其中支付商品%2$s元，剩余%3$s元将充值%4$s%5$s</string>
+   	<string name="ipay_sub_game_final_rate_msg_charge">支付%1$s元，其中支付商品%2$s元，剩余%3$s元将充值%4$s%5$s(其中%6$s元为手续费)</string>
+   	<string name="ipay_sub_game_final_rate_msg_pay">支付%1$s元，其中支付商品%2$s元(含%3$s元手续费)，剩余%4$s元将充值%5$s%6$s</string>
+    <string name="ipay_sub_game_balance_yuan">%1$s元</string>
+    
+</resources>

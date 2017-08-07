@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/yk_pay_orderlist_layout"
+        android:layout_width="@dimen/YK_GameSDK_664PX"
+        android:layout_height="@dimen/YK_GameSDK_735PX"
+        android:background="@color/yk_bg_pay_datail"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/YK_GameSDK_88PX"
+            android:background="@color/yk_white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/yk_pay_icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/YK_GameSDK_36PX"
+                android:paddingRight="@dimen/YK_GameSDK_36PX"
+                android:src="@drawable/yk_pay_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/YK_GameSDK_26PX"
+                android:layout_toRightOf="@+id/yk_pay_icon_back"
+                android:text="@string/yk_text_ykgame_paydetails"
+                android:textColor="@color/yk_text_title"
+                android:textSize="@dimen/YK_GameSDK_44PX" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/yk_title_line" />
+
+        <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/yk_white"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone" >
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/yk_title_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/yk_pay_orderlist_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/YK_GameSDK_14PX"
+            android:background="@color/yk_white" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>

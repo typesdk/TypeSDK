@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom" >
+
+    <RelativeLayout
+        android:id="@+id/xlistview_header_content"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" android:id="@+id/xlistview_header_text">
+
+            <TextView
+                android:id="@+id/xlistview_header_hint_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xlistview_header_hint_normal"
+                style="@style/TextViewStyle_10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xlistview_header_last_time"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                        />
+
+                <TextView
+                    android:id="@+id/xlistview_header_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/xlistview_header_arrow"
+            android:layout_width="@dimen/progress_drawable_w"
+            android:layout_height="@dimen/progress_drawable_w"
+            android:layout_alignLeft="@id/xlistview_header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-35dp"
+            android:src="@drawable/loding_progress"
+            android:visibility="gone"
+                />
+            <!--android:src="@drawable/loding_drawable"-->
+
+        <ProgressBar
+            android:id="@+id/xlistview_header_progressbar"
+            android:layout_width="@dimen/progress_drawable_w"
+            android:layout_height="@dimen/progress_drawable_w"
+            android:indeterminate="true"
+            android:indeterminateDuration="1000"
+             android:indeterminateOnly="true"
+            android:indeterminateDrawable="@drawable/loding_progress"
+            android:layout_alignLeft="@id/xlistview_header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-40dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

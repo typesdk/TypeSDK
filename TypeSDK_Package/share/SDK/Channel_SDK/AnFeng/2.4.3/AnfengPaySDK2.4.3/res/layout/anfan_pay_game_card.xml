@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anfan_choose_card_type"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/anfan_recharge_dianka_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/anfan_recharge_dianka_3"
+        android:textColor="#666666" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.anfeng.pay.view.MyGridView
+            android:id="@+id/anfan_recharge_dianka__gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="#EDEFF1"
+            android:gravity="center"
+            android:horizontalSpacing="5dip"
+            android:listSelector="#EDEFF1"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dp" />
+
+        <com.anfeng.pay.view.ClearEditText
+            android:id="@+id/anfan_recharge_dianka_num"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:digits="@string/anfan_input_account_digits"
+            android:ems="10"
+            android:hint="@string/anfan_recharge_dianka_4"
+            android:inputType="number"
+            android:maxLength="50"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:textCursorDrawable="@null" />
+
+        <com.anfeng.pay.view.SeePWDEditText
+            android:id="@+id/anfan_recharge_dianka_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#ffffff"
+            android:digits="@string/anfan_input_account_digits"
+            android:ems="10"
+            android:hint="@string/anfan_recharge_dianka_5"
+            android:inputType="number|numberPassword"
+            android:maxLength="50"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#CCCCCC"
+            android:textCursorDrawable="@null" />
+
+        <Button
+            android:id="@+id/anfan_recharge_dianka_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/anfan_button_bg_blue"
+            android:text="@string/anfan_recharge_dianka_6"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/anfan_pay_card_hint"
+            android:textColor="#999999" />
+    </LinearLayout>
+    <!-- </ScrollView> -->
+
+</LinearLayout>

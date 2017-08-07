@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.floating.FWLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="wrap_content"
+                                         android:background="@drawable/lion_common_floating_bg"
+                                         android:gravity="center"
+                                         android:minHeight="45.0dip">
+
+    <ImageView
+        android:id="@+id/lion_layout_floating_menu_icon"
+        android:layout_width="45.0dip"
+        android:layout_height="45.0dip"
+        android:src="@drawable/lion_floating_cc"/>
+
+    <TextView
+        android:id="@+id/lion_layout_floating_menu_user"
+        style="@style/lion_layout_floating_item"
+        android:layout_marginLeft="5.0dip"
+        android:background="@drawable/lion_common_floating_selector"
+        android:drawableTop="@drawable/lion_floating_personal_center"
+        android:text="@string/lion_text_floating_user_info"/>
+
+    <TextView
+        android:id="@+id/lion_layout_floating_menu_community"
+        style="@style/lion_layout_floating_item"
+        android:background="@drawable/lion_common_floating_selector"
+        android:drawableTop="@drawable/lion_floating_community"
+        android:text="@string/lion_text_floating_community"/>
+
+    <TextView
+        android:id="@+id/lion_layout_floating_menu_record"
+        style="@style/lion_layout_floating_item"
+        android:background="@drawable/lion_common_floating_selector"
+        android:drawableTop="@drawable/lion_floating_record"
+        android:text="@string/lion_text_floating_record"/>
+
+    <TextView
+        android:id="@+id/lion_layout_floating_menu_msg"
+        style="@style/lion_layout_floating_item"
+        android:background="@drawable/lion_common_floating_selector"
+        android:drawableTop="@drawable/lion_floating_message"
+        android:text="@string/lion_text_floating_msg"/>
+
+    <TextView
+        android:id="@+id/lion_layout_floating_menu_help"
+        style="@style/lion_layout_floating_item"
+        android:background="@drawable/lion_common_floating_right_selector"
+        android:drawableTop="@drawable/lion_floating_help"
+        android:text="@string/lion_text_floating_help"/>
+
+</com.lion.ccpay.widget.floating.FWLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dcn_login_background"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/dcn_verify_title"
+            android:textColor="#909090"
+            android:textSize="16sp" />
+
+        <com.downjoy.widget.DashedLine
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+
+            <FrameLayout
+                android:id="@+id/dcn_fl_verify_pic"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/dcn_iv_verify_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dcn_verify_key_n" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:contentDescription="@null"
+                    android:src="@drawable/dcn_refresh_verify_icon" />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/dcn_et_verify_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:background="@drawable/dcn_login_box_bg"
+                android:hint="@string/dcn_verify_code_hint"
+                android:paddingLeft="2dp"
+                android:singleLine="true"
+                android:textColor="@color/dcn_light_black"
+                android:textColorHint="#c7c7c7"
+                android:textSize="@dimen/dcn_edit_text_size" />
+
+            <Button
+                android:id="@+id/dcn_btn_verify_submit"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/dcn_orange_btn_selector"
+                android:enabled="false"
+                android:text="@android:string/ok"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/dcn_btn_verify_key_01"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dcn_verify_key"
+                    android:gravity="center"
+                    android:textColor="@color/dcn_black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/dcn_btn_verify_key_02"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dcn_verify_key"
+                    android:gravity="center"
+                    android:textColor="@color/dcn_black"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/dcn_btn_verify_delete"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dcn_verify_delete"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dcn_ic_delete" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/dcn_btn_verify_key_03"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dcn_verify_key"
+                    android:gravity="center"
+                    android:textColor="@color/dcn_black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/dcn_btn_verify_key_04"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dcn_verify_key"
+                    android:gravity="center"
+                    android:textColor="@color/dcn_black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/dcn_btn_verify_key_05"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dcn_verify_key"
+                    android:gravity="center"
+                    android:textColor="@color/dcn_black"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/dcn_btn_verify_key_06"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dcn_verify_key"
+                    android:gravity="center"
+                    android:textColor="@color/dcn_black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/dcn_btn_verify_key_07"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dcn_verify_key"
+                    android:gravity="center"
+                    android:textColor="@color/dcn_black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/dcn_btn_verify_key_08"
+                    android:layout_height="45dp"
+                    android:background="@drawable/dcn_verify_key"
+                    android:gravity="center"
+                    android:textColor="@color/dcn_black"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <com.downjoy.widget.verify.VerifyRetryView
+        android:id="@+id/dcn_verify_retryview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dcn_login_background"
+        android:visibility="gone" />
+</FrameLayout>

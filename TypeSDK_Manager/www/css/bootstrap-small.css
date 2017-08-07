@@ -1,0 +1,146 @@
+/*
+    * Created on : 2014-01-10, 22:47:39
+    * Author     : Meritoo.pl, http://www.meritoo.pl
+    * Copyright  : Meritoo.pl
+*/
+
+.btn{
+    font-size: 13px;
+    padding: 5px 10px;
+}
+.btn-lg {
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.30;
+    padding: 8px 13px;
+}
+.btn-sm {
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 3px 7px;
+}
+.btn-xs {
+    border-radius: 3px;
+    font-size: 10px;
+    line-height: 1.35;
+    padding: 1px 4px;
+}
+
+.navbar{
+    margin-bottom: 17px;
+    min-height: 30px;
+}
+.navbar-fixed-bottom{
+    margin-bottom: 0;
+}
+.navbar-brand{
+    font-size: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    height: 36px;
+}
+.navbar-nav > li > a{
+    padding-bottom: 11px;
+    padding-top: 11px;
+}
+
+.panel-heading{
+    padding: 7px 13px;
+}
+.panel-default{
+    margin-bottom: 15px;
+}
+
+.dropdown-menu{
+    font-size: 13px;
+}
+.dropdown-header,
+.dropdown-menu > li > a{
+    padding: 2px 18px;
+}
+
+.form-group{
+    margin-bottom: 12px;
+}
+.form-control{
+    font-size: 13px;
+    height: 30px;
+    padding: 6px 10px;
+}
+
+.nav > li > a{
+    padding: 8px 12px;
+}
+
+.pager li > a,
+.pager li > span{
+    border-radius: 13px;
+    padding: 4px 12px;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td{
+    padding: 6px;
+}
+
+.pagination > li > a,
+.pagination > li > span{
+    padding: 4px 11px;
+}
+.pagination-lg > li > a,
+.pagination-lg > li > span{
+    font-size: 16px;
+    padding: 7px 14px;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span{
+    font-size: 11px;
+    padding: 3px 8px;
+}
+
+h1,
+.h1 {
+    font-size: 32px;
+}
+h2,
+.h2 {
+    font-size: 26px;
+}
+h3,
+.h3 {
+    font-size: 21px;
+}
+h4,
+.h4 {
+    font-size: 16px;
+}
+h5,
+.h5 {
+    font-size: 13px;
+}
+h6,
+.h6 {
+    font-size: 11px;
+}
+
+.alert{
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.alert h4{
+    margin-bottom: 6px;
+}
+
+.close{
+    font-size: 19px;
+    line-height: 15px;
+}
+
+.progress{
+    margin-bottom: 15px;
+}

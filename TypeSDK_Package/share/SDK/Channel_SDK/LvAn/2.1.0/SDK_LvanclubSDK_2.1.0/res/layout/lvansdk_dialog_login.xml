@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/login_content_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_margin_8"
+            android:layout_marginRight="@dimen/normal_margin_8"
+            android:layout_marginTop="@dimen/normal_margin_16"
+            android:background="@drawable/lvansdk_login_input" >
+
+            <LinearLayout
+                android:id="@+id/ll_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_margin_16"
+                    android:layout_marginRight="@dimen/normal_margin_16"
+                    android:background="@drawable/lvansdk_user"
+                    android:src="@drawable/lvansdk_user" />
+
+                <EditText
+                    android:id="@+id/txt_username"
+                    style="@style/sdkUsernameInput"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/lvansdk_vertical_line"
+                    android:drawablePadding="@dimen/normal_margin_8"
+                    android:layout_marginRight="3dp"
+                    android:hint="@string/desc_account"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:textColor="#333333"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical" >
+
+                <ImageButton
+                    android:id="@+id/username_clear_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/normal_margin_16"
+                    android:src="@drawable/lvansdk_search_clear_normal"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="0.1dp"
+                    android:layout_height="80px"
+                    android:visibility="gone"
+                    android:background="#ededed" />
+
+                <ImageButton
+                    android:id="@+id/account_spinner_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/normal_margin_16"
+                    android:src="@drawable/lvansdk_login_pull"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/iw_password_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_margin_8"
+            android:layout_marginRight="@dimen/normal_margin_8"
+            android:layout_marginTop="@dimen/normal_margin_8"
+            android:background="@drawable/lvansdk_login_input" >
+
+            <ImageView
+                android:id="@+id/iv_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/normal_margin_16"
+                android:layout_marginRight="@dimen/normal_margin_16"
+                android:background="@drawable/lvansdk_pwd"
+                android:src="@drawable/lvansdk_pwd" />
+
+            <CheckBox
+                android:id="@+id/see_password"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/normal_margin_8"
+                android:background="@android:color/transparent"
+                android:button="@drawable/lvansdk_cb_password_bg"
+                android:checked="false" />
+
+            <ImageButton
+                android:id="@+id/password_clear_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/see_password"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/normal_margin_16"
+                android:src="@drawable/lvansdk_search_clear_normal"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/txt_password"
+                style="@style/sdkPasswordInput"
+                android:layout_toLeftOf="@id/password_clear_btn"
+                android:layout_toRightOf="@id/iv_pwd"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/lvansdk_vertical_line"
+                android:drawablePadding="8dp"
+                android:hint="@string/desc_password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="#333333"
+                android:textCursorDrawable="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_toforget"
+        style="@style/sdkLoginRule"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/login_content_panel"
+        android:layout_marginBottom="@dimen/normal_margin_8"
+        android:layout_marginRight="@dimen/normal_margin_16"
+        android:layout_marginTop="@dimen/normal_margin_8"
+        android:text="@string/recover_pwd"
+        android:textColor="#333333" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_toforget"
+        android:layout_marginLeft="@dimen/normal_margin_8"
+        android:layout_marginRight="@dimen/normal_margin_8"
+        android:background="@drawable/lvansdk_btn_style_one_normal"
+        android:text="@string/txt_login"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/user_button_size" />
+
+    <TextView
+        android:id="@+id/phone_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login"
+        android:layout_marginLeft="@dimen/normal_margin_16"
+        android:layout_marginTop="@dimen/normal_margin_8"
+        android:clickable="true"
+        android:gravity="left|center"
+        android:paddingBottom="@dimen/normal_margin_8"
+        android:text="手机登录"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/register_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/login"
+        android:layout_marginRight="@dimen/normal_margin_16"
+        android:layout_marginTop="@dimen/normal_margin_8"
+        android:gravity="center"
+        android:paddingBottom="@dimen/normal_margin_8"
+        android:text="注册账号"
+        android:textColor="#00c0ed"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="0dip" >
+
+    <LinearLayout
+        android:id="@+id/slyx_dragon_item_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="0dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <ImageView
+            android:id="@+id/slyx_dragon_item_account_img"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/slyx_float_acct"
+            android:contentDescription="@string/slyx_img_des"
+            android:padding="0dip" />
+
+        <TextView
+            android:id="@+id/slyx_dragon_item_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:padding="0dip"
+            android:text="@string/slyx_dragon_acct"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slyx_dragon_item_bbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/slyx_dragon_item_bbs_img"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/slyx_float_bbs"
+            android:contentDescription="@string/slyx_img_des" />
+
+        <TextView
+            android:id="@+id/slyx_dragon_item_bbs_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slyx_dragon_bbs"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slyx_dragon_item_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/slyx_dragon_item_services_img"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/slyx_float_services"
+            android:contentDescription="@string/slyx_img_des" />
+
+        <TextView
+            android:id="@+id/slyx_dragon_item_services_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cmge_dragon_cust"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/slyx_dragon_item_aipai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <ImageView
+            android:id="@+id/slyx_dragon_item_aipai_img"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/slyx_float_aipai"
+            android:contentDescription="@string/slyx_img_des"
+            android:padding="0dip" />
+
+        <TextView
+            android:id="@+id/slyx_dragon_item_aipai_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:padding="0dip"
+            android:text="@string/slyx_dragon_aipai"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slyx_dragon_item_wx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <ImageView
+            android:id="@+id/slyx_dragon_item_wx_img"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/slyx_float_wx"
+            android:contentDescription="@string/slyx_img_des"
+            android:padding="0dip" />
+
+        <TextView
+            android:id="@+id/slyx_dragon_item_wx_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:padding="0dip"
+            android:text="@string/slyx_dragon_wx"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slyx_dragon_item_yunwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginRight="10.0dip" >
+
+        <ImageView
+            android:id="@+id/slyx_dragon_item_yunwa_img"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/slyx_yunwa_float"
+            android:contentDescription="@string/slyx_img_des" />
+
+        <TextView
+            android:id="@+id/slyx_dragon_item_yunwa_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slyx_dragon_yunwa"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slyx_dragon_item_moregame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/slyx_dragon_item_moregame_img"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/moregame_float_moregame"
+            android:contentDescription="@string/slyx_img_des" />
+
+        <TextView
+            android:id="@+id/slyx_dragon_item_moregame_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/slyx_dragon_hotgames"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

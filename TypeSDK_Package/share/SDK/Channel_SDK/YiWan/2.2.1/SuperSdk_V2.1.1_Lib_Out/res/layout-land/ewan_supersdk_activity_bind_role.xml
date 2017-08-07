@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA000000" >
+
+    <LinearLayout
+        android:id="@+id/ewan_supersdk_bindrole_background"
+        android:layout_width="380dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ewan_supersdk_bindrole_bg_main"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/ewan_supersdk_bindrole_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="手机绑定"
+                android:textColor="@color/ewan_supersdk_bindrole_font_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ewan_supersdk_bindrole_iv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ewan_supersdk_bindrole_tv_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/ewan_supersdk_bindrole_bg_title" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_bindrole_ll_old_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" 
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ewan_supersdk_bindrole_tv_old_phone_tip"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical|end"
+                android:text="输入旧手机号:"
+                android:textColor="@color/ewan_supersdk_bindrole_font_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ewan_supersdk_bindrole_et_old_phone"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/ewan_supersdk_bindrole_bg_input"
+                android:hint="点此输入旧手机号"
+                android:inputType="number"
+                android:textSize="14sp" 
+                android:lines="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_bindrole_ll_phone_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ewan_supersdk_bindrole_tv_phone_tip"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical|end"
+                android:text="输入手机号:"
+                android:textColor="@color/ewan_supersdk_bindrole_font_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ewan_supersdk_bindrole_et_phone"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/ewan_supersdk_bindrole_bg_input"
+                android:hint="点此输入手机号"
+                android:inputType="number"
+                android:textSize="14sp" 
+                android:lines="1"/>
+
+            <Button
+                android:id="@+id/ewan_supersdk_bindrole_btn_get_verification_code"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/ewan_supersdk_bindrole_btn_selector"
+                android:text="获取验证码"
+                android:textColor="@color/ewan_supersdk_bindrole_font_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_bindrole_ll_code_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ewan_supersdk_bindrole_tv_code_tip"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical|end"
+                android:text="输入验证码:"
+                android:textColor="@color/ewan_supersdk_bindrole_font_color"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/ewan_supersdk_bindrole_et_code"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="5dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/ewan_supersdk_bindrole_bg_input"
+                android:hint="点此输入验证码"
+                android:textSize="14sp" 
+                android:lines="1"/>
+
+            <Button
+                android:id="@+id/ewan_supersdk_bindrole_btn_bind"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/ewan_supersdk_bindrole_btn_selector"
+                android:text="绑  定"
+                android:textColor="@color/ewan_supersdk_bindrole_font_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ewan_supersdk_bindrole_btn_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@id/ewan_supersdk_bindrole_background"
+        android:layout_alignTop="@id/ewan_supersdk_bindrole_background"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginTop="-20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ewan_supersdk_bindrole_btn_close" />
+
+</RelativeLayout>

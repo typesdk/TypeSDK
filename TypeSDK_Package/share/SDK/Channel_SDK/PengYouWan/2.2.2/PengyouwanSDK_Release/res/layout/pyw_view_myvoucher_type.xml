@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pyw_common_white" >
+
+    <RelativeLayout
+        android:id="@+id/pyw_myvoucher_type_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/pyw_common_white" >
+
+        <TextView
+            android:id="@+id/pyw_pop_myvoucher_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="可使用"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_larger" />
+
+        <ImageView
+            android:id="@+id/pyw_iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/pyw_img_voucher_drop_normal" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/pyw_view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/pyw_common_item_divider" />
+
+    <TextView
+        android:id="@+id/pyw_tv_can_use_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="25dp"
+        android:background="@drawable/pyw_selector_common_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:text="可使用"
+        android:textColor="@drawable/pyw_myvoucher_text_color"
+        android:textSize="@dimen/pyw_common_large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/pyw_common_item_divider" />
+
+    <TextView
+        android:id="@+id/pyw_tv_nouse"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="25dp"
+        android:background="@drawable/pyw_selector_common_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:text="未使用"
+        android:visibility="gone"
+        android:textColor="@drawable/pyw_myvoucher_text_color"
+        android:textSize="@dimen/pyw_common_large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@color/pyw_common_item_divider" />
+
+    <TextView
+        android:id="@+id/pyw_tv_overdue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="25dp"
+        android:background="@drawable/pyw_selector_common_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="left|center_vertical"
+        android:text="已过期"
+        android:textColor="@drawable/pyw_myvoucher_text_color"
+        android:textSize="@dimen/pyw_common_large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/pyw_common_item_divider" />
+
+</LinearLayout>

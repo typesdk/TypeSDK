@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_activity_community_subject_floor_item_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lion_common_white"
+    android:orientation="vertical"
+    android:paddingLeft="15.0dip"
+    android:paddingRight="15.0dip" >
+
+    <com.lion.ccpay.widget.reply.PostContentView
+        android:id="@+id/lion_activity_community_subject_floor_item_2_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:minHeight="50.0dip"
+        android:textColor="@color/lion_common_black"
+        android:textSize="14.0sp" />
+
+    <View
+        android:id="@+id/lion_activity_community_subject_floor_item_2_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/lion_common_line" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/egame_usersdk_white"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+    
+    
+    <!-- android:background="@drawable/egame_disembark_bg" -->
+
+    <!-- 登陆页面 -->
+
+    <!-- <include
+        android:id="@+id/egame_login_layout"
+        layout="@layout/egame_user_sdk_login"
+        android:visibility="gone" />
+    注册
+
+    <include
+        android:id="@+id/egame_register_layout"
+        layout="@layout/egame_user_sdk_register"
+        android:visibility="gone" />
+    短信验证
+
+    <include
+        android:id="@+id/egame_varify_code_layout"
+        layout="@layout/egame_user_sdk_varify_code"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/egame_register_success_layout"
+        layout="@layout/egame_user_sdk_register_success"
+        android:visibility="gone" />
+
+    一键注册
+
+    <include
+        android:id="@+id/egame_register_one_key_layout"
+        layout="@layout/egame_user_sdk_register_one_key"
+        android:visibility="gone" />
+    找回密码
+
+    <include
+        android:id="@+id/egame_find_password_layout"
+        layout="@layout/egame_user_sdk_find_password"
+        android:visibility="gone" />
+    重置密码
+
+    <include
+        android:id="@+id/egame_resert_password_layout"
+        layout="@layout/egame_user_sdk_resert_password"
+        android:visibility="gone" />
+	
+    <include 
+        android:id="@+id/egame_message_push_layout"
+        layout="@layout/egame_user_sdk_messagepush"
+        android:visibility="gone"
+        />
+    
+    <include 
+        android:id="@+id/egame_guest_login_tip"
+        layout="@layout/egame_user_sdk_guest_tip"
+        android:visibility="gone"
+        /> -->
+        <!-- <LinearLayout 
+            android:id="@+id/ll_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            
+        </LinearLayout> -->
+    
+</RelativeLayout>

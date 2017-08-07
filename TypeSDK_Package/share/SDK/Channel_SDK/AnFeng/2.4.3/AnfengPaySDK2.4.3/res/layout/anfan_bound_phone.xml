@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="25dp"
+        android:background="#D9DDE1" />
+
+    <include  layout="@layout/anfan_edit_phone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="#D9DDE1" />
+
+  <include  layout="@layout/anfan_edit_code"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#D9DDE1" />
+
+    <Button
+        android:id="@+id/anfan_bound_phone_boundbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/anfan_button_bg_blue"
+        android:text="立即绑定"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

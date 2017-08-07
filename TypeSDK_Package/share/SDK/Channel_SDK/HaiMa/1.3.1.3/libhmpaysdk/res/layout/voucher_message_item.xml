@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/recharge_return_card_unselected_background">
+
+        <TextView
+            android:id="@+id/message_voucher_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/message_text_title"
+            android:textSize="@dimen/font_size_middle"/>
+
+        <TextView
+            android:id="@+id/message_voucher_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_voucher_money"
+            android:layout_below="@id/message_voucher_title_tv"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/font_size_small"/>
+
+        <TextView
+            android:id="@+id/message_voucher_valid_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_voucher_valid_date"
+            android:layout_below="@id/message_voucher_money_tv"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/font_size_small"/>
+
+        <TextView
+            android:id="@+id/message_voucher_use_field_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/message_voucher_valid_date_tv"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/font_size_small"/>
+
+        <TextView
+            android:id="@+id/message_text_switch_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_text_show_switch"
+            android:layout_below="@id/message_voucher_use_field_tv"
+            android:textColor="@color/message_text_switch_color"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/message_voucher_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_time"
+            android:layout_below="@id/message_voucher_use_field_tv"
+            android:layout_marginTop="25dp"
+            android:textSize="@dimen/font_size_small"/>
+
+        <Button
+            android:id="@+id/message_voucher_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/message_voucher_time_tv"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/message_button_state_selector"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_size_middle"
+            android:textColor="@color/common_dialog_negative_button_bg"
+            android:text="@string/message_know"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

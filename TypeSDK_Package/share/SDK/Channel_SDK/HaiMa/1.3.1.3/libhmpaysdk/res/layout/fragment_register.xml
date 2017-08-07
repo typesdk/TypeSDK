@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/MatchMatch"
+                android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/user_register_top_content_ll"
+        style="@style/MatchWrap.Vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/user_register_phone_num_et"
+            style="@style/UserRegisterSecond"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/user_register_phone_input_hint"
+            android:singleLine="true"
+            android:textColorHint="@color/user_register_common_color_first"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/user_register_divide_line_color"/>
+
+        <LinearLayout
+            android:id="@+id/user_register_phone_verify_num_ll"
+            style="@style/MatchWrap.Vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/user_register_phone_verify_num_et"
+                    style="@style/UserRegisterSecond"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/user_register_phone_verify_num_hint"
+                    android:maxLines="1"
+                    android:textColorHint="@color/user_register_common_color_first"/>
+
+                <Button
+                    android:id="@+id/user_register_get_verify_num_bt"
+                    style="@style/WrapWrap"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/user_register_get_verify_num_shape"
+                    android:text="@string/user_register_get_verify_num_button"
+                    android:textColor="@color/user_register_get_verify_num_button_color"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/user_register_divide_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/user_register_divide_line_color"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical|left"
+            >
+
+            <EditText
+                android:id="@+id/user_register_password_et"
+                style="@style/UserRegisterSecond"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/user_register_input_password_hint"
+                android:inputType="textPassword"
+                android:textColorHint="@color/user_register_common_color_first"/>
+
+            <TextView
+                android:id="@+id/user_register_show_password_tv"
+                style="@style/UserRegisterFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/user_register_show_password"/>
+
+            <CheckBox
+                android:id="@+id/user_register_show_password_cb"
+                style="@style/WrapWrap"
+                android:layout_marginLeft="6dp"
+                android:button="@drawable/user_register_show_password_selector"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/user_register_divide_line_color"/>
+
+        <Button
+            android:id="@+id/user_register_affirm_bt"
+            style="@style/MatchWrap"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user_register_affirm_button_selector"
+            android:enabled="false"
+            android:text="@string/user_register_quick_title"
+            android:textColor="@color/user_register_button_text_selector"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_register_addition_content_rl"
+        style="@style/MatchMatch"
+        android:layout_below="@id/user_register_top_content_ll"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <include layout="@layout/include_register_bottom"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

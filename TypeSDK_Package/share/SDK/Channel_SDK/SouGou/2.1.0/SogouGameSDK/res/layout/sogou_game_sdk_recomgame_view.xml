@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sogou_game_sdk_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_view"
+        layout="@layout/sogou_game_sdk_head" />
+
+    <ListView
+        android:id="@+id/sogou_game_sdk_recomgame_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_view"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:cacheColorHint="@color/sogou_game_sdk_transparent"
+        android:divider="@color/sogou_game_sdk_color_gray1"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/sogou_game_sdk_transparent"
+        android:scrollbars="none" />
+
+    <ProgressBar
+        android:id="@+id/sogou_game_sdk_recomgame_view_loading"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/passport_activity_base_loading"
+        android:indeterminateOnly="true"
+        android:visibility="gone" />
+</RelativeLayout>

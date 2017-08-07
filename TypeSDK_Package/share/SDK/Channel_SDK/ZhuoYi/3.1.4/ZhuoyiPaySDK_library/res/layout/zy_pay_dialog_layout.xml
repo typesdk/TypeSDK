@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/zy_pay_dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zy_pay_dialog_bg"
+    android:paddingBottom="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/zy_pay_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zy_pay_dialog_title_height"
+        android:background="@drawable/zy_pay_dialog_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/zy_pay_dialog_title_text"
+            android:textColor="@color/zy_pay_dialog_title_textcolor"
+            android:textSize="@dimen/zy_pay_dialog_title_textsize" />
+
+        <TextView
+            android:id="@+id/zy_pay_dialog_cancel"
+            android:layout_width="@dimen/zy_pay_dialog_cancel_width"
+            android:layout_height="@dimen/zy_pay_dialog_cancel_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/zy_pay_dialog_cancel_marginright"
+            android:layout_marginTop="@dimen/zy_pay_dialog_cancel_margintop"
+            android:background="@drawable/zy_pay_cancel"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/zy_pay_triangle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zy_pay_content_layout"
+        android:layout_width="@dimen/zy_pay_dialog_content_width"
+        android:layout_height="@dimen/zy_pay_dialog_content_height"
+        android:layout_below="@id/zy_pay_title_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/zy_pay_dialog_content_margintop"
+        android:background="@drawable/zy_pay_content_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zy_pay_dialog_content_good_height" >
+
+            <TextView
+                android:id="@+id/zy_pay_content_good_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/zy_pay_dialog_content_marginleft"
+                android:text="@string/zy_pay_content_good"
+                android:textColor="@color/zy_pay_dialog_content_textcolor"
+                android:textSize="@dimen/zy_pay_dialog_content_textSize" />
+
+            <TextView
+                android:id="@+id/zy_pay_content_goodname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/zy_pay_content_good_id"
+                android:text="100金币"
+                android:textColor="@color/zy_pay_dialog_content_textcolor"
+                android:textSize="@dimen/zy_pay_dialog_content_textSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zy_pay_content_good_id"
+                android:background="@drawable/zy_pay_dotted_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zy_pay_dialog_content_good_height" >
+
+            <TextView
+                android:id="@+id/zy_pay_content_amount_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/zy_pay_dialog_content_marginleft"
+                android:text="@string/zy_pay_content_amount"
+                android:textColor="@color/zy_pay_dialog_content_textcolor"
+                android:textSize="@dimen/zy_pay_dialog_content_textSize" />
+
+            <TextView
+                android:id="@+id/zy_pay_content_amount_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/zy_pay_dialog_content_amount_unit_marginright"
+                android:text="@string/zy_pay_content_amount_unit"
+                android:textColor="@color/zy_pay_dialog_content_textcolor"
+                android:textSize="@dimen/zy_pay_dialog_content_textSize" />
+
+            <TextView
+                android:id="@+id/zy_pay_content_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/zy_pay_dialog_content_amount_marginright"
+                android:layout_toLeftOf="@id/zy_pay_content_amount_unit"
+                android:text="6"
+                android:textColor="@color/zy_pay_dialog_title_textcolor"
+                android:textSize="@dimen/zy_pay_dialog_content_textSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zy_pay_content_amount_id"
+                android:background="@drawable/zy_pay_dotted_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zy_pay_dialog_content_balance_height" >
+
+            <TextView
+                android:id="@+id/zy_pay_content_balance_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/zy_pay_dialog_content_marginleft"
+                android:text="@string/zy_pay_content_balance"
+                android:textColor="@color/zy_pay_dialog_content_textcolor"
+                android:textSize="@dimen/zy_pay_dialog_content_textSize" />
+
+            <TextView
+                android:id="@+id/zy_pay_content_balance_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/zy_pay_dialog_content_amount_unit_marginright"
+                android:text="@string/zy_pay_content_amount_unit"
+                android:textColor="@color/zy_pay_dialog_content_textcolor"
+                android:textSize="@dimen/zy_pay_dialog_content_textSize" />
+
+            <TextView
+                android:id="@+id/zy_pay_content_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/zy_pay_dialog_content_amount_marginright"
+                android:layout_toLeftOf="@id/zy_pay_content_balance_unit"
+                android:text="100"
+                android:textColor="@color/zy_pay_dialog_content_balance_textcolor"
+                android:textSize="@dimen/zy_pay_dialog_content_textSize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/zy_pay_dialog_imagebtn_id"
+        android:layout_width="@dimen/zy_pay_dialog_content_width"
+        android:layout_height="@dimen/zy_pay_dialog_imagebtn_height"
+        android:layout_below="@id/zy_pay_content_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/zy_pay_dialog_content_margintop"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="16.5sp"
+        android:background="@drawable/zy_pay_dialog_imagebtn_selector" />
+
+</RelativeLayout>

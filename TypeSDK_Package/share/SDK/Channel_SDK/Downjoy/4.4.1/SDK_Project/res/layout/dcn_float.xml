@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dcn_transparent">
+
+    <LinearLayout
+        android:id="@+id/dcn_float"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/dcn_float_tab"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#B2000000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dcn_account_tab_viewgroup"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="75dp">
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/dcn_float_tab_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/dcn_float_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dcn_float_ad_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"></ImageView>
+
+    </LinearLayout>
+</FrameLayout>

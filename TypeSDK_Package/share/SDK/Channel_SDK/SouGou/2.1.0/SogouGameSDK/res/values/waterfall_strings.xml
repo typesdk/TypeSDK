@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="ptr_pull_to_refresh">Pull to refresh</string>
+    <string name="ptr_release_to_refresh">Release to refresh</string>
+    <string name="ptr_refreshing">Refreshing</string>
+    <string name="ptr_last_updated">Updated: %1$s</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">释放更新</string>
+    <string name="xlistview_header_hint_loading">更新中&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+</resources>

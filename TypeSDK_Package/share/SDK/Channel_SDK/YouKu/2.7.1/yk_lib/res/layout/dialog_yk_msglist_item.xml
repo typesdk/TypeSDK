@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/yk_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:id="@+id/yk_msg_detail_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/YK_GameSDK_28PX"
+        android:orientation="vertical">
+	    <RelativeLayout
+	        android:id="@+id/yk_msg_detail_item_layout_content"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+
+	        <RelativeLayout
+	            android:id="@+id/relativeLayout1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:layout_toLeftOf="@+id/relativeLayout2">
+                <TextView
+                    android:id="@+id/item_msg_title_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yk_text_ykgame_pay"
+                    android:textColor="@color/yk_dark_black"
+                    android:textSize="@dimen/YK_GameSDK_26PX"
+                    android:maxLength="10"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/YK_GameSDK_20PX"/>
+                
+                <TextView   android:id="@+id/item_msg_content_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yk_text_ykgame_pay"
+                    android:textColor="@color/yk_content_gray"
+                    android:textSize="@dimen/YK_GameSDK_22PX" 
+                    android:layout_below="@+id/item_msg_title_txt"
+                    android:layout_marginTop="@dimen/YK_GameSDK_10PX"
+                    android:maxEms="17"
+                    android:maxLines="2"
+                    />
+                
+        	</RelativeLayout>
+        
+	        <RelativeLayout  android:id="@+id/relativeLayout2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:padding="@dimen/YK_GameSDK_20PX"
+	            android:orientation="vertical"
+	            >
+	                
+		        <TextView android:id="@+id/item_msg_bt"
+		            android:layout_width="@dimen/YK_GameSDK_150PX"
+		            android:layout_height="@dimen/YK_GameSDK_50PX"
+		            android:text="@string/yk_no_data"
+		            android:textSize="@dimen/YK_GameSDK_26PX"
+		            android:textColor="@color/yk_white"
+		            android:gravity="center"
+		            android:background="#1ca8e0"
+		            />
+		        
+	        </RelativeLayout>
+    	</RelativeLayout>
+		<RelativeLayout android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal"
+	      android:layout_below="@+id/yk_msg_detail_item_layout_content">
+			<ImageView  android:id="@+id/item_msg_pull_bt"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:src="@drawable/yk_pay_detail_item_arrow_down"
+	           android:layout_centerInParent="true"
+	           />
+			<TextView android:id="@+id/item_msg_time"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:text="@string/yk_text_time"
+		       android:textSize="@dimen/YK_GameSDK_22PX"
+		       android:textColor="#999999"
+		       android:layout_marginRight="@dimen/YK_GameSDK_20PX"
+		       android:layout_alignParentRight="true"
+		       />
+		</RelativeLayout>
+	</RelativeLayout>
+	    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentTop="true"
+        android:background="#bcbcbc"/>
+</LinearLayout>

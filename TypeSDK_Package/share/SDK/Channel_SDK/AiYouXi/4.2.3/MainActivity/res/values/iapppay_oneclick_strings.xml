@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="img">null</string>
+    <string name="app_title">一键支付</string>
+    <string name="Ensure">确定</string>
+    <string name="Cancel">取消</string>
+    <string name="exit_success">退出成功</string>
+    <string name="bank_or_mobile_no_null">银行卡号和手机号不能为空</string>
+    <string name="bank_card_psw">银行卡密码</string>
+    <string name="card_info">银行卡信息</string>
+    <string name="bank_name">银行名称</string>
+    <string name="card_no">银行卡号</string>
+    <string name="card_type">银行卡类型</string>
+    <string name="pay_amount_tip">需支付金额 :</string>
+    <string name="pay_amount">%1$s元 </string>
+    <string name="input_card_no">请输入银行卡号</string>
+    <string name="iapppay_car_date">有效期</string>
+    <string name="bank_bind_phone">银行预留手机号码</string>
+    <string name="valid_date">有效期</string>
+    <string name="card_end_dim">卡背面签名栏后三位数字</string>
+    <string name="card_end_dim_slim">签名栏后三位</string>
+    <string name="true_name">持卡人姓名</string>
+    <string name="identity_no">持卡人身份证号码</string>
+    <string name="input_sms_code">请输入验证码</string>
+    <string name="get_sms_code">获取短信验证码</string>
+    <string name="protel">一键支付协议</string>
+    <string name="submit_pay">支付</string>
+    <string name="loading">正在加载</string>
+    <string name="iapppay_starting">一键支付安全处理中&#8230;</string>
+    <string name="iapppay_handling">处理中&#8230;</string>
+    <string name="default_cardno">4392257380269088</string>
+    <string name="nextstep">下一步</string>
+    <string name="pay">立即支付</string>
+    <string name="iapppay_year">年</string>
+    <string name="iapppay_month">月</string>
+    <string name="card_password">银行卡密码</string>
+    <string name="iapppay_sms_tip">您当前的交易额度较大,为保障交易安全,请输入%1$s收到的短信验证码，并确认支付</string>
+    <string name="iapppay_pay_amount">需支付金额<font color="e66904">%1$s元</font></string>
+    <string name="iapppay_img">Image</string>
+    <string name="iapppay_confirm">确定</string>
+    <string name="iapppay_cancel">确定</string>
+    <string name="please_waiting_bank_call_payed">已支付</string>
+    <string name="please_waiting_bank_call">交易已发起，请等待银行电话</string>
+    <string name="please_waiting_bank_call_tip">请等待银联(<font color="#0c6fad">020–96585</font>)来电，按照语音提示完成支付</string>
+    <string name="please_waiting_bank_call_query">如两分钟内无来电，请点击</string>
+    <string name="please_waiting_bank_call_query_start"><a href="http://www.google.com">查看订单状态</a></string>
+    <string name="please_waiting_bank_call_service">客服电话0755–86371710 (工作日9:00–18:00)</string>
+
+    <!-- 易宝验证码 -->
+    <string name="sms_verify_tips">需短信确认,验证码已发送至手机:%1$s,请按提示操作.</string>
+    <string name="get_verify_code">获取验证码（%1$s）</string>
+    <string name="init_verify_code">获取验证码</string>
+    <string name="geting_verify_code">获取中...</string>
+    <string name="verify_code_success">验证码已经下发，请查收</string>
+
+    <!-- 新界面 ~  填写银行卡信息 -->
+    <string name="bank_common_sub_title">爱贝快付</string>
+	<string name="loading_title">爱贝安全支付</string>
+    <string name="bank_info_master_title">填写银行卡信息</string>
+    <string name="bank_input_bank_info_title">请填写银行卡信息</string>
+    <string name="bank_input_bank_phone_title">验证手机号码</string>
+    <string name="identity">身份证</string>
+
+    
+    <!-- 收不到验证码 -->
+    <string name="verification_code_tip">验证码发送至您的银行预留手机号。\n1、请确认当前是否使用预留手机号码；\n2、请查看短信是否被手机安全软件拦截；\n3、若预留手机号码已停用，请联系银行客服咨询；\n4、获取更多帮助，可联系爱贝客服\n</string>
+    <string name="verification_code_tip_phoneNum">4007-888-580</string>
+    
+    <!-- 用户协议 -->
+    <string name="user_agreement">用户协议</string>
+    <string name="bank_list">查看银行卡列表</string>
+    
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">MainActivity</string>
+   <string name="iapppay_network_error">系统繁忙，请稍候再试...</string>
+    
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    >
+
+    <LinearLayout
+        android:id="@+id/yk_pay_orderlist_layout"
+        android:layout_width="@dimen/YK_GameSDK_600PX"
+        android:layout_height="@dimen/YK_GameSDK_496PX"
+        android:background="@color/yk_white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/YK_GameSDK_88PX"
+            android:background="@color/yk_white"
+            >
+            
+            <LinearLayout
+                android:id="@+id/yk_icon_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/YK_GameSDK_88PX"
+                    android:layout_height="@dimen/YK_GameSDK_44PX"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/YK_GameSDK_10PX"
+                    android:src="@drawable/yk_icon_title" />
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/YK_GameSDK_20PX"
+                android:layout_toRightOf="@id/yk_icon_logo"
+                android:gravity="center_vertical"
+                android:textColor="@color/yk_text_title"
+                android:textSize="@dimen/YK_GameSDK_30PX" 
+                android:text="@string/yk_text_viplist_title"/>
+
+            <ImageView
+                android:id="@+id/yk_vip_back"
+                android:layout_width="@dimen/YK_GameSDK_50PX"
+                android:layout_height="@dimen/YK_GameSDK_50PX"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/YK_GameSDK_12PX"
+                android:layout_marginTop="@dimen/YK_GameSDK_24PX"
+                android:background="@drawable/yk_ed_clear"
+                android:gravity="center_vertical"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/yk_title_line" />
+
+    <com.youku.gamesdk.orderlist.AutoListView
+        android:id="@+id/auto_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:scrollingCache="false" />
+    </LinearLayout>
+
+</LinearLayout>

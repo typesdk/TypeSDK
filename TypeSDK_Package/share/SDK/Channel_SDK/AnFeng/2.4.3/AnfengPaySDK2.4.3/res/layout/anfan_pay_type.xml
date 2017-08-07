@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/anfan_defealut_bg" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <include layout="@layout/anfan_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="订单名称："
+                    android:textColor="@color/anfan_c999999"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_goods_name"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLength="25"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/anfan_c999999"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/anfan_line_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="订单总价："
+                    android:textColor="@color/anfan_c999999"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:maxLength="25"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/anfan_c999999"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/anfan_line_margin" />
+
+            <LinearLayout
+                android:id="@+id/ll_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" F币余额："
+                    android:textColor="@color/anfan_c999999"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLength="25"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/anfan_c999999"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:button="@drawable/anfan_checkbox_selector"
+                    android:clickable="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#d4d4d6" />
+
+            <com.anfeng.pay.view.MyGridView
+                android:id="@+id/gv_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:stretchMode="columnWidth" />
+
+            <TextView
+                android:id="@+id/tv_pay_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="90dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/anfan_pay_hint"
+                android:textColor="#999999" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom" >
+
+        <TextView
+            android:id="@+id/tv_pay_amount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/anfan_button_bg_blue"
+            android:text="@string/anfan_recharge_dianka_6"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

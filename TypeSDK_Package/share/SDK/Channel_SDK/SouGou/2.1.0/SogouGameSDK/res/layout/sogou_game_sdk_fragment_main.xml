@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sogou_game_sdk_base_dialog_bg" >
+
+    <ListView
+        android:id="@+id/sogou_game_sdk_main_dialog_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/sogou_game_sdk_transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/sogou_game_sdk_transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/sogou_game_sdk_main_dialog_top_head_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/sogou_game_sdk_bt_close"
+        android:clickable="true"
+        android:padding="15dp" />
+
+    <ImageButton
+        android:id="@+id/sogou_game_sdk_ib_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sogou_game_sdk_selector_to_top"
+        android:background="#00000000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+</RelativeLayout>

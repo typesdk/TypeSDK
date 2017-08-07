@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/sogou_game_sdk_popu_switch_btn"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:background="@drawable/sogou_game_sdk_switch_right_bar" />
+
+</RelativeLayout>

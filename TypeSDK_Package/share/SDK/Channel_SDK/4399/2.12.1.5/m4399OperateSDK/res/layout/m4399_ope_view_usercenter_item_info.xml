@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人中心 操作列表项 by.zhengxu -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/m4399_ope_usercenter_action_item_bg"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/usercenter_action_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/m4399_default_content_description" />
+
+    <TextView
+        android:id="@+id/usercenter_action_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/usercenter_action_item_image"
+        android:gravity="center_vertical"
+        android:textColor="@color/m4399_ope_usercenter_black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/usercenter_action_item_red_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@color/m4399_ope_usercenter_black"
+        android:contentDescription="@string/m4399_default_content_description" />
+
+    <TextView
+        android:id="@+id/usercenter_action_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/usercenter_action_item_red_dot"
+        android:layout_toRightOf="@+id/usercenter_action_item_title"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:singleLine="true"
+        android:textColor="@color/m4399_ope_usercenter_orange"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/pay_view"
+        android:layout_width="290.0dip"
+        android:layout_height="200.0dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/vsofo_corners_black"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="right"
+            android:layout_marginTop="1.0dip"
+            android:background="#e1e1e1"
+            android:scaleType="fitXY"
+            android:text="x"
+            android:textColor="#000000"
+            android:textSize="18.0dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e1e1e1"
+            android:layout_margin="1dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#e1e1e1"
+                android:scaleType="fitXY"
+                android:text=""
+                android:textColor="#3b3b3b"
+                android:textSize="19sp" />
+            <TextView
+                android:id="@+id/txt_info_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="#e1e1e1"
+                android:scaleType="fitXY"
+                android:text="@string/phone_info_more"
+                android:visibility="gone"
+                android:textColor="#616161"
+                android:textSize="18sp" />
+            <EditText
+                android:id="@+id/number_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/vsofo_edit_shape"
+                android:inputType="number|phone"
+                android:maxLength="11" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#e1e1e1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="80dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="10dp"
+                android:background="#e1e1e1"
+                android:text="@string/confirm"
+                android:textColor="#5f6465"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

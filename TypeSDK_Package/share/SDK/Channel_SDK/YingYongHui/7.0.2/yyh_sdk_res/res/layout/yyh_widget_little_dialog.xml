@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/yyh_corner_white_bg"
+                android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/yyh_activity_close"/>
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="35dp"
+        android:text="切换小号"
+        android:textColor="@color/yyh_black"
+        android:textSize="18dp"/>
+
+
+    <ListView
+        android:layout_below="@+id/page_title"
+        android:id="@+id/yyh_dialog_listview"
+        android:orientation="vertical"
+        android:divider="@color/yyh_gray"
+        android:dividerHeight="1px"
+        android:scrollbars="none"
+        android:background="@color/yyh_white"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+
+    <TextView
+        android:layout_below="@+id/yyh_dialog_listview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/yyh_red"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="由于业务调整，不再提供创建小号的功能"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

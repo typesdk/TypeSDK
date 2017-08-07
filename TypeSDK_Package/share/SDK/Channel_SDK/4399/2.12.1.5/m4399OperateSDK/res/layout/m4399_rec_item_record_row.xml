@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/m4399_rec_record_item_height"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_record_ptime"
+		style="@style/m4399HistoryRecordItemStyle"
+		android:layout_weight="@integer/m4399_rec_record_row_ptime_weight"
+		android:layout_marginRight="1dp"
+        android:text="@string/m4399_rec_record_ptime" />
+
+    <TextView
+        android:id="@+id/tv_record_porder"
+  		style="@style/m4399HistoryRecordItemStyle"
+		android:layout_weight="@integer/m4399_rec_record_row_porder_weight"
+		android:layout_marginRight="1dp"
+        android:text="@string/m4399_rec_record_porder" />
+
+    <TextView
+        android:id="@+id/tv_record_pstate"
+		style="@style/m4399HistoryRecordItemStyle"
+		android:layout_weight="@integer/m4399_rec_record_row_pstate_weight"
+        android:text="@string/m4399_rec_record_pstate" />
+
+</LinearLayout>

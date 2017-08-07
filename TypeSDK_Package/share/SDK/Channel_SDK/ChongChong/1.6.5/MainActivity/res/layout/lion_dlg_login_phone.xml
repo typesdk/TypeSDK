@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView style="@style/lion_style_dlg_title" />
+
+        <ImageView
+            android:id="@+id/lion_dlg_close_iv"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:background="@drawable/lion_common_translucence_left_top_selector"
+            android:scaleType="center"
+            android:src="@drawable/lion_icon_return" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lion_common_dialog_content_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lion_dlg_login_phone_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="7.5dip"
+            android:text="@string/lion_dlg_get_phone_fail_notice"
+            android:textColor="@color/lion_common_text_gray"
+            android:textSize="14.0sp" />
+
+        <include layout="@layout/lion_dlg_register_phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lion_dlg_margin"
+                android:text="@string/lion_dlg_get_phone_fail_notice_2"
+                android:textColor="@color/lion_common_text_gray"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/lion_dlg_ccpay_protocol_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lion_dlg_margin"
+                android:background="@drawable/lion_common_transparent_selector"
+                android:text="@string/lion_dlg_get_phone_fail_notice_3"
+                android:textColor="@color/lion_common_basic_red"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lion_dlg_in_game_tv"
+            style="@style/lion_text_red_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lion_dlg_margin"
+            android:text="@string/lion_dlg_enter_game" />
+    </LinearLayout>
+
+</LinearLayout>

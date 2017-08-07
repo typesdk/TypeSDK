@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+        >
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/dp930"
+                android:layout_height="@dimen/dp144"
+                android:background="@drawable/title_back"
+                android:gravity="center_vertical"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/titleText"
+                    android:layout_marginLeft="@dimen/dp51"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp47"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:layout_weight="1"
+                    />
+
+            <ImageView
+                    android:layout_width="@dimen/dp160"
+                    android:layout_height="@dimen/dp103"
+                    android:id="@+id/imageView"
+                    android:layout_weight="0"
+                    android:src="@drawable/papa_title_icon"
+                    android:layout_marginRight="@dimen/dp51"
+                    />
+        </LinearLayout>
+        <FrameLayout
+                android:layout_width="@dimen/dp930"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_back"
+                android:id="@+id/mainLayout"
+                ></FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>嘘哈</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/reset-grids.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(function () {
+       $(".goback").click(function() {
+        window.open(document.referrer,"_self");
+       });
+    })
+  </script>
+  <style type="text/css">
+  table {margin-top: 50px;}
+  table td{text-align: left;vertical-align: middle !important; border:none !important;}
+  .gift_title{font-size: 16px; font-weight: bold; padding-bottom: 0px !important; padding-right: 0}
+  .gift_bd{ border-bottom: 1px solid #ccc}
+  .gift_bd td{padding-top:0px !important;}
+  .gift_bd span{font-size: 14px; font-weight:bold}
+  .stock{padding-top: 5px;}
+  </style>
+</head>
+<body>
+	<div class="topbar navbar-fixed-top">
+		<div class="topbar-inner">
+        <div class="grid-c2-80">
+          <div class="col-main">
+            <div class="main-wrap">
+              <div class="test-box"><h3 class="title">...</h3></div>
+            </div>
+          </div>
+          <div class="col-sub">
+            <div class="test-box-big"><h3 class="goback"><a href="#"><返回</a></h3></div>
+          </div>
+        </div>
+    </div>
+	</div>
+	<table class="table table-bordered" style="margin-top: 50px;">
+      <tbody id="tbody">
+      	
+      </tbody>
+    </table>
+
+	
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+          <button data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span><span class="sr-only">X</span></button>
+          <h4 id="mySmallModalLabel" class="modal-title">温馨提示</h4>
+        </div>
+        <div class="modal-body">
+          <p>礼包码：<span id="code"></span></p>
+          <p>已复制</p>
+        </div>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="js/gift_show.js"></script> 
+  <script type="text/javascript">
+  $(function () {
+    $(".btn").live('click',function() {
+      var gameid=$(this).attr('gameid');
+      var giftid=$(this).attr('giftid');
+      
+      var dataString = "gid=" + gameid + "&giftid=" + giftid;
+      $.ajax({
+          type:"get",
+          dataType: "jsonp",
+          url:"http://api.xuha.com/ios/gift?act=o&jsoncallback=?",
+          data:dataString,
+          cache:false,
+          success:function(r) {
+              if (r) {
+                $("#code").html(r.code);
+                window.gift.setClipboard(r.code);  return;
+              }
+          }
+      });
+
+    });
+    
+})
+
+  </script>
+</body>
+</html>

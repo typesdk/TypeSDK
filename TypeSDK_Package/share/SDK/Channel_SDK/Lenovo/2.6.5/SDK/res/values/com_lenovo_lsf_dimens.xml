@@ -1,0 +1,73 @@
+<resources>
+	<dimen name="middle_text_size">16sp</dimen>
+	<dimen name="com_lenovo_lsf_title_font_size">22sp</dimen>
+	<dimen name="com_lenovo_lsf_title_margin_left">16dp</dimen>
+	<dimen name="com_lenovo_lsf_title_text_margin_left">8dp</dimen>
+	<dimen name="com_lenovo_lsf_content_padding_left_right">16dp</dimen>
+	<dimen name="com_lenovo_lsf_divider_height">1px</dimen>
+	<dimen name="com_lenovo_lsf_content_margin_top">26dp</dimen>
+	<dimen name="com_lenovo_lsf_content_text_font_size">16sp</dimen>
+	<dimen name="com_lenovo_lsf_content_margin_between_text_and_edittext">8dp</dimen>
+	<dimen name="com_lenovo_lsf_content_margin_between_edittext_and_button">32dp</dimen>
+	<dimen name="com_lenovo_lsf_content_edittext_width">42dp</dimen>
+	<dimen name="com_lenovo_lsf_content_edittext_height">42dp</dimen>
+	<dimen name="com_lenovo_lsf_content_password_icon_width_or_height">33dp</dimen>
+	<dimen name="com_lenovo_lsf_password_icon_margin_left">2dp</dimen>
+	<dimen name="com_lenovo_lsf_edittext_hint_font_size">14sp</dimen>
+	<dimen name="com_lenovo_lsf_button_height">36dp</dimen>
+	<dimen name="com_lenovo_lsf_horizon_margin_between_editext_and_button">8dp</dimen>
+	<dimen name="com_lenovo_lsf_findpwd_margin_top_of_reget_captcha">20dp</dimen>
+	<dimen name="com_lenovo_lsf_findpwd_margin_between_reget_captcha_and_new_password">8dp</dimen>
+	<dimen name="com_lenovo_lsf_set_safemail_margin_top_between_top_and_content">20dp</dimen>
+	<dimen name="com_lenovo_lsf_set_safemail_margin_top_button">18dp</dimen>
+	<dimen name="com_lenovo_lsf_set_safemail_confirm_email_account_font_size">14sp</dimen>
+	<dimen name="com_lenovo_lsf_my_account_content_account_description_font_size">12sp</dimen>
+	<dimen name="com_lenovo_lsf_my_account_content_margin_left_right">16dp</dimen>
+	<dimen name="com_lenovo_lsf_my_account_setting_item_height">52dp</dimen>
+	<dimen name="com_lenovo_lsf_change_account_content_margin_top">24dp</dimen>
+	<dimen name="com_lenovo_lsf_change_account_margin_top_between_function_description_and_current_account">18dp</dimen>
+	<dimen name="com_lenovo_lsf_change_account_margin_top_to_button">40dp</dimen>
+	<dimen name="com_lenovo_lsf_account_change_margin_top_reget_captcha">18dp</dimen>
+	<dimen name="com_lenovo_lsf_account_change_last_step_font_size">16sp</dimen>
+	<dimen name="com_lenovo_lsf_account_change_last_step_content_margin_top">18dp</dimen>
+	<dimen name="com_lenovo_lsf_account_setting_content_padding_left_right">16dp</dimen>
+	<dimen name="com_lenovo_lsf_account_setting_subtitle_font_size">12sp</dimen>
+	<dimen name="com_lenvo_lsf_account_setting_subtitle_height">24dp</dimen>
+	<dimen name="com_lenovo_lsf_account_setting_subtitle_margin_top">8dp</dimen>
+	<dimen name="com_lenovo_lsf_account_setting_setting_item_margin_left">12dp</dimen>
+	<dimen name="com_lenovo_lsf_account_setting_item_font_size">16sp</dimen>
+	<dimen name="com_lenovo_lsf_account_setting_item_function_description_font_size">12sp</dimen>
+	<dimen name="com_lenovo_lsf_error_tip_font_size">10sp</dimen>
+	<dimen name="com_lenovo_lsf_eror_tip_margin_bottom">6dp</dimen>
+	<dimen name="com_lenovo_lsf_findpwd_captcha_tip_font_size">14sp</dimen>
+	<dimen name="com_lenovo_lsf_findpwd_captcha_margin">8dp</dimen>
+	<dimen name="com_lenovo_lsf_findpwd_button_margin_top">20dp</dimen>
+	<dimen name="com_lenovo_lsf_error_tip_margin_top">6dp</dimen>
+	<dimen name="com_lenovo_lsf_colon_horizon_margin">5dp</dimen>
+	
+	
+	<dimen name="com_lenovo_lsf_view_width">328dp</dimen>
+	<dimen name="com_lenovo_lsf_view_width_portrait">304dp</dimen>
+	<dimen name="com_lenovo_lsf_view_margin_left">8dp</dimen>
+	<dimen name="com_lenovo_lsf_view_margin_right">8dp</dimen>
+	<dimen name="com_lenovo_lsf_title_fontsize">20sp</dimen>
+	<dimen name="com_lenovo_lsf_title_height">54dp</dimen>
+	<dimen name="com_lenovo_lsf_view_height">250dp</dimen>
+	<dimen name="com_lenovo_lsf_view_no_title_height">196dp</dimen>
+	<dimen name="com_lenovo_lsf_btn_text_font_size">16sp</dimen>
+	<dimen name="com_lenovo_lsf_top_content_height">24dp</dimen>
+	<dimen name="com_lenovo_lsf_top_content_margin_height">14dp</dimen>
+	<dimen name="com_lenovo_toolbar_height">40dp</dimen>
+	
+	<dimen name="com_lenovo_toolbar_top_margin">4dp</dimen>
+	<dimen name="com_lenovo_toolbar_left_margin">8dp</dimen>
+	<dimen name="com_lenovo_toolbar_right_margin">8dp</dimen>
+	
+	<dimen name="com_lenovo_toolbar_first_left_margin">5dp</dimen>
+	<dimen name="com_lenovo_toolbar_end_right_margin">12dp</dimen>
+	<dimen name="com_lenovo_lsf_title_introduce_fontsize">14sp</dimen>
+	<dimen name="com_lenovo_lsf_ad_btn_text_size">16sp</dimen>
+	<dimen name="common_dash_height">1px</dimen>
+	
+	
+</resources>

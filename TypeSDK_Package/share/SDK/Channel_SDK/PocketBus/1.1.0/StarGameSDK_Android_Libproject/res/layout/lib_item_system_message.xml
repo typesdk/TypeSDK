@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        >
+
+    <TextView
+            android:id="@+id/lib_system_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="#d1d1d1"
+            android:textSize="15sp"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+        <ImageView
+                android:id="@+id/tips_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/lib_item_session_new"/>
+
+        <LinearLayout
+                android:id="@+id/content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tips_view"
+                android:background="@drawable/lib_system_message_item_backgroud"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/lib_system_message_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="#242424"
+                    android:textSize="17sp"/>
+
+            <TextView
+                    android:id="@+id/lib_system_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right"
+                    android:singleLine="true"
+                    android:textColor="#D1D1D1"
+                    android:textSize="15sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

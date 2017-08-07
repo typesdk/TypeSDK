@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <!--左侧内容布局-->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <!--卡号-->
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    >
+                <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/pay_shuruk_papa"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"/>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="卡号"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+                    <EditText
+                            android:id="@+id/rechargecardInputCardno"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:hint="请输入充值卡号"
+                            android:textColorHint="#ffaaaaaa"
+                            android:textColor="#ff5D5D5D"
+                            android:textSize="13sp"
+                            android:inputType="number"
+                            android:background="@null"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--密码-->
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/pay_shuruk_papa"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitXY"/>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="密码"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"/>
+                    <EditText
+                            android:id="@+id/rechargecardInputCardpass"
+                            android:layout_width="fill_parent"
+                            android:layout_height="30dp"
+                            android:hint="请输入充值密码"
+                            android:textColorHint="#ffaaaaaa"
+                            android:textColor="#ff5D5D5D"
+                            android:textSize="13sp"
+                            android:inputType="number"
+                            android:background="@null"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--右侧空白占位布局-->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

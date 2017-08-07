@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="FloatWindowAnimActivity" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/float_window_alert_in</item>
+        <item name="android:windowExitAnimation">@anim/float_window_alert_out</item>
+    </style>
+
+    <style name="FloatWindowAnimActivityScreenShot" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/float_window_screenshot_alert_in</item>
+        <item name="android:windowExitAnimation">@anim/float_window_screenshot_alert_out</item>
+    </style>
+
+    <style name="Float.Window.Theme.NoTitle.myinfo" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/FloatWindowAnimActivity</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/float_window_dialog_bg</item>
+    </style>
+
+    <style name="Float.Window.Theme.NoTitle.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Float.Window.Theme.NoTitle.screenshot" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/FloatWindowAnimActivityScreenShot</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

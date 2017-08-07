@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lepay_fillparent"
+    android:background="@color/lepay_page_layout_bg_color"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/lepay_actionbar"
+        layout="@layout/lepay_actionbar" />
+    
+    <LinearLayout
+        android:id="@+id/lepay_fastpay_pwd_manage_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:background="@drawable/lepay_layout_ditu"
+        >
+        
+      <RelativeLayout 
+        android:id="@+id/lepay_fastpay_pwd_edit_area"
+        android:layout_marginTop="1.5dp"
+        style="@style/lepay_width_fillparent"
+        >
+        
+        <ImageView
+            android:id="@+id/lepay_iv_pwdedit"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="17.5dp"
+            android:layout_marginLeft="17.5dp"
+            android:layout_marginBottom="17.5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_pwd_edit"/>
+        
+        <TextView 
+            android:id="@+id/lepay_tv_pwdedit"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="0.0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/lepay_iv_pwdedit"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/lepay_item_bankno_font_size"
+            android:textColor="@color/lepay_item_bankno_font_color"
+            android:layout_gravity="center_vertical"
+            android:text="@string/lepay_fastpay_pwd_edit"
+            />
+        
+        <ImageView
+            android:id="@+id/lepay_iv_pwdedit_icon_extension"
+            style="@style/lepay_wrapparent"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_extension"/>
+        
+     </RelativeLayout>
+     
+     <ImageView 
+            android:id="@+id/lepay_pwd_manage_icon_line1"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="8.5dp"
+            android:layout_height="0.5dp"
+            android:background="@drawable/lepay_layout_line"
+            />
+     
+     <RelativeLayout 
+        android:id="@+id/lepay_fastpay_pwd_forget_area"
+        android:layout_marginTop="8.5dp"
+        style="@style/lepay_width_fillparent"
+        >
+        
+        <ImageView
+            android:id="@+id/lepay_iv_pwdforget"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="17.5dp"
+            android:layout_marginLeft="17.5dp"
+            android:layout_marginBottom="17.5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_pwd_forget"/>
+        
+        <TextView 
+            android:id="@+id/lepay_tv_pwdforget"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="0.0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/lepay_iv_pwdforget"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/lepay_item_bankno_font_size"
+            android:textColor="@color/lepay_item_bankno_font_color"
+            android:layout_gravity="center_vertical"
+            android:text="@string/lepay_fastpay_pwd_forget"
+            />
+        
+        <ImageView
+            android:id="@+id/lepay_iv_pwdforget_icon_extension"
+            style="@style/lepay_wrapparent"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_extension"/>
+        
+     </RelativeLayout>
+     
+     <ImageView 
+            android:id="@+id/lepay_pwd_manage_icon_line2"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="8.5dp"
+            android:layout_height="0.5dp"
+            android:background="@drawable/lepay_layout_line"
+            />
+     
+     <RelativeLayout 
+        android:id="@+id/lepay_fastpay_pwd_close_area"
+        android:layout_marginTop="8.5dp"
+        style="@style/lepay_width_fillparent"
+        >
+        
+        <ImageView
+            android:id="@+id/lepay_iv_pwdclose"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="17.5dp"
+            android:layout_marginLeft="17.5dp"
+            android:layout_marginBottom="17.5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_pwd_close"/>
+        
+        <TextView 
+            android:id="@+id/lepay_tv_pwdclose"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="0.0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/lepay_iv_pwdclose"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/lepay_item_bankno_font_size"
+            android:textColor="@color/lepay_item_bankno_font_color"
+            android:layout_gravity="center_vertical"
+            android:text="@string/lepay_fastpay_pwd_close"
+            />
+        
+        <ImageView
+            android:id="@+id/lepay_iv_pwdclose_icon_extension"
+            style="@style/lepay_wrapparent"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_extension"/>
+        
+     </RelativeLayout>
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:id="@+id/lepay_fastpay_pwd_smallpay_area"
+        style="@style/lepay_width_fillparent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:background="@drawable/lepay_layout_ditu">
+     <RelativeLayout 
+        android:id="@+id/lepay_fastpay_pwd_smallpayinfo_area"
+        style="@style/lepay_width_fillparent"
+        android:layout_marginTop="10dp"
+        >
+        
+        <ImageView
+            android:id="@+id/lepay_iv_smallpayinfo"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="10.5dp"
+            android:layout_marginLeft="17.5dp"
+            android:layout_marginBottom="10.5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_smallpayinfo"/>
+        
+        <TextView 
+            android:id="@+id/lepay_tv_smallpayinfo"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="0.0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/lepay_iv_smallpayinfo"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/lepay_item_bankno_font_size"
+            android:textColor="@color/lepay_item_bankno_font_color"
+            android:layout_gravity="center_vertical"
+            android:text="@string/lepay_fastpay_smallpayinfo"
+            />
+	    <CheckBox
+	        android:id="@+id/lepay_cb_smallpayinfo_icon_extension"
+	        style="@style/lepay_wrapparent"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+	        android:button="@null"
+	        android:background="@drawable/lepay_switch_selector"/>
+        
+     </RelativeLayout>
+        <ImageView 
+            android:id="@+id/lepay_icon_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/lepay_layout_line"
+            />
+        
+         <TextView 
+            android:id="@+id/lepay_smallpay_instructions"
+            style="@style/lepay_width_fillparent"
+            android:layout_marginTop="15.0dp"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:textSize="@dimen/lepay_item_bankno_font_size"
+            android:textColor="@color/lepay_et_mobile_font_color"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/lepay_fastpay_smallpay_instructions"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/keylogin_toast_ui"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/com_lenovo_lsf_game_bg" >
+
+        <ImageView
+            android:id="@+id/keylogin_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/com_lenovo_lsf_game_icon" />
+
+        <TextView
+            android:id="@+id/keylogin_toast_logined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dip"
+            android:layout_toRightOf="@id/keylogin_head"
+            android:gravity="center_vertical"
+            android:text="@string/com_lenovo_lsf_string_welcome_text"
+            android:textColor="#191919"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/account_manager"
+            android:layout_width="86dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/com_lenovo_lsf_btn_register_selector"
+            android:gravity="center"
+            android:text="@string/com_lenovo_lsf_string_change_account_text"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/keylogin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/account_manager"
+            android:layout_toRightOf="@id/keylogin_toast_logined"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="#191919"
+            android:textSize="14sp" />
+>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp">
+
+    <TextView
+            style="@style/LibSelectAccountTextStyle"
+            android:layout_height="55dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/lib_start_other_login_method"
+            android:textColor="#242424"
+            android:layout_toLeftOf="@+id/lib_arrow"/>
+
+    <ImageView
+            android:id="@id/lib_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/lib_right_arrow"/>
+</RelativeLayout>

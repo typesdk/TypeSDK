@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/" title="首页"  description="">
+    <!--<siteMapNode url="~/downloads_page" title="APK下载"  description="" />-->
+    <siteMapNode url="~/DownLoad/DownLoadAndroidPackage" title="Android渠道包下载"  description="" />
+    <siteMapNode url="~/DownLoad/DownLoadIOSPackage" title="iOS渠道包下载"  description="" />
+    <siteMapNode url="~/PJPackage/SelectGame" title="选择游戏"  description="" />
+    <siteMapNode url="~/PJPackage/SelectPlatform" title="选择平台"  description="" />
+    <siteMapNode url="~/PJPackage/SelectGameVersionList" title="选择游戏包"  description="" />
+    <siteMapNode url="~/PJPackage/SelectPlace" title="选择渠道"  description="" />
+    <siteMapNode url="~/PJPackage/SelectFinalPlace" title="确认渠道"  description="" />
+    <siteMapNode url="~/PJPackage/SelectPackageInfo" title="打包详情"  description="" />
+    <siteMapNode url="~/PJPackage/PackageInfoList" title="任务列表"  description="" />
+    <siteMapNode url="~/AdPackage/SelectPackage" title="生成分包"  description="" />
+    <siteMapNode url="~/AdPackage/SelectAdList" title="选择广告商"  description="" />
+    <siteMapNode url="~/AdPackage/AdPackageInfoList" title="分包下载"  description="" />
+
+    <siteMapNode url="~/config" title="平台设置" >
+      <siteMapNode url="~/PJConfig/Platform" title="渠道管理"  description="">
+        <siteMapNode url="~/PJConfig/PlatformConfig" title="渠道参数配置"  description="" />
+      </siteMapNode>
+      <siteMapNode url="~/PJConfig/KeyConfig" title="密钥列表"  description="" />
+      <siteMapNode url="~/PlugIn/PlugInList" title="插件列表"  description="" />
+      <siteMapNode url="~/PlugIn/PlugInInfo" title="插件版本"  description="" />
+      <siteMapNode url="~/GameConfig/GameList" title="游戏列表"  description="">
+        <siteMapNode url="~/GameConfig/AddGamePlatfrom" title="游戏渠道列表"  description="" />
+        <siteMapNode url="~/GameConfig/GamePlatformConfig" title="游戏渠道参数"  description="" />
+        <siteMapNode url="~/GameConfig/GameConfig" title="游戏信息设置"  description="" />
+        <siteMapNode url="~/GameConfig/GamesVersionAdd" title="游戏版本上传"  description="" />
+      </siteMapNode>
+      <siteMapNode url="~/GameIcon/GameIconList" title="图标管理" description="" />
+      <siteMapNode url="~/ADMIN/Users" title="平台用户管理"  description="" />
+      <siteMapNode url="~/Facility/ShortcutHelper" title="工具管理"  description="" />
+    </siteMapNode>
+    <siteMapNode url="~/About" title="介绍"  description="" />
+    <siteMapNode url="~/Contact" title="联系方式"  description="" />
+  </siteMapNode>
+</siteMap>

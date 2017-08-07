@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 此处package值应该填入你游戏工程的包名 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.qtld"
+    android:versionCode="35"
+    android:versionName="3.5"
+	android:installLocation="auto">
+	
+	<uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+	
+	<supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 悬浮窗 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    
+
+    <application
+		android:name="com.type.sdk.application.TypeApplication"
+		android:persistent="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name="com.type.sdk.android.qtld.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        <!-- 悬浮窗 -->
+        <activity
+            android:name="com.ledi.floatwindow.activity.DemoActivity"
+            android:theme="@style/Float.Window.Theme.NoTitle.FullScreen" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.DialogActivity"
+            android:theme="@style/Float.Window.Theme.NoTitle.myinfo" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.ScreenShotActivity"
+            android:theme="@style/Float.Window.Theme.NoTitle.screenshot" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.PlatformCoinActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Float.Window.Theme.NoTitle.FullScreen" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.AccountCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.ForumActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Float.Window.Theme.NoTitle.FullScreen" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.CodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Float.Window.Theme.NoTitle.FullScreen" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Float.Window.Theme.NoTitle.FullScreen" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.GiftActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Float.Window.Theme.NoTitle.FullScreen" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.MoreGamesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Float.Window.Theme.NoTitle.FullScreen" >
+        </activity>
+        <activity
+            android:name="com.ledi.floatwindow.activity.ServiceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Float.Window.Theme.NoTitle.FullScreen" >
+        </activity>
+
+        <service android:name="com.ledi.floatwindow.service.DownloaderService" />
+
+        <!-- umeng -->
+        <activity
+            android:name="com.share.activity.MainActivity"
+            android:label="@string/float_window_app_name" >
+        </activity>
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@app_key@" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.plus.ImageActivity" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="@app_key@" >
+        </meta-data>
+
+        <!-- sdk activity注册 -->
+        <activity
+            android:name="com.ledi.activity.BuyRechargeActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ledi.activity.MoreGameFragment"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name="com.ledi.activity.MainPagerActivityDialog"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+
+            <!-- android:theme="@style/ledi_myDialogTheme" -->
+
+        </activity>
+        <activity
+            android:name="com.ledi.activity.QuitDialog"
+            android:theme="@style/ledi_myDialogTheme" >
+        </activity>
+        <activity
+            android:name="com.ledi.activity.PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+        <activity
+            android:name="com.ledi.activity.BuyActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" >
+        </activity>
+
+        <!-- alipay sdk begin -->
+
+        <activity
+            android:name="com.ledi.activity.QuitDialogActivity"
+            android:theme="@style/ledi_myDialogTheme" >
+        </activity>
+        <activity
+            android:name="com.ledi.activity.BuyRechargeDialogActivity"
+            android:theme="@style/ledi_myDialogTheme" >
+        </activity>
+
+        <receiver android:name="com.ledi.service.BootSystemReceiver" >
+        </receiver>
+
+        <service android:name="com.ledi.service.NotificationService" >
+        </service>
+        <!-- alipay sdk end -->
+        <meta-data
+            android:name="TuiguangID"
+            android:value="0" />
+        <!-- 渠道商编号，其中name请不要改，将value修改为渠道商编号。渠道名称请到mtj.baidu.com的渠道管理中修改 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Test" />
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="@BaiduMobAd_STAT_ID@" />
+        <!-- alipay sdk begin -->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+
+    </application>
+
+
+</manifest>

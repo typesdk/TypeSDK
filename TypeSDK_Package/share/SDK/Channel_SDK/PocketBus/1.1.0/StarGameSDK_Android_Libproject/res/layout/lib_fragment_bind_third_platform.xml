@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/lib_background"
+              android:orientation="vertical"
+        >
+
+    <RelativeLayout
+            android:id="@+id/lib_rl_sina"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/lib_setting_item_background">
+
+        <ImageView
+                android:id="@+id/lib_sina_icon"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/lib_bind_sina_icon"/>
+
+        <FrameLayout
+                android:id="@+id/lib_sina_operate_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+            <TextView
+                    android:id="@+id/lib_sina_unbind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/lib_arrow_right"
+                    android:text="@string/lib_not_bind"
+                    android:textColor="#242424"
+                    android:textSize="15sp"/>
+
+            <Button
+                    android:id="@+id/lib_sina_removebind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/lib_button_white_selector"
+                    android:text="@string/lib_remove_bind"
+                    android:textColor="@color/lib_black_normal"
+                    android:textSize="17sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/lib_sina_bind_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/lib_sina_icon"
+                android:layout_toLeftOf="@id/lib_sina_operate_layout"
+                android:textColor="#242424"
+                android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/lib_divider_solid_line_background"/>
+
+    <RelativeLayout
+            android:id="@+id/lib_rl_qq"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/lib_setting_item_background">
+
+        <ImageView
+                android:id="@+id/lib_qq_icon"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/lib_bind_qq_icon"/>
+
+        <FrameLayout
+                android:id="@+id/lib_qq_operate_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+            <TextView
+                    android:id="@+id/lib_qq_unbind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/lib_arrow_right"
+                    android:text="@string/lib_not_bind"
+                    android:textColor="#242424"
+                    android:textSize="15sp"/>
+
+            <Button
+                    android:id="@+id/lib_qq_removebind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/lib_button_white_selector"
+                    android:text="@string/lib_remove_bind"
+                    android:textColor="@color/lib_black_normal"
+                    android:textSize="17sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+                android:id="@+id/lib_qq_bind_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/lib_qq_icon"
+                android:layout_toLeftOf="@id/lib_qq_operate_layout"
+                android:textColor="#242424"
+                android:textSize="15sp"/>
+
+    </RelativeLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/lib_divider_solid_line_background"/>
+</LinearLayout>

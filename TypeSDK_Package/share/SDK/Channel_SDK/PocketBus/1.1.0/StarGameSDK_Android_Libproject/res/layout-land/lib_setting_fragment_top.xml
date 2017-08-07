@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <TextView
+            android:id="@+id/lib_current_security_textview"
+            android:layout_below="@+id/lib_current_security_score_imageview_linearlayout"
+            android:textColor="#242424"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <RatingBar
+            android:isIndicator="true"
+            style="@style/MyRatingBar"
+            android:id="@+id/lib_current_security_score_ratingbar"
+            android:layout_width="wrap_content"
+            android:numStars="5"
+            android:max="100"
+            android:stepSize="10"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_horizontal"
+            android:progressDrawable="@drawable/lib_rating_drawable"
+            android:layout_height="wrap_content"/>
+
+    />
+</LinearLayout>

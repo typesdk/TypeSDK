@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    tools:context=".MainActivitySDK" >
+    
+    <include 
+        android:id="@+id/main_title_rl"
+        layout="@layout/item_main_title_rl"        
+        />
+    <!-- android.support.v4.view.ViewPager -->
+<!-- com.smwl.smsdk.myview.NoHorizonScollViewpager -->
+   <com.smwl.smsdk.myview.NoHorizonScollViewpager
+        android:id="@+id/mPager"          
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#ffffff" />
+                              
+    <View 
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dip" 
+         android:background="@color/line"                    
+        /> 
+     <RadioGroup 
+         android:id="@+id/main_rg"
+         android:layout_width="fill_parent"
+         android:layout_height="55dip" 
+         android:orientation="horizontal"  
+         android:background="@color/white"                         
+         >
+        <RadioButton 
+         android:id="@+id/main_personcerter_rb"
+         style="@style/radio_button_style"                
+         android:drawableTop="@drawable/main_personcernter_bg"   
+         android:layout_gravity="center_horizontal"                     
+         android:text="用户中心"            
+         android:gravity="center_horizontal" 
+         android:paddingTop="5dip"  
+         android:background="@android:color/transparent"
+         />  
+        
+        <RadioButton 
+         android:id="@+id/main_gift_rb"
+         style="@style/radio_button_style"                
+         android:drawableTop="@drawable/main_gift_bg"   
+         android:layout_gravity="center_horizontal"                     
+         android:text="礼包"            
+         android:gravity="center_horizontal" 
+         android:paddingTop="5dip"  
+         android:background="@android:color/transparent"
+         />  
+                                       
+       <RadioButton 
+         android:id="@+id/main_msg_rb"
+         style="@style/radio_button_style"   
+         android:layout_gravity="center_horizontal"                   
+         android:drawableTop="@drawable/main_msg_bg"                       
+         android:text="消息"              
+         android:gravity="center_horizontal" 
+         android:paddingTop="5dip"  
+         android:background="@android:color/transparent"   
+         />   
+      </RadioGroup>             
+      
+</LinearLayout>

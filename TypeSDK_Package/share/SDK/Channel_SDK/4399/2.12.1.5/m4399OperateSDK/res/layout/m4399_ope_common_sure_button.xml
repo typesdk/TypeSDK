@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/m4399_ope_bind_input_button_height"
+    >
+    <ProgressBar
+        style="@style/m4399LoadingSureStyle"
+        android:id="@+id/button_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/button_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/m4399_ope_bind_white"
+        android:text="@string/m4399_ope_activation_sure"/>
+</RelativeLayout>
+

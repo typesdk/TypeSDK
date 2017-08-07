@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.cc"
+    android:versionCode="165"
+    android:versionName="1.6.5"
+    android:installLocation="auto" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+
+    <!-- 必须：SDK需要使用到的权限配置 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <!-- end -->
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:debuggable="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+
+        <activity
+            android:name="com.type.sdk.android.cc.TypeSDKSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.type.sdk.android.cc.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="cc.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="true" />
+        </activity>
+
+        <!-- sdk begin -->
+        <activity
+            android:name="com.example.ccpaytest.SecondActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.GameCouponActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.MyGameCardActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.MyOrderCCSdkActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.MyOrderForRechargeCCActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.MyRechargeCardActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.MyWalletChangeLogActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.MyWalletChangeLogDetailActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.MyWalletCouponActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.MyWalletRechargeCCActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.CCPayUserCenterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.lion.ccpay.app.SystemMsgListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lion.ccpay.app.SystemMsgItemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lion.ccpay.app.HelpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lion.ccpay.app.community.CommunityPlateDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name="com.lion.ccpay.app.community.CommunitySubjectDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.lion.ccpay.app.community.CommunityChoicePhotoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name="com.lion.ccpay.app.community.CommunityChoiceCameraPhotoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"/>
+        <activity
+            android:name="com.lion.ccpay.app.community.CommunitySubjectFloorDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.lion.ccpay.app.community.CommunitySubjectSearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.lion.ccpay.app.community.CommunityPostNormalActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.lion.ccpay.app.UserCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lion.ccpay.app.UserAntiAddictSystemActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lion.ccpay.app.MyOrderSpecialServiceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lion.ccpay.app.ScreenShotListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lion.ccpay.app.MyScreenshotDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lion.ccpay.app.VideoRecordListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.lion.ccpay.app.RequestSRCPerActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity
+            android:name="com.lion.ccpay.app.RequestScreenshotActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
+        <receiver
+            android:name="com.lion.ccpay.receivers.ClickNotificationReceiver"
+            android:exported="true"
+            android:process=":ccplay"/>
+
+        <service
+            android:name="com.lion.ccpay.service.CCPaySDkService"
+            android:exported="true"
+            android:process=":ccplay"/>
+
+        <activity
+            android:name="com.lion.ccpay.app.user.QQPayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/lion_transparent"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="qqPay@app_id@"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="developer_key"
+            android:value="@app_key@"/>
+        <meta-data
+            android:name="app_id"
+            android:value="@app_id@"/>
+
+        <activity
+            android:name="com.lion.ccpay.app.user.MyOrderBasePayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.lion.ccpay.app.OrderInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/lion_transparent"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.lion.ccpay.app.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/lion_transparent"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.lion.ccpay.app.user.UserAuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:theme="@android:style/Theme.Dialog"/> <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/> <!-- alipay sdk end -->
+        <activity
+            android:name="com.lion.ccpay.app.ChoicePhotoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateHidden"/> <!-- 银联 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <receiver
+            android:name="com.lion.ccpay.receiver.NetStateReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <!-- sdk end -->
+
+    </application>
+
+</manifest>

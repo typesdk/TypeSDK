@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item android:state_enabled="false">
+        <shape>
+            <stroke android:color="@color/pay_topup_item_stroke_color" android:width="0.5dp"/>
+            <solid android:color="@color/pay_topup_item_bg_color_pressed"/>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:color="@color/pay_topup_item_stroke_color" android:width="0.5dp"/>
+            <solid android:color="@color/pay_topup_item_bg_color_pressed"/>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    
+    <item>
+        <shape>
+            <stroke android:color="@color/pay_topup_item_stroke_color" android:width="0.5dp"/>
+            <solid android:color="@color/pay_topup_item_bg_color_normal"/>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    
+</selector>

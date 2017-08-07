@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/view_head"
+        layout="@layout/sogou_game_sdk_dialog_head" />
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sogou_game_sdk_dialog_common_bottom"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:gravity="center_horizontal" >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sogou_game_sdk_icon_bind_success"/>
+        <TextView 
+            android:id="@+id/sogou_game_sdk_tv_bind_phone_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#555555"
+            android:paddingTop="15dp"
+            android:paddingBottom="25dp"/>
+        <Button
+            android:id="@+id/sogou_game_sdk_btn_enter_game"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="进入游戏"
+            android:background="@drawable/sogou_game_sdk_bt_red"
+            android:textColor="@color/sogou_game_sdk_white"
+            android:textSize="15sp"/>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/dp_52"
+    android:background="@color/egame_usersdk_white" >
+
+    <include
+        android:id="@+id/egmae_gift_title"
+        layout="@layout/egame_user_sdk_activity_title_green" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/egmae_gift_title"
+        android:background="@color/egame_usersdk_white"
+        android:orientation="vertical" >
+
+        <cn.egame.terminal.usersdk.ui.view.extras.TabPageIndicator
+            android:id="@+id/titles"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <cn.egame.terminal.usersdk.ui.view.extras.UnderlinePageIndicatorEx
+            android:id="@+id/underline_indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ll_tab"
+        android:flipInterval="2"
+        android:persistentDrawingCache="animation" />
+    
+      <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_tab"
+        android:background="@drawable/egame_bg_titlebar_tabbar_shadow" />
+
+</RelativeLayout>

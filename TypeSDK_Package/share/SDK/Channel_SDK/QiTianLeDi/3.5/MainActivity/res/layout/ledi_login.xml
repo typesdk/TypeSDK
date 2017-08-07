@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ledi_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/load_linear01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/login_gift_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#f30000"
+            android:textSize="13sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ledi_user_edit_bg"
+                android:orientation="horizontal" >
+
+                <ImageSwitcher
+                    android:layout_width="8dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ledi_user_name_img" />
+
+                <EditText
+                    android:id="@+id/name_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="24"
+                    android:background="@null"
+                    android:hint="@string/ledi_input_account"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/float_window_black"
+                    android:textColorHint="@color/float_window_hint_grey"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/xiala_img"
+                    android:layout_width="6dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ledi_jiantou"
+                    android:onClick="ChangeUserClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/ledi_phone_edit_bg"
+                android:orientation="horizontal" >
+
+                <ImageSwitcher
+                    android:layout_width="8dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ledi_password_bg" />
+
+                <EditText
+                    android:id="@+id/password_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="25"
+                    android:background="@null"
+                    android:hint="@string/ledi_input_password"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/float_window_black"
+                    android:textColorHint="@color/float_window_hint_grey"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/landing_remember_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ledi_remember_password_bg"
+                android:checked="true"
+                android:text="@string/ledi_remember_password"
+                android:textColor="#555555"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ledi_register_bg"
+                android:gravity="center"
+                android:text="@string/ledi_once_register"
+                android:textColor="#fcffff"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@null" />
+
+            <Button
+                android:id="@+id/load"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@drawable/ledi_btn_load_bg"
+                android:gravity="center"
+                android:text="@string/ledi_once_login"
+                android:textColor="#fcffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ledi_laba" />
+
+            <com.ledi.view.AlwaysMarqueeTextView
+                android:id="@+id/login_tv"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:onClick="loginLoad"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/ledi_load_gift_package"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

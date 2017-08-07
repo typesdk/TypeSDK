@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tip_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#3a85e2"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp">
+
+            <TextView
+                android:id="@+id/dialog_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="兑换码已保存至“存号箱”"
+                android:textColor="#1e1e1e"
+                android:textSize="@dimen/main_textsize_14sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/dialog_desci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="left"
+                android:text="请尽快下载游戏使用,以免过期"
+                android:textColor="#606060"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="19dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="19dp"
+                android:layout_weight="1"
+                android:background="@drawable/grey_common_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/activation_code"
+                    android:textColor="#626262"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/saveCodeContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:text=""
+                    android:textColor="@color/main_bar_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/saveCodeTv"
+                style="@style/ButtonStyle15_Gift_Text"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="19dp"
+                android:layout_weight="0"
+                android:background="@drawable/recom_maincolor_butn"
+                android:gravity="center"
+                android:text="复制"
+                android:textColor="#FA8819" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="19dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="兑换期限："
+                android:textColor="#8a8a8a"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/dialog_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text=""
+                android:textColor="#8a8a8a"
+                android:textSize="13sp"  />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="19dp"
+            android:background="#888888" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_button_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/forum_dialog_btn_selector"
+                android:text=""
+                android:textColor="#6a6a6a"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:background="#888888" />
+
+            <Button
+                android:id="@+id/dialog_button_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/forum_dialog_btn_selector"
+                android:text="取消"
+                android:textColor="#f57e26"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

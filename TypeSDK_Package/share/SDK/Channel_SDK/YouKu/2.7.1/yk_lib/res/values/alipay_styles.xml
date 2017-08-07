@@ -1,0 +1,63 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MspAppBaseTheme" parent="android:Theme.Light.NoTitleBar"></style>
+
+    <!-- Application theme. -->
+    <style name="MspAppTheme" parent="MspAppBaseTheme">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MspAppPayTheme" parent="android:Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="ProgressDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/msp_dialog_progress_bg</item>
+    </style>
+
+    <style name="TextLarge">
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextMedium">
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextSmall">
+        <item name="android:textColor">#888888</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="mini_progressBar_webview">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mini_progress_bar_webview</item>
+        <item name="android:secondaryProgress">0</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+
+    <style name="mini_title_text_style">
+        <item name="android:textColor">@color/mini_color_gray</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:shadowColor">@color/mini_text_white</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:shadowDy">1.5</item>
+    </style>
+
+    <style name="mini_safty_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:background="@color/kg_common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/kg_security_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/kg_common_gray_darker"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/kg_security_img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/kg_security_account"
+                android:layout_below="@id/kg_security_account"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/kg_security_phone_default" />
+
+            <ImageView
+                android:id="@+id/kg_security_img_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/kg_security_img_1"
+                android:layout_below="@id/kg_security_account"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/kg_security_img_1"
+                android:src="@drawable/kg_security_email_binded" />
+
+            <ImageView
+                android:id="@+id/kg_security_img_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/kg_security_img_1"
+                android:layout_below="@id/kg_security_account"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/kg_security_img_2"
+                android:src="@drawable/kg_security_question_default" />
+
+            <ImageView
+                android:id="@+id/kg_security_img_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/kg_security_img_1"
+                android:layout_below="@id/kg_security_account"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/kg_security_img_3"
+                android:src="@drawable/kg_security_identity_binded" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/kg_security_score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/kg_security_score"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/kg_security_score_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kg_security_score_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/kg_circle_bg_red"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="100分"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:background="@color/kg_common_divider" />
+
+</LinearLayout>

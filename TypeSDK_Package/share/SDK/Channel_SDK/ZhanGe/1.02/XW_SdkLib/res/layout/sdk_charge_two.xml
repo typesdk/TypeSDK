@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#efefef"
+    >
+    <RelativeLayout 
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#3c3c3c"
+        >
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="20dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sdk_back"
+            android:gravity="center"
+            android:paddingBottom="6dip"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:paddingTop="6dip"
+            android:src="@drawable/sdk_back_conner" />
+    
+    <TextView 
+        android:id="@+id/tv_charge_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="充值中心"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"/>
+    
+    <ImageView 
+        android:id="@+id/iv_ingame"
+        android:layout_width="wrap_content"
+        android:src="@drawable/sdk_charge_help"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"/>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_pay_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="充值账号 ："
+            android:textSize="18dp"
+            android:textColor="@color/blacks" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/tv_pay_user"
+            android:text="12345689"
+            android:textColor="#ff6905" />
+
+        <TextView
+            android:id="@+id/tv_pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_pay_user"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="充值金额 ："
+            android:textColor="@color/blacks" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_username"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tv_pay_money"
+            android:background="#ff6905"
+            android:gravity="center"
+            android:text="200"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_pay_money"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray5" />
+
+        <TextView
+            android:id="@+id/tv_checkpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="请选择充值方式："
+            android:textSize="18dp"
+            android:textColor="@color/blacks" />
+
+        <GridView
+            android:id="@+id/gv_pay_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_checkpay"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:horizontalSpacing="10dip"
+            android:listSelector="@null"
+            android:numColumns="4"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="15dip"
+            android:layout_marginBottom="70dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dip" >
+        </GridView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ff6905"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="立即付款"
+            android:id="@+id/btn_goto_pay"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    
+</LinearLayout>

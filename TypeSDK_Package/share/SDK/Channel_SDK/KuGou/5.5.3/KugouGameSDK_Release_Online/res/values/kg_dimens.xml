@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用字体大小 -->
+    <!-- 稍大字号，一般用于用户输入 -->
+    <dimen name="kg_common_larger">18sp</dimen>
+    <!-- 大字号，一般用于一级标题 -->
+    <dimen name="kg_common_large">16sp</dimen>
+    <!-- 中字号，一般用于二级标题 -->
+    <dimen name="kg_common_medium">14sp</dimen>
+    <!-- 小字号，一般用于三级标题，介绍性文字 -->
+    <dimen name="kg_common_small">12sp</dimen>
+    <!-- 超小字号 -->
+    <dimen name="kg_common_little">10sp</dimen>
+    <!-- 列表项高度 -->
+    <dimen name="kg_common_item_height">70dip</dimen>
+    <!-- 列表图标宽度 -->
+    <dimen name="kg_common_icon_width_and_height">48dip</dimen>
+    <dimen name="kg_download_menu_height">70dip</dimen>
+    <dimen name="kg_app_button_width">60dip</dimen>
+    <dimen name="kg_app_button_height">30dip</dimen>
+    <dimen name="kg_list_icon_width_and_height">60dip</dimen>
+    <dimen name="kg_mobile_card_btn_height">40dip</dimen>
+    <dimen name="kg_btn_height">45dip</dimen>
+    <dimen name="kg_btn_width">300dip</dimen>
+    
+    <dimen name="kg_land_width">300dp</dimen>
+    
+    <dimen name="kg_land_padding">50dp</dimen>
+    
+    <dimen name="kg_common_dialog_title_height">45dp</dimen>
+    <dimen name="kg_common_dialog_title_size">18sp</dimen>
+
+</resources>

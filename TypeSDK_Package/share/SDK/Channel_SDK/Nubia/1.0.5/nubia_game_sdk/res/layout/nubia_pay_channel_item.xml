@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+    <RelativeLayout
+        android:id="@+id/list_view_pay_channel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nubia_ns_43_dp"
+        android:layout_marginTop="@dimen/nubia_ns_40_dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/my_iv_pay_channel2"
+            android:layout_width="@dimen/nubia_ns_25_dp"
+            android:layout_height="@dimen/nubia_ns_25_dp"
+            android:layout_marginLeft="@dimen/nubia_ns_30_dp"
+            android:background="@drawable/nubia_mail"
+            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/my_tv_product_chane2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/my_colors_hint"
+            android:textSize="@dimen/nubia_ns_18_sp"
+            android:gravity="center_horizontal"
+            android:layout_alignBottom="@+id/my_iv_pay_channel2"
+            android:layout_toRightOf="@+id/my_iv_pay_channel2"
+            android:layout_toEndOf="@+id/my_iv_pay_channel2"
+            android:layout_marginLeft="@dimen/nubia_ns_15_dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/nubia_ns_20_dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            style="NubiaRadioStylePay"
+            android:id="@+id/radioButton" />
+    </RelativeLayout>>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nubia_ns_1_dp"
+        android:layout_below="@+id/list_view_pay_channel"
+        android:background="@color/nubia_color_black_10" />
+
+</RelativeLayout>

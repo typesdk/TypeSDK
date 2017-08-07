@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="card_types">
+        <item>全国移动充值卡</item>
+        <item>中国电信充值付费卡</item>
+        <item>全国联通一卡通</item>
+    </string-array>
+    <string-array name="card_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>500</item>
+    </string-array>
+    <color name="card_confirm_text_color">@color/color_FFFFFFFF</color>
+    <color name="card_notice">@color/color_FFE90101</color>
+    <color name="card_pay_bg">@color/color_FFFFFFFF</color>
+    <color name="card_pay_confirm_normal">@color/color_FFF8302B</color>
+    <color name="card_pay_confirm_press">@color/color_FFC5051B</color>
+    <color name="card_type_text_color">@color/color_333333</color>
+    <color name="card_values_normal_bg_color">@color/color_FFAFAFAF</color>
+    <color name="card_values_selected_bg_color">@color/color_FFF8302B</color>
+    <color name="colorAccent">@color/color_FFFF5722</color>
+    <color name="colorAccenthm">@color/color_FFFF5722</color>
+    <color name="colorFAB1">@color/color_2196F3</color>
+    <color name="colorFAB2">@color/color_E040FB</color>
+    <color name="colorPrimaryDarkhm">@color/color_FFD32F2F</color>
+    <color name="colorPrimaryhm">@color/color_FFF44336</color>
+    <color name="color_2196F3">#2196F3</color>
+    <color name="color_303F9F">#303F9F</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_3420F5">#3420F5</color>
+    <color name="color_3F51B5">#3F51B5</color>
+    <color name="color_444444">#444444</color>
+    <color name="color_53B01A">#53B01A</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_888888">#888888</color>
+    <color name="color_989898">#989898</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_C0C0C0">#C0C0C0</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+    <color name="color_DDDDDD">#DDDDDD</color>
+    <color name="color_DF3434">#DF3434</color>
+    <color name="color_DFDFDF">#DFDFDF</color>
+    <color name="color_E040FB">#E040FB</color>
+    <color name="color_E6E6E6">#E6E6E6</color>
+    <color name="color_E81B1B">#E81B1B</color>
+    <color name="color_E87C1B">#E87C1B</color>
+    <color name="color_EA5252">#EA5252</color>
+    <color name="color_EAE7E7">#EAE7E7</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    <color name="color_FB6362">#FB6362</color>
+    <color name="color_FF000000">#FF000000</color>
+    <color name="color_FF010101">#FF010101</color>
+    <color name="color_FF4081">#FF4081</color>
+    <color name="color_FF868686">#FF868686</color>
+    <color name="color_FF888888">#FF888888</color>
+    <color name="color_FF8A22">#FF8A22</color>
+    <color name="color_FF9A22">#FF9A22</color>
+    <color name="color_FFAFAFAF">#FFAFAFAF</color>
+    <color name="color_FFC397">#FFC397</color>
+    <color name="color_FFC5051B">#FFC5051B</color>
+    <color name="color_FFCCCCCC">#FFCCCCCC</color>
+    <color name="color_FFD32F2F">#FFD32F2F</color>
+    <color name="color_FFE90101">#FFE90101</color>
+    <color name="color_FFEEEEEE">#FFEEEEEE</color>
+    <color name="color_FFF44336">#FFF44336</color>
+    <color name="color_FFF8302B">#FFF8302B</color>
+    <color name="color_FFF9F9">#FFF9F9</color>
+    <color name="color_FFFA3347">#FFFA3347</color>
+    <color name="color_FFFF5722">#FFFF5722</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_FFFFFFFF">#FFFFFFFF</color>
+    <color name="color_transparente">#00000000</color>
+    <color name="common_dialog_negative_button_bg">@color/color_DF3434</color>
+    <color name="consume_record_product_name">@color/color_444444</color>
+    <color name="game_voucher_background_color">@color/color_EEEEEE</color>
+    <color name="game_voucher_bottom_color">@color/color_FFF9F9</color>
+    <color name="game_voucher_no_data_edge_color">@color/color_DFDFDF</color>
+    <color name="message_text_switch_color">@color/color_3420F5</color>
+    <color name="pay_fragment_background">@color/color_EAE7E7</color>
+    <color name="pay_fragment_bottom_activity_text">@color/color_999999</color>
+    <color name="pay_fragment_bottom_layout">@color/color_444444</color>
+    <color name="pay_fragment_pay_amount_text">@color/color_444444</color>
+    <color name="pay_fragment_pay_amount_value">@color/color_EA5252</color>
+    <color name="pay_fragment_pay_original_text">@color/color_888888</color>
+    <color name="pay_fragment_pay_text">@color/color_666666</color>
+    <color name="pay_go_to_recharge_text">@color/color_FF9A22</color>
+    <color name="pay_mode_item_not_enable">@color/color_EAE7E7</color>
+    <color name="pay_mode_title">@color/color_989898</color>
+    <color name="pay_recharge_sure_button">@color/color_FF9A22</color>
+    <color name="pay_recharge_sure_button_gray">@color/color_CCCCCC</color>
+    <color name="pay_voucher_other_choice_text">@color/color_FF9A22</color>
+    <color name="popup_quick_pay_background">@color/color_FFCCCCCC</color>
+    <color name="popupwindow_background_color">@color/color_FFEEEEEE</color>
+    <color name="recharge_return_card_item_content_color">@color/color_E6E6E6</color>
+    <color name="recharge_return_card_item_top_color">@color/color_FB6362</color>
+    <color name="security_center_security_level_high">@color/color_53B01A</color>
+    <color name="security_center_security_level_low">@color/color_E81B1B</color>
+    <color name="security_center_security_level_middle">@color/color_E87C1B</color>
+    <color name="text_light_gray">@color/color_FF888888</color>
+    <color name="user_auto_login_color">@color/color_FF9A22</color>
+    <color name="user_forget_pwd_color">@color/color_EA5252</color>
+    <color name="user_login_third_login_color">#CCCCCC</color>
+    <color name="user_register_affirm_button_not_clickable_bg">@color/color_FF8A22</color>
+    <color name="user_register_button_disable_color">@color/color_FF8A22</color>
+    <color name="user_register_button_disable_text_color">@color/color_FFFFFF</color>
+    <color name="user_register_button_enable_color">@color/color_FF9A22</color>
+    <color name="user_register_button_enable_text_color">@color/color_FFC397</color>
+    <color name="user_register_common_color_first">@color/color_999999</color>
+    <color name="user_register_divide_line_color">@color/color_DDDDDD</color>
+    <color name="user_register_get_verify_num_button_color">@color/color_FF9A22</color>
+    <color name="user_register_get_verify_num_button_disable">@color/color_C0C0C0</color>
+    <color name="user_register_phone_num_color">@color/color_666666</color>
+    <color name="user_register_quickly_color">@color/color_FF9A22</color>
+    <color name="user_register_service_clause_color">@color/color_EA5252</color>
+    <color name="user_tourist_login_color">@color/color_FF9A22</color>
+    <color name="waiting_pay_btn_color">@color/color_FFFA3347</color>
+    <color name="waiting_pay_msg_color">@color/color_FF010101</color>
+    <color name="waiting_pay_title_color">@color/color_FF868686</color>
+    <color name="white">@color/color_FFFFFF</color>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">4dp</dimen>
+    <dimen name="float_window_height_bigimage">360dp</dimen>
+    <dimen name="font_size_float_text">9sp</dimen>
+    <dimen name="font_size_large">20sp</dimen>
+    <dimen name="font_size_middle">15sp</dimen>
+    <dimen name="font_size_mini">12sp</dimen>
+    <dimen name="font_size_small">13sp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="hot_app_name_size">12dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="pay_item_layout_height">48dp</dimen>
+    <dimen name="pay_item_title_layout_height">36dp</dimen>
+    <dimen name="pay_margin_window">16dp</dimen>
+    <dimen name="pay_mode_icon_margin_right">12dp</dimen>
+    <dimen name="pay_mode_icon_wh">24dp</dimen>
+    <dimen name="pay_mode_image_width_height">25dp</dimen>
+    <dimen name="pay_sure_width">140dp</dimen>
+    <dimen name="pull_loading_size">26dp</dimen>
+    <item name="gridview" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="webview" type="id"/>
+    <string name="account_upgrade_success_hint">账号升级成功</string>
+    <string name="action_settings">设置</string>
+    <string name="app_name">HaimaPay</string>
+    <string name="app_version">当前版本号：1.3.0</string>
+    <string name="binding_email">绑定邮箱</string>
+    <string name="binding_email_address">输入绑定的邮箱</string>
+    <string name="binding_email_format_error">绑定的邮箱地址格式错误</string>
+    <string name="binding_email_send_verify_num_hint">获取验证码</string>
+    <string name="binding_email_success_hint">绑定邮箱成功</string>
+    <string name="binding_email_verify_num_hint">请输入验证码</string>
+    <string name="binding_phone">手机绑定</string>
+    <string name="binding_phone_fail_hint">绑定手机号不成功</string>
+    <string name="binding_phone_num">请输入要绑定的手机号</string>
+    <string name="binding_phone_success_hint">绑定手机号成功</string>
+    <string name="card_error_toast">输入的卡号或卡密格式不正确。</string>
+    <string name="card_notice">温馨提示：\n1.请确保充值金额与卡实际面额一致，否则会导致充值失败。\n2.支持中国移动、中国联通、中国电信发行的全国通用手机话费充值卡。</string>
+    <string name="card_number">卡  号：</string>
+    <string name="card_pay_notice">您本次充值%1$s个海马币。（1元=1个海马币）</string>
+    <string name="card_pwd">卡  密：</string>
+    <string name="card_type">卡  类  型：</string>
+    <string name="card_value">卡  面  额：</string>
+    <string name="check_update_dialog_button_cancel">取消</string>
+    <string name="check_update_dialog_button_ok">更新</string>
+    <string name="check_update_dialog_fail_message">检查更新失败，请点击重试。</string>
+    <string name="check_update_dialog_fail_retry">重试</string>
+    <string name="check_update_dialog_message">检测到新版本，需要更新吗？</string>
+    <string name="check_update_dialog_message1">请点击确认按钮进行更新。</string>
+    <string name="check_update_force_update_certain">确认</string>
+    <string name="check_update_test_force_update_message">这里是强制更新测试</string>
+    <string name="check_update_test_update_message">这里是非强制更新测试</string>
+    <string name="check_update_title">更新提示</string>
+    <string name="cloud_error">遇到问题</string>
+    <string name="cloud_success">支付成功</string>
+    <string name="cloud_text">请您完成支付</string>
+    <string name="consume_record">消费记录</string>
+    <string name="consume_record_consume_content">1宝石</string>
+    <string name="consume_record_consume_game_name">三国演义</string>
+    <string name="consume_record_consume_money">- 2240.00</string>
+    <string name="consume_record_consume_state_false">未支付</string>
+    <string name="consume_record_consume_state_true">已支付</string>
+    <string name="consume_record_no_record">抱歉，您还没有消费记录！</string>
+    <string name="consume_record_time">2016-07-15 10:53:43</string>
+    <string name="custom_amount_must_not_null">自定义金额不能为空</string>
+    <string name="dialog_alert_modify_password_message_end">，请登录邮箱查看</string>
+    <string name="dialog_alert_modify_password_message_head">修改密码邮件已发送到</string>
+    <string name="dialog_alert_verify_num_message_end">，请登录邮箱查看</string>
+    <string name="dialog_alert_verify_num_message_head">验证码已发送到</string>
+    <string name="dialog_security_message_text">为了您的账号安全和忘记密码的找回，请设置最高级密码保护！</string>
+    <string name="dialog_security_negative_button_text">暂不</string>
+    <string name="dialog_security_positive_button_text">设置</string>
+    <string name="dialog_security_title_head_text">安全等级：</string>
+    <string name="dialog_test_message">对话框信息体</string>
+    <string name="dialog_test_negative_button_text">取消</string>
+    <string name="dialog_test_positive_button_text">确定</string>
+    <string name="dialog_test_title">对话框测试标题</string>
+    <string name="dialog_third_account_set_password_title">由于您是第三方账号登录，为了安全考虑，需要您创建密码：</string>
+    <string name="dialog_tourist_set_password">密码</string>
+    <string name="dialog_tourist_set_password_account">账号</string>
+    <string name="dialog_tourist_set_password_title">由于您是游客账号，为了安全考虑，需要您创建密码：</string>
+    <string name="enter_security_center">安全中心</string>
+    <string name="enter_security_center_login_name">海马账号：</string>
+    <string name="enter_security_center_password_hint">进入安全中心前需验证密码</string>
+    <string name="enter_security_center_password_pass_hint">密码正确，通过验证</string>
+    <string name="enter_security_center_submit_text">确定</string>
+    <string name="failed_calculate_return_amount">计算返利金额失败</string>
+    <string name="game_voucher">我的代金券</string>
+    <string name="game_voucher_fit_field">适用于1款游戏</string>
+    <string name="game_voucher_help">代金券帮助使用说明：\n
+        \t\t\t\t\t海马代金券是海马币消费时使用的，在您消费海马币时，进入我的代金券选择使用不同金额的代金券，即可冲抵同等金额的海马币。\n
+        \n
+        A、如何获得代金券？\n
+            \t\t\t\t\t海马会不定期举办各种促销活动，根据促销活动的规则，您有可能获得代金券，请关注海马官方微信号：haimawanfw；\n
+            \t\t\t\t\t在海马客户端或者游戏中登录海马账号，您可以在用户中心查看“我的代金券”。\n
+        \n
+        B、代金券如何使用？\n
+            \t\t\t\t\t在游戏收银台购买游戏道具时，选择使用我的代金券，例如：\n
+            \t\t\t\t\t您需要购买价值100海马币的游戏道具，同时，选择使用了一张面额为30元的代金券，那么您将只需实际支付70元人民币即可；\n
+        \n
+        C、哪些游戏可以使用代金券？代金券有有效期么？\n
+            \t\t\t\t\t代金券有使用范围限制，登陆您的海马账号，在用户中心点击“我的代金券”，可以查看每张代金券的使用范围，请务必在对应的游戏中使用代金券。\n
+            \t\t\t\t\t代金券有有效期，登陆您的海马账号，在用户中心点击“我的代金券”，可以查看每张代金券的有效期，请务必在代金券失效前使用。\n
+        \n
+        D、代金券可以同时使用多张吗？面额大于要充值的道具时，找零吗？\n
+            \t\t\t\t\t代金券每笔交易只能使用一张；\n
+            \t\t\t\t\t代金券不能兑现，不找零。</string>
+    <string name="game_voucher_name">消费1</string>
+    <string name="game_voucher_no_data">抱歉，您暂时还没有代金券</string>
+    <string name="game_voucher_no_data_content">请关注我们的微信公众号:haimawanwf，关注该公众号将能获得代金券，另外还会不定期发布代金券消息</string>
+    <string name="game_voucher_time_limit">2016-07-25前使用有效</string>
+    <string name="game_voucher_unselected_hint">您尚未选择代金券，请选择后确认使用！</string>
+    <string name="game_voucher_use">确认使用</string>
+    <string name="game_voucher_value">¥5</string>
+    <string name="game_voucher_watch_all">查看全部</string>
+    <string name="get_check_code_fail_hint">验证码下发失败</string>
+    <string name="get_check_code_success_hint">验证码下发成功</string>
+    <string name="get_gift">领取礼包</string>
+    <string name="gift_bag">我的礼包</string>
+    <string name="gift_bag_button_text">更多礼包福利</string>
+    <string name="gift_bag_hint_text">哎呀，还没有礼包呢~\n关注海马玩\n游戏礼包福利抢先拿</string>
+    <string name="go_to_pay">去支付</string>
+    <string name="go_to_recharge">去充值</string>
+    <string name="gong">共</string>
+    <string name="hello_blank_fragment">Stander Login fragment</string>
+    <string name="help">帮助</string>
+    <string name="init_check_update_fail">检查更新不成功，请尝试重试！</string>
+    <string name="init_faild">SD卡读取失败</string>
+    <string name="input_card_num">请输入充值卡卡号</string>
+    <string name="input_card_pwd">请输入充值卡密码</string>
+    <string name="json_exception">json 解析异常</string>
+    <string name="login_title_text">登录</string>
+    <string name="logout_dialog_negative_text">取消</string>
+    <string name="logout_dialog_positive_text">确定</string>
+    <string name="logout_dialog_title">确定退出当前账号？</string>
+    <string name="logout_fail">您尚未登录，注销不成功！</string>
+    <string name="logout_replace_account_hint">您的账号长时间未操作或已异地登录，请重新登录！</string>
+    <string name="logout_success_hint">注销成功！</string>
+    <string name="message">我的消息</string>
+    <string name="message_button_exchange">兑换</string>
+    <string name="message_button_get">领取</string>
+    <string name="message_button_recharge">充值</string>
+    <string name="message_button_rob">抢</string>
+    <string name="message_button_use">使用</string>
+    <string name="message_button_watch">查看</string>
+    <string name="message_exchange_fail_hint">兑换不成功，请稍后重试！</string>
+    <string name="message_exchange_success_dialog_title">兑换成功</string>
+    <string name="message_get_consume_voucher_success_dialog_ok">OK</string>
+    <string name="message_get_consume_voucher_success_dialog_title">已领取</string>
+    <string name="message_get_consume_voucher_success_dialog_watch">查看</string>
+    <string name="message_get_fail_hint">领取不成功，请稍后重试！</string>
+    <string name="message_gift_bag_dialog_certain">抢！抢！抢！</string>
+    <string name="message_gift_bag_dialog_message">礼包保存在海马玩中，必须通过海马玩抢礼包！</string>
+    <string name="message_help">我的消息说明：\n
+
+        A、什么时候收到消息？\n
+
+        \t\t\t\t\t为了不打扰您的使用，只当您在打开应用时，我们才会下发消息。同时为了保证消息的有效性，您只能收到或查看最近三个月的信息。\n
+
+        B、我的消息都有什么内容？\n
+
+        \t\t\t\t\t我们将不定期发布优惠活动信息，同时您也能收到代金券、充返卡、礼包等信息，在活动时间内，您可以随时领取和使用。\n
+
+        \t\t\t\t\t欢迎您随时关注“我的消息”。\n
+    </string>
+    <string name="message_know">了解</string>
+    <string name="message_no_more_data">已经没有更多数据了！</string>
+    <string name="message_props_return_proportion">返利比例：45%</string>
+    <string name="message_props_use_valid_date">使用有效期：2016-07-15至2016-07-24</string>
+    <string name="message_read">已读</string>
+    <string name="message_text_content">文字消息内容\n文字消息内容\n文字消息内容\n文字消息内容\n文字消息内容</string>
+    <string name="message_text_show_switch">更多</string>
+    <string name="message_text_switch_packup">收起</string>
+    <string name="message_text_title">文字消息标题</string>
+    <string name="message_time">2016-07-15 10:53:43</string>
+    <string name="message_unread">未读</string>
+    <string name="message_update_fail_hint">消息读取不成功，请稍后重试！</string>
+    <string name="message_voucher_money">金额：￥3</string>
+    <string name="message_voucher_user_field">使用范围：全部游戏</string>
+    <string name="message_voucher_valid_date">领取有效期：2016-07-15至2016-07-24</string>
+    <string name="modify_password_email_check_code_hint">请输入邮箱验证码</string>
+    <string name="modify_password_input_new_password_again">再次输入密码</string>
+    <string name="modify_password_input_new_password_hint">输入新密码</string>
+    <string name="modify_password_input_verify_hint">输入验证码</string>
+    <string name="modify_password_new_password_err">新密码必须至少包含一个大写字母和一个小写字母，并且6-20位的字母或数字</string>
+    <string name="modify_password_old_password_hint">输入原有密码</string>
+    <string name="modify_password_phone_check_code_hint">请输入手机验证码</string>
+    <string name="modify_password_success_hint">修改密码成功</string>
+    <string name="modify_password_success_message">修改密码成功，请登录！</string>
+    <string name="modify_password_title">修改密码</string>
+    <string name="my_props">我的充返卡</string>
+    <string name="not_init_hint">您尚未进行初始化，请调用初始化接口！</string>
+    <string name="open_user_center_fail">您尚未登录，启动个人中心不成功！</string>
+    <string name="pay_amount">实付金额：¥</string>
+    <string name="pay_available_haima_coin">可用海马币 : </string>
+    <string name="pay_center">海马支付中心</string>
+    <string name="pay_confirm">确认支付</string>
+    <string name="pay_frequently_used_mode">常用支付方式 : </string>
+    <string name="pay_ge">个</string>
+    <string name="pay_mode_pp">银行卡支付</string>
+    <string name="pay_mode_wx">微信支付</string>
+    <string name="pay_mode_yl">银联手机支付</string>
+    <string name="pay_mode_zf">支付宝支付</string>
+    <string name="pay_mode_zfm">支付宝无密支付</string>
+    <string name="pay_not_use_voucher_text">目前没有可使用的代金券</string>
+    <string name="pay_original_amount">原价：</string>
+    <string name="pay_other_used_mode">其他支付方式 : </string>
+    <string name="pay_use_voucher_text">使用代金券 : </string>
+    <string name="pay_voucher_other_choice">张 , 选其他</string>
+    <string name="prepaid_card_pay">充值卡支付</string>
+    <string name="pull_to_load_label">放开以加载</string>
+    <string name="pull_to_load_pull_end">上拉加载更多</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">下拉以刷新</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在载入…</string>
+    <string name="pull_to_refresh_from_bottom_release_label">放开以刷新</string>
+    <string name="quick_pay_haima_coin">海马币：%1$s元</string>
+    <string name="quick_pay_voucher_amount">代金券：%1$s元</string>
+    <string name="read_message_no_data">抱歉，暂时没有已读消息！</string>
+    <string name="recharge_back_card_count">\u0020(共%1$s张)</string>
+    <string name="recharge_back_money">返利：%1$s</string>
+    <string name="recharge_center">充值海马币</string>
+    <string name="recharge_money_selecte">选择充值金额（元）</string>
+    <string name="recharge_record">充值记录</string>
+    <string name="recharge_record_donate_money">20</string>
+    <string name="recharge_record_donate_money_hint">送</string>
+    <string name="recharge_record_no_record">抱歉，您还没有充值记录！</string>
+    <string name="recharge_record_os_hint">( android )</string>
+    <string name="recharge_record_pay_state_false">未支付</string>
+    <string name="recharge_record_pay_state_true">已支付</string>
+    <string name="recharge_record_pay_way">支付宝支付</string>
+    <string name="recharge_record_recharge_money">2240</string>
+    <string name="recharge_record_recharge_money_hint">充</string>
+    <string name="recharge_record_time">2016-07-15\n10:53:43</string>
+    <string name="recharge_return_card_content">选择使用该返利卡充值海马币，将享受充值金额60%的返利优惠</string>
+    <string name="recharge_return_card_date">2016-07-5至2016-07-19</string>
+    <string name="recharge_return_card_help">充返卡帮助使用说明：\n
+        \t\t\t\t\t海马充返卡是充值海马币时使用的，在您充值海马币时，进入我的充返卡选择使用不同比例的充返卡，即可得到相应比例的返利。\n
+        \n
+        A、如何获得充返卡？\n
+        \t\t\t\t\t海马会不定期举办各种促销活动，根据促销活动的规则，您有可能获得充返卡；\n
+        \t\t\t\t\t在海马充值海马币，升级成为VIP，您将获得对应比例的充返卡作为奖励；\n
+        \n
+        B、充返卡如何使用？\n
+        \t\t\t\t\t在海马客户端或者游戏中充值海马币，选择使用我的充返卡，既可以得到相应比例的返利，例如：\n
+        \t\t\t\t\t您选择充值100元的同时，选择使用了一张70%的充返卡，那么您将实际到账170海马币；\n
+        \n
+        C、充返卡有有效期么？\n
+        \t\t\t\t\t返利卡有有效期，登录您的海马账号，在用户中心中点击“我的充返卡”，可以查看每张充返卡的有效期，请务必在充返卡失效前使用。</string>
+    <string name="recharge_return_card_no_data">抱歉，您还没有充返卡，您可以升级VIP获取VIP特权介绍或参加拆红包活动获取</string>
+    <string name="recharge_return_card_title">50%返利卡</string>
+    <string name="recharge_return_card_title_description">50%返利</string>
+    <string name="recharge_return_card_unselect_hint">您尚未选择充返卡，请选择后确认使用！</string>
+    <string name="recharge_select_rabate">选择福利</string>
+    <string name="recharge_success_dialog_text1">您已充值成功%1$s海马币</string>
+    <string name="recharge_success_dialog_text2">,得到%1$s海马币赠送</string>
+    <string name="retrieve_password_email">邮箱找回</string>
+    <string name="retrieve_password_email_address">请输入绑定的邮箱</string>
+    <string name="retrieve_password_email_format_error">输入的邮箱格式错误</string>
+    <string name="retrieve_password_email_reset">重置密码</string>
+    <string name="retrieve_password_email_unbinding_hint">该邮箱未绑定</string>
+    <string name="retrieve_password_index">找回方式</string>
+    <string name="retrieve_password_index_email_way">邮箱找回</string>
+    <string name="retrieve_password_index_phone_way">手机号找回</string>
+    <string name="retrieve_password_phone">手机找回</string>
+    <string name="retrieve_password_phone_num">请输入绑定的手机号</string>
+    <string name="retrieve_password_pone_unbinding_hint">该手机号未绑定</string>
+    <string name="retrieve_password_success_dialog_message">找回密码成功,请登录!</string>
+    <string name="retrieve_password_success_dialog_title">请登录</string>
+    <string name="safe_pay">海马安全支付</string>
+    <string name="save_num_box">存号箱</string>
+    <string name="security_center_binding_email_hint">该账号已绑定邮箱:</string>
+    <string name="security_center_binding_hint">已绑定</string>
+    <string name="security_center_binding_phone_hint">该账号已绑定手机:</string>
+    <string name="security_center_binging_hint">未绑定</string>
+    <string name="security_center_login_name">账号：</string>
+    <string name="security_center_security_level">安全等级：</string>
+    <string name="security_center_security_level_high">高</string>
+    <string name="security_center_security_level_low">低</string>
+    <string name="security_center_security_level_middle">中</string>
+    <string name="security_center_unbinding_hint">未绑定</string>
+    <string name="server_error">服务器内部错误，请稍后重试！</string>
+    <string name="service_clause">海马服务条款</string>
+    <string name="switch_account_fail_hint">您尚未登录，不能切换账户！</string>
+    <string name="take_part_in_activities">参加活动</string>
+    <string name="tnp_activity">算了，暂不参加</string>
+    <string name="tourist_upgraded">游客账号已升级，请使用密码重新登录！</string>
+    <string name="unread_message_no_data">抱歉，暂时没有未读消息！</string>
+    <string name="user_auto_login_fail">自动登录不成功，请尝试重新登录！</string>
+    <string name="user_auto_login_success">自动登录成功</string>
+    <string name="user_center">海马玩</string>
+    <string name="user_center_VIP">我的VIP</string>
+    <string name="user_center_account_name">海马ID：yk3432198348314</string>
+    <string name="user_center_coin">金币：23434</string>
+    <string name="user_center_custom_record">消费记录</string>
+    <string name="user_center_game_voucher">游戏代金券</string>
+    <string name="user_center_gift">查看礼包</string>
+    <string name="user_center_logout">注销</string>
+    <string name="user_center_message">我的消息</string>
+    <string name="user_center_modify_password">修改密码</string>
+    <string name="user_center_money">    余额：34324海马币</string>
+    <string name="user_center_other">其他</string>
+    <string name="user_center_prop">海马充返卡</string>
+    <string name="user_center_recharge">充值海马币</string>
+    <string name="user_center_recharge_record">充值记录</string>
+    <string name="user_center_security_center">安全中心</string>
+    <string name="user_center_vip_level">VIP0</string>
+    <string name="user_login">海马用户登录</string>
+    <string name="user_login_account">请输入用户名/手机号/邮箱</string>
+    <string name="user_login_alipay_account_freeze">账户已冻结,如有疑问,请联系支付宝技术支持</string>
+    <string name="user_login_alipay_connection_error">网络连接出错</string>
+    <string name="user_login_alipay_login_success">恭喜支付宝授权登录成功！</string>
+    <string name="user_login_alipay_not_convert_openid">userId 不能转换为 openId,请联系支付宝技术支持</string>
+    <string name="user_login_alipay_request_system_exception">系统异常</string>
+    <string name="user_login_alipay_system_exception">系统异常,请联系支付宝技术支持</string>
+    <string name="user_login_alipay_user_cancel">用户中途取消</string>
+    <string name="user_login_auto_login">自动登录</string>
+    <string name="user_login_button">立即登录</string>
+    <string name="user_login_fail_hint">网络访问不成功，请重试！</string>
+    <string name="user_login_forget_password">忘记密码</string>
+    <string name="user_login_logined_hint">您已经登录</string>
+    <string name="user_login_long_press_hint">二维码（长按保存）</string>
+    <string name="user_login_save_success_hint">二维码保存成功！</string>
+    <string name="user_login_third_login">第三方账号登录</string>
+    <string name="user_login_tourist_login">游客登录</string>
+    <string name="user_login_tourist_login_success">恭喜游客登录成功！</string>
+    <string name="user_login_wechat_login_success">恭喜微信授权登录成功！</string>
+    <string name="user_login_wechat_uninstall_haimawan">未安装海马玩应用市场，请安装！</string>
+    <string name="user_login_wechat_update_haimawan">海马玩版本过低，请安装新版本！</string>
+    <string name="user_login_wechat_version_or_uninstall">未安装微信或者微信版本过低!</string>
+    <string name="user_login_weixin_service">微信客服号：haimawanfw</string>
+    <string name="user_register_account_illegal_hint">用户名必须为4-20位字母或者数字，且不可为纯数字</string>
+    <string name="user_register_agreee_text">注册即同意</string>
+    <string name="user_register_common_account_hint">请输入用户名</string>
+    <string name="user_register_common_affirm_button_text">注册</string>
+    <string name="user_register_common_title">普通注册</string>
+    <string name="user_register_count_down_timer_hint">倒计时</string>
+    <string name="user_register_count_down_timer_unit">秒</string>
+    <string name="user_register_get_verify_num_button">获取验证码</string>
+    <string name="user_register_input_password_hint">请输入密码</string>
+    <string name="user_register_other_way_register">其他方式注册</string>
+    <string name="user_register_password_format_correct">密码格式正确</string>
+    <string name="user_register_password_illegal_hint">密码必须至少包含一个大写字母和一个小写字母，并且6~20位的字母或数字</string>
+    <string name="user_register_phone_input_hint">请输入手机号</string>
+    <string name="user_register_phone_num_illegal_hint">输入的手机号格式错误</string>
+    <string name="user_register_phone_verify_num_hint">请输入验证码</string>
+    <string name="user_register_quick_title">快速注册</string>
+    <string name="user_register_service_QQ">在线客服号：QQ 1928175732</string>
+    <string name="user_register_service_clause_text">\u0020《海马服务条款》</string>
+    <string name="user_register_service_weixin">客服微信号：</string>
+    <string name="user_register_service_weixin_num"><u>haimawanfw</u></string>
+    <string name="user_register_show_password">显示密码</string>
+    <string name="user_register_success_hint">恭喜注册成功！</string>
+    <string name="user_wechat_login_fail">微信授权失败！</string>
+    <string name="vip_title">VIP特权</string>
+    <string name="voucher_outdate">代金券已过期，请使用未过期的代金券!</string>
+    <string name="web_view_fragment_net_error">页面加载失败!请检查网络！</string>
+    <string name="yuan">元</string>
+    <style name="Animation.Design.RightSheetDialog" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/design_right_sheet_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/design_right_sheet_slide_out</item>
+    </style>
+    <style name="Animation.Design.bottomSheetDialog" parent="Animation.Design.BottomSheetDialog">
+    </style>
+    <style name="AutoMatch">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="AutoMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="AutoMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="AutoWrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AutoWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="AutoWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+    <style name="CardPayText">
+        <item name="android:textColor">@color/card_type_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="MatchAuto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="MatchAuto.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="MatchAuto.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="MatchMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="MatchMatch.Input">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/user_register_common_color_first</item>
+        <item name="android:textColor">@color/user_register_phone_num_color</item>
+        <item name="android:textSize">@dimen/font_size_middle</item>
+    </style>
+    <style name="MatchMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MatchOne">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MatchWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="MatchWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MaterialDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:tint">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+        <!--<item name="android:colorButtonNormal"></item>-->
+    </style>
+    <style name="MiddleSize">
+        <item name="android:textColor">@color/user_register_phone_num_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="OneMatch">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="Paysdk.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryhm</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkhm</item>
+        <item name="colorAccent">@color/colorAccenthm</item>
+        <!--<item name="android:alertDialogTheme">@style/MyAlertDialog</item>-->
+
+    </style>
+    <style name="Paysdk.AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/colorPrimaryhm</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkhm</item>
+        <item name="colorAccent">@color/colorAccenthm</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+
+        <!--
+        Customize your theme here.
+        -->
+        <!--&lt;!&ndash;导航栏底色&ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/accent_material_dark</item>-->
+        <!--&lt;!&ndash;状态栏底色&ndash;&gt;-->
+        <!--<item name="colorPrimaryDark">@color/accent_material_light</item>-->
+        <!--&lt;!&ndash;导航栏上的标题颜色&ndash;&gt;-->
+        <!--<item name="android:textColorPrimary">@android:color/black</item>-->
+        <!--&lt;!&ndash;Activity窗口的颜色&ndash;&gt;-->
+        <!--<item name="android:windowBackground">@color/material_blue_grey_800</item>-->
+        <!--&lt;!&ndash;按钮选中或者点击获得焦点后的颜色&ndash;&gt;-->
+        <!--<item name="colorAccent">#FF00ff00</item>-->
+        <!--&lt;!&ndash;和 colorAccent相反，正常状态下按钮的颜色&ndash;&gt;-->
+        <!--<item name="colorControlNormal">#FFFF0000</item>-->
+        <!--&lt;!&ndash;Button按钮正常状态颜色&ndash;&gt;-->
+        <!--<item name="colorButtonNormal">@color/accent_material_light</item>-->
+        <!--&lt;!&ndash;EditText 输入框中字体的颜色&ndash;&gt;-->
+        <!--<item name="editTextColor">@android:color/white</item>-->
+
+
+    </style>
+    <style name="Paysdk.AppTheme.Dialog" parent="Theme.AppCompat.Translucent">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Paysdk.AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Paysdk.AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorPrimary">@color/colorPrimaryhm</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkhm</item>
+        <item name="colorAccent">@color/colorAccenthm</item>
+
+    </style>
+    <style name="RightSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.RightSheetDialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+
+    </style>
+    <style name="Theme.AppCompat.Translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <style name="UserRegisterFirst">
+        <item name="android:textColor">@color/user_register_get_verify_num_button_color</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+    <style name="UserRegisterSecond">
+        <item name="android:textColor">@color/user_register_phone_num_color</item>
+        <item name="android:textSize">@dimen/font_size_middle</item>
+    </style>
+    <style name="UserRegisterThird">
+        <item name="android:textColor">@color/user_register_common_color_first</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+    <style name="WrapAuto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="WrapAuto.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="WrapAuto.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="WrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="WrapMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="WrapMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="WrapMatch.alignParentRight">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WrapWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="WrapWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="bottomSheetStyleWrapper" parent="android:Widget">
+        <item name="behavior_peekHeight">680dp</item>
+        <item name="behavior_hideable">true</item>
+        <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
+    </style>
+    <style name="payModeRadio">
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/pay_mode_item_bg_seletor</item>
+        <item name="android:layout_height">@dimen/pay_item_layout_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:drawablePadding">@dimen/pay_mode_icon_margin_right</item>
+        <item name="android:paddingLeft">@dimen/pay_margin_window</item>
+        <item name="android:textColor">@color/pay_mode_item_text_seletor</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+</resources>

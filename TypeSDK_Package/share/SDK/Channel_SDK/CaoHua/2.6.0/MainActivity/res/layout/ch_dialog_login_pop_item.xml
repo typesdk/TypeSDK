@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ch_dialog_pull_down_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="45dp"
+    android:background="@drawable/ch_dialog_pop_user_list_bg" >
+
+    <ImageView
+        android:id="@+id/ch_list_dot"
+        android:layout_centerVertical="true"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="15dp" 
+        android:visibility="invisible"
+        android:src="@drawable/ch_dialog_splash_green_dot"/>
+    <TextView
+        android:id="@+id/ch_list_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/ch_list_dot"
+        android:layout_toLeftOf="@+id/ch_list_delete"
+        android:singleLine="true"
+        android:textSize="15sp" 
+        android:textColor="@color/ch_text" />
+
+    <ImageView
+        android:id="@+id/ch_list_delete"
+        android:layout_width="29dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:paddingRight="14dp"
+        android:src="@drawable/ch_dialog_list_close" />
+
+</RelativeLayout>

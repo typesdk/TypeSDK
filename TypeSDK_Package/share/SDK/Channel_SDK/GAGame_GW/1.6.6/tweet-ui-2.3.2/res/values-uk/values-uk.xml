@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 год</item>
+        <item quantity="other">%d год</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 хв</item>
+        <item quantity="other">%d хв</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 с</item>
+        <item quantity="other">%d с</item>
+    </plurals>
+    <string name="tw__like_tweet">Вподобати твіт</string>
+    <string name="tw__liked_tweet">Скасувати вподобання</string>
+    <string name="tw__loading_tweet">Завантаження твіта</string>
+    <string name="tw__pause">призупинити</string>
+    <string name="tw__play">відтворити</string>
+    <string name="tw__replay">повторити</string>
+    <string name="tw__retweeted_by_format">Ретвітнуто користувачем(кою) %1$s</string>
+    <string name="tw__share_content_format">Подивіться-но твіт від \@%1$s: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">Твіт від %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Поділитися твітом</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Медіафайли твітів</string>
+</resources>

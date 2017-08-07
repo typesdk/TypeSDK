@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通用 -->
+    <string name="jolo_ok">确定</string>
+    <string name="jolo_cancel">取消</string>
+   
+    <string name="jolo_alert_content_6">请先登录您的账号</string>
+    <string name="jolo_toast_unknow_error">未知错误，请重试</string>
+
+    <!-- Toast  Start -->
+    <string name="jolo_toast_net_error">网络连接失败，请检查设置</string>
+    <string name="jolo_toast_session_out_date">登录失效!\n请重新登录后继续使用!</string>
+
+    <string name="jolo_get_auth_code_suc">获取验证码成功，请注意查收短信</string>
+    <string name="jolo_get_auth_code_failed">对不起，获取验证码失败，请重试</string>
+    <!-- Login Activity Start -->
+    <string name="jolo_login_tips_tv">聚乐游戏账号登录</string>
+    <string name="jolo_login_username_tv">&#160;&#160;账号&#160;&#160;:</string>
+    <string name="jolo_login_username_hint">请输入账号</string>
+    <string name="jolo_login_pwd_tv">&#160;&#160;密码&#160;&#160;:</string>
+    <string name="jolo_login_pwd_hint">请输入密码</string>
+    <string name="jolo_login_login_btn">立即登录</string>
+    <string name="jolo_login_register_btn">注册</string>
+    <string name="jolo_register_phone">手机注册(推荐)</string>
+    <string name="jolo_register_normal">普通注册</string>
+    <string name="jolo_login_toast_success">登录成功</string>
+    <string name="jolo_login_toast_failed">登录失败</string>
+    <string name="jolo_login_title">账号登录</string>
+    <string name="jolo_login_toast_uname_input_error">账号有误，请输入正确的账号</string>
+    <string name="jolo_login_toast_pwd_input_error">密码输入有误，请重新输入</string>
+    <string name="jolo_login_toast_uname_error">账号不存在</string>
+    <string name="jolo_login_toast_pwd_error">密码错误</string>
+    <string name="jolo_login_dlg_waiting">登录中,请稍后</string>
+    <string name="jolo_login_findpwd_tv"><u>忘记密码&#160;?</u></string>
+    <!-- Login Activity End -->
+
+    <!-- Register Activity Start -->
+    <string name="jolo_register_tip_pwd">请输入密码</string>
+    <string name="jolo_register_title">注册</string>
+    <string name="jolo_register_normal_title">账号注册</string>
+    <string name="jolo_register_pwd_tv">&#160;&#160;密码&#160;&#160;:</string>
+    <string name="jolo_register_name_tv">&#160;&#160;账号&#160;&#160;:</string>
+    <string name="jolo_register_name_hint"><![CDATA[账号(6-20个字符,不能纯数字)]]></string>
+    <string name="jolo_register_pwd_hint"><![CDATA[密码(6-20个字符,区分大小写)]]></string>
+    <string name="jolo_register_digits"><![CDATA[0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`~!@#^$%^&*-=_+\|<>,./?(){}[]:";']]></string>
+    <string name="jolo_register_agree">同意</string>
+    <string name="jolo_register_user_rule">请勾选同意聚乐游戏使用条款</string>
+    <string name="jolo_register_toast_uname_error">账号输入有误，请输入&#160;6–20&#160;位数字或英文</string>
+    <string name="jolo_register_toast_pwd_error">密码输入有误，请输入&#160;6–20&#160;位密码</string>
+    <string name="jolo_register_toast_phone_exist">手机号已经被注册了</string>
+    <string name="jolo_register_toast_uname_exist">账号已经被注册了</string>
+    <string name="jolo_register_toast_sucess">账号注册成功</string>
+    <string name="jolo_register_rule"><u>聚乐游戏使用条款</u></string>
+    <string name="jolo_reg_toast_is_digits">注册账号不能纯数字~</string>
+    <string name="jolo_register_register_btn">注册</string>
+    <string name="jolo_send_authcode">发送验证码</string>
+    <string name="jolo_fetchcode">获取验证码</string>
+    <string name="jolo_fetching">请稍后</string>
+    <string name="jolo_input_phone">请输入正确的手机号码</string>
+    <string name="jolo_input_code">请输入验证码</string>
+    <string name="jolo_reg_phone">手机注册</string>
+    <string name="jolo_reset_pwd">重置密码</string>
+    <string name="jolo_diff_pwd">两次输入的密码不一致，请重新输入</string>
+    <string name="jolo_tip_reset_pwd">如果您没有绑定手机，请联系客服重置密码</string>
+    <string name="jolo_auth_code_none">请输入验证码</string>
+    <string name="jolo_pls_wait">发短信不能太频繁哦，请稍后</string>
+    <!-- Register Activity End -->
+    <!-- 用户注册协议 Start -->
+    <string name="jolo_protocol_title">使用条款</string>
+    <!-- 用户注册协议 End -->
+    <!-- 绑定手机 start-->
+    <string name="jolo_bind_phone">绑定手机</string>
+    <string name="jolo_bind_username">绑定手机的账号：</string>
+    <string name="jolo_bind_phone_tip">为了您的账号安全，建议您绑定手机号码。</string>
+    <string name="jolo_bind_next">以后再说</string>
+    <string name="jolo_bind_now">现在绑定</string>
+    <string name="jolo_waiting_sms">获取验证中，请稍等</string>
+    <string name="jolo_bind_failed">对不起，绑定失败，请重试</string>
+    <!-- 绑定手机 end-->
+    <!-- ModifyPwd Activity Start -->
+    <string name="jolo_modifypwd_title"><u>修改密码</u></string>
+    <string name="jolo_modifypwd_oldpwd_tv">原密码:</string>
+    <string name="jolo_modifypwd_newpwd_tv">新密码:</string>
+    <string name="jolo_modifypwd_confirm_tv">确认新密码:</string>
+    <string name="jolo_modifypwd_toast_oldpwd_error">原密码输入有误，请输入&#160;6–20&#160;位密码</string>
+    <string name="jolo_modifypwd_toast_newpwd_error">新密码输入有误，请输入&#160;6–20&#160;位密码</string>
+    <string name="jolo_modifypwd_toast_confirm_error">确认密码输入有误，请输入&#160;6–20&#160;位密码</string>
+    <string name="jolo_modifypwd_toast_same_with_old">新密码和原密码相同,请重新输入</string>
+    <string name="jolo_modifypwd_toast_not_same">新密码和确认密码不相同,请重新输入</string>
+    <string name="jolo_modifypwd_success">密码修改成功</string>
+    <string name="jolo_modifypwd_failed">密码修改失败,如有问题请联系客服!</string>
+    <string name="jolo_modifypwd_old_pwd_error">原密码填写错误,请重试</string>
+    <string name="jolo_modifypwd_hint_old_pwd">请输入旧密码</string>
+    <string name="jolo_modifypwd_hint_new_pwd">请输入6&#8211;20位密码</string>
+    <string name="jolo_modifypwd_hint_new_pwd_again">请重复输入密码</string>
+    
+    <string name="jolo_resetpwd_suc">重置密码成功，请重新登录</string>
+    <string name="jolo_resetpwd_failed">重置密码失败，请重试</string>
+    <!-- ModifyPwd Activity End -->
+    <string name="jolo_forget_pwd"><u>忘记密码？</u></string>
+
+	<string name="jolo_game_mainpage">游戏首页</string>
+	<string name="jolo_load_gamezone">下载平台</string>
+	<string name="jolo_login_info">登录成后的信息</string>
+	<string name="jolo_switch_user">切换账户</string>
+	<string name="jolo_more_games">更多游戏</string>
+	<string name="jolo_save_pwd">记住密码</string>
+	<string name="jolo_fast_register">一键注册</string>
+	<string name="jolo_modify_pwd_tip">为了保障您账号安全,请尽快修改密码，密码和账号相同</string>
+	<string name="jolo_fast_reg_too_more">您快速注册太频繁了，请稍后再重试。</string>
+	<string name="jolo_suc_fast_reg">注册成功！您的账号和密码均为:</string>
+	<string name="jolo_modify_tip">请您尽快修改密码！</string>
+	
+	<string name="jolo_tel_land">官方QQ：2977023793 官方电话：4006962896 </string>
+	<string name="jolo_tel_port">官方QQ：2977023793 \n官方电话：4006962896</string>
+	<string name="jolo_qq">活动Q群：</string>
+	
+	<string name="jolo_htc_account">HTC账号（推荐）</string>
+	<string name="jolo_account">游戏平台账号</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout 
+        android:id="@+id/exit_advert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/img_advert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/_yl_more" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="@dimen/exit_icon_20dp"
+        android:layout_height="@dimen/exit_icon_20dp"
+        android:layout_gravity="right"
+        android:src="@drawable/_yl_exit" />
+    </FrameLayout>
+</RelativeLayout>

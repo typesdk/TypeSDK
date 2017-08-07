@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/pyw_selector_edittext_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@drawable/pyw_img_pswicon_normal" />
+
+        <EditText
+            android:id="@+id/pyw_et_register_account"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pyw_common_editext_height"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请重新设置6-12位登录密码"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textVisiblePassword"
+            android:maxLength="12"
+            android:paddingLeft="5dp"
+            android:digits="@string/pyw_regex_code_pwd"
+            android:singleLine="true"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textColorHint="@color/pyw_common_hint_color"
+            android:textSize="@dimen/pyw_common_medium" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/pyw_pwd_visible_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/pyw_img_visible_normal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pyw_btn_getcode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_btn_height"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/pyw_selector_btn_blue_bg"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pyw_common_large" />
+
+    <TextView
+        android:id="@+id/pyw_txt_usercenter_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="温馨提示：用手机登录可任意切换游戏账号"
+        android:textColor="#888888"
+        android:textSize="@dimen/pyw_common_little"/>
+
+</LinearLayout>

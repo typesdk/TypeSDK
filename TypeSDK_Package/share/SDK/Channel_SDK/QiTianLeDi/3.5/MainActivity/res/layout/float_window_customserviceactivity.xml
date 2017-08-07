@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/float_window_grey"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/float_window_activity_title" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="@string/float_window_conection_ledi_service"
+        android:textColor="@color/float_window_black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/float_window_ledi_target"
+        android:textColor="@color/float_window_black"
+        android:textSize="19sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/float_window_ledi_address"
+        android:textColor="@color/float_window_black"
+        android:textSize="19sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/float_window_service_phone_number"
+        android:textColor="@color/float_window_black"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/float_window_textview_qq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/float_window_qq_number"
+        android:textColor="@color/float_window_blue"
+        android:textSize="19sp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/float_window_btn_bond_share_selector"
+        android:onClick="back$onclick"
+        android:visibility="gone"
+        android:text="@string/float_window_text_return"
+        android:textColor="@color/float_window_white"
+        android:textSize="19sp" />
+
+</LinearLayout>

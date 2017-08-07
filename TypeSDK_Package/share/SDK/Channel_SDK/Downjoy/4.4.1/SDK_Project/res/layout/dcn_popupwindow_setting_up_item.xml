@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.downjoy.android.volley.toolbox.NetworkImageView
+            android:id="@+id/dcn_pop_up_listview_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:src="@drawable/dcn_popupwindow_account" />
+
+        <TextView
+            android:id="@+id/dcn_pop_up_listview_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/pyw_common_title"
+        layout="@layout/pyw_common_title_bar" />
+
+    <com.pengyouwan.sdk.ui.widget.TipsLayout
+        android:id="@+id/pyw_layout_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pyw_layout_common_title"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/pyw_ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/pyw_dp_24"
+            android:background="@color/pyw_common_white"
+            android:paddingLeft="@dimen/pyw_dp_75"
+            android:paddingRight="@dimen/pyw_dp_75"
+            android:paddingTop="12dp" >
+
+            <TextView
+                android:id="@+id/pyw_tv_order_money_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:text="订单金额："
+                android:textColor="#999999"
+                android:textSize="@dimen/pyw_common_medium" />
+
+            <TextView
+                android:id="@+id/pyw_tv_order_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:textColor="#444444"
+                android:textSize="@dimen/pyw_common_medium" />
+
+            <TextView
+                android:id="@+id/pyw_tv_select_money_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/pyw_tv_order_money_t"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:text="已选金额："
+                android:textColor="#999999"
+                android:textSize="@dimen/pyw_common_medium" />
+
+            <TextView
+                android:id="@+id/pyw_tv_select_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/pyw_tv_order_money_t"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:textColor="#ff6666"
+                android:textSize="@dimen/pyw_common_medium" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pyw_list_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pyw_ll_head"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/pyw_dp_75"
+            android:paddingRight="@dimen/pyw_dp_75"
+            android:paddingTop="@dimen/pyw_dp_24"
+            android:text="请选择要使用的代金券"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <ListView
+            android:id="@+id/pyw_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pyw_list_head"
+            android:divider="@color/pyw_common_transparent"
+            android:listSelector="@color/pyw_common_transparent"
+            android:paddingBottom="58dp"
+            android:scrollbars="vertical"
+            android:scrollingCache="false" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/pyw_tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无可用代金券"
+            android:textSize="@dimen/pyw_common_medium"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pyw_common_background"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/pyw_tv_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pyw_common_btn_height"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/pyw_selector_btn_white_bg"
+                android:text="使用代金券"
+                android:textColor="#444444"
+                android:textSize="@dimen/pyw_common_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

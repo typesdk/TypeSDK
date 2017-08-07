@@ -1,0 +1,43 @@
+{
+  "actions":[
+    {
+      "name":"Login"
+      ,"method":"POST"
+      ,"in_params":
+      {
+        "token" : ""
+      }
+      ,"out_url" :"http://ucapi.411game.com/Api/checkToken"
+      ,"out_params" :
+      {
+        "token" : ""
+        ,"pid" : ""
+        ,"ip" : ""
+      }
+    }
+  ,{
+      "name":"Pay"
+      ,"method":"POST"
+      ,"in_params":
+      {
+        "orderId" : ""
+        ,"userName": ""
+        ,"amount": ""
+        ,"extra": ""
+        ,"flag" : ""
+      }
+    ,"out_url" :"http://ucapi.411game.com/Api/checkToken"
+    ,"out_params" :
+      {
+        "uid" : 0
+        ,"orderID": ""
+        ,"productName": ""
+        ,"productPrice": ""
+        ,"productDesc" : ""
+        ,"orderTime": ""
+        ,"tradeSign": ""
+        ,"tradeState": ""
+      }
+    }
+  ]
+}

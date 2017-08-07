@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 		android:layout_width="fill_parent"
+	android:background="@color/com_lenovo_lsf_pay_next_button"
+	android:layout_height="56dp">
+
+	<RelativeLayout
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent" 
+        	android:layout_gravity="center_vertical">
+
+		<ImageButton
+		    android:id="@+id/base_title_imb"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:contentDescription="@null"
+		    android:layout_marginLeft="0dp"
+		    android:scaleType="fitCenter"
+		    android:background="@drawable/com_lenovo_lsf_pay_vb_center_title_back_selector"/>
+		     
+		<TextView
+		    android:id="@+id/custom_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@+id/base_title_imb"
+		    android:gravity="center_vertical"
+		    android:singleLine="true"
+		    android:layout_centerVertical="true"
+		    android:textColor="#ffffff"
+		    android:textSize="22sp" />
+		     
+	</RelativeLayout>
+
+</LinearLayout>

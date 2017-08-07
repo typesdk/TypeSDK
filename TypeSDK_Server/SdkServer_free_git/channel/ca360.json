@@ -1,0 +1,57 @@
+{
+  "version":"V1.5.0.20161205",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "access_token" : ""
+    }
+    ,"out_url" :"https://openapi.360.cn/user/me.json"
+    ,"out_params" :
+    {
+      "access_token" : ""
+      ,"fields" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "app_key": ""
+      ,"product_id": ""
+      ,"amount": ""
+      ,"app_uid" : ""
+      ,"app_ext1": ""
+      ,"app_ext2": ""
+      ,"user_id": ""
+      ,"order_id": ""
+      ,"gateway_flag": ""
+      ,"sign_type": ""
+      ,"app_order_id": ""
+      ,"sign_return": ""
+      ,"sign": ""
+      }
+    ,"out_url" :"https://openapi.360.cn/user/me.json"
+    ,"out_params" :
+      {
+        "app_key": ""
+      ,"product_id": ""
+      ,"amount": ""
+      ,"app_uid" : ""
+      ,"app_ext1": ""
+      ,"app_ext2": ""
+      ,"user_id": ""
+      ,"order_id": ""
+      ,"gateway_flag": ""
+      ,"sign_type": ""
+      ,"app_order_id": ""
+      ,"sign_return": ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

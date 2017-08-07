@@ -1,0 +1,51 @@
+{
+  "actions":[
+    {
+      "name":"Login"
+      ,"method":"POST"
+      ,"in_params":
+      {
+        "username" : ""
+        ,"sid" : ""
+        ,"time" : ""
+      }
+      ,"out_url" : "http://sdk.pipaw.com/appuser/Checksid"
+      ,"out_params" :
+      {
+        "username" : ""
+        ,"appId" : ""
+        ,"merchantId" : ""
+        ,"merchantAppId" : ""
+        ,"sid" : ""
+        ,"time" : ""
+      }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "order" : 0
+        ,"pipaworder": ""
+        ,"subject": ""
+        ,"extraParam": ""
+        ,"amount" : ""
+        ,"player_id": ""
+        ,"sign": ""
+        ,"version": ""
+      }
+    ,"out_url" :"http://sdk.pipaw.com/appuser/Checksid"
+    ,"out_params" :
+      {
+        "order" : 0
+        ,"pipaworder": ""
+        ,"subject": ""
+        ,"extraParam": ""
+        ,"amount" : ""
+        ,"player_id": ""
+        ,"sign": ""
+        ,"version": ""
+      }
+    }
+  ]
+}

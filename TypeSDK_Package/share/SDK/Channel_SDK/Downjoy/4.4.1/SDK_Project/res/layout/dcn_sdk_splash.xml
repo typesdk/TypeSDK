@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dcn_white">
+
+    <ImageView
+        android:id="@+id/dcn_init_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/dcn_sdk_splash" />
+
+
+    <LinearLayout
+        android:id="@+id/dcn_splash_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/dcn_splash_img_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="12dp"
+            android:src="@drawable/dcn_sdk_loading01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:text="@string/dcn_init_msg"
+            android:textColor="#ccc"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/dcn_version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:text="sdkVer. 4.3.0"
+            android:textColor="#ccc"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/dcn_sdk_splash_fail"
+        layout="@layout/dcn_sdk_splash_fail"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/dcn_sdk_splash_reserve_fail"
+        layout="@layout/dcn_sdk_splash_reserve_fail"
+        android:visibility="gone" />
+
+</RelativeLayout>

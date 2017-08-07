@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/pay_bg_alert_dialog"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_page_select_dialog_1"
+                android:textColor="#242424"
+                android:textSize="14sp"
+                android:gravity="center_vertical"/>
+
+        <EditText
+                android:id="@+id/page_num"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="#242424"
+                android:textSize="14sp"
+                android:hint="@string/pay_page_select_dialog_3"
+                android:background="@drawable/pay_record_background"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="@string/pay_page_select_dialog_2"
+                android:textColor="#242424"
+                android:textSize="14sp"
+                android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="@string/pay_page_select_dialog_cancel"
+                android:textColor="#242424"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:background="@drawable/pay_button_white_selector"/>
+
+        <TextView
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="@string/pay_page_select_dialog_confirm"
+                android:textColor="@color/pay_white"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:background="@drawable/pay_button_red_background"/>
+    </LinearLayout>
+</LinearLayout>

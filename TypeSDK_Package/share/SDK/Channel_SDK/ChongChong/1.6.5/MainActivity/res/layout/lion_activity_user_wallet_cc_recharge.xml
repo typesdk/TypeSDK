@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_activity_user_wallet_cc_recharge_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lion_common_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lion_text_recharge_account_notices" />
+
+        <TextView
+            android:id="@+id/lion_activity_account_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7.5dip"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/lion_activity_account_change_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lion_common_red_round_selector"
+            android:padding="5dp"
+            android:text="@string/lion_text_recharge_account_change"
+            android:textColor="@color/lion_common_text_red_2_white_selector" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20.0dip"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingTop="20.0dip" >
+
+                <com.lion.ccpay.widget.custom.UserWalletRechargeContentLayout
+                    android:id="@+id/lion_activity_user_wallet_cc_recharge_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/lion_activity_user_wallet_cc_recharge_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:text="@string/lion_text_user_wallet_cc_recharge_notice" />
+
+                    <com.lion.ccpay.widget.custom.UserWalletRechargeItemLayout
+                        android:id="@+id/lion_activity_user_wallet_cc_recharge_gridlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20.0dip" />
+                </com.lion.ccpay.widget.custom.UserWalletRechargeContentLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lion_common_frame_top_nor" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55.0dip"
+                    android:background="@drawable/lion_common_frame_bottom_nor"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip" >
+
+                    <TextView
+                        android:id="@+id/lion_activity_user_wallet_cc_recharge_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/lion_common_black"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/lion_activity_user_wallet_cc_recharge_btn"
+                        style="@style/lion_text_red_button"
+                        android:layout_width="80.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/lion_text_user_wallet_cc_recharge_immediately" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lion_activity_user_wallet_cc_recharge_activity_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="15.0dip"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/lion_activity_user_wallet_cc_recharge_activity_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40.0dip"
+                    android:gravity="center|left"
+                    android:textColor="@color/lion_common_black"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/lion_activity_user_wallet_cc_recharge_activity_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="7.5dip"
+                    android:textColor="@color/lion_common_text_gray"
+                    android:textSize="13.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

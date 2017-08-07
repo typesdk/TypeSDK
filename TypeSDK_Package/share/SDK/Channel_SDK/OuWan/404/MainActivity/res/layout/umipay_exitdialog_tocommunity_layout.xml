@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "@dimen/umipay_exit_diglog_width"
+              android:layout_height = "wrap_content"
+              android:background = "@drawable/umipay_background_stroke"
+              android:padding="@dimen/umipay_exit_diglog_padding" >
+	<include
+			android:id = "@+id/umipay_exit_title"
+			layout = "@layout/umipay_ouwan_title"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"/>
+
+	<ImageButton
+			android:id = "@+id/umipay_exit_cancel_btn"
+			android:layout_width = "@dimen/umipay_exit_diglog_padding"
+			android:layout_height = "@dimen/umipay_exit_diglog_padding"
+			android:layout_gravity="right"
+			android:layout_marginTop="13dp"
+			android:layout_alignTop="@+id/umipay_exit_title"
+			android:layout_alignParentRight="true"
+			android:background = "@drawable/umipay_exitdialog_btn_close" />
+
+	<Button
+			android:id = "@+id/umipay_exit_btn"
+			android:layout_width = "match_parent"
+			android:layout_height = "40dp"
+			android:layout_gravity = "center"
+			android:layout_marginTop="@dimen/umipay_exit_diglog_padding"
+			android:layout_below="@+id/umipay_exit_title"
+			android:layout_alignParentLeft="true"
+			android:background = "@drawable/umipay_exitdialog_button_stroke"
+			android:text = "@string/umipay_exitdialog_exit"
+			android:textColor = "@drawable/umipay_exitdialog_btn_exit_text"
+			android:textSize = "17dp" />
+
+	<Button
+			android:id = "@+id/umipay_exit_tocommunity_btn"
+			android:layout_width = "match_parent"
+			android:layout_height = "40dp"
+			android:layout_gravity = "center"
+			android:layout_marginTop="@dimen/umipay_exit_diglog_padding"
+			android:layout_alignParentLeft="true"
+			android:layout_below="@+id/umipay_exit_btn"
+			android:background = "@drawable/umipay_btn_yellow"
+			android:text = "@string/umipay_exitdialog_exit_tocommunity"
+			android:textColor = "#ffffff"
+			android:textSize = "17dp" />
+</RelativeLayout >

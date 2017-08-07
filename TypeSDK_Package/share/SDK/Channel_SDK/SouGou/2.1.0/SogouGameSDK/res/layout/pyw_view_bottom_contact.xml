@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pyw_layout_contact"
+    android:layout_width="250dp"
+    android:layout_height="@dimen/pyw_common_editext_height"
+    android:background="@drawable/pyw_img_service_bg"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp" >
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/pyw_img_service_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="@string/pyw_service_phone"
+        android:textColor="@color/pyw_common_gray_light"
+        android:textSize="@dimen/pyw_common_large" />
+
+</LinearLayout>

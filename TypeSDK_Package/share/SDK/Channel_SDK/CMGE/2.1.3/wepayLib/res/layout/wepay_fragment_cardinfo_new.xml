@@ -1,0 +1,352 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wepay_kuang_bg"
+        android:orientation="vertical" >
+
+        <!-- title bar -->
+
+        <com.wangyin.wepay.widget.CPActionBar
+            android:id="@+id/bar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 银行 -->
+
+        <RelativeLayout
+            android:id="@+id/layout_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wepay_space_xxxxlarge" >
+
+            <com.wangyin.wepay.widget.image.CPImageView
+                android:id="@+id/img_bank_logo"
+                android:layout_width="@dimen/wepay_image_small"
+                android:layout_height="@dimen/wepay_image_small"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/wepay_space_xlarge"
+                android:scaleType="fitXY"
+                android:src="@drawable/wepay_bank" />
+
+            <TextView
+                android:id="@+id/txt_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/wepay_space_xxlarge"
+                android:layout_toRightOf="@id/img_bank_logo"
+                android:textColor="@color/wepay_txt_main"
+                android:textSize="@dimen/wepay_txt_large" />
+
+            <TextView
+                android:id="@+id/txt_bankcard_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/wepay_space_large"
+                android:layout_toRightOf="@id/txt_bank"
+                android:textColor="@color/wepay_txt_main"
+                android:textSize="@dimen/wepay_txt_large" />
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/wepay_space_xlarge"
+                android:src="@drawable/wepay_ic_downarrow" />
+        </RelativeLayout>
+
+        <!-- 选择所属银行 picker -->
+
+        <com.wangyin.wepay.widget.picker.BankCardPicker
+            android:id="@+id/layout_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wepay_space_small"
+            android:layout_marginBottom="@dimen/wepay_space_middle" >
+        </com.wangyin.wepay.widget.picker.BankCardPicker>
+
+        <LinearLayout
+            android:id="@+id/layout_holder_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <!-- CVV 有效期 -->
+
+            <LinearLayout
+                android:id="@+id/layout_valid_cvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View
+                    style="@style/wepay_divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/wepay_space_large"
+                    android:layout_marginRight="@dimen/wepay_space_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/wepay_space_xlarge"
+                    android:layout_marginRight="@dimen/wepay_space_large"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_valid"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wepay_space_xxxxlarge"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="3"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_valid_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/wepay_valid_title"
+                            android:textColor="@color/wepay_txt_main"
+                            android:textSize="@dimen/wepay_txt_middle" />
+
+                        <com.wangyin.wepay.widget.input.CPValidInput
+                            android:id="@+id/input_valid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/wepay_space_large"
+                            android:background="@null"
+                            android:hint="@string/wepay_hint_valid"
+                            android:textCursorDrawable="@drawable/wepay_cursor_blue"
+                            android:textColor="@color/wepay_txt_main"
+                            android:textColorHint="@color/wepay_txt_hint"
+                            android:textSize="@dimen/wepay_txt_large" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_cvv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wepay_space_xxxxlarge"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_cvv2_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/wepay_cvv_title"
+                            android:textColor="@color/wepay_txt_main"
+                            android:textSize="@dimen/wepay_txt_middle" />
+
+                        <com.wangyin.wepay.widget.input.CPCVVInput
+                            android:id="@+id/input_cvv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/wepay_space_large"
+                            android:background="@null"
+                            android:hint="@string/wepay_hint_cvv"
+                            android:textCursorDrawable="@drawable/wepay_cursor_blue"
+                            android:textColor="@color/wepay_txt_main"
+                            android:textColorHint="@color/wepay_txt_hint"
+                            android:textSize="@dimen/wepay_txt_large" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 持卡人姓名 -->
+
+            <LinearLayout
+                android:id="@+id/layout_card_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wepay_space_xxxxlarge"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <requestFocus />
+
+                <View
+                    style="@style/wepay_divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/wepay_space_large"
+                    android:layout_marginRight="@dimen/wepay_space_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_card_holder_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/wepay_space_xxxxlarge"
+                        android:layout_marginLeft="@dimen/wepay_space_xlarge"
+                        android:gravity="center_vertical"
+                        android:text="@string/wepay_name_title"
+                        android:textColor="@color/wepay_txt_main"
+                        android:textSize="@dimen/wepay_txt_middle" />
+
+                    <com.wangyin.wepay.widget.input.CPEditText
+                        android:id="@+id/input_card_holder_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wepay_space_xxxxlarge"
+                        android:layout_marginLeft="@dimen/wepay_space_large"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/wepay_txt_main"
+                        android:textColorHint="@color/wepay_txt_hint"
+                        android:textSize="@dimen/wepay_txt_large"
+                        android:hint="@string/wepay_hint_name"
+                        android:textCursorDrawable="@drawable/wepay_cursor_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 身份证号 -->
+
+            <LinearLayout
+                android:id="@+id/layout_id_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wepay_space_xxxxlarge"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <View
+                    style="@style/wepay_divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/wepay_space_large"
+                    android:layout_marginRight="@dimen/wepay_space_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_id_card_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/wepay_space_xxxxlarge"
+                        android:layout_marginLeft="@dimen/wepay_space_xlarge"
+                        android:gravity="center_vertical"
+                        android:text="@string/wepay_idcard_title"
+                        android:textColor="@color/wepay_txt_main"
+                        android:textSize="@dimen/wepay_txt_middle" />
+
+                    <com.wangyin.wepay.widget.input.CPIdcardInput
+                        android:id="@+id/input_id_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wepay_space_xxxxlarge"
+                        android:layout_marginLeft="@dimen/wepay_space_large"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/wepay_txt_main"
+                        android:textColorHint="@color/wepay_txt_hint"
+                        android:textSize="@dimen/wepay_txt_large"
+                        android:hint="@string/wepay_hint_idcard"
+                        android:textCursorDrawable="@drawable/wepay_cursor_blue" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 手机号 -->
+
+            <LinearLayout
+                android:id="@+id/layout_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wepay_space_xxxxlarge"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <View
+                    style="@style/wepay_divider_line"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/wepay_space_large"
+                    android:layout_marginRight="@dimen/wepay_space_large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_mobile_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/wepay_space_xxxxlarge"
+                        android:layout_marginLeft="@dimen/wepay_space_xlarge"
+                        android:gravity="center_vertical"
+                        android:text="@string/wepay_mobile_number_title"
+                        android:textColor="@color/wepay_txt_main"
+                        android:textSize="@dimen/wepay_txt_middle" />
+
+                    <com.wangyin.wepay.widget.input.CPMobileInput
+                        android:id="@+id/input_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wepay_space_xxxxlarge"
+                        android:layout_marginLeft="@dimen/wepay_space_large"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/wepay_txt_main"
+                        android:textColorHint="@color/wepay_txt_hint"
+                        android:textSize="@dimen/wepay_txt_large"
+                        android:hint="@string/wepay_hint_mobile"
+                        android:textCursorDrawable="@drawable/wepay_cursor_blue" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/wepay_divider_line"
+                android:layout_width="match_parent" />
+
+            <!-- 框支付协议 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_agreement"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wepay_space_xxxxlarge"
+                android:background="@drawable/wepay_kuang_bottom_bar_bg"
+                android:gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_agreement_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/wepay_content_before_agreement"
+                    android:textColor="@color/wepay_txt_second" />
+
+                <TextView
+                    android:id="@+id/txt_agreement_wangyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/txt_agreement_title"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_toRightOf="@id/txt_agreement_title"
+                    android:gravity="center"
+                    android:text="@string/wepay_content_agreement"
+                    android:textColor="@color/wepay_common_link_bg" />
+
+                <TextView
+                    android:id="@+id/txt_agreement_bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/txt_agreement_title"
+                    android:layout_toRightOf="@id/txt_agreement_wangyin"
+                    android:gravity="center"
+                    android:textColor="@color/wepay_common_link_bg"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

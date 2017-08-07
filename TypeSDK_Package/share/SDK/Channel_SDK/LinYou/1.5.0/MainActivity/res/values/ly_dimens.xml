@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--后缀带有land的为横屏的尺寸 -->
+    
+    <dimen name="ly_common_border_padding">30dp</dimen>
+    <dimen name="ly_common_border_padding_land">24dp</dimen>
+    <dimen name="ly_common_edittext_height">40dp</dimen>
+    <dimen name="ly_common_edittext_width">300dp</dimen>
+    <dimen name="ly_common_edittext_clear_size">32dp</dimen>
+    <dimen name="ly_common_large_btn_height">40dp</dimen>
+    <dimen name="ly_common_small_btn_height">32dp</dimen>
+    <dimen name="ly_common_title_height">48dp</dimen>
+    <dimen name="ly_common_info_edittext_height">42dp</dimen>
+    <dimen name="ly_fragment_pay_title_size">20dp</dimen>
+</resources>

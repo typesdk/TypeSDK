@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.1"
+        android:paddingLeft="16dp"
+        android:text="@string/anfan_unbind_hint_2"
+        android:textColor="#333333" />
+
+    <View
+        android:id="@+id/line_one"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/anfan_ico_mail"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="请输入邮箱地址"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:paddingLeft="30dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#CCCCCC"
+        android:textCursorDrawable="@null" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="30dp"
+        android:background="#cccccc" />
+
+    <include layout="@layout/anfan_edit_code" />
+
+    <include layout="@layout/anfan_line_margin" 
+        android:id="@+id/line_two"
+        />
+
+    <com.anfeng.pay.view.ClearEditText
+        android:id="@+id/et_user"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:digits="@string/anfan_input_digits"
+        android:drawableLeft="@drawable/anfan_ico_user"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="请输入新用户名"
+        android:maxLength="50"
+        android:paddingLeft="30dp"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="#CCCCCC"
+        android:textCursorDrawable="@null" />
+
+    <View
+        
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/anfan_bound_phone_boundbtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/anfan_button_bg_blue"
+        android:text="确认"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

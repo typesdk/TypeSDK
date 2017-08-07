@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include
+            android:id="@+id/netload"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/sy37_netload" 
+            android:paddingBottom="5dip"/>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:divider="@drawable/sy37_icon_list_diver"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollbars="none" 
+            android:paddingBottom="5dip"/>
+
+        <ImageView
+            android:id="@+id/guide"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:src="@drawable/sy37_bg_kefu_guide" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sogou_game_sdk_main_background_color"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/sogou_game_sdk_head_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sogou_game_sdk_head_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_back_img_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableLeft="@drawable/sogou_game_sdk_pay_head_back"
+            android:paddingBottom="11dip"
+            android:paddingLeft="23dip"
+            android:paddingRight="23dip"
+            android:paddingTop="11dip"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/sogou_game_sdk_back_img_button"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_logo_text"
+                style="@style/sogou_game_sdk_head_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/sogou_game_sdk_head_title"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/sogou_game_sdk_head_rl">
+
+        <FrameLayout
+            android:id="@+id/sogou_game_sdk_pay_myframe"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="84dp"
+            android:background="@color/sogou_game_sdk_white"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/sogou_game_sdk_pay_view_loading"
+                style="?android:attr/progressBarStyleInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/passport_activity_base_loading"
+                android:indeterminateOnly="true"/>
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/sogou_game_sdk_pay_left_side"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_pay_left_side_1"
+                    style="@style/sogou_game_sdk_pay_left_side_font_d"
+                    android:layout_width="84dp"
+                    android:layout_height="39dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="leftNavigationBar"
+                    android:tag="sogou_game_sdk_pay_left_side_1"
+                    android:text="@string/sogou_game_sdk_pay_alipay"/>
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_pay_left_side_10"
+                    style="@style/sogou_game_sdk_pay_left_side_font_d"
+                    android:layout_width="84dp"
+                    android:layout_height="39dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="leftNavigationBar"
+                    android:tag="sogou_game_sdk_pay_left_side_10"
+                    android:text="@string/sogou_game_sdk_pay_wxpay"/>
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_pay_left_side_2"
+                    style="@style/sogou_game_sdk_pay_left_side_font_d"
+                    android:layout_width="84dp"
+                    android:layout_height="39dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="leftNavigationBar"
+                    android:tag="sogou_game_sdk_pay_left_side_2"
+                    android:text="@string/sogou_game_sdk_pay_union"/>
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_pay_left_side_5"
+                    style="@style/sogou_game_sdk_pay_left_side_font_d"
+                    android:layout_width="84dp"
+                    android:layout_height="39dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="leftNavigationBar"
+                    android:tag="sogou_game_sdk_pay_left_side_5"
+                    android:text="@string/sogou_game_sdk_pay_scoin"/>
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_pay_left_side_6"
+                    style="@style/sogou_game_sdk_pay_left_side_font_d"
+                    android:layout_width="84dp"
+                    android:layout_height="39dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="leftNavigationBar"
+                    android:tag="sogou_game_sdk_pay_left_side_6"
+                    android:text="@string/sogou_game_sdk_pay_voucher"
+                    android:visibility="gone"/>
+
+                <FrameLayout
+                    android:id="@+id/sogou_game_sdk_pay_left_side_fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/sogou_game_sdk_pay_left_side_9"
+                        style="@style/sogou_game_sdk_pay_left_side_font_d"
+                        android:layout_width="84dp"
+                        android:layout_height="39dp"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:onClick="leftNavigationBar"
+                        android:tag="sogou_game_sdk_pay_left_side_9"
+                        android:text="@string/sogou_game_sdk_pay_redpkg"/>
+
+                    <TextView
+                        android:id="@+id/sogou_game_sdk_pay_info_tips_tv"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/sogou_game_sdk_pay_info_tips"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_pay_left_side_8"
+                    style="@style/sogou_game_sdk_pay_left_side_font_d"
+                    android:layout_width="84dp"
+                    android:layout_height="39dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="leftNavigationBar"
+                    android:tag="sogou_game_sdk_pay_left_side_8"
+                    android:text="@string/sogou_game_sdk_pay_record"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

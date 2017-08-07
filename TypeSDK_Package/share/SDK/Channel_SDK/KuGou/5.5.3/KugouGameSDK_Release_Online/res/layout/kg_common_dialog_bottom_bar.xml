@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/kg_common_dialog_btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@drawable/kg_selector_bottom_left_filleted_corner_retangle"
+        android:shadowColor="#ff000fff"
+        android:textColor="@color/kg_common_gray_lighter"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/kg_dialog_btn_diver"
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:background="@color/kg_common_gray_normal" />
+
+    <Button
+        android:id="@+id/kg_common_dialog_btn_ok"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:background="@drawable/kg_selector_bottom_right_filleted_corner_retangle"
+        android:shadowColor="#ff000fff"
+        android:textColor="@color/kg_common_blue"
+        android:textSize="16dp" />
+
+</LinearLayout>

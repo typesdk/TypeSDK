@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/dp52"
+        >
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/dp530"
+                  android:orientation="vertical"
+                  android:gravity="center"
+            >
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:src="@drawable/papalogin_fail_icon"
+                />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="你的手机上还没有登录过啪啪账号"
+                  android:textColor="@color/white"
+                  android:layout_marginTop="@dimen/dp75"
+                />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp67"
+            android:layout_marginTop="@dimen/dp57"
+            android:id="@+id/zz"
+            >
+
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_weight="1"
+                >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:text="其他方式找回："
+                android:singleLine="true"
+                android:textColor="@color/grey_2"
+                android:ellipsize="none"
+                android:textSize="@dimen/sp40"
+                />
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp22"
+                android:background="@drawable/login_imei_butn_selector"
+                android:id="@+id/imei"
+                />
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp22"
+                android:background="@drawable/login_his_butn_selector"
+                android:id="@+id/his"
+                />
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="返回登录"
+                  android:textColor="#3a85e2"
+                  android:textSize="@dimen/sp40"
+                />
+
+
+
+
+    </LinearLayout>
+
+  <!--  <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/dp27"
+            android:gravity="center"
+            >
+
+        <ImageView
+                android:layout_width="@dimen/dp82"
+                android:layout_height="@dimen/dp82"
+                android:id="@+id/phone"
+                android:src="@drawable/phoneicon"
+                android:layout_marginRight="@dimen/dp25"
+                />
+
+        <ImageView
+                android:layout_width="@dimen/dp82"
+                android:layout_height="@dimen/dp82"
+                android:id="@+id/weichart"
+                android:src="@drawable/wecharicon"
+                android:layout_marginLeft="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp25"
+                />
+
+        <ImageView
+                android:layout_width="@dimen/dp82"
+                android:layout_height="@dimen/dp82"
+                android:id="@+id/qq"
+                android:src="@drawable/qqicon"
+                android:layout_marginLeft="@dimen/dp25"
+                android:layout_marginRight="@dimen/dp25"
+                />
+
+        <ImageView
+                android:layout_width="@dimen/dp82"
+                android:layout_height="@dimen/dp82"
+                android:id="@+id/weibo"
+                android:src="@drawable/weiboicon"
+                android:layout_marginLeft="@dimen/dp25"
+                />
+
+    </LinearLayout>-->
+</LinearLayout>

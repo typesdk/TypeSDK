@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zy_pay_dialog_width">261.3dp</dimen>
+    <dimen name="zy_pay_dialog_height">188dp</dimen>
+    <dimen name="zy_pay_dialog_title_height">44dp</dimen>
+    <dimen name="zy_pay_dialog_title_textsize">18.7sp</dimen>
+    <dimen name="zy_pay_dialog_cancel_width">12dp</dimen>
+    <dimen name="zy_pay_dialog_cancel_height">12dp</dimen>
+    <dimen name="zy_pay_dialog_cancel_margintop">17.3dp</dimen>
+    <dimen name="zy_pay_dialog_cancel_marginright">13.3dp</dimen>
+    <dimen name="zy_pay_dialog_content_width">224dp</dimen>
+    <dimen name="zy_pay_dialog_content_height">73.3dp</dimen>
+    <dimen name="zy_pay_dialog_content_margintop">13.3dp</dimen>
+    <dimen name="zy_pay_dialog_content_marginleft">32dp</dimen>
+    <dimen name="zy_pay_dialog_content_textSize">13.3sp</dimen>
+    <dimen name="zy_pay_dialog_content_good_height">24.7dp</dimen>
+    <dimen name="zy_pay_dialog_content_balance_height">24dp</dimen>
+    <dimen name="zy_pay_dialog_content_amount_unit_marginright">32dp</dimen>
+    <dimen name="zy_pay_dialog_content_amount_marginright">8dp</dimen>
+    <dimen name="zy_pay_dialog_imagebtn_height">29.3dp</dimen>
+    <dimen name="zy_pay_dialog_imagebtn">14.7sp</dimen>
+    <dimen name="zy_pay_continue_game_height">170.7dp</dimen>
+    <dimen name="zy_pay_continue_game_margintop">12dp</dimen>
+    <dimen name="zy_pay_continue_game_image_size">34.7dp</dimen>
+    <dimen name="zy_pay_continue_game_content_text_margintop">8dp</dimen>
+    <dimen name="zy_pay_continue_game_content_textsize">13.3sp</dimen>
+    <dimen name="zy_pay_continue_game_imagebtn_margintop">16dp</dimen>
+    
+    <dimen name="zy_float_image_width">45.3dp</dimen>
+	<dimen name="zy_float_image_height">45.3dp</dimen>
+	<dimen name="zy_float_content_height">33.3dp</dimen>
+	<dimen name="zy_float_content_marginleft">13dp</dimen>
+	<dimen name="zy_text_margin_image">2.7dp</dimen>
+	<dimen name="zy_float_content_textsize">12dp</dimen>
+	<dimen name="zy_float_line_width">1.3dp</dimen>
+	<dimen name="zy_float_line_height">14.7dp</dimen>
+	<dimen name="zy_float_line_margin">9.3dp</dimen>
+	<dimen name="zy_float_content_parent_marginleft">23dp</dimen>
+	<dimen name="zy_float_content_parent_marginright">-23dp</dimen>
+	<dimen name="zy_float_wel_layout_height">20dp</dimen>
+	<dimen name="zy_float_wel_icon_width">14.7dp</dimen>
+	<dimen name="zy_float_wel_icon_height">14.7dp</dimen>
+	<dimen name="zy_float_wel_icon_marginleft">12dp</dimen>
+	<dimen name="zy_float_wel_text_marginleft">4dp</dimen>
+	<dimen name="zy_float_wel_text_size">10.7sp</dimen>
+
+</resources>

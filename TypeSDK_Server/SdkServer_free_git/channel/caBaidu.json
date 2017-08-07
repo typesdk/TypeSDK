@@ -1,0 +1,61 @@
+{
+    "version":"3.7.1.20160701",
+    "actions":[
+        {
+            "name":"Login"
+            ,"method":"POST"
+            ,"in_params":
+            {
+                "AccessToken" : ""
+            }
+            ,"out_url" :"http://querysdkapi.baidu.com/query/cploginstatequery?"
+            ,"out_params" :
+            {
+                "AppID" : 0
+                ,"AccessToken" : ""
+                ,"Sign" : ""
+            }
+        }
+        ,{
+            "name":"Pay"
+            ,"method":"POST"
+            ,"in_params":
+            {
+                "AppID" : 0
+                ,"OrderSerial" : ""
+                ,"CooperatorOrderSerial" : ""
+                ,"Sign" : ""
+                ,"Content" :
+                {
+                    "UID": 0
+                    ,"MerchandiseName": ""
+                    ,"OrderMoney": 0
+                    ,"StartDateTime" : ""
+                    ,"BankDateTime": ""
+                    ,"OrderStatus": 0
+                    ,"StatusMsg": ""
+                    ,"ExtInfo": ""
+                }
+            }
+            ,"out_url" :"http://querysdkapi.baidu.com/query/cploginstatequery?"
+            ,"out_params" :
+            {
+                "AppID" : 0
+                ,"OrderSerial" : ""
+                ,"CooperatorOrderSerial" : ""
+                ,"Sign" : ""
+                ,"Content" :
+                {
+                    "UID": 0
+                    ,"MerchandiseName": ""
+                    ,"OrderMoney": 0
+                    ,"StartDateTime" : ""
+                    ,"BankDateTime": ""
+                    ,"OrderStatus": 0
+                    ,"StatusMsg": ""
+                    ,"ExtInfo": ""
+                }
+            }
+        }
+    ]
+}

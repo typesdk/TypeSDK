@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/jolopay_global_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/jolopay_title" />
+	<include layout="@layout/jolopay_goods" />
+	<include layout="@layout/jolopay_recharge_input" />
+    
+    <com.jolo.jolopay.widget.NonScrollView
+        android:id="@+id/jolopay_info_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" >
+    </com.jolo.jolopay.widget.NonScrollView>
+
+    <Button
+        android:id="@+id/jolopay_pay_submit_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/jolopay_btn_green"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/jolopay_input_recharge"
+        android:textColor="@color/jolopay_white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/jolopay_pay_ads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/m4399_rec_foot_height"
+    android:background="@drawable/m4399_rec_mvcenter_foot_bg"
+    android:gravity="center_vertical" 
+    android:paddingLeft="@dimen/m4399_rec_paddingLeft"
+    android:paddingRight="@dimen/m4399_rec_paddingRight" >
+
+    <ImageView
+        android:id="@+id/sdk_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/m4399_rec_sdk_help" />
+
+    <TextView
+        android:id="@+id/sdk_help_message"
+        style="@style/m4399RecFooterTextStyle"/>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+        <TextView
+            android:id="@+id/sdk_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/m4399_rec_link_text_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/m4399_rec_hotline_4399"
+            android:textColor="#32beff"
+            android:textSize="@dimen/m4399_rec_foot_text_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sdk_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#32beff"
+        android:textSize="@dimen/m4399_rec_foot_text_size"
+        android:background="@drawable/m4399_rec_link_text_bg" />
+
+</LinearLayout>

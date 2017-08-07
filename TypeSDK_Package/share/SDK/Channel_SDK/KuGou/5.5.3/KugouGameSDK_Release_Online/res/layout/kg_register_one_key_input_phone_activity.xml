@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/kg_common_title_bar" />
+
+    <ScrollView
+        android:id="@+id/kg_layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/kg_layout_user_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/kg_common_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/kg_layout_register_get_phone_num_fail"
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp" >
+
+                    <LinearLayout
+                        android:id="@+id/kg_rl_phone_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/kg_et_register_input_phone_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/kg_btn_height"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/kg_modify_psw_bg"
+                            android:digits="@string/kg_nums"
+                            android:gravity="center_vertical"
+                            android:hint="@string/kg_phone_register_rule"
+                            android:imeActionLabel="@string/kg_ime_option_done"
+                            android:imeOptions="actionDone"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:paddingLeft="12dp"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/kg_common_hint_color"
+                            android:textSize="16sp" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/kg_btn_request_validate_code"
+                            android:layout_width="180dp"
+                            android:layout_height="@dimen/kg_btn_height"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/kg_selector_get_validate_code_btn"
+                            android:gravity="center"
+                            android:textColor="@color/kg_common_gray_lighter"
+                            android:text="@string/kg_click_request_validate_code" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/kg_register_account_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kg_rl_phone_num"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="1dp"
+                        android:text="@string/kg_phone_num_error"
+                        android:textColor="@color/kg_common_red"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp" >
+
+                    <EditText
+                        android:id="@+id/kg_et_register_input_validate_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/kg_btn_height"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/kg_sp_bg"
+                        android:digits="@string/kg_nums"
+                        android:hint="@string/kg_phone_register_validate_code_rule"
+                        android:inputType="phone"
+                        android:maxLength="6"
+                        android:paddingLeft="12dp"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@color/kg_common_hint_color"
+                        android:textSize="16sp" >
+                    </EditText>
+
+                    <TextView
+                        android:id="@+id/kg_tv_register_phone_error_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kg_et_register_input_validate_code"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/kg_phone_num_error"
+                        android:textColor="@color/kg_common_red"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/kg_btn_register_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/kg_selector_btn_blue"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_register_submit"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical" >
+
+                    <CheckBox
+                        android:id="@+id/kg_cb_register_agree_protocol"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/kg_checkbox_selector"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/kg_tv_register_by_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="@string/kg_register_by_account"
+                        android:textColor="@color/kg_common_orange"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kg_tv_register_agree_protocol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/kg_cb_register_agree_protocol"
+                        android:gravity="center_vertical"
+                        android:text="@string/kg_kugou_register_rule"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/kg_common_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

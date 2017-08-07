@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><!--  个人中心 导航栏 by.zhengxu  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/m4399_ope_usercenter_nav_bar_bg">
+
+    <LinearLayout
+        android:id="@+id/navigation_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/m4399_ope_coupon_padding"
+        android:paddingRight="@dimen/m4399_ope_coupon_padding">
+
+        <ImageView
+            android:id="@+id/navigation_back"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/m4399_ope_nav_back" />
+
+        <TextView
+            android:id="@+id/navigation_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="@string/m4399_ope_usercenter_coupon_center"
+            android:textColor="@color/m4399_ope_usercenter_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/coupon_update"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/m4399_ope_coupon_padding"
+        android:paddingRight="@dimen/m4399_ope_coupon_padding"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <ImageView
+            android:id="@+id/coupon_update_img"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/m4399_ope_coupon_update"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

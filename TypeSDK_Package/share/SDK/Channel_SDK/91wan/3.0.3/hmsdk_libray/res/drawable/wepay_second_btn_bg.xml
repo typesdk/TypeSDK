@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 点击状态下的效果 -->
+    <item android:state_enabled="true" android:state_pressed="true"><shape android:shape="rectangle">
+            <corners android:radius="4.0dip" />
+
+            <solid android:color="@color/wepay_bg_repeat_button_pressed" />
+
+            <stroke android:width="1dip" android:color="@color/wepay_txt_blue" />
+        </shape></item>
+    <!-- 正常状态下(非点击)的效果 -->
+    <item android:state_enabled="true" android:state_pressed="false"><shape android:shape="rectangle">
+            <corners android:radius="4.0dip" />
+
+            <solid android:color="@android:color/transparent" />
+
+            <stroke android:width="1dip" android:color="@color/wepay_txt_blue" />
+        </shape></item>
+    <!-- 不可用 -->
+    <item android:state_enabled="false" ><shape android:shape="rectangle">
+            <corners android:radius="4.0dip" />
+
+            <solid android:color="@android:color/transparent" />
+
+            <stroke android:width="1dip" android:color="@color/wepay_bg_repeat_button_unenable" />
+        </shape></item>
+
+</selector>

@@ -1,0 +1,9 @@
+test
+apps
+doc
+pres
+*.log
+*.pid
+examples
+*.pyc
+*.md

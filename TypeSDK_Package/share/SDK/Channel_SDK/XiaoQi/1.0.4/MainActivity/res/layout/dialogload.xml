@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/loading_shape" >
+
+    <ImageView
+        android:id="@+id/iv_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"      
+        android:layout_gravity="center"                     
+        />
+
+    <TextView
+        android:id="@+id/tips_loading_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="上传中..."
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:layout_marginTop="10dip" />
+
+</LinearLayout>

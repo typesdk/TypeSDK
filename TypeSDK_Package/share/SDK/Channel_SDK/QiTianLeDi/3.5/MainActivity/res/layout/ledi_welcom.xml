@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#80000000"
+    android:orientation="horizontal"
+    android:layout_gravity="center" 
+    android:layout_margin="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ledi_logo"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/ledi_welcomeaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:text="@string/ledi_Testaccount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="@string/ledi_welcome"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

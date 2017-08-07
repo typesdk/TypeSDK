@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+		android:id = "@+id/umipay_main_content_layout"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent" >
+
+	<ViewStub
+			android:id = "@+id/umipay_bindoauth_account_psw_vb"
+			android:inflatedId = "@+id/umipay_input_box_layout"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout="@layout/umipay_bindoauth_account_psw_layout"/>
+
+	<ViewStub
+			android:id = "@+id/umipay_bindoauth_psw_vb"
+			android:inflatedId = "@+id/umipay_input_box_layout"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout="@layout/umipay_bindoauth_psw_layout"/>
+
+</FrameLayout >

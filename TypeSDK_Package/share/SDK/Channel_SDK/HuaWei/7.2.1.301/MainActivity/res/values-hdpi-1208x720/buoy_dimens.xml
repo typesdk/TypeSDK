@@ -1,0 +1,7 @@
+<resources>
+    <!-- M1 -->
+   	<dimen name="icon_width">91dp</dimen>
+   	<dimen name="big_height">77dp</dimen>
+   	
+   	<dimen name="red_icon_margin">14dp</dimen>
+</resources>

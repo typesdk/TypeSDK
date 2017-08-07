@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <solid android:color="@color/le_oauth_btn_pressed" />
+
+            <corners android:radius="2dp" />
+        </shape></item>
+    <item><shape>
+            <corners android:radius="2dp" />
+
+            <solid android:color="@color/le_oauth_btn_normal" />
+        </shape></item>
+
+</selector>

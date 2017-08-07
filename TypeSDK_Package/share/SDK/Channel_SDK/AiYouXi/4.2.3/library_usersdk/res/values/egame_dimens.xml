@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+
+    <integer name="default_circle_indicator_orientation">0</integer>
+	
+    <!--popwindow的配置-->
+    <dimen name="pop_padding_drawable">2.0dip</dimen>
+    <dimen name="pop_padding_up">4.0dip</dimen>
+    <dimen name="pop_font_size">10.0dp</dimen>
+    
+    
+    <dimen name="account_pic">88dp</dimen>
+    <dimen name="account_nickname">16dp</dimen>
+    <dimen name="account_textmarg">8dp</dimen>
+    <dimen name="account_account">14dp</dimen>
+    <dimen name="account_level">40dp</dimen>
+    
+    <dimen name="message_list_padding">5.0dp</dimen>
+    <dimen name="message_list_padding_top">12.0dp</dimen>
+    <dimen name="egame_textsize_18">18.0dp</dimen>
+    <dimen name="login_margintp">18.0dp</dimen>
+    <dimen name="login_textmargintp">9.0dp</dimen>
+    <dimen name="login_accountxinfo">13.0dp</dimen>
+    <dimen name="varify_code_button_width">118.0dp</dimen>
+    
+    
+    <dimen name="dp_29">29dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">4dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_9">9dp</dimen>
+    <dimen name="dp_88">88dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_52">52dp</dimen>
+    <dimen name="dp_54">54dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_64">64dp</dimen>
+	<dimen name="dp_40">40dp</dimen>  
+	<dimen name="dp_24">24dp</dimen>  
+	<dimen name="dp_12">12dp</dimen>
+	<dimen name="dp_14">14dp</dimen>
+	<dimen name="dp_20">20dp</dimen>
+	<dimen name="dp_21">21dp</dimen>
+	<dimen name="dp_22">22dp</dimen>
+	<dimen name="dp_110">110dp</dimen>
+	<dimen name="dp_130">130dp</dimen>
+	<dimen name="dp_300">300dp</dimen>
+</resources>

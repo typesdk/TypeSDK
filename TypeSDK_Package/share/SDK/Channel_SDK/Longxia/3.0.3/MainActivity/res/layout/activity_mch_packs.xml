@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/util_mch_header" />
+
+    <com.mchsdk.paysdk.view.xlist.XListView
+        android:id="@+id/xlistview_mch_pack"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#f2f2f2"
+        android:cacheColorHint="#0000"
+        android:clickable="false"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:scrollbarStyle="outsideOverlay"
+        android:transcriptMode="alwaysScroll" >
+    </com.mchsdk.paysdk.view.xlist.XListView>
+
+</LinearLayout>

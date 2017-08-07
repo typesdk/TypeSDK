@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!--<corners android:radius="8dp" /> 圆角半径 -->
+
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/com_lenovo_lsf_pay_phone_card_line_normal" /><!--矩形的边线  -->
+
+    <!--<size
+        android:height="50dp"
+        android:width="400dp" />矩形的宽高  -->
+
+    <gradient
+        android:endColor="#fff"
+        android:startColor="#fff" /><!-- 矩形的内部颜色，这里设置成白色，即空心 -->
+
+</shape>

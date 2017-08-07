@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/lion_dlg_margin"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/lion_style_dlg_title"
+        android:text="@string/lion_dlg_activity" />
+
+    <com.lion.ccpay.widget.ResizeVerticalLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lion_common_dialog_content_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <TextView
+                android:id="@+id/lion_dlg_activity_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#707070"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+        </ScrollView>
+
+        <com.lion.ccpay.view.ActivityImgView
+            android:id="@+id/lion_dlg_activity_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <include layout="@layout/lion_dlg_two_btn" />
+    </com.lion.ccpay.widget.ResizeVerticalLayout>
+
+</LinearLayout>

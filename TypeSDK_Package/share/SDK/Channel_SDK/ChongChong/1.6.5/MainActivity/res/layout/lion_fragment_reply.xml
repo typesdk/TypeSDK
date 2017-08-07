@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.reply.FitInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:focusable="true"
+                                            android:focusableInTouchMode="true"
+                                            android:gravity="bottom"
+                                            android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lion_fragment_reply_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lion_common_frame_top_nor"
+        android:gravity="center|left">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="7.5dip"
+            android:paddingRight="7.5dip">
+
+            <com.lion.ccpay.view.RatioColorFilterImageView
+                android:id="@+id/lion_fragment_reply_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="7.5dip"
+                android:paddingRight="7.5dip"
+                android:scaleType="center"
+                android:src="@drawable/lion_icon_community_photo_round_nor"/>
+
+            <com.lion.ccpay.view.RatioColorFilterImageView
+                android:id="@+id/lion_fragment_reply_emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="7.5dip"
+                android:paddingRight="7.5dip"
+                android:scaleType="center"
+                android:src="@drawable/lion_icon_community_face_round_nor"/>
+        </LinearLayout>
+
+        <com.lion.ccpay.widget.reply.ReplyContentEditText
+            android:id="@+id/lion_fragment_reply_content"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="7.5dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/lion_common_gray_round_nor"
+            android:gravity="center|left"
+            android:maxLines="3"
+            android:minHeight="40.0dip"
+            android:padding="5.0dip"
+            android:textColor="@color/lion_common_black"
+            android:textColorHint="@color/lion_common_text_gray"
+            android:textSize="14.0sp"/>
+
+        <com.lion.ccpay.widget.reply.ReplySendView
+            android:id="@+id/lion_fragment_reply_send"
+            android:layout_width="50.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginRight="7.5dip"
+            android:background="@drawable/lion_common_reply_send_selector"
+            android:gravity="center"
+            android:text="@string/lion_text_community_reply_str"
+            android:textColor="@color/lion_common_basic_red"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lion_fragment_reply_aux_action"
+        android:layout_width="match_parent"
+        android:layout_height="150.0dip"
+        android:background="@drawable/lion_common_frame_top_nor"
+        android:visibility="gone">
+
+        <include layout="@layout/lion_layout_framelayout"/>
+    </LinearLayout>
+
+</com.lion.ccpay.widget.reply.FitInputLayout>

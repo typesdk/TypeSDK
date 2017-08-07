@@ -1,0 +1,29 @@
+{
+  "version":"v2.1.0.20160810",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "code" : ""
+    }
+    ,"out_url" :"https://open.play.cn/oauth/token"
+    ,"out_params" :
+    {
+      "code" : ""
+      ,"client_id" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {}
+    ,"out_url" :"https://open.play.cn/oauth/token"
+    ,"out_params" :
+      {}
+    }
+  ]
+}

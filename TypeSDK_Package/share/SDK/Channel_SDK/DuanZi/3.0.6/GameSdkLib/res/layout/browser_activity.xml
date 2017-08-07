@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/browser_title_bar" />
+
+    <com.ss.android.sdk.common.ui.view.SwipeOverlayFrameLayout
+        android:id="@+id/swipe_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar" >
+
+        <FrameLayout
+            android:id="@+id/browser_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/title_bar" />
+    </com.ss.android.sdk.common.ui.view.SwipeOverlayFrameLayout>
+
+    <View
+        style="@style/title_bar_shadow"
+        android:layout_below="@id/title_bar" />
+
+    <View
+        android:id="@+id/night_mode_overlay"
+        style="@style/night_mode_overlay" />
+
+</RelativeLayout>

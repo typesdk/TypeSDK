@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="merge-base-manifest">
+	<!-- 抽取 -->
+	<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask"/>
+	
+	<echo message="==================copy BaseLibrary AndroidManifest.xml====================="/>
+  <xmltask source="./AndroidManifest.xml" encoding="utf-8">
+    <copy path="/manifest/uses-permission" buffer="baseUsesPermission" append="true"/>
+    <copy path="/manifest/application/meta-data" buffer="baseApplicationMetaData" append="true"/>
+    <copy path="/manifest/application/activity" buffer="baseActivity" append="true"/>
+    <copy path="/manifest/application/service" buffer="baseService" append="true"/>
+    <copy path="/manifest/application/receiver" buffer="baseReceiver" append="true"/>
+  </xmltask>
+  <!-- 合并 -->
+  <echo message="==================insert BaseLibrary AndroidManifest.xml====================="/>
+  <xmltask source="../Game/AndroidManifest.xml" dest="../Game/AndroidManifest.xml" encoding="utf-8">
+    <insert path="/manifest" buffer="baseUsesPermission"/>
+    <insert path="/manifest/application" buffer="baseActivity"/>
+    <insert path="/manifest/application" buffer="baseService"/>
+    <insert path="/manifest/application" buffer="baseReceiver"/>
+    <insert path="/manifest/application" buffer="baseApplicationMetaData"/>
+  </xmltask>
+  <!-- 复制基础库 -->
+  <echo message="==================copy BaseLibrary BaseMainActivity.java to Game====================="/>
+  <mkdir dir="../Game/src/com/type/sdk/android" >
+  </mkdir>
+  <move
+    file="./src/com/type/sdk/android/BaseMainActivity.java"
+    todir="../Game/src/com/type/sdk/android" >
+  </move>
+</project>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dcn_message_common_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dcn_title_height"
+    android:background="@color/dcn_orange_common"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/dcn_message_ll_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dcn_message_margin"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/dcn_actionbar_back" />
+
+        <TextView
+            android:id="@+id/dcn_message_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dcn_message_toright"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/dcn_message_center"
+            android:textColor="@color/dcn_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/dcn_message_setting_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/dcn_message_margin"
+        android:src="@drawable/dcn_message_setting" />
+
+
+</LinearLayout>

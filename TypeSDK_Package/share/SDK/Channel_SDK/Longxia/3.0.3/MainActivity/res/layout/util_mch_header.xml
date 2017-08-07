@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#ff8000" >
+
+    <ImageView
+        android:id="@+id/iv_mch_header_back"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:src="@drawable/mch_back_icon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_mch_header_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="title"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    
+    <ImageView
+        android:id="@+id/iv_mch_header_close"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/mch_close"
+        android:visibility="gone" />
+
+</RelativeLayout>

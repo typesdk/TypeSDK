@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 登录部分 -->
+    <dimen name="le_oauth_activity_horizontal_margin">16dp</dimen>
+    <dimen name="le_oauth_activity_vertical_margin">16dp</dimen>
+    <dimen name="le_oauth_account_manager_le_logo_margin_top">80dp</dimen>
+    <dimen name="le_oauth_account_manager_slogan_margin_top">20dp</dimen>
+    <dimen name="le_oauth_account_manager_main_view_margin_top">90dp</dimen>
+    <dimen name="le_oauth_account_manager_other_login_margin_top">48dp</dimen>
+    <dimen name="le_oauth_account_manager_main_view_height">172dp</dimen>
+    <dimen name="le_oauth_loading_le_logo_margin_top">200dp</dimen>
+    <dimen name="le_oauth_loading_le_dot_margin_top">36dp</dimen>
+    <dimen name="le_oauth_loading_other_login_margin_top">68dp</dimen>
+
+
+    <!-- 支付部分 -->
+    <dimen name="lepay_common_dialog_marginLeft">10dp</dimen>
+    <dimen name="lepay_bottom_button_font_size">19.0sp</dimen>
+    <dimen name="lepay_item_bankname_font_size">19.0sp</dimen>
+    <dimen name="lepay_item_bankno_font_size">13.5sp</dimen>
+    <dimen name="lepay_et_cardinfo_font_size">15.0sp</dimen>
+    <dimen name="lepay_tv_paymoney_font_size">16.0sp</dimen>
+    <dimen name="lepay_tv_paymoneyvalue_font_size">16.0sp</dimen>
+    <dimen name="lepay_font_size">15.0sp</dimen>
+    <dimen name="lepay_et_validity_17.5sp">17.5sp</dimen>
+    <dimen name="lepay_cashier_title_tradeinfo">16.0sp</dimen>
+    <dimen name="lepay_cashier_trade_desc">13.0sp</dimen>
+    <dimen name="lepay_common_dialog_13.0sp">13.0sp</dimen>
+    <dimen name="lepay_common_dialog_title_25.0sp">25.0sp</dimen>
+    <dimen name="lepay_common_dialog_desc_14.0sp">14.0sp</dimen>
+    <dimen name="lepay_tv_password_dialog_forget_password_15.0sp">15.0sp</dimen>
+    <dimen name="lepay_tv_password_dialog_money_font_size">16.0sp</dimen>
+    <dimen name="lepay_activity_horizontal_margin">16dp</dimen>
+    <dimen name="lepay_activity_vertical_margin">16dp</dimen>
+    <dimen name="lepay_passwrodview_size">9dp</dimen>
+    <dimen name="lepay_agreement_font_size">15.0sp</dimen>
+    <dimen name="lepay_agreement_dialog_title">18.0sp</dimen>
+    <dimen name="lepay_font20">20.0sp</dimen>
+    <dimen name="lepay_creditCards_layout_height">56dp</dimen>
+    <dimen name="lepay_alert_hint_size">12dp</dimen>
+    <dimen name="lepay_layer_w">50dp</dimen>
+    <dimen name="lepay_layer_h">30dp</dimen>
+    <dimen name="lepay_coupon_price">30sp</dimen>
+
+    <!-- LeGameSDK部分 -->
+    <dimen name="le_sdk_main_view_margin">10dp</dimen>
+    <dimen name="le_main_view_action_bar_height">48dp</dimen>
+    <dimen name="le_item_view_left_right_offset">20dp</dimen>
+    <dimen name="le_item_view_height">54dp</dimen>
+    <dimen name="le_button_height">48dp</dimen>
+    <dimen name="le_pay_select_height">48dp</dimen>
+    <dimen name="le_pay_select_margin_offset">15dp</dimen>
+
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+</resources>

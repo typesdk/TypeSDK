@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dcn_shape_dialog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dcn_payment_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/dcn_title_height">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:text="@string/dcn_upgrading"-->
+                <!--android:textColor="@color/dcn_light_black"-->
+                <!--android:textSize="22sp" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/dcn_close"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_marginLeft="3dp"-->
+                <!--android:layout_marginRight="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@drawable/dcn_close_btn_selector" />-->
+            <!--</RelativeLayout>-->
+        <!--</RelativeLayout>-->
+        <include layout="@layout/dcn_dialog_common_titlebar"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dcn_ad"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/dcn_digua_ad" />
+
+    <ProgressBar
+        android:id="@+id/dcn_download_pb_progress"
+        style="@style/DcnDownloadProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:max="100" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/dcn_download_pb_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="20dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/dcn_light_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dcn_download_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="20dip"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/dcn_cancel_update"
+            android:textColor="@color/dcn_light_gray"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nubia_window_background">
+
+
+    <cn.nubia.sdk.activity.ui.NubiaNagivationBarView
+        android:id="@+id/nagivation_bar_nubia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </cn.nubia.sdk.activity.ui.NubiaNagivationBarView>
+
+    <TextView
+        android:id="@+id/account_title_nubia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nagivation_bar_nubia"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/nubia_logo_for_password" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/nagivation_bar_nubia"
+        android:background="@color/nubia_account_text_title_color" />
+
+    <RelativeLayout
+        android:id="@+id/nubia_verify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/nubia_item_padding_side"
+        android:paddingRight="@dimen/nubia_item_padding_side" >
+
+
+        <TextView
+            android:id="@+id/email_verify_label_nubia_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/nubia_color_black_100"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/email_verify_url_nubia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_verify_label_nubia_notice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:text="11112312"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/send_email_again_nubia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_verify_url_nubia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            style="@style/NubiaaccountSetupButton"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="重新发送验证邮件" />
+    </RelativeLayout>
+
+    <include layout="@layout/nubia_bottom_bar" />
+
+    <include layout="@layout/nubia_single_bottom_button" />
+
+</RelativeLayout>

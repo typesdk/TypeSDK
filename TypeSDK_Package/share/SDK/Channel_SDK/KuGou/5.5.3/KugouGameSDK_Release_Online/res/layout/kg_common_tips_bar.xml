@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kg_common_tips_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kg_common_background_lighter"
+        android:minHeight="45dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/kg_common_tips_bar_account_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/kg_common_gray_lighter"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/kg_common_tips_bar_other_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="@string/kg_other_recharge_mode"
+                android:textColor="@color/kg_common_blue_kugou"
+                android:background="@drawable/kg_selector_common_tips_title_back"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/kg_recharge_mode_red_round"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_alignRight="@+id/kg_common_tips_bar_other_mode"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/kg_shape_red_round"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/kg_common_tips_bar_youbi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kg_common_background_lighter"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/kg_common_tips_bar_money_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/kg_common_gray_lighter"
+        android:textSize="30sp"
+        android:visibility="gone" />
+</LinearLayout>

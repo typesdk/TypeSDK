@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.view.RatioColorFilterImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                                               android:id="@+id/lion_fragment_reply_emoji_item"
+                                               android:layout_width="match_parent"
+                                               android:layout_height="42.0dip"
+                                               android:minHeight="42.0dip"
+                                               android:scaleType="center" />

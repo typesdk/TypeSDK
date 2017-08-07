@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.join.mgps.customview.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:background="@drawable/gridview_item_butn"
+                                       android:id="@+id/itemLayout">
+
+    <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            />
+</com.join.mgps.customview.SquareLayout>

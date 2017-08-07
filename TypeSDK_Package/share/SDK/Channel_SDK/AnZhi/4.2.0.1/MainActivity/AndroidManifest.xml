@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.anzhi"
+    android:versionCode="4201"
+    android:versionName="4.2.0.1"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+    
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    
+    <!-- AnZhi -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.tencent.mtt.extension.Player" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- end -->
+	
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:debuggable="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+		
+		<activity
+            android:name="com.type.sdk.android.anzhi.TypeSDKSplash"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="sensorLandscape" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+        </activity>
+        <activity
+            android:name="com.type.sdk.android.anzhi.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="anzhi.Main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        
+        <!-- ======从这里开始复制======================================= -->
+        <!-- 支付界面的横竖屏显示方式可修改下面Activity的android:screenOrientation属性，其它属性切记不要修改！ -->
+        <activity
+            android:name="com.anzhi.sdk.middle.manage.AgencyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/anzhi_sdk_style"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.anzhi.test"
+                    android:scheme="anzhipaysdk" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ipaynow.qqpay.plugin.ipview.QQPayAndNotifyView"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.anzhi.market.ui.CorpBitmapActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
+        <service
+            android:name="com.anzhi.sdk.middle.manage.DaemonService"
+            android:exported="false" />
+        <service
+            android:name="com.anzhi.sdk.middle.manage.PushService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="com.anzhi.sdk.middle.manage.AnzhiReceiver"
+            android:exported="false" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter android:priority="1000" >
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|smallestScreenSize|locale|screenLayout|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.HPaySdkActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/hpay_dialog_style" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.web.HPayWebActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/hpay_custom_confim_dialog" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.web.HPayWebFullActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation" >
+        </activity>
+
+        <receiver android:name="com.anzhi.sdk.middle.manage.CommReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="ANZHIUSERCENTE_VERSIONS"
+            android:value="4.0.3" >
+        </meta-data>
+        <!-- 上线发布一定要删除掉下面这句 -->
+        <!--
+             <meta-data
+            android:name="ANZHI_DEBUG"
+            android:value="true" />
+        -->
+        <!-- ======复制结束========================================================================= -->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:paddingLeft="@dimen/mg_forum_post_item_padding"
+              android:paddingRight="@dimen/mg_forum_post_item_padding"
+              android:gravity="center_vertical"
+        >
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正文"
+            android:id="@+id/forum_post_message"
+            android:gravity="center_vertical"
+            android:textColor="#3b3b3b"
+            android:textSize="@dimen/mg_forum_post_message_text_size"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:lineSpacingMultiplier="1.2"
+            />
+    <!--android:lineSpacingExtra="2dp"
+    android:lineSpacingMultiplier="1.2"-->
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="msp_dialog_tiltle_blue">#2277BB</color>
+    <color name="msp_text_color_gray">#333333</color>
+    <color name="msp_hint_color">#b2b2b2</color>
+    <color name="msp_line_color">#cccccc</color>
+    <color name="msp_combox_list_devider_color">#d8d8d8</color>
+
+    <drawable name="mini_web_back_text_default">#333333</drawable>
+    <drawable name="mini_web_back_text_press">#cccccc</drawable>
+
+</resources>

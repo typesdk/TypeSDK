@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+<!-- password_setup -->
+ <integer name="lib_droi_account_default_passwd_length">16</integer>
+ <integer name="lib_droi_account_edit_address_name_length_max">25</integer>
+ <integer name="lib_droi_account_edit_address_detailed_length_max">100</integer>
+</resources>

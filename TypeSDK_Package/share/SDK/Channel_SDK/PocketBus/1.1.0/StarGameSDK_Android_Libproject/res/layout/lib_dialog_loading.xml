@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/lib_loading_dialog_background">
+
+        <LinearLayout
+                android:id="@+id/lib_stop_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+            <ImageView
+                    android:id="@+id/lib_stop_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/lib_loading_stop_icon"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/lib_stop_layout"
+                android:background="@drawable/lib_seperate_line_port"/>
+
+        <com.stargame.sdk.ui.view.ViewProgress
+                android:id="@+id/lib_progress_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/lib_loading_icon"/>
+
+        <TextView
+                android:id="@+id/lib_message"
+                style="@style/LibLoadingDialogTextStyle"
+                android:layout_toRightOf="@id/lib_progress_icon"
+                android:layout_toLeftOf="@id/lib_stop_layout"/>
+
+    </RelativeLayout>
+</LinearLayout>

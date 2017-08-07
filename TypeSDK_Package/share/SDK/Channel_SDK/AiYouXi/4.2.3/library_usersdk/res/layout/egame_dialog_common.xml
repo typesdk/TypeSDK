@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/egame_commen_dialog_bgpop"
+    android:orientation="vertical" >
+
+    <!-- 对话框标题 -->
+
+    <TextView
+        android:id="@+id/egame_dialog_common_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_21"
+        android:textColor="@color/egame_usersdk_dark_gray"
+        android:textSize="@dimen/dp_20" />
+
+    <TextView
+        android:textSize="@dimen/dp_15"
+        android:textColor="@color/egame_usersdk_regist_text"
+        android:id="@+id/egame_dialog_common_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_21"
+        android:layout_marginBottom="@dimen/dp_21"
+        />
+
+    <!-- 中间的view的容器 -->
+
+    <FrameLayout
+        android:id="@+id/egame_dialog_common_content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+    <!-- 底下左右按钮 -->
+
+    <LinearLayout
+        android:id="@+id/egame_dialog_common_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16" >
+
+        <!-- 左边的按钮 -->
+
+        <TextView
+            android:id="@+id/egame_dialog_common_left_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_weight="1"
+            android:background="@drawable/egame_btn_small_trans_selector"
+            android:gravity="center"
+            android:textColor="@color/egame_usersdk_regist_text"
+            android:textSize="@dimen/dp_16" />
+        <!-- 右边的按钮 -->
+
+        <TextView
+            android:id="@+id/egame_dialog_common_right_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_56"
+            android:layout_weight="1"
+            android:background="@drawable/egame_btn_small_green_selector"
+            android:gravity="center"
+            android:textColor="@color/egame_usersdk_white"
+            android:textSize="@dimen/dp_16" />
+    </LinearLayout>
+
+</LinearLayout>

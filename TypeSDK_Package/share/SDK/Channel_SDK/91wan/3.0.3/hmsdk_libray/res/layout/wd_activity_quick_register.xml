@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@drawable/wd_bg_dialog_shape_corner">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="@dimen/wd_dialog_padding"
+                android:paddingLeft="@dimen/wd_dialog_padding"
+                android:paddingRight="@dimen/wd_dialog_padding">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="账号注册"
+                    android:textSize="@dimen/wd_text_size_20"
+                    android:gravity="center"
+                    android:textColor="@color/wd_color_blue"/>
+
+            <!-- 用户名 -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/wd_bg_edit_shape_corner"
+                    android:layout_marginTop="15dp">
+
+                <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="40dip"
+                        android:scaleType="center"
+                        android:src="@drawable/wd_ic_account_username"
+                        android:visibility="visible"
+                        android:layout_marginLeft="8dp"
+                />
+
+
+                <EditText
+                        android:id="@+id/wd_et_quick_register_username"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="用户名 6-18位数字和字母"
+                        android:maxLength="20"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null"
+                        android:background="@null"
+                        android:textSize="@dimen/wd_text_size_16">
+                </EditText>
+
+            </LinearLayout>
+
+            <!-- 密码 -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/wd_bg_edit_shape_corner"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="40dip"
+                        android:scaleType="center"
+                        android:src="@drawable/wd_ic_account_password"
+                        android:visibility="visible"
+                        android:layout_marginLeft="8dp"
+                />
+
+                <EditText
+                        android:id="@+id/wd_et_quick_register_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="密码 6-18位数字和字母"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null"
+                        android:background="@null"
+                        android:textSize="@dimen/wd_text_size_16"
+                >
+                </EditText>
+
+
+                <CheckBox
+                        android:id="@+id/wd_cb_quick_register_pass_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/wd_customer_checkbox_style"
+                        android:paddingRight="12dp"
+                        android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:orientation="vertical"
+            >
+
+                <Button
+                        android:id="@+id/wd_btn_quick_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/wd_bg_account_btn_blue_selector"
+                        android:text="完成注册"
+                        android:layout_marginTop="10dip"
+                        android:textColor="@color/wd_color_white"
+                        android:textSize="@dimen/wd_text_size_18"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                >
+
+                    <CheckBox
+                            android:id="@+id/wd_cb_quick_register_protocol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"/>
+
+                    <TextView
+                            android:id="@+id/wd_tv_quick_register_protocol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我已阅读并同意91wan服务条款"
+                            android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                <LinearLayout
+                        android:id="@+id/wd_ll_quick_register_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentLeft="true">
+
+                    <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/wd_ic_account_left_arrows"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="返回"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/wd_ll_register_forward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:visibility="invisible"
+                        android:layout_alignParentRight="true">
+
+                    <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/wd_ic_account_right_arrows"
+                    />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用户名注册"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

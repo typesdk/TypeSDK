@@ -1,0 +1,186 @@
+<resources>
+
+    <style name="AppBaseTheme2" parent="@android:style/Theme.Holo.Light.NoActionBar">
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme2" parent="AppBaseTheme2">
+        <item name="android:windowBackground">@color/nubia_window_background</item>
+        <item name="android:buttonStyle">@style/NubiaButtonStyle</item>
+        <item name="android:textViewStyle">@style/NubiaTextViewStyle</item>
+        <item name="android:listViewStyle">@style/NubiaListViewStyle</item>
+        <item name="android:windowAnimationStyle">@style/NubiaActivityAnimation</item>
+    </style>
+    <style name="NubiaButtonStyle" parent="@android:style/Widget.Holo.Light.Button">
+        <item name="android:background">@drawable/nubia_ns_button_bg</item>
+        <item name="android:minHeight">@dimen/nubia_ns_36_dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="NubiaListViewStyle">
+        <item name="android:divider">@drawable/nubia_listview_divider</item>
+        <item name="android:dividerHeight">@dimen/nubia_ns_1_px</item>
+        <item name="android:listSelector">?android:attr/listChoiceBackgroundIndicator</item>
+    </style>
+
+    <!-- activity jump animation -->
+    <style name="NubiaActivityAnimation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/nubia_anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/nubia_anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/nubia_back_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/nubia_back_exit</item>
+    </style>
+
+    <!-- activity jump animation -->
+    <style name="NubiaActivityAnimationNull" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+    </style>
+    
+    <style name="NubiaAppBaseTheme2.Translucent" parent="AppBaseTheme2">
+        <item name="android:windowAnimationStyle">@style/NubiaAppDetailAnimation</item>
+        <item name="android:windowBackground">@color/nubia_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="NubiaAppBaseTheme2.TransParent" parent="AppBaseTheme2">
+        <item name="android:windowAnimationStyle">@style/NubiaActivityAnimationNull</item>
+        <item name="android:windowBackground">@color/nubia_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="NubiaAppDetailAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+    </style>
+
+    <style name="NubiaRadioStylePay" >
+        <item name="android:background">@drawable/nubia_radio_button</item>
+    </style>
+
+
+
+
+    <style name="NubiaTextViewStyle" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/nubia_color_black_87</item>
+    </style>
+
+
+    <style name="NubiaTextStyle_10sp_black_alpha54">
+        <item name="android:textSize">@dimen/nubia_ns_10_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_54</item>
+    </style>
+
+    <style name="NubiaTextStyle_10sp_black_alpha87">
+        <item name="android:textSize">@dimen/nubia_ns_10_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_87</item>
+    </style>
+
+    <style name="NubiaTextStyle_12sp_black_alpha54">
+        <item name="android:textSize">@dimen/nubia_ns_12_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_54</item>
+    </style>
+
+    <style name="NubiaTextStyle_12sp_black_alpha87">
+        <item name="android:textSize">@dimen/nubia_ns_12_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_87</item>
+    </style>
+
+    <style name="NubiaTextStyle_12sp_black_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_12_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_12sp_blue_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_12_sp</item>
+        <item name="android:textColor">@color/nubia_color_blue_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_12sp_gray_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_12_sp</item>
+        <item name="android:textColor">@color/nubia_color_gray_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_12sp_white_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_12_sp</item>
+        <item name="android:textColor">@color/nubia_color_white_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_14sp_black_alpha54">
+        <item name="android:textSize">@dimen/nubia_ns_14_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_54</item>
+    </style>
+
+    <style name="NubiaTextStyle_14sp_black_alpha87">
+        <item name="android:textSize">@dimen/nubia_ns_14_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_87</item>
+    </style>
+    <style name="NubiaTextStyle_14sp_blue">
+        <item name="android:textSize">@dimen/nubia_ns_14_sp</item>
+        <item name="android:textColor">@color/nubia_color_text</item>
+    </style>
+
+    <style name="NubiaTextStyle_14sp_black_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_14_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_14sp_white_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_14_sp</item>
+        <item name="android:textColor">@color/nubia_color_white_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_14sp_blue_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_14_sp</item>
+        <item name="android:textColor">@color/nubia_color_blue_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_16sp_black_alpha54">
+        <item name="android:textSize">@dimen/nubia_ns_16_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_54</item>
+    </style>
+
+    <style name="NubiaTextStyle_16sp_gray_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_16_sp</item>
+        <item name="android:textColor">@color/nubia_color_gray_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_16sp_black_alpha87">
+        <item name="android:textSize">@dimen/nubia_ns_16_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_87</item>
+    </style>
+
+    <style name="NubiaTextStyle_16sp_black_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_16_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_16sp_white_alpha100">
+        <item name="android:textSize">@dimen/nubia_ns_16_sp</item>
+        <item name="android:textColor">@color/nubia_color_white_100</item>
+    </style>
+
+    <style name="NubiaTextStyle_18sp_black_alpha87">
+        <item name="android:textSize">@dimen/nubia_ns_18_sp</item>
+        <item name="android:textColor">@color/nubia_color_black_87</item>
+    </style>
+
+
+    
+    <style name="NubiaaccountSetupButton">
+        <item name="android:background">@drawable/nubia_ns_button_bg</item>
+        <item name="android:minHeight">@dimen/nubia_ns_36_dp</item>
+        <item name="android:layout_width">140sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/nubia_color_black_100</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="Nubianotification_title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+    <style name="Nubianotification_content" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
+    <style name="Nubianotification_time" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
+
+
+</resources>

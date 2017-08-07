@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/huo_ll_fast_login"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/sdk_spalns_login"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/sdk_spalns_login"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/huo_iv_fastLoading"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/xs_loading"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="26dip"
+            android:layout_alignBottom="@+id/huo_iv_fastLoading"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/huo_iv_fastLoading"
+            android:gravity="center"
+            android:text="正在登录"
+            android:textColor="@android:color/white"
+            android:textSize="15dip" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/huo_tv_fastUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:shadowDx="5"
+            android:maxLength="18"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text="13148984056"
+            android:textColor="#ff6905"
+            android:textSize="15dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text=" 欢迎回来"
+            android:textColor="#ff6905"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#676767" />
+
+    <TextView
+        android:id="@+id/huo_tv_fastChangeCount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/sdk_spalns_login"
+        android:gravity="center"
+        android:text="切换账号"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+</LinearLayout>

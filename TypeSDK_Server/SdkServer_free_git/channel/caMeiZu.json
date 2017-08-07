@@ -1,0 +1,71 @@
+{
+  "version":"3.0.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+    "session_id" : ""
+    ,"uid" : ""
+    }
+    ,"out_url" : "https://api.game.meizu.com/game/security/checksession"
+    ,"out_params" :
+    {
+      "app_id" : ""
+    ,"session_id" : ""
+    ,"uid" : ""
+    ,"ts" : ""
+    ,"sign_type" : ""
+    ,"sign" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "notify_time": ""
+      ,"notify_id": ""
+      ,"order_id": ""
+      ,"app_id" : ""
+      ,"uid": ""
+      ,"partner_id": ""
+      ,"cp_order_id": ""
+      ,"product_id": "-1"
+      ,"buy_amount": ""
+      ,"product_per_price": ""
+      ,"total_price": ""
+      ,"trade_status": ""
+      ,"create_time": ""
+      ,"pay_time": ""
+      ,"pay_type": "-1"
+      ,"sign": ""
+      ,"sign_type": ""
+
+      }
+    ,"out_url" :"https://api.game.meizu.com/game/security/checksession"
+    ,"out_params" :
+      {
+        "notify_time": ""
+      ,"notify_id": ""
+      ,"order_id": ""
+      ,"app_id" : ""
+      ,"uid": ""
+      ,"partner_id": ""
+      ,"cp_order_id": ""
+      ,"product_id": "-1"
+      ,"buy_amount": ""
+      ,"product_per_price": ""
+      ,"total_price": ""
+      ,"trade_status": ""
+      ,"create_time": ""
+      ,"pay_time": ""
+      ,"pay_type": "-1"
+      ,"sign": ""
+      ,"sign_type": ""
+      }
+    }
+  ]
+}

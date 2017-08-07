@@ -1,0 +1,54 @@
+{
+  "version":"V7.0",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "mem_id" : "",
+      "user_token" : ""
+    }
+    ,"out_url" :"http://sdk.23xyy.cn/api/cp/user/check"
+    ,"out_params" :
+    {
+      "mem_id" : ""
+    ,"user_token" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "app_id": ""
+      ,"cp_order_id": ""
+      ,"mem_id": ""
+      ,"order_id" : ""
+      ,"order_status": ""
+      ,"pay_time": ""
+      ,"product_id": ""
+      ,"product_name": ""
+      ,"product_price": ""
+      ,"ext": ""
+      ,"sign": ""
+      }
+    ,"out_url" :"http://sdk.23xyy.cn/api/cp/user/check"
+    ,"out_params" :
+      {
+        "app_id": ""
+      ,"cp_order_id": ""
+      ,"mem_id": ""
+      ,"order_id" : ""
+      ,"order_status": ""
+      ,"pay_time": ""
+      ,"product_id": ""
+      ,"product_name": ""
+      ,"product_price": ""
+      ,"ext": ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

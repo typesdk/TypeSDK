@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#0000</color>
+    <color name="button_state_pressed_false">#ffa500</color>
+    <color name="button_state_pressed_true">#ff8c00</color>
+    <color name="button3_state_pressed_false">#ffa500</color>
+    <color name="button3_state_pressed_true">#ff8c00</color>
+    <color name="load_bg">#00000000</color>
+    <color name="login_edit">#f0f0f0</color>
+    <color name="login_edit_text_1">#656e75</color>
+    <color name="login_edit_text_2">#9ba4ad</color>
+    <color name="login_listview">#a8b8c7</color>
+    <color name="dialog_del_len">#d7d7ff</color>
+    <color name="dialog_deltext_yesorno">#a8cb16</color>
+    <color name="dialog_exit_back_text">#ffa500</color>
+    <color name="dialog_exit_back_background">#ffffff</color>
+    <color name="dialog_exit_yes_text">#ffffff</color>
+    <color name="dialog_exit_yes_background">#ffa500</color>
+    <color name="registered_text_2">#ff8c00</color>
+    <color name="protocol_text">#575556</color>
+    <color name="button_false">#ff7f50</color>
+    <color name="paydata_time">#636b73</color>
+    <color name="paydata_name">#98a1a9</color>
+    <color name="paydata_result_yes">#30c854</color>
+    <color name="paydata_result_no">#f58447</color>
+    <color name="twitter_button_yes">#00acee</color>
+    <color name="twitter_button_no">#0597cf</color>
+    
+    <color name="aaa">#b20e2e</color>
+    
+</resources>

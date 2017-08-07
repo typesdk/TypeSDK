@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="merge-typesdk-manifest" >
+	<taskdef
+        name="xmltask"
+        classname="com.oopsconsultancy.xmltask.ant.XmlTask" />
+    <!-- 抽取TypeSDK项目AndroidManifest.xml信息 -->
+    <echo message="==================copy MainActivity AndroidManifest.xml====================="/>
+    <xmltask
+        encoding="utf-8"
+        source="../MainActivity/AndroidManifest.xml" >
+
+        <copy
+            append="true"
+            buffer="sdkUsesPermission"
+            path="/manifest/uses-permission" />
+
+        <copy
+            append="true"
+            buffer="sdkApplicationMetaData"
+            path="/manifest/application/meta-data" />
+
+        <copy
+            append="true"
+            buffer="sdkActivity"
+            path="/manifest/application/activity[@android:name!='com.type.sdk.android.${channelName}.MainActivity']" />
+
+        <copy
+            append="true"
+            buffer="sdkService"
+            path="/manifest/application/service" />
+
+        <copy
+            append="true"
+            buffer="sdkProvider"
+            path="/manifest/application/provider" />
+
+        <copy
+            append="true"
+            buffer="sdkReceiver"
+            path="/manifest/application/receiver" />
+    </xmltask>
+    <!-- 合并 -->
+
+    <echo message="==================insert Game AndroidManifest.xml====================="/>
+    <echo message="==================replace ${gameMainActivity}====================="/>
+    <xmltask
+        dest="../Game/AndroidManifest.xml"
+        encoding="utf-8"
+        source="../Game/AndroidManifest.xml" >
+
+        <insert
+            buffer="sdkUsesPermission"
+            path="/manifest" />
+
+        <insert
+            buffer="sdkActivity"
+            path="/manifest/application" />
+
+        <insert
+            buffer="sdkService"
+            path="/manifest/application" />
+
+        <insert
+            buffer="sdkProvider"
+            path="/manifest/application" />
+
+        <insert
+            buffer="sdkReceiver"
+            path="/manifest/application" />
+
+        <insert
+            buffer="sdkApplicationMetaData"
+            path="/manifest/application" />
+            
+        <attr
+            attr="package"
+            path="/manifest"
+            value="${package}" />
+
+
+        <attr attr="android:launchMode"
+        	path="/manifest/application/activity[@android:name='${gameMainActivity}']"
+        	value="singleTop" />
+            
+        <attr attr="android:name"
+        	path="/manifest/application/activity[@android:name='${gameMainActivity}']"
+        	value="com.type.sdk.android.${channelName}.MainActivity" />
+        
+    </xmltask>
+
+  <echo message="==================copy MainActivity MainActivity.java to ../Game/src/com/type/sdk/android/${channelName} ====================="/>
+  <!-- 复制MainActivity -->
+  <mkdir dir="../Game/src/com/type/sdk/android/${channelName}" >
+  </mkdir>
+  <move
+    file="../MainActivity/src/com/type/sdk/android/${channelName}/MainActivity.java"
+    todir="../Game/src/com/type/sdk/android/${channelName}" >
+  </move>
+  <delete
+    file="../Game/libs/android-support-v4.jar" >
+  </delete>
+</project>

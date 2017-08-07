@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sogou_game_sdk_base_dialog_bg" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_select_photos_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="从相册中选取"
+            android:textColor="@drawable/sogou_game_sdk_color_orange_light_orange"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/sogou_game_sdk_select_photos_v"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/sogou_game_sdk_select_photos_tv"
+            android:background="@color/sogou_game_sdk_color_gray1" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_take_a_picture_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/sogou_game_sdk_select_photos_v"
+            android:clickable="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="拍照"
+            android:textColor="@drawable/sogou_game_sdk_color_orange_light_orange"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_select_photos_cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/sogou_game_sdk_base_dialog_bg"
+        android:clickable="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="取消"
+        android:textColor="@drawable/sogou_game_sdk_color_orange_light_orange"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

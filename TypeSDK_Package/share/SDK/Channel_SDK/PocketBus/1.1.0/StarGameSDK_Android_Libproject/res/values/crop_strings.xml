@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">取 消</string>
+    <string name="save">保 存</string>
+    <string name="saving_image">正在保存图片...</string>
+    <string name="preparing_card">正在准备sd卡...</string>
+    <string name="no_storage_card">没有sd卡</string>
+    <string name="not_enough_space">没有足够的空间</string>
+</resources>

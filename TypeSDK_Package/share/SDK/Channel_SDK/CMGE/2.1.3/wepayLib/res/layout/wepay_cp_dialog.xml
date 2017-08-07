@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/wepay_dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wepay_dialog_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/wepay_space_large" >
+
+    <LinearLayout
+        android:id="@+id/layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wepay_space_xxlarge" >
+           
+             	<ImageView
+				android:id="@+id/img_tip"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/wepay_space_xxxlarge"
+				android:layout_alignParentLeft="true"
+				android:paddingLeft="@dimen/wepay_space_xxlarge"
+				android:src="@drawable/wepay_icon_confirm"
+				android:visibility="gone"/>
+        
+
+            <TextView
+                android:id="@+id/txt_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/wepay_dialog_quite"
+                android:textColor="@color/wepay_txt_title_default"
+                android:textSize="@dimen/wepay_txt_large" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/wepay_space_xxlarge"
+        android:background="@color/wepay_bg_content"
+        android:orientation="vertical" >
+        <View
+            style="@style/wepay_divider_line"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/wepay_space_large"
+            />
+        <LinearLayout
+            android:id="@+id/layout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/wepay_space_large" 
+            android:paddingRight="@dimen/wepay_space_large" 
+            android:orientation="horizontal" >
+
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/wepay_dialog_button_height"
+                android:background="@drawable/wepay_second_btn_bg"
+                android:text="@string/wepay_dialog_cancel"
+                android:textColor="@color/wepay_second_btn_txt"
+                android:textSize="@dimen/wepay_txt_xlarge" />
+
+            <View
+                android:layout_width="@dimen/wepay_space_large"
+                android:layout_height="match_parent"
+               >
+            </View>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/wepay_dialog_button_height"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/wepay_first_btn_bg"
+                android:text="@string/wepay_dialog_sure"
+                android:textColor="@color/wepay_first_btn_txt"
+                android:textSize="@dimen/wepay_txt_xlarge" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

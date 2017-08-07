@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<dimen name="common_dash_height">1px</dimen>
+		<dimen name="common_list_dash_height">2px</dimen>
+	
+</resources>

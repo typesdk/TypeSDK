@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <include layout="@layout/util_mch_header" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="146dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.75"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="#dddddd"
+            android:orientation="vertical" >
+
+            <!-- old pwd -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="28sp"
+                android:background="@drawable/mc_personal_info_back_chgpwd"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/mch_personal_info_per_lock" />
+
+                    <EditText
+                        android:id="@+id/edt_oldPwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.71"
+                        android:background="#00000000"
+                        android:gravity="center_vertical"
+                        android:hint="原始密码"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="15sp" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- new pwd -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginTop="15sp"
+                android:background="@drawable/mc_personal_info_back_chgpwd"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="0sp"
+                        android:src="@drawable/mch_personal_info_per_lock" />
+
+                    <EditText
+                        android:id="@+id/edt_newPwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.71"
+                        android:background="#00000000"
+                        android:gravity="center_vertical"
+                        android:hint="新密码"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="15sp" >
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:background="#55434343" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="0sp"
+                        android:src="@drawable/mch_personal_info_per_lock" />
+
+                    <EditText
+                        android:id="@+id/edt_subPwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.71"
+                        android:background="#00000000"
+                        android:gravity="center_vertical"
+                        android:hint="确认新密码"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="15sp" >
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:background="#55434343" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="0sp"
+                        android:src="@drawable/mch_personal_info_per_chgpwd_yz" />
+
+                    <EditText
+                        android:id="@+id/edt_cheNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="4"
+                        android:background="#00000000"
+                        android:gravity="center_vertical"
+                        android:hint="输入验证码"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="15sp" >
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:background="#00222222"
+                        android:minHeight="150dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="#ff8000"
+        android:text="确认"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</LinearLayout>

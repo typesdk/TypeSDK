@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView 
+        android:id="@+id/float_back_img"
+        android:layout_width="160dip"
+        android:layout_height="44dip"
+        android:src="@drawable/gasdk_floatlist_back"
+        android:layout_alignLeft="@+id/float_img"
+        android:layout_marginTop="3dip"/>
+    
+    <ImageView 
+        android:id="@+id/float_button1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gasdk_button_float_1"
+        android:layout_alignTop="@+id/float_back_img"
+        android:layout_alignBottom="@+id/float_back_img"
+        android:layout_centerInParent="true"
+        android:padding="2dip"/>
+    
+    <ImageView 
+        android:id="@+id/float_button2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gasdk_button_float_2"
+        android:layout_alignTop="@+id/float_back_img"
+        android:layout_alignBottom="@+id/float_back_img"
+        android:layout_alignRight="@+id/float_back_img"
+        android:padding="2dip"/>
+    
+    <ImageView
+        android:id="@+id/float_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gasdk_float_1" />
+
+</RelativeLayout>

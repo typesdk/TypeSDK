@@ -1,0 +1,13 @@
+<resources >
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name = "umipay_main_diglog_width" >300dp</dimen >
+	<dimen name = "umipay_main_diglog_marginLeft" >6dp</dimen >
+	<dimen name = "umipay_main_diglog_marginRight" >6dp</dimen >
+	<dimen name = "umipay_main_diglog_text_size" >12sp</dimen >
+	<dimen name = "umipay_announcement_diglog_width" >300dp</dimen >
+	<dimen name = "umipay_announcement_diglog_height" >420dp</dimen >
+	<dimen name = "umipay_exit_diglog_width" >330dp</dimen >
+	<dimen name = "umipay_exit_diglog_padding" >17dp</dimen >
+
+</resources >

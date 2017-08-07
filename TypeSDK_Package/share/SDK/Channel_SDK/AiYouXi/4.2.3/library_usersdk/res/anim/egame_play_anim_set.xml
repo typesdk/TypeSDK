@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/egame_loading_play_1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_2"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_3"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_4"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_5"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_6"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_7"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_8"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_9"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_10"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_11"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_12"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_13"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_14"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_15"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_16"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_17"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_18"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/egame_loading_play_19"
+        android:duration="100"/>
+
+</animation-list>

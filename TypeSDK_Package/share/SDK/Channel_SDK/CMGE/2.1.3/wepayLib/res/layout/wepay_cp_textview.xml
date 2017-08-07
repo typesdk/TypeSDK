@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/wepay_txt_normal"
+	android:maxWidth="250dp"
+	android:padding="5dp"
+	android:text="您的生日"
+	android:textSize="14sp" />

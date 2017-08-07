@@ -1,0 +1,42 @@
+{
+  "version":"v1.4.31.20160226",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "user_id" : ""
+      ,"session_key" : ""
+    }
+    ,"out_url" : "http://api.app.wan.sogou.com/api/v1/login/verify"
+    ,"out_params" :
+    {
+      "gid" : ""
+      ,"session_key" : ""
+      ,"user_id" : ""
+
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "gid" : ""
+        ,"uid" : ""
+        ,"oid" : ""
+        ,"appdata" : ""
+
+      }
+    ,"out_url" :"http://api.app.wan.sogou.com/api/v1/login/verify"
+    ,"out_params" :
+      {
+        "gid" : ""
+      ,"uid" : ""
+      ,"oid" : ""
+      ,"appdata" : ""
+      }
+    }
+  ]
+}

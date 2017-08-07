@@ -1,0 +1,8 @@
+{
+  "pid": "@app_id@",
+  "gameVersion": "@game_version@",
+  "gameName": "@app_name@",
+  "gameId": "CS",
+  "screenType": "1",
+  "fullScreen": "true"
+}

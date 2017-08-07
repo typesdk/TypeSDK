@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_colors_gray_bg"
+    android:orientation="vertical" >
+
+    <!-- 头部actionbar -->
+
+    <include
+        android:id="@+id/my_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/my_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_top"
+        android:layout_margin="@dimen/my_activity_padding"
+        android:background="@drawable/my_round_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="12dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <TextView
+                android:id="@+id/my_tv_old_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/my_et_old_nickname_hint"
+                android:textColor="@color/my_colors_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/my_et_old_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_tv_old_pwd"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColorHint="@color/my_colors_hint"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_icon_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <TextView
+                android:id="@+id/my_tv_new_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="@string/my_et_nickname_hint"
+                android:textColor="@color/my_colors_black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/my_et_new_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_tv_new_pwd"
+                android:background="@null"
+                android:hint="@string/my_et_nick_input_hint"
+                android:singleLine="true"
+                android:textColorHint="@color/my_colors_hint"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_icon_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/my_btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/my_selector_blue_long"
+                android:text="@string/my_btn_save"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_tv_error_hint"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/my_top"
+        android:background="#FF4D4D"
+        android:gravity="center"
+        android:textColor="@color/my_colors_white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

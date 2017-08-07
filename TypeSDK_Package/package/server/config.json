@@ -1,0 +1,11 @@
+{
+    "INTERVAL": "30000",
+    "WEB_SERVER_IP": "127.0.0.1:30080",
+	"GIT_URL" : "https://code.csdn.net/typesdk_code",
+    "PLATFORM": "Android",
+    "JAVA_HOME": "",
+	"TMP_PATH" : "",
+	"ANT_PATH" : "",
+	"ANDROID_HOME" : "",
+	"GAME_FILE_NAME" : ""
+}

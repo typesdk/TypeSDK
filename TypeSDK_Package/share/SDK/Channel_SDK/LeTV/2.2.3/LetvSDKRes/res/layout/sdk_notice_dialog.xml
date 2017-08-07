@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_80">
+
+    <com.le.legamesdk.widget.LeMainViewParent
+        android:id="@+id/le_main_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/le_sdk_main_view_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true">
+
+                <ImageView
+                    android:id="@+id/banner_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner_default" />
+
+                <ImageView
+                    android:id="@+id/close_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/lepay_password_dialog_shanchu" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/notips_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true">
+
+                <CheckBox
+                    android:id="@+id/tips_show_checkbox"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp" />
+
+                <TextView
+                    android:id="@+id/notips_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_toEndOf="@id/tips_show_checkbox"
+                    android:layout_toRightOf="@id/tips_show_checkbox"
+                    android:text="@string/lesdk_nolonger_notify"
+                    android:textColor="@color/sdk_gray"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/detail_button"
+                    style="@style/LeStyleGreenPressGreenDark14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginRight="15dp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/banner_title_textview"
+                style="@style/LeStyleBlack18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banner"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/notips_layout"
+                android:layout_below="@id/banner_title_textview"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:id="@+id/content_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fadeScrollbars="false">
+
+                    <TextView
+                        android:id="@+id/banner_content_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="8dp"
+                        android:padding="@dimen/margin_10"
+                        android:textColor="@color/sdk_gray"
+                        android:textSize="14dp" />
+                </ScrollView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.le.legamesdk.widget.LeMainViewParent>
+</RelativeLayout>

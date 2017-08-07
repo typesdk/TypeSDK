@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.longxia"
+    android:versionCode="303"
+    android:versionName="3.0.3"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- SDK -->
+    <!-- 添加必要的权限支持 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 添加必要的权限支持 -->
+    <!-- 悬浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 关闭应用用 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <!-- 反射根据包名强制关闭应用 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 聚宝云 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+	<!-- SDK end -->
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:debuggable="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+		
+        <activity
+            android:name="com.type.sdk.android.longxia.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+			<intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <!-- SDK Activity -->
+        <activity
+            android:name="com.mchsdk.paysdk.TestActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.ChoosePayActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.PTBPayResultActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="@package@.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCPacksActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCPersonalInfoActivity"
+            android:launchMode="singleTask" >
+
+            <!-- android:screenOrientation="portrait" -->
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCChangePasswordActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCMoneyRecordActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCGameRecordActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCAddPtbMoneyActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.mchsdk.paysdk.activity.MCBindPhoneActivity"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <service android:name="com.mchsdk.paysdk.server.MCHFloatService" >
+        </service>
+
+        <activity android:name="com.mchsdk.paysdk.activity.MCForgetPasswordActivity" >
+        </activity>
+        <activity android:name="com.mchsdk.test.TestActivity" >
+        </activity>
+        <activity android:name="com.example.sdk_test_demo.test.ShowFloatActivity" />
+        <activity android:name="com.mchsdk.paysdk.activity.MCSocialActivity"></activity>
+        <activity android:name="com.mchsdk.paysdk.activity.MCListViewActivity"></activity>
+        <activity android:name="com.mchsdk.paysdk.activity.MCCommunicateActivity"></activity>
+        <!-- 定义监听卸载的广播   微信控件添加 -->
+        <receiver
+            android:name="com.mchsdk.paysdk.bean.wx.AppInstallReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+
+                <!-- 一个新应用包已经安装在设备上，数据包括包名（最新安装的包程序不能接收到这个广播） -->
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <!-- 一个新版本的应用安装到设备，替换之前已经存在的版本 -->
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <!-- 一个已存在的应用程序包已经从设备上移除，包括包名（正在被安装的包程序不能接收到这个广播） -->
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- 处理支付之后微信不退出  微信控件添加 -->
+        <activity
+            android:name="com.mchsdk.paysdk.bean.wx.WXPayResult"
+            android:exported="true" >
+            <!--
+            <intent-filter>
+                <action android:name="@package@.wxpayresult" /> 
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+        </activity>
+        <!-- 聚宝云 -->
+        <activity android:name="com.fanwei.bluearty.pluginmgr.DynamicActivity" 
+             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <!-- SDK客户端和SDK服务器针对不同游戏验签的key,对接之前联运提供给CP -->
+        <!-- CgsPEgsLEg8LCg== -->
+        <meta-data
+            android:name="paysdk_signkey"
+            android:value="@app_key@" />
+        <!-- 联运SDK服务器接口地址的前面通用部分,对接前联运提供给CP -->
+        <meta-data
+            android:name="paysdk_ipaddress"
+            android:value="@paysdk_url@" />
+        <!-- SDK end -->
+
+    </application>
+
+</manifest>

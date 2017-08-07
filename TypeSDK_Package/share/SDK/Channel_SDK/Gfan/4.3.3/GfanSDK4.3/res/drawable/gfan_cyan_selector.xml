@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/gfan_btn_cyan_press_bg" android:state_pressed="true" />
+    <item android:drawable="@drawable/gfan_btn_white_bg" android:state_enabled="false" />
+    <item android:drawable="@drawable/gfan_btn_cyan_bg" android:state_enabled="true" />
+    <item android:drawable="@drawable/gfan_btn_cyan_bg" />
+</selector><!-- From: file:/E:/GfanSDK/SDK/src/main/res/drawable/gfan_cyan_selector.xml -->

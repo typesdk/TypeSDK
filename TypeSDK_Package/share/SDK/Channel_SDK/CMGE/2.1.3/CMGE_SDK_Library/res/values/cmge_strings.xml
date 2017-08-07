@@ -1,0 +1,278 @@
+<resources>
+
+    <!--  -->
+
+    <string name="cmge_sdk_init">正在初始化...</string>
+    <string name="cmge_sdk_init_failed">初始化失败</string>
+    <string name="cmge_sdk_init_local_network_error">未发现可用网络</string>
+    <string name="cmge_sdk_init_network_server_error">网络异常，请重试</string>
+    <string name="cmge_sdk_init_retry">重试</string>
+    <string name="app_name">CmgeSdkCN</string>
+
+    <!-- common -->
+    <string name="slyx_confirm">确  定</string>
+    <string name="cmge_cancel">取  消</string>
+    <string name="cmge_hotline">客服热线：x</string>
+    <string name="slyx_operate_cancelled">操作取消</string>
+    <string name="cmge_sdcard_unmounted">sdcard不可用</string>
+
+    <!-- 充值模块 -->
+    <string name="cmge_pay_help">温馨提示：</string>
+    <string name="slyx_pay_paylist_fail">对不起，网络异常，请稍候重试。</string>
+    <string name="cmge_pay_pay_network_fail">对不起，网络连接失败，请确认您的网络是否正常后再尝试，如需帮助请联系客服!</string>
+    <string name="cmge_pay_success">充值正在进行中，请稍后在游戏中查看，一般1-10分钟到账。如未到账，请联系客服%1$s，祝您游戏愉快！</string>
+    <string name="cmge_pay_not_network">  网络连接失败，请检查网络设置</string>
+    <string name="cmge_pay_fail">充值失败!</string>
+    <string name="cmge_pay_success_des">充值成功!</string>
+    <string name="cmge_pay_paydetailtitle">您选择了<font color="#f97b00">“%1$s”</font>支付</string>
+    <string name="cmge_pay_amount_not_select">没有可供选择的金额!</string>
+    <string name="cmge_pay_paymoney">充值金额:</string>
+    <string name="cmge_pay_userservice_read">已阅读并同意</string>
+    <string name="cmge_pay_userservice">中手游用户协议</string>
+    <string name="cmge_pay_paymoney_not_null">充值金额不能为空!</string>
+    <string name="cmge_pay_paymoney_not_format">充值金额不正确，请输入1-9999范围内的金额!</string>
+    <string name="slyx_pay_cardnum">充值卡号:</string>
+    <string name="slyx_pay_cardpwd">充值密码:</string>
+    <string name="slyx_pay_cardnumhint_lt">请输入卡号（15位）</string>
+    <string name="slyx_pay_cardpwdhint_lt">请输入密码（19位）</string>
+    <string name="slyx_pay_cardnumhint_yd">请输入卡号（17位）</string>
+    <string name="slyx_pay_cardpwdhint_yd">请输入密码（18位）</string>
+    <string name="slyx_pay_cardnumwain_lt">请输入15位卡号!</string>
+    <string name="slyx_pay_cardpwdwain_lt">请输入19位密码!</string>
+    <string name="slyx_pay_cardnumwain_yd">请输入17位卡号!</string>
+    <string name="slyx_pay_cardpwdwain_yd">请输入18位密码!</string>
+    <string name="slyx_pay_card_sumit_fail">提交失败!</string>
+    <string name="slyx_pay_card_sumit_success">提交成功!</string>
+    <string name="slyx_pay_cardnum_not_null">充值帐号不能为空!</string>
+    <string name="slyx_pay_cardpwd_not_null">充值密码不能为空!</string>
+    <string name="slyx_no_netwrok_connected">无可用网络</string>
+    <string name="slyx_netwrok_error">网络错误，请重试</string>
+    <string name="slyx_modify_password_succeeded">修改成功</string>
+    <string name="slyx_yunwa_pay_tip">余额不足请充值</string>
+    <string name="slyx_yunwa_gif_success">礼物发送成功</string>
+    <string name="slyx_yunwa_pay_fail">礼物发送失败</string>
+    <string name="slyx_yunwa_bind_fail">账号绑定失败</string>
+    <string name="slyx_isinsatll_winxinapk">请安装支付插件!</string>
+
+    <!-- dialog -->
+    <string name="cmge_auto_left">剩下 </string>
+    <string name="cmge_auto_lg">秒自动登录 </string>
+    <string name="cmge_is_downloading">正在下载 </string>
+    <string name="cmge_download_def">0.0 MB</string>
+    <string name="cmge_already_downloaded">已经下载</string>
+
+    <!-- end -->
+
+
+    <!-- hot games -->
+
+    <string name="slyx_rec_games">热门推荐</string>
+    <string name="cmge_start_download">下载游戏</string>
+    <string name="cmge_start_install">安装游戏</string>
+    <string name="cmge_start_game">开始游戏</string>
+
+    <!-- end -->
+
+    <string name="cmge_username_empty_error">账号不能为空</string>
+    <string name="cmge_username_cons_error">账号须由6到20个数字或者字母组成</string>
+    <string name="cmge_username_start_error">账号必须由字母开头</string>
+    <string name="cmge_password_empty_error">密码不能为空</string>
+    <string name="cmge_password_cons_error">密码须由6到32个数字或者字母组成</string>
+    <string name="cmge_password_match_error">两次密码输入不一致</string>
+
+    <!-- Login View -->
+
+	<string name="slyx_login_title">用户登陆</string>
+    <string name="cmge_login_username_hint">通行证</string>
+    <string name="cmge_login_pass_hint">密码</string>
+    <string name="cmge_login_vcode_hint">请输入验证码</string>
+    <string name="cmge_login_vcode_null">验证码为空，请输入验证码...</string>
+    <string name="cmge_login_vcode_land_hint">为非常用手机登陆，为了您的账号安全，请进行验证码登陆</string>
+    <string name="cmge_login_vcode_error">验证码错误，请重新输入...</string>
+    <string name="cmge_login_vcode_submit">验证码登录</string>
+    <string name="cmge_login_submit">登录</string>
+    <string name="cmge_login_start_submit">快速开始</string>
+    <string name="cmge_login_cancle">登录取消</string>
+    <string name="cmge_login_succeeded">登录成功</string>
+    <string name="cmge_login_modify_password">修改密码</string>
+    <string name="cmge_login_find_password">忘记密码</string>
+    <string name="cmge_login_or">OR</string>
+    <string name="cmge_login_thirdparty_des">使用合作账号登录</string>
+    
+    <string name="cmge_login_contactus_tv1">联系我们</string>
+    <string name="cmge_login_contactus_tv2">联系我们 ></string>
+    
+    <string name="cmge_login_hotgames">热门推荐></string>
+    <string name="cmge_login_mid_hotgames">热门推荐</string>
+    <string name="cmge_login_onekey_game">一键注册</string>
+    <string name="cmge_login_onekey_game_cancel">一键注册取消</string>
+    <string name="cmge_login_register">注册</string>
+    <string name="cmge_no_onekey_game">请使用已有账号登录</string>
+
+    <!--  -->
+
+    <string name="cmge_username">通行证</string>
+
+    <!-- Register View -->
+
+    <string name="cmge_reg_title">用户注册</string>
+    <string name="cmge_reg_username">通行证必须由 6-20个字母和数字组成 </string>
+    <string name="cmge_reg_pass_hint">密码必须由6-32个字母和数字组成</string>
+    <string name="cmge_reg_cpass_hint">请确认密码</string>
+    <string name="cmge_reg_submit">立即注册</string>
+    <string name="cmge_reg_user_terms_read">已阅读并同意</string>
+    <string name="cmge_reg_user_terms">用户服务协议</string>
+    <string name="cmge_reg">快速注册</string>
+    <string name="cmge_reg_cancle">注册取消</string>
+    <string name="cmge_reg_succeeded">注册成功</string>
+    <string name="cmge_terms_title">用户协议</string>
+
+    <!-- Register View -->
+
+    <string name="cmge_find_password">忘记密码？</string>
+    <string name="slyx_modify_password">修改密码</string>
+    <string name="slyx_modify_password_ok">修改成功</string>
+    <string name="slyx_modify_password_title">修改密码</string>
+    <string name="slyx_modify_password_username">你的通行证</string>
+    <string name="slyx_modify_password_opass">请输入旧密码</string>
+    <string name="slyx_modify_password_npass">请输入新密码</string>
+    <string name="slyx_modify_password_cpass">再次输入新密码</string>
+    <string name="slyx_modify_password_submit">确定</string>
+    <string name="slyx_modify_password_cancel">取消</string>
+    <string name="cmge_hotgames">热门推荐</string>
+    <string name="cmge_no_hotgames">暂无游戏推荐</string>
+    <string name="slyx_dragon_acct">账号管理</string>
+    <string name="cmge_dragon_cust">联系客服</string>
+    <string name="slyx_dragon_bbs">游戏论坛</string>
+    <string name="slyx_dragon_bind">绑定手机</string>
+    <string name="slyx_dragon_hotgames">更多游戏</string>
+    <string name="slyx_dragon_yunwa">呀呀秀场</string>
+    <string name="slyx_img_des">img</string>
+    <string name="cmge_input_phone">请输入手机号码</string>
+    <string name="cmge_input_phone_null">手机号码为空</string>
+    <string name="cmge_input_phone_error">手机号码输入错误</string>
+    <string name="cmge_input_vcode">输入短信验证码，30分钟内有效</string>
+    <string name="slyx_vcode_submit_bt">获取验证码</string>
+    <string name="slyx_input_vcode">输入验证码</string>
+    <string name="slyx_get_vcode_again">秒后可再获取</string>
+    <string name="cmge_get_vcode_succeeded">验证码获取成功</string>
+    <string name="cmge_input_vcode_null">验证码为空</string>
+    <string name="cmge_input_vcode_error">验证码输入错误</string>
+    <string name="slyx_bind_title">账号绑定手机</string>
+    <string name="slyx_bind_submit_bt">立即绑定</string>
+    <string name="slyx_bind_success_title">账号绑定手机成功</string>
+    <string name="slyx_bind_info_dis">绑定手机号码保障账号安全，享受更多贴心服务</string>
+    
+    <string name="slyx_already_finish_binding_phone">当前账号已与手机x绑定</string>
+    
+       <string name="cmge_directly_bind_phone_done">账号绑定手机成功</string>
+
+    <!-- 找回密码 -->
+
+    <string name="slyx_find_s1">绑定手机找回</string>
+    <string name="slyx_find_s2">账号申诉找回</string>
+    <string name="cmge_find_by_phone_11">您可以使用绑定手机编辑短信</string>
+    <string name="cmge_find_by_phone_12">发送到</string>
+    <string name="cmge_find_by_phone_13">找回密码</string>
+    <string name="cmge_find_by_phone_21">若您的账号绑定的是本手机，请直接点击</string>
+    <string name="cmge_find_by_phone_send">发送</string>
+    <string name="cmge_find_by_phone_41">发送短信由运营商收取通信费，我们不收取任何费用。</string>
+    <string name="cmge_find_by_apply_11">亲爱的用户：\n\t\t您的账号未绑定手机，请通过以下方式</string>
+    <string name="cmge_find_by_apply_21">联系我们客服进行账号申诉</string>
+    <string name="cmge_find_by_apply_info">绑定手机号码保障账号安全，享受更多贴心服务!</string>
+
+    <!--  -->
+
+    <string name="slyx_unbind_title">解除手机绑定</string>
+    <string name="cmge_unbind_success_title">解除绑定成功</string>
+    <string name="cmge_unbind_submit_bt">解除绑定</string>
+    <string name="cmge_unbind_cancel_bt">暂不解除</string>
+    <string name="cmge_change_unbind_info">更换绑定手机之前，请先解除x的绑定</string>
+    
+    <string name="cmge_change_bind_info">您的账号已与手机x解除绑定，请绑定新的手机号码 </string>
+    
+    <string name="cmge_change_unbind_bt_txt">第一步：解除绑定</string>
+    <string name="cmge_change_bind_bt_txt">第二步：绑定新手机</string>
+
+    <!-- ResultView -->
+
+    <string name="slyx_rst_yourphone">您的手机</string>
+    <string name="slyx_rst_bindacct">绑定账号</string>
+    <string name="slyx_rst_success">成功</string>
+    <string name="slyx_rst_afteryes">以后你也可以使用电话号码登录游戏</string>
+    <string name="slyx_rst_youracct">您的账号</string>
+    <string name="slyx_rst_andphone">已与手机</string>
+    <string name="slyx_rst_unbind">解除绑定</string>
+    <string name="slyx_rst_afterno">以后你只能使用账号登录游戏</string>
+   
+    <string name="slyx_rst_enjoy_game">祝您游戏愉快</string>
+    
+
+    <!--  -->
+
+
+    <!-- ********************************************** -->
+    <string name="cmge_obtain_token_via_sso">SSO（单点登录）授权</string>
+    <string name="cmge_obtain_token_via_signature">Web 授权</string>
+    <string name="cmge_token_via_code">通过 Code 获取 Token</string>
+    <string name="cmge_token_info">Token 信息：</string>
+    <string name="cmge_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <string name="cmge_toast_auth_success">授权成功</string>
+    <string name="cmge_toast_auth_failed">授权失败</string>
+    <string name="cmge_toast_auth_canceled">取消授权</string>
+    <string name="cmge_toast_obtain_code_success">获取 Code 成功</string>
+    <string name="cmge_toast_obtain_code_failed">获取 Code 失败</string>
+    <string name="cmge_toast_obtain_token_success">获取 Token 成功</string>
+    <string name="cmge_toast_obtain_token_failed">获取 Token 失败</string>
+    <string name="cmge_token_to_string_format">Token：%1$s \n有效期：%2$s</string>
+    <string name="cmge_thirdparty_failure">第三方登陆失败</string>
+    <!-- *********************************************** -->
+
+    <string name="slyx_m_title_acct">账号管理</string>
+    <string name="cmge_m_title_games">更多游戏</string>
+    <string name="cmge_m_title_services">游戏客服</string>
+    <string name="cmge_m_title_bbs">游戏论坛</string>
+    <string name="cmge_m_modify_password">修改密码</string>
+    <string name="cmge_m_bind_phone">绑定手机</string>
+    <string name="cmge_m_change_phone">更换绑定手机</string>
+    <string name="cmge_m_unbind_phone">解除手机绑定</string>
+    <string name="cmge_m_acct_info">当前登录账号为第三方所有</string>
+    
+    <string name="slyx_cannot_do_weixin_pay_info">未安装微信客户端或版本过低</string>
+
+    <!-- Game Customer Services -->
+
+    <string name="slyx_mc_s_1">联系我们</string>
+    <string name="slyx_mc_s_2">\t\t我们将为您提供最好玩的游戏，最热诚的服务</string>
+    <string name="cmge_mc_s_4">中手游v2.1.0</string>
+
+ 
+
+    <!--  -->
+    <string name="cmge_pay_unit_price">元</string>
+    <string name="cmge_pay_no_sim">对不起，手机没有插入SIM卡，无法使用话费支付，请选择其它支付方式，如需帮助请联系客服!</string>
+    <string name="cmge_pay_fail_sms_start">对不起，话费支付失败！如果您收到收费短信，请联系我们客服</string>
+    <string name="cmge_pay_fail_sms_end">我们将人工帮助您解决问题，CMGE中手游祝您游戏愉快!</string>
+
+    <string name="slyx_qq">客服QQ：x</string>
+    <string name="slyx_change_account">切换账号</string>
+    <string name="slyx_mc_autologin_des">自动登录</string>
+    <string name="slyx_login_popuwind_title">x,登录中...</string>
+    
+    <string name="slyx_reg_by_phone">手机注册</string>
+    <string name="slyx_reg_by_common">账号注册</string>
+    <string name="slyx_reg_password_npass">请输入密码</string>
+    <string name="slyx_reg_password_cpass">再次确认密码</string>
+    
+    <string name="slyx_unbind_succ">解绑成功</string>
+    <string name="slyx_net_add">http://www.shengli.com/</string>
+    
+    
+    <string name="slyx_yyshow_charge">YY充值</string>
+    
+    <string name="slyx_dragon_aipai">屏幕录制</string>
+    <string name="slyx_dragon_wx">微信关注</string>
+    <string name="slyx_wxapk_version">1</string>
+    <string name="slyx_user_account_info_title">保存到相册可以快速找回试玩账号和密码哦~</string>
+    <string name="slyx_user_account_info_btn_txt">保存到相册</string>
+</resources>

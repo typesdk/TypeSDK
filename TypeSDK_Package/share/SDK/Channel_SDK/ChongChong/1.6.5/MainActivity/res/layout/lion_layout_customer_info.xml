@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.CustomerInfoLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                          android:id="@+id/lion_layout_customer_info"
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content"
+                                          android:gravity="center|left" >
+
+    <TextView
+        android:id="@+id/lion_layout_customer_info_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15.0dip"
+        android:singleLine="true"
+        android:textColor="@color/lion_common_game_info_size"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/lion_layout_customer_info_item_lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15.0dip"
+        android:background="@drawable/lion_common_yellow_frame_round_nor"
+        android:gravity="center"
+        android:paddingLeft="7.5dip"
+        android:paddingRight="7.5dip"
+        android:textColor="@color/lion_common_white"
+        android:textSize="14.0sp" />
+
+    <ImageView
+        android:id="@+id/lion_layout_customer_info_item_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/lion_user_auth" />
+
+</com.lion.ccpay.widget.CustomerInfoLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefefef"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/slyx_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="49dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/slyx_title_bar" >
+
+        <ImageView
+            android:id="@+id/slyx_pay_back"
+            android:layout_width="60dip"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dip"
+            android:contentDescription="@string/slyx_img_des"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="30dip"
+            android:paddingTop="12dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/slyx_back_s" />
+
+        <TextView
+            android:id="@+id/slyx_pay_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/slyx_pay_list_error"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#1b1c1e"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="13dip" >
+
+            <ImageView
+                android:layout_width="32dip"
+                android:layout_height="32dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/slyx_pay_sad" />
+
+            <TextView
+                android:id="@+id/slyx_pay_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dip"
+                android:textColor="#8b8686"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1b1c1e" >
+
+        <RelativeLayout
+            android:id="@+id/slyx_dt_img_l"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dip"
+            android:background="#1b1c1e"
+            android:gravity="center" >
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/slyx_dt_img_l"
+            android:fadeScrollbars="false"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dip"
+            android:fillViewport="true"
+            android:persistentDrawingCache="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#1b1c1e"
+                android:orientation="vertical"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="13dip" >
+
+                <LinearLayout
+                    android:id="@+id/left"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dip"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/right"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

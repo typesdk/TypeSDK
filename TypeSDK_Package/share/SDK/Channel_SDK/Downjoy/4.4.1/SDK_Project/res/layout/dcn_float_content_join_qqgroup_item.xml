@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dcn_login_ext_qq"
+        android:layout_gravity="center_vertical"/>
+    
+    <Button
+        android:id="@+id/dcn_float_content_qq_name_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#177ce3"
+        android:textSize="14sp"
+        android:background="@color/dcn_transparent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/dcn_float_content_qq_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:textSize="14sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"/>
+</LinearLayout>

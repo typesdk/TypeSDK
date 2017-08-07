@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tw__padding_permission_horizontal_container">128dp</dimen>
+</resources>

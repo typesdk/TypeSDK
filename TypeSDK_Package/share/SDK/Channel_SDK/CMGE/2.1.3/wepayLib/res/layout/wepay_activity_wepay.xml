@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wepay_bg_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fragment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_splash"
+            android:layout_width="@dimen/wepay_content_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="@dimen/wepay_content_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" >
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/img_wepay_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="@dimen/wepay_space_large"
+                android:src="@drawable/wepay_blacklabel" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/wepay_splash"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/layout_dialog_mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/wepay_bg_parent"
+            android:visibility="gone" >
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_dialog_container"
+            android:layout_width="@dimen/wepay_content_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" >
+        </FrameLayout>
+    </RelativeLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wepay_key_bg"
+        android:keyBackground="@drawable/wepay_btn_keyboard_key"
+        android:keyTextColor="@color/wepay_key_text"
+        android:keyTextSize="26sp"
+        android:shadowRadius="0.0" />
+
+</LinearLayout>

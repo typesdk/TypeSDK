@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@android:color/white">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/goSendPost"
+                  android:orientation="vertical"
+                  android:clickable="true">
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:text="主题帖"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/goSendHelp"
+                  android:orientation="vertical"
+                  android:clickable="true">
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:text="求助帖"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/cancel"
+                  android:orientation="vertical"
+                  android:clickable="true">
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:text="取消"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

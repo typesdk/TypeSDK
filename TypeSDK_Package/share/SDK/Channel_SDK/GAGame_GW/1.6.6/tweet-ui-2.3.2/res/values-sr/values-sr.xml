@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1с</item>
+        <item quantity="other">%dс</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1м</item>
+        <item quantity="other">%dм</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1с</item>
+        <item quantity="other">%dс</item>
+    </plurals>
+    <string name="tw__like_tweet">Свиђа ти се твит</string>
+    <string name="tw__liked_tweet">Опозови свиђање</string>
+    <string name="tw__loading_tweet">Учитавање твита</string>
+    <string name="tw__pause">пауза</string>
+    <string name="tw__play">пусти</string>
+    <string name="tw__replay">понови</string>
+    <string name="tw__retweeted_by_format">Ретвитовано од стране %1$s</string>
+    <string name="tw__share_content_format">Провери твит \@%1$s: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">Твит од %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Подели твит</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Mедиј из твита</string>
+</resources>

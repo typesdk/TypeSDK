@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/lvansdk_title_user_center" />
+
+    <LinearLayout
+        android:id="@+id/iw_content_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/iw_username_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/lvansdk_login_input" >
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/lvansdk_phone"
+                android:src="@drawable/lvansdk_phone" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@id/iv_phone"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/lvansdk_vertical_line"
+                android:imeOptions="actionDone"
+                android:drawablePadding="8dp"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textColor="#333333" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="1dp" >
+
+                <TextView
+                    android:id="@+id/tv_verify"
+                    android:layout_width="85dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/lvansdk_verify_btn_bg"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="获取验证码"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/iw_password_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/lvansdk_login_input" >
+
+            <ImageView
+                android:id="@+id/iv_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/lvansdk_verifcode"
+                android:src="@drawable/lvansdk_verifcode" />
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_toRightOf="@id/iv_pwd"
+                android:background="@android:color/transparent"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/lvansdk_vertical_line"
+                android:drawablePadding="8dp"
+                android:hint="请输入验证码"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textCursorDrawable="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/lvansdk_btn_style_one_normal"
+        android:gravity="center"
+        android:text="完成绑定"
+        android:textColor="#fff"
+        android:textSize="@dimen/user_button_size" />
+
+</LinearLayout>

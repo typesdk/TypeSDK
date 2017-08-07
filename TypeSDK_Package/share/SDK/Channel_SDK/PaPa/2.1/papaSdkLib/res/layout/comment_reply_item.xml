@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dp"
+              android:clickable="true">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#6a6a6a"
+            android:textSize="@dimen/mg_forum_comment_reply_text_size"
+            android:gravity="center_vertical|left"
+            android:id="@+id/comment_reply_content"
+            android:visibility="visible"
+            android:singleLine="false"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="更多0条回复..."
+            android:textColor="#2a72cb"
+            android:textSize="@dimen/mg_forum_comment_reply_text_size"
+            android:gravity="center_vertical|right"
+            android:id="@+id/comment_reply_more"
+            android:visibility="gone"
+            />
+</LinearLayout>

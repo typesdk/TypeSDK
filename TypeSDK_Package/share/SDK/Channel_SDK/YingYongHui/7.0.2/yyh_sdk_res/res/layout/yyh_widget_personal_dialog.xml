@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="59dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    >
+<TextView
+          android:layout_width="300dp"
+          android:gravity="center"
+          android:id="@+id/yyh_dialog_content"
+          android:layout_height="59dp"
+          android:paddingLeft="20dp"
+          android:textColor="@color/yyh_white"
+          android:textSize="14sp"
+          android:text="您有新的未读私信，请点击查看"
+          android:drawableLeft="@drawable/yyh_notify_message"
+          android:background="@color/yyh_black"/>
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yyh_corner_round_red_bg"
+        android:layout_height="5dp"/>
+</FrameLayout>

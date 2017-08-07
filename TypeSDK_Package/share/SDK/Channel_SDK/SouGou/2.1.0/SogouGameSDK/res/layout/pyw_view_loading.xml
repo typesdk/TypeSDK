@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pyw_layout_loading"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pyw_common_background"
+    android:gravity="center"
+    android:minHeight="@dimen/pyw_common_item_height"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/pyw_common_item_height"
+        android:orientation="vertical" >
+
+        <com.pengyouwan.sdk.ui.widget.LoadingView
+            android:id="@+id/pyw_iv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pyw_img_loading" />
+
+        <TextView
+            android:id="@+id/pyw_tv_loading_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="10dip"
+            android:text="努力加载中…"
+            android:textColor="#123456"
+            android:textSize="@dimen/pyw_common_small" />
+    </LinearLayout>
+
+</LinearLayout>

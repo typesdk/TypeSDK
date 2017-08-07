@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01000000">
+
+    <RelativeLayout
+        android:id="@+id/lb_login_layout"
+        android:layout_width="285.0dp"
+        android:layout_height="283.0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/default_lb_login" >
+
+        <TextView
+            android:id="@+id/lb_pay_type_tv"
+            android:layout_width="285.0dp"
+            android:layout_height="39dp"           
+            android:background="@drawable/default_lb_pay_head"
+            android:gravity="center"
+            android:text="请选择充值方式"
+            android:textColor="#383838"                       
+            android:textSize="14.0sp" />
+        <LinearLayout 
+            android:id="@+id/lb_banded_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_pay_type_tv"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="17.0dp"
+            android:visibility="gone">
+            <TextView
+	           	android:layout_width="wrap_content"
+	           	android:layout_height="wrap_content"
+	           	android:text="您已绑定手机，充值安全无忧"
+	           	android:textSize="12.0sp"
+	           	android:textColor="#c1c1c1"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/lb_noband_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_pay_type_tv"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="17.0dp"
+            android:visibility="gone">
+            <TextView
+	           	android:layout_width="wrap_content"
+	           	android:layout_height="wrap_content"
+	           	android:text="绑定手机，让账户更安全"
+	           	android:textSize="12.0sp"
+	           	android:textColor="#c1c1c1"/>
+            <TextView
+	           	android:layout_width="wrap_content"
+	           	android:layout_height="wrap_content"
+	           	android:text="去绑定"
+	           	android:layout_marginLeft="5.0dp"
+	           	android:textSize="12.0sp"
+	           	android:textColor="#0675ff"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/lb_alipay_tv"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dp"
+            android:layout_below="@id/lb_pay_type_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:layout_marginTop="46.0dp"
+            android:background="@drawable/default_lb_alipay_button_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="104.0dp"
+            android:text="支付宝支付"
+            android:textColor="@android:color/white"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/lb_union_pay_tv"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dp"
+            android:layout_below="@id/lb_alipay_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:layout_marginTop="18.0dp"
+            android:background="@drawable/default_lb_union_button_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="104.0dp"
+            android:text="银行卡支付"
+            android:textColor="@android:color/white"
+            android:textSize="15.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/lb_gold_pay_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="35.0dp"
+            android:layout_below="@id/lb_union_pay_tv"
+            android:layout_marginLeft="15.0dp"
+            android:layout_marginRight="15.0dp"
+            android:layout_marginTop="18.0dp" 
+            android:background="@drawable/default_lb_gold_button_selector">
+
+            <TextView
+                android:id="@+id/lb_gold_pay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="104.0dp"
+                android:text="代金币支付"
+                android:textColor="@android:color/white"
+                android:textSize="15.0sp" />
+            
+            <TextView
+                android:id="@+id/lb_gold_pay_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(0)"
+                android:layout_toRightOf="@id/lb_gold_pay_tv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1.0dp"
+                android:textColor="@android:color/white"
+                android:textSize="11.0sp" />
+
+            <ImageView
+                android:id="@+id/lb_gold_pay_loading"
+                android:layout_width="18.0dp"
+                android:layout_height="18.0dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="23.0dp"
+                android:layout_toRightOf="@id/lb_gold_pay_value"
+                android:src="@drawable/default_lb_loading_djb" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lb_pay_note_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_gold_pay_layout"
+            android:layout_marginTop="15.0dp"
+            android:gravity="center"
+            android:text="帮助中心"
+            android:textColor="#0675ff"
+            android:textSize="12.0sp" />
+
+        <ImageView
+            android:id="@+id/lb_delete_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lb_alipay_tv"
+            android:layout_alignRight="@+id/lb_pay_type_tv"
+            android:layout_alignTop="@+id/lb_pay_type_tv"
+            android:padding="11.0dp"
+            android:scaleType="center"
+            android:src="@drawable/default_lb_pay_delete" />
+
+    </RelativeLayout>
+</RelativeLayout>

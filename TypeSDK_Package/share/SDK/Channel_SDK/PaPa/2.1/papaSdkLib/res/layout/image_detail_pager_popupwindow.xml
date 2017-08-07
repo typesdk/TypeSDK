@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/saveImage"
+              android:text="保存"
+              android:gravity="center"
+              android:textColor="#292929"
+              android:textSize="16sp"
+              android:padding="12dp"/>
+
+    <View android:layout_width="match_parent" android:layout_height="2px" android:background="@color/gray"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/cancel"
+              android:text="取消"
+              android:gravity="center"
+              android:textColor="#292929"
+              android:textSize="16sp"
+              android:padding="12dp"/>
+
+</LinearLayout>

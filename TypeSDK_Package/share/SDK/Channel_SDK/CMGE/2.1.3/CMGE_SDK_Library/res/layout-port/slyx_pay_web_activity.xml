@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+  <LinearLayout
+        android:id="@+id/slyx_pay_web_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+       <LinearLayout
+        android:id="@+id/slyx_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/slyx_title_bar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="49dip"
+            android:background="#ebeae3"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:paddingTop="5dip" >
+            
+                  <ImageView android:id="@+id/slyx_pay_back"
+                 android:layout_width="60dip"
+                 android:layout_height="45dip"
+                 android:paddingLeft="10dip"
+                 android:paddingRight="30dip"
+                 android:paddingTop="10dip"
+                 android:paddingBottom="10dip"
+                 android:layout_margin="0dip"
+                 android:scaleType="fitXY"
+                 android:contentDescription="@string/slyx_img_des"
+                 android:src="@drawable/slyx_back_s"/>
+
+                  <!--  
+            <ImageView
+                android:id="@+id/slyx_pay_back"
+                android:layout_width="14dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/slyx_back_s"
+                android:padding="5dip" >
+            </ImageView>
+            -->
+            
+            
+            
+
+            <TextView
+                android:id="@+id/slyx_pay_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#8b8686"
+                android:textSize="18sp" />
+        </LinearLayout>
+      </LinearLayout>
+   </LinearLayout>
+        <WebView
+            android:id="@+id/slyx_pay_wv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        
+</LinearLayout>

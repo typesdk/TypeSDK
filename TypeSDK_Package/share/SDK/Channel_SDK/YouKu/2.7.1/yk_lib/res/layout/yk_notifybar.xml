@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/yk_notify_icon"
+        android:layout_width="@dimen/YK_GameSDK_100PX"
+        android:layout_height="@dimen/YK_GameSDK_100PX"
+        android:layout_marginLeft="@dimen/YK_GameSDK_14PX"
+        android:layout_centerVertical="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/yk_notify_icon"
+        android:layout_marginLeft="@dimen/YK_GameSDK_22PX"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/yk_notify_title"
+            style="@style/YKNotificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="title"
+            android:textSize="15sp"
+            android:textColor="@color/yk_white"
+            android:singleLine="true"
+            android:maxEms="9"/>
+
+        <TextView
+            android:id="@+id/yk_notify_content"
+            style="@style/YKNotificationContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/yk_notify_title"
+            android:text="content"
+            android:textSize="12sp"
+            android:textColor="#a3a4a4"
+            android:maxEms="16"
+            android:maxLength="30"/>
+    </RelativeLayout>
+
+</RelativeLayout>

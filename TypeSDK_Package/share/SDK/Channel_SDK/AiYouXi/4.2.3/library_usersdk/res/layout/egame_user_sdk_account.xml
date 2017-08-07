@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="@dimen/dp_52"
+    android:background="@drawable/egame_user_center_bg_green"
+    android:orientation="vertical" >
+
+    <include layout="@layout/egame_user_sdk_activity_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/account_pic"
+                    android:layout_height="@dimen/account_pic"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/egame_user_cente_avatar" />
+
+                <ImageView
+                    android:id="@+id/egame_account_titltpc"
+                    android:layout_width="77dp"
+                    android:layout_height="77dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/egame_user_cente_avatarpic" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/egame_account_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/egame_account_symbol_girl"
+                    android:singleLine="true"
+                    android:text="爱上了经典款了圣诞节"
+                    android:textColor="@color/egame_usersdk_white"
+                    android:textSize="@dimen/account_nickname" />
+
+                <TextView
+                    android:id="@+id/eagme_account_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/account_textmarg"
+                    android:singleLine="true"
+                    android:text="账号：138888888"
+                    android:textColor="@color/egame_usersdk_white"
+                    android:textSize="@dimen/account_account" 
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/egame_account_leveliv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="@dimen/account_level"
+            android:src="@drawable/egame_ico_vip_gold" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_bg"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/list_bg"
+            android:orientation="vertical"
+            android:paddingTop="3dp" >
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/egame_account_info_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_list_item_selector"
+                android:clickable="true"
+                android:padding="12dp" >
+
+                <TextView
+                    android:id="@+id/egame_account_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="12dp"
+                    android:text="账户信息"
+                    android:textColor="@color/egame_usersdk_dark_gray"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/egame_account_info_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/egame_account_info"
+                    android:src="@drawable/egame_ico_point_red"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/egame_account_info"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="12dp"
+                    android:text="手机号、邮箱绑定"
+                    android:textColor="@color/mesgpush_other"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/egame_ico_category_arrow_right"
+                    android:paddingRight="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/egame_account_userinfo_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_list_item_selector"
+                android:clickable="true"
+                android:padding="12dp" >
+
+                <TextView
+                    android:id="@+id/egame_account_userinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="12dp"
+                    android:text="个人资料"
+                    android:textColor="@color/egame_usersdk_dark_gray"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/egame_account_userinfo"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="12dp"
+                    android:text="昵称、头像、个人说明"
+                    android:textColor="@color/mesgpush_other"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/egame_ico_category_arrow_right"
+                    android:paddingRight="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/egame_account_message_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_list_item_selector"
+                android:clickable="true"
+                android:padding="12dp" >
+
+                <TextView
+                    android:id="@+id/egame_account_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="12dp"
+                    android:text="我的消息"
+                    android:textColor="@color/egame_usersdk_dark_gray"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/egame_account_message"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="12dp"
+                    android:text="游戏活动消息"
+                    android:textColor="@color/mesgpush_other"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/egame_ico_category_arrow_right"
+                    android:paddingRight="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/egame_account_coupon_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_list_item_selector"
+                android:clickable="true"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/egame_account_coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="12dp"
+                    android:text="代金券"
+                    android:textColor="@color/egame_usersdk_dark_gray"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/egame_account_coupon"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="12dp"
+                    android:text="可用于游戏中购买道具"
+                    android:textColor="@color/mesgpush_other"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/egame_account_coupon_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="25dp"
+                    android:textColor="@color/mesgpush_other"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/egame_ico_category_arrow_right"
+                    android:paddingRight="12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/egame_account_gold_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/egame_list_item_selector"
+                android:clickable="true"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/egame_account_gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="12dp"
+                    android:text="金币"
+                    android:textColor="@color/egame_usersdk_dark_gray"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/egame_account_gold"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="12dp"
+                    android:text="做任务，领金币"
+                    android:textColor="@color/mesgpush_other"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/egame_account_gold_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="25dp"
+                    android:text="2"
+                    android:textColor="@color/mesgpush_other"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/egame_ico_category_arrow_right"
+                    android:paddingRight="12dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/egame_user_sdk_activity_loading"
+        android:visibility="gone" />
+
+</LinearLayout>

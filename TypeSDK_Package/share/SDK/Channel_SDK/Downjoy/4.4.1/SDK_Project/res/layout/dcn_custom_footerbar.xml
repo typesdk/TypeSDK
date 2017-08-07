@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dcn_footerbar_bg_white"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/dcn_footerbar_iv_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dcn_footerbar_ic_goback" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/dcn_footerbar_iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dcn_footerbar_ic_home" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/dcn_footerbar_iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dcn_footerbar_ic_refresh" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/dcn_footerbar_iv_go_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dcn_footerbar_ic_goforward" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_activity_available_coupon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lion_common_basic_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        layout="@layout/lion_layout_listview" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lion_common_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lion_common_frame_top_nor"
+        android:padding="15.0dip" >
+
+        <TextView
+            android:id="@+id/lion_activity_available_coupon_use_sure"
+            style="@style/lion_style_dlg_btn_right"
+            android:layout_width="match_parent"
+            android:text="@string/lion_text_available_coupon_use_sure" />
+    </RelativeLayout>
+
+</LinearLayout>

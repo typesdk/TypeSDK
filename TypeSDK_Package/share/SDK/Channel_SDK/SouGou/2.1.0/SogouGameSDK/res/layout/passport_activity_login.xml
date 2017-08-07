@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EAEAEA"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip" >
+
+    <com.sogou.passportsdk.view.PassportTextViewWithClean
+        android:id="@+id/passport_activity_login_account_et"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="21dip"
+        android:background="@drawable/passport_activity_regist_bg_et"
+        android:gravity="center"
+        android:tag="输入用户名/手机号/邮箱" />
+
+    <com.sogou.passportsdk.view.PassportTextViewWithClean
+        android:id="@+id/passport_activity_login_psw_et"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_below="@id/passport_activity_login_account_et"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/passport_activity_regist_bg_et"
+        android:gravity="center"
+        android:tag="输入密码_psw" />
+
+    <Button
+        android:id="@+id/passport_activity_login_login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_below="@id/passport_activity_login_psw_et"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/passport_activity_regist_btn_enable"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/passport_color_view_linkedbtn_btn_disable" />
+
+    <TextView
+        android:id="@+id/passport_activity_login_forget_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passport_activity_login_login_btn"
+        android:layout_marginTop="15dip"
+        android:text="忘记密码?"
+        android:textColor="#6EA7E7" />
+
+    <TextView
+        android:id="@+id/passport_activity_login_weibo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/passport_activity_login_forget_btn"
+        android:layout_below="@id/passport_activity_login_forget_btn"
+        android:layout_marginTop="15dip"
+        android:drawableLeft="@drawable/passport_activity_login_btn_sina"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:text="微博"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/passport_activity_login_qq_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/passport_activity_login_forget_btn"
+        android:layout_below="@id/passport_activity_login_forget_btn"
+        android:layout_marginLeft="80dip"
+        android:layout_marginTop="15dip"
+        android:drawableLeft="@drawable/passport_activity_login_btn_qq"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:text="QQ"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/passport_activity_login_wechat_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/passport_activity_login_forget_btn"
+        android:layout_below="@id/passport_activity_login_forget_btn"
+        android:layout_marginLeft="160dip"
+        android:layout_marginTop="15dip"
+        android:drawableLeft="@drawable/passport_activity_login_btn_wx"
+        android:drawablePadding="10dip"
+        android:gravity="center_vertical"
+        android:text="微信"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jolopay_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/jolopay_title_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/jolopay_back_iv"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="10dip"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/jolopay_back" />
+
+    <TextView
+        android:id="@+id/jolopay_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/jolopay_title"
+        android:textColor="@color/jolopay_white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

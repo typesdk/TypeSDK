@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/kg_get_activate_account_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/kg_selector_btn_blue"
+        android:text="@string/kg_activate_account"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/kg_changer_account_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/kg_user_center_changer_account_button_selector"
+        android:text="@string/kg_change_account_1"
+        android:textColor="#0055ff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/kg_canle_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/kg_user_center_changer_account_button_selector"
+        android:text="@string/kg_dialog_cancel"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

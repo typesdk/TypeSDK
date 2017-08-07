@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/util_mch_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/mc_personal_info_back_chgpwd"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_mch_redord_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="账号:"
+                android:textColor="#6f6f6f"
+                android:textSize="13sp" />
+
+            <!--
+                 <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/mch_xuxian" />
+            -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_mch_redord_gamename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="游戏:"
+                android:textColor="#6f6f6f"
+                android:textSize="13sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_mch_redord_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="暂无平台币充值记录"
+                android:textColor="#bfbfbf"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_mch_redord_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="充值时间"
+                    android:textColor="#555555"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="平台币个数"
+                    android:textColor="#777777"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <com.mchsdk.paysdk.view.xlist.XListView
+                android:id="@+id/xlistview_mch_record"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#f2f2f2"
+                android:cacheColorHint="#0000"
+                android:clickable="false"
+                android:divider="@null"
+                android:listSelector="#00000000"
+                android:scrollbarStyle="outsideOverlay"
+                android:transcriptMode="alwaysScroll" >
+            </com.mchsdk.paysdk.view.xlist.XListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

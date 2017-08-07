@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="red">#ff0000</color>
+  <color name="blue">#87CEEB</color>
+  <color name="green">#6cc247</color>
+  <color name="white">#ffffff</color>
+  <color name="black">#000000</color>
+  <color name="gray">#BFBFBF</color>
+  <color name="listblack">#2e2e2e</color>
+  <color name="listblackgray">#8e8e8e</color>
+  <color name="transparent">#00000000</color>
+  <color name="nd3_btn_font_color">#ffffff</color>
+  <color name="blue_normal">#ff046bba</color>
+	<color name="blue_pressed">#ff4d90fe</color>
+</resources>

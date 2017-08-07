@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/pj_corner_background_white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/pj_quick_regist_title"
+        android:layout_width="match_parent"
+        android:background="@drawable/pj_bg_title"
+        android:layout_height="40dp">
+    <View
+        android:layout_width="3dp"
+        android:background="#f88b08"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_height="16dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:text="恭喜您注册成功！"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/pj_input_text_color"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+        <ImageButton
+            android:id="@+id/pj_quick_regist_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="24dp"
+            android:background="@android:color/transparent"
+            android:layout_gravity="end"
+            android:src="@drawable/pj_icon_close"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pj_quick_regist_tips_a"
+        android:textSize="16sp"
+        android:text="您的账号："
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/pj_quick_regist_title"
+        android:textColor="@color/pj_input_text_color"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/pj_quick_regist_username"
+        android:textSize="16sp"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@id/pj_quick_regist_title"
+        android:layout_toRightOf="@id/pj_quick_regist_tips_a"
+        android:textColor="#f00"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/pj_quick_regist_tips_b"
+        android:textSize="16sp"
+        android:text="您的密码："
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/pj_quick_regist_tips_a"
+        android:textColor="@color/pj_input_text_color"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/pj_quick_regist_password"
+        android:textSize="16sp"
+        android:layout_marginLeft="4dp"
+        android:layout_below="@id/pj_quick_regist_tips_a"
+        android:textColor="#f00"
+        android:layout_toRightOf="@id/pj_quick_regist_tips_b"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/pj_quick_regist_tips_c"
+        android:textSize="16sp"
+        android:text="你也可以将账号信息发送至手机！"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/pj_quick_regist_tips_b"
+        android:textColor="@color/pj_input_text_color"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/pj_quick_regist_phone"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/pj_quick_regist_tips_c"
+        android:background="@drawable/pj_background_input"
+        android:inputType="number"
+        android:layout_marginLeft="25dp"
+        android:hint="输入您的手机号"
+        android:imeOptions="actionGo"
+        android:singleLine="true"
+        android:textColor="@color/pj_input_text_color"
+        android:textColorHint="#BBBBBB"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/pj_quick_regist_send"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:background="@drawable/pj_button_bg_red"
+        android:text="发送"
+        android:layout_toRightOf="@id/pj_quick_regist_phone"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/pj_quick_regist_tips_c"
+        android:layout_marginTop="10dp"
+        android:textColor="@drawable/pj_button_text_red"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="14dp"
+        android:layout_below="@id/pj_quick_regist_phone"
+        android:layout_height="20dp
+        "/>
+
+</RelativeLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kg_common_background"
+    android:orientation="vertical"
+    android:splitMotionEvents="false" >
+
+    <include layout="@layout/kg_common_title_bar" />
+
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loadingView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/kg_common_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:background="@color/kg_common_title_back"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/kg_layout_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp" >
+
+                <com.kugou.game.sdk.ui.widget.RoundImageView
+                    android:id="@+id/kg_iv_user_photo"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_alignBottom="@+id/kg_iv_vip_head"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="1dip"
+                    android:src="@drawable/kg_person_photo" />
+
+                <ImageView
+                    android:id="@+id/kg_iv_vip_head"
+                    android:layout_width="71dip"
+                    android:layout_height="74dip"
+                    android:src="@drawable/kg_vip_head"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/relativeLayout1" >
+
+                <TextView
+                    android:id="@+id/kg_tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="Selva_2014"
+                    android:textColor="@color/kg_common_white"
+                    android:textSize="@dimen/kg_common_large"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/kg_tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kg_tv_nickname"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="Selva_2014"
+                    android:textColor="@color/kg_common_white"
+                    android:textSize="@dimen/kg_common_large"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/kg_common_gray_most_lighter" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/kg_common_gray_most_lighter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kg_common_white"
+        android:orientation="vertical"
+        android:splitMotionEvents="false" >
+
+        <RelativeLayout
+            android:id="@+id/kg_rl_user_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kg_user_center_background_but_selector" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="14dp"
+                android:text="@string/kg_userinfo_realname"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/kg_tv_user_real_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="14dp"
+                android:paddingRight="12dp"
+                android:paddingTop="14dp"
+                android:textColor="@color/kg_common_gray_lighter_2"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/kg_common_gray_most_lighter" />
+
+        <RelativeLayout
+            android:id="@+id/kg_rl_user_id_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kg_user_center_background_but_selector" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="14dp"
+                android:text="@string/kg_userinfo_idcard"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/kg_tv_user_id_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="14dp"
+                android:paddingRight="12dp"
+                android:paddingTop="14dp"
+                android:textColor="@color/kg_common_gray_lighter_2"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/kg_common_gray_most_lighter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/kg_common_white"
+        android:orientation="vertical"
+        android:splitMotionEvents="false" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/kg_common_gray_most_lighter" />
+
+        <RelativeLayout
+            android:id="@+id/kg_rl_entry_bindphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kg_user_center_background_but_selector" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="14dp"
+                android:text="@string/kg_userinfo_bindphone"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/kg_tv_have_bind_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/kg_img_recharge_mode_arrow"
+                android:paddingBottom="14dp"
+                android:paddingRight="12dp"
+                android:paddingTop="14dp"
+                android:textColor="@color/kg_common_gray_lighter_2"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/kg_common_gray_most_lighter" />
+
+        <RelativeLayout
+            android:id="@+id/kg_rl_entry_security_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kg_user_center_background_but_selector" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="14dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="14dp"
+                android:text="@string/kg_userinfo_security_email"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/kg_tv_have_security_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/kg_img_recharge_mode_arrow"
+                android:paddingBottom="14dp"
+                android:paddingRight="12dp"
+                android:paddingTop="14dp"
+                android:textColor="@color/kg_common_gray_lighter_2"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/kg_common_gray_most_lighter" />
+    </LinearLayout>
+
+</LinearLayout>

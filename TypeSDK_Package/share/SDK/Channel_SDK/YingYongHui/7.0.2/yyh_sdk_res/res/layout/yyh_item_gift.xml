@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:id="@+id/yyh_active_item_lay"
+              android:layout_height="wrap_content"
+              android:paddingBottom="5dp"
+             >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/yyh_active_title"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:singleLine="true"
+        android:text="领礼包了啊啊~~~Boom"
+        android:textColor="@color/yyh_gray_dark"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/yyh_active_last_num"
+        android:layout_toStartOf="@+id/yyh_active_last_num"/>
+
+
+    <TextView
+        android:id="@+id/yyh_active_last_num"
+        android:text="2012"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/yyh_black"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/yyh_active_content_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip">
+
+        <TextView
+            android:id="@+id/yyh_active_content"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:textSize="12dp"
+            android:textColor="@color/yyh_gray_light"
+            android:text="这是一个神奇的礼包，需要的可以联系我啊~~~~"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/yyh_active_code_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/yyh_active_content"
+            android:layout_marginTop="10dip">
+
+            <Button
+                android:id="@+id/yyh_active_btn"
+                android:background="@drawable/yyh_corner_blue_3_bg"
+                android:layout_alignParentRight="true"
+                android:layout_width="70dp"
+                android:text="@string/yyh_btn_get_num"
+                android:textColor="@color/yyh_white"
+                android:layout_height="33dp"/>
+
+
+            <TextView
+                android:id="@+id/yyh_active_dead_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sdsadasd"
+                android:layout_toLeftOf="@+id/yyh_active_btn"
+                android:textColor="@color/yyh_black"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:id="@+id/yyh_active_copy"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_below="@id/yyh_active_dead_time"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal"
+                android:background="@drawable/yyh_corner_white_blue_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/yyh_active_copy_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击复制礼包码："
+                    android:textColor="@color/yyh_blue"
+                    android:textSize="13dip"/>
+
+                <TextView
+                    android:id="@+id/yyh_active_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sdasdas"
+                    android:singleLine="true"
+                    android:textColor="@color/yyh_blue"
+                    android:textSize="13dip"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

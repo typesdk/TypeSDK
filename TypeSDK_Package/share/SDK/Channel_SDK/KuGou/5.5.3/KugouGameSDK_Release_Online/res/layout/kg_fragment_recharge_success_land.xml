@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loadingView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/kg_common_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/kg_recharge_success_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/kg_common_background"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/kg_layout_recharge_success"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/kg_common_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.kugou.game.sdk.ui.widget.GameFitGridRelativeLayout
+                android:id="@+id/kg_rl_gs_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/kg_iv_gs_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kg_gs_default_img" />
+
+                <TextView
+                    android:id="@+id/kg_tv_count_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/kg_common_white" />
+            </com.kugou.game.sdk.ui.widget.GameFitGridRelativeLayout>
+
+            <TextView
+                android:id="@+id/kg_tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:drawableLeft="@drawable/kg_register_success_icon"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/kg_land_padding"
+                android:paddingRight="@dimen/kg_land_padding"
+                android:textColor="@color/kg_common_gray_darker"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/kg_ll_modify_psw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/kg_tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textSize="@dimen/kg_common_large" />
+
+                    <TextView
+                        android:id="@+id/kg_tv_userpsw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:textSize="@dimen/kg_common_large" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kg_register_kugou_change_passwd_tips"
+                    android:textColor="@color/kg_common_gray_lighter"
+                    android:textSize="@dimen/kg_common_large" />
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp" >
+
+                    <EditText
+                        android:id="@+id/kg_et_modify_psw"
+                        android:layout_width="200dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/kg_modify_psw_bg"
+                        android:hint="@string/kg_register_kugou_change_passwd_hint"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textColorHint="@color/kg_common_hint_color"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/kg_btn_modify_psw"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_toRightOf="@id/kg_et_modify_psw"
+                        android:background="@drawable/kg_selector_change_passwd_btn"
+                        android:text="@string/kg_register_kugou_change"
+                        android:textColor="@color/kg_common_white" />
+
+                    <TextView
+                        android:id="@+id/kg_tv_modify_psw_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/kg_et_modify_psw"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="@string/kg_recharge_modify_psw_wrong_tips"
+                        android:textColor="@color/kg_common_red"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kg_ll_bindphone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="@string/kg_suggest_bindphone_sinlgline"
+                    android:textColor="@color/kg_common_orange" />
+
+                <Button
+                    android:id="@+id/kg_btn_continue_to_recharge"
+                    android:layout_width="250dip"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/kg_selector_btn_blue"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_bindphone_now"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/kg_btn_back_to_game"
+                android:layout_width="250dip"
+                android:layout_height="40dp"
+                android:background="@drawable/kg_selector_btn_green"
+                android:shadowColor="#ff000fff"
+                android:text="@string/kg_recharge_entergame_now"
+                android:textColor="#ffffffff"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="250dip"
+                android:layout_height="150dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

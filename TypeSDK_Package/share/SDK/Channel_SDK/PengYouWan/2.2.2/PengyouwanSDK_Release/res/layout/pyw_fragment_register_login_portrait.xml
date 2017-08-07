@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pyw_login_dialog_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_white"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pyw_img_hadreg_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="友友的手机号码已被注册！"
+                android:textColor="@color/pyw_common_gray_darker"
+                android:textSize="@dimen/pyw_common_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/pyw_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:background="@drawable/pyw_selector_btn_blue_bg"
+            android:text="立即登录"
+            android:textColor="@color/pyw_common_white"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <Button
+            android:id="@+id/pyw_btn_register_ohter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/pyw_selector_btn_white_bg"
+            android:text="换其他手机号注册"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+    </LinearLayout>
+
+</LinearLayout>

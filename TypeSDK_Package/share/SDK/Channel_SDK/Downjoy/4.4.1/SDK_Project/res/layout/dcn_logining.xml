@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dcn_logining_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/dcn_white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dcn_login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:text="@string/dcn_logining"
+        android:textColor="@color/dcn_white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/dcn_login_change_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:singleLine="true"
+        android:text="@string/dcn_logining_change_user"
+        android:textColor="#eee"
+        android:textSize="14sp" />
+</LinearLayout>

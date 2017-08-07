@@ -1,0 +1,15 @@
+2017-08-03 10:52:57 任务ID:1 目标IP:127.0.0.1 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"1","Channel":"360","GameID":"30","ChannelVersion":"1.8.0_540","GameVersion":"100.0.0_20170226141116649","IconID":"demo","BatchNo":"20170803105202875","SdkVer":"2.0","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"debug","SignKey":"typesdk"}]}
+
+2017-08-03 10:54:27 任务ID:2 目标IP:127.0.0.1 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"2","Channel":"GAGame","GameID":"30","ChannelVersion":"1.6.7","GameVersion":"100.0.0_20170226141116649","IconID":"demo","BatchNo":"20170803105202875","SdkVer":"2.0","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"debug","SignKey":"typesdk"}]}
+
+2017-08-03 10:55:57 任务ID:3 目标IP:127.0.0.1 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"3","Channel":"GAGame_GW","GameID":"30","ChannelVersion":"1.6.6","GameVersion":"100.0.0_20170226141116649","IconID":"demo","BatchNo":"20170803105202875","SdkVer":"2.0","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"debug","SignKey":"typesdk"}]}
+
+2017-08-03 12:24:28 任务ID:1 目标IP:127.0.0.1 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"1","Channel":"360","GameID":"30","ChannelVersion":"1.8.0_540","GameVersion":"100.0.0_20170226141116649","IconID":"demo","BatchNo":"20170803122427735","SdkVer":"2.0","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+
+2017-08-03 02:19:39 任务ID:4 目标IP:127.0.0.1 Android
+ msg:{"status":"success","msg":"gainTask_OK","data":[{"TaskID":"4","Channel":"360","GameID":"30","ChannelVersion":"1.8.0_540","GameVersion":"100.0.0_20170226141116649","IconID":"demo","BatchNo":"20170803141915952","SdkVer":"2.0","IsEncrypt":"0","AdID":"0","PluginID":"0","PluginVersion":"","CompileMode":"release","SignKey":"typesdk"}]}
+

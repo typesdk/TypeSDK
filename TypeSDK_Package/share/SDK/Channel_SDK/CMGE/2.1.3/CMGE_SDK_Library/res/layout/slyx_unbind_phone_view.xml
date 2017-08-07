@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/slyx_bind_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dip"
+        android:layout_marginRight="80dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/cmge_change_unbind_dis_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="15.0dip"
+                android:layout_height="15.0dip"
+                android:layout_marginRight="5.0dp"
+                android:background="@drawable/slyx_info"
+                android:contentDescription="@string/slyx_img_des" />
+
+            <TextView
+                android:id="@+id/cmge_change_unbind_dis_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#e59139"
+                android:textSize="13.0sp" />
+        </LinearLayout>
+
+        <include layout="@layout/slyx_phone_acount_info_view" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/cmge_unbind_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:padding="0dip"
+        android:text="@string/slyx_bind_info_dis"
+        android:textColor="#b5b5b5"
+        android:textSize="16sp" />
+
+</LinearLayout>

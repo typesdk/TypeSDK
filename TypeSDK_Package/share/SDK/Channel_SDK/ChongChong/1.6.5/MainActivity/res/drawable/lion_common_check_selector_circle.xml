@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/lion_ion_check_circle_checked" android:state_selected="true"/>
+    <item android:drawable="@color/lion_common_transparent"/>
+
+</selector>

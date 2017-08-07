@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_view"
+        layout="@layout/sogou_game_sdk_head" />
+
+    <RelativeLayout
+        android:id="@+id/sogou_game_sdk_giftcenter_view_head_view"
+        android:layout_width="match_parent"
+        android:layout_height="61dp" >
+
+        <ImageView
+            android:id="@+id/sogou_game_sdk_giftcenter_view_head_game_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/sogou_game_sdk_giftcenter_view_head_game_icon" >
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_giftcenter_view_head_game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_giftcenter_view_head_gift_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sogou_game_sdk_giftcenter_view_head_game_name"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_giftcenter_view_head_getgift_tv"
+                android:layout_width="49dp"
+                android:layout_height="27dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/sogou_game_sdk_giftcenter_view_bag_item_getgift"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_giftcenter_view_head_getgift_key"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/sogou_game_sdk_giftcenter_view_head_getgift_tv"
+                android:background="@drawable/sogou_game_sdk_pay_giftcenter_getbt_sharp_get"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:text="@string/sogou_game_sdk_giftcenter_view_bag_item_key"
+                android:textColor="#ff6a00"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

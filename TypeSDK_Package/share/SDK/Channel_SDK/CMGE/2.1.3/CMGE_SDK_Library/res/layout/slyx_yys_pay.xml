@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fadingEdge="none"
+    android:fadeScrollbars="false"
+    android:persistentDrawingCache="none"
+    android:fadingEdgeLength="0dip" >
+
+<LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="0dip"
+              android:padding="0dip"
+              android:gravity="center"
+              android:orientation="vertical" >
+    
+    <com.cmge.sdk.pay.common.views.PayGridView
+               android:id="@+id/cmge_yys_options_gv"  
+               android:layout_width="fill_parent"   
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dip"
+               android:layout_marginRight="20dip"
+               android:layout_marginTop="15dip"  
+               android:numColumns="3"  
+               android:fadingEdge="none"
+               android:verticalSpacing="10dp"  
+               android:listSelector="#00000000"
+               android:horizontalSpacing="10dp"
+               android:fadeScrollbars="false"
+               android:fadingEdgeLength="0dip" 
+               android:persistentDrawingCache="none" 
+               android:stretchMode="columnWidth" /> 
+               
+    
+   
+    
+    
+
+      <RelativeLayout android:id="@+id/slyx_yyspay_reminder"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dip"
+                      android:layout_marginRight="10dip"
+                      android:layout_marginTop="10dip"
+                      android:paddingBottom="20dip"
+                      android:paddingLeft="0dip"
+                      android:paddingRight="0dip"
+                      android:paddingTop="0dip"
+                      android:gravity="left">
+
+     <ImageView android:id="@+id/slyx_yyspay_reminder_img"
+                android:layout_width="17dip"
+                android:layout_height="17dip"
+                android:layout_margin="0dip"
+                android:padding="0dip"
+                android:contentDescription="@string/slyx_img_des"
+                android:background="@drawable/slyx_pay_info_mark" />
+
+     <TextView  android:id="@+id/slyx_yys_help_info"
+                android:layout_toRightOf="@+id/slyx_yyspay_reminder_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_marginLeft="5dip"
+                android:padding="0dip" />
+            
+        </RelativeLayout>
+        
+    
+
+    
+    
+</LinearLayout>
+</ScrollView>

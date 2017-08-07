@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <com.anfeng.pay.view.ClearEditText
+     xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/et_user"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:digits="@string/anfan_input_digits"
+                android:drawableLeft="@drawable/anfan_ico_user"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/anfan_phone_num_or_email"
+                android:maxLength="50"
+                android:paddingLeft="30dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="#CCCCCC"
+                android:textCursorDrawable="@null" />

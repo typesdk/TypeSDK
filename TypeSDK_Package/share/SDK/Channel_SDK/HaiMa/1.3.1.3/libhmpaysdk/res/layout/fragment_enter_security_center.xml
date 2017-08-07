@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/UserRegisterSecond"
+            android:id="@+id/enter_security_center_login_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:text="@string/enter_security_center_login_name"/>
+
+        <EditText
+            android:id="@+id/enter_security_center_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="@string/enter_security_center_password_hint"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/user_register_common_color_first"
+            android:background="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/user_register_divide_line_color"/>
+
+        <Button
+            android:id="@+id/enter_security_center_affirm_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/user_register_affirm_button_selector"
+            android:text="@string/enter_security_center_submit_text"
+            android:enabled="false"
+            android:textColor="@color/user_register_button_text_selector"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/security_entrance_common_bottom"
+        layout="@layout/include_common_bottom"></include>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="46dp"
+    android:background="@drawable/pyw_selector_btn_white_radius_bg" >
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_account_normal"
+        android:layout_width="@dimen/pyw_grid_item_width"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:minHeight="@dimen/pyw_grid_item_height"
+        android:minWidth="@dimen/pyw_grid_item_width"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pyw_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/pyw_common_black_ligther"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <TextView
+            android:id="@+id/pyw_tv_account_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:singleLine="true"
+            android:textColor="#ffaa00"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_account_new"
+        android:layout_width="@dimen/pyw_grid_item_width"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/pyw_iv_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/pyw_img_add_normal" />
+
+        <TextView
+            android:id="@+id/pyw_tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="添加游戏账号"
+            android:textColor="#555555"
+            android:textSize="@dimen/pyw_common_large" />
+    </LinearLayout>
+
+</RelativeLayout>

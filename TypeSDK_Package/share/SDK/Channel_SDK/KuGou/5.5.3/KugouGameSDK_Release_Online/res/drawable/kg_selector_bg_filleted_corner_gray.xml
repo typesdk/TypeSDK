@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+    <item Android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" 
+            android:shape="rectangle">
+
+            <!-- 实心 -->
+            <solid android:color="#d7d7d7" />
+            <!-- 圆角 -->
+            <corners 
+                android:bottomRightRadius="5dp" 
+                android:topLeftRadius="5dp"
+                android:bottomLeftRadius="5dp"
+                android:topRightRadius="5dp" />
+            <!-- 描边 -->
+            <stroke
+                android:width="1px"
+                android:color="#b7b7b7" />
+        </shape>
+    </item>
+    <item Android:state_enabled="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <!-- 实心 -->
+            <solid android:color="#d7d7d7" />
+            <!-- 圆角 -->
+            <corners 
+                android:bottomRightRadius="5dp" 
+                android:topLeftRadius="5dp"
+                android:bottomLeftRadius="5dp"
+                android:topRightRadius="5dp" />
+           <!-- 描边 -->
+            <stroke
+                android:width="1px"
+                android:color="#b7b7b7" />
+        </shape>
+    </item>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+            <!-- 实心 -->
+            <solid android:color="#efefef" />
+            <!-- 圆角 -->
+            <corners 
+                android:bottomRightRadius="5dp" 
+                android:topLeftRadius="5dp"
+                android:bottomLeftRadius="5dp"
+                android:topRightRadius="5dp" />
+               <!-- 描边 -->
+            <stroke
+                android:width="1px"
+                android:color="#b7b7b7" />
+        </shape>
+    </item>
+
+</selector>

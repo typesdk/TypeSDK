@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/anfan_ico_lock"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="验证码"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="30dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#CCCCCC"
+        android:textCursorDrawable="@null" >
+    </EditText>
+
+    <Button
+        android:id="@+id/anfan_btn_getcode"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@color/anfan_green_btn_bg_normal"
+        android:text="@string/anfan_get_auth_code"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</RelativeLayout>

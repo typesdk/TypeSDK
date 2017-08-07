@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/lepay_fillparent"
+    android:background="@color/lepay_page_layout_bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="20dp" >
+
+    <include
+        android:id="@+id/lepay_actionbar"
+        layout="@layout/lepay_actionbar" />
+
+    <ScrollView
+        android:id="@+id/lepay_scrollView1"
+        style="@style/lepay_fillparent" >
+
+        <LinearLayout
+            style="@style/lepay_width_fillparent"
+            android:orientation="vertical" 
+            android:paddingTop="13dp">
+
+            <LinearLayout
+                android:id="@+id/lepay_ll_bind_bankcard"
+                style="@style/lepay_width_fillparent"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="12dip"
+                android:orientation="vertical"
+                android:background="@drawable/lepay_layout_ditu"
+                android:visibility="gone">
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lepay_ll_addbancard"
+                style="@style/lepay_button_bottom_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/lepay_button_addbankcard_back"
+                android:orientation="vertical"
+                android:padding="3dp" >
+
+                <LinearLayout
+                    style="@style/lepay_fillparent"
+                    android:background="@color/lepay_page_layout_bg_color"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/lepay_iv_add"
+                        style="@style/lepay_wrapparent"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/lepay_button_bind_tianjia" />
+
+                    <TextView
+                        android:id="@+id/lepay_textView1"
+                        style="@style/lepay_wrapparent"
+                        android:text="@string/lepay_bind_manage_btn_add"
+                        android:textColor="@color/lepay_bind_manage_add_font_color"
+                        android:textSize="@dimen/lepay_bottom_button_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/lepay_btn_bind_addbankcard"
+                style="@style/lepay_button_bottom_margin"
+                android:layout_width="fill_parent"
+                android:layout_height="53dip"
+                android:background="@drawable/lepay_button_page_selector"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/lepay_bind_manage_btn_unbind"
+                android:textColor="@color/lepay_bottom_button_font_color"
+                android:textSize="@dimen/lepay_bottom_button_font_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

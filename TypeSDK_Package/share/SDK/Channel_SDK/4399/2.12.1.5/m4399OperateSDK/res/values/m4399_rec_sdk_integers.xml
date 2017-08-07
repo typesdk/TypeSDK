@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="m4399_rec_main_frag_gridview_column_num">6</integer>
+    <integer name="m4399_rec_rmd_gridview_column_num">5</integer>
+    <integer name="m4399_rec_wy_gridview_column_num">5</integer>
+    <integer name="m4399_rec_result_frag_result_weight">4</integer>
+    <integer name="m4399_rec_record_row_ptime_weight">6</integer>
+    <integer name="m4399_rec_record_row_porder_weight">10</integer>
+    <integer name="m4399_rec_record_row_pmoney_weight">6</integer>
+    <integer name="m4399_rec_record_row_pstate_weight">6</integer>
+    <integer name="m4399_ope_video_init_scale">20</integer>
+
+</resources>

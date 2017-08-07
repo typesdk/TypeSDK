@@ -1,0 +1,28 @@
+{
+  "version":"v21156.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "Ua" : ""
+      ,"cpServiceId":""
+      ,"userId":""
+    }
+    ,"out_url" :""
+    ,"out_params" :
+    {
+      "access_token" : ""
+      ,"fields" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params": {}
+    ,"out_url" :"http://127.0.0.1"
+    ,"out_params" : {}
+    }
+  ]
+}

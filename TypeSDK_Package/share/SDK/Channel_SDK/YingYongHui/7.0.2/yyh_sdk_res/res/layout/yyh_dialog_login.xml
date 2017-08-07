@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@android:color/transparent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:background="@drawable/yyh_corner_white_bg"
+        android:gravity="center_vertical"
+        android:minWidth="150dip"
+        android:orientation="horizontal"
+        android:padding="5dip">
+
+        <ImageView
+            android:id="@+id/yyh_dialog_loadingImageView"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/yyh_logo"/>
+
+        <TextView
+            android:id="@+id/yyh_dialog_msg"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/yyh_black"
+            android:text="加载中..."
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

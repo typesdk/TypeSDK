@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/dcn_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/dcn_floating_message_ly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/dcn_float_msg_bg_left">
+
+
+        <TextView
+            android:id="@+id/dcn_floating_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="4dp"
+            android:clickable="true"
+            android:singleLine="true"
+            android:textColor="@color/dcn_black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/dcn_floating_message_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/dcn_close_btn_selector" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lion_common_gray_while"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/lion_activity_ccpay_my_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="20.0dip">
+
+        <include layout="@layout/lion_layout_notice_down_ccplay"/>
+
+        <com.lion.ccpay.view.item.NoticeView
+            android:id="@+id/lion_activity_ccpay_my_center_account"
+            style="@style/lion_style_user_center"
+            android:background="@drawable/lion_common_frame_two_selector"
+            android:drawableLeft="@drawable/lion_icon_account"
+            android:drawableRight="@null"
+            android:text="@string/lion_text_user_center_account"/>
+
+        <com.lion.ccpay.view.item.UserNickNameView
+            android:id="@+id/lion_activity_ccpay_my_center_nick_name"
+            style="@style/lion_style_user_center"
+            android:background="@drawable/lion_common_frame_bottom_selector"
+            android:drawableLeft="@drawable/lion_icon_nick_name"
+            android:text="@string/lion_text_user_center_nike_name"/>
+
+        <com.lion.ccpay.view.item.UserAuthView
+            android:id="@+id/lion_activity_ccpay_my_center_auth"
+            style="@style/lion_style_user_center"
+            android:layout_marginTop="7.5dip"
+            android:background="@drawable/lion_common_frame_two_selector"
+            android:drawableLeft="@drawable/lion_icon_anti_addict_system"
+            android:text="@string/lion_text_anti_addict_system_real_name"/>
+
+
+        <com.lion.ccpay.view.item.UserUpdatePhoneView
+            android:id="@+id/lion_activity_ccpay_my_center_phone"
+            style="@style/lion_style_user_center"
+            android:background="@drawable/lion_common_frame_two_selector"
+            android:drawableLeft="@drawable/lion_icon_phone"
+            android:text="@string/lion_text_user_center_phone"/>
+
+
+        <com.lion.ccpay.view.item.UserUpdatePwdView
+            android:id="@+id/lion_activity_ccpay_my_center_update_pwd"
+            style="@style/lion_style_user_center"
+            android:background="@drawable/lion_common_frame_bottom_selector"
+            android:drawableLeft="@drawable/lion_icon_password"
+            android:drawableRight="@null"
+            android:text="@string/lion_text_user_center_update_pwd"/>
+
+        <LinearLayout
+            android:id="@+id/lion_activity_ccpay_my_center_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <com.lion.ccpay.view.item.UserLogOutView
+            android:id="@+id/lion_activity_ccpay_my_center_change_account"
+            style="@style/lion_style_dlg_single"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:text="@string/lion_text_account_change"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip">
+
+            <com.lion.ccpay.view.item.UserAntiAddictSystemView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lion_common_transparent_selector"
+                android:text="@string/lion_text_anti_addict_system"
+                android:textColor="@color/lion_common_basic_red"
+                android:textSize="14.0sp"/>
+
+            <com.lion.ccpay.view.item.UserParent2SuperviseView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/lion_common_transparent_selector"
+                android:text="@string/lion_text_parents_2_supervise"
+                android:textColor="@color/lion_common_basic_red"
+                android:textSize="14.0sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

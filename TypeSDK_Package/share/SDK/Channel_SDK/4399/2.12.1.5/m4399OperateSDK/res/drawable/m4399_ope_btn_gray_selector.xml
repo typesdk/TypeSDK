@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 灰色按钮  by.zhengxu -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/m4399_ope_btn_gray_selected" android:state_pressed="true"/>
+    <item android:drawable="@drawable/m4399_ope_btn_gray_normal"/>
+
+</selector>

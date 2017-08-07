@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@android:color/transparent" android:state_pressed="false"/>
+    <item android:drawable="@drawable/yk_title_back_entry_background" android:state_pressed="true"/>
+    <item android:drawable="@android:color/transparent"/>
+
+</selector>

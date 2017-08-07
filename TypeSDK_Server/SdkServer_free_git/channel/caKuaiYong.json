@@ -1,0 +1,44 @@
+{
+  "version":"3.0.2.20160506",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "tokenKey" : ""
+    }
+    ,"out_url" : "http://f_signin.bppstore.com/loginCheck.php"
+    ,"out_params" :
+    {
+      "tokenKey" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "notify_data": ""
+      ,"orderid": ""
+      ,"dealseq": ""
+      ,"uid" : ""
+      ,"subject": ""
+      ,"v": ""
+      ,"sign": ""
+      }
+    ,"out_url" :"http://f_signin.bppstore.com/loginCheck.php"
+    ,"out_params" :
+      {
+        "notify_data": ""
+      ,"orderid": ""
+      ,"dealseq": ""
+      ,"uid" : ""
+      ,"subject": ""
+      ,"v": ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

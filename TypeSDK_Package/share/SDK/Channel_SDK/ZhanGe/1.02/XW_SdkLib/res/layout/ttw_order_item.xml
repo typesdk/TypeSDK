@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    
+   
+    android:orientation="vertical"
+    android:background="#ffffff"
+     >
+         <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="10dp"
+            >
+     
+           <TextView 
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:text="        支付："
+                android:textSize="12dip"
+                />
+            <TextView 
+                android:id="@+id/tv_money"
+                android:layout_toRightOf="@id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50元"
+                android:textColor="#ed1717"
+                android:textSize="12dip"
+                />
+        </RelativeLayout>
+
+          <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+             android:layout_marginLeft="10dp"
+            >
+           <TextView
+              android:id="@+id/tv_paytype_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:textStyle="bold"
+              android:textSize="12dip"
+              android:text="支付方式："
+              />
+            <TextView 
+                android:id="@+id/tv_paytype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_paytype_title"
+                android:text="移动充值卡"
+                android:textSize="12dip"
+                />
+        </RelativeLayout>
+        
+          <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip"
+            >
+           <TextView
+              android:id="@+id/tv_order_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:textSize="12dip"
+              android:textStyle="bold"
+              android:text="    订单号："
+              android:layout_marginLeft="10dp"
+              />
+            <TextView 
+                android:id="@+id/tv_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_order_title"
+                android:text="141564168121"
+                android:textSize="12dip"
+                />
+        </RelativeLayout>
+        
+          
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginLeft="10dp"
+            >
+           <TextView
+              android:id="@+id/tv_detail_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:textSize="12dip"
+              android:textStyle="bold"
+              android:text="支付情况："
+              />
+             <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_toRightOf="@id/tv_detail_title"
+              >
+            <TextView 
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_detail_title"
+                android:text="未支付"
+                android:textColor="#ed1717"
+                android:textSize="12dip"
+                />
+              <TextView
+              android:id="@+id/tv_date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+			  android:layout_marginLeft="5dip"
+              android:textSize="12dip"
+              
+              android:text="2014.03.07 11:34"
+              />
+              </LinearLayout>
+        </RelativeLayout> 
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/blacks"
+            /> 
+</LinearLayout>

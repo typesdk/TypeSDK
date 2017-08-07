@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_pay_bg"
+    android:fitsSystemWindows="true"
+    android:theme="@style/Paysdk.AppTheme">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Paysdk.AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/prepaid_card_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/Paysdk.AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <!--卡类型-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/CardPayText"
+                    android:text="@string/card_type"/>
+
+                <TextView
+                    android:id="@+id/tv_card_type_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_type_normal_bg_shape"
+                    android:clickable="true"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:text="全国移动充值卡"
+                    android:textColor="@color/card_type_text_color"/>
+
+            </LinearLayout>
+
+
+            <include layout="@layout/merge_both_dashes_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/CardPayText"
+                    android:text="@string/card_value"/>
+
+                <com.haimawan.paysdk.custom.NoScrollGridView
+                    android:id="@+id/card_values_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnWidth="60dp"
+                    android:horizontalSpacing="20dp"
+                    android:numColumns="auto_fit"
+                    android:padding="5dp"
+                    android:verticalSpacing="20dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_card_pay_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="多出的元将转换成个海马币自动存入您的海马账户"
+                android:textColor="@color/card_notice"/>
+
+            <include layout="@layout/merge_both_dashes_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/CardPayText"
+                    android:text="@string/card_number"/>
+
+                <EditText
+                    android:id="@+id/et_card_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="@string/input_card_num"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/merge_both_dashes_line"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/CardPayText"
+                    android:text="@string/card_pwd"
+                    />
+
+                <EditText
+                    android:id="@+id/et_card_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="@string/input_card_pwd"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/merge_both_dashes_line"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/card_notice"
+                android:textColor="@color/card_notice"/>
+
+
+            <Button
+                android:id="@+id/btn_pay_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_btn_selector"
+                android:text="@string/pay_confirm"
+                android:textColor="@color/card_confirm_text_color"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

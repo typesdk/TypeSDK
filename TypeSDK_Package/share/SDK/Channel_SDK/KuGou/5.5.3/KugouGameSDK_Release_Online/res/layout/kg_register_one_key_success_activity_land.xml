@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/kg_common_title_bar" />
+
+    <ScrollView
+        android:id="@+id/kg_layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/kg_layout_user_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:background="@color/kg_common_background"
+            android:orientation="vertical" > 
+            
+
+	        <RelativeLayout
+	            android:id="@+id/kg_rl_register_success_info"
+	            android:layout_centerHorizontal="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	            
+				<ImageView 
+	                android:id="@+id/kg_iv_register_success_icon"
+	                android:layout_width="50dp"
+	                android:layout_height="50dp"
+	                android:layout_centerVertical="true"
+	                android:src="@drawable/kg_register_success_icon"/>
+	            
+	            <TextView 
+	                android:id="@+id/kg_register_tips"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="20dp"
+	                android:layout_toRightOf="@id/kg_iv_register_success_icon"
+	                android:text="@string/kg_register_success_tips"
+	                android:textSize="16sp"/>
+	            
+	            <TextView 
+	                android:id="@+id/kg_tv_register_kugou_account"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:layout_alignLeft="@id/kg_register_tips"
+	                android:layout_below="@id/kg_register_tips"
+	                android:text="@string/kg_register_kugou_account"
+	                android:textSize="14sp"/>
+	            
+	            <TextView 
+	                android:id="@+id/kg_tv_register_kugou_passwd"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="10dp"
+	                android:layout_alignLeft="@id/kg_register_tips"
+	                android:layout_below="@id/kg_tv_register_kugou_account"
+	                android:text="@string/kg_register_kugou_passwd"
+	                android:textSize="14sp"/>
+	            
+            
+	        </RelativeLayout>
+	                        
+           	<TextView 
+                android:id="@+id/kg_tv_register_kugou_change_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_below="@id/kg_rl_register_success_info"
+                android:text="@string/kg_register_kugou_change_passwd_tips"
+                android:textSize="15sp"/>	
+            
+            <RelativeLayout
+                android:id="@+id/kg_rl_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@id/kg_tv_register_kugou_change_passwd"
+                android:layout_below="@id/kg_tv_register_kugou_change_passwd" >
+
+                <EditText android:textColorHint="@color/kg_common_hint_color"
+                    android:id="@+id/kg_et_register_input_passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/kg_sp_bg"
+                    android:digits="@string/kg_regex_code"
+                    android:gravity="center_vertical"
+                    android:hint="@string/kg_register_kugou_change_passwd_hint"
+                    android:maxLength="20"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/kg_btn_change_passwd"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/kg_selector_change_passwd_btn"
+                    android:gravity="center"
+                    android:textColor="@color/kg_common_white"
+                    android:text="@string/kg_register_kugou_change" />
+            </RelativeLayout>
+            
+            <Button
+                android:id="@+id/kg_btn_enter_game"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/kg_selector_btn_blue"
+                android:layout_below="@id/kg_rl_passwd"
+                android:gravity="center"
+                android:textColor="@color/kg_common_white"
+                android:text="@string/kg_enter_game" />
+            
+		</RelativeLayout>
+    </ScrollView>
+
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/kg_common_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

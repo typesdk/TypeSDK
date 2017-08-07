@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.video.MediaSlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_layout_media_sliding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lion_layout_media_status_seeking_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50.0dip"
+        android:background="@drawable/lion_video_quality_bg"
+        android:padding="10.0dip"
+        android:textColor="@color/lion_common_white"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/lion_layout_media_status_sliding_layout"
+        android:layout_width="200.0dip"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/lion_video_quality_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/lion_layout_media_status_sliding_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lion_video_bright_big" />
+
+        <com.lion.ccpay.widget.video.CustomProgressBar
+            android:id="@+id/lion_layout_media_status_sliding_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:background="@color/lion_common_transparent"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:progress="50"
+            android:progressDrawable="@drawable/lion_common_progress" />
+    </LinearLayout>
+
+</com.lion.ccpay.widget.video.MediaSlidingLayout>

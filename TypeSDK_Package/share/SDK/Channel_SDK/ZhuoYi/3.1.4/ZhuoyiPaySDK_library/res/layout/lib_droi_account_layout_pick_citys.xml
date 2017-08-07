@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <com.droi.account.widget.wheel.WheelView
+            android:id="@+id/lib_droi_account_id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.droi.account.widget.wheel.WheelView>
+
+        <com.droi.account.widget.wheel.WheelView
+            android:id="@+id/lib_droi_account_id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+            
+        </com.droi.account.widget.wheel.WheelView>
+
+        <com.droi.account.widget.wheel.WheelView
+            android:id="@+id/lib_droi_account_id_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.droi.account.widget.wheel.WheelView>
+    </LinearLayout>
+</LinearLayout>

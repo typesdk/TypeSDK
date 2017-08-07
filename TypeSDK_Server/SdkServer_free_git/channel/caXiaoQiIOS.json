@@ -1,0 +1,42 @@
+{
+  "version":"1.0.8.20161122",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+    "tokenkey" : ""
+    }
+    ,"out_url" : "http://developer.x7sy.com/member/check_login"
+    ,"out_params" :
+    {
+      "tokenkey" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "encryp_data": ""
+        ,"game_orderid": ""
+        ,"guid": ""
+        ,"subject" : ""
+        ,"xiao7_goid": ""
+        ,"sign_data": ""
+      }
+    ,"out_url" :"http://developer.x7sy.com/member/check_login"
+    ,"out_params" :
+      {
+        "encryp_data": ""
+      ,"game_orderid": ""
+      ,"guid": ""
+      ,"subject" : ""
+      ,"xiao7_goid": ""
+      ,"sign_data": ""
+      }
+    }
+  ]
+}

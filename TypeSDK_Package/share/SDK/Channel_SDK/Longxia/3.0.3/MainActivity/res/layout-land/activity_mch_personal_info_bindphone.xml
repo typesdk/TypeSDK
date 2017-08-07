@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <include layout="@layout/util_mch_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dddddd"
+            android:orientation="vertical" >
+
+            <!-- three ball -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#dddddd"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:background="#dddddd"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/step1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/mch_bindphone_progressball_yellow"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="1"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/step1_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="身份验证"
+                        android:textColor="#fe870e" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#dddddd"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/mch_bindphone_progressball_line"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="1"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" >
+
+                        <View
+                            android:layout_width="12dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="#55434343" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="身份验证"
+                        android:textColor="#fe870e" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#dddddd"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/step_verifyidentity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/mch_bindphone_progressball"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="2"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/step_verifyidentity_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="密保手机"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#dddddd"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/mch_bindphone_progressball_line"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="1"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" >
+
+                        <View
+                            android:layout_width="12dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="#55434343" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="身份验证"
+                        android:textColor="#fe870e" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#dddddd"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/step_securityphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/mch_bindphone_progressball"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="3"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/step_securityphone_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="完成验证"
+                        android:textColor="#000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#44434343" />
+            <!-- body2 -->
+
+            <LinearLayout
+                android:id="@+id/bindphone_body_setsuccess"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/mch_bindphone_img_succ" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:text="恭喜你设置密保手机成功"
+                    android:textColor="#66b700"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="该手机可用于 找回密码"
+                    android:textColor="#4c3c3c3c" />
+
+                <TextView
+                    android:id="@+id/text_back"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+            <!-- body1 -->
+
+            <TextView
+                android:id="@+id/txt_bindphone_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="已绑定手机号"
+                android:textColor="#434343"
+                android:visibility="gone" />
+            <RelativeLayout
+            android:id="@+id/ll_unbindphone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+             >
+
+            <EditText
+                android:id="@+id/edt_unbindphone"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:hint="请输入验证码"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/btn_msg_mm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignBaseline="@+id/edt_unbindphone"
+                android:layout_alignBottom="@+id/edt_unbindphone"
+                android:layout_alignRight="@+id/edt_unbindphone"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/mc_login_reg_phone_num"
+                android:text="获取验证码" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/bindphone_body_setup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.82"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:text="请先输入密码"
+                    android:textColor="#434343" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/text_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/mch_bindphone_bg_edt" >
+
+                    <EditText
+                        android:id="@+id/edt_bindphone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/msg_mm"
+                        android:background="#ffffff"
+                        android:textColor="#000000" >
+
+                        <requestFocus />
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/msg_mm"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/mc_login_reg_phone_num"
+                        android:enabled="true"
+                        android:text="获取验证码"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/relativeLayout1"
+                    android:layout_below="@+id/relativeLayout1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/mch_bindphone_bg_edt" >
+
+                    <EditText
+                        android:id="@+id/edt_bindphone1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@+id/msg_mm1"
+                        android:background="#ffffff"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/msg_mm1"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/mc_login_reg_phone_num"
+                        android:enabled="true"
+                        android:text="获取验证码"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/relativeLayout11"
+                    android:layout_below="@+id/relativeLayout11"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="26dp"
+                    android:background="#ff8000"
+                    android:text="确认"
+                    android:textColor="#fff"
+                    android:textSize="20sp" 
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/text_title_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/relativeLayout11"
+                    android:layout_below="@+id/relativeLayout1"
+                    android:layout_marginTop="20dp"
+                    android:text="请输入验证码"
+                    android:textColor="#434343" />
+            </RelativeLayout>
+            <Button
+                    android:id="@+id/btn_bindphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ff8000"
+                    android:text="确认"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

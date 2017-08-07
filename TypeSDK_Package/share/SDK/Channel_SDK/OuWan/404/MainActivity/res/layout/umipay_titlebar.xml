@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		android:id = "@+id/umipay_titlebar_layout"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		android:layout_width = "match_parent"
+		android:layout_height = "44dp"
+		android:background = "@android:color/transparent"
+		android:gravity = "center_vertical"
+		>
+
+	<TextView
+			android:id = "@+id/umipay_titlebar_title"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_centerInParent = "true"
+			android:layout_marginLeft = "40dp"
+			android:layout_marginRight = "40dp"
+			android:ellipsize = "marquee"
+			android:text = "@string/umipay_title"
+			android:textColor = "#333333"
+			android:textSize = "24sp"
+			android:visibility = "gone"
+			/>
+
+	<ImageButton
+			android:id = "@+id/umipay_titlebar_rightbtn"
+			android:layout_width = "32dp"
+			android:layout_height = "32dp"
+			android:layout_alignParentRight = "true"
+			android:layout_centerVertical = "true"
+			android:layout_marginRight = "10dp"
+			android:background = "@drawable/umipay_layout_pressed"
+			android:scaleType = "centerInside"
+			android:src = "@drawable/umipay_btn_close_normal" />
+</RelativeLayout >

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sogou_game_sdk_base_dialog_bg" >
+
+    <include
+        android:id="@+id/sogou_game_sdk_fragment_nav"
+        layout="@layout/sogou_game_sdk_fragment_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/sogou_game_sdk_view_pager_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.sogou.gamecenter.sdk.views.PagerSlidingTabStrip
+                android:id="@+id/sogou_game_sdk_tab"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/sogou_game_sdk_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

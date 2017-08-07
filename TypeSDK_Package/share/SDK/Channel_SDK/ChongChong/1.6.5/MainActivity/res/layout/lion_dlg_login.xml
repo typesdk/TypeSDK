@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.CustomLoginLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                         android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+                                         android:orientation="vertical"
+                                         android:padding="@dimen/lion_dlg_margin" >
+
+    <TextView
+        style="@style/lion_style_dlg_title"
+        android:text="@string/lion_dlg_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lion_common_dialog_content_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lion_dlg_show_login_notices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="7.5dip"
+            android:text="@string/lion_dlg_login_notice_2"
+            android:textColor="@color/lion_common_text_gray"
+            android:textSize="14.0sp" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/lion_dlg_margin"
+            layout="@layout/lion_dlg_input_account" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/lion_dlg_pwd_forget_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lion_dlg_margin"
+                android:background="@drawable/lion_common_white_frame_nor"
+                android:orientation="horizontal" >
+
+                <include
+                    android:id="@+id/lion_dlg_pwd_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    layout="@layout/lion_dlg_input_pwd"
+                    android:background="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/lion_dlg_forgot_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="7.5dip"
+                    android:paddingRight="7.5dip"
+                    android:background="@drawable/lion_common_transparent_selector"
+                    android:text="@string/lion_dlg_forgot_pwd"
+                    android:textColor="@color/lion_common_basic_red" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lion_dlg_tv_goto_game"
+                style="@style/lion_text_red_button"
+                android:layout_below="@id/lion_dlg_pwd_forget_layout"
+                android:layout_marginTop="@dimen/lion_dlg_margin"
+                android:text="@string/lion_dlg_enter_game" />
+
+            <LinearLayout
+                android:id="@+id/lion_dlg_login_pwd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lion_dlg_tv_goto_game"
+                android:layout_marginTop="@dimen/lion_dlg_margin" >
+
+                <TextView
+                    android:id="@+id/lion_dlg_goto_regiest"
+                    style="@style/lion_style_dlg_single"
+                    android:text="@string/lion_dlg_goto_register" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="1.0dip"
+                    android:layout_weight="1.0" />
+
+                <TextView
+                    android:id="@+id/lion_dlg_register_fast"
+                    style="@style/lion_style_dlg_single"
+                    android:text="@string/lion_dlg_register_fast" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lion_dlg_login_pwd_layout"
+                android:layout_marginTop="@dimen/lion_dlg_margin"
+                android:drawableLeft="@drawable/lion_icon_direction"
+                android:drawablePadding="7.5dip"
+                android:text="@string/lion_dlg_login_notice"
+                android:textColor="@color/lion_common_text_gray"
+                android:textSize="14.0sp" />
+
+            <com.lion.ccpay.widget.MoreAccountLayout
+                android:id="@+id/lion_dlg_more_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/lion_common_frame_left_and_right_nor"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical"
+                android:padding="0.5dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.lion.ccpay.widget.CustomLoginLayout>

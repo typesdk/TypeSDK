@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/egame_account_details_titile"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/egame_user_center_bg_green"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/egame_back_white"
+            android:gravity="center"
+            android:text="修改资料"
+            android:textColor="@color/egame_usersdk_white"
+            android:textSize="18dp" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_29" >
+
+            <ImageView
+                android:layout_width="@dimen/account_pic"
+                android:layout_height="@dimen/account_pic"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/egame_user_cente_avatar" />
+
+            <ImageView
+                android:id="@+id/bottom"
+                android:layout_width="77dp"
+                android:layout_height="77dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/egame_avatar_user_default" />
+			<ImageView 
+			    android:layout_width="77dp"
+			    android:layout_height="77dp"
+			    android:layout_gravity="center_vertical|center_horizontal"
+			    android:background="@drawable/egame_user_cente_pic_below"
+			    />
+           
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/egame_account_details_titile"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/list_bg"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 资料编辑区 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 昵称 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/egame_list_item_bg_ftop"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:text="@string/egame_nickname"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/nickname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:background="@null"
+                        android:hint="@string/egame_nick_hint"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <!-- 性别 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/egame_list_item_bg_top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:text="@string/egame_sexy"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/boy"
+                        android:layout_width="@dimen/dp_64"
+                        android:layout_height="34dp"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:background="@drawable/egame_bt_selector"
+                        android:drawableLeft="@drawable/egame_account_symbol_boy"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:text="@string/egame_myinfo_gender_man"
+                        android:textColor="@color/egame_usersdk_white"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/girl"
+                        android:layout_width="@dimen/dp_64"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="@dimen/dp_24"
+                        android:background="@drawable/egame_bt_orange_selector"
+                        android:drawableLeft="@drawable/egame_account_symbol_girl"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_8"
+                        android:text="@string/egame_myinfo_gender_woman"
+                        android:textColor="@color/egame_usersdk_white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <!-- 生日 -->
+
+                <RelativeLayout
+                    android:id="@+id/ll_birthday"
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/egame_list_item_bg_top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/notice_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:gravity="center_vertical"
+                        android:text="@string/egame_birthday"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:layout_toLeftOf="@+id/arrow_birthday"
+                        android:layout_toRightOf="@id/notice_birthday"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/egame_birthday_hint"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@id/arrow_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_6"
+                        android:src="@drawable/egame_ico_category_arrow_right" />
+                </RelativeLayout>
+
+                <!-- 地区 -->
+
+                <RelativeLayout
+                    android:id="@+id/ll_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/egame_list_item_bg_top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/notice_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:gravity="center_vertical"
+                        android:text="@string/egame_area"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:layout_toLeftOf="@+id/arrow_area"
+                        android:layout_toRightOf="@id/notice_area"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/egame_area_hint"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@id/arrow_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_6"
+                        android:src="@drawable/egame_ico_category_arrow_right" />
+                </RelativeLayout>
+
+                <!-- 学校 -->
+
+                <RelativeLayout
+                    android:id="@+id/ll_school"
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/egame_list_item_bg_top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/notice_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:gravity="center_vertical"
+                        android:text="@string/egmae_school"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/school"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:layout_toLeftOf="@+id/arrow_school"
+                        android:layout_toRightOf="@id/notice_school"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="@string/egmae_school_hint"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@id/arrow_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_6"
+                        android:src="@drawable/egame_ico_category_arrow_right" />
+                </RelativeLayout>
+
+                <!-- 公司 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/egame_list_item_bg_top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:gravity="center_vertical"
+                        android:text="@string/egame_company"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/company"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="@dimen/dp_40"
+                        android:layout_marginRight="@dimen/dp_16"
+                        android:background="@null"
+                        android:hint="@string/egame_company_hint"
+                        android:textColor="@color/egame_usersdk_dark_gray"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_24"
+                android:background="@drawable/egame_list_continue_selector"
+                android:gravity="center"
+                android:text="@string/egame_save_change"
+                android:textColor="@color/egame_usersdk_white"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>	
+	
+     <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/egame_account_details_titile"
+        android:background="@drawable/egame_bg_titlebar_tabbar_shadow" />
+    
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.LionMarketDownLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55.0dip"
+        android:background="@drawable/lion_common_frame_bottom_nor"
+        android:orientation="horizontal"
+        android:padding="10.0dip" >
+
+        <ImageView
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:src="@drawable/lion_ccplay_icon" />
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="35.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center|left"
+            android:paddingLeft="7.5dip"
+            android:paddingRight="7.5dip"
+            android:singleLine="true"
+            android:text="@string/lion_text_notice_down_ccplay" />
+
+        <TextView
+            android:id="@+id/lion_layout_notice_down_ccpay_btn"
+            android:layout_width="55.0dip"
+            android:layout_height="25.0dip"
+            android:background="@drawable/lion_common_red_round_selector"
+            android:gravity="center"
+            android:text="@string/lion_text_down"
+            android:textColor="@color/lion_common_text_red_2_white_selector" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7.5dip" />
+
+</com.lion.ccpay.widget.LionMarketDownLayout>

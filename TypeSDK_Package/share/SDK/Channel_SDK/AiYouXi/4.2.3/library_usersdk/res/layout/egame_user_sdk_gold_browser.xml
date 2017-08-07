@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/egame_usersdk_white" >
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/egame_user_sdk_activity_title_green" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/egame_bg_bottombar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/goback"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/egame_browser_bottom_goback_selector"
+            android:contentDescription="@string/egame_des_imageview" />
+
+        <ImageView
+            android:id="@+id/goforwrad"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/egame_browser_bottom_goforward_selector"
+            android:contentDescription="@string/egame_des_imageview" />
+
+        <ImageView
+            android:id="@+id/ivStopOrRefresh"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/egame_ico_bottombar_refresh_normal"
+            android:contentDescription="@string/egame_des_imageview" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/head"
+        android:layout_above="@id/bottom"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head" >
+
+        <ProgressBar
+            android:id="@+id/WebViewProgress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:maxHeight="3dp"
+            android:minHeight="3dp" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:background="@drawable/egame_bg_titlebar_tabbar_shadow" />
+
+</RelativeLayout>

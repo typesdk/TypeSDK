@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="wepay_input">
+        <attr name="hint" format="string" />
+        <attr name="keyText" format="string" />
+        <attr name="background" format="reference" />
+        <attr name="enable" format="boolean" />
+        <attr name="inputType" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="height" format="dimension" />
+        <attr name="width" format="dimension" />
+        <attr name="maxLength" format="integer" />
+        <attr name="isTip" format="boolean" />
+        <attr name="gravity">
+            <enum name="left" value="0x03" />
+            <enum name="center_vertical" value="0x10" />
+            <enum name="right" value="0x05" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="wepay_rich_textview">
+        <attr name="prefix" format="string" />
+        <attr name="suffix" format="string" />
+         <attr name="suffixSize" format="string" />
+        <attr name="integerSize" format="dimension" />
+        <attr name="decimalSize" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="paddingTopDecimal" format="dimension" />
+    </declare-styleable>
+
+</resources>

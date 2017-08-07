@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="YYHDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled" tools:ignore="NewApi">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+     <!-- <item name="android:windowIsTranslucent">true</item> -->
+    <style name="YYHProgressDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode" tools:ignore="NewApi">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled" tools:ignore="NewApi">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>

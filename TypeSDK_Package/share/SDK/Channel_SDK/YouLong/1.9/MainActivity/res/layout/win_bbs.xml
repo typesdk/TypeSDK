@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/win_bg_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/win_bar"
+        layout="@layout/win_title_bar" >
+    </include>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/win_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/win_bbs_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/Paysdk.AppTheme">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Paysdk.AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/gift_bag_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            app:popupTheme="@style/Paysdk.AppTheme.PopupOverlay"
+
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/get_gift_indicator_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/get_gift_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_selected"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/get_gift_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/get_gift"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/game_voucher_no_data_edge_color"></View>
+
+        <RelativeLayout
+            android:id="@+id/save_num_box_indicator_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/save_num_box_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_unselected"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/save_num_box_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_num_box"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/get_gift_indicator_iv"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@color/common_dialog_negative_button_bg"/>
+
+            <ImageView
+                android:id="@+id/save_num_box_indicator_iv"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/game_voucher_no_data_edge_color"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/gift_bag_qrcode_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qr_code"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/gift_bag_hint_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gift_bag_hint_text"
+            android:layout_below="@id/gift_bag_qrcode_iv"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/font_size_middle"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/gift_bag_bt"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/gift_bag_hint_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/gift_bag_button_text"
+            android:textColor="@android:color/white"
+            android:background="@drawable/user_register_affirm_button_selector"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

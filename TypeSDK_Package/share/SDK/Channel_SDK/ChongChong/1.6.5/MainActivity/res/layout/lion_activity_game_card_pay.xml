@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lion_common_gray"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lion_common_gray_while"
+        android:orientation="vertical">
+
+
+        <com.lion.ccpay.view.item.NoticeView
+            android:id="@+id/lion_activity_game_card_type_choice"
+            style="@style/lion_style_user_center"
+            android:background="@color/lion_common_white"
+            android:drawableLeft="@drawable/lion_icon_account"
+            android:drawableRight="@drawable/lion_arrow_right_gray"
+            android:text="@string/lion_text_game_care_choice"/>
+
+        <include layout="@layout/lion_layout_line"/>
+
+        <com.lion.ccpay.view.item.NoticeView
+            android:id="@+id/lion_activity_game_card_money_choice"
+            style="@style/lion_style_user_center"
+            android:background="@color/lion_common_white"
+            android:drawableLeft="@drawable/lion_icon_account"
+            android:drawableRight="@drawable/lion_arrow_right_gray"
+            android:text="@string/lion_text_game_care_how_much"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/lion_common_white"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lion_text_game_care_input_notice"/>
+
+            <EditText
+                android:id="@+id/lion_activity_card_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="@dimen/lion_dlg_margin"
+                android:background="@drawable/lion_common_white_frame_nor"
+                android:hint="@string/lion_text_input_card_num"
+                android:paddingLeft="10.0dip"
+                android:singleLine="true"
+                android:textColor="@color/lion_common_black"
+                android:textColorHint="@color/lion_common_text_gray"
+                android:textSize="14.0sp"/>
+
+            <include
+                layout="@layout/lion_dlg_input_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lion_dlg_margin"/>
+
+            <TextView
+                android:id="@+id/lion_activity_game_card_commit"
+                style="@style/lion_style_dlg_btn_right"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:text="@string/lion_text_recharge_notice_6"/>
+        </LinearLayout>
+
+        <include layout="@layout/lion_layout_recharge_friendly_notices"/>
+    </LinearLayout>
+
+</ScrollView>

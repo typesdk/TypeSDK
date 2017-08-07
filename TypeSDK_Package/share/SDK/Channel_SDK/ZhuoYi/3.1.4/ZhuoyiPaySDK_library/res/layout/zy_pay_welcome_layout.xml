@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zy_pay_wel_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/zy_pay_welcome_bg">
+
+    <ImageView
+        android:id="@+id/zy_pay_wel_icon_id"
+        android:layout_width="@dimen/zy_pay_wel_icon_width"
+        android:layout_height="@dimen/zy_pay_wel_icon_height"
+        android:layout_centerVertical="true"
+        android:src="@drawable/zy_pay_wel_icon" />
+
+    <TextView
+        android:id="@+id/zy_pay_wel_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/zy_pay_wel_text_marginleft"
+        android:layout_toRightOf="@id/zy_pay_wel_icon_id"
+        android:textColor="@color/zy_pay_wel_text_color"
+        android:textSize="@dimen/zy_pay_wel_text_size" />
+
+</RelativeLayout>

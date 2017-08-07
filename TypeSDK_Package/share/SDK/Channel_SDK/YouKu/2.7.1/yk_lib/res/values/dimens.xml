@@ -1,0 +1,156 @@
+<resources>
+	<!-- default -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="YK_GameSDK_N20PX">-20px</dimen>
+    <dimen name="YK_GameSDK_N19PX">-19px</dimen>
+    <dimen name="YK_GameSDK_N18PX">-18px</dimen>
+    <dimen name="YK_GameSDK_N17PX">-17px</dimen>
+    <dimen name="YK_GameSDK_N16PX">-16px</dimen>
+    <dimen name="YK_GameSDK_N15PX">-15px</dimen>
+    <dimen name="YK_GameSDK_N14PX">-14px</dimen>
+    <dimen name="YK_GameSDK_N13PX">-13px</dimen>
+    <dimen name="YK_GameSDK_N12PX">-12px</dimen>
+    <dimen name="YK_GameSDK_N11PX">-11px</dimen>
+    <dimen name="YK_GameSDK_N10PX">-10px</dimen>
+    <dimen name="YK_GameSDK_N9PX">-9px</dimen>
+    <dimen name="YK_GameSDK_N8PX">-8px</dimen>
+    <dimen name="YK_GameSDK_N7PX">-7px</dimen>
+    <dimen name="YK_GameSDK_N6PX">-6px</dimen>
+    <dimen name="YK_GameSDK_N5PX">-5px</dimen>
+    <dimen name="YK_GameSDK_N4PX">-4px</dimen>
+    <dimen name="YK_GameSDK_N3PX">-3px</dimen>
+    <dimen name="YK_GameSDK_N2PX">-2px</dimen>
+    <dimen name="YK_GameSDK_N1PX">-1px</dimen>
+    <dimen name="YK_GameSDK_0PX">0px</dimen>
+    <dimen name="YK_GameSDK_1PX">1px</dimen>
+    <dimen name="YK_GameSDK_2PX">2px</dimen>
+    <dimen name="YK_GameSDK_3PX">3px</dimen>
+    <dimen name="YK_GameSDK_4PX">4px</dimen>
+    <dimen name="YK_GameSDK_5PX">5px</dimen>
+    <dimen name="YK_GameSDK_6PX">6px</dimen>
+    <dimen name="YK_GameSDK_7PX">7px</dimen>
+    <dimen name="YK_GameSDK_8PX">8px</dimen>
+    <dimen name="YK_GameSDK_9PX">9px</dimen>
+    <dimen name="YK_GameSDK_10PX">10px</dimen>
+    <dimen name="YK_GameSDK_11PX">11px</dimen>
+    <dimen name="YK_GameSDK_12PX">12px</dimen>
+    <dimen name="YK_GameSDK_13PX">13px</dimen>
+    <dimen name="YK_GameSDK_14PX">14px</dimen>
+    <dimen name="YK_GameSDK_15PX">15px</dimen>
+    <dimen name="YK_GameSDK_16PX">16px</dimen>
+    <dimen name="YK_GameSDK_17PX">17px</dimen>
+    <dimen name="YK_GameSDK_18PX">18px</dimen>
+    <dimen name="YK_GameSDK_19PX">19px</dimen>
+    <dimen name="YK_GameSDK_20PX">20px</dimen>
+    <dimen name="YK_GameSDK_21PX">21px</dimen>
+    <dimen name="YK_GameSDK_22PX">22px</dimen>
+    <dimen name="YK_GameSDK_23PX">23px</dimen>
+    <dimen name="YK_GameSDK_24PX">24px</dimen>
+    <dimen name="YK_GameSDK_25PX">25px</dimen>
+    <dimen name="YK_GameSDK_26PX">26px</dimen>
+    <dimen name="YK_GameSDK_27PX">27px</dimen>
+    <dimen name="YK_GameSDK_28PX">28px</dimen>
+    <dimen name="YK_GameSDK_29PX">29px</dimen>
+    <dimen name="YK_GameSDK_30PX">30px</dimen>
+    <dimen name="YK_GameSDK_31PX">31px</dimen>
+    <dimen name="YK_GameSDK_32PX">32px</dimen>
+    <dimen name="YK_GameSDK_33PX">33px</dimen>
+    <dimen name="YK_GameSDK_34PX">34px</dimen>
+    <dimen name="YK_GameSDK_35PX">35px</dimen>
+    <dimen name="YK_GameSDK_36PX">36px</dimen>
+    <dimen name="YK_GameSDK_37PX">37px</dimen>
+    <dimen name="YK_GameSDK_38PX">38px</dimen>
+    <dimen name="YK_GameSDK_39PX">39px</dimen>
+    <dimen name="YK_GameSDK_40PX">40px</dimen>
+    <dimen name="YK_GameSDK_41PX">41px</dimen>
+    <dimen name="YK_GameSDK_42PX">42px</dimen>
+    <dimen name="YK_GameSDK_43PX">43px</dimen>
+    <dimen name="YK_GameSDK_44PX">44px</dimen>
+    <dimen name="YK_GameSDK_45PX">45px</dimen>
+    <dimen name="YK_GameSDK_46PX">46px</dimen>
+    <dimen name="YK_GameSDK_47PX">47px</dimen>
+    <dimen name="YK_GameSDK_48PX">48px</dimen>
+    <dimen name="YK_GameSDK_49PX">49px</dimen>
+    <dimen name="YK_GameSDK_50PX">50px</dimen>
+    <dimen name="YK_GameSDK_51PX">51px</dimen>
+    <dimen name="YK_GameSDK_52PX">52px</dimen>
+    <dimen name="YK_GameSDK_53PX">53px</dimen>
+    <dimen name="YK_GameSDK_54PX">54px</dimen>
+    <dimen name="YK_GameSDK_55PX">55px</dimen>
+    <dimen name="YK_GameSDK_56PX">56px</dimen>
+    <dimen name="YK_GameSDK_57PX">57px</dimen>
+    <dimen name="YK_GameSDK_58PX">58px</dimen>
+    <dimen name="YK_GameSDK_59PX">59px</dimen>
+    <dimen name="YK_GameSDK_60PX">60px</dimen>
+    
+    <dimen name="YK_GameSDK_70PX">70px</dimen>
+    
+    <dimen name="YK_GameSDK_72PX">72px</dimen>
+    
+    <dimen name="YK_GameSDK_75PX">75px</dimen>
+    <dimen name="YK_GameSDK_76PX">76px</dimen>
+    
+    <dimen name="YK_GameSDK_80PX">80px</dimen>
+    
+    <dimen name="YK_GameSDK_85PX">85px</dimen>
+    
+    <dimen name="YK_GameSDK_88PX">88px</dimen>
+    
+    <dimen name="YK_GameSDK_94PX">94px</dimen>
+    
+    <dimen name="YK_GameSDK_100PX">100px</dimen>
+    
+    <dimen name="YK_GameSDK_110PX">110px</dimen>
+    
+    <dimen name="YK_GameSDK_115PX">115px</dimen>
+    
+    <dimen name="YK_GameSDK_119PX">119px</dimen>
+    
+    <dimen name="YK_GameSDK_130PX">130px</dimen>
+    
+    <dimen name="YK_GameSDK_132PX">132px</dimen>
+    
+    <dimen name="YK_GameSDK_138PX">138px</dimen>
+    
+    <dimen name="YK_GameSDK_150PX">150px</dimen>
+    
+    <dimen name="YK_GameSDK_180PX">180px</dimen>
+    
+    <dimen name="YK_GameSDK_200PX">200px</dimen>
+    
+    <dimen name="YK_GameSDK_216PX">216px</dimen>
+    
+    <dimen name="YK_GameSDK_236PX">236px</dimen>
+    
+    <dimen name="YK_GameSDK_280PX">280px</dimen>
+    
+    <dimen name="YK_GameSDK_300PX">300px</dimen>
+    
+    <dimen name="YK_GameSDK_325PX">325px</dimen>
+    
+    <dimen name="YK_GameSDK_360PX">360px</dimen>
+    
+    <dimen name="YK_GameSDK_400PX">400px</dimen>
+    
+    <dimen name="YK_GameSDK_427PX">427px</dimen>
+    <dimen name="YK_GameSDK_428PX">428px</dimen>
+    
+    <dimen name="YK_GameSDK_451PX">451px</dimen>
+    
+    <dimen name="YK_GameSDK_474PX">474px</dimen>
+    
+    <dimen name="YK_GameSDK_496PX">496px</dimen>
+    <dimen name="YK_GameSDK_544PX">544px</dimen>
+    <dimen name="YK_GameSDK_552PX">552px</dimen>
+    <dimen name="YK_GameSDK_565PX">565px</dimen>
+    <dimen name="YK_GameSDK_580PX">580px</dimen>
+    <dimen name="YK_GameSDK_590PX">590px</dimen>
+    <dimen name="YK_GameSDK_600PX">600px</dimen>
+    <dimen name="YK_GameSDK_664PX">664px</dimen>
+    
+    
+    <dimen name="YK_GameSDK_735PX">735px</dimen>
+  	<dimen name="YK_GameSDK_1000PX">1000px</dimen>
+     
+
+</resources>

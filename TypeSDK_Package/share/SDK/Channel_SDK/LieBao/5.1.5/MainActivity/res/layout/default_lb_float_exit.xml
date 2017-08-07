@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="290.0dp"
+        android:layout_height="130.0dp"
+        android:background="@drawable/default_lb_float_exit"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <TextView
+            android:id="@+id/lb_msg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginTop="20.0dp"
+            android:text="是否确认隐藏？"
+            android:textColor="#3a3026"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/lb_alert_msg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_msg_tv"
+            android:layout_marginLeft="20.0dp"
+            android:layout_marginTop="15.0dp"
+            android:text="隐藏后晃动手机浮点将重新出现"
+            android:textColor="#3a3026"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/lb_cancel_tv"
+            android:layout_width="55.0dp"
+            android:layout_height="25.0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14.0dp"
+            android:layout_marginRight="19.0dp"
+            android:background="@drawable/default_lb_float_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#3a3026"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/lb_confirm_tv"
+            android:layout_width="55.0dp"
+            android:layout_height="25.0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14.0dp"
+            android:layout_marginRight="11.0dp"
+            android:layout_toLeftOf="@id/lb_cancel_tv"
+            android:background="@drawable/default_lb_float_selector"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#3a3026"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

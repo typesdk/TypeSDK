@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/kg_selector_item_click"
+    android:minHeight="50dp" >
+
+    <ImageView
+        android:id="@+id/kg_recharge_mode_pic"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:id="@+id/kg_recharge_mode_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/kg_recharge_mode_pic"
+        android:singleLine="true"
+        android:textColor="@color/kg_common_gray_darker"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/kg_recharge_mode_arrow"
+        android:layout_width="8dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/kg_img_recharge_mode_arrow" />
+
+    <RelativeLayout
+        android:id="@+id/kg_recharge_mode_other_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/kg_recharge_mode_arrow"
+        android:layout_toRightOf="@id/kg_recharge_mode_text"
+        android:visibility="gone" >
+        
+        <ImageView
+            android:id="@+id/kg_recharge_mode_red_round"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/kg_shape_red_round" />
+
+        <com.kugou.game.sdk.ui.widget.FocusTextView
+            android:id="@+id/kg_recharge_mode_other_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/kg_recharge_mode_red_round"
+            android:textColor="@color/kg_common_gray_more_lighter"
+            android:textSize="13sp" />
+        
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/kg_recharge_mode_divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/kg_common_background_lighter" />
+
+    <View
+        android:id="@+id/kg_recharge_mode_divider_vertical"
+        android:layout_width="2px"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/kg_common_background_lighter" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/kg_common_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/kg_tv_take_photo"
+        android:layout_width="@dimen/kg_btn_width"
+        android:layout_height="@dimen/kg_btn_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/kg_selector_btn_blue"
+        android:gravity="center"
+        android:text="@string/kg_take_photo"
+        android:textColor="@color/kg_common_white"
+        android:textSize="@dimen/kg_common_large" />
+
+    <TextView
+        android:id="@+id/kg_tv_album"
+        android:layout_width="@dimen/kg_btn_width"
+        android:layout_height="@dimen/kg_btn_height"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/kg_selector_btn_green"
+        android:gravity="center"
+        android:text="@string/kg_album"
+        android:textColor="@color/kg_common_white"
+        android:textSize="@dimen/kg_common_large" />
+
+    <TextView
+        android:id="@+id/kg_tv_cancel"
+        android:layout_width="@dimen/kg_btn_width"
+        android:layout_height="@dimen/kg_btn_height"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/kg_selector_btn_gray"
+        android:gravity="center"
+        android:text="@string/kg_dialog_cancel"
+        android:textColor="@color/kg_common_white"
+        android:textSize="@dimen/kg_common_large" />
+
+</LinearLayout>

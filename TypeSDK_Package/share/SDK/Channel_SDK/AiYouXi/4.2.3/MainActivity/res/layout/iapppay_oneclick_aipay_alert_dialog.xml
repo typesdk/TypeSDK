@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_26"
+    android:layout_marginRight="@dimen/margin_26"
+    android:background="@color/ipay_color_1" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="37dip"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/margin_15"
+            android:textColor="@color/ipay_color_13"
+            android:textSize="@dimen/text_size_19" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iapppay_title_line_heigth"
+            android:background="@color/ipay_color_13" />
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="21dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="21dp"
+                    android:lineSpacingExtra="7dp"
+                    android:maxHeight="400dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:textColor="@color/ipay_color_5"
+                    android:textSize="@dimen/text_size_14" />
+
+                <CheckedTextView
+                    android:id="@+id/ctv_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="41dp"
+                    android:checked="false"
+                    android:drawableLeft="@drawable/aipay_checkbox_selector"
+                    android:drawablePadding="12dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/ipay_tip1"
+                    android:textColor="#8a8a8a"
+                    android:textSize="@dimen/text_size_14"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@null"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:listSelector="@null"
+                android:scrollingCache="false"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/btn_splitor"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divid_line_h"
+            android:layout_marginTop="12dip"
+            android:background="#d2dbe6" />
+
+        <LinearLayout
+            android:id="@+id/ll_button_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/b_negative_button"
+                android:layout_width="0.0dp"
+                android:layout_height="@dimen/iapppay_button_heigth"
+                android:layout_weight="1"
+                android:background="@drawable/ipay_common_btn_bg_color"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@android:string/cancel"
+                android:textColor="@color/ipay_color_5"
+                android:textSize="@dimen/text_size_17" />
+
+            <View
+                android:id="@+id/btn_splitor_between_neg_and_neu"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/iapppay_button_heigth"
+                android:background="#d2dbe6"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/b_neutral_button"
+                android:layout_width="0.0dp"
+                android:layout_height="@dimen/iapppay_button_heigth"
+                android:layout_weight="1"
+                android:background="@drawable/ipay_common_btn_bg_color"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/ipay_color_5"
+                android:textSize="@dimen/text_size_17" />
+
+            <View
+                android:id="@+id/btn_splitor_between_neu_and_pos"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/iapppay_button_heigth"
+                android:background="#d2dbe6"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/b_positive_button"
+                android:layout_width="0.0dp"
+                android:layout_height="@dimen/iapppay_button_heigth"
+                android:layout_weight="1"
+                android:background="@drawable/ipay_common_btn_bg_color"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@android:string/ok"
+                android:textColor="@drawable/ipay_common_btn_text_color" 
+                android:textSize="@dimen/text_size_17">            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

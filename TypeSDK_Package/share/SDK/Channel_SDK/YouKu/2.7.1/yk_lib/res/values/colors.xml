@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="yk_text_error_bg">#e1f5ff</color>
+	<color name="yk_text_title">#279bd4</color><!--#1b9ad6  -->
+	<color name="yk_text_title2">#279BD4</color> 
+	<color name="yk_text_error">#FFff6699</color>
+	<color name="yk_text_gray">#939393</color><!-- #909fa8 -->
+	<color name="yk_button_text">#7d8e97</color> 
+	<color name="yk_text_green">#56b81b</color>
+	<color name="yk_text_error_prompt">#279bd4</color><!-- #ff5a5a -->
+	<color name="yk_text_line_include">#69ccff</color><!-- #58abff -->
+	<color name="yk_edit_text_hint">#b3b3b3</color> 
+	<color name="yk_edit_text_line">#58abff</color>
+	
+	<color name="yk_btn_text_blue">#3db5f3</color>
+	<color name="yk_btn_text_white">#ffffff</color>
+	<color name="yk_btn_text_gray">#909fa8</color>
+	
+	<color name="yk_title_line">#dbdbdb</color>
+	<color name="yk_title_line2">#bcbcbc</color>
+	<color name="yk_title_line3">#D9D9D9</color>
+	<color name="yk_title_line_new">#696969</color>
+	<color name="yk_title_line_bellow">#bdbdbd</color>
+	
+	<color name="yk_white">#ffffff</color>
+	<color name="yk_blue">#04A3EE</color>
+	<color name="yk_blue_press">#0296DC</color>
+	<color name="yk_vedio_setting_text">#333333</color>
+	<color name="yk_light_gray">#cccccc</color>
+	<color name="yk_dark_black">#000000</color>
+	<color name="yk_dark_nearly_black">#CB000000</color>
+	<color name="yk_content_gray">#888888</color>
+	<color name="yk_pay_datail_item_issuccess">#ff9c00</color>
+	<color name="yk_bg_color_white">#f3f3f3</color><!--#fffafafa  -->
+	<color name="yk_bg_pay_datail">#e2e2e2</color>
+	<color name="yk_bg_color_white_press">#ffe7e7e7</color>
+	
+	<color name="yk_bg_color_blue">#22b8ff</color>
+	<color name="yk_bg_color_blue_press">#4db5ea</color>
+	
+	<color name="yk_bg_color_light_blue">#1500baff</color>
+	<color name="yk_bg_color_light_blue_press">#33049dd5</color>
+	
+	<color name="yk_bg_color_blue_gray">#d7e2e8</color>
+	<color name="yk_bg_color_blue_gray_press">#4db5ea</color>
+	
+	<color name="yk_video_manager">#D9D9D9</color>
+	<color name="yk_bg_color_gray">#d7e2e8</color>
+	<color name="yk_bg_color_gray_press">#b2c3cc</color>
+	
+	<color name="yk_loading_btn_cancel">#737474</color>
+	<color name="yk_loading_bar_text">#626262</color>
+	<color name="yk_gold_yellow">#fdd202</color>
+	
+    <color name="yk_transparent">#9000</color>
+    <color name="yk_paylist_bt_bg_blue">#2bb5fc</color>
+    <color name="yk_textcolor_benefit">#1ca8e0</color>
+    <color name="yk_textcolor_orderlist">#bababa</color>
+    <color name="yk_textcolor_benefit_orange">#886600</color>
+    <color name="yk_textcolor_benefit_gray">#f5f5f7</color>
+	
+	    <!-- Alipay colors -->
+    <color name="yk_TextColorBlack">#FF000000</color>
+    <color name="yk_TextColorWhite">#FFFFFFFF</color>
+    <color name="yk_TextColorGray">#FF505050</color>
+    <color name="yk_ToastBgColor">#FF424242</color>
+    <color name="yk_btnColor">#FFFFFF</color>
+    <color name="yk_textColorforItemTitle">#FF666666</color>
+    <color name="yk_secondbtntextColor">#FF496ea3</color>
+    <color name="yk_textColorforCheckBox">#FF333333</color>
+    <color name="yk_ykbgColor">#ffffff</color>
+    <color name="yk_ykbgProColor">#f2fcff</color>
+    <color name="yk_downLoadTextNomal">#FF3366CC</color>
+    <color name="yk_downLoadTextPressed">#FFFFFFFF</color>
+    <color name="yk_downLoadBackNomal">#FFFFFFFF</color>
+    <color name="yk_downLoadBackFocus">#FF6698E7</color>
+    <color name="yk_downLoadBackPressed">#FF3366CC</color>
+    <color name="yk_dialog_tiltle_blue">#2277BB</color>
+    <color name="yk_color_pay_vip_text">#F07008</color>
+    <color name="yk_color_pay_vip_text2">#666666</color>
+    <color name="yk_color_consume_benefit">#006797</color>
+    <color name="yk_color_consume_benefit_present_name">#909090</color>
+    
+    	    <!-- WX colors -->
+    <color name="navpage">#FFE1E8EB</color>
+</resources>

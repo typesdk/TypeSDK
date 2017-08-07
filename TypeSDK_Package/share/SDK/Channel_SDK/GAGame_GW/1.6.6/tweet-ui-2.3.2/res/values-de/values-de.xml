@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 Std.</item>
+        <item quantity="other">%d Std.</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 Min.</item>
+        <item quantity="other">%d Min.</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 Sek.</item>
+        <item quantity="other">%d Sek.</item>
+    </plurals>
+    <string name="tw__like_tweet">Tweet gefällt mir</string>
+    <string name="tw__liked_tweet">Gefällt mir nicht mehr</string>
+    <string name="tw__loading_tweet">Tweet wird geladen</string>
+    <string name="tw__pause">Pause</string>
+    <string name="tw__play">Abspielen</string>
+    <string name="tw__relative_date_format_long">d.M.y</string>
+    <string name="tw__relative_date_format_short">d. MMM</string>
+    <string name="tw__replay">Erneut abspielen</string>
+    <string name="tw__retweeted_by_format">Retweetet von %1$s</string>
+    <string name="tw__share_content_format">Sieh Dir den Tweet von \@%1$s an: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">Tweet von %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Tweet teilen</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Medien twittern</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/commont_login_layout"
+    android:layout_width="304dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <RelativeLayout
+        android:id="@+id/common_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_cha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/com_lenovo_lsf_ad_cha" />
+
+        <!--
+             <View
+            android:id="@+id/common_list_item_real_dash_other"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_list_dash_height"
+            android:layout_alignParentBottom="true"
+            android:background="#eaeaea" />
+        -->
+    </RelativeLayout>
+    <!--
+         <View
+        android:id="@+id/common_list_item_real_dash"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_list_dash_height"
+        android:layout_below="@id/common_title_layout"
+        android:background="#eaeaea" />
+    -->
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/common_title_layout"
+        android:background="@drawable/com_lenovo_lsf_activity_bg"  >
+
+        <FrameLayout
+            android:id="@+id/tuwen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_tu"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:src="@drawable/com_lenovo_lsf_activity_login" />
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/com_lenovo_lsf_ad_button_bg"
+                android:textSize="@dimen/com_lenovo_lsf_ad_btn_text_size"
+                android:textColor="@color/com_lenovo_lsf_list_item_white"
+                android:visibility="visible" />
+        </FrameLayout>
+        <!-- @drawable/com_lenovo_lsf_ad_button_bg -->
+
+        <GridView
+            android:id="@+id/applist"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:layout_gravity="center_horizontal"
+            android:horizontalSpacing="4dp"
+            android:numColumns="3"
+            android:visibility="visible" />
+        <LinearLayout
+        android:id="@+id/layout_btn_watch"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_below="@id/content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <View
+            android:id="@+id/common_list_item_real_dash_other0"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_list_dash_height"
+            android:background="#eaeaea" />
+
+        <TextView
+            android:id="@+id/btn_close_quit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="退出游戏"
+            android:textSize="16sp"
+            android:textColor="#5fa134"
+            android:visibility="visible" />
+
+    </LinearLayout>
+        
+    </FrameLayout>
+
+    
+</RelativeLayout>

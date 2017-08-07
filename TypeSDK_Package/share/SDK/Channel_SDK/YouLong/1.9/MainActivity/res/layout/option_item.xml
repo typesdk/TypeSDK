@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#eee" >
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:paddingTop="3dp"
+	    android:paddingBottom="3dp"
+	    android:minHeight="25dp" 
+	    android:background="#ffffffff">
+
+		<ImageView
+		    android:id="@+id/delImage"
+		    android:layout_width="16dp"
+		    android:layout_height="16dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="7dp"
+		    android:src="@drawable/_yl_del_item"/>
+
+		<TextView
+		    android:id="@+id/item_text"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_toLeftOf="@id/delImage"
+		    android:textColor="#727171"
+		    android:textSize="@dimen/edit_text_14sp"/>
+
+		<!-- <View android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_marginRight="7dp"
+		    android:layout_marginTop="7dp"
+		    android:layout_below="@+id/item_text"
+		    android:background="@color/dropdown_text"/> -->
+	</RelativeLayout>
+</LinearLayout>

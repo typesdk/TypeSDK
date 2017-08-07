@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- sdk version 3.5.3.1 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.pyw"
+    android:versionCode="222"
+    android:versionName="2.2.2"
+    android:installLocation="auto">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+    
+    <!-- 朋友玩权限导入 start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 朋友玩权限导入 end -->
+	<!-- 2.2.2新增 银联需要 -->
+    <uses-permission android:name="android.permission.NFC" />
+	
+	<uses-feature android:glEsVersion="0x00020000" />
+	<uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:allowBackup="true"
+		android:persistent="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+		
+		<activity
+            android:name="com.type.sdk.android.pyw.TypeSDKSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+
+        <activity
+            android:name="com.type.sdk.android.pyw.MainActivity"
+           android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+			android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+			<intent-filter>
+                <action android:name="pyw.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        
+        <!-- 朋友玩SDK===============start============= -->
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ForgetLoginPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.AccountManagerActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.SetPayPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.UserCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.VoucherActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ChargeCenterActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetLoginPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustUnspecified|stateVisible" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.AccountBindingInquireActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetPayPasswordActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.MyVoucherActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.BindPassCardActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.BindAccountActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetAccountPwdActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustUnspecified|stateVisible" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|locale|navigation|screenSize"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustUnspecified|stateVisible" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.MyBalanceActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.PassportIntroActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.BindMobilePhoneActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.ResetAccountPwdUnBindAccountActivity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.pengyouwan.sdk.activity.H5Activity"
+            android:configChanges="fontScale|orientation|keyboardHidden|locale|navigation|screenSize|uiMode"
+            android:screenOrientation="landscape" />
+
+        <service android:name="com.pengyouwan.sdk.service.CheckTokenService" >
+        </service>
+        <!-- 朋友玩SDK===============end============= -->
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+        <!-- 银联支付 start -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 银联支付 end -->
+        
+        
+    </application>
+
+    
+
+</manifest>

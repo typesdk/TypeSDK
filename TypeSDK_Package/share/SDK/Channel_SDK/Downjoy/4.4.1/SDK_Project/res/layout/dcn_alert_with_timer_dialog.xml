@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dcn_shape_dialog_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dcn_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="8dip"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:id="@+id/dcn_fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dip"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip" >
+
+        <TextView
+            android:id="@+id/dcn_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#464646"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_divider_size"
+        android:background="@color/dcn_color_login_box_gb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dcn_btn_negative"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dcn_dialog_button_bg"
+            android:gravity="center"
+            android:text="@string/dcn_exit_exit"
+            android:textColor="@color/dcn_select_account_blue"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/dcn_btn_neutral"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dcn_dialog_button_bg"
+            android:gravity="center"
+            android:textColor="@color/dcn_select_account_blue"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/dcn_btn_positive"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dcn_dialog_button_bg"
+            android:gravity="center"
+            android:text="@string/dcn_init_retry"
+            android:textColor="@color/dcn_select_account_blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

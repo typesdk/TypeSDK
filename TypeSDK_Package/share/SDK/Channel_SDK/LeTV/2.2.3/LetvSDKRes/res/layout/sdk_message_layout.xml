@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.le.legamesdk.widget.LeMainViewParent
+        android:id="@+id/le_main_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/le_border_line_bg">
+
+        <LinearLayout
+            android:id="@+id/messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/le_main_view_action_bar"
+                layout="@layout/le_main_view_action_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_main_view_action_bar_height"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/error_txt"
+                    style="@style/LeStyleGray14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+
+                <com.le.legamesdk.widget.LeListView
+                    android:id="@+id/coupon_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/sdk_transparent"
+                    android:cacheColorHint="@null"
+                    android:clickable="false"
+                    android:descendantFocusability="beforeDescendants"
+                    android:divider="#00000000"
+                    android:dividerHeight="4dp"
+                    android:fadingEdge="none"
+                    android:listSelector="@color/sdk_transparent"
+                    android:scrollingCache="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.le.legamesdk.widget.LeMainViewParent>
+
+</RelativeLayout>

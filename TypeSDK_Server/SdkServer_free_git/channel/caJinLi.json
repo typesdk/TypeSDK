@@ -1,0 +1,50 @@
+{
+  "version":"3.1.9.20161205",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "AmigoToken" : ""
+    }
+    ,"out_url" :"https://id.gionee.com/account/verify.do"
+    ,"out_params" :
+    {
+      "id" : 0
+    ,"ts" : ""
+    ,"nonce" : ""
+    ,"AmigoToken" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "api_key" : ""
+      ,"close_time" : ""
+      ,"create_time" :""
+      ,"deal_price"  : ""
+      ,"out_order_no" : ""
+      ,"pay_channel": ""
+      ,"submit_time": ""
+      ,"user_id": ""
+      ,"sign": ""
+      }
+    ,"out_url" :"http://cp.com/sdkpay"
+    ,"out_params" :
+      {
+        "api_key" : ""
+      ,"close_time" : ""
+      ,"create_time" :""
+      ,"deal_price"  : ""
+      ,"out_order_no" : ""
+      ,"pay_channel": ""
+      ,"submit_time": ""
+      ,"user_id": ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

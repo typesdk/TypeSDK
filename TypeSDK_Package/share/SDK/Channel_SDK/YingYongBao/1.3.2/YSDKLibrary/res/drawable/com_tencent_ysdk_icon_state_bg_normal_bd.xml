@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:shape="rectangle">
+
+    <stroke android:color="@color/download_btn_stroke_normal" android:width="1dp"/>
+    
+    <solid android:color="@color/white"/>
+    
+    <!-- <size
+        android:height="@dimen/download_button_height"
+        android:width="@dimen/download_button_minwidth_2" /> -->
+
+</shape>
+<!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/drawable/com_tencent_ysdk_icon_state_bg_normal_bd.xml -->

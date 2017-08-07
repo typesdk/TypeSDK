@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gfan_splash_bg_port"
+    tools:context=".init.SplashActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="
+    抵制不良游戏，抵制盗版游戏\n
+    注意自我保护，谨防受骗上当\n
+    适度游戏益脑，过度游戏伤身\n
+    合理安排时间，享受健康生活
+    "
+        android:textColor="#eb9127" />
+</RelativeLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout-port/gfan_splash_activity.xml -->

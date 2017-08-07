@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@drawable/wd_bg_dialog_shape_corner">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/wd_dialog_padding">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/wd_iv_pass_modify_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/wd_ic_account_back"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="找回密码"
+                        android:textSize="@dimen/wd_text_size_20"
+                        android:layout_gravity="center"
+                        android:textColor="@color/wd_color_blue"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                />
+
+                <ImageView
+                        android:id="@+id/wd_iv_pass_modify_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/wd_ic_account_close"
+                        android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/wd_margin_15">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已发送验证码到 "
+                        android:textSize="@dimen/wd_text_size_16"
+                />
+                <TextView
+                        android:id="@+id/wd_tv_pass_modify_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13631847649"
+                        android:textSize="@dimen/wd_text_size_16"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="20dip"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+            >
+
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:background="@drawable/wd_bg_edit_shape_corner"
+                        android:layout_weight="0.6"
+                >
+
+                    <ImageView
+                            android:layout_width="30dip"
+                            android:layout_height="40dip"
+                            android:scaleType="center"
+                            android:src="@drawable/wd_ic_account_message"
+                            android:visibility="visible"
+                            android:layout_marginLeft="8dp"
+                    />
+
+                    <EditText
+                            android:id="@+id/wd_et_pass_modify_validate"
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:hint="输入验证码"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:textSize="@dimen/wd_text_size_16"
+                    />
+
+                </LinearLayout>
+
+                <Button
+                        android:id="@+id/wd_btn_pass_modify_validate"
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.3"
+                        android:textSize="@dimen/wd_text_size_14"
+                        android:text="重新发送验证码"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/wd_color_white"
+                        android:background="@drawable/wd_bg_validate_shape_normal"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/wd_bg_edit_shape_corner"
+                    android:layout_marginTop="@dimen/wd_margin_15">
+
+                <ImageView
+                        android:layout_width="30dip"
+                        android:layout_height="40dip"
+                        android:scaleType="center"
+                        android:src="@drawable/wd_ic_account_password"
+                        android:visibility="visible"
+                        android:layout_marginLeft="8dp"
+                />
+                <EditText
+                        android:id="@+id/wd_et_pass_modify_username"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入6~18位密码"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null"
+                        android:background="@null"
+                        android:textSize="@dimen/wd_text_size_16">
+                </EditText>
+
+                <CheckBox
+                        android:id="@+id/wd_cb_pass_modify_show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/wd_customer_checkbox_style"
+                        android:paddingRight="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/wd_margin_15"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <Button
+                        android:id="@+id/wd_btn_pass_modify"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/wd_bg_account_btn_blue_selector"
+                        android:text="保存新密码"
+                        android:textColor="@color/wd_color_white"
+                        android:gravity="center"
+                        android:textSize="@dimen/wd_text_size_18"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

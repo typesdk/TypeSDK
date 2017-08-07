@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/m4399_rec_edittext_height"
+    android:background="@color/m4399_rec_color_white"
+    android:layout_gravity="center_vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/mannual_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="2dp"
+        android:textColor="#333333"
+        android:textSize="13sp"
+        android:text="@string/m4399_rec_other_sum" />
+
+    <EditText
+        android:id="@+id/input_sum"
+		style="@style/m4399RecInputAreaStyle"
+		android:textCursorDrawable="@null"
+        android:hint="@string/m4399_rec_input_cash_hint" >
+    </EditText>
+
+</LinearLayout>

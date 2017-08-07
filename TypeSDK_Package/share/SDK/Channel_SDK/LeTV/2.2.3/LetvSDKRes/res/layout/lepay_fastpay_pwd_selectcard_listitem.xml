@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lepay_width_fillparent"
+    android:paddingBottom="13dp"
+    android:background="@drawable/lepay_layout_ditu" >
+    <ImageView 
+        android:id="@+id/lepay_selectcard_item_icon"
+        android:layout_width="33.5dp"
+        android:layout_height="33.5dp"
+        android:layout_marginLeft="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/lepay_test_zhaoshang" />
+    <TextView 
+        android:id="@+id/lepay_selectcard_item_title"
+        style="@style/lepay_wrapparent"
+        android:layout_marginLeft="12.5dp"
+        android:layout_toRightOf="@id/lepay_selectcard_item_icon"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/lepay_cashier_black"
+        android:textSize="@dimen/lepay_font_size"
+        android:text="招商银行（2341****3252）"/>
+    <TextView
+        android:id="@+id/lepay_selectcard_item_desc"
+        style="@style/lepay_wrapparent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="11dp"
+        android:layout_below="@id/lepay_selectcard_item_title"
+        android:layout_toRightOf="@id/lepay_selectcard_item_icon"
+        android:textColor="@color/lepay_paychannel_item_desc_font_color"
+        android:textSize="@dimen/lepay_cashier_trade_desc"
+        android:text="已绑定信用卡，一步付款"/>
+    <CheckBox 
+        style="@style/lepay_wrapparent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="19dp"
+        android:button="@null"
+        android:background="@drawable/lepay_checkbox_selector"/>
+</RelativeLayout>

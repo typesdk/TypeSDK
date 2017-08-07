@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dcn_login_padding_left_right"
+    android:paddingRight="@dimen/dcn_login_padding_left_right">
+
+    <com.downjoy.widget.swipemenulistview.SwipeMenuListView
+        android:id="@+id/dcn_account_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/dcn_color_login_box_gb"
+        android:dividerHeight="1dp" />
+</LinearLayout>

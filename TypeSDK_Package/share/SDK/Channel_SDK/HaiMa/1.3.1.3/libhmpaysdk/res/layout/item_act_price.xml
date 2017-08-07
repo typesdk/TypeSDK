@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/recharge_money_selector"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_recharge_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="10"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_recharge_back_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+</LinearLayout>

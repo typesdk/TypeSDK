@@ -1,0 +1,18 @@
+<resources>
+
+    <color name="ch_white">#ffffff</color>
+    <color name="ch_black">#000000</color>
+    <color name="ch_gray_black">#525252</color>
+    <color name="ch_splash_bg">#353535</color>
+    <color name="ch_gray">#f4f4f4</color>
+    <color name="ch_text_hint">#999999</color>
+    <color name="ch_green">#26bc5b</color>
+    <color name="ch_green_p">#228B22</color>
+	<color name="ch_transparent">#00000000</color>
+	<color name="ch_transparent_half">#A0000000</color>
+	<color name="ch_orange">#ff7b19</color>
+	<color name="ch_orange_p">#FF9B19</color>
+	
+	<color name="ch_edit_stroke">#c9c9c9</color>
+	<color name="ch_text">#666666</color>
+</resources>

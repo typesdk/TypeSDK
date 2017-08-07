@@ -1,0 +1,5 @@
+@media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+	.focus .item img{ width: auto;}
+	.container-fluid .item{ height: 80px !important; margin-top: -6px !important; clear: both; margin-bottom: 0px !important}
+	.icon{ width: 70px !important; padding-top: 10px !important}.icon img{ width: 65px !important; padding-right: 5px}.app-info li{ font-size: 9pt}.app-info li.title{ font-size: 9.6pt !important; padding-top: 10px !important}.btn-success{ width: 80%; font-size: 9.6pt !important; padding: 4pt 15pt 4pt 3pt; margin-top: -20px !important}
+	}

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <include
+                android:id="@+id/credit_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                layout="@layout/info" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支持工、招、建、中、农等银行"
+                    android:textColor="#454545"
+                    android:textSize="12sp" />
+
+                
+                 <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="查看全部"
+                android:textColor="#1c82fe"
+                android:textSize="12sp" />
+               
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/credit_kahao_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ledi_phone_number"
+                android:hint="信用卡号"
+                android:numeric="integer"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/credit_phoneNumber_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ledi_phone_number"
+                android:hint="信用卡关联手机号"
+                android:numeric="integer"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/credit_time_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ledi_phone_number"
+                android:hint="卡有效期"
+                android:numeric="integer"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <ImageSwitcher
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ledi_card_front_bg" />
+
+            <EditText
+                android:id="@+id/credit_number_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ledi_phone_number"
+                android:hint="卡校验码"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <ImageSwitcher
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ledi_card_back_bg" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/credit_bootom_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/recharge_bottom_bg"
+            android:gravity="center"
+            android:onClick="bootomBtnOnclick"
+            android:text="立即付款"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>
+
+
+<?xml version="1.0" encoding="utf-8"?> -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" 
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <include
+            android:id="@+id/credit_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+              android:layout_marginTop="10dp"
+            layout="@layout/ledi_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ledi_support_bank"
+            android:textColor="#454545"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/credit_kahao_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ledi_phone_number"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:hint="@string/ledi_inputnum"
+            android:textColor="#000"
+            android:visibility="gone"
+            android:textSize="14sp"
+             />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/credit_bootom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ledi_recharge_bottom_bg"
+        android:gravity="center"
+        android:onClick="bootomBtnOnclick"
+        android:text="@string/ledi_next"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>

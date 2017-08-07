@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+
+
+
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fanwei_20_dp">20.0dip</dimen>
+    <dimen name="fanwei_25_dp">25.0dip</dimen>
+    <dimen name="title_line">1.0px</dimen>
+    <dimen name="title_text_size">25sp</dimen>
+    <dimen name="fanwei_5_dp">5.0dip</dimen>
+    <dimen name="fanwei_3_dp">3.0dip</dimen>
+    <dimen name="fanwei_7_dp">7.0dip</dimen>
+    <dimen name="fanwei_2_dp">2.0dip</dimen>
+    <dimen name="fanwei_15_dp">15.0dip</dimen>
+    <dimen name="fanwei_98_dp">98.0dip</dimen>
+    <dimen name="fanwei_10_dp">10.0dip</dimen>
+    <dimen name="fanwei_8_dp">8.0dip</dimen>
+    <dimen name="fanwei_50_dp">50.0dip</dimen>
+    <dimen name="fanwei_60_dp">60.0dip</dimen>
+    <dimen name="fanwei_70_dp">70.0dip</dimen>
+    <dimen name="fanwei_17_dp">17.0dip</dimen>
+    <dimen name="fanwei_14_dp">14.0dip</dimen>
+    <dimen name="fanwei_40_dp">40dip</dimen>
+    <dimen name="fanwei_125_dp">125.0dip</dimen>
+    <dimen name="fanwei_30_dp">30dip</dimen>
+    <dimen name="text_15_size">15sp</dimen>
+    <dimen name="text_16_size">16sp</dimen>
+    <dimen name="text_12_size">12sp</dimen>
+    <dimen name="text_13_size">13sp</dimen>
+    <dimen name="text_18_size">18sp</dimen>
+    <dimen name="text_24_size">24sp</dimen>
+    <dimen name="text_28_size">28sp</dimen>
+    <dimen name="text_22_size">22sp</dimen>
+    <dimen name="fanwei_200_dp">200dip</dimen>
+    <dimen name="fanwei_21_dp">21.0dip</dimen>
+
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+
+</resources>

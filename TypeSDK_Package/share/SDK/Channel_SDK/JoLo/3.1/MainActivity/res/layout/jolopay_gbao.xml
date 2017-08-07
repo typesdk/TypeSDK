@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/jolopay_gbao_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:text="@string/jolopay_gbao_type_value"
+        android:textColor="@color/jolopay_gray"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jolopay_list_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/jolopay_pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jolopay_pay_price"
+                android:textColor="@color/jolopay_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/jolopay_gbao_pay_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/jolopay_pay_price"
+                android:textColor="@color/jolopay_red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/jolopay_gbao_pay_org_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/jolopay_gbao_pay_tv"
+                android:textColor="@color/jolopay_gray"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/jolopay_gbao_amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jolopay_gbao_price"
+                android:textColor="@color/jolopay_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/jolopay_gbao_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/jolopay_gbao_amount_tv"
+                android:textColor="@color/jolopay_red"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/jolopay_arrow_right"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/jolopay_arrow_right"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/jolopay_gbao_recharge_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/jolopay_arrow_right"
+                android:gravity="center|right"
+                android:minWidth="90dip"
+                android:text="@string/jolopay_input_recharge"
+                android:textColor="@color/jolopay_title_bg"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/jolopay_gbao_warning_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/jolopay_warning_bg"
+        android:textColor="@color/jolopay_red"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dip"
+        android:text="@string/jolopay_gbao_note_title"
+        android:textColor="@color/jolopay_gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/jolopay_gbao_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jolopay_note_bg"
+        android:padding="10dip"
+        android:text="@string/jolopay_gbao_note_value"
+        android:textColor="@color/jolopay_gray"
+        android:textSize="14sp" />
+
+</LinearLayout>

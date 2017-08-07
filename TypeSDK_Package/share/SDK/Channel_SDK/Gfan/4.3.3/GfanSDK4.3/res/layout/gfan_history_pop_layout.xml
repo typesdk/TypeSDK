@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="hello">
+
+</ListView>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_history_pop_layout.xml -->

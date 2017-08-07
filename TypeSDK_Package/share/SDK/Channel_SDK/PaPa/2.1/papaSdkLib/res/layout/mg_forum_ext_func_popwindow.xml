@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/mg_forum_ext_func_width"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@drawable/shape_forum_ext_func_popwindow_bg">
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/extFuncShare"
+                  android:orientation="vertical"
+                  android:clickable="true">
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:id="@+id/extFuncShareTv"
+                  android:text="分享"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/extFuncFavorite"
+                  android:orientation="vertical"
+                  android:clickable="true">
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:id="@+id/extFuncFavoriteTv"
+                  android:text="收藏"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/extFuncBest"
+                  android:orientation="vertical"
+                  android:clickable="true">
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:id="@+id/extFuncBestTv"
+                  android:text="加精"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/extFuncReply"
+                  android:orientation="vertical"
+                  android:clickable="true">
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:text="回复"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/extFuncReport"
+                  android:orientation="vertical"
+                  android:clickable="true">
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:text="举报"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/extFuncDelete"
+                  android:orientation="vertical"
+                  android:clickable="true">
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:text="删除"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_height"
+                  android:id="@+id/extFuncCancel"
+                  android:orientation="vertical"
+                  android:clickable="true">
+        <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_ext_func_item_divider"
+              android:background="@color/gray"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:text="取消"
+                  android:gravity="center"
+                  android:textColor="#4d4d4d"
+                  android:textSize="@dimen/mg_forum_ext_func_item_tv_size"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

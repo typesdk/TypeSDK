@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="10dip"
+    android:addStatesFromChildren="true"
+    android:background="@drawable/jolopay_edit_bg"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="6dip"
+        android:text="@string/jolopay_card_no"
+        android:textColor="@color/jolopay_black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/jolopay_edittext_no"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="left|center"
+        android:hint="@string/jolopay_card_input_no"
+        android:inputType="number"
+        android:maxLength="23"
+        android:paddingLeft="8.0dip"
+        android:singleLine="true"
+        android:textColor="@color/jolopay_black"
+        android:textColorHint="@color/jolopay_gray"
+        android:textCursorDrawable="@null"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/jolopay_edittext_no_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/jolopay_clear_btn_bg"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+</LinearLayout>

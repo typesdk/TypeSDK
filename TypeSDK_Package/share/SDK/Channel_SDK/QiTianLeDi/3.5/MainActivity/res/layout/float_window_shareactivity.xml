@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/float_window_grey"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/float_window_activity_title" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="分享即送好礼..."
+        android:textSize="23sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/float_window_share_content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/float_window_share_image"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/float_window_edittextbg_black"
+            android:editable="false"
+            android:gravity="left|top"
+            android:hint="http://www.44755.com" />
+
+        <ImageView
+            android:id="@+id/float_window_share_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/float_window_share_btn_sure"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:src="@drawable/float_window_btn_bond_share" />
+
+        <Button
+            android:id="@+id/float_window_share_btn_sure"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/float_window_btn_bond_share_selector"
+            android:text="@string/float_window_btn_share"
+            android:textColor="@color/float_window_white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</LinearLayout>

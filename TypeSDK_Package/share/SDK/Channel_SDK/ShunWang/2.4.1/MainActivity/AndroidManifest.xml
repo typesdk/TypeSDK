@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.qihoo"
+    android:versionCode="241"
+    android:versionName="2.4.1"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- SDK -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.webkit.permission.PLUGIN" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="cn.swiftpass.wxpay.permission.MMOAUTH_CALLBACK" />
+	<uses-permission android:name="cn.swiftpass.wxpay.permission.MM_MESSAGE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
+	<!-- SDK end -->
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:debuggable="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name="com.type.sdk.android.shunwang.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="sensorLandscape" >
+			
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+           
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <!-- SDK Activity -->
+        <activity
+            android:name="com.shunwang.sdk.game.ui.WelcomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.shunwang.sdk.game.ui.ThirdLoginWebviewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" >
+        </activity>
+        <activity
+            android:name="com.shunwang.sdk.game.ui.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.shunwang.sdk.game.ui.RechargeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.shunwang.sdk.game.ui.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.shunwang.sdk.game.ui.AccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.shunwang.sdk.game.ui.CommonWebviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.shunwang.sdk.game.ui.CouponActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <service android:name="com.shunwang.sdk.game.service.FxService" />
+
+        <!-- 星期天微信支付 -->
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="WeChatPayActivity"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.switfpass.pay.activity.QQWapPayWebView"
+            android:screenOrientation="portrait" />
+        <!-- 星期天微信支付 -->
+        <!-- SDK end -->
+
+    </application>
+
+</manifest>

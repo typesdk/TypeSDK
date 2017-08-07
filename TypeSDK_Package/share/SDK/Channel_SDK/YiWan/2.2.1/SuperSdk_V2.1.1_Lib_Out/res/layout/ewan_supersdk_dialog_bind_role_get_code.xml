@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:background="@drawable/ewan_supersdk_bindrole_bg_main" >
+
+        <TextView
+            android:id="@+id/ewan_supersdk_bindrole_get_code_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="手机绑定"
+            android:textColor="#473228"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ewan_supersdk_bindrole_get_code_iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ewan_supersdk_bindrole_get_code_tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/ewan_supersdk_bindrole_bg_title" />
+        
+        <TextView 
+            android:id="@+id/ewan_supersdk_bindrole_tv_get_code_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ewan_supersdk_bindrole_get_code_iv_title"
+			android:layout_margin="15dp"
+			android:lineSpacingExtra="3dp"
+            android:textColor="#473228"
+            android:textSize="15sp" />
+        
+        <Button android:id="@+id/ewan_supersdk_bindrole_btn_confirm"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="14sp"
+            android:textColor="#473228"
+            android:text="确 定"
+            android:background="@drawable/ewan_supersdk_bindrole_btn_selector"/>
+    </RelativeLayout>
+    
+</RelativeLayout>

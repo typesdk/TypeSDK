@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hpay_recharge">充值</string>
+    <string name="hpay_cancel">继续充值</string>
+    <string name="hpay_ok">确定取消</string>
+    <string name="hpay_network_abnormal">您的网络不给力，请重试</string>
+    <string name="hpay_progress_text">正在为您载入数据，请稍候</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登录"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pamoney"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:hint="充值金额单位为元精确到分如“1.02”"
+                    />
+
+            <Button
+                android:id="@+id/pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="退出"
+                    android:id="@+id/extApp"
+                    />
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="创建角色"
+                    android:id="@+id/creatRole"
+                    />
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="切换帐号"
+                    android:id="@+id/changeAccount"
+                    />
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="进入游戏接口"
+                    android:id="@+id/enterGame"
+                    />
+
+            <TextView
+                    android:id="@+id/msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="结果："
+                    android:textColor="@color/black"
+                    />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.le.legamesdk.widget.LeMainViewParent
+        android:id="@+id/le_main_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/le_border_line_bg" >
+
+        <LinearLayout
+            android:id="@+id/main_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/le_main_view_action_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/le_main_view_action_bar_height"
+                layout="@layout/le_main_view_action_bar_layout" />
+
+            <LinearLayout
+                android:id="@+id/user_center"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/lepay_white"
+                android:orientation="horizontal" >
+
+                <com.le.legamesdk.widget.RoundImageView
+                    android:id="@+id/head_icon"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="22dp"
+                    android:src="@drawable/sdk_head_default_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/le_main_common_text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/game_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/le_main_common_text_color"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/top_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="24dp"
+                        android:background="@drawable/lesdk_main_topup_img"
+                        android:text="@string/lesdk_top_up"
+                        android:textColor="@color/lepay_white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <com.le.legamesdk.activity.homepage.LeSDKMainGridView
+                    android:id="@+id/gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="0dp"
+                    android:listSelector="@null"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0dp" />
+            </ScrollView>
+        </LinearLayout>
+    </com.le.legamesdk.widget.LeMainViewParent>
+
+</RelativeLayout>

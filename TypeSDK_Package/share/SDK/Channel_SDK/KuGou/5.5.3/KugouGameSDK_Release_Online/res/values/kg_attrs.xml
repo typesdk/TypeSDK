@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- UserInfoView attrs define -->
+    <declare-styleable name="kg_UserInfoView">
+        <attr name="item_title" format="reference|string" />
+        <attr name="item_divider_visible" format="boolean" />
+        <attr name="item_title_detail" format="reference|string" />
+    </declare-styleable>
+
+    <!-- 圆形imageview -->
+    <declare-styleable name="roundImageView">
+        <attr name="border_thickness" format="dimension" />
+        <!-- 边缘厚度 -->
+        <attr name="border_color" format="color" />
+        <!-- 边缘颜色 -->
+    </declare-styleable>
+
+</resources>

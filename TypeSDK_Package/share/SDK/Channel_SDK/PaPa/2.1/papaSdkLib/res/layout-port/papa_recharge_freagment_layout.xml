@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--移动、联通、电信 标签-->
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="false"
+            android:id="@+id/xxx"
+            >
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <!--左侧内容布局-->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <!--移动、联通、电信 标签-->
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/xxxxxx"
+                        android:layout_marginTop="@dimen/dp15"
+                        >
+                    <ImageView
+                            android:id="@+id/chinamobileIv"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:src="@drawable/yidong_papa"
+                            android:layout_weight="1"
+                            />
+                    <ImageView
+                            android:id="@+id/chinaunicomIv"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/liantong2_papa"
+                            android:layout_weight="1"
+                            />
+
+                    <ImageView
+                            android:id="@+id/chinateleIv"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/dianxin2_papa"
+                            android:layout_weight="1"
+                            />
+                </LinearLayout>
+
+                <!--说明文字-->
+
+                <!--面值100元-->
+
+
+                <!--卡号-->
+
+                <!--密码-->
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="说明: 充值卡面额必须与实际充值金额一致"
+                        android:textColor="#ffaaaaaa"/>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/allow"
+                        android:visibility="visible"
+                        >
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:text="面值100元"
+                            android:textColor="#ffEF420D"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/spinner"
+                            android:background="@drawable/pay_shuruk_papa"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            >
+
+                            </TextView>
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            >
+                        <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:src="@drawable/pay_shuruk_papa"
+                                android:layout_centerVertical="true"
+                                android:scaleType="fitXY"/>
+                        <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_centerVertical="true">
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="卡号"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"/>
+                            <EditText
+                                    android:id="@+id/rechargecardInputCardno"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="40dp"
+                                    android:hint="请输入充值卡号"
+                                    android:textColorHint="#ffaaaaaa"
+                                    android:textColor="#ff5D5D5D"
+                                    android:textSize="13sp"
+                                    android:inputType="number"
+                                    android:background="@null"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+                        <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:src="@drawable/pay_shuruk_papa"
+                                android:layout_centerVertical="true"
+                                android:scaleType="fitXY"/>
+                        <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_centerVertical="true">
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="密码"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"/>
+                            <EditText
+                                    android:id="@+id/rechargecardInputCardpass"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="30dp"
+                                    android:hint="请输入充值密码"
+                                    android:textColorHint="#ffaaaaaa"
+                                    android:textColor="#ff5D5D5D"
+                                    android:textSize="13sp"
+                                    android:inputType="number"
+                                    android:background="@null"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="无对应面额请选用其他支付方式"
+                        android:id="@+id/refuse"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp"
+                        />
+
+            </LinearLayout>
+
+            <!--右侧空白占位布局-->
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jolo_sdk_bg" >
+	
+    <LinearLayout
+        android:id="@+id/login_options_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jolo_green_bg"
+            android:gravity="center"
+            android:onClick="doHtcLogin"
+            android:paddingTop="8dp"
+         	android:paddingBottom="8dp"
+            android:text="@string/jolo_htc_account"
+            android:textColor="@color/jolo_white"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jolo_orange_bg"
+            android:gravity="center"
+            android:onClick="gotoJoloAccount"
+            android:paddingTop="8dp"
+         	android:paddingBottom="8dp"
+         	android:layout_marginTop="10dp"
+            android:text="@string/jolo_account"
+            android:textColor="@color/jolo_white"
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/bindphone_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="8dp"
+	        android:paddingLeft="20dp"
+	        android:paddingRight="20dp"
+	        android:paddingTop="10dp"
+	        android:paddingBottom="10dp"
+	        android:gravity="center"
+	        android:onClick="bindPhone"
+	        android:text="@string/jolo_bind_phone"
+	        android:textColor="@color/jolo_white"
+	        android:background="@drawable/jolo_alpha_bg"
+	        android:textSize="15sp" />
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

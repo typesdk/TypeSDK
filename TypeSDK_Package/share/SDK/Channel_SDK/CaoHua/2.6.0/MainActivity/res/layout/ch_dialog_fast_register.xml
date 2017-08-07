@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/ch_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ch_dialog_ll_fast"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/ch_dialog_fast_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="一键注册"
+                android:textSize="18sp"
+                android:textColor="@color/ch_green" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ch_dialog_phone_register"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ch_dialog_title_green_rigth_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="手机号注册"
+                android:textColor="@color/ch_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/ch_dialog_edit_bg" >
+
+        <ImageView
+            android:id="@+id/ch_dialog_icon_user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ch_icon_user" />
+
+        <EditText
+            android:id="@+id/ch_dialog_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ch_dialog_icon_user"
+            android:background="@null"
+            android:ems="10"
+            android:hint="请输入账户名"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/ch_text"
+            android:textColorHint="@color/ch_text_hint"
+            android:textSize="15sp" />
+
+        <requestFocus />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ch_dialog_edit_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ch_icon_pwd" />
+
+        <EditText
+            android:id="@+id/ch_dialog_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/ch_text"
+            android:textColorHint="@color/ch_text_hint"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ch_dialog_entergame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ch_btn_green"
+        android:text="进入游戏"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" >
+        <CheckBox 
+            android:id="@+id/ch_dialog_regist_cbx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/ch_check_box"
+            android:checked="true"/>
+        
+        <TextView
+            android:id="@+id/ch_dialog_regist_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/ch_dialog_regist_cbx"
+            android:text="我已阅读并同意"
+            android:textColor="@color/ch_text"
+            android:textSize="12sp" />
+        
+        <TextView
+            android:id="@+id/ch_dialog_regist_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ch_dialog_regist_des"
+            android:layout_toLeftOf="@+id/ch_dialog_backgame"
+            android:clickable="true"
+            android:singleLine="true"
+            android:text="草花手游用户协议"
+            android:textColor="@drawable/ch_dialog_green_font_bg"
+            android:textSize="12sp" />
+        
+         <TextView
+            android:id="@+id/ch_dialog_backgame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="返回登录"
+            android:background="@drawable/ch_btn_stroke_orange"
+            android:textColor="@drawable/ch_dialog_orange_font_bg"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

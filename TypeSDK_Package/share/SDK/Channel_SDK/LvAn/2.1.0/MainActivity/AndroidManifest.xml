@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.lvan"
+    android:versionCode="210"
+    android:versionName="2.1.0"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- Lvanc sdk -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- end -->
+	
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:debuggable="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+		
+        <activity
+            android:name="com.type.sdk.android.lvan.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar" >
+			
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <!-- sdk begin -->
+        <!-- screenOrientation属性不可变 -->
+        <activity
+            android:name="com.lvanclub.opensdk.pay.payment.LvanPayCenterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+        </activity>
+        <!-- screenOrientation属性可根据游戏自行定义 -->
+        <activity
+            android:name="com.lvanclub.opensdk.mos.activity.PhoneBindActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <!-- screenOrientation属性可根据游戏自行定义 -->
+        <activity
+            android:name="com.lvanclub.opensdk.mos.activity.IntegralRecordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <!-- screenOrientation属性可根据游戏自行定义 -->
+        <activity
+            android:name="com.lvanclub.opensdk.mos.activity.IntegralIntroActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <!-- screenOrientation属性可根据游戏自行定义 -->
+        <activity
+            android:name="com.lvanclub.opensdk.mos.activity.PayRecordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <!-- screenOrientation属性可根据游戏自行定义 -->
+        <activity
+            android:name="com.lvanclub.opensdk.mos.activity.AlterPasswordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <!-- screenOrientation属性可根据游戏自行定义 -->
+        <activity
+            android:name="com.lvanclub.opensdk.mos.activity.UserCenterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <!-- screenOrientation不可变 -->
+        <activity
+            android:name="com.lvanclub.opensdk.mos.activity.ServiceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.ipaynow.plugin.activity.PayMethodActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.prepay_plugin.activity.PrePayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.prepay_plugin.activity.NotifyActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+
+        <!-- 添加SDK 必需的meta-data：LVANSDK_APPID。此处value 为app_id。请在绿岸应用开放平台注册申请app_id -->
+        <meta-data
+            android:name="LVANSDK_APPID"
+            android:value="@app_id@" >
+        </meta-data>
+
+        <!-- 添加SDK 必需的meta-data：LVANSDK_APPKEY。此处value 为app_key。请在绿岸应用开放平台注册申请app_key 和app_secret -->
+        <meta-data
+            android:name="LVANSDK_APPKEY"
+            android:value="@app_key@" >
+        </meta-data>
+        <!-- 必需的meta-data：LVANSDK_PRIVATEKEY。此处值=md5(app_secret +”Lvan”+ app_key)，丌是App_Secret，全小写App_Secret 丌允许保存在客户端！ -->
+        <meta-data
+            android:name="LVANSDK_PRIVATEKEY"
+            android:value="@private_key@" >
+        </meta-data>
+        <!-- 必需的 meta-data：LVANSDK_CHANNEL。此处 value 使用 默认渠道值lvan_channel -->
+        <meta-data
+            android:name="LVANSDK_CHANNEL"
+            android:value="lvan_channel" />
+        <!-- -for test,正式后 end -->
+
+    </application>
+
+</manifest>

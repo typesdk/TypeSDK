@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="290dip"
+        android:layout_height="275dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gasdk_login_rel" >
+
+        <LinearLayout
+            android:id="@+id/real_lin"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:layout_alignLeft="@+id/real_edit_lin_1"
+            android:layout_alignRight="@+id/real_edit_lin_1"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/real_imagebutton_1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/gasdk_login_beck" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_registered_title"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="@string/realname_title" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/real_edit_lin_1"
+            android:layout_width="260dip"
+            android:layout_height="44dip"
+            android:layout_below="@+id/real_lin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/gasdk_edit_rel"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_login_text"
+                android:text="@string/real_text_1" />
+
+            <EditText
+                android:id="@+id/real_username"
+                style="@style/text_username_edit"
+                android:hint="@string/real_edit_1"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dip" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/real_edit_lin_2"
+            android:layout_width="260dip"
+            android:layout_height="44dip"
+            android:layout_below="@+id/real_edit_lin_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/gasdk_edit_rel"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_login_text"
+                android:text="@string/real_text_2" />
+
+            <EditText
+                android:id="@+id/real_password_1"
+                style="@style/text_username_edit"
+                android:layout_width="match_parent"
+                android:hint="@string/real_edit_2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/real_button_1"
+            style="@style/text_welcome_white"
+            android:layout_width="wrap_content"
+            android:layout_height="44dip"
+            android:layout_alignLeft="@+id/real_edit_lin_2"
+            android:layout_alignRight="@+id/real_edit_lin_2"
+            android:layout_alignParentBottom="true"
+			android:layout_marginBottom="30dip"
+            android:gravity="center"
+            android:text="@string/real_button_text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

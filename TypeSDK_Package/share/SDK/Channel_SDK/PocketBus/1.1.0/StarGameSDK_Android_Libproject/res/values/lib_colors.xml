@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lib_white">#ffffffff</color>
+    <color name="lib_text_black">#3b3b3b</color>
+    <color name="lib_text_grey">#8a8a8a</color>
+    <color name="lib_text_red">#db1c80</color>
+    <color name="lib_top_button_background_read">#ff751111</color>
+    <color name="lib_menu_hiddenpop_bg">#ff343434</color>
+    <color name="lib_gray">#ff7f7f7f</color>
+    <color name="lib_light_gray">#ffcacaca</color>
+    <color name="lib_orange">#ffff7e00</color>
+    <color name="lib_transparent_black">#1a000000</color>
+    <color name="lib_black">#ff38393d</color>
+    <color name="lib_black_hint">#999999</color>
+    <color name="lib_background">#EEEEEE</color>
+    <color name="lib_red">#ff0000</color>
+    <color name="lib_d8d8d8">#d8d8d8</color>
+    <color name="lib_home_tab_default">#f1f1f1</color>
+    <color name="lib_home_tab_return">#f8f8f8</color>
+    <color name="lib_setting_item_pressed">#f2f2f2</color>
+    <color name="lib_select_dialog_item_pressed">#d45c51</color>
+    <color name="lib_transparent">#00000000</color>
+    <color name="lib_light_black">#292929</color>
+    <color name="lib_edit_text_background">#0000</color>
+    <color name="lib_divider_color">#5c5c5c</color>
+    <color name="lib_black_normal">#242424</color>
+    <color name="lib_666666">#666666</color>
+    <color name="lib_title_highlight">#d45c51</color>
+    <color name="lib_title_not_highlight">#242424</color>
+    <color name="lib_hint_color">#999999</color>
+    <color name="color5583bb">#5583bb</color>
+    <color name="lib_divider_color_theme">#cdcdcd</color>
+    <color name="lib_splash_bg_light">#ffffffff</color>
+    <color name="lib_splash_bg_dark">#292929</color>
+    <color name="lib_select_account_divider">#dbdfde</color>
+    <color name="lib_game_data_progress">#e4305e</color>
+</resources>

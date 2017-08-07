@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp">
+   <!--  android:background="@drawable/com_lenovo_lsf_list_item_selector">  -->
+
+    <ImageView
+        android:id="@+id/iv_otherlogin_item_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"/>
+        
+
+    <TextView
+        android:id="@+id/iv_otherlogin_item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_otherlogin_item_ico"
+        android:textSize="16sp" 
+        android:textColor="@drawable/com_lenovo_lsf_pay_spinner_text_selector"/>
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/com_lenovo_lsf_pay_account_setting_item_right_icon"/>
+    
+</RelativeLayout>

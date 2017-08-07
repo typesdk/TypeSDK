@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/sogou_game_sdk_base_dialog_top_bg" >
+
+    <ImageButton
+        android:id="@+id/sogou_game_sdk_dialog_title_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/sogou_game_sdk_transparent"
+        android:src="@drawable/sogou_game_sdk_personal_center_back" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_dialog_title_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/sogou_game_sdk_personal_center"
+        android:textColor="@color/sogou_game_sdk_color_ffffff"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/sogou_game_sdk_dialog_title_close"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/sogou_game_sdk_transparent"
+        android:src="@drawable/sogou_game_sdk_personal_center_close" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_tv_right_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:paddingRight="10dp"
+        android:text="编辑"
+        android:textColor="#bbbbbb"
+        android:textSize="14sp" />
+
+</RelativeLayout>

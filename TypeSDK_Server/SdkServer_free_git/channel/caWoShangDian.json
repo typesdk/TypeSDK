@@ -1,0 +1,48 @@
+{
+  "version": "3.1.0.20160701",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "POST",
+      "in_params": {
+        "access_token": ""
+      },
+      "out_url": "https://open.wostore.cn/oauth2/auth/validate_oauth2_cp",
+      "out_params": {
+        "client_id": "",
+        "access_token": ""
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "orderid": "",
+        "ordertime": "",
+        "cpid": "",
+        "appid": "",
+        "fid": "",
+        "consumeCode": "",
+        "payfee": "",
+        "payType": "",
+        "hRet": "",
+        "status": "",
+        "signMsg": ""
+      },
+      "out_url": "https://open.wostore.cn/oauth2/auth/validate_oauth2_cp",
+      "out_params": {
+        "orderid": "",
+        "ordertime": "",
+        "cpid": "",
+        "appid": "",
+        "fid": "",
+        "consumeCode": "",
+        "payfee": "",
+        "payType": "",
+        "hRet": "",
+        "status": "",
+        "signMsg": ""
+      }
+    }
+  ]
+}

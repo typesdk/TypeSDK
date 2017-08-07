@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">YYH_SDK_DEMO_7.0.2</string>
+    <string name="yyh_btn_chongzhi">充值</string>
+    <string name="yyh_tv_msg">消息</string>
+    <string name="yyh_tv_gift">礼包</string>
+    <string name="yyh_tv_account">账号</string>
+    <string name="yyh_tv_act">动态</string>
+    <string name="yyh_tv_chongzhijilu">查看记录</string>
+    <string name="yyh_tv_doujuanduihuan">豆券兑换</string>
+    <string name="yyh_tv_chong_yingyongdou">充值应用豆记录，消费记录</string>
+    <string name="yyh_tv_chong_doujuanduihuan">豆券可以兑换应用豆哦</string>
+    <string name="yyh_tv_binding">绑定手机</string>
+    <string name="yyh_tv_no_binding">暂未绑定手机号</string>
+    <string name="yyh_tv_pwd">修改密码</string>
+    <string name="yyh_tv_change_the_pwd">为了账户安全，请定期修改密码</string>
+    <string name="yyh_tv_switch_account">切换小号</string>
+    <string name="yyh_tv_switch_content">多个小号一键切换</string>
+    <string name="yyh_exit">退出登录</string>
+    <string name="yyh_btn_get_num">领号</string>
+
+    <string name="yyh_toolbar_center">个人中心</string>
+    <string name="yyh_toolbar_help">客服</string>
+    <string name="yyh_toolbar_active">活动</string>
+    <string name="yyh_toolbar_tip">锦囊</string>
+    <string name="yyh_toolbar_boutique">精品</string>
+    <string name="yyh_toolbar_pay">粮饷</string>
+
+    <string name="yyh_guanliyuan">管理员</string>
+    <string name="yyh_dianjifuzhi">点击复制</string>
+    <string name="yyh_dialog_now_show">本次活动不再提醒</string>
+    
+    <string name="yyh_fast_login_notify">须知：\n
+1.极速登录会自动帮您生成登录账号，只需输入密码即可登录\n
+2.下次在登录几面，直接点击极速登录，即可登录\n
+3.建议绑定手机号，之后可以用手机号进行登录</string>
+</resources>

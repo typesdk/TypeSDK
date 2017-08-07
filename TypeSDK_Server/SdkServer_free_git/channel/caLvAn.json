@@ -1,0 +1,58 @@
+{
+  "version":"2.1.0.20151228",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "version":"",
+      "access_token":""
+    }
+    ,"out_url" :"https://openapi.lvanclub.com/v1/partner/verifyuser"
+    ,"out_params" :
+    {
+      "access_token" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "version": "",
+        "app_id": "",
+        "payment_channel": "",
+        "app_order_no": "",
+        "order_no": "",
+        "amount": "",
+        "product_id": "",
+        "game_zone": "",
+        "user_id": "",
+        "order_time": "",
+        "payment_status": "",
+        "app_notify_status": "",
+        "sign_type": "",
+        "sign": ""
+      }
+    ,"out_url" :"https://openapi.lvanclub.com/v1/partner/verifyuser"
+    ,"out_params" :
+      {
+        "version": "",
+        "app_id": "",
+        "payment_channel": "",
+        "app_order_no": "",
+        "order_no": "",
+        "amount": "",
+        "product_id": "",
+        "game_zone": "",
+        "user_id": "",
+        "order_time": "",
+        "payment_status": "",
+        "app_notify_status": "",
+        "sign_type": "",
+        "sign": ""
+      }
+    }
+  ]
+}

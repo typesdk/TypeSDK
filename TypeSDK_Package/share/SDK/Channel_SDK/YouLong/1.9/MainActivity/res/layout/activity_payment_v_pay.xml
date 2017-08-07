@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/win_bag_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="龙币余额："
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lb_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/win_bag_sum"
+                android:text="0"
+                android:textColor="@color/orange"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lbState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/lb_balance"
+                android:text="0"
+                android:textColor="@color/orange"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/recharge_refresh"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/_yl_btn_phone_code"
+                android:text="刷新"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="应付款龙币数量："
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lb_paymoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView5"
+                android:text="0"
+                android:textColor="@color/orange"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_lb_exlusive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" 
+            android:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/cb_lb_exlusive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/lb_exlusive_selector"
+                android:paddingLeft="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="绑定龙币余额："
+                android:textColor="@drawable/lb_exlusive_text_color_selector"
+                android:textSize="15sp" 
+                android:checked="true"/>
+
+            <TextView
+                android:id="@+id/lb_exlusive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cb_lb_exlusive"
+                android:text="0"
+                android:textColor="@color/orange"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/recharge_chit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/choose_vouchers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="选择代金券"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/recharge_arrow_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_down" />
+    </RelativeLayout>
+
+    <com.yx19196.widget.NoScrollListView
+        android:id="@+id/recharge_chit_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:visibility="gone" >
+    </com.yx19196.widget.NoScrollListView>
+
+    <RelativeLayout
+        android:id="@+id/recharge_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="仅需支付："
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/recharge_sum_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/text1"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/recharge_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/recharge_sum_process"
+            android:text="0"
+            android:textColor="@color/orange"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/recharge_sum"
+            android:text="元"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/recharge_pay"
+        style="@style/recharge_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recharge_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="立即支付" />
+
+    <RelativeLayout
+        android:id="@+id/recharge_pay_mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="其他付款方式"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/recharge_arrow_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_up" />
+    </RelativeLayout>
+
+</LinearLayout>

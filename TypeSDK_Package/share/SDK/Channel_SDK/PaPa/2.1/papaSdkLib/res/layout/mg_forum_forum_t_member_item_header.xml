@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <View android:layout_width="match_parent" android:layout_height="10dp" android:id="@+id/dividerTop"/>
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="40dp"
+                  android:orientation="horizontal" android:background="@android:color/white"
+                  android:gravity="center_vertical"
+                  android:paddingLeft="@dimen/mg_forum_post_item_padding"
+                  android:paddingRight="@dimen/mg_forum_post_item_padding">
+
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  android:id="@+id/sectionTitle"
+                  android:text="我在本吧"
+                  android:textSize="15sp"
+                  android:textColor="@color/main_color"
+                  android:paddingTop="7dp"
+                  android:paddingBottom="7dp"
+                  android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="2px" android:background="#f0f0f0"/>
+
+</LinearLayout>

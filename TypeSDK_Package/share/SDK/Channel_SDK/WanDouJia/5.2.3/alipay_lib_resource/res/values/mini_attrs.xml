@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="labelInput">
+
+        <!-- label名称 -->
+        <attr name="labelName" format="string|reference" />
+
+        <!-- 右侧图标 -->
+        <attr name="rightIcon" format="reference" />
+
+        <!-- hint -->
+        <attr name="miniInputHint" format="string|reference" />
+
+        <!-- 是否密码 -->
+        <attr name="isPassword" format="boolean" />
+
+        <!-- 最大输入长度 -->
+        <attr name="maxInputLength" format="integer" />
+    </declare-styleable>
+
+    <!-- tableView -->
+    <declare-styleable name="tableView">
+
+        <!-- table位置 normal|top|bottom|center 默认normal(只有一行) -->
+        <attr name="tableType">
+            <flag name="normal" value="0x10" />
+            <flag name="top" value="0x11" />
+            <flag name="bottom" value="0x12" />
+            <flag name="center" value="0x13" />
+        </attr>
+
+        <!-- table样式 round_corner|list_item 默认round_corner -->
+        <attr name="tableStyle">
+            <flag name="round_corner" value="0x10" />
+            <flag name="list_item" value="0x11" />
+        </attr>
+
+        <!-- table 显示箭头 true|false 默认 true -->
+        <attr name="show_arrow" format="boolean" />
+        
+        <!-- table 箭头方向向右|向下 -->
+        <attr name="arrow_type">
+            <flag name="arrow_right" value="0x20" />
+            <flag name="arrow_down" value="0x21" />
+            <flag name="arrow_up" value="0x22" />
+        </attr>
+        <!-- table 左侧文字 -->
+        <attr name="left_text" format="string|reference" />
+        <!-- table 左侧文字2 -->
+        <attr name="left_text_2" format="string|reference" />
+
+        <!-- table 左侧图片 -->
+        <attr name="left_image" format="reference" />
+
+        <!-- 左边图片宽高 -->
+        <attr name="left_imageWidth" format="dimension|reference" />
+        <attr name="left_imageHeight" format="dimension|reference" />
+
+        <!-- 是否为大图标 -->
+        <attr name="left_largeSize" format="boolean" />
+
+        <!-- table 右侧图片 -->
+        <attr name="right_image" format="reference" />
+
+        <!-- 点击时背景色是否改变 true|false 默认true -->
+        <attr name="change_backgroud" format="boolean" />
+    </declare-styleable>
+
+</resources>

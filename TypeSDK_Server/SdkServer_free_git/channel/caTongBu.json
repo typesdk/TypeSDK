@@ -1,0 +1,45 @@
+{
+  "version":"4.2.1.20160105",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "session" : ""
+    }
+    ,"out_url" :"http://tgi.tongbu.com/api/LoginCheck.ashx"
+    ,"out_params" :
+    {
+      "session" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "source" : ""
+      ,"trade_no" : ""
+      ,"amount" :""
+      ,"partner"  : ""
+      ,"paydes" : ""
+      ,"debug" : ""
+      ,"tborder" : ""
+      ,"sign" : ""
+      }
+    ,"out_url" :"http://tgi.tongbu.com/api/LoginCheck.ashx"
+    ,"out_params" :
+      {
+        "source" : ""
+      ,"trade_no" : ""
+      ,"amount" :""
+      ,"partner"  : ""
+      ,"paydes" : ""
+      ,"debug" : ""
+      ,"tborder" : ""
+      ,"sign" : ""
+      }
+    }
+  ]
+}

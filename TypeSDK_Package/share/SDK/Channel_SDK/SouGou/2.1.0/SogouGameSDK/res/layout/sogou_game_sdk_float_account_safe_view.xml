@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sogou_game_sdk_color_gray1">
+
+    <include
+        android:id="@+id/include_view"
+        layout="@layout/sogou_game_sdk_head"></include>
+
+    <LinearLayout
+        android:id="@+id/sogou_game_sdk_float_account_sefe_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_view"
+        android:background="@color/sogou_game_sdk_white"
+        android:orientation="vertical"
+        android:paddingBottom="27dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp">
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_float_account_sefe_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请填写以下信息，方便我们在您的账户出现异常时，能够及时联系到您。"
+                android:textColor="@color/sogou_game_sdk_color_3d3d3d"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sogou_game_sdk_float_account_sefe_tv1"
+                android:text="亲~验证码必填哦。"
+                android:textColor="@color/sogou_game_sdk_color_red"
+                android:textSize="13sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sogou_game_sdk_float_account_sefe_tv1"
+                android:layout_marginTop="13sp">
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_float_account_sefe_phone"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="手 机:"
+                    android:textColor="@color/sogou_game_sdk_color_111111"
+                    android:textSize="13sp"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_toRightOf="@+id/sogou_game_sdk_float_account_sefe_phone">
+
+                    <EditText
+                        android:id="@+id/sogou_game_sdk_float_account_sefe_phone_edt"
+                        style="@style/sogou_game_sdk_input_font"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/sogou_game_sdk_input_background"
+                        android:hint="(必)请输入您的手机号"
+                        android:inputType="phone"
+                        android:nextFocusDown="@+id/sogou_game_sdk_reg_passpword"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="30dip"
+                        android:singleLine="true"
+                        android:textSize="13sp"/>
+
+                    <Button
+                        android:id="@+id/sogou_game_sdk_reg_mobile_bt"
+                        style="@style/sogou_game_sdk_pay_bt_red"
+                        android:layout_width="102dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/sogou_game_sdk_bt_red"
+                        android:singleLine="true"
+                        android:text="@string/sogou_game_sdk_reg_mobile_verify_tips"
+                        android:textColor="@color/sogou_game_sdk_white"/>
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp">
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_float_account_sefe_verify_code"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="验证码:"
+                android:textColor="@color/sogou_game_sdk_color_111111"
+                android:textSize="13sp"/>
+
+            <EditText
+                android:id="@+id/sogou_game_sdk_float_account_sefe_verify_code_edt"
+                style="@style/sogou_game_sdk_input_font"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/sogou_game_sdk_float_account_sefe_verify_code"
+                android:background="@drawable/sogou_game_sdk_input_background"
+                android:hint="(必)请输入您的6位数验证码"
+                android:inputType="number"
+                android:nextFocusDown="@+id/sogou_game_sdk_reg_passpword"
+                android:paddingLeft="10dip"
+                android:paddingRight="30dip"
+                android:singleLine="true"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp">
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_float_account_sefe_qq"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Q  Q: "
+                android:textColor="@color/sogou_game_sdk_color_111111"
+                android:textSize="13sp"/>
+
+            <EditText
+                android:id="@+id/sogou_game_sdk_float_account_sefe_qq_edt"
+                style="@style/sogou_game_sdk_input_font"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/sogou_game_sdk_float_account_sefe_qq"
+                android:background="@drawable/sogou_game_sdk_input_background"
+                android:hint="(选)请输入您的QQ号"
+                android:inputType="number"
+                android:nextFocusDown="@+id/sogou_game_sdk_reg_passpword"
+                android:paddingLeft="10dip"
+                android:paddingRight="30dip"
+                android:singleLine="true"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp">
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_float_account_sefe_email"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="邮 箱:"
+                android:textColor="@color/sogou_game_sdk_color_111111"
+                android:textSize="13sp"/>
+
+            <EditText
+                android:id="@+id/sogou_game_sdk_float_account_sefe_email_edt"
+                style="@style/sogou_game_sdk_input_font"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_toRightOf="@+id/sogou_game_sdk_float_account_sefe_email"
+                android:background="@drawable/sogou_game_sdk_input_background"
+                android:hint="(选)请输入您的有效邮箱地址"
+                android:nextFocusDown="@+id/sogou_game_sdk_reg_passpword"
+                android:paddingLeft="10dip"
+                android:paddingRight="30dip"
+                android:singleLine="true"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sogou_game_sdk_float_account_sefe_confirm_btn"
+        style="@style/sogou_game_sdk_pay_bt_red"
+        android:layout_width="match_parent"
+        android:layout_height="33.5dp"
+        android:layout_below="@+id/sogou_game_sdk_float_account_sefe_fl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/sogou_game_sdk_bt_red"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/sogou_game_sdk_switch_account_setting_setting"/>
+</RelativeLayout>

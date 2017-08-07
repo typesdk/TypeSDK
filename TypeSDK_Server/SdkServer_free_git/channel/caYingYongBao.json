@@ -1,0 +1,61 @@
+{
+  "version":"1.2.2_352_6.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "openid" : ""
+    ,"openkey":""
+    }
+    ,"out_url" :"http://ysdk.qq.com/auth/qq_check_token"
+    ,"out_params" :
+    {
+      "appid":""
+    ,"openid" : ""
+    ,"openkey":""
+    ,"userip":""
+    ,"timestamp":""
+    ,"sig":"sig"
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "openid": ""
+      ,"appid": ""
+      ,"ts": ""
+      ,"payitem": ""
+      ,"token": ""
+      ,"billno": ""
+      ,"version": ""
+      ,"zoneid": ""
+      ,"providetype": ""
+      ,"amt": ""
+      ,"payamt_coins": ""
+      ,"pubacct_payamt_coins": ""
+      ,"sig": ""
+      }
+    ,"out_url" :"http://ysdk.qq.com/auth/qq_check_token"
+    ,"out_params" :
+      {
+        "openid": ""
+      ,"appid": ""
+      ,"ts": ""
+      ,"payitem": ""
+      ,"token": ""
+      ,"billno": ""
+      ,"version": ""
+      ,"zoneid": ""
+      ,"providetype": ""
+      ,"amt": ""
+      ,"payamt_coins": ""
+      ,"pubacct_payamt_coins": ""
+      ,"sig": ""
+      }
+    }
+  ]
+}

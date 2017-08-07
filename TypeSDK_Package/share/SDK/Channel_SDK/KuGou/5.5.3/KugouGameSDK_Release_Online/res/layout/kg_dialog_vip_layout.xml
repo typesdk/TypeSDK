@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" 
+    >
+
+    <ImageView
+        android:id="@+id/gs_image"
+        android:layout_width="171dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/kg_gs_default_img" />
+
+    <ImageView
+        android:id="@+id/gs_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:background="@drawable/kg_selector_close_bg"
+        android:src="@drawable/kg_close_bg" />
+
+    <ListView
+        android:id="@+id/gs_qq_list"
+        android:layout_width="184dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+</RelativeLayout>

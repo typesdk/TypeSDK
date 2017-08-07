@@ -1,0 +1,14 @@
+android {
+	 productFlavors {
+	 	 "portrait_SDK" {
+	 	 	 applicationId "com.game.sdk.xiaoyaoyouportrait"
+	 	 	 versionCode 7
+	 	 	 resValue( "string", "app_name", "逍遥游demo竖屏版" )
+	 	 }
+	 	 "landscape_SDK" {
+	 	 	 applicationId "com.game.sdk.xiaoyaoyoulandscape"
+	 	 	 versionCode 7
+	 	 	 resValue( "string", "app_name", "逍遥游demo横屏版" )
+	 	 }
+	 }
+}

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background" >
+
+    <include
+        android:id="@+id/pyw_layout_common_title"
+        layout="@layout/pyw_common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyw_layout_common_title"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pyw_common_background"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/pyw_layout_switchaccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pyw_layout_common_title"
+                android:layout_marginBottom="@dimen/pyw_dp_24"
+                android:layout_marginTop="@dimen/pyw_dp_24"
+                android:background="@drawable/pyw_img_no_leftrightframe_bg"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/pyw_dp_36"
+                android:paddingLeft="@dimen/pyw_dp_75"
+                android:paddingRight="@dimen/pyw_dp_75"
+                android:paddingTop="@dimen/pyw_dp_36" >
+
+                <TextView
+                    android:id="@+id/pyw_tv_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="1dp"
+                    android:text="订单编号："
+                    android:textColor="#999999"
+                    android:textSize="@dimen/pyw_common_medium" />
+
+                <TextView
+                    android:id="@+id/pyw_tv_order_id_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/pyw_tv_order_id"
+                    android:gravity="right"
+                    android:paddingTop="1dp"
+                    android:textColor="@color/pyw_chargecenter_order_no"
+                    android:textSize="@dimen/pyw_common_medium" />
+
+                <TextView
+                    android:id="@+id/pyw_tv_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/pyw_tv_order_id"
+                    android:paddingTop="1dp"
+                    android:text="商品名称："
+                    android:textColor="#999999"
+                    android:textSize="@dimen/pyw_common_medium" />
+
+                <TextView
+                    android:id="@+id/pyw_tv_product_name_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pyw_tv_order_id"
+                    android:layout_toRightOf="@+id/pyw_tv_product_name"
+                    android:gravity="right"
+                    android:paddingTop="1dp"
+                    android:textColor="@color/pyw_chargecenter_order_no"
+                    android:textSize="@dimen/pyw_common_medium" />
+
+                <TextView
+                    android:id="@+id/pyw_tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/pyw_tv_product_name"
+                    android:paddingTop="1dp"
+                    android:text="订单金额："
+                    android:textColor="#999999"
+                    android:textSize="@dimen/pyw_common_medium" />
+
+                <TextView
+                    android:id="@+id/pyw_tv_total_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pyw_tv_product_name"
+                    android:layout_toRightOf="@+id/pyw_tv_total"
+                    android:gravity="right"
+                    android:paddingTop="1dp"
+                    android:textColor="@color/pyw_chargecenter_order_no"
+                    android:textSize="@dimen/pyw_common_medium" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pyw_layout_voucher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pyw_layout_switchaccount"
+                android:background="@drawable/pyw_img_no_leftrightframe_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/pyw_dp_75"
+                android:paddingRight="@dimen/pyw_dp_30"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="代金券"
+                    android:textColor="@color/pyw_chargecenter_order_no"
+                    android:textSize="@dimen/pyw_common_medium" />
+
+                <TextView
+                    android:id="@+id/pyw_tv_voucher_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff6666"
+                    android:textSize="@dimen/pyw_common_small" />
+
+                <ImageView style="@style/PYW.Safe.Image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/pyw_tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/pyw_dp_75"
+                    android:text="选择支付方式"
+                    android:textColor="@color/pyw_forget_text"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pyw_layout_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/pyw_tv_text"
+                android:background="@drawable/pyw_img_no_leftrightframe_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/pyw_layout_alipay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pyw_dp_129"
+                    android:background="@drawable/pyw_selector_common_item_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/pyw_dp_69" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pyw_img_alipay_icon" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="@dimen/pyw_dp_30"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/voucher_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="支付宝支付"
+                            android:textColor="@color/pyw_common_gray_light"
+                            android:textSize="@dimen/pyw_common_medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/voucher_title"
+                            android:layout_below="@+id/voucher_title"
+                            android:paddingLeft="1dp"
+                            android:singleLine="true"
+                            android:text="推荐有支付宝账号的玩家使用"
+                            android:textColor="@color/pyw_common_gray_lighter"
+                            android:textSize="@dimen/pyw_common_33" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/pyw_iv_alipay_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/pyw_dp_48"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/pyw_img_alipay_disabled" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/pyw_common_item_divider" />
+
+                <LinearLayout
+                    android:id="@+id/pyw_layout_uppay"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/pyw_selector_common_item_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/pyw_dp_69" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pyw_img_uppay_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pyw_dp_30"
+                        android:layout_weight="1"
+                        android:text="银联支付"
+                        android:textColor="@color/pyw_common_gray_light"
+                        android:textSize="@dimen/pyw_common_medium" />
+
+                    <ImageView
+                        android:id="@+id/pyw_iv_uppay_selected"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/pyw_dp_48"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/pyw_img_alipay_disabled"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pyw_tv_pay_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pyw_img_only_topframe_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/pyw_dp_66"
+            android:textColor="@color/pyw_chargecenter_order_no"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <TextView
+            android:id="@+id/pyw_tv_confirm"
+            android:layout_width="@dimen/pyw_dp_390"
+            android:layout_height="match_parent"
+            android:background="@drawable/pyw_selector_blue_item_bg"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/pyw_confirm_pay"
+            android:textColor="@color/pyw_common_white"
+            android:textSize="@dimen/pyw_common_large" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/pyw_layout_pay_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pyw_layout_common_title"
+        layout="@layout/pyw_view_pay_success_landscape"
+        android:visibility="gone" />
+
+</RelativeLayout>

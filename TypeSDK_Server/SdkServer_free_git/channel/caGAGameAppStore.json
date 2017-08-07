@@ -1,0 +1,37 @@
+{
+  "version":"1.4.0.20160105",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "GET",
+      "in_params": {
+        "id": 0,
+        "tokenid": ""
+      },
+      "out_url": "http://120.132.11.160:51880/users/checkTokenID",
+      "out_params": {
+        "appid": 0,
+        "tokenid": ""
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "data": {
+          "orderId": "",
+          "appId": "",
+          "accountId": "",
+          "amount": "",
+          "cpOrderId": "",
+          "orderStatus": ""
+        },
+        "sign" : ""
+      },
+      "out_url": "http://120.132.11.160:51880/users/checkTokenID",
+      "out_params": {
+      }
+    }
+  ]
+}
+

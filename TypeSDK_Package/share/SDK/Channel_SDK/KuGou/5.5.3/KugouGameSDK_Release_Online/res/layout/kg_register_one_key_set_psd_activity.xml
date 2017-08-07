@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/kg_common_title_bar" />
+
+    <ScrollView
+        android:id="@+id/kg_layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/kg_layout_user_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/kg_common_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kg_tv_send_code_hints"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/kg_layout_input_validate_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kg_tv_send_code_hints"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="10dip"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/tv_validate_code_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="@string/kg_validate_code"
+                    android:paddingLeft="8dp"
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <EditText android:textColorHint="@color/kg_common_hint_color"
+                    android:id="@+id/kg_et_input_validate_code"
+                    android:layout_width="200dip"
+                    android:layout_height="35dip"
+                    android:layout_toRightOf="@id/tv_validate_code_word"
+                    android:background="@drawable/kg_sp_bg"
+                    android:hint="@string/kg_fill_validate_code_1"
+                    android:maxLength="20"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dip" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/kg_iv_validate_code_clear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@id/kg_et_input_validate_code"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/kg_text_clear"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/kg_iv_validate_code_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/kg_et_input_validate_code" />
+
+                <Button
+                    android:id="@+id/kg_btn_request_validate_code"
+                    android:layout_width="200dip"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/kg_et_input_validate_code"
+                    android:layout_below="@id/kg_et_input_validate_code"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/kg_selector_vadidate_reget_btn"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_reget_after_180_second"
+                    android:textColor="#000000"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kg_layout_set_psd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/kg_layout_input_validate_code"
+                android:layout_below="@id/kg_layout_input_validate_code"
+                android:layout_marginTop="10dip"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/kg_tv_set_psd_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="@string/kg_set_psd"
+                    android:textColor="#ff666666"
+                    android:textSize="16dip" />
+
+                <EditText android:textColorHint="@color/kg_common_hint_color"
+                    android:id="@+id/kg_et_input_psd"
+                    android:layout_width="200dip"
+                    android:layout_height="35dip"
+                    android:layout_toRightOf="@id/kg_tv_set_psd_word"
+                    android:background="@drawable/kg_sp_bg"
+                    android:hint="@string/kg_password_rule"
+                    android:maxLength="20"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dip"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dip" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/kg_iv_psd_clear"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignRight="@id/kg_et_input_psd"
+                    android:layout_gravity="center|right"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/kg_text_clear"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/kg_iv_psd_check"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/kg_et_input_psd" />
+
+                <Button
+                    android:id="@+id/kg_btn_register"
+                    android:layout_width="200dip"
+                    android:layout_height="40dp"
+                    android:layout_alignRight="@id/kg_et_input_psd"
+                    android:layout_below="@id/kg_et_input_psd"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/kg_selector_btn_blue"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_register_submit"
+                    android:textColor="#ffffffff"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/kg_btn_register"
+                    android:layout_alignRight="@id/kg_btn_register"
+                    android:gravity="center" >
+
+                    <CheckBox
+                        android:id="@+id/kg_agree_kugou_license"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kg_checkbox_selector"
+                        android:button="@null"
+                        android:checked="true"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#ff000000"
+                        android:textSize="16dip" />
+
+                    <TextView
+                        android:id="@+id/kg_agree_kugou_license_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:text="@string/kg_kugou_register_rule"
+                        android:textColor="#ff3333ff"
+                        android:gravity="center_vertical"
+                        android:textSize="16dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/kg_common_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/kg_user_center_button_space_line" />
+
+
+
+</LinearLayout>

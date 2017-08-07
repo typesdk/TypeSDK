@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/egame_usersdk_regist_text"
+    android:orientation="vertical" 
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingBottom="1dp">
+    
+	<ListView 
+	    android:id="@+id/lv_accounts"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:dividerHeight="1dp"
+	    android:divider="@color/egame_usersdk_light_gray">
+	    
+	</ListView>
+</LinearLayout>

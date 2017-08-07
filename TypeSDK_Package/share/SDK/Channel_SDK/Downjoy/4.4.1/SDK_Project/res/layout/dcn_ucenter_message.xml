@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/dcn_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_title_height"
+        android:background="@drawable/dcn_actionbar_bg_dark">
+
+        <Button
+            android:id="@+id/dcn_actionbar_btn_back_game"
+            android:layout_width="@dimen/dcn_title_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dcn_actionbar_back"
+            android:clickable="true"
+            android:textColor="@color/dcn_ucenter_btn_text"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/dcn_message_tab_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dcn_message_tab_left"
+                android:clickable="true"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:singleLine="true"
+                android:text="@string/dcn_navi_menu_message"
+                android:textColor="@color/dcn_message_tab_text_color" />
+
+            <TextView
+                android:id="@+id/dcn_message_tab_announcement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dcn_message_tab_right"
+                android:clickable="true"
+                android:gravity="center"
+                android:minWidth="60dp"
+                android:singleLine="true"
+                android:text="@string/dcn_announcement"
+                android:textColor="@color/dcn_message_tab_text_color" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dcn_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dcn_actionbar" />
+</RelativeLayout>

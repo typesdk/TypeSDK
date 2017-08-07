@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yk_ykbgColor"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@color/yk_ykbgColor"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/check"
+            style="@style/YKDelCheckboxTheme"
+            android:layout_width="@dimen/YK_GameSDK_60PX"
+            android:layout_height="@dimen/YK_GameSDK_60PX"
+            android:layout_marginLeft="@dimen/YK_GameSDK_30PX"
+            android:clickable="true"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/YK_GameSDK_300PX"
+        android:layout_height="@dimen/YK_GameSDK_200PX"
+        android:layout_margin="@dimen/YK_GameSDK_30PX"
+        android:background="@color/yk_ykbgColor" >
+
+        <ImageView
+            android:id="@+id/item_img_video"
+            android:layout_width="@dimen/YK_GameSDK_300PX"
+            android:layout_height="@dimen/YK_GameSDK_200PX" />
+
+        <TextView
+            android:id="@+id/item_video_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/YK_GameSDK_3PX"
+            android:background="#80000000"
+            android:padding="@dimen/YK_GameSDK_5PX"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/YK_GameSDK_32PX" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/YK_GameSDK_200PX"
+        android:layout_marginRight="@dimen/YK_GameSDK_30PX"
+        android:layout_marginTop="@dimen/YK_GameSDK_30PX"
+        android:layout_marginBottom="@dimen/YK_GameSDK_30PX"
+        android:background="@color/yk_ykbgColor" >
+
+        <TextView
+            android:id="@+id/item_video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="@dimen/YK_GameSDK_26PX" />
+
+        <TextView
+            android:id="@+id/item_video_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/YK_GameSDK_20PX"
+            android:layout_below="@id/item_video_name"
+            android:singleLine="true"
+            android:textColor="#909090"
+            android:textSize="@dimen/YK_GameSDK_22PX"
+             />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/YK_GameSDK_70PX"
+            android:layout_alignParentBottom="true" >
+
+            <ProgressBar
+                android:id="@+id/item_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/YK_GameSDK_70PX"
+                android:background="@drawable/upload_button_gray_normal"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/yk_upload_progress_selector" />
+
+            <Button
+                android:id="@+id/item_btn_upload"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/YK_GameSDK_70PX"
+                android:background="@drawable/upload_btn_selector"
+                android:text="上传至优酷"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/YK_GameSDK_30PX" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

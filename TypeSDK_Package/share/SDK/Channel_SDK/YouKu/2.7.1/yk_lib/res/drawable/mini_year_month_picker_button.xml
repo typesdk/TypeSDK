@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed -->
+    <item android:drawable="@drawable/mini_year_month_picker_down" android:state_enabled="true" android:state_pressed="true">
+	</item>
+
+    <!-- Focused states -->
+    <item android:drawable="@drawable/mini_year_month_picker_down" android:state_enabled="true" android:state_focused="true" 
+        android:state_pressed="false">
+	</item>
+
+    <!-- Non focused states -->
+    <item android:drawable="@drawable/mini_year_month_picker_up" android:state_enabled="true" android:state_focused="false" 
+        android:state_pressed="false">
+	</item>
+
+</selector>

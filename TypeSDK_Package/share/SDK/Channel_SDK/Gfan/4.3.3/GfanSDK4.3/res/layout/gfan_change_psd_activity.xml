@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/gfan_bg"
+    android:orientation="vertical"
+    tools:context="com.mappn.sdk.uc.ChangePsdActivity">
+
+    <TextView
+        style="@style/gfan_title_style"
+        android:text="修改密码" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_old_psd"
+                style="@style/gfan_edit_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/gfan_uc_bg_title_margin_top"
+                android:background="@drawable/gfan_edit_layout_bg"
+                android:hint="请输入旧密码"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/et_new_psd"
+                style="@style/gfan_edit_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/gfan_uc_view_space"
+                android:background="@drawable/gfan_edit_layout_bg"
+                android:hint="请输入新密码(6-16位)"
+                android:inputType="textPassword"
+                android:maxLength="16" />
+
+            <EditText
+                android:id="@+id/et_new_psd_again"
+                style="@style/gfan_edit_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/gfan_uc_view_space"
+                android:background="@drawable/gfan_edit_layout_bg"
+                android:hint="请确认新密码(6-16位)"
+                android:inputType="textPassword"
+                android:maxLength="16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/gfan_uc_view_space"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_negative"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/gfan_yellow_selector"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/gfan_btn_text_size" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_positive"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/gfan_blue_selector"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/gfan_btn_text_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_change_psd_activity.xml -->

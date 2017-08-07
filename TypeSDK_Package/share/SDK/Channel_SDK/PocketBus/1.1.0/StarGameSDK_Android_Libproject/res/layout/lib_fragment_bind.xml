@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/lib_background"
+              android:orientation="vertical"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="20dp">
+
+    <com.stargame.sdk.ui.view.EditTextWithClearButton
+            style="@style/LibEditTextStyle"
+            android:id="@+id/lib_bind_account"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:hint="@string/lib_input_email"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+    <Button
+            style="@style/LibButtonStyle"
+            android:id="@+id/lib_confirm"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/lib_button_red_background"
+            android:text="@string/lib_confirm"/>
+
+</LinearLayout>

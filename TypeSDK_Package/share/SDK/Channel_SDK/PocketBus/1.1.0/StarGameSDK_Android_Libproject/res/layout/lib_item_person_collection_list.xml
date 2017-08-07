@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@drawable/lib_message_list_item_selector"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="0dp"
+              android:paddingBottom="0dp">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+        <TextView
+                android:id="@+id/lib_theme_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:textColor="#242424"
+                android:textSize="17sp"/>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/collection_title_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/lib_collection_title_icon"/>
+
+            <TextView
+                    android:layout_toRightOf="@id/collection_title_icon"
+                    android:id="@+id/lib_publish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5583bb"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"/>
+
+            <TextView
+                    android:id="@+id/lib_author_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="200dp"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/lib_divider_solid_line_background"/>
+</LinearLayout>
+

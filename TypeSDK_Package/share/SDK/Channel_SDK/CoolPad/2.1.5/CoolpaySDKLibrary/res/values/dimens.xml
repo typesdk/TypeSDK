@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="coolpad_activity_horizontal_margin">16dp</dimen>
+    <dimen name="coolpad_activity_vertical_margin">16dp</dimen>
+    <dimen name="coolpad_bar_width">2dp</dimen>
+    <dimen name="coolpad_ring_width">2dp</dimen>
+    <dimen name="coolpad_spacing_min">5dp</dimen>
+    <dimen name="coolpad_spacing_mid">10dp</dimen>
+    <dimen name="coolpad_spacing_max">15dp</dimen>
+    <dimen name="coolpad_spacing_coupon">5dp</dimen>
+    <dimen name="coolpad_spacing_operation">20dp</dimen>
+    <dimen name="coolpad_text_size_16">7sp</dimen>
+    <dimen name="coolpad_text_size_18">18sp</dimen>
+
+</resources>

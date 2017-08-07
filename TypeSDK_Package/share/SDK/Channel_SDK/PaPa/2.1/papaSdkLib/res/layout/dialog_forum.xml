@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="263dp" android:layout_height="wrap_content"
+                  android:background="#3a85e2"
+                  android:layout_gravity="center"
+                  android:orientation="vertical"
+                  android:gravity="center_horizontal"
+                  android:paddingTop="20dp"
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认删除"
+                android:id="@+id/tip_title"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定要删除该评论吗？"
+                android:id="@+id/tip_content"
+                android:layout_marginTop="12dp"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center" android:gravity="center_vertical|center_horizontal"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="14dp"
+                android:minHeight="40dp"
+                >
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="确定"
+                    android:id="@+id/positive_btn"
+                    android:background="@drawable/forum_dialog_btn_selector"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="#6a6a6a"
+                    />
+            <View android:layout_width="2px" android:layout_height="wrap_content"
+                  android:background="#888888"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="取消"
+                    android:id="@+id/negative_btn"
+                    android:background="@drawable/forum_dialog_btn_selector"
+                    android:textColor="#f57e26"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

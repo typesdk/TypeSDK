@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="7dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="@drawable/sogou_game_sdk_coupon_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sogou_game_sdk_ll_coupon_bg_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/sogou_game_sdk_coupon_bg_red_top"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sogou_game_sdk_ll_coupon_bg_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:background="@drawable/sogou_game_sdk_coupon_bg_red_center"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp">
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_coupon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:singleLine="true"
+            android:textColor="@color/sogou_game_sdk_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_coupon_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/sogou_game_sdk_tv_coupon_name"
+            android:layout_below="@id/sogou_game_sdk_tv_coupon_name"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/sogou_game_sdk_white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_coupon_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:textColor="@color/sogou_game_sdk_white"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="32dp"
+            android:layout_toLeftOf="@id/sogou_game_sdk_tv_coupon_amount"
+            android:src="@drawable/sogou_game_sdk_icon_money" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_coupon_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/sogou_game_sdk_tv_coupon_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:textColor="#ff5359"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_coupon_expire_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:text="截止日期 : "
+            android:textColor="@color/sogou_game_sdk_color_888888"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</RelativeLayout>

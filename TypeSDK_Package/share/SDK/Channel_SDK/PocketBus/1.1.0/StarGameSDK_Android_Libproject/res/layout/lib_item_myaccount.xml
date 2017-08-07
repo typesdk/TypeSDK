@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/lib_account_item"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp">
+
+    <ImageView
+            android:id="@+id/lib_platform_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+    <TextView
+            android:id="@+id/lib_name"
+            style="@style/LibSelectAccountTextStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/lib_platform_tip"
+            android:layout_toLeftOf="@+id/lib_delete"/>
+
+    <ImageView
+            android:id="@id/lib_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/lib_delete"/>
+</RelativeLayout>

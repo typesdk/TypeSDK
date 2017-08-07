@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="custom">
+        <attr name="columnWidth" format="integer"/>
+        <attr name="horizontalSpacing" format="integer"/>
+        <!--<attr name="background" format="reference|color"/>-->
+        <attr name="paddingLeftAndRight" format="integer"/>
+        <attr name="paddingTopAndBottom" format="integer"/>
+
+        <attr name="horizontalSpacingLand" format="integer"/>
+        <attr name="horizontalSpacingPort" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputEditTextBg">
+        <attr name="InputBgDrawable" format="reference"/>
+        <attr name="IsPassword" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="direction">
+        <attr name="flag" format="integer">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

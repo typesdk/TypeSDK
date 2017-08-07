@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lion_common_frame_bottom_nor"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingTop="15.0dip"
+                android:text="@string/lion_text_recharge_notice_1"
+                android:textSize="15.0sp"/>
+
+            <com.lion.ccpay.widget.tags.UserRechargeCardTypeGridView
+                android:id="@+id/lion_activity_user_recharge_card_type_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.5dip"
+            android:background="@drawable/lion_common_frame_top_nor"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingTop="15.0dip"
+                android:text="@string/lion_text_recharge_notice_2"
+                android:textSize="15.0sp"/>
+
+            <com.lion.ccpay.widget.tags.UserRechargeCardValueGridView
+                android:id="@+id/lion_activity_user_recharge_card_value_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.5dip"
+            android:background="@drawable/lion_common_frame_top_nor"
+            android:orientation="vertical"
+            android:padding="15.0dip">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lion_text_recharge_notice_3"
+                android:textSize="15.0sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/lion_common_white_frame_nor">
+
+                <EditText
+                    android:id="@+id/lion_activity_user_recharge_card_no"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/lion_hint_input_card_no"
+                    android:inputType="number"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="15.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/lion_common_black"
+                    android:textColorHint="@color/lion_common_text_gray"
+                    android:textSize="14.0sp"/>
+
+                <ImageView
+                    android:id="@+id/lion_activity_user_recharge_card_no_clear"
+                    android:layout_width="30.0dip"
+                    android:layout_height="40.0dip"
+                    android:scaleType="center"
+                    android:src="@drawable/lion_nav_del"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/lion_common_white_frame_nor">
+
+                <EditText
+                    android:id="@+id/lion_activity_user_recharge_card_pwd"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/lion_hint_input_card_pwd"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="@color/lion_common_black"
+                    android:textColorHint="@color/lion_common_text_gray"
+                    android:textSize="14.0sp"/>
+
+                <ImageView
+                    android:id="@+id/lion_activity_user_recharge_card_pwd_clear"
+                    android:layout_width="30.0dip"
+                    android:layout_height="40.0dip"
+                    android:scaleType="center"
+                    android:src="@drawable/lion_nav_del"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="15.0dip"
+                android:paddingTop="30.0dip">
+
+                <TextView
+                    android:id="@+id/lion_activity_user_recharge_card_btn"
+                    android:layout_width="200.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/lion_common_red_frame_round_selector"
+                    android:gravity="center"
+                    android:text="@string/lion_text_recharge_notice_6"
+                    android:textColor="@color/lion_common_white"
+                    android:textSize="18.0sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/lion_layout_recharge_friendly_notices"/>
+
+    </LinearLayout>
+
+</ScrollView>

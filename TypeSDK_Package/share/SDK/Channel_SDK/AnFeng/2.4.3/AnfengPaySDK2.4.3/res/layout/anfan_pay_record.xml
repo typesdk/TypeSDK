@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/anfan_defealut_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_GameName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="订单号："
+        android:textColor="#cccccc"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/tv_UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="用户名："
+        android:textColor="#cccccc"
+        android:textSize="18sp" />
+
+    <com.anfeng.pay.view.XListView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/anfan_anfan_record_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/anfan_defealut_bg"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="20dp" />
+
+</LinearLayout>

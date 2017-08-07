@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/dcn_upgrad_subtitle" android:state_pressed="true" />
+
+    <item android:drawable="@color/dcn_upgrad_subtitle" android:state_window_focused="true" />
+</selector>

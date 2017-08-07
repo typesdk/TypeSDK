@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/mcplatform_trans"
+   >
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2dip"
+        android:layout_marginRight="-2dip"
+        android:layout_marginTop="-2dip"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"  
+        android:background="@drawable/mc_tip_dialog">
+
+        <LinearLayout
+            android:id="@+id/contentPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbar"
+                android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/message"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

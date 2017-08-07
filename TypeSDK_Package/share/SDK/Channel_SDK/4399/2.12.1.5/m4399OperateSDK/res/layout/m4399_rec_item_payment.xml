@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="@dimen/m4399_rec_payment_icon_size"
+        android:layout_height="@dimen/m4399_rec_payment_icon_size"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/m4399_rec_payment_icon_padding" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/m4399_rec_payment_text_size"/>
+</LinearLayout>

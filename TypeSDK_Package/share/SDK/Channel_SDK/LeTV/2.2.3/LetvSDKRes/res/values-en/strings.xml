@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="le_oauth_app_name">Login with LeEco Account</string>
+    <string name="le_oauth_login_other_account">Login with another LeEco Account</string>
+    <string name="le_oauth_login_le_account">Login LeEco Account</string>
+    <string name="le_oauth_login_error">Logon failed, try again.</string>
+    <string name="le_oauth_title_activity_account_manager">Account Management</string>
+    <string name="le_oauth_account_manager_slogan">One account for all LeEco services</string>
+    <string name="le_oauth_account_manager_le_logo_description">LeEco Logo</string>
+    <string name="le_oauth_account_manager_other_login_arrow_description">arrow for other account login</string>
+    <string name="le_oauth_account_manager_other_login">Login other account</string>
+    <string name="le_oauth_account_manager_main_title">Fast login</string>
+    <string name="le_oauth_loading_account_manager_description">Account switch icon</string>
+    <string name="le_oauth_loading_account_manager">Switch account</string>
+    <string name="le_oauth_title_activity_loading">Loading......</string>
+    <string name="le_oauth_title_activity_control">Controller page</string>
+    <string name="le_oauth_title_activity_fast_login">FastLogin page</string>
+
+    <string name="le_oauth_fast_login_agree">Agree to the </string>
+    <string name="le_oauth_fast_login_user_terms">terms of service</string>
+    <string name="le_oauth_fast_login_and"> and </string>
+    <string name="le_oauth_fast_login_privacy_agreement">privacy agreement</string>
+
+    <string name="le_oauth_fast_login_user_terms_remind">Please check the agree to the terms and privacy agreement</string>
+    <string name="le_oauth_fast_login_login_immediately">Login immediately</string>
+    <string name="le_oauth_fast_login_phone_number_edit_hint">Please enter this machine phone number</string>
+    <string name="le_oauth_fast_login_time_out">Quick login timeout, jump to normal login</string>
+    <string name="le_oauth_fast_login_loading_text">Logining</string>
+    <string name="sdk_net_error">The network is not available, please check your network</string>
+</resources>

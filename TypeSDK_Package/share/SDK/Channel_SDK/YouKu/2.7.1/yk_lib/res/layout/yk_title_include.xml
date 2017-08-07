@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/YK_GameSDK_552PX"
+    android:layout_height="@dimen/YK_GameSDK_100PX"
+    android:layout_marginLeft="@dimen/YK_GameSDK_20PX"
+    android:layout_marginRight="@dimen/YK_GameSDK_20PX"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/lv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/yk_icon_title"
+            android:layout_width="@dimen/YK_GameSDK_88PX"
+            android:layout_height="@dimen/YK_GameSDK_44PX"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/yk_icon_title" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/YK_GameSDK_20PX"
+        android:layout_toRightOf="@id/lv_img"
+        android:gravity="center_vertical"
+        android:text="@string/yk_text_ykyx_user_title"
+        android:textColor="@color/yk_text_title"
+        android:textSize="@dimen/YK_GameSDK_30PX" />
+
+    <Button
+        android:id="@+id/back"	
+        android:layout_width="@dimen/YK_GameSDK_80PX"
+        android:layout_height="@dimen/YK_GameSDK_40PX"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/YK_GameSDK_12PX"
+        android:layout_marginTop="@dimen/YK_GameSDK_24PX"
+        android:background="@drawable/yk_btn_title_back_selector"
+        android:gravity="center_vertical"
+        android:visibility="invisible" />
+
+</RelativeLayout>

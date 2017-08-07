@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <solid android:color="@color/pyw_yq_btn_blue_pressed" />
+            <!-- 描边 -->
+            <stroke android:width="1px" android:color="@color/pyw_yq_common_item_divider" />
+            <!-- 角度 -->
+            <corners android:radius="5dp" />
+        </shape></item>
+    <item android:state_pressed="false"><shape>
+
+            <!-- 填充 -->
+            <solid android:color="@color/pyw_yq_btn_blue_normal" />
+            <!-- 描边 -->
+            <stroke android:width="1px" android:color="@color/pyw_yq_common_item_divider" />
+            <!-- 角度 -->
+            <corners android:radius="5dp" />
+        </shape></item>
+
+</selector>

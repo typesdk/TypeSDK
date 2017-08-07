@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/slyx_cannot_pay_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dip"
+            android:gravity="center"
+            android:padding="0.0dip"
+            android:text="@string/slyx_cannot_do_weixin_pay_info"
+            android:textColor="#ff88b65b"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <!-- 微信支付界面 -->
+
+    <LinearLayout
+        android:id="@+id/slyx_can_pay_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dip"
+            android:background="@drawable/slyx_login_account_info_shape"
+             >
+
+            <ImageView
+                android:id="@+id/slyx_wpay_money_img"
+                android:layout_width="18dip"
+                android:layout_height="21dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="9dip"
+                android:background="@drawable/slyx_pay_money_bg"
+                android:contentDescription="@string/slyx_img_des" />
+
+            <ImageView
+                android:id="@+id/slyx_wpay_downarrow_img"
+                android:layout_width="25dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/slyx_img_des"
+                android:layout_margin="12dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/slyx_arrow_sele"
+                 />
+
+            <EditText
+                android:id="@+id/slyx_wpay_money_et"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dip"
+                android:layout_toLeftOf="@+id/slyx_wpay_downarrow_img"
+                android:layout_toRightOf="@+id/slyx_wpay_money_img"
+                android:background="@null"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="#a0a0a0"
+                android:textSize="14sp"
+                android:imeOptions="flagNoExtractUi" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/slyx_weixin_pay_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:layout_marginTop="9dip"
+            android:background="@drawable/slyx_login_bt_l"
+            android:gravity="center"
+            android:text="@string/slyx_confirm"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/slyx_yyspay_reminder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dip"
+            android:gravity="left" >
+            <TextView
+                android:id="@+id/slyx_yys_help_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dip"
+                android:lineSpacingExtra="4dp"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+ <!-- END OF 微信支付界面 -->
+
+</LinearLayout>

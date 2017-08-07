@@ -1,0 +1,47 @@
+{
+  "version":"3.2.20160105",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "uid" : 0
+    ,"token":""
+    }
+    ,"out_url" : "http://pay.mumayi.com/user/index/validation"
+    ,"out_params" :
+    {
+      "uid" : 0
+    ,"token" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "uid" : 0
+      ,"orderID": ""
+
+      ,"productPrice": ""
+
+      ,"orderTime": ""
+      ,"tradeSign": ""
+      ,"tradeState": ""
+      }
+    ,"out_url" :"http://pay.mumayi.com/user/index/validation"
+    ,"out_params" :
+      {
+        "uid" : 0
+      ,"orderID": ""
+      ,"productName": ""
+      ,"productPrice": ""
+      ,"productDesc" : ""
+      ,"orderTime": ""
+      ,"tradeSign": ""
+      ,"tradeState": ""
+      }
+    }
+  ]
+}

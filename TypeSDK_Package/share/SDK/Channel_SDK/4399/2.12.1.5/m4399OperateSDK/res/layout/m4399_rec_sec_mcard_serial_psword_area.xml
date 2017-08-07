@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/m4399_rec_color_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/serial"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/m4399_rec_edittext_bg"
+        android:gravity="center_vertical|left"
+        android:hint="@string/m4399_rec_input_card_serial"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColor="#111111"
+        android:textCursorDrawable="@null"
+        android:imeOptions="actionNext"
+        android:textSize="13sp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/m4399_rec_edittext_bg"
+        android:gravity="center_vertical|left"
+        android:hint="@string/m4399_rec_input_card_psword"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColor="#111111"
+        android:textCursorDrawable="@null"
+        android:imeOptions="actionDone"
+        android:textSize="13sp" />
+
+</LinearLayout>

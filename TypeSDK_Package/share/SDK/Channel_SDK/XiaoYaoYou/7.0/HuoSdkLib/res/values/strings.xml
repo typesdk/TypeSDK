@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btn_charge_green">#00b600</color>
+    <color name="btn_charge_gray">#999999</color>
+    <color name="aqua">#48AC4E</color>
+
+    <string name="view_tag">view_tag</string>
+    <string name="app_name">火速SDK</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_user">用户</string>
+    <string name="btn_gift">礼包</string>
+    <string name="btn_server">客服</string>
+    <string name="btn_bbs">论坛</string>
+    <string name="title_user">用户中心</string>
+    <string name="tv_gift">礼包</string>
+    <string name="confirm_title">提示</string>
+    <string name="ensure">确定</string>
+    <string name="payment">付款</string>
+    <string name="cancel">取消</string>
+    <string name="content_description_icon">icon</string>
+    <string name="refresh">刷新</string>
+    <string name="processing">加载中</string>
+    <string name="wx_pay">微信</string>
+    <string name="download_fail">下载安装包失败</string>
+    <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
+    <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
+    <string name="redo">重试</string>
+    <string name="install_msp">你尚未安装支付宝移动快捷支付服务，请立即安装</string>
+    <string name="install_alipay">你尚未安装支付宝钱包，请立即安装</string>
+    <string name="pay_treasure">支付宝</string>
+    <!-- fanwei -->
+    <string name="fanwei_title_text">聚宝收银台</string>
+    <string name="fanwei_SMS_billing">短信计费</string>
+    <string name="fanwei_SMS_billing_content">通过手机话费支付</string>
+    <string name="fanwei_pay_treasure">推荐支付宝用户</string>
+    <string name="fanwei_wx_treasure">推荐微信用户</string>
+    <string name="fanwei_bank_card_pay">银行卡一键支付</string>
+    <string name="fanwei_bank_card_pay_content">安全快捷,支持各类银行储蓄卡/信用卡</string>
+    <string name="fanwei_unionpay_mobile_payment">银联手机支付</string>
+    <string name="fanwei_unionpay_mobile_payment_content">各银行储蓄卡/信用卡</string>
+    <string name="fanwei_prepaid_card">充值卡</string>
+    <string name="fanwei_prepaid_card_content">移动/联通/电信话费充值卡</string>
+    <string name="fanwei_game_card">游戏点卡</string>
+    <string name="fanwei_game_card_content">盛大/久游/Q币等几十种游戏卡</string>
+    <string name="fanwei_add_bank">新增银行卡</string>
+    <string name="fanwei_bank_card">北银</string>
+    <string name="fanwei_last_number">(尾号0213)</string>
+    <string name="fanwei_amount">应付金额:</string>
+    <string name="fanwei_amount_num">￥​</string>
+    <string name="fanwei_num_but">收款方</string>
+    <string name="fanwei_merchants">浙江飞龙网络科技有限公司</string>
+    <string name="fanwei_goods">商品</string>
+    <string name="fanwei_hint_sms_code">短信校验码</string>
+    <string name="fanwei_sms_text">重新获取</string>
+    <string name="fanwei_goods_text">购买425金币</string>
+    <string name="fanwei_pay_time">亲,请在十五分钟内完成支付</string>
+    <string name="fanwei_Change_bank_card">换张银行卡支付</string>
+    <string name="fanwei_statement">该服务由聚宝云计费提供</string>
+    <string name="fanwei_yeepay_title">易宝支付</string>
+    <string name="fanwei_deposit_title">充值卡支付</string>
+    <string name="fanwei_pay_cancel">支付取消</string>
+    <string name="fanwei_pay_timeout">支付超时</string>
+    <string name="fanwei_next">下一步</string>
+    <string name="fanwei_confirm_pay">确认支付</string>
+    <string name="fanwei_back_merchants">回到游戏</string>
+    <string name="fanwei_prompt_text">*请务必使用与您选择的面额相同的卡进行支付,否则会引起交易失败</string>
+    <string name="fanwei_err_text">失败原因：支付失败，请稍候重试。银行内部系统间调用超时或日切造成付款失败，稍候可能付款成功</string>
+    <string name="fanwei_amount_title">你当前选择充值金额</string>
+    <string name="fanwei_card_number">卡号:</string>
+    <string name="fanwei_hin_input_num">请输入卡号</string>
+    <string name="fanwei_hin_input_pass">请输入密码</string>
+    <string name="fanwei_password">密码:</string>
+    <string name="fanwei_input_amount">金额:</string>
+    <string name="fanwei_init">初始化失败，请检查</string>
+    <string name="fanwei_game_card_pay">游戏点卡支付</string>
+    <string name="fanwei_pay_success">请求支付成功</string>
+    <string name="fanwei_to_account">正在到账中,\n预计1-3分钟内到账</string>
+    <!-- 2016-4-15 ADD -->
+    <string name="question_statement">如有支付问题请拨打 0571-86800282</string>
+    <string name="fanwei_service_telephone">如有疑问,请致电支付客服专线400-0385-908</string>
+    <string name="fanwei_mobile_card">移动卡</string>
+    <string name="fanwei_unicom_card">联通卡</string>
+    <string name="fanwei_telecom_card">电信卡</string>
+    <string name="fanwei_game_card_pay_amount">面额：</string>
+    <!-- 绑定通知 -->
+    <string name="user_xieyi_string">用户服务协议</string>
+    <string name="account_safe_tips_string">您当前的帐号安全性较低,请尽快将您的帐号关联手机,关联帐号后即可使用手机找回帐号和密码</string>
+    <string name="account_safe_tips_title">帐号安全提示</string>
+    <string name="bind_phone_string">现在关联</string>
+    <string name="bind_phone_cancle">以后再说</string>
+
+</resources>

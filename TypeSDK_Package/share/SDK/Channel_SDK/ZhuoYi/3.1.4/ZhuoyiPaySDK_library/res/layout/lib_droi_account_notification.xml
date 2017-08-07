@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>  
+  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >  
+  
+    <ImageView android:id="@+id/lib_droi_account_image" 
+        android:layout_width="wrap_content"  
+        android:layout_height="match_parent" />  
+
+    
+	<RelativeLayout android:layout_width="match_parent"  
+	    android:layout_height="match_parent"
+	    android:layout_centerVertical="true"
+	    android:layout_toRightOf="@+id/lib_droi_account_image" > 
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/lib_droi_account_freeme_acount"
+	        android:layout_alignParentLeft="true"  />
+	    
+	    <TextView android:id="@+id/lib_droi_account_text" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentRight="true"/>  
+	
+	    
+	    <ProgressBar android:id="@+id/lib_droi_account_progress_horizontal"  
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentBottom="true"
+	        style="?android:attr/progressBarStyleHorizontal" />  
+
+	</RelativeLayout>   
+</RelativeLayout>   

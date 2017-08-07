@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:fitsSystemWindows="true"
+             android:layout_height="match_parent">
+
+    <view class="com.papa91.pay.widget.photoviewer.HackyViewPager"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+
+    <TextView
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="@string/viewpager_indicator"
+            android:background="@android:color/transparent"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="0dp" android:id="@+id/bottomLayout"
+              android:layout_gravity="bottom"/>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+﻿{
+"app_id":"100321",
+"app_key":"a8e4324b1b7d6c0e8a9978a0e62cb824",
+"channel_id":"200",
+"channelName":"typesdk",
+"check_update_url":"http://update.typesdk.com/update/1001/201/",
+"cp_id":"1001",
+"platform":"unity",
+"sdk_name":"GAGame",
+"sdk_request_and_support":"support_exit_window",
+"switchconfig_url":"http://demo.typesdk.com:30003/getConfig/1001/200/config.txt"
+}

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yk_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/YK_GameSDK_100PX"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/yk_pay_icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/YK_GameSDK_36PX"
+            android:paddingRight="@dimen/YK_GameSDK_36PX"
+            android:src="@drawable/yk_video_setting_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/yk_text_ykgame_videoSetting"
+            android:textColor="@color/yk_text_title2"
+            android:textSize="@dimen/YK_GameSDK_30PX" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_1PX"
+                android:background="@color/yk_title_line3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_132PX"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/YK_GameSDK_40PX"
+                android:paddingRight="@dimen/YK_GameSDK_40PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/YK_GameSDK_36PX"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/yk_text_video_setting_upload"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/YK_GameSDK_30PX" />
+
+                <CheckBox
+                    android:id="@+id/yk_video_setting_upload"
+                    style="@style/YKCheckboxFirs"
+                    android:layout_width="@dimen/YK_GameSDK_110PX"
+                    android:layout_height="@dimen/YK_GameSDK_55PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_1PX"
+                android:background="@color/yk_title_line3" />
+
+            <RelativeLayout
+                android:id="@+id/yk_setting_voice_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_132PX"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/YK_GameSDK_40PX"
+                android:paddingRight="@dimen/YK_GameSDK_40PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/YK_GameSDK_36PX"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/yk_text_video_setting_record"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/YK_GameSDK_30PX" />
+
+                <CheckBox
+                    android:id="@+id/yk_video_setting_record"
+                    style="@style/YKCheckboxFirs"
+                    android:layout_width="@dimen/YK_GameSDK_110PX"
+                    android:layout_height="@dimen/YK_GameSDK_55PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_1PX"
+                android:background="@color/yk_title_line3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_132PX"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/YK_GameSDK_40PX"
+                android:paddingRight="@dimen/YK_GameSDK_40PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/YK_GameSDK_36PX"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/yk_text_video_setting_network"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/YK_GameSDK_30PX" />
+
+                <CheckBox
+                    android:id="@+id/yk_video_setting_network"
+                    style="@style/YKCheckboxFirs"
+                    android:layout_width="@dimen/YK_GameSDK_110PX"
+                    android:layout_height="@dimen/YK_GameSDK_55PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_1PX"
+                android:background="@color/yk_title_line3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_132PX"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/YK_GameSDK_40PX"
+                android:paddingRight="@dimen/YK_GameSDK_40PX" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/YK_GameSDK_36PX"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/yk_text_video_setting_definition"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/YK_GameSDK_30PX" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_1PX"
+                android:background="@color/yk_title_line3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_132PX"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/YK_GameSDK_40PX"
+                android:paddingRight="@dimen/YK_GameSDK_40PX" >
+
+                <TextView
+                    android:id="@+id/yk_video_definition_superclear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/YK_GameSDK_36PX"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/yk_text_video_setting_superclear"
+                    android:textColor="@color/yk_vedio_setting_text"
+                    android:textSize="@dimen/YK_GameSDK_30PX" />
+
+                <CheckBox
+                    android:id="@+id/yk_video_network_superclear"   
+                    style="@style/YKCheckboxSec"
+                    android:layout_width="@dimen/YK_GameSDK_55PX"
+                    android:layout_height="@dimen/YK_GameSDK_55PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_1PX"
+                android:background="@color/yk_title_line3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_132PX"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/YK_GameSDK_40PX"
+                android:paddingRight="@dimen/YK_GameSDK_40PX" >
+
+                <TextView
+                    android:id="@+id/yk_video_definition_highdefinition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/YK_GameSDK_36PX"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/yk_text_video_setting_highdefinition"
+                    android:textColor="@color/yk_vedio_setting_text"
+                    android:textSize="@dimen/YK_GameSDK_30PX" />
+
+                <CheckBox
+                    android:id="@+id/yk_video_network_highdefinition"
+                    style="@style/YKCheckboxSec"
+                    android:layout_width="@dimen/YK_GameSDK_55PX"
+                    android:layout_height="@dimen/YK_GameSDK_55PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+            
+             <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_1PX"
+                android:background="@color/yk_title_line3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_132PX"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/YK_GameSDK_40PX"
+                android:paddingRight="@dimen/YK_GameSDK_40PX" >
+
+                <TextView
+                    android:id="@+id/yk_video_definition_standardfinition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/YK_GameSDK_36PX"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="@string/yk_text_video_setting_standardfinition"
+                    android:textColor="@color/yk_vedio_setting_text"
+                    android:textSize="@dimen/YK_GameSDK_30PX" />
+
+                <CheckBox
+                    android:id="@+id/yk_video_network_standardfinition"
+                    style="@style/YKCheckboxSec"
+                    android:layout_width="@dimen/YK_GameSDK_55PX"
+                    android:layout_height="@dimen/YK_GameSDK_55PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_1PX"
+                android:background="@color/yk_title_line3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 >
+            </TextView>
+
+            <Button
+                android:id="@+id/yk_video_setting_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/YK_GameSDK_100PX"
+                android:background="@drawable/yk_btn_video_save_selector"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/yk_button_video_setting_text"
+                android:textSize="@dimen/YK_GameSDK_40PX" 
+                android:textColor="@color/yk_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

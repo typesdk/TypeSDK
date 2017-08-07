@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.community.CommunitySubjectUserInfoLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_layout_subject_item_customer"
+    android:layout_width="match_parent"
+    android:layout_height="70.0dip"
+    android:orientation="horizontal"
+    android:paddingBottom="10.0dip" >
+
+    <com.lion.ccpay.view.VipImageView
+        android:id="@+id/lion_layout_subject_item_customer_icon"
+        android:layout_width="60.0dip"
+        android:layout_height="60.0dip"
+        android:padding="5.0dip"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55.0dip"
+        android:orientation="vertical"
+        android:paddingBottom="2.5dip"
+        android:paddingLeft="15.0dip"
+        android:paddingTop="2.5dip" >
+
+        <include layout="@layout/lion_layout_customer_info" />
+
+        <TextView
+            android:id="@+id/lion_layout_subject_item_customer_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:textColor="@color/lion_common_text_gray"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</com.lion.ccpay.widget.community.CommunitySubjectUserInfoLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip" 
+    android:background="#ffffff"    
+    android:paddingRight="20dip">
+    
+    <ImageView 
+        android:id="@+id/pay_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zhifubao"
+        android:layout_centerVertical="true"
+        android:paddingLeft="20dip"
+        />
+    
+    <TextView 
+         android:id="@+id/pay_name"
+         android:layout_width="wrap_content"
+         android:layout_height="fill_parent"        
+         android:text="支付宝（推荐）"  
+         android:layout_toRightOf="@+id/pay_icon"         
+         android:layout_marginLeft="20dip"
+         android:textSize="16sp"  
+         android:gravity="center_vertical"  
+         android:textColor="#333333"      
+        />
+    <ImageView 
+        android:id="@+id/pay_duigou"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/duigou_green"
+        android:layout_centerVertical="true"   
+        android:layout_alignParentRight="true"    
+        android:visibility="invisible" 
+        />
+    <View 
+         android:layout_width="fill_parent"
+         android:layout_marginLeft="10dip"
+         android:layout_marginRight="10dip"
+         android:layout_height="0.5dip"
+         android:background="@color/line"
+         android:layout_alignParentBottom="true"        
+        />
+
+</RelativeLayout>

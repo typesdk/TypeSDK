@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/m4399_rec_page_bg"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_title_height"
+        android:background="@drawable/m4399_rec_mvcenter_title_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/m4399_rec_paddingLeft"
+        android:paddingRight="@dimen/m4399_rec_paddingRight" >
+
+        <TextView
+            android:id="@+id/hpay_dd_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/m4399_rec_color_white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/hpay_negativeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/m4399_rec_cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hpay_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/m4399_rec_gridview_vspacing"
+        android:paddingLeft="@dimen/m4399_rec_paddingLeft"
+        android:paddingRight="@dimen/m4399_rec_paddingLeft"
+        android:paddingTop="@dimen/m4399_rec_gridview_vspacing" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_rec_sum_btns_eara_height"
+        android:layout_marginBottom="@dimen/m4399_rec_single_btn_marginBottom"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/hpay_positiveButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/m4399_rec_right_btn_bg"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_rec_foot_height"
+        android:background="@drawable/m4399_rec_mvcenter_foot_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/m4399_rec_paddingLeft"
+        android:paddingRight="@dimen/m4399_rec_paddingLeft" >
+
+        <ImageView
+            android:id="@+id/hpay_dd_iv_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/m4399_rec_sdk_help" />
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hpay_dd_tv_kfrx"
+                style="@style/m4399RecFooterTextStyle" />
+
+            <TextView
+                android:id="@+id/hpay_dd_tv_kfrx_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/m4399_rec_link_text_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical|left"
+                android:textColor="#32beff"
+                android:textSize="@dimen/m4399_rec_foot_text_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/m4399_rec_sdk_ftnn_logo" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.base"
+    android:installLocation="auto"
+    android:versionCode="1000000"
+    android:versionName="100.00.00" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="25" />
+
+    <!-- baselib permission start -->
+    <!-- 获取设备信息权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 自动装权限 -->
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <!-- 获取指定Tag日志需要的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 获取网络状态并存到本地需要的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <!-- 崩溃日志收集 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <!-- 本地推送 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- baselib permission end -->
+
+    <application android:allowBackup="true" >
+
+        <!-- baselib config start -->
+        <!-- 服务逻辑 -->
+        <service
+            android:name="com.type.sdk.notification.PushService"
+            android:process=":process1" />
+        <!-- 保活用空注册 -->
+        <receiver
+            android:name="com.type.sdk.notification.Receiver1"
+            android:process=":process1" />
+
+        <service
+            android:name="com.type.sdk.notification.Service2"
+            android:process=":process2" />
+
+        <receiver
+            android:name="com.type.sdk.notification.Receiver2"
+            android:process=":process2" />
+
+        <!-- baselib config end -->
+    </application>
+
+</manifest>

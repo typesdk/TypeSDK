@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/pyw_iv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_title_height"
+        android:background="@color/pyw_yq_title_bg"
+        android:paddingBottom="@dimen/pyw_log_padding"
+        android:paddingTop="@dimen/pyw_log_padding"
+        android:scaleType="centerInside"
+        android:src="@drawable/pyw_img_sdk_logo" />
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_common_title_bar_back"
+        android:layout_width="@dimen/pyw_common_title_height"
+        android:layout_height="@dimen/pyw_common_title_height"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/pyw_selector_common_item_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/pyw_img_arrow_left" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pyw_view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/pyw_iv_title"
+        android:background="@color/pyw_common_item_divider" />
+
+    <ScrollView
+        android:id="@+id/pyw_view_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyw_view_divider"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="20dp" >
+
+            <LinearLayout
+                android:id="@+id/pyw_layout_login_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/pyw_img_edittext_normal_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pyw_img_loginicon_normal" />
+
+                <EditText
+                    android:id="@+id/pyw_et_login_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pyw_common_editext_height"
+                    android:background="@null"
+                    android:digits="@string/pyw_regex_code"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/pyw_login_account_hint"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/pyw_common_gray_darker"
+                    android:textColorHint="@color/pyw_common_hint_color"
+                    android:textSize="@dimen/pyw_common_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pyw_layout_login_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/pyw_img_edittext_normal_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pyw_img_pswicon_normal" />
+
+                <EditText
+                    android:id="@+id/pyw_et_login_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pyw_common_editext_height"
+                    android:background="@null"
+                    android:digits="@string/pyw_regex_code"
+                    android:hint="@string/pyw_login_psw_hint"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="@color/pyw_common_gray_darker"
+                    android:textColorHint="@color/pyw_common_hint_color"
+                    android:textSize="@dimen/pyw_common_large" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pyw_tv_forgetpsw_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/pyw_login_forgetpsw_tips"
+                android:textColor="@color/pyw_common_gray_lighter"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/pyw_btn_login"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/pyw_common_btn_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/pyw_selector_btn_white_bg"
+                    android:text="登  录"
+                    android:textColor="@color/pyw_common_gray_light"
+                    android:textSize="@dimen/pyw_common_large" />
+
+                <Button
+                    android:id="@+id/pyw_btn_fastreg"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/pyw_common_btn_height"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/pyw_selector_btn_blue_bg"
+                    android:text="快速注册"
+                    android:textColor="@color/pyw_common_white"
+                    android:textSize="@dimen/pyw_common_large" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/pyw_layout_contact"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/pyw_common_editext_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                layout="@layout/pyw_view_bottom_contact"
+                android:background="@drawable/pyw_img_service_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:id="@+id/pyw_tv_page_edge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pyw_page_edge_text"
+                android:textColor="@color/pyw_common_gray_lighter"
+                android:textSize="@dimen/pyw_common_medium" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

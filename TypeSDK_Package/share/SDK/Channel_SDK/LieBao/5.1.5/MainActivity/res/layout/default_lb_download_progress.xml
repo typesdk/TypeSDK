@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#06000000"
+    android:orientation="vertical" >
+
+    <!-- 进度条框 -->
+    <RelativeLayout
+        android:id="@+id/lb_download_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60.0dp"
+        android:layout_marginLeft="3.0dp"
+        android:layout_marginRight="3.0dp"
+        android:gravity="center_vertical"
+        android:visibility="visible"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/lb_update_icon"
+            android:layout_width="40.0dp"
+            android:layout_height="40.0dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/default_lb_float_icon"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/lb_icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="12.0dp"
+            android:layout_toRightOf="@id/lb_update_icon"
+            android:text="游戏名称"
+            android:textColor="#FFFFFF"
+            android:textSize="15.0sp" />
+
+        <ProgressBar
+            android:id="@+id/lb_progressBar_notify"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2.0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp"
+            android:layout_toRightOf="@id/lb_update_icon"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/default_lb_progressbar_notify"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/lb_update_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10.0dp"
+            android:layout_marginTop="12.0dp"
+            android:text="0%"
+            android:textColor="#f2e128"
+            android:textSize="14.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/lb_text_content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12.0dp"
+            android:layout_marginLeft="10.0dp"
+            android:layout_toRightOf="@id/lb_update_icon"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/lb_pause_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已暂停 ，"
+                android:textColor="#B2FFFFFF"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/lb_go_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lb_pause_update"
+                android:text="点击继续下载"
+                android:textColor="#B2f2e128"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

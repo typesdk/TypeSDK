@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background" >
+
+    <include
+        android:id="@+id/pyw_common_title"
+        layout="@layout/pyw_common_title_bar" />
+
+    <TextView
+        android:id="@+id/pyw_tv_voucher_user"
+        android:layout_width="@dimen/pyw_common_editext_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyw_common_title"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/pyw_img_radius_rectangle_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:text="限天龙八部可用，本代金券如超出实际所需支付金额，剩余金额面值将按等值金额返还给您。"
+        android:textColor="@color/pyw_common_gray_lighter"
+        android:textSize="@dimen/pyw_common_medium" />
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/pyw_common_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/pyw_img_voucher_infotitle_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="代金券使用说明"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/pyw_layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyw_tv_voucher_user"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="10dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/pyw_common_item_divider" />
+
+        <TextView
+            android:id="@+id/pyw_tv_voucher_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/pyw_common_background"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="可用代金券（3张）"
+            android:textColor="@color/pyw_common_gray_lighter" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_title_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pyw_tv_pay_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pyw_img_only_topframe_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="1231321"
+            android:textColor="@color/pyw_common_gray_light"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <TextView
+            android:id="@+id/pyw_tv_confirm"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/pyw_selector_blue_item_bg"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="确认"
+            android:textColor="@color/pyw_common_white"
+            android:textSize="@dimen/pyw_common_larger" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/pyw_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pyw_layout_bottom"
+        android:layout_below="@id/pyw_layout_info"
+        android:divider="@color/pyw_common_transparent"
+        android:listSelector="@color/pyw_common_transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false" >
+    </ListView>
+
+    <com.pengyouwan.sdk.ui.widget.TipsLayout
+        android:id="@+id/pyw_layout_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pyw_common_title"
+        android:visibility="gone" />
+
+</RelativeLayout>

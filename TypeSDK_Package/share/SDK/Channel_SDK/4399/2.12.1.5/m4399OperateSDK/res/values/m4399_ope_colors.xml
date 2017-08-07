@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="m4399_ope_dialog_text_green">#67b512</color>
+    <color name="m4399_ope_dialog_text_grey">#999999</color>
+    <color name="m4399_ope_usercenter_orange">#FF9515</color>
+    <color name="m4399_ope_usercenter_white">#FFFFFFFF</color>
+    <color name="m4399_ope_usercenter_black">#FF333333</color>
+    <color name="m4399_ope_usercenter_grey">#FF999999</color>
+    <color name="m4399_ope_usercenter_grey_light">#FFAAAAAA</color>
+    <color name="m4399_ope_usercenter_brown">#FF8F5005</color>
+    <color name="m4399_ope_usercenter_nav_bar_bg">#FFFF9515</color>
+	<color name="m4399_ope_transparent">#00000000</color>
+
+    <!-- 绑定手机 -->
+    <color name="m4399_ope_sure_ban_txt">#999999</color>
+    <color name="m4399_ope_sure_ban_bg">#dddddd</color>
+    <color name="m4399_ope_bind_white">#ffffff</color>
+    <color name="m4399_ope_bind_title_black">#333333</color>
+    <color name="m4399_ope_bind_label_gray">#666666</color>
+    <color name="m4399_ope_bind_code_gray">#f4f4f4</color>
+    <color name="m4399_ope_bind_input_frame">#e6e6e6</color>
+    <color name="m4399_ope_bind_send_frame">#c8c8c8</color>
+    <color name="m4399_ope_bind_green">#70c84e</color>
+    <color name="m4399_ope_bind_green_pressed">#58b83a</color>
+    <color name="m4399_ope_bind_hint">#cccccc</color>
+    <color name="m4399_ope_bind_edit_font_color">#333</color>
+    <color name="m4399_ope_bind_send_bg_pressed">#f5f5f5</color>
+
+    <!-- 激活码 -->
+    <color name="m4399_ope_activation_white">#ffffff</color>
+    <color name="m4399_ope_activation_title_black">#000000</color>
+    <color name="m4399_ope_activation_get_blue">#0090ff</color>
+    <color name="m4399_ope_activation_edt_hint_gray">#999999</color>
+    <color name="m4399_ope_activation_button_green">#70c84e</color>
+    <color name="m4399_ope_activation_button_green_pressed">#58b83a</color>
+    <color name="m4399_ope_activation_border_gray">#dddddd</color>
+
+
+    <color name="m4399_ope_color_yellow">#FFFFB512</color>
+    <color name="m4399_ope_coupon_cannot_use">#ff9515</color>
+
+    <!-- vip and perfect info -->
+    <color name="m4399_ope_perfect_nickname_text">#89000000</color>
+    <color name="m4399_ope_perfect_center_text">#dd000000</color>
+    <color name="m4399_ope_perfect_line">#d8d8d8</color>
+    <color name="m4399_ope_perfect_center_text_hint">#42000000</color>
+    <color name="m4399_ope_perfect_bg">#EEEEEE</color>
+
+
+</resources>

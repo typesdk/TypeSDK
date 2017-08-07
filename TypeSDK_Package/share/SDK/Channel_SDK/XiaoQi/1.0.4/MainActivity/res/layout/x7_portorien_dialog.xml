@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dip"
+    android:background="#00000000"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- 包含竖线和XX，公告内容和公告title -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="70dip"
+            android:orientation="vertical" >
+
+            <!-- 公告内容和公告title -->
+
+            <LinearLayout
+                android:id="@+id/gonggao_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/x7_gonggao_dialog_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" >
+
+                <ScrollView
+                    android:layout_marginTop="15dip"
+                    android:layout_marginBottom="15dip"
+                    android:fadingEdge="none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/gonggao_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="15dip"
+                            android:layout_marginTop="25dip"
+                            android:text="小7公告"
+                            android:textColor="@color/text_green"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/gonggao_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="30dip"
+                            android:text="小7公告的内容 "
+                            android:textColor="#333333"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/text_green" />
+
+            <ImageView
+                android:id="@+id/landorientate_dialog_cancell"
+                android:layout_width="100dip"
+                android:layout_height="60dip"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:paddingBottom="20dip"
+                android:paddingLeft="30dip"
+                android:paddingRight="30dip"
+                android:src="@drawable/x7_gonggao_cancell" />
+        </LinearLayout>
+
+        <!-- 小7公告的图片 -->
+
+        <ImageView
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/x7_gonggao_dialog" />
+    </RelativeLayout>
+
+</RelativeLayout>

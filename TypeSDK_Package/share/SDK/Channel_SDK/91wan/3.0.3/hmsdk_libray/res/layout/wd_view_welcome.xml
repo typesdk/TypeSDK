@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/wd_ll_welcome"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center"
+              android:background="@drawable/wd_bg_dialog_shape_corner">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/wd_dialog_padding">
+
+        <TextView
+                android:id="@+id/wd_tv_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欢迎用户："
+                android:paddingLeft="15dp"
+        />
+
+        <TextView
+                android:id="@+id/wd_tv_welcome_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13660476075"
+                android:paddingLeft="5dp"
+                android:layout_toRightOf="@+id/wd_tv_welcome"
+                android:textColor="@color/wd_color_yellow"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

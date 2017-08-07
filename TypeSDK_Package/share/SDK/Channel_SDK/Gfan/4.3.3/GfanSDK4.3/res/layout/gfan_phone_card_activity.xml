@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/gfan_no_padding_bg"
+    android:background="@drawable/gfan_progress_hud_bg"
+    android:padding="20dp"
+    tools:context="com.mappn.sdk.gfanpay.phoneCard.PhoneCardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardType"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cardPrice"/>
+
+        <EditText
+            android:id="@+id/cardNumEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="输入卡号"/>
+
+        <EditText
+            android:id="@+id/cardPsdEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="输入密码"/>
+
+        <TextView
+            android:id="@+id/promptText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="请仔细确认以上信息后再进行下一步操作。如需帮助请点击这里。"/>
+
+        <Button
+            android:id="@+id/chargeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="charge"
+            android:text="开始充值"
+            android:textAppearance="?android:attr/textAppearanceMedium"  />
+
+    </LinearLayout>
+
+</ScrollView>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_phone_card_activity.xml -->

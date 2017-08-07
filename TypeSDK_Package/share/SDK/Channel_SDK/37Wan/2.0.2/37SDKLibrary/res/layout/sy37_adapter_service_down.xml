@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/newsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/newIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_ca_bg"
+            android:drawableLeft="@drawable/sy37_icon_kefu_news"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="20dip"
+            android:text="@string/fg_news"
+            android:textColor="@color/kefu_blue"
+            android:textSize="@dimen/kefu_list_title" />
+
+
+            <TextView
+                android:id="@+id/newsTitle"
+                android:layout_toRightOf="@id/newIcon"
+                android:layout_alignTop="@id/newIcon"
+                android:layout_alignBottom="@id/newIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/kefu_black"
+                android:textSize="@dimen/kefu_list_title" />
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignBottom="@id/newsTitle"
+                android:layout_alignLeft="@id/newsTitle"
+                android:background="@drawable/sy37_icon_list_diver"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/strategyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/strategyIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_ca_bg"
+            android:drawableLeft="@drawable/sy37_icon_kefu_strategy"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="20dip"
+            android:text="@string/fg_strategy"
+            android:textColor="@color/kefu_green"
+            android:textSize="@dimen/kefu_list_title" />
+
+
+            <TextView
+                android:id="@+id/strategyTitle"
+                android:layout_toRightOf="@id/strategyIcon"
+                android:layout_alignTop="@id/strategyIcon"
+                android:layout_alignBottom="@id/strategyIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/kefu_black"
+                android:textSize="@dimen/kefu_list_title" />
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignBottom="@id/strategyTitle"
+                android:layout_alignLeft="@id/strategyTitle"
+                android:background="@drawable/sy37_icon_list_diver"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/giftLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/giftIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sy37_ca_bg"
+            android:drawableLeft="@drawable/sy37_icon_kefu_gift"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="20dip"
+            android:text="@string/fg_gift"
+            android:textColor="@color/kefu_yellow"
+            android:textSize="@dimen/kefu_list_title" />
+
+
+            <TextView
+                android:id="@+id/giftTitle"
+                android:layout_toRightOf="@id/giftIcon"
+                android:layout_alignTop="@id/giftIcon"
+                android:layout_alignBottom="@id/giftIcon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/kefu_black"
+                android:textSize="@dimen/kefu_list_title" />
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignBottom="@id/giftTitle"
+                android:layout_alignLeft="@id/giftTitle"
+                android:background="@drawable/sy37_icon_list_diver"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/galleryLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical" 
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sy37_icon_to_left" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sy37_icon_to_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/sy37_icon_list_diver" />
+
+</LinearLayout>

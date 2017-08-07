@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/register"
+    android:layout_width="320dip"
+    android:layout_height="280dip"
+    android:layout_centerInParent="true"
+    android:background="@drawable/sdk_login_bg"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/sdk_login_title_bg" >
+
+        <LinearLayout
+            android:id="@+id/rg_back"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/sdk_back_bg_selector"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sdk_login_icon_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pp_register_account"
+            android:textColor="@color/text_title"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginTop="10dip" >
+
+            <ImageView
+                android:id="@+id/rg_username_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/sdk_login_icon_yonghu" />
+
+            <EditText
+                android:id="@+id/rg_username_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/rg_username_iv"
+                android:background="@drawable/sdk_login_input_bg_selector"
+                android:hint="@string/pp_register_input_name_hint"
+                android:singleLine="true"
+                android:textColor="@color/text_focused"
+                android:textColorHint="@color/text_normal"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginTop="10dip" >
+
+            <ImageView
+                android:id="@+id/rg_password_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/sdk_login_icon_mima" />
+
+            <EditText
+                android:id="@+id/rg_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/rg_password_iv"
+                android:background="@drawable/sdk_login_input_bg_selector"
+                android:hint="@string/pp_register_input_password_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/text_focused"
+                android:textColorHint="@color/text_normal"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/rg_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/sdk_login_btn_green_selector"
+            android:text="@string/pp_register"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/rg_quick_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/sdk_login_btn_xt_selector"
+            android:text="@string/pp_quick_register"
+            android:textColor="@color/sdk_text_selector"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip" >
+
+            <ImageView
+                android:id="@+id/rg_agree_terms_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sdk_login_fxk_selector" />
+
+            <TextView
+                android:id="@+id/rg_agree_terms_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/rg_agree_terms_iv"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/pp_agree_terms"
+                android:textColor="@color/text_normal"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rg_terms_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/rg_agree_terms_tv"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/pp_terms"
+                android:textColor="#ffb33c44"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/rg_login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/pp_login"
+                android:textColor="#ff37ac4d"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

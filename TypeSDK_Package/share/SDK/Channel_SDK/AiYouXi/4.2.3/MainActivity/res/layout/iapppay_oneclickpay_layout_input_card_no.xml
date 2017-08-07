@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/iapppay_oneclick_title_bar"
+        layout="@layout/iapppay_oneclick_title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/ipay_color_1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_19"
+        android:paddingRight="@dimen/margin_19" >
+
+        <TextView
+            android:id="@+id/payAmountTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/card_no"
+            android:textColor="@color/ipay_color_3"
+            android:textSize="@dimen/text_size_12"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/iapppay_oneclick_line"
+            layout="@layout/iapppay_oneclick_common_line_layout" 
+            android:visibility="gone"/>
+
+        <!-- 请输入卡号 -->
+        <include
+            android:id="@+id/layout_bankcard_num"
+            layout="@layout/oneclick_common_bank_info_collect_layout"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/nextStepButton"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:text="@string/nextstep"
+                            android:background="@drawable/ipay_common_btn_bg_color"
+                android:textColor="@drawable/ipay_common_btn_text_color"
+            android:textSize="@dimen/text_size_19" />
+    </LinearLayout>
+
+</LinearLayout>

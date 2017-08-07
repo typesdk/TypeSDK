@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/lib_select_account_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginTop="14dp"/>

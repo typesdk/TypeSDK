@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/lion_activity_wallet_change_log_type"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lion_common_translucence_deep"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lion_common_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/lion_text_please_choice_type"
+            android:textSize="15sp"/>
+
+        <RadioGroup
+            android:id="@+id/lion_activity_choice_type_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/lion_activity_type_all"
+                style="@style/lion_activity_expense_choice_type"
+                android:layout_marginLeft="0dp"
+                android:text="@string/lion_text_all"/>
+
+            <RadioButton
+                android:id="@+id/lion_activity_type_recharge_log"
+                style="@style/lion_activity_expense_choice_type"
+                android:text="@string/lion_text_recharge_log"/>
+
+            <RadioButton
+                android:id="@+id/lion_activity_type_expense_log"
+                style="@style/lion_activity_expense_choice_type"
+                android:text="@string/lion_text_expense_log"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/lion_common_gray_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/lion_text_please_choice_type"
+            android:textSize="15sp"/>
+
+        <RadioGroup
+            android:id="@+id/lion_activity_choice_type_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/lion_activity_last_day"
+                style="@style/lion_activity_expense_choice_type"
+                android:layout_marginLeft="0dp"
+                android:text="@string/lion_text_last_day"/>
+
+            <RadioButton
+                android:id="@+id/lion_activity_last_week"
+                style="@style/lion_activity_expense_choice_type"
+                android:text="@string/lion_text_last_week"/>
+
+            <RadioButton
+                android:id="@+id/lion_activity_last_month"
+                style="@style/lion_activity_expense_choice_type"
+                android:text="@string/lion_text_last_month"/>
+
+            <RadioButton
+                android:id="@+id/lion_activity_last_three_month"
+                style="@style/lion_activity_expense_choice_type"
+                android:text="@string/lion_text_last_three_month"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

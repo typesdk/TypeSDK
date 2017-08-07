@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- 注意下面的 android:contentAuthority，它必须是：
+     android:authorities = "你的游戏包名.cx.accounts.syncprovider" 组成的
+     它和 AndroidManifest.xml 下的修改是一样的 -->
+<sync-adapter xmlns:android="http://schemas.android.com/apk/res/android"
+    android:contentAuthority="@package@.cx.accounts.syncprovider"
+    android:accountType="com.qihoo.pushsdk.accounts"
+    android:userVisible="true"
+    android:supportsUploading="false"
+    android:allowParallelSyncs="false"
+    android:isAlwaysSyncable="true"/>

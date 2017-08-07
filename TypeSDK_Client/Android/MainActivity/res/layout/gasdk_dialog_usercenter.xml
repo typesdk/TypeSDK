@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="290dip"
+        android:layout_height="275dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gasdk_login_rel" >
+
+        <LinearLayout
+            android:id="@+id/center_lin"
+            android:layout_width="260dip"
+            android:layout_height="44dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/center_imagebutton_1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/gasdk_login_beck" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_registered_title"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="@string/text_usercenter" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_edit_lin_1"
+            android:layout_width="260dip"
+            android:layout_height="44dip"
+            android:layout_below="@+id/center_lin"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gasdk_edit_rel"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_login_text"
+                android:layout_marginLeft="5dip"
+                android:text="@string/text_user_1" />
+
+            <EditText
+                android:id="@+id/user_phone_1"
+                style="@style/text_username_edit"
+                android:layout_width="118dp"
+                android:layout_marginLeft="5dip"
+                android:focusable="false"
+                android:hint="" >
+            </EditText>
+
+            <Button
+                android:id="@+id/user_button_1"
+                style="@style/text_welcome_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dip"
+                android:background="@drawable/gasdk_button3_rel"
+                android:gravity="center"
+                android:text="@string/text_upgrade" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_edit_lin_2"
+            android:layout_width="260dip"
+            android:layout_height="44dip"
+            android:layout_below="@+id/user_edit_lin_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/gasdk_edit_rel"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_login_text"
+                android:layout_marginLeft="5dip"
+                android:text="@string/text_user_2" />
+
+            <EditText
+                android:id="@+id/user_phone_2"
+                style="@style/text_username_edit"
+                android:layout_width="118dp"
+                android:layout_marginLeft="5dip"
+                android:focusable="false"
+                android:hint="@string/text_user_3" >
+            </EditText>
+
+            <Button
+                android:id="@+id/user_button_2"
+                style="@style/text_welcome_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dip"
+                android:background="@drawable/gasdk_button3_rel"
+                android:gravity="center"
+                android:text="@string/text_user_4" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/user_edit_lin_3"
+            android:layout_width="260dip"
+            android:layout_height="44dip"
+            android:layout_below="@+id/user_edit_lin_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/gasdk_edit_rel"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_login_text"
+                android:layout_marginLeft="5dip"
+                android:text="@string/text_paydata_1" />
+
+            <EditText
+                style="@style/text_username_edit"
+                android:layout_width="0dip"
+                android:layout_weight="7"
+                android:layout_marginLeft="5dip"
+                android:focusable="false"
+                android:hint="" >
+            </EditText>
+
+            <Button
+                android:id="@+id/user_button_6"
+                style="@style/text_welcome_white"
+                android:layout_width="0dip"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dip"
+                android:background="@drawable/gasdk_button3_rel"
+                android:gravity="center"
+                android:text="@string/text_paydata_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/user_edit_lin_5"
+            android:layout_width="260dip"
+            android:layout_height="44dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/user_button_3"
+                style="@style/text_welcome_white"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dip"
+                android:background="@drawable/gasdk_button3_rel"
+                android:gravity="center"
+                android:text="@string/text_user_6" />
+
+            <Button
+                android:id="@+id/user_button_4"
+                style="@style/text_welcome_white"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dip"
+                android:background="@drawable/gasdk_button3_rel"
+                android:gravity="center"
+                android:text="@string/text_user_9" />
+
+            <Button
+                android:id="@+id/user_button_5"
+                style="@style/text_welcome_white"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dip"
+                android:background="@drawable/gasdk_button3_rel"
+                android:gravity="center"
+                android:text="@string/text_user_10"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

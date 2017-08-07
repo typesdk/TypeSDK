@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:fitsSystemWindows="true"
+                android:background="@color/white">
+
+    <include layout="@layout/mg_forum_title_layout" android:id="@+id/actionbarLayout" android:visibility="visible"/>
+
+    <view class="com.papa91.pay.widget.ForumLoadingView"
+          android:id="@+id/loadingView"
+          android:layout_below="@id/actionbarLayout"
+          android:layout_height="match_parent"
+          android:layout_width="match_parent">
+
+        <view class="com.papa91.pay.widget.LJWebView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/web"/>
+
+    </view>
+
+    <FrameLayout
+            android:id="@+id/video_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"/>
+</RelativeLayout>

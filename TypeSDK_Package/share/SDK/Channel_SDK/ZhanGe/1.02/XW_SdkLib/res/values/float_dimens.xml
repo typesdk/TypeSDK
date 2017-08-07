@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+ 
+    <dimen name="float_view_height">60dp</dimen>
+    <dimen name="float_btn_up_padding">8dp</dimen>
+    <dimen name="float_version_padding_top_bottom">6dp</dimen>
+    <dimen name="float_btn_height">32dp</dimen>
+    <dimen name="float_marin_padding">14dp</dimen>
+    <dimen name="text_list_font">14sp</dimen>
+	<dimen name="text_list_control_font">18dp</dimen>
+	<dimen name="float_max_font">16sp</dimen>
+	<dimen name="float_normal_font">12sp</dimen>
+	<dimen name="float_normal_two_font">14sp</dimen>
+	<dimen name="float_min_font">9sp</dimen>
+	<dimen name="float_list_line_height">48dp</dimen>
+    
+</resources>

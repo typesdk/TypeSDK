@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 礼包领取listview的item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/egame_list_item_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp_18"
+    android:paddingRight="@dimen/dp_18" >
+
+    <!-- icon -->
+
+    <ImageView
+        android:id="@+id/egame_gift_item_img"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_64"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@drawable/egame_ico_game_icon_default"
+        android:contentDescription="@string/egame_des_imageview" />
+
+    <!-- 右边布局 -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/egame_gift_item_img"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_toRightOf="@+id/egame_gift_item_img"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- 礼包标题 -->
+
+            <TextView
+                android:id="@+id/egame_gift_item_title_textView"
+                android:textSize="@dimen/dp_16"
+				android:textColor="@color/egame_usersdk_dark_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:singleLine="true" />
+            <!-- 淘号领号已领号的不同布局 -->
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/egame_gift_item_title_textView" >
+
+                <!-- 未领号 -->
+
+                <LinearLayout
+                    android:id="@+id/egame_gift_item_remain_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ProgressBar
+                        android:id="@+id/egame_gift_item_progressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="@dimen/dp_130"
+                        android:layout_height="@dimen/dp_4"
+                        android:background="@drawable/egame_progress_bg"
+                        android:progressDrawable="@drawable/egame_progress_green" />
+                    <!-- 剩余 -->
+
+                    <TextView
+                        android:id="@+id/egame_gift_item_remain_textView"
+                        android:textSize="@dimen/dp_10"
+                        android:textColor="#67bf4b"
+                        android:layout_width="@dimen/dp_56"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_6" />
+                </LinearLayout>
+
+                <!-- 已淘次数 -->
+
+                <LinearLayout
+                    android:id="@+id/egame_gift_item_get_num_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/have_get"
+                        android:textColor="@color/mesgpush_other"
+                        android:textSize="@dimen/dp_12" />
+
+                    <!-- 已淘次数 -->
+
+                    <TextView
+                        android:id="@+id/egame_gift_item_get_times_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/egame_orange"
+                        android:textSize="@dimen/dp_12" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/times"
+                        android:textColor="@color/mesgpush_other"
+                        android:textSize="@dimen/dp_12" />
+                </LinearLayout>
+                <!-- 点击查看详情 -->
+
+                <TextView
+                    android:id="@+id/egame_gift_item_detail"
+                    android:textSize="@dimen/dp_10"
+                    android:textColor="@color/egame_usersdk_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_2"
+                    android:text="@string/egame_gift_click_detail" />
+            </FrameLayout>
+            <!-- 领号淘号 -->
+
+        </RelativeLayout>
+
+        <!-- 礼包内容 -->
+
+        <TextView
+            android:id="@+id/egame_gift_item_content_textView"
+            android:textSize="@dimen/dp_12"
+            android:textColor="@color/egame_usersdk_regist_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayout"
+            android:ellipsize="end"
+            android:lines="2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/egame_gift_item_get_textView"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center"
+        android:textColor="@color/egame_gift_get_text_color_seletor"
+        android:textSize="@dimen/dp_14" />
+
+</RelativeLayout>

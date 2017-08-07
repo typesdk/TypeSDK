@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kg_tb_content_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#00000000"
+    android:orientation="horizontal" >
+
+    <GridView
+        android:id="@+id/kg_tb_content_grid"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kg_floatview_content_bg_left"
+        android:cacheColorHint="#00000000"
+        android:numColumns="2" />
+
+</LinearLayout>

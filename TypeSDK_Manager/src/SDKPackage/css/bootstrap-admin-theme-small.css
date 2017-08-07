@@ -1,0 +1,154 @@
+/*
+    * Created on : 2014-01-10, 22:47:39
+    * Author     : Meritoo.pl, http://www.meritoo.pl
+    * Copyright  : Meritoo.pl
+*/
+
+/** Body **/
+body{
+    background-color: #fff;
+    font-size: 13px;
+    line-height: 1.3;
+    padding-top: 60px; /* Required, because main menu / navbar has "navbar-fixed-top" class and is sticked to the top */
+}
+body.bootstrap-admin-with-small-navbar{
+    padding-top: 85px;
+}
+
+/** Content of the panel **/
+.bootstrap-admin-panel-content{
+    padding: 14px;
+}
+
+/** Box above the title of content */
+.bootstrap-admin-above-content-title{
+    margin-bottom: 5px;
+}
+.bootstrap-admin-below-content-title{
+    margin-bottom: 10px;
+}
+
+/** Title of the content */
+.bootstrap-admin-content-title{
+    margin-bottom: 10px;
+}
+.bootstrap-admin-content-title h1,
+.bootstrap-admin-content-title h2{
+    margin-bottom: 2px;
+}
+.bootstrap-admin-content-title.bootstrap-admin-content-subtitle{
+    margin-top: 20px;
+}
+.bootstrap-admin-content-title.bootstrap-admin-content-title-with-above-content{
+    margin-top: 3px;
+}
+.bootstrap-admin-content-title.bootstrap-admin-content-title-with-below-content{
+    margin-bottom: 3px;
+}
+
+/** Table with actions */
+.bootstrap-admin-table-with-actions > thead > tr > th,
+.bootstrap-admin-table-with-actions > tbody > tr > th,
+.bootstrap-admin-table-with-actions > tfoot > tr > th,
+.bootstrap-admin-table-with-actions > thead > tr > td,
+.bootstrap-admin-table-with-actions > tbody > tr > td,
+.bootstrap-admin-table-with-actions > tfoot > tr > td {
+    line-height: 1.65;
+}
+
+/** Buttons placed into the Actions column */
+table > tbody > tr > td.actions{
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+table > tbody > tr > td.actions .btn{
+    font-size: 12px;
+}
+
+/** Horizontal navbars */
+.bootstrap-admin-navbar-sm{
+    min-height: 24px;
+}
+.bootstrap-admin-navbar-sm .navbar-collapse .navbar-nav li.text,
+.bootstrap-admin-navbar-sm .navbar-collapse .navbar-nav li a{
+    font-size: 12px;
+    padding: 2px 8px;
+}
+.bootstrap-admin-navbar-sm .navbar-collapse .navbar-nav li.text{
+    padding-top: 4px;
+}
+.bootstrap-admin-navbar-sm .navbar-collapse .navbar-nav .dropdown-menu > li > a{
+    font-size: 13px;
+}
+.bootstrap-admin-navbar-under-small{
+    top: 24px;
+}
+
+/** Side Bar **/
+.bootstrap-admin-navbar-side > li > a {
+    padding: 7px 13px;
+}
+.bootstrap-admin-navbar-side > .active > a {
+    padding: 7px 13px;
+}
+
+/** Breadcrumbs **/
+.bootstrap-admin-breadcrumb{
+    margin: 7px 13px;
+}
+
+/** Alert **/
+.bootstrap-admin-alert{
+    padding: 7px 13px;
+}
+
+/** Tabs */
+.bootstrap-admin-tabs{
+    margin-bottom: 15px;
+}
+
+/** Progress bars */
+.progress-with-value span.value{
+    font-size: 13px;
+}
+
+/** Update left and right padding of elements on the edge **/
+.bootstrap-admin-no-edges-padding > div:first-child:not(.col-lg-12):not(.col-md-12):not(.col-sm-12):not(.col-xs-12){
+    padding-right: 10px;
+}
+.bootstrap-admin-no-edges-padding > div:last-child:not(.col-lg-12):not(.col-md-12):not(.col-sm-12):not(.col-xs-12){
+    padding-left: 10px;
+}
+
+/** Miscellaneous styles */
+.bootstrap-admin-back-to-parent{
+    padding: 5px;
+}
+.bootstrap-admin-back-to-parent .text{
+}
+.bootstrap-admin-back-to-parent .action{
+    margin-left: 5px;
+}
+
+/** Selectize plugin */
+.selectize-input{
+    float: left;
+    line-height: 1.25;
+    min-height: 30px;
+    padding: 6px 10px;
+}
+.selectize-dropdown,
+.selectize-input,
+.selectize-input input{
+    font-size: 13px;
+    line-height: 1.25;
+}
+.selectize-control.single .selectize-input:after{
+    right: 10px;
+}
+
+/** Page header */
+.page-header{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}

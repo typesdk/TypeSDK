@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="news_sdk_name">GameSdk</string>
+    <string name="news_user_agreement">今日头条用户协议</string>
+    <string name="news_login_toutiao">登录今日头条</string>
+    <string name="news_user_agreement_title">今日头条用户协议</string>
+    <string name="news_error_user_agreement_disagree">请同意《今日头条用户协议》</string>
+    <string name="news_login_frag_title">登录今日头条</string>
+    <string name="news_login_frag_desc">使用头条账号和密码进行登录</string>
+    <string name="news_bind_prompt2">, 30分钟内有效,\n绑定完成后也可用此密码登录头条</string>
+</resources>

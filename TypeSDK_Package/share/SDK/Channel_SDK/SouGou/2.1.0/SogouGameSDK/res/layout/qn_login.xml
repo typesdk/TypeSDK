@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#dedede"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFA500"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号登录"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/qn_input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/qn_bg_editor"
+        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:inputType="text"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/qn_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/qn_input_username"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/qn_bg_editor"
+        android:inputType="textPassword"
+        android:maxLength="32"
+        android:padding="10dp"
+        android:password="true"
+        tools:ignore="RtlCompat"/>
+
+    <TextView
+        android:id="@+id/qn_label_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/qn_input_username"
+        android:layout_alignBottom="@+id/qn_input_username"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:text="账号"
+        android:textSize="18dp"
+        tools:ignore="RtlCompat"/>
+
+    <TextView
+        android:id="@+id/qn_label_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/qn_input_password"
+        android:layout_alignBottom="@+id/qn_input_password"
+        android:layout_alignStart="@+id/qn_label_username"
+        android:text="密码"
+        android:textSize="18dp"
+        tools:ignore="RtlCompat"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/qn_input_password"
+        android:orientation="horizontal"
+        tools:ignore="RtlCompat">
+
+        <Button
+            android:id="@+id/qn_btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qn_input_password"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/qn_bg_login_btn"
+            android:text="登录"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

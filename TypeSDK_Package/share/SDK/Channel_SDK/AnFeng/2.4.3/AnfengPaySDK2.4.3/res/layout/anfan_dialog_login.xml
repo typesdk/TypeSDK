@@ -1,0 +1,174 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:id="@+id/ll_main_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/anfan_defealut_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/anfan_defealut_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+             >
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawableLeft="@drawable/af_ico_login_back"
+                android:text="用户注册"
+                android:gravity="center"
+                android:drawablePadding="3dp"
+                android:layout_alignParentLeft="true"
+                      android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+               android:layout_centerInParent="true"
+                android:text="用户登录"
+                     android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="20dp"
+            android:background="#D9DDE1" />
+
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <com.anfeng.pay.view.ClearEditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="@string/anfan_input_digits"
+                android:drawableLeft="@drawable/anfan_ico_user"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/anfan_email_or_phone"
+                android:maxLength="50"
+                android:paddingLeft="30dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="#CCCCCC"
+                android:textCursorDrawable="@null" />
+
+            <ImageView
+                android:id="@+id/iv_select_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/anfan_pull_arrow"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="#D9DDE1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal" >
+
+            <com.anfeng.pay.view.SeePWDEditText
+                android:id="@+id/et_pwd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:background="@android:color/white"
+                android:digits="@string/anfan_input_digits"
+                android:drawableLeft="@drawable/anfan_ico_lock"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/anfan_pwd"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="30dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="#CCCCCC"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/anfan_login_misspass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/af_ico_forget"
+                android:drawablePadding="2dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/anfan_forgot_pwd"
+                android:textColor="#F1C40F"
+                android:paddingRight="5dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D9DDE1" />
+
+     
+
+
+  
+
+            <Button
+            android:layout_marginTop="10dp"
+                android:id="@+id/anfan_login_loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/anfan_button_bg_blue"
+                android:text="@string/anfan_login_new"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        <com.anfeng.pay.view.AlwaysMarqueeTextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/af_ico_msg"
+            android:drawablePadding="5dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#8f8b92"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</ScrollView>

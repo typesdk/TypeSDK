@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="6dip" >
+    <LinearLayout
+        android:id="@+id/ll_money"
+        android:focusable="true" android:focusableInTouchMode="true"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <requestFocus />
+         <EditText
+         android:id="@+id/et_money"
+         android:layout_width="fill_parent"
+         android:layout_height="42dip"
+         android:background="@drawable/ttw_edit_bg"
+         android:numeric="integer"
+         android:singleLine="true"
+         android:maxLength="9"
+         android:focusable="false"
+         android:focusableInTouchMode="false"
+         android:paddingLeft="6dip"
+         android:layout_marginTop="6dip"
+          />
+          
+    </LinearLayout>
+    <TextView 
+        	 android:id="@+id/tv_desc"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="去支付宝付款"
+	         android:textSize="14sp"
+	         android:textColor="#6E6E6E"
+	         android:layout_marginTop="3dip"
+			 android:layout_below="@id/ll_money"
+         />
+   <TextView 
+          android:id="@+id/tv_pay"
+          android:layout_width="match_parent"
+          android:layout_height="42dip"
+          android:gravity="center"
+          android:textSize="16sp"
+          android:text="立即付款"
+          android:textColor="@android:color/white"
+          android:background="#00b600"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="30dip"
+          />
+</RelativeLayout>

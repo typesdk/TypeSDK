@@ -1,0 +1,49 @@
+{
+  "version": "V1.3.0.20160705",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "POST",
+      "in_params": {
+        "uid": "",
+        "ucid": ""
+      },
+      "out_url": "http://api.qcwan.com/info/uc",
+      "out_params": {
+        "uid": "",
+        "ucid": "",
+        "uuid": "",
+        "appId": ""
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "uid": "",
+        "ucid": "",
+        "body": "",
+        "fee": "",
+        "subject": "",
+        "vid": "",
+        "sn": "",
+        "vorderid": "",
+        "createTime": "",
+        "sign": ""
+      },
+      "out_url": "http://api.qcwan.com/info/uc",
+      "out_params": {
+        "uid": "",
+        "ucid": "",
+        "body": "",
+        "fee": "",
+        "subject": "",
+        "vid": "",
+        "sn": "",
+        "vorderid": "",
+        "createTime": "",
+        "sign": ""
+      }
+    }
+  ]
+}

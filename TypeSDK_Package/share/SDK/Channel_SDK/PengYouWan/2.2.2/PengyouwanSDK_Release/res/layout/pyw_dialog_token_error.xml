@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/pyw_img_dialogcontent_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/pyw_dp_75" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_title_height" >
+
+        <TextView
+            android:id="@+id/pyw_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/pyw_common_title_height"
+            android:background="@drawable/pyw_img_dialogtitle_bg"
+            android:gravity="center"
+            android:text="温馨提示"
+            android:textColor="@color/pyw_common_black_ligther"
+            android:textSize="@dimen/pyw_common_large" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/pyw_view_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="@color/pyw_common_item_divider" />
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/pyw_dp_51" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pyw_img_hadbind_icon" />
+
+            <TextView
+                android:id="@+id/pyw_iv_tips_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pyw_dp_36"
+                android:gravity="center"
+                android:text="账号异常\n请重新登录"
+                android:textColor="@color/pyw_common_gray_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pyw_btn_bind"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_btn_height"
+        android:layout_marginLeft="@dimen/pyw_dp_51"
+        android:layout_marginRight="@dimen/pyw_dp_51"
+        android:layout_marginTop="@dimen/pyw_dp_51"
+        android:background="@drawable/pyw_selector_btn_blue_bg"
+        android:text="确定"
+        android:textColor="@color/pyw_common_white"
+        android:textSize="@dimen/pyw_common_large" />
+
+</LinearLayout>

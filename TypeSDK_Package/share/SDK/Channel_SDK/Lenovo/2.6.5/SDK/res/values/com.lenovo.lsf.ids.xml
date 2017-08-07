@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="com_lenovo_toolbar_id_forum"></item>
+    <item type="id" name="com_lenovo_toolbar_id_account"></item>
+    <item type="id" name="com_lenovo_toolbar_id_strategy"></item>
+    <item type="id" name="com_lenovo_toolbar_id_close"></item>
+    <item type="id" name="com_lenovo_toolbar_id_gift"></item>
+    <item type="id" name="com_lenovo_toolbar_id_vip"></item>
+    <item type="id" name="com_lenovo_toolbar_id_mine"></item>
+    
+</resources>

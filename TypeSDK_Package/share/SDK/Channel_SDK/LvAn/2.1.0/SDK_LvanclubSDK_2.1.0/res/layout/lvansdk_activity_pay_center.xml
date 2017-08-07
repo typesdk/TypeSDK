@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootview_rlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".LvanPayCenterActivity" >
+
+    <!-- 标题title -->
+
+    <RelativeLayout
+        android:id="@+id/title_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_margin_48"
+        android:background="#00c0ed" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/normal_margin_16"
+            android:src="@drawable/lvansdk_close" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:text="@string/txt_lvanpay"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <com.lvanclub.opensdk.views.LvanTextView
+        android:id="@+id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_margin_32"
+        android:layout_below="@id/title_rlayout"
+        android:layout_marginLeft="@dimen/normal_margin_16"
+        android:layout_marginRight="@dimen/normal_margin_16"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#ff2f30"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/line_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/tv_notice"
+        android:background="#999" />
+
+    <!-- 主界面展示区域 -->
+
+    <WebView
+        android:id="@+id/payment_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/bodyrel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line_horizontal"
+        android:cacheColorHint="@android:color/transparent"
+        android:focusableInTouchMode="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" >
+
+            <ImageView
+                android:id="@+id/iv_pay_banner"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="@dimen/normal_margin_8"
+                android:layout_marginLeft="@dimen/normal_margin_16"
+                android:layout_marginRight="@dimen/normal_margin_16"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:id="@+id/creditcard_paynum_rlayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_margin_48"
+                android:layout_below="@id/iv_pay_banner"
+                android:layout_marginLeft="@dimen/normal_margin_16"
+                android:layout_marginRight="@dimen/normal_margin_16"
+                android:layout_marginTop="@dimen/normal_margin_16"
+                android:background="@drawable/lvansdk_button_oper_normal" >
+
+                <TextView
+                    android:id="@+id/tv_oa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="@string/txt_orderamount"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/input_paynum_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/tv_oa"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#ff6600"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textyuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/input_paynum_edittext"
+                    android:text="@string/txt_payunit"
+                    android:textColor="#ff6600"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/order_linar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/creditcard_paynum_rlayout"
+                android:layout_marginLeft="@dimen/normal_margin_16"
+                android:layout_marginRight="@dimen/normal_margin_16"
+                android:layout_marginTop="@dimen/normal_margin_16"
+                android:background="@drawable/lvansdk_button_oper_normal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin_8"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/txt_user"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/pay_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:text="@string/value_user"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin_8"
+                    android:layout_marginTop="@dimen/normal_margin_8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/txt_productname"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/exchangetextlabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/order_linar1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_ticket"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin_8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/normal_margin_16"
+                    android:paddingRight="@dimen/normal_margin_16"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/cb_ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/lvansdk_check_button_style"
+                        android:checked="false"
+                        android:paddingLeft="@dimen/normal_margin_8"
+                        android:text="兑换券"
+                        android:textColor="#999"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_code"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_margin_8"
+                        android:background="@drawable/lvansdk_et_bg"
+                        android:inputType="text"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="@dimen/normal_margin_4"
+                        android:paddingRight="@dimen/normal_margin_4"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/bt_ticket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_margin_8"
+                        android:background="@drawable/lvansdk_bt_bg"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/normal_margin_4"
+                        android:paddingLeft="@dimen/normal_margin_8"
+                        android:paddingRight="@dimen/normal_margin_8"
+                        android:paddingTop="@dimen/normal_margin_4"
+                        android:text="确定"
+                        android:textColor="#666"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_integral"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin_8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/normal_margin_16"
+                    android:paddingRight="@dimen/normal_margin_16"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/cb_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/lvansdk_check_button_style"
+                        android:checked="false"
+                        android:paddingLeft="@dimen/normal_margin_8"
+                        android:text="积分"
+                        android:textColor="#999"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_total_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_use_integral"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_margin_8"
+                        android:background="@drawable/lvansdk_et_bg"
+                        android:inputType="number"
+                        android:maxLength="7"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="@dimen/normal_margin_4"
+                        android:paddingRight="@dimen/normal_margin_4"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_coins"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal_margin_8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/normal_margin_16"
+                    android:paddingRight="@dimen/normal_margin_16"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/cb_coins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/lvansdk_check_button_style"
+                        android:checked="false"
+                        android:paddingLeft="@dimen/normal_margin_8"
+                        android:text="绿岸币"
+                        android:textColor="#999"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_total_coins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_use_coins"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_margin_8"
+                        android:background="@drawable/lvansdk_et_bg"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="@dimen/normal_margin_4"
+                        android:paddingRight="@dimen/normal_margin_4"
+                        android:singleLine="true"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_counteract_ticket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_margin_16"
+                    android:layout_marginTop="@dimen/normal_margin_8"
+                    android:textColor="#999"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_counteract_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_margin_16"
+                    android:layout_marginTop="@dimen/normal_margin_8"
+                    android:textColor="#999"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_counteract_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_margin_16"
+                    android:layout_marginTop="@dimen/normal_margin_8"
+                    android:textColor="#999"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_margin_16"
+                    android:layout_marginTop="@dimen/normal_margin_8"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <com.lvanclub.opensdk.views.LvanGridView
+                    android:id="@+id/grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/normal_margin_16"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:gravity="center"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:paddingBottom="@dimen/normal_margin_32"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

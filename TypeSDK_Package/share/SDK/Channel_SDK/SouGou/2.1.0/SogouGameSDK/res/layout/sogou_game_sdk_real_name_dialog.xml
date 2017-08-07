@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sogou_game_sdk_base_dialog_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/sogou_game_sdk_fragment_nav"
+        layout="@layout/sogou_game_sdk_fragment_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="真实姓名"
+                android:textColor="@color/sogou_game_sdk_color_888888"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sogou_game_sdk_real_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sogou_game_sdk_input_background"
+                android:hint="请输入真实姓名"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/sogou_game_sdk_document_number_et"
+                android:paddingLeft="7dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="证件类型"
+                android:textColor="@color/sogou_game_sdk_color_888888"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:focusable="false" >
+
+                <Spinner
+                    android:id="@+id/sogou_game_sdk_document_type_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/sogou_game_sdk_input_background"
+                    android:entries="@array/sogou_game_sdk_real_name_array" />
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="11dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sogou_game_sdk_drop_list"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="证件号码"
+                android:textColor="@color/sogou_game_sdk_color_888888"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sogou_game_sdk_document_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sogou_game_sdk_input_background"
+                android:hint="请输入证件号码"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/sogou_game_sdk_phone_number_et"
+                android:paddingLeft="7dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="手机号码"
+                android:textColor="@color/sogou_game_sdk_color_888888"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/sogou_game_sdk_phone_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sogou_game_sdk_input_background"
+                android:hint="请输入手机号码"
+                android:inputType="number"
+                android:paddingLeft="7dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_real_name_error_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/sogou_game_sdk_error_icon"
+                android:text="请输入正确的证件号码"
+                android:textColor="@color/sogou_game_sdk_color_red"
+                android:visibility="invisible"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/sogou_game_sdk_real_name_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sogou_game_sdk_bt_red"
+                android:text="提交"
+                android:layout_marginBottom="35dp"
+                android:textColor="@color/sogou_game_sdk_white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

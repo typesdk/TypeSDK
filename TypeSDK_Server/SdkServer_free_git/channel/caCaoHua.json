@@ -1,0 +1,52 @@
+{
+  "version":"2.3.1.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "PUserID" : ""
+    ,"Token" : ""
+    }
+    ,"out_url" : "http://api.caohua.com/Api/TokenCheck.ashx"
+    ,"out_params" :
+    {
+      "PUserID" : ""
+    ,"Token" : ""
+    ,"AppID" : ""
+    ,"Times" : ""
+    ,"Sign" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "OrderNo" : ""
+      ,"OutPayNo" : ""
+      ,"UserID" : ""
+      ,"ServerNo" : ""
+      ,"PayType" : ""
+      ,"Money" : ""
+      ,"PMoney" : ""
+      ,"PayTime" : ""
+      ,"Sign" : ""
+      }
+    ,"out_url" :"http://api.caohua.com/Api/TokenCheck.ashx"
+    ,"out_params" :
+      {
+        "OrderNo" : ""
+      ,"OutPayNo" : ""
+      ,"UserID" : ""
+      ,"ServerNo" : ""
+      ,"PayType" : ""
+      ,"Money" : ""
+      ,"PMoney" : ""
+      ,"PayTime" : ""
+      ,"Sign" : ""
+      }
+    }
+  ]
+}

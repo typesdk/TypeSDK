@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/pyw_dp_36"
+    android:paddingRight="@dimen/pyw_dp_36"
+    android:paddingTop="@dimen/pyw_dp_120" >
+
+    <TextView
+        android:id="@+id/pyw_tv_send_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pyw_common_gray_darker"
+        android:textSize="@dimen/pyw_common_medium" />
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pyw_dp_72"
+        android:background="@drawable/pyw_selector_edittext_bg" >
+
+        <EditText
+            android:id="@+id/pyw_et_register_code"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pyw_common_editext_height"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="@string/pyw_regex_code"
+            android:hint="请输入验证码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/pyw_dp_21"
+            android:singleLine="true"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textColorHint="@color/pyw_common_hint_color"
+            android:textSize="@dimen/pyw_common_medium" >
+        </EditText>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/pyw_common_hint_color" />
+
+        <TextView
+            android:id="@+id/pyw_tv_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pyw_common_editext_height"
+            android:gravity="center"
+            android:minWidth="100dp"
+            android:text="@string/pyw_accountRetrieve_getCode"
+            android:textColor="@color/pyw_common_hint_color_dark"
+            android:textSize="@dimen/pyw_common_medium" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pyw_btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_btn_height"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/pyw_selector_btn_blue_bg"
+        android:text="下一步"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/pyw_common_large" />
+
+    <TextView
+        android:id="@+id/pyw_tv_other_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/pyw_common_gray_darker"
+        android:textSize="@dimen/pyw_common_medium" />
+
+</LinearLayout>

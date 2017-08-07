@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/m4399RecPageStyle"
+    android:layout_width="@dimen/m4399_rec_page_width"
+    android:layout_height="@dimen/m4399_rec_page_height" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_title_height"
+        layout="@layout/m4399_rec_sec_confirm_title" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/m4399_rec_sec_order_role_area" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_separator_height"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        layout="@layout/m4399_rec_sec_mvcenter_separator" />
+
+    <include
+        style="@style/m4399RecGridviewContainerStyle"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        layout="@layout/m4399_rec_sec_rmd_gridview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/m4399_rec_single_btn_marginBottom"
+        android:layout_marginLeft="@dimen/m4399_rec_paddingLeft"
+        android:layout_marginRight="@dimen/m4399_rec_paddingLeft"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical" >
+
+        <cn.m4399.recharge.ui.widget.InquiryBar
+            android:id="@+id/inquiry_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|right" />
+
+        <!--<include-->
+            <!--android:id="@+id/youbi_vector"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="@dimen/m4399_rec_gridview_vspacing"-->
+            <!--android:layout_marginTop="4dp"-->
+            <!--layout="@layout/m4399_rec_sec_mannual_sum_area" />-->
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/m4399_rec_sum_btns_eara_height"
+            layout="@layout/m4399_rec_sec_single_btn_area" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_foot_height"
+        layout="@layout/m4399_rec_sec_standard_foot" />
+
+</LinearLayout>

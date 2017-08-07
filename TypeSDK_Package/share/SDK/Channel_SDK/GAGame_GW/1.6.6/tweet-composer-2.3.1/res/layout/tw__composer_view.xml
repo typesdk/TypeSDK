@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 Twitter, Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tw__composer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/tw__composer_close"
+            style="@style/tw__ComposerClose"
+            android:layout_centerVertical="true"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/tw__twitter_logo"
+            android:layout_height="@dimen/tw__composer_logo_height"
+            android:layout_width="@dimen/tw__composer_logo_width"
+            android:src="?attr/tw__twitter_logo"
+            android:layout_centerInParent="true"
+            tools:ignore="ContentDescription"/>
+
+        <ImageView
+            android:id="@+id/tw__author_avatar"
+            style="@style/tw__ComposerAvatar"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            tools:background="@color/tw__composer_light_gray"
+            tools:ignore="ContentDescription"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/tw__composer_profile_divider"
+        android:visibility="invisible"
+        style="@style/tw__ComposerDivider"/>
+
+    <com.twitter.sdk.android.tweetcomposer.internal.util.ObservableScrollView
+        android:id="@+id/tw__composer_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tw__edit_tweet"
+                style="@style/tw__EditTweet"/>
+
+            <FrameLayout
+                android:id="@+id/tw__card_view"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/tw__card_spacing_large"/>
+        </LinearLayout>
+    </com.twitter.sdk.android.tweetcomposer.internal.util.ObservableScrollView>
+
+    <View
+        android:id="@+id/tw__composer_toolbar_divider"
+        style="@style/tw__ComposerDivider"/>
+
+    <LinearLayout
+        android:id="@+id/tw__composer_toolbar"
+        style="@style/tw__ComposerToolbar">
+
+        <TextView
+            android:id="@+id/tw__char_count"
+            style="@style/tw__ComposerCharCount"/>
+
+        <Button
+            android:id="@+id/tw__post_tweet"
+            style="@style/tw__ComposerTweetButton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

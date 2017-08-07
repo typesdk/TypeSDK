@@ -1,0 +1,44 @@
+{
+  "version":"5.5.3.20160325",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+    "token" : ""
+    }
+    ,"out_url" :"http://sdk.game.kugou.com/index.php?r=ValidateIsLogined/CheckToken"
+    ,"out_params" :
+    {
+      "token" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "orderid": ""
+      ,"outorderid": ""
+      ,"amount": ""
+      ,"username" : ""
+      ,"status": ""
+      ,"time": ""
+      ,"sign": ""
+      }
+    ,"out_url" :"http://sdk.game.kugou.com/index.php?r=ValidateIsLogined/CheckToken"
+    ,"out_params" :
+      {
+        "orderid": ""
+      ,"outorderid": ""
+      ,"amount": ""
+      ,"username" : ""
+      ,"status": ""
+      ,"time": ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

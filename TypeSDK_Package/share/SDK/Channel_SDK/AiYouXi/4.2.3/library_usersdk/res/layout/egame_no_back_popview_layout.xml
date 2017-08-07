@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/egame_usersdk_white"
+    android:paddingBottom="16dp" >
+
+    <TextView
+        android:id="@+id/egame_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginTop="16dp"
+        android:gravity="left|center_vertical"
+        android:text="asdfasdf"
+        android:textColor="@color/egame_usersdk_green"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/bt_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/egame_btn_dialog_close_selector" />
+
+    <TextView
+        android:id="@+id/egame_tv_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/egame_tv_title"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance"
+        android:layout_marginTop="12dp"
+        android:text="@string/bind_phone_no_card_tip"
+        android:textColor="@color/egame_usersdk_regist_text"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/egame_tv_tip"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

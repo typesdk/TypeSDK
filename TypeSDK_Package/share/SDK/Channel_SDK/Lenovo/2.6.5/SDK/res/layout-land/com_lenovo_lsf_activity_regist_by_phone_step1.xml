@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/com_lenovo_lsf_view_width"
+    android:layout_height="@dimen/com_lenovo_lsf_view_no_title_height"
+    android:background="@drawable/com_lenovo_lsf_game_bg1"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/com_lenovo_lsf_top_content_height"
+        android:layout_marginLeft="@dimen/com_lenovo_lsf_content_padding_left_right"
+        android:layout_marginTop="@dimen/com_lenovo_lsf_top_content_margin_height"
+        android:text="@string/com_lenovo_lsf_tip_input_phone"
+        android:textColor="#191919"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_register_by_phone_item"
+        style="@style/com_lenovo_lsf_edit"
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/com_lenovo_lsf_phone_icon" />
+
+        <EditText
+            android:id="@+id/phone_etext"
+            style="@style/login_autocomplete_drop"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/com_lenovo_lsf_string_please_input_phone_number"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:textColorHint="#d1d1d1"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="16dp"
+        android:layout_marginLeft="@dimen/com_lenovo_lsf_content_padding_left_right"
+        android:layout_marginRight="@dimen/com_lenovo_lsf_content_padding_left_right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/com_lenovo_lsf_text.error" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regist_btn"
+        android:layout_marginTop="42dp"
+        style="@style/com_lenovo_lsf_button.commit"
+        android:layout_marginLeft="@dimen/com_lenovo_lsf_content_padding_left_right"
+        android:layout_marginRight="@dimen/com_lenovo_lsf_content_padding_left_right"
+        android:text="@string/com_lenovo_lsf_login_string_registration"
+        android:textColor="@color/com_lenovo_lsf_white"
+        android:textSize="@dimen/com_lenovo_lsf_btn_text_font_size" />
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coupon_no_use_la"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:orientation="horizontal"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/m4399_ope_coupon_no_use_bg"
+        android:gravity="center"
+        android:text="@string/m4399_ope_coupon_dont_use_now"
+        android:textColor="#89000000"
+        android:textSize="14sp" />
+
+</LinearLayout>

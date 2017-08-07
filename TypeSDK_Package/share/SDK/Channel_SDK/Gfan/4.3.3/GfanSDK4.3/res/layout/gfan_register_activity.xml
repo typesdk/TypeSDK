@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/gfan_no_padding_bg"
+    android:background="@drawable/gfan_register_layout_bg"
+    tools:context="com.mappn.sdk.uc.RegisterActivity"
+  >
+
+
+    <RadioGroup
+        android:id="@+id/content_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/regist_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:padding="10dip"
+            android:textColor="@drawable/gfan_radio_bg"
+            android:text="手机注册"
+            android:textSize="20sp"
+            android:gravity="center"
+           />
+
+        <RadioButton
+            android:id="@+id/regist_common"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:padding="10dip"
+            android:textColor="@drawable/gfan_radio_bg"
+            android:text="普通注册"
+            android:textSize="20sp"
+            />
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gfan_blue"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
+
+
+
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_register_activity.xml -->

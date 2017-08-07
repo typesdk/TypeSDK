@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nanlus="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/YK_GameSDK_664PX"
+    android:layout_height="wrap_content"
+    android:background="@color/yk_ykbgColor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/yk_title_include" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/yk_title_line" >
+    </LinearLayout>
+    
+    <TextView android:id="@+id/present_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/YK_GameSDK_50PX"
+        android:text="@string/yk_more"
+        android:textColor="@color/yk_color_consume_benefit_present_name"
+        android:textSize="@dimen/YK_GameSDK_30PX"
+        android:singleLine="true"
+        android:maxLength="16"
+        android:layout_marginTop="@dimen/YK_GameSDK_20PX"/>
+
+    <com.youku.gamesdk.widget.EditTextWithErr
+        android:id="@+id/et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/YK_GameSDK_40PX"
+        android:layout_marginRight="@dimen/YK_GameSDK_40PX"
+        android:layout_marginTop="@dimen/YK_GameSDK_14PX"
+        android:contentDescription="@string/yk_text_hint_zsxm"
+        android:tag="all#30"
+        />
+
+    <com.youku.gamesdk.widget.EditTextWithErr
+        android:id="@+id/et_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/YK_GameSDK_40PX"
+        android:layout_marginRight="@dimen/YK_GameSDK_40PX"
+        android:layout_marginTop="@dimen/YK_GameSDK_36PX"
+        android:contentDescription="@string/yk_text_hint_lxdh"
+        android:tag="user_phone#11" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/YK_GameSDK_300PX"
+        android:layout_height="@dimen/YK_GameSDK_88PX"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/YK_GameSDK_32PX"
+        android:background="@drawable/yk_btn_blue_selector"
+        android:text="@string/yk_text_consume_benefit_get_button"
+        android:textColor="@color/yk_white"
+        android:textSize="@dimen/YK_GameSDK_32PX" />
+
+</LinearLayout>

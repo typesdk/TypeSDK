@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/gfan_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_nomalquestion_title"
+        style="@style/gfan_title_style"
+        android:text="消费记录" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/gfan_uc_view_space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="5"
+        android:background="@drawable/gfan_nomal_questions_bg"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <include layout="@layout/gfan_records_of_consumption_header" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_records_consumption"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_records_of_consumption_activity.xml -->

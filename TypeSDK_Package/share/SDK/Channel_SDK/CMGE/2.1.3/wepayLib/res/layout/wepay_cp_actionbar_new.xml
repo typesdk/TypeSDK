@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/wepay_title_high"
+    android:background="@drawable/wepay_kuang_title_bar_bg"
+    android:clickable="false"
+    android:focusable="false"
+    android:focusableInTouchMode="false" >
+
+    <ImageView
+        android:id="@+id/img_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/wepay_space_xlarge"
+        android:paddingRight="@dimen/wepay_space_xlarge"
+        android:scaleType="centerInside"
+        android:src="@drawable/wepay_btn_close" />
+
+    <TextView
+        android:id="@+id/txt_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txt_bar_operate"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/wepay_txt_title"
+        android:textSize="@dimen/wepay_txt_xlarge" />
+
+    <TextView
+        android:id="@+id/txt_bar_operate"
+        android:layout_width="@dimen/wepay_operate_button_width"
+        android:layout_height="@dimen/wepay_operate_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/wepay_first_btn_bg"
+        android:gravity="center"
+        android:text="@string/wepay_title_next"
+        android:textColor="@color/wepay_first_btn_txt"
+        android:textSize="@dimen/wepay_txt_large"
+        android:visibility="invisible" />
+
+</RelativeLayout>

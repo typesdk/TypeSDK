@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/float_window_white" >
+
+    <include
+        android:id="@+id/float_window_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/float_window_activity_title" />
+
+    <include
+        android:id="@+id/float_window_balance_include"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/float_window_title"
+        layout="@layout/float_window_activity_balance"
+        android:background="#ededed"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/float_window_center_hint_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/float_window_balance_include"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/float_window_rechargeaccount_hint1"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/float_window_platform_center_hint_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/float_window_yellow"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/float_window_rechargeaccount_hint2"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/float_window_bottom"
+        android:layout_below="@+id/float_window_center_hint_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/float_window_center"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/float_window_sub_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/float_window_rechargeaccount"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/float_window_rechargecount_1000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/float_window_btn_platformcoinaccount_btn_selector"
+                        android:text="@string/float_window_digital_100"
+                        android:textColor="@color/float_window_black"
+                        android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/float_window_rechargecount_3000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/float_window_btn_platformcoinaccount_btn_selector"
+                        android:text="@string/float_window_digital_300"
+                        android:textColor="@color/float_window_black"
+                        android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/float_window_rechargecount_5000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/float_window_btn_platformcoinaccount_btn_selector"
+                        android:text="@string/float_window_digital_500"
+                        android:textColor="@color/float_window_black"
+                        android:textSize="19sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/float_window_rechargecount_else"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/float_window_btn_platformcoinaccount_btn_selector"
+                            android:gravity="center"
+                            android:hint="@string/float_window_digital_other"
+                            android:numeric="integer"
+                            android:singleLine="true"
+                            android:textColor="@color/float_window_black"
+                            android:textSize="19sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/float_window_rechargemoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/float_window_yellow"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/float_window_recharge_rmb"
+                        android:textColor="@color/float_window_yellow"
+                        android:textSize="23sp"
+                        android:textStyle="bold|italic" />
+
+                    <LinearLayout
+                        android:id="@+id/float_window_recharge_ll"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/float_window_recharge_brackets_left"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/float_window_rechargemoney_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/float_window_recharge_brackets_right"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/float_window_recharge_gain"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/float_window_platform_textview_after_recharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/float_window_recharge_lebi"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/float_window_sub_center"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/float_window_sub_top"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/float_window_recharge_way"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/float_window_rechargeway_zhifubao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/float_window_btn_platformcoinaccount_btn_selector"
+                        android:text="@string/float_window_recharge_way_zfb"
+                        android:textColor="@color/float_window_black"
+                        android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/float_window_rechargeway_xinyongka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/float_window_btn_platformcoinaccount_btn_selector"
+                        android:text="@string/float_window_recharge_way_xyk"
+                        android:textColor="@color/float_window_black"
+                        android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/float_window_rechargeway_chuxuka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/float_window_btn_platformcoinaccount_btn_selector"
+                        android:text="@string/float_window_recharge_way_cxk"
+                        android:textColor="@color/float_window_black"
+                        android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/float_window_rechargeway_caifutong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/float_window_btn_platformcoinaccount_btn_selector"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text="@string/float_window_recharge_way_cft"
+                        android:textColor="@color/float_window_black"
+                        android:textSize="19sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/float_window_recharge_now"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/float_window_btn_bond_share_selector"
+                android:text="@string/float_window_recharge_rightnow"
+                android:textColor="@color/float_window_white"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/float_window_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ededed"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/ledi_kindly_reminder"
+            android:textColor="@color/float_window_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/float_money_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/float_window_black"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

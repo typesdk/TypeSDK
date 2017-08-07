@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="lib_star_game_sdk_version">1.1.0</string>
+    <string name="lib_star_game_sdk_version_code">2</string>
+    <string name="init_toast">请正确设置渠道ID！</string>
+
+    <!-- lib_activity_account -->
+    <string name="lib_user_nickname">用户昵称</string>
+    <string name="lib_my_account">我的账号</string>
+    <string name="lib_my_game">我的游戏</string>
+    <string name="lib_my_business">我的订单</string>
+    <string name="lib_check_all_pay_order">查看全部</string>
+    <string name="lib_pay_order_id">订单编号：</string>
+    <string name="lib_pay_order_time">下单时间：</string>
+    <string name="lib_pay_order_amount">订单金额：</string>
+    <string name="lib_pay_order_finished">已完成</string>
+    <string name="lib_pay_order_unfinished">未完成</string>
+    <string name="lib_my_forum">我的论坛</string>
+    <string name="lib_my_promotion">推广码</string>
+    <string name="lib_set_account">设置</string>
+    <string name="lib_exit">退出</string>
+    <string name="lib_business_recharge">充值</string>
+    <string name="lib_business_detail">交易记录</string>
+    <string name="lib_business_status">老虎币余额</string>
+    <string name="lib_level_text1">等级</string>
+    <string name="lib_level_text2">级</string>
+    <string name="lib_level_detail">查看</string>
+    <string name="lib_forum_grade">等级：%s</string>
+    <string name="lib_forum_score">积分：%s</string>
+    <string name="lib_forum_info">详情</string>
+    <string name="lib_forum_collection">收藏</string>
+    <string name="lib_forum_subject">主题</string>
+    <string name="lib_promotion_setting">填写推广码</string>
+    <string name="lib_account_perfect_ways">使用以下方式完善账号</string>
+    <string name="lib_perfect_by_phone_email">用手机或邮箱作为老虎账号</string>
+    <string name="lib_bind_third_platform">绑定第三方账号</string>
+    <string name="lib_perfect_account_later">完善后，启动多设备登录、支付、社区发言等功能。</string>
+
+    <!-- ActivityBind -->
+    <string name="lib_bind_success">绑定成功！</string>
+    <string name="lib_bind_account">当前账号</string>
+    <string name="lib_bind_phone">绑定手机</string>
+    <string name="lib_bind_email">绑定邮箱</string>
+    <string name="lib_bind_phone_tips">当前账号已绑定了手机，您可以使用此手机作为StarGame账号登录：</string>
+    <string name="lib_bind_email_tips">当前账号已绑定了邮箱，您可以使用此邮箱作为StarGame账号登录：</string>
+    <string name="lib_change_phone">更换绑定手机</string>
+    <string name="lib_change_email">更换绑定邮箱</string>
+    <string name="lib_input_phone">输入您的手机号</string>
+    <string name="lib_input_email">输入您的邮箱号</string>
+    <string name="lib_confirm">完 成</string>
+    <string name="lib_confirm_next">下一步</string>
+    <string name="lib_logout">退出当前账号</string>
+    <string name="lib_real_name_information_confirm">提交认证</string>
+    <string name="lib_email_tips">一封验证邮件已经发往您的邮箱</string>
+    <string name="lib_input_authcode">请输入您收到的验证码</string>
+    <string name="lib_send_again">重新发送</string>
+    <string name="lib_send_authcode">发送验证码</string>
+    <string name="lib_send_authcode_tips">验证码已发至：</string>
+    <string name="lib_send_authcode_tips1">请根据短信内容填写以下验证码</string>
+    <string name="lib_send_authcode_tips2">请根据邮件内容填写以下验证码</string>
+
+    <!-- RegisterAndResetFragment -->
+    <string name="lib_temp_update_tip">为了避免您的账号丢失，请完善您的账号信息，完善后即可用此邮箱登录。</string>
+
+    <!-- lib_fragment_local_login -->
+    <string name="lib_account_hint">邮箱/手机</string>
+    <string name="lib_password">密码</string>
+    <string name="lib_register">注册新账号</string>
+    <string name="lib_forget_password">找回密码</string>
+    <string name="lib_login">登 录</string>
+
+    <!-- lib_activity_modifynick -->
+    <string name="lib_new_nickname">输入您的新昵称</string>
+
+    <!-- lib_activity_modifypwd -->
+    <string name="lib_please_input_correct_password">请您输入正确的密码！</string>
+    <string name="lib_input_old_password">输入旧密码</string>
+    <string name="lib_input_new_password">输入新密码</string>
+    <string name="lib_input_new_password_again">再次输入新密码</string>
+
+    <!-- lib_activity_perfectaccounttips -->
+    <string name="lib_temp_account_tips">您正在使用临时账号，</string>
+    <string name="lib_complete_temp_account">请完善账号</string>
+    <string name="lib_close">关闭</string>
+
+    <!-- lib_activity_register -->
+    <string name="lib_input_email_or_phone">输入您的邮箱</string>
+    <string name="lib_input_password">输入您的密码</string>
+
+    <!-- lib_activity_selectaccount -->
+    <string name="lib_login_with_local_account_tips">使用本地账号登录：</string>
+    <string name="lib_login_with_other_ways">或者登录其他账号：</string>
+    <string name="lib_edit">编辑</string>
+
+    <!-- lib_activity_sendemail_success -->
+    <string name="lib_send_email_success_tips">一封确认信已经发送到您的邮箱，请登录邮箱按照提示操作以修改密码。</string>
+
+    <!-- lib_activity_setaccount -->
+    <string name="lib_use_phone_or_email">使用邮箱/手机号作为正式账号</string>
+    <string name="lib_exit_current_account">退出当前账号</string>
+    <string name="lib_other_set_account">使用第三方账号</string>
+
+    <!-- lib_activity_setavatar -->
+    <string name="lib_take_photo">拍照</string>
+    <string name="lib_select_from_album">从手机相册选择</string>
+    <string name="lib_cancel">取消</string>
+
+    <!-- lib_activity_setting -->
+    <string name="lib_modify_phone">手机</string>
+    <string name="lib_modify_email">邮箱</string>
+    <string name="lib_avatar">头像</string>
+    <string name="lib_modify_nickname">昵称</string>
+    <string name="lib_nickname">昵称</string>
+    <string name="lib_email">绑定邮箱</string>
+    <string name="lib_login_device_account">已在3台设备上登录</string>
+    <string name="lib_real_name_authenticate_direction_textview">实名认证后，您的账号可以有效防止他人恶意修改账号密码或恶意绑定手机邮箱</string>
+    <string name="lib_real_name">实名认证</string>
+    <string name="lib_real_name_input">请输入姓名</string>
+    <string name="lib_ID_number_input">请输入身份证号码</string>
+    <string name="lib_real_name_ID_authenticate_textview">修改密码、绑定手机&amp;邮箱时进行身份验证</string>
+    <string name="lib_not_bind">未绑定</string>
+    <string name="lib_has_bind">已绑定</string>
+    <string name="lib_not_identification">未认证</string>
+    <string name="lib_has_identification">已认证</string>
+    <string name="lib_remove_bind">解除绑定</string>
+    <string name="lib_mobile_phone">绑定手机</string>
+    <string name="lib_modify_password">修改密码</string>
+    <string name="lib_delete">删除</string>
+    <string name="lib_start_game_without_login">直接开始游戏</string>
+    <string name="lib_start_game_without_login_tips">将自动注册临时账号,此账号可升级为正式账号.</string>
+    <string name="lib_stargame_phone_email">手机/邮箱</string>
+    <string name="lib_pwrd">完美世界</string>
+    <string name="lib_sina">新浪微博</string>
+    <string name="lib_tencent">QQ</string>
+    <string name="lib_alipay">支付宝</string>
+    <string name="lib_welcome_back">欢迎回来，</string>
+    <string name="lib_refresh_user_info">刷新用户信息中...</string>
+
+    <!-- lib_alert_dialog -->
+    <string name="lib_alert_dialog_msg">您确定吗？</string>
+    <string name="lib_alert_dialog_input_id_number">身份证信息验证</string>
+    <string name="lib_alert_dialog_negative_text">取 消</string>
+    <string name="lib_alert_dialog_positive_text">确 定</string>
+
+    <!-- lib_fragment_gamedata -->
+    <string name="lib_gamedata_back">返回</string>
+
+    <!-- lib_fragment_start_account -->
+    <string name="lib_quick_start">快速开始</string>
+    <string name="lib_sg_account_start">登录已有StarGame账号</string>
+    <string name="lib_quick_start_description">首次登录，将自动注册老虎试玩账号</string>
+    <string name="lib_other_login_method">登录已有账号</string>
+
+    <!-- lib_fragment_select_account -->
+    <string name="lib_name_hint">选择登录账号</string>
+    <string name="lib_start">登 录</string>
+    <string name="lib_start_other_login_method">登录其它账号</string>
+
+    <!-- lib_webview_control_layout -->
+    <string name="lib_remember_me">记住我</string>
+
+    <!-- lib_fragment_set_user_info -->
+    <string name="lib_start_platform">进入游戏平台</string>
+
+    <!-- lib_dialog_photo_select_alert -->
+    <string name="lib_photo_select_alert_dialog_1">您最多只能上传7张图片！</string>
+    <string name="lib_photo_select_alert_dialog_2">我知道了</string>
+    <string name="lib_init_app_error">初始化失败，请重新启动！</string>
+    <string name="lib_no_user_login">没有用户登录，请重新登录！</string>
+    <string name="lib_not_get_bind_info">暂未获取到用户绑定信息，请稍候再试...！</string>
+
+    <!-- PhotoSelect -->
+    <string name="PhotoSelect_1">相机拍摄</string>
+    <string name="PhotoSelect_2">手机相册</string>
+    <string name="PhotoSelect_3">取消</string>
+    <string name="PhotoSelect_4">图片裁剪出错！</string>
+    <string name="PhotoSelect_5">获取图片路径失败！</string>
+    <string name="PhotoSelect_6">选择图片不存在，请选择其他图片！</string>
+    <string name="PhotoSelect_no_camera">没有相机功能！</string>
+    <string name="PhotoSelect_no_album">没有图库！</string>
+
+    <!-- FragmentBigBitmap -->
+    <string name="lib_acquire_bitmap_fail">获取图片失败！</string>
+
+    <!-- AccountAdapter -->
+    <string name="AccountAdapter_1">提示</string>
+    <string name="AccountAdapter_2">确认将</string>
+    <string name="AccountAdapter_3">从本地记录中删除？</string>
+    <string name="AccountAdapter_4">确 认</string>
+    <string name="AccountAdapter_5">取 消</string>
+
+    <!-- LocalLoginFragment -->
+    <string name="LocalLoginFragment_1">用户登录</string>
+    <string name="LocalLoginFragment_2">账号或密码不能为空！</string>
+    <string name="LocalLoginFragment_3">正在验证账号和密码...</string>
+
+    <!-- PasswordForgotResetPasswordFragment -->
+    <string name="PasswordForgotResetPasswordFragment_1">重置密码</string>
+    <string name="PasswordForgotResetPasswordFragment_2">密码不能为空！</string>
+    <string name="PasswordForgotResetPasswordFragment_3">密码过长或过短（6-20字符）</string>
+    <string name="PasswordForgotResetPasswordFragment_4">两次输入的密码不一致</string>
+    <string name="PasswordForgotResetPasswordFragment_5">正在修改密码...</string>
+
+    <!-- PasswordForgotVerificationFragment -->
+    <string name="PasswordForgotVerificationFragment_1">忘记密码</string>
+
+    <!-- RegisterVerificationFragment -->
+    <string name="RegisterVerificationFragment_1">注册账号</string>
+    <string name="RegisterVerificationFragment_2">使用邮箱升级账号</string>
+    <string name="RegisterVerificationFragment_3">使用手机升级账号</string>
+
+    <!-- SelectAccountFragment -->
+    <string name="SelectAccountFragment_1">请选择登录账号</string>
+    <string name="SelectAccountFragment_2">正在登录</string>
+    <string name="SelectAccountFragment_3">登录失败，请重试</string>
+
+    <!-- SendEmailOrPhoneFragment -->
+    <string name="SendEmailOrPhoneFragment_1">注册账号</string>
+    <string name="SendEmailOrPhoneFragment_2">忘记密码</string>
+    <string name="SendEmailOrPhoneFragment_3">使用邮箱完善账号</string>
+    <string name="SendEmailOrPhoneFragment_4">使用手机完善账号</string>
+    <string name="SendEmailOrPhoneFragment_5">输入您的邮箱地址</string>
+    <string name="SendEmailOrPhoneFragment_6">输入您的手机号</string>
+    <string name="SendEmailOrPhoneFragment_7">邮箱不能为空！</string>
+    <string name="SendEmailOrPhoneFragment_8">邮箱格式不正确！</string>
+    <string name="SendEmailOrPhoneFragment_9">正在验证账号...</string>
+    <string name="SendEmailOrPhoneFragment_10">正在发送，请稍候...</string>
+    <string name="SendEmailOrPhoneFragment_11">该邮箱尚未注册！</string>
+    <string name="SendEmailOrPhoneFragment_12">该手机号尚未注册！</string>
+    <string name="SendEmailOrPhoneFragment_13">密码不能为空！</string>
+    <string name="SendEmailOrPhoneFragment_14">请输入邮箱或手机！</string>
+    <string name="SendEmailOrPhoneFragment_forget_pwd_hint">请输入绑定的邮箱或手机号</string>
+    <string name="SendEmailOrPhone_time_interval">秒</string>
+    <string name="SendEmailOrPhone_again">重新发送</string>
+    <string name="SendEmailOrPhone_check_code_empty">您输入的验证码为空</string>
+    <string name="SendEmailOrPhone_check_code_loading">正在验证验证码...</string>
+    <string name="SendEmailOrPhone_check_code_fail">验证失败，请检查验证码！</string>
+
+    <!-- SetUserInfoFragment -->
+    <string name="SetUserInfoFragment_1">注册账号</string>
+    <string name="SetUserInfoFragment_2">使用邮箱升级账号</string>
+    <string name="SetUserInfoFragment_3">使用手机升级账号</string>
+    <string name="SetUserInfoFragment_4">您填写的</string>
+    <string name="SetUserInfoFragment_5">邮箱是：</string>
+    <string name="SetUserInfoFragment_6">手机号是：</string>
+    <string name="SetUserInfoFragment_7">，其将与账号绑定，请确认后设置昵称密码。</string>
+    <string name="SetUserInfoFragment_8">正在完善账号...</string>
+    <string name="SetUserInfoFragment_9">正在注册账号...</string>
+    <string name="SetUserInfoFragment_10">昵称或者密码不能为空！</string>
+    <string name="SetUserInfoFragment_11">昵称的长度必须为4-16个字符！</string>
+    <string name="SetUserInfoFragment_12">两次密码输入不正确！</string>
+    <string name="SetUserInfoFragment_13">密码长度为6-16位！</string>
+
+    <!-- StartAccountFragment -->
+    <string name="StartAccountFragment_1">试玩账号正在登录...</string>
+    <string name="StartAccountFragment_2">登录失败</string>
+
+    <!-- TemporaryAccountTipsFragment -->
+    <string name="TemporaryAccountTipsFragment_1">请完善账号</string>
+
+    <!-- PersonHomeFragment -->
+    <string name="PersonHomeFragment_1">个人中心</string>
+
+    <!-- ThemeListFragment -->
+    <string name="ThemeListFragment_1">搜索帖子</string>
+    <string name="ThemeListFragment_2">查看置顶</string>
+    <string name="ThemeListFragment_3">我的资料</string>
+    <string name="ThemeListFragment_4">刷新</string>
+    <string name="ThemeListFragment_5">查看全部</string>
+    <string name="ThemeListFragment_6">正在获取数据...</string>
+    <string name="ThemeListFragment_7">十分抱歉，获取信息失败！</string>
+
+    <!-- BindAuthFragment -->
+    <string name="BindAuthFragment_1">绑定邮箱</string>
+    <string name="BindAuthFragment_2">绑定手机</string>
+
+    <!-- BindEmailFragment -->
+    <string name="BindEmailFragment_1">邮箱不能为空！</string>
+    <string name="BindEmailFragment_2">邮箱格式不正确！</string>
+    <string name="BindEmailFragment_3">正在发送验证码...</string>
+
+    <!-- BindPhoneFragment -->
+    <string name="BindPhoneFragment_1">手机号不能为空！</string>
+    <string name="BindPhoneFragment_2">手机号格式不正确！</string>
+    <string name="BindPhoneFragment_3">正在发送验证码...</string>
+
+    <!-- CancelBindAuthFragment -->
+    <string name="CancelBindAuthFragment_1">更换邮箱</string>
+    <string name="CancelBindAuthFragment_2">更换手机</string>
+
+    <!-- ModifyNickFragment -->
+    <string name="ModifyNickFragment_1">修改昵称</string>
+
+    <!-- ModifyPasswordFragment -->
+    <string name="ModifyPasswordFragment_2">修改密码</string>
+    <string name="ModifyPasswordFragment_3">密码不能为空！</string>
+    <string name="ModifyPasswordFragment_4">密码过长或过短（6-20字符）</string>
+    <string name="ModifyPasswordFragment_5">两次输入的密码不一致</string>
+    <string name="ModifyPasswordFragment_6">正在验证密码...</string>
+    <string name="ModifyPasswordFragment_7">密码修改成功！</string>
+
+    <!-- FragmentSetting -->
+    <string name="SettingFragment_1">设置</string>
+    <string name="SettingFragment_modify_pwd">修改密码</string>
+    <string name="SettingFragment_set_pwd">设置密码</string>
+    <string name="SettingFragment_Login_Device_Manage">管理登录设备</string>
+
+    <!-- AccountAdapter -->
+    <string name="AccountAdapter_dialog_tips">提示</string>
+    <string name="AccountAdapter_dialog_alert1">确认将</string>
+    <string name="AccountAdapter_dialog_alert2">从本地记录中删除？</string>
+    <string name="AccountAdapter_dialog_confirm">确认</string>
+    <string name="AccountAdapter_dialog_cancel">取消</string>
+
+    <!-- AccountManager -->
+    <string name="AccountManager_check_nick_empty">昵称不能为空！</string>
+    <string name="AccountManager_check_nick_same">请修改昵称！</string>
+    <string name="AccountManager_check_nick_size_incorrect">昵称的长度必须为2-20个字符！</string>
+    <string name="AccountManager_update_nick_loading">正在修改昵称...</string>
+    <string name="AccountManager_update_nick_success">昵称修改成功！</string>
+    <string name="AccountManager_update_avatar_loading">正在上传头像...</string>
+    <string name="AccountManager_update_avatar_success">头像上传成功！</string>
+    <string name="AccountManager_update_avatar_fail">头像上传失败！</string>
+    <string name="AccountManager_update_avatar_fail_retry">头像上传失败，请稍后再试！</string>
+
+    <!-- NetworkUtil -->
+    <string name="NetworkUtil_1">请检查网络连接！</string>
+
+    <!-- FloatView -->
+    <string name="FloatView_Btn_Account">用户</string>
+    <string name="FloatView_Btn_Raiders">攻略</string>
+    <string name="FloatView_Btn_Quit">退出</string>
+
+    <!-- Toast -->
+    <string name="lib_toast_cannot_null">邮箱或手机号不能为空！</string>
+    <string name="lib_toast_nick_cannot_null">昵称不能为空！</string>
+    <string name="lib_toast_format_error">邮箱或手机号格式不正确！</string>
+    <string name="lib_toast_not_login">未登录！</string>
+    <string name="lib_ensure_to_quit">确定退出该界面？</string>
+
+
+</resources>

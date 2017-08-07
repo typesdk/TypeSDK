@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="295.5dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zy_pay_dialog_bg"
+    android:paddingBottom="20dp" >
+
+    <TextView
+        android:id="@+id/zy_pay_dialog_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="49.5dp"
+        android:background="@drawable/zy_pay_dialog_title_bg"
+        android:gravity="center"
+        android:textColor="#f47525"
+        android:textSize="21sp" />
+
+    <ImageView
+        android:id="@+id/zy_pay_dialog_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/zy_pay_dialog_close_margin_right"
+        android:layout_marginTop="@dimen/zy_pay_dialog_close_margin_top"
+        android:src="@drawable/zy_pay_cancel"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        />
+
+    <ImageView
+        android:id="@+id/zy_pay_dialog_title_bottom_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/zy_pay_dialog_title_bottom_margin_top"
+        android:background="@drawable/zy_pay_dialog_title_bottom" />
+
+    <TextView
+        android:id="@+id/zy_pay_dialog_content_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zy_pay_dialog_title_bottom_arrow"
+        android:layout_margin="21dp"
+        android:lineSpacingMultiplier="1.1"
+        android:textColor="#8f8f8f"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/zy_pay_dialog_content_button"
+        android:layout_width="252dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/zy_pay_dialog_content_text"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/zy_pay_account_dialog_selector"
+        android:textColor="#ffffff"
+        android:textSize="16.5sp" />
+
+</RelativeLayout>

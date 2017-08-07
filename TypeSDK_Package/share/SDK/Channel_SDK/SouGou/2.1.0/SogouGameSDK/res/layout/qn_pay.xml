@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dedede"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/qn_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dedede">
+
+        <ImageView
+            android:id="@+id/qn_btn_cancel_pay"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/qn_dismiss" />
+
+        <TextView
+            android:id="@+id/qn_pay_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="账户充值"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qn_box"
+        android:layout_marginTop="10dp"
+        android:textSize="10sp"
+        android:id="@+id/qn_pay_username"
+        android:text="账户名称"
+        android:textColor="#FFA500"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+       android:id="@+id/qn_pay_product"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="商品名称"
+       android:textSize="24sp"
+       android:layout_below="@id/qn_box"
+       android:layout_marginTop="20dp"
+       android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/qn_pay_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="应付金额"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/qn_diamond"
+        android:layout_below="@id/qn_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:id="@+id/qn_btn_pay"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="余额"
+        android:textSize="12sp"
+        android:layout_below="@id/qn_box"
+        android:layout_marginTop="175dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/qn_pay_diamond" />
+</RelativeLayout>

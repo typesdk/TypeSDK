@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.le.legamesdk.widget.LeItemViewSwitch xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/le_item_view_height"
+    android:background="@color/lepay_white" >
+
+    <TextView
+        android:id="@+id/le_item_view_switch_title"
+        style="@style/LeStyleBlack14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/le_item_view_left_right_offset"
+        android:layout_marginStart="@dimen/le_item_view_left_right_offset"
+        android:text="@string/le_sdk_none" />
+
+    <com.le.tools.widget.LeSwitchView
+        android:id="@+id/le_item_view_switch_view"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/le_item_view_left_right_offset"
+        android:layout_marginRight="@dimen/le_item_view_left_right_offset"
+        android:contentDescription="@string/le_item_view_arrow_content_description"
+        android:src="@drawable/le_item_view_arrow_icon" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/le_border_line_color" />
+
+    <View
+        android:id="@+id/le_item_view_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/le_border_line_color" />
+
+</com.le.legamesdk.widget.LeItemViewSwitch>

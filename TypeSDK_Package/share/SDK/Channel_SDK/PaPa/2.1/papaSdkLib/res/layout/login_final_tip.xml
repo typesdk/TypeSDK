@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+        >
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/dp933"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+        <FrameLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/dp933"
+                android:layout_height="@dimen/dp144"
+                android:background="@drawable/title_back"
+                android:gravity="center_vertical"
+                >
+
+
+
+            <TextView
+                    android:layout_width="@dimen/dp800"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleText"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp42"
+                    />
+
+
+        </FrameLayout>
+        <LinearLayout
+                android:layout_width="@dimen/dp933"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_back"
+                android:id="@+id/mainLayout"
+                android:orientation="vertical"
+                android:padding="@dimen/dp60"
+                >
+
+            <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+                       android:fillViewport="true"
+                       android:layout_weight="1"
+                    >
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        >
+
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:textColor="@color/white"
+                              android:textSize="@dimen/dp45"
+                              android:id="@+id/txt_1"
+                              android:minHeight="@dimen/dp200"
+                              android:layerType="software"
+                            />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp44"
+                    android:gravity="center"
+                    android:layout_weight="0"
+                    >
+
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="朕已阅"
+                        android:id="@+id/btn_1"
+                        android:layout_weight="1"
+                        android:background="@drawable/papalogin_greenbutn_seleter"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp46"
+                        />
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="去看看"
+                        android:id="@+id/btn_2"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dp39"
+                        android:background="@drawable/papalogin_redbutn_seleter"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/sp46"
+                        />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

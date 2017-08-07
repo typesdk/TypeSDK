@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.m4399.operate.ui.widget.suspensionglobe.SuspensionGlobeContent xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/pop_window_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/m4399_default_content_description"
+        android:padding="5dp"
+        android:src="@drawable/m4399_ope_pop_logo_one_normal" />
+
+</cn.m4399.operate.ui.widget.suspensionglobe.SuspensionGlobeContent>

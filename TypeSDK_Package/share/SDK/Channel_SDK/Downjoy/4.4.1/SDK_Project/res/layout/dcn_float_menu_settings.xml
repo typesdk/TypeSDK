@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dcn_login_background"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <com.downjoy.widget.TitleLayer
+        android:id="@+id/dcn_float_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dcn_title_height" />
+
+    <com.downjoy.widget.DashedLine
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <ViewFlipper
+        android:id="@+id/dcn_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/dcn_floating_menu_show_label"
+                    android:textColor="@color/dcn_light_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dcn_settings_mp"
+                    style="@style/dcn_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="@string/dcn_floating_menu_showbear_game" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/dcn_get_notice"
+                    android:textColor="@color/dcn_light_black"
+                    android:textSize="16sp" />
+
+                <ToggleButton
+                    android:id="@+id/dcn_settings_sysmsg"
+                    style="@style/dcn_toggole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/dcn_get_activity_notice"
+                    android:textColor="@color/dcn_light_black"
+                    android:textSize="16sp" />
+
+                <ToggleButton
+                    android:id="@+id/dcn_settings_actmsg"
+                    style="@style/dcn_toggole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:text="@string/dcn_sdk_version"
+                    android:textColor="@color/dcn_light_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dcn_version_name"
+                    style="@style/dcn_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:text="@string/dcn_version_name"
+                    android:textColor="@color/dcn_gray_light" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/dcn_float_settings_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dcn_orange_btn_selector"
+                android:text="@string/dcn_floating_menu_confirm"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <com.downjoy.widget.FMSettingsPositionView
+            android:id="@+id/dcn_fm_settings_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ViewFlipper>
+</LinearLayout>

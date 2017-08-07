@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.actionbar.menu.ActionbarMenuTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lion_layout_actionbar_menu_text"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/lion_common_transparent_selector"
+    android:gravity="center"
+    android:paddingLeft="15.0dip"
+    android:paddingRight="15.0dip"
+    android:textColor="@color/lion_common_white"
+    android:textSize="14.0sp" />

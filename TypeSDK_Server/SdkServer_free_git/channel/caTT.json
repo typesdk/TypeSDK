@@ -1,0 +1,36 @@
+{
+  "version":"V2-0.0.1.20160822",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+    "sid" : ""
+    ,"uid" : ""
+    }
+    ,"out_url_test" : "http://127.0.0.1"
+    ,"out_url" : "http://127.0.0.1"
+    ,"out_params" : {}
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {}
+    ,"out_url" :"http://127.0.0.1"
+    ,"out_params" :
+      {
+        "time": ""
+      ,"sign": ""
+      ,"oid": ""
+      ,"doid" : ""
+      ,"dsid": ""
+      ,"dext": ""
+      ,"uid": ""
+      ,"money": ""
+      ,"coin": ""
+      }
+    }
+  ]
+}

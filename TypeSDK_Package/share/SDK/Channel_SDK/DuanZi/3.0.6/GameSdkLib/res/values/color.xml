@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="night_mode_overlay">#80000000</color>
+    <color name="bg_full_image">#000000</color>
+    
+    <color name="default_window_bg">#f9f9f9</color>
+    <color name="default_window_bg_night">#1a1b1d</color>
+    
+    <color name="browser_fragment_bg">@color/default_window_bg</color>
+    <color name="browser_fragment_bg_night">@color/default_window_bg_night</color>
+
+    <color name="browser_fragment_tool_bar_bg">#ffffff</color>
+    <color name="browser_fragment_tool_bar_border">#aaaaaa</color>
+    
+    <color name="title_text_color">#ffffff</color>
+    <color name="title_text_color_night">#b3b4b6</color>
+    
+    <color name="detail_title_text_color">#464646</color>
+    <color name="detail_title_text_color_night">#707070</color>
+    
+</resources>

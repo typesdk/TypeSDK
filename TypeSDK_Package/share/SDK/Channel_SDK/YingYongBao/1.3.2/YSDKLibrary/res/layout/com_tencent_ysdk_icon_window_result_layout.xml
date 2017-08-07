@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/com_tencent_ysdk_icon_content"
+        android:layout_width="195dp"
+        android:layout_height="85dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/com_tencent_ysdk_icon_admin_apply_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:paddingLeft="69dp" >
+
+        <TextView
+            android:id="@+id/com_tencent_ysdk_icon_tv_speedup_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="报告，加速成功"
+            android:textColor="#c3e7ff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/com_tencent_ysdk_icon_tv_mem_free_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%s内存已清理"
+            android:textColor="#c3e7ff"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/com_tencent_ysdk_icon_iv_rocket"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-5dp"
+        android:src="@drawable/com_tencent_ysdk_icon_admin_apply_rocket"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/com_tencent_ysdk_icon_flash_line"
+        android:layout_width="fill_parent"
+        android:layout_height="17.5dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/com_tencent_ysdk_icon_admin_apply_flash"
+        android:visibility="visible" />
+
+</RelativeLayout><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/com_tencent_ysdk_icon_window_result_layout.xml -->

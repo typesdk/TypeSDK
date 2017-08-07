@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/YK_GameSDK_552PX"
+    android:layout_height="300dp"
+    android:background="@color/yk_ykbgColor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/yk_title_include" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/yk_title_line" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/YK_GameSDK_88PX"
+        android:layout_marginLeft="@dimen/YK_GameSDK_36PX"
+        android:layout_marginRight="@dimen/YK_GameSDK_36PX"
+        android:layout_marginTop="@dimen/YK_GameSDK_46PX"
+        android:background="@drawable/yk_btn_blue_selector"
+        android:text="@string/yk_text_btn_yjzc"
+        android:textColor="@color/yk_btn_text_white"
+        android:textSize="@dimen/YK_GameSDK_32PX" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/YK_GameSDK_36PX"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_hink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yk_arrow_bender" />
+
+        <TextView
+            android:id="@+id/tv_hink_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_hink"
+            android:layout_toRightOf="@id/img_hink"
+            android:gravity="center_vertical"
+            android:text="@string/yk_text_fsdxyz"
+            android:textColor="@color/yk_edit_text_hint"
+            android:textSize="@dimen/YK_GameSDK_20PX" />
+
+        <TextView
+            android:id="@+id/reg_tv_hink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_hink"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/tv_hink_info"
+            android:gravity="center_vertical"
+            android:text="@string/yk_text_yhzcxy"
+            android:textColor="@drawable/yk_tv_hink_protocol_selector"
+            android:textSize="@dimen/YK_GameSDK_20PX" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/YK_GameSDK_32PX"
+        android:background="@color/yk_title_line" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_other_login"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/YK_GameSDK_110PX"
+            android:background="@drawable/yk_btn_white_selector"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/yk_text_btn_yk_user_login"
+            android:textColor="@color/yk_text_gray"
+            android:textSize="@dimen/YK_GameSDK_32PX" />
+    </LinearLayout>
+
+</LinearLayout>

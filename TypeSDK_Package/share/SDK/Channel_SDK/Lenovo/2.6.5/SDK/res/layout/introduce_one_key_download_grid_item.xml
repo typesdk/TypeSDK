@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/category_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/icon_default"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/category_label"
+        style="@style/MaxTextDeepStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="游戏名称" />
+
+    <TextView
+        android:id="@+id/select_icon"
+        style="@style/MaxTextDeepStyle"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/category_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/common_list_item_download_bg"
+        android:gravity="center"
+        android:text="安装" />
+
+</RelativeLayout>

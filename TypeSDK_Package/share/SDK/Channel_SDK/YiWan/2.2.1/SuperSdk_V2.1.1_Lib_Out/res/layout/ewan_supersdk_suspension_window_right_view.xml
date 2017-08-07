@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/ewan_supersdk_window_bg_right">
+    
+    <LinearLayout
+        android:id="@+id/ewan_layout_suspension_menu_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="40dp">
+        
+ 
+     	<LinearLayout 
+    	    android:id="@+id/ewan_layout_suspension_switchaccount_right"
+    	    android:layout_width="42dp"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="vertical"
+    	    android:gravity="center"
+    	    android:visibility="visible"
+    	    android:layout_marginRight="10dp">
+    	    
+    	    <ImageView
+    	        android:id="@+id/ewan_sus_message_right_iv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="6dp"
+		        android:src="@drawable/ewan_supersdk_third_switch_account_btn" />
+    
+    		<TextView
+    		    android:id="@+id/ewan_sus_message_right_tv"
+        		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="2dp"
+		        android:layout_marginBottom="3dp"
+		        android:textSize="12sp"
+		        android:textColor="#00a3ff"
+		        android:text="@string/ewan_supersdk_cw_pl_switchaccount"/>
+    	</LinearLayout>
+ 	
+    	<LinearLayout 
+    	    android:id="@+id/ewan_layout_suspension_platform_right"
+    	    android:layout_width="42dp"
+    	    android:layout_height="fill_parent"
+    	    android:orientation="vertical"
+    	    android:gravity="center"
+    	    android:visibility="visible"
+    	    android:layout_marginRight="5dp">
+    	    
+    	    <ImageView
+    	        android:id="@+id/ewan_sus_account_right_iv"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="6dp"
+		        android:src="@drawable/ewan_supersdk_third_platform_btn" />
+    
+    		<TextView
+    		    android:id="@+id/ewan_sus_account_right_tv"
+        		android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="2dp"
+		        android:layout_marginBottom="3dp"
+		        android:textSize="12sp"
+		        android:textColor="#00a3ff"
+		        android:text="@string/ewan_supersdk_cw_pl_platform"/>
+    	</LinearLayout>
+    	
+
+    </LinearLayout>
+</LinearLayout>

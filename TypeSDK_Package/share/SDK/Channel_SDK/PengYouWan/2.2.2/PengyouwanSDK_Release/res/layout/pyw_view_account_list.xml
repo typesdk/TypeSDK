@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pyw_shape_radius_bg"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/pyw_list_accounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/pyw_common_item_divider"
+        android:dividerHeight="1px"
+        android:listSelector="@null"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

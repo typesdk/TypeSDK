@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp" >
+
+        <RelativeLayout
+            android:id="@+id/ll_mch_menu_list"
+            android:layout_width="196dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/mch_float_menu_bg"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_mch_floating_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv_mch_floating_pack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/mch_floating_pack" />
+
+                <TextView
+                    android:id="@+id/tv_mch_floating_pack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="礼包"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mch_floating_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ll_mch_floating_pack"
+                android:layout_toRightOf="@+id/ll_mch_floating_pack"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_mch_floating_pers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/mch_floating_pers" />
+
+                <TextView
+                    android:id="@+id/tv_mch_floating_pers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="个人中心"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mch_floating_social"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/ll_mch_floating_personal"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/iv_mch_floating_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/mch_floating_pers" />
+
+                <TextView
+                    android:id="@+id/tv_mch_floating_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="其他"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_mch_channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mch_float_ico_h"
+            android:gravity="center_vertical|center_horizontal"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <!--
+         <include
+        android:id="@+id/view_menu"
+        android:background="@android:color/transparent"
+        layout="@layout/mch_flo_menu" />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    <include 
+        android:id="@+id/message_info_title_rl"
+        layout="@layout/item_main_title_rl"        
+        />
+    <TextView
+         android:id="@+id/message_info_hide_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="隐藏"  
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:paddingLeft="20dip" 
+         android:paddingRight="20dip"  
+         android:textColor="#333333" 
+         android:clickable="true"  
+         android:visibility="gone"         
+        />
+    </RelativeLayout>
+    
+    <ProgressBar 
+         android:id="@+id/message_info_progress"
+         android:layout_width="match_parent"
+         android:layout_height="50dip"
+         style="?android:attr/progressBarStyleHorizontal" 
+         android:max="100" 
+         android:visibility="gone"                   
+         />
+    
+    
+	<com.smwl.smsdk.myview.MyWebView
+	    android:id="@+id/message_info_details_wv" 
+	    android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    />
+</LinearLayout>

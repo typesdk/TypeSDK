@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/sy37_bg_kefu_modify"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sy37_icon_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="@string/fg_update_down_title"
+                android:textColor="@color/s_orange"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/sy37_bg_line" />
+
+        <ProgressBar
+            android:id="@+id/downProcessBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="0"
+             />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/toDown"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/sy37_kefu_submit"
+                android:text="@string/fg_update_down_backgroud"
+                android:textColor="@color/s_white"
+                android:textSize="@dimen/but_text_size" />
+
+            <Button
+                android:id="@+id/toCancel"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/sy37_reg"
+                android:text="@string/fg_cancel2"
+                android:textColor="@color/s_white"
+                android:visibility="visible"
+                android:textSize="@dimen/but_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

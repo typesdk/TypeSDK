@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dcn_login_padding_left_right"
+    android:paddingRight="@dimen/dcn_login_padding_left_right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:id="@+id/dcn_phone_num_ly"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/dcn_login_user" />
+
+            <EditText
+                android:id="@+id/dcn_register_phone"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:digits="@string/dcn_register_phone_digits"
+                android:ems="10"
+                android:hint="@string/dcn_no_phone_num_warning"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="@color/dcn_white"
+                android:textColorHint="@color/dcn_login_edit_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dcn_edit_text_size" />
+
+            <LinearLayout
+                android:id="@+id/dcn_delete_register_phone"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/dcn_edit_delete" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 点击注册获取验证码后的页面start -->
+
+        <!-- 点击注册获取验证码后的页面start -->
+
+        <LinearLayout
+            android:id="@+id/dcn_get_phone_ver_code_notice"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/dcn_get_phone_code_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingRight="2dp"
+                android:text="@string/dcn_register_phone_ver_code_notice"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingRight="2dp"
+                android:text="@string/dcn_register_phone_ver_code_notice2"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <!-- 点击注册获取验证码后的页面end -->
+
+        <LinearLayout
+            android:id="@+id/dcn_phone_ver_code_ly"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/dcn_phone_ver_code"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:digits="@string/dcn_register_phone_digits"
+                android:ems="10"
+                android:hint="@string/dcn_register_phone_ver_code_hint"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/dcn_white"
+                android:textColorHint="@color/dcn_login_edit_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dcn_edit_text_size" />
+
+            <LinearLayout
+                android:id="@+id/dcn_delete_phone_ver_code"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/dcn_edit_delete" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dcn_resend_smscode"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dcn_selector_login_btn"
+                android:gravity="center"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:singleLine="true"
+                android:text="@string/dcn_register_verify_resend"
+                android:textColor="#ccc"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <!-- 点击注册获取验证码后的页面end -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_divider_size"
+            android:background="@color/dcn_login_split" />
+
+        <LinearLayout
+            android:id="@+id/dcn_phone_set_password_ly"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/dcn_login_password" />
+
+            <EditText
+                android:id="@+id/dcn_register_phone_set_password"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="@string/dcn_register_password_digits"
+                android:ems="10"
+                android:hint="@string/dcn_register_password_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/dcn_white"
+                android:textColorHint="@color/dcn_login_edit_hint"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/dcn_edit_text_size" />
+
+            <LinearLayout
+                android:id="@+id/dcn_delete_register_phone_set_password"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/dcn_edit_delete" />
+            </LinearLayout>
+
+            <com.downjoy.widget.SlipSwitch
+                android:id="@+id/dcn_password_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_divider_size"
+            android:background="@color/dcn_login_split" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/dcn_complete_by_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dcn_selector_login_btn"
+        android:text="@string/dcn_finish_register"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

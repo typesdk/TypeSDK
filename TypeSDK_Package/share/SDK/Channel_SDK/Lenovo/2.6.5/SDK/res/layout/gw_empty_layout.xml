@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gw_empty_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d6d6d6"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/gw_empty_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/gw_emtpy_network"
+        android:layout_marginTop="148dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/gw_empty_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="@string/gw_empty_network"
+        android:textColor="#7A7A7A"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gw_empty_refush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:text="@string/gw_empty_data_retry"
+        android:textColor="#7A7A7A"
+        android:textSize="16sp" />
+
+</LinearLayout>

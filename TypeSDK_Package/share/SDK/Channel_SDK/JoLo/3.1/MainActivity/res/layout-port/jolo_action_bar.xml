@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_LL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jolo_sdk_bg"
+    android:gravity="center_vertical" >
+
+    <ImageButton
+        android:id="@+id/action_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jolo_sdk_bg"
+        android:paddingBottom="2dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/jolo_back" />
+
+    <ImageView
+        android:id="@+id/jolo_logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar_back"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/jolo_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/action_bar_back"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/jolo_logo_iv"
+        android:text="@string/jolo_tel_port"
+        android:textColor="@color/jolo_white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

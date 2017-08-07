@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基本色 -->
+    <color name="transparent">#00000000</color>
+    <color name="transparent_75">#bf000000</color>
+    <color name="ipay_color_1">#ffffff</color>
+    <color name="ipay_color_2">#dfdfdf</color>
+    <color name="ipay_color_3">#aeaeae</color>
+    <color name="ipay_color_4">#727272</color>
+    <color name="ipay_color_5">#000000</color>
+    <color name="ipay_color_6">#ef772e</color>
+    <color name="ipay_color_7">#195bab</color>
+    <color name="ipay_color_8">#f1f1f1</color>
+    <color name="ipay_color_8_1">#f8f8f8</color>
+    <color name="ipay_color_9">#cdcdcd</color>
+    <color name="ipay_color_10">#f18d0b</color>
+    <color name="ipay_color_11">#e83e3e</color>
+    <color name="ipay_color_12">#2a333e</color>
+    <color name="ipay_color_12_1">#1f262f</color>
+    <color name="ipay_color_12_2">#3c4653</color>
+    <color name="ipay_color_13">#16a2d5</color>
+    <color name="ipay_color_13_1">#1096c7</color>
+    <color name="ipay_color_14">#05bf03</color>
+    <color name="ipay_color_14_1">#02ae00</color>
+    <color name="ipay_oneclick_33b5e5_blue">#33b5e5</color>
+    
+</resources>

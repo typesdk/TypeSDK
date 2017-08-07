@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.ChoicePhotoItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                                android:id="@+id/lion_fragment_reply_photo_item_add"
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="match_parent"
+                                                                android:background="@drawable/lion_common_gray_gap_selector" >
+
+    <TextView
+        android:id="@+id/lion_fragment_reply_photo_item_add_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="10.0dip"
+        android:drawableTop="@drawable/lion_icon_community_add"
+        android:text="@string/lion_text_community_photo_add"
+        android:textColor="@color/lion_common_text_gray"
+        android:textSize="14.0sp" />
+
+</com.lion.ccpay.widget.ChoicePhotoItemLayout>

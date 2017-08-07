@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="bool" name="is_large_screen">false</item>
+    <bool name="comment_adapter2_register_content_click_event">false</bool>
+    <integer name="mobile_max_length">11</integer>
+    <integer name="password_max_length">20</integer>
+    <integer name="reset_password_min_length">6</integer>
+    <integer name="reset_password_max_length">20</integer>
+</resources>

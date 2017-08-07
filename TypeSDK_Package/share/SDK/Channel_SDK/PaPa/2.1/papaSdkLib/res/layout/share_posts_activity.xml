@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:fitsSystemWindows="true"
+                android:layout_height="match_parent"
+                android:background="#f6f6f6">
+
+    <include layout="@layout/mg_forum_title_layout" android:id="@+id/title"/>
+
+    <!--<ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+    </ScrollView>-->
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_below="@+id/title"
+                  android:id="@+id/editMainContainer"
+                  android:isScrollContainer="true"
+                  android:background="@android:color/white"
+                  android:orientation="vertical">
+        <!--标题-->
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/posts_title"
+                android:textSize="16sp"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:hint="标题（可选）"
+                android:textColorHint="#989898"
+                android:textColor="#000000"
+                android:maxEms="20"
+                android:textCursorDrawable="@null"
+        />
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:layout_alignParentBottom="true"
+              android:background="#ebebeb"/>
+        <!--正文-->
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:id="@+id/posts_content" android:layout_below="@+id/posts_title"
+                android:layout_marginTop="-1dp"
+                android:background="@android:color/transparent"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:gravity="top|left"
+                android:hint="此时此刻，跟小伙伴分享点什么呢？"
+                android:textColorHint="#c6c6c6"
+                android:textColor="#000000"
+                android:minHeight="140dp"
+                android:maxHeight="160dp"
+                android:textCursorDrawable="@null"/>
+        <!--图片-->
+        <it.sephiroth.android.library.widget.HListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/share_posts_a_hlistview_padding"
+                android:id="@+id/posts_pic_hlist"
+                app:hlv_dividerWidth="@dimen/share_posts_a_hlistview_divider_width"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:listSelector="@color/transparent"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:layout_alignParentBottom="true"
+              android:background="#ebebeb"/>
+    </LinearLayout>
+
+    <!--悬赏-->
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:id="@+id/helpContainer"
+                  android:layout_below="@+id/editMainContainer"
+                  android:paddingLeft="12dp"
+                  android:paddingRight="12dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置悬赏值："
+                android:id="@+id/helpTitle"
+                android:textAppearance="@style/TextViewStyle_14sp"
+                android:textColor="#a8a8a8"
+                android:paddingTop="16dp"/>
+
+        <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/helpGrid"
+                android:layout_marginTop="10dp"
+                android:numColumns="4"
+                android:horizontalSpacing="30dp"
+                android:verticalSpacing="12dp"
+                android:listSelector="@android:color/transparent"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myRemainHelpMoney"
+                android:text="您可用铜板：0"
+                android:textAppearance="@style/TextViewStyle_14sp"
+                android:textColor="#a8a8a8"
+                android:gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提高悬赏，更容易吸引高手来为你解答哦！"
+                android:id="@+id/helpTipV"
+                android:textAppearance="@style/TextViewStyle_14sp"
+                android:textColor="#a8a8a8"
+                android:layout_marginBottom="8dp"
+                android:gravity="bottom"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <!-- footer -->
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每次最多可以分享9张图"
+            android:id="@+id/footer_tip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="13dp"
+            android:textColor="#c6c6c6"
+            android:layout_marginBottom="24dp"
+            android:gravity="bottom"
+            android:layout_marginTop="24dp"/>
+
+
+    <!--</ScrollView>-->
+</RelativeLayout>

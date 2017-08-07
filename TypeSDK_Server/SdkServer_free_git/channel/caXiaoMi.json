@@ -1,0 +1,55 @@
+{
+  "version":"v0.7.20160325",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "uid" : ""
+      ,"session" : ""
+    }
+    ,"out_url" :"http://mis.migc.xiaomi.com/api/biz/service/verifySession.do"
+    ,"out_params" :
+    {
+      "appId" : ""
+    ,"session" : ""
+    ,"uid" : ""
+    ,"signature" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "appId": ""
+      ,"cpOrderId": ""
+      ,"orderId" : ""
+      ,"orderStatus": ""
+      ,"payFee": ""
+      ,"payTime": ""
+      ,"productCode" : ""
+      ,"productCount": ""
+      ,"productName": ""
+      ,"uid" : ""
+      }
+    ,"out_url" :"http://mis.migc.xiaomi.com/api/biz/service/verifySession.do"
+    ,"out_params" :
+      {
+        "appId": ""
+      ,"cpOrderId": ""
+      ,"orderConsumeType": ""
+      ,"orderId" : ""
+      ,"orderStatus": ""
+      ,"payFee": ""
+      ,"payTime": ""
+      ,"productCode" : ""
+      ,"productCount": ""
+      ,"productName": ""
+      ,"uid" : ""
+      }
+    }
+  ]
+}

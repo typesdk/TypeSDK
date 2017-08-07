@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jolopay_recharge_input_lv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/jolopay_list_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="15dip"
+    android:paddingBottom="15dip" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jolopay_recharge_input"
+        android:textColor="@color/jolopay_black"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/jolopay_recharge_input_et"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/jolopay_edit_bgnew"
+        android:gravity="right|center"
+        android:hint="@string/jolopay_recharge_input_hit"
+        android:inputType="number"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:paddingTop="4dip"
+        android:paddingBottom="4dip"
+        android:maxLength="23"
+        android:singleLine="true"
+        android:textColor="@color/jolopay_black"
+        android:textColorHint="@color/jolopay_gray"
+        android:textCursorDrawable="@null"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jolopay_recharge_input_danwei"
+        android:textColor="@color/jolopay_black"
+        android:textSize="16sp"
+        android:layout_marginLeft="6dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jolopay_recharge_input_note"
+        android:textColor="@color/jolopay_red"
+        android:textSize="14sp"
+        android:layout_marginRight="20dip"
+        android:layout_marginLeft="6dip" />
+
+</LinearLayout>

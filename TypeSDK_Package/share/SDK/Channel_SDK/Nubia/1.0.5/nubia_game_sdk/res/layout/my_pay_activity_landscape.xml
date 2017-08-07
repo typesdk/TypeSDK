@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_colors_gray_bg_transparent" >
+
+    <LinearLayout
+        android:id="@+id/my_rl_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/nubia_ns_20_dp"
+        android:layout_marginLeft="@dimen/nubia_ns_80_dp"
+        android:layout_marginRight="@dimen/nubia_ns_80_dp"
+        android:layout_marginTop="@dimen/nubia_ns_20_dp"
+        android:background="@drawable/my_round_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/nubia_ns_10_dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nubia_ns_10_dp"
+            android:gravity="center"
+            android:text="@string/my_tv_pay_str"
+            android:textColor="@color/my_colors_black"
+            android:textSize="@dimen/nubia_ns_18_sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/my_tv_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/nubia_ns_30_dp"
+                        android:layout_marginTop="@dimen/nubia_ns_10_dp"
+                        android:text="@string/my_tv_product_str"
+                        android:textColor="@color/my_colors_hint"
+                        android:textSize="@dimen/nubia_ns_18_sp" />
+
+                    <TextView
+                        android:id="@+id/my_tv_product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/nubia_ns_30_dp"
+                        android:layout_marginTop="@dimen/nubia_ns_10_dp"
+                        android:text="@string/my_tv_price_str"
+                        android:textColor="@color/my_colors_hint"
+                        android:textSize="@dimen/nubia_ns_18_sp" />
+
+                    <TextView
+                        android:id="@+id/my_tv_product_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/nubia_ns_30_dp"
+                        android:layout_marginTop="@dimen/nubia_ns_10_dp"
+                        android:text="@string/my_tv_num_str"
+                        android:textColor="@color/my_colors_hint"
+                        android:textSize="@dimen/nubia_ns_18_sp" />
+
+                    <TextView
+                        android:id="@+id/my_tv_product_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/nubia_ns_30_dp"
+                        android:layout_marginTop="@dimen/nubia_ns_10_dp"
+                        android:text="@string/my_tv_total_str"
+                        android:textColor="@color/my_colors_hint"
+                        android:textSize="@dimen/nubia_ns_18_sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/nubia_ns_30_dp"
+                        android:layout_marginTop="@dimen/nubia_ns_10_dp"
+                        android:text="@string/nubia_pay_channels"
+                        android:textColor="@color/my_colors_hint"
+                        android:textSize="@dimen/nubia_ns_18_sp" />
+
+                    <RadioGroup
+                        android:id="@+id/nubia_radio_group_pay_channel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/nubia_ns_30_dp"
+                        android:gravity="center_vertical">
+
+                        <!--<RadioButton-->
+                        <!--android:id="@+id/pay_channel_selected_one"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:checked="true"-->
+                        <!--android:textSize="18sp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textColor="@color/my_colors_hint"-->
+                        <!--android:text=" 支付宝"/>-->
+                        <!--<RadioButton-->
+                        <!--android:id="@+id/pay_channel_selected_two"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/my_colors_hint"-->
+                        <!--android:textSize="18sp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text=" 银行卡"/>-->
+
+                    </RadioGroup>
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal" >-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/my_tv_product_chanel"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="@string/my_tv_chanel_str"-->
+                    <!--android:textColor="@color/my_colors_hint"-->
+                    <!--android:textSize="18sp" />-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/my_iv_pay_channel"-->
+                    <!--android:layout_width="25dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:scaleType="centerCrop" />-->
+                    <!--</LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/nubia_ns_36_dp"
+                        android:layout_marginTop="@dimen/nubia_ns_40_dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2" >
+
+                        <Button
+                            android:id="@+id/my_ib_cancel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/nubia_ns_3_dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_selector_gray_long"
+                            android:text="@string/my_btn_cancel"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/nubia_ns_16_sp" />
+
+                        <Button
+                            android:id="@+id/my_btn_confirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/nubia_ns_3_dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/my_selector_blue_long"
+                            android:text="@string/my_btn_confirm"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/nubia_ns_16_sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_layout_wait"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/my_colors_white"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/my_tv_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/my_tv_no_chanel_str"
+                        android:textColor="@color/my_colors_black"
+                        android:textSize="18sp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/my_ib_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/my_rl_center"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginLeft="-110dp"
+        android:layout_toRightOf="@id/my_rl_center"
+        android:background="@drawable/my_selector_close" />
+
+</RelativeLayout>

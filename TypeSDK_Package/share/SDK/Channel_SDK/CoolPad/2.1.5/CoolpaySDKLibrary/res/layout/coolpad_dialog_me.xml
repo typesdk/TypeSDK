@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:divider="@drawable/coolpad_devider_coupon"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    android:showDividers="middle" >
+
+    <RelativeLayout
+        android:id="@+id/account_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="30dp"
+            android:alpha="0.9"
+            android:background="@drawable/coolpad_roundcorner_white_bg"
+            android:clipChildren="false" >
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="90dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="第一滴血第yi"
+                android:textColor="@color/coolpad_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/note_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="更多好玩游戏，尽在酷派游戏中心"
+                android:textColor="@color/text_dark_80"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <com.yulong.paysdk.widget.RoundImageView
+            android:id="@+id/head_icon_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/coolpad_account_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/coolcoin_re"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:alpha="0.9"
+        android:background="@drawable/coolpad_roundcorner_white_bg" >
+
+        <TextView
+            android:id="@+id/coolcoin_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="酷币充值"
+            android:textColor="@color/navigation_bg_blue"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_re"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:alpha="0.9"
+        android:background="@drawable/coolpad_roundcorner_white_bg" >
+
+        <TextView
+            android:id="@+id/contact_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="联系客服"
+            android:textColor="@color/navigation_bg_blue"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/close_re"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:alpha="0.9"
+        android:background="@drawable/coolpad_roundcorner_white_bg" >
+
+        <TextView
+            android:id="@+id/close_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@color/red_btn_bg_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<color name="com_lenovo_pay_title_bg">#606B7F</color>
+	<color name="com_lenovo_pay_title_text">#FFFFFF</color>
+	<color name="com_lenovo_pay_balance">#ff9600</color>
+	<color name="com_lenovo_pay_goods_bg">#FFFFFF</color>
+	<color name="com_lenovo_pay_goods_label">#191919</color>
+	<color name="com_lenovo_pay_goods_unit">#757575</color>
+	<color name="com_lenovo_pay_goods_paytpe_text">#000000</color>
+	<color name="com_lenovo_pay_goods_paytpe_bg">#FFFFFF</color>
+	<color name="com_lenovo_pay_userinfo_bg">#FFFFFF</color>
+	<color name="com_lenovo_pay_button">#0B7CD9</color>
+	<color name="com_lenovo_pay_transparent_color">#00000000</color>
+  	<color name="com_lenovo_pay_gray">#a3a3a3</color>
+  	
+  	</resources>

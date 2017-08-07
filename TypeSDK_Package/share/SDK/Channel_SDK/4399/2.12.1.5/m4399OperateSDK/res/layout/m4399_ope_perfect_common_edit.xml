@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/m4399PerfectLaStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_ope_perfect_la">
+
+        <TextView
+            android:id="@+id/label"
+            style="@style/m4399PerfectTextLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/content_edit"
+            style="@style/m4399PerfectTextCenter"/>
+        <TextView
+            android:id="@+id/content_tv"
+            android:visibility="gone"
+            style="@style/m4399PerfectTextCenter"/>
+        <RelativeLayout
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:gravity="center">
+            <ImageView
+                style="@style/m4399PerfectDel" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View style="@style/m4399PerfectLine" />
+</LinearLayout>
+

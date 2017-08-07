@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="linkpay_backgroundgray">#222222</color>
+    <color name="linkpay_backgroundblack">#000000</color>
+    <color name="linkpay_textcolorwhite">#ffffff</color>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/egame_disembark_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/egame_mesg_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/egame_mesgdialog_titletv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="asdfasdfsdf"
+            android:textColor="@color/mesgpush_title"
+            android:layout_marginBottom="7dp"
+            android:textSize="18dp" />
+
+<!--         <android.support.v4.view.ViewPager -->
+<!--             android:id="@+id/egame_mesgdialog_msgpager" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_above="@+id/egame_mesgdialog_canclebt" -->
+<!--             android:layout_below="@+id/egame_mesgdialog_titletv" -->
+<!--             android:layout_marginBottom="14dp" -->
+<!--             android:layout_marginLeft="19dp" -->
+<!--             android:layout_marginRight="24dp" /> -->
+		 <WebView
+                android:id="@+id/egame_mesgdialog_webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 android:layout_above="@+id/egame_mesgdialog_canclebt" 
+             	android:layout_below="@+id/egame_mesgdialog_titletv" 
+                />
+        <Button
+            android:id="@+id/egame_mesgdialog_canclebt"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/egame_btn_login_status"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/egame_close"
+            android:textColor="@color/egame_usersdk_white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/egame_user_mesgdialog_leftarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/egame_user_message_leftarrow" />
+
+    <ImageView
+        android:id="@+id/egame_user_mesgdialog_rightarr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/egame_user_message_rightarrow" />
+
+</FrameLayout>

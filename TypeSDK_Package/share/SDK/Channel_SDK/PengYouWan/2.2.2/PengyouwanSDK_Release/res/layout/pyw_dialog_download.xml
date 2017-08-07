@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pyw_img_dialogcontent_bg"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp" >
+
+    <TextView
+        android:id="@+id/pyw_tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="准备下载.."
+        android:textColor="@color/pyw_common_gray_light"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal" >
+
+        <ProgressBar
+            android:id="@+id/pyw_pb_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="250dp"
+            android:src="@drawable/pyw_img_loading" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/pyw_btn_dialog_switch"
+        android:layout_width="130dp"
+        android:layout_height="@dimen/pyw_common_btn_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pyw_selector_btn_white_bg"
+        android:text="停止下载"
+        android:textColor="@color/pyw_common_gray_light"
+        android:textSize="@dimen/pyw_common_large" />
+
+</LinearLayout>

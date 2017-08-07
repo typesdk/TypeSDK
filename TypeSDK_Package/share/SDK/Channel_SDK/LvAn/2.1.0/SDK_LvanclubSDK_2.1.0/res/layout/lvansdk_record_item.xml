@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="4dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="游戏："
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="放开那三国"
+            android:textColor="#666"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品："
+            android:textColor="#333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_product"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="200钻石"
+            android:textColor="#666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="订单金额：￥6.00"
+            android:textColor="#333"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_counteract"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抵扣金额："
+            android:textColor="#333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_counteract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="积分-￥7  兑换券-￥6  绿岸币-￥3"
+            android:textColor="#666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付金额："
+            android:textColor="#333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="￥7"
+            android:textColor="#ff9812"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="2015-2-3 12:12:12"
+            android:textColor="#999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

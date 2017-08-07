@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lion_activity_user_order_info_pay_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/lion_common_frame_bottom_nor"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/lion_text_wallet_order_price"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/lion_activity_user_order_info_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:textSize="14.0sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/lion_common_frame_bottom_nor"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/lion_text_wallet_order_name"
+                    android:textSize="16.0sp"/>
+
+                <TextView
+                    android:id="@+id/lion_activity_user_order_info_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:textSize="14.0sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lion_activity_user_order_info_privilege_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lion_activity_user_order_info_num_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/lion_common_frame_bottom_nor"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip">
+
+                    <TextView
+                        android:id="@+id/lion_activity_user_order_info_num_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/lion_text_wallet_order_must_pay"
+                        android:textSize="16.0sp"/>
+
+                    <TextView
+                        android:id="@+id/lion_activity_user_order_info_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:textColor="@color/lion_common_basic_red"
+                        android:textSize="14.0sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lion_activity_user_order_info_notice_pay_notice"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:gravity="center|left"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:text="@string/lion_text_wallet_order_channel_list"
+            android:textSize="16.0sp"/>
+
+        <LinearLayout
+            android:id="@+id/lion_activity_user_order_info_channel_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="15.0dip"
+                android:text="@string/lion_text_wallet_order_notice_1"
+                android:textSize="14.0sp"/>
+
+            <TextView
+                android:id="@+id/lion_activity_user_order_info_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="50.0dip"
+                android:background="@drawable/lion_common_transparent_selector"
+                android:gravity="center"
+                android:text="@string/lion_text_wallet_order_notice_2"
+                android:textColor="@color/lion_common_blue"
+                android:textSize="14.0sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lion_activity_user_order_info_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:lineSpacingExtra="7.5dip"
+            android:paddingBottom="15.0dip"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:textColor="@color/lion_common_text_gray"
+            android:textSize="14.0sp"/>
+    </LinearLayout>
+</ScrollView>

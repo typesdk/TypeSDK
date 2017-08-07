@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anfan_recharge_shouji_2"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/anfan_recharge_shouji_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:text="@string/anfan_recharge_shouji_3"
+        android:textColor="#666666" />
+
+   <!--  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" > -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.anfeng.pay.view.MyGridView
+                android:id="@+id/anfan_recharge_shouji__gv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:background="#EDEFF1"
+                android:gravity="center"
+                android:horizontalSpacing="5dip"
+                android:listSelector="#EDEFF1"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20dp" />
+
+            <com.anfeng.pay.view.ClearEditText
+                android:id="@+id/anfan_recharge_shouji_num"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textCursorDrawable="@null"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:digits="@string/anfan_input_account_digits"
+                android:ems="10"
+                android:hint="充值卡卡号"
+                android:inputType="number"
+                android:maxLength="50"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#CCCCCC"
+                 />
+
+            <com.anfeng.pay.view.SeePWDEditText
+                android:id="@+id/anfan_recharge_shouji_pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#ffffff"
+                android:digits="@string/anfan_input_account_digits"
+                android:ems="10"
+                android:hint="密码"
+                android:textCursorDrawable="@null"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#CCCCCC"
+                 />
+
+            <Button
+                android:id="@+id/anfan_recharge_shouji_paybtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/anfan_button_bg_blue"
+                android:text="@string/anfan_recharge_shouji_4"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/anfan_pay_card_hint"
+                android:textColor="#999999" />
+        </LinearLayout>
+  <!--   </ScrollView> -->
+
+</LinearLayout>

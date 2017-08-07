@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hpay_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/hpay_tv_rt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:textColor="@color/hpay_title_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hpay_tv_rt_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:minLines="3"
+            android:textColor="@color/hpay_title_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="20dip"
+            android:background="@color/hpay_line_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:layout_marginBottom="3dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/hpay_btn_rt_cancel"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/hpay_bg_color"
+                android:gravity="center"
+                android:textColor="@color/hpay_ok_wz_color"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/hpay_line_color" >
+            </ImageView>
+
+            <Button
+                android:id="@+id/hpay_btn_rt_ok"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@color/hpay_bg_color"
+                android:gravity="center"
+                android:textColor="@color/hpay_cancel_wz_color"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

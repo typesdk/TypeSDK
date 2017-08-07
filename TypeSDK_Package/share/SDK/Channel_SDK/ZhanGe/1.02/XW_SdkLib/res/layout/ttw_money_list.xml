@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pw"
+    android:layout_width="100dip"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/ttw_edit_bg"
+    android:gravity="center_vertical"
+     >
+    <ListView 
+        android:id="@+id/lv_money"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/ttw_pw_list_selector"
+        android:divider="@color/gray1"
+        android:focusable="true"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        ></ListView>
+</LinearLayout>

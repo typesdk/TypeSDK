@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/voucher_unselected_background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/game_voucher_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/game_voucher_name"
+            android:gravity="top"
+            android:drawableLeft="@drawable/game_voucher_logo"
+            android:drawablePadding="10dp"
+            android:textColor="@color/user_register_button_disable_text_color"
+            android:textSize="@dimen/font_size_middle"/>
+
+
+        <TextView
+            android:id="@+id/game_voucher_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_voucher_value"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/user_register_button_disable_text_color"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_size_middle"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/game_voucher_fit_field_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_voucher_fit_field"
+                android:drawableLeft="@drawable/game_voucher_rule"
+                android:drawablePadding="8dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/font_size_small"/>
+
+            <TextView
+                android:id="@+id/game_voucher_time_limit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_voucher_fit_field_tv"
+                android:drawableLeft="@drawable/game_voucher_date"
+                android:drawablePadding="8dp"
+                android:text="@string/game_voucher_time_limit"
+                android:textSize="@dimen/font_size_small"/>
+
+            <Button
+                android:id="@+id/game_voucher_watch_all_bt"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:text="@string/game_voucher_watch_all"
+                android:textSize="@dimen/font_size_small"
+                android:layout_below="@id/game_voucher_time_limit_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textColor="@color/user_register_service_clause_color"
+                android:background="@drawable/common_dialog_positive_button_shape"
+                android:focusable="false"/>
+
+        </RelativeLayout>
+
+
+</LinearLayout>

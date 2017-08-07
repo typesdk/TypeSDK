@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/anfan_defealut_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="安锋游戏"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+        
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+          android:layout_marginBottom="20dp"
+        android:background="#D9DDE1" />
+
+    <LinearLayout
+        android:id="@+id/anfan_RL3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.anfeng.pay.view.ClearEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+                 android:background="@android:color/white"
+            android:digits="@string/anfan_input_digits"
+            android:drawableLeft="@drawable/anfan_ico_user"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/anfan_email_or_phone"
+            android:maxLength="20"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="#CCCCCC"
+            android:textCursorDrawable="@null" />
+
+        <View
+            android:id="@+id/line_five"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="25dp"
+            android:background="#D9DDE1" />
+
+        <com.anfeng.pay.view.ClearEditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/white"
+            android:digits="@string/anfan_input_digits"
+            android:drawableLeft="@drawable/anfan_ico_lock"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/anfan_pwd"
+            android:maxLength="20"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="#CCCCCC"
+            android:textCursorDrawable="@null" />
+
+        <View
+            android:id="@+id/line_six"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D9DDE1" />
+
+        <Button
+            android:id="@+id/anfan_regist_email_regisbtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/line_six"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/anfan_button_bg_blue"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+      
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+    >
+
+            <TextView
+                android:id="@+id/af_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/af_ico_user_login"
+                android:drawablePadding="3dp"
+                android:gravity="left"
+                android:text="@string/anfan_havebeen_account_login"
+                android:textColor="#8f8b92"
+                android:textSize="16sp" />
+
+            
+
+            <TextView
+                android:id="@+id/af_tv_quick_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/af_ico_quick_reg"
+                android:drawablePadding="3dp"
+                android:gravity="right"
+                android:text="@string/anfan_register_phone"
+                android:textColor="#39C5A9"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

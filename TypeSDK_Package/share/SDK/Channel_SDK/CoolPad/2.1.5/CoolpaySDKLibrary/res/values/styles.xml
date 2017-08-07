@@ -1,0 +1,112 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+
+    <!-- Application theme. -->
+
+
+    <!-- Navigation Header -->
+
+    <style name="coolpad_NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+
+    <style name="coolpad_fullscreen">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="coolpad_TitleText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <style name="MMLineButton" parent="@style/MMButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mm_style_two_btn_text</item>
+    </style>
+
+    <style name="MMLineActionButton" parent="@style/MMLineButton">
+        <item name="android:background">@drawable/coolpad_btn_style_one</item>
+        <item name="android:textColor">@color/mm_style_one_btn_text</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDy">1.2</item>
+        <item name="android:shadowDx">1.2</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="HyperText" parent="MMButton">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/mm_hyper_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MMButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/mm_btn_text</item>
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:minWidth">40dp</item>
+    </style>
+
+    <style name="coolpad_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- 半透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="coolpad_text_color_red_size_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/pay_text_red</item>
+    </style>
+
+    <style name="coolpad_text_color_red_size_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/pay_text_red</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="coolpad_coupon_text_15">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="CoolcloudUacActivityStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="coolpad_mestyle" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/coolpad_enter_frombottom</item>
+        <item name="android:windowExitAnimation">@anim/coolpad_exit_tobottom</item>
+    </style>
+
+</resources>

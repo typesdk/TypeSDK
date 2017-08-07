@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:contentDescription="@string/m4399_default_content_description"
+        android:id="@+id/pop_window_view"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="5dp" />
+
+    <ImageView
+        android:contentDescription="@string/m4399_default_content_description"
+        android:id="@+id/pop_window_view_sign_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/pop_window_view"
+        android:src="@drawable/m4399_ope_sign_red_dot" 
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

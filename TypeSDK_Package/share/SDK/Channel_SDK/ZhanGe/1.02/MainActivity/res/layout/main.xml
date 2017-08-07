@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <EditText 
+        android:id="@+id/et_money"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+    
+    <Button
+        android:id="@+id/btn_charge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="充值" />
+    
+    <Button
+        android:id="@+id/btn_cut_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="切换账号" />
+    
+    <TextView 
+        android:id="@+id/tv_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:text="注意!!!"
+        />
+      <TextView 
+        android:id="@+id/tv_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dip"
+        android:text="在接入前要和XW这边的技术人员索要appid,appkey,gameid,agent"
+        />
+</LinearLayout>

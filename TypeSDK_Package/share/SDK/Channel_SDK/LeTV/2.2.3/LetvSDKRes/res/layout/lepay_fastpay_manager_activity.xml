@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lepay_fillparent"
+    android:background="@color/lepay_page_layout_bg_color"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/lepay_actionbar"
+        layout="@layout/lepay_actionbar" />
+    
+    <LinearLayout
+        android:id="@+id/lepay_fastpay_pwd_manage_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:background="@drawable/lepay_layout_ditu"
+        >
+    
+     <RelativeLayout 
+        android:id="@+id/lepay_fastpay_cardmanage_area"
+        style="@style/lepay_width_fillparent"
+        android:layout_marginTop="10.5dp"
+        >
+        
+        <ImageView
+            android:id="@+id/lepay_iv_cardmanage"
+            style="@style/lepay_wrapparent"
+            android:layout_marginLeft="17.5dp"
+            android:layout_marginBottom="10.5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_card_manage"/>
+        
+        <TextView 
+            android:id="@+id/lepay_tv_cardmanage"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="0.0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/lepay_iv_cardmanage"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/lepay_item_bankno_font_size"
+            android:textColor="@color/lepay_item_bankno_font_color"
+            android:layout_gravity="center_vertical"
+            android:text="@string/lepay_fastpay_card_manage"
+            />
+        
+        <ImageView
+            android:id="@+id/lepay_iv_cardmanage_icon_extension"
+            style="@style/lepay_wrapparent"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_extension"/>
+        
+     </RelativeLayout>
+     
+     <ImageView 
+            android:id="@+id/lepay_card_manage_icon_line"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="14.5dp"
+            android:layout_height="0.5dp"
+            android:background="@drawable/lepay_layout_line"
+            />
+     
+     <RelativeLayout 
+        android:id="@+id/lepay_fastpay_pwdset_area"
+        style="@style/lepay_width_fillparent"
+        android:layout_marginTop="14.5dp"
+        android:layout_marginBottom="10.5dp"
+        >
+        
+        <ImageView
+            android:id="@+id/lepay_iv_pwdset"
+            style="@style/lepay_wrapparent"
+            android:layout_marginLeft="17.5dp"
+            android:layout_marginBottom="10.5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_pwd_set"/>
+        
+        <TextView 
+            android:id="@+id/lepay_tv_pwdset"
+            style="@style/lepay_wrapparent"
+            android:layout_marginTop="0.0dip"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/lepay_iv_pwdset"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/lepay_item_bankno_font_size"
+            android:textColor="@color/lepay_item_bankno_font_color"
+            android:layout_gravity="center_vertical"
+            android:text="@string/lepay_fastpay_pwd_set"
+            />
+<!--         <com.amaker.Activity.SlidButton   
+            android:id="@+id/slipBtn"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"            
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>   -->
+        
+         <ImageView
+            android:id="@+id/lepay_iv_pwdset_icon_extension"
+            style="@style/lepay_wrapparent"
+            android:layout_marginRight="15dp"            
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lepay_icon_extension"/>
+        
+     </RelativeLayout>
+     
+     </LinearLayout>
+
+</LinearLayout>

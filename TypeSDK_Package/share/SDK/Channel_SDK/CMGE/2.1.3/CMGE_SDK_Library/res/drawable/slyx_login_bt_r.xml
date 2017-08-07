@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/slyx_color_start_s" android:state_pressed="true"></item>
+    <item android:drawable="@color/slyx_color_start" android:state_focused="false" android:state_pressed="false"></item>
+    <item android:drawable="@color/slyx_color_start_s"></item>
+
+</selector>

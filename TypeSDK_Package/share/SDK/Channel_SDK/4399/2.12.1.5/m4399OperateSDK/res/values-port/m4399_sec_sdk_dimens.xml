@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <dimen name="m4399_rec_page_height">420dp</dimen>
+    <dimen name="m4399_rec_page_width">275dp</dimen>
+    <dimen name="m4399_rec_title_height">38dp</dimen>
+    <dimen name="m4399_rec_title_iv_txt_spacing">2dp</dimen>
+    <dimen name="m4399_rec_separator_height">1dp</dimen>
+    <dimen name="m4399_rec_paddingTop">6dp</dimen>
+    <dimen name="m4399_rec_paddingBottom">6dp</dimen>
+    <dimen name="m4399_rec_paddingLeft">8dp</dimen>
+    <dimen name="m4399_rec_paddingRight">8dp</dimen>
+    <dimen name="m4399_rec_payment_icon_size">68dp</dimen>
+    <dimen name="m4399_rec_payment_text_size">11sp</dimen>
+    <dimen name="m4399_rec_payment_icon_padding">6dp</dimen>
+    <dimen name="m4399_rec_table_paddingTop">7dp</dimen>
+    <dimen name="m4399_rec_foot_height">26dp</dimen>
+    <dimen name="m4399_rec_edittext_height">32dp</dimen>
+    <dimen name="m4399_rec_sum_btns_eara_height">34dp</dimen>
+    <dimen name="m4399_rec_btns_hspacing">6dp</dimen>
+    <dimen name="m4399_rec_btns_vspacing">12dp</dimen>
+    <dimen name="m4399_rec_gridview_hspacing">8dp</dimen>
+    <dimen name="m4399_rec_gridview_half_vspacing">7dp</dimen>
+    <dimen name="m4399_rec_gridview_vspacing">14dp</dimen>
+    <dimen name="m4399_rec_gridview_item_height">34dp</dimen>
+    <dimen name="m4399_rec_dialog_height">200dp</dimen>
+    <dimen name="m4399_rec_dialog_width">275dp</dimen>
+    <dimen name="m4399_rec_dialog_spacing">6dp</dimen>
+    <dimen name="m4399_rec_single_btn_marginBottom">30dp</dimen>
+    <dimen name="m4399_rec_foot_text_size">12sp</dimen>
+    <dimen name="m4399_rec_record_entry_offset">38dp</dimen>
+    <dimen name="m4399_rec_record_header_text_size">16sp</dimen>
+    <dimen name="m4399_rec_record_item_text_size">13sp</dimen>
+    <dimen name="m4399_rec_liantong_cfm_captcha_padding">4dp</dimen>
+    <dimen name="m4399_rec_gameinfo_top_margin">20dp</dimen>
+
+</resources>

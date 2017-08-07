@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/m4399_ope_common_alertdialog_bg"
+    android:paddingTop="25dp">
+
+    <TextView
+        android:id="@+id/alert_title"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#dd000000"
+        android:textSize="16sp"/>
+
+
+
+    <View style="@style/m4399PerfectLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/m4399_ope_vip_button_bg_left"
+            android:id="@+id/alert_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#dd000000"
+            android:textSize="16sp"
+            android:gravity="center"/>
+        <View
+            android:id="@+id/center_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/m4399_ope_perfect_line"/>
+
+        <LinearLayout
+            android:background="@drawable/m4399_ope_vip_button_bg_right"
+            android:id="@+id/alert_sure"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/alert_loading"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="6dp"
+                android:indeterminateDrawable="@drawable/m4399_progress_alert_drawable"
+                android:max="10000" />
+            <TextView
+                android:id="@+id/alert_sure_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#54c727"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

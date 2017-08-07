@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/util_mch_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_weight="0.82"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/mc_personal_info_back_chgpwd"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="充值账号:"
+                        android:textColor="#3f3f3f"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_mch_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mch_input_back_shape"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="请输入账号"
+                        android:textColor="#000000"
+                        android:textColorHint="#565656"
+                        android:textSize="15sp" >
+                    </EditText>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                     >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="确认账号:"
+                        android:textColor="#3f3f3f"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_mch_reaccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/mch_input_back_shape"
+                        android:ems="10"
+                        android:hint="请输入账号"
+                        android:textColor="#000000"
+                        android:textColorHint="#565656"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="充值数量:"
+                        android:textColor="#3f3f3f"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/edt_mch_ptb_number"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/mch_input_back_shape"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="2"
+                        android:text="平台币"
+                        android:textColor="#3f3f3f"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="(1平台币 = 1人民币)"
+                        android:textColor="#3f3f3f"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/mc_personal_info_back_chgpwd"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="充值方式:"
+                        android:textColor="#3f3f3f"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btn_mch_addptb_jby"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/mch_input_back_shape"
+                        android:padding="5dp"
+                        android:text="聚宝云"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btn_mch_addptb_zfb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/mch_input_back_shape"
+                        android:padding="5dp"
+                        android:text="支付宝"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                         />
+
+                    <Button
+                        android:id="@+id/btn_mch_addptb_wx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/mch_input_back_shape"
+                        android:padding="5dp"
+                        android:text="微信"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#e0e0e0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="应付金额:"
+                        android:textColor="#3f3f3f"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txt_mch_pay_rmb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="0"
+                        android:textColor="#ff8000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="元"
+                        android:textColor="#3f3f3f"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_mch_addptb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/mch_button_selector"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:text="立即支付"
+        android:textColor="#ffffff" >
+    </Button>
+
+</LinearLayout>

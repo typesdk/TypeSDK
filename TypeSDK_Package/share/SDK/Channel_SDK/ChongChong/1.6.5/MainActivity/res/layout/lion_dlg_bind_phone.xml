@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/lion_dlg_margin"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/lion_style_dlg_title"
+            android:text="@string/lion_dlg_bind_phone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lion_common_dialog_content_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    style="@style/lion_style_dlg_phone_notice"
+                    android:text="@string/lion_dlg_bind_phone_notice" />
+
+                <include layout="@layout/lion_dlg_input_phone" />
+
+                <include layout="@layout/lion_dlg_input_security_code" />
+
+                <include layout="@layout/lion_dlg_two_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

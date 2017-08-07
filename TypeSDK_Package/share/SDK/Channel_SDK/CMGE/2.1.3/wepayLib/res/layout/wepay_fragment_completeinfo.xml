@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/wepay_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/wepay_dialog_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/wepay_space_middle" >
+
+        <TextView
+            android:id="@+id/txt_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wepay_space_large"
+            android:gravity="center"
+            android:textColor="@color/wepay_txt_title_default"
+            android:textSize="@dimen/wepay_txt_middle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/wepay_space_large"
+            android:layout_marginRight="@dimen/wepay_space_large"
+            android:layout_marginTop="@dimen/wepay_space_large"
+            android:background="@drawable/wepay_message_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_valid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <com.wangyin.wepay.widget.input.CPValidMsgInput
+                    android:id="@+id/input_valid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/wepay_widget_height"
+                    android:layout_marginLeft="@dimen/wepay_space_large"
+                    android:background="@null"
+                    android:textColorHint="@color/wepay_txt_msg_hint"
+                    android:textCursorDrawable="@drawable/wepay_cursor_blue"
+                    android:textSize="@dimen/wepay_txt_large" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider_line"
+                style="@style/wepay_divider_line"
+                android:layout_width="match_parent"
+                android:background="@color/wepay_divider_msg" />
+
+            <LinearLayout
+                android:id="@+id/layout_cvv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <com.wangyin.wepay.widget.input.CPCVVMsgInput
+                    android:id="@+id/input_cvv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/wepay_widget_height"
+                    android:layout_marginLeft="@dimen/wepay_space_large"
+                    android:background="@null"
+                    android:textColorHint="@color/wepay_txt_msg_hint"
+                    android:textCursorDrawable="@drawable/wepay_cursor_blue"
+                    android:textSize="@dimen/wepay_txt_large" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/wepay_space_large"
+            android:background="@color/wepay_bg_content"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/wepay_divider_line"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/wepay_space_middle" />
+
+            <LinearLayout
+                android:id="@+id/layout_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/wepay_space_large"
+                android:paddingRight="@dimen/wepay_space_large" >
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/wepay_dialog_button_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/wepay_second_btn_bg"
+                    android:text="@string/wepay_cancel"
+                    android:textColor="@color/wepay_second_btn_txt"
+                    android:textSize="@dimen/wepay_txt_xlarge" />
+
+                <View
+                    android:layout_width="@dimen/wepay_space_large"
+                    android:layout_height="match_parent" >
+                </View>
+
+                <Button
+                    android:id="@+id/btn_sure"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/wepay_dialog_button_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/wepay_first_btn_bg"
+                    android:text="@string/wepay_sure"
+                    android:textColor="@color/wepay_first_btn_txt"
+                    android:textSize="@dimen/wepay_txt_xlarge" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

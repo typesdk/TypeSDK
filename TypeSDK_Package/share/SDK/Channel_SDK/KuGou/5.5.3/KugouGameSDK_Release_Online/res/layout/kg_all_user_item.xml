@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/kg_all_user_del_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="3dp"
+            android:scaleType="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/kg_all_account_del_button" />
+
+        <ImageView
+            android:id="@+id/kg_all_user_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/kg_all_user_mark" />
+
+        <TextView
+            android:id="@+id/kg_all_user_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/kg_all_user_mark"
+            android:layout_toRightOf="@id/kg_all_user_del_button"
+            android:ellipsize="middle"
+            android:minWidth="150dip"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

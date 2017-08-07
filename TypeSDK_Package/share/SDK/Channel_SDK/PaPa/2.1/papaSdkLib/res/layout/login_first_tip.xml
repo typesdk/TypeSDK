@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+        >
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/dp861"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp51"
+        android:paddingTop="@dimen/dp51"
+        android:background="@color/white"
+        >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示"
+            android:id="@+id/titleText"
+            android:textColor="#d79537"
+            android:textSize="@dimen/dp48"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp39"
+            />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_1"
+            android:textColor="#3b3b3b"
+            android:textSize="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp45"
+            android:layout_marginRight="@dimen/dp39"
+            />
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp45"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="为保证你游戏数据安全，请尽快完善账号，以免因刷机等原因导制数据丢失"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/dp36"
+                android:layout_marginLeft="@dimen/dp45"
+                android:layout_marginRight="@dimen/dp39"
+                />
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp102"
+            android:layout_marginTop="@dimen/dp45"
+            android:layout_weight="0"
+            >
+        <!--取消支付-->
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/dp16"
+                android:background="@drawable/papa_cancel_exit_btn"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/dp39"
+                android:text="完善账号"
+                android:id="@+id/account"
+                android:layout_marginLeft="@dimen/dp39"
+                />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp16"
+                android:background="@drawable/papa_pay_btn"
+                android:textSize="@dimen/dp39"
+                android:textColor="@color/white"
+                android:text="快速游戏"
+                android:id="@+id/start"
+                android:layout_marginRight="@dimen/dp39"
+                />
+
+        <!--继续支付-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>
+

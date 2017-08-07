@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/pay_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/coolpad_item_click"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:id="@+id/img_picture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/coolpad_icon_zhifubao" />
+
+        <TextView
+            android:id="@+id/pay_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/img_picture"
+            android:textColor="#323233"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_more"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/coolpad_goninto" />
+    </RelativeLayout>
+
+    <!--
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cacaca" />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhuoyou.pay.sdk.window.ZYFloatView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00FFFFFF" >
+
+        <LinearLayout
+            android:id="@+id/zy_float_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:alpha="0"
+            android:background="@drawable/zy_float_content_bg" >
+
+            <LinearLayout
+                android:id="@+id/zy_float_center_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft=" 8dp"
+                    android:text="@string/zy_person_center"
+                    android:textColor="@color/zy_float_content_textcolor"
+                    android:textSize="@dimen/zy_float_content_textsize" />
+
+                <View
+                    android:id="@+id/zy_float_line_pay_center"
+                    android:layout_width="@dimen/zy_float_line_width"
+                    android:layout_height="@dimen/zy_float_line_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/zy_float_line_margin"
+                    android:background="@color/zy_float_line_color" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/zy_float_pay_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/zy_float_pay_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="@string/zy_pay"
+                    android:textColor="@color/zy_float_content_textcolor"
+                    android:textSize="@dimen/zy_float_content_textsize" />
+
+                <ImageView
+                    android:id="@+id/zy_pay_red_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/zy_float_pay_text"
+                    android:src="@drawable/zy_red_point"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/zy_float_activity_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/zy_float_line_margin" >
+
+                <View
+                    android:layout_width="@dimen/zy_float_line_width"
+                    android:layout_height="@dimen/zy_float_line_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/zy_float_line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="@string/zy_activity"
+                    android:textColor="@color/zy_float_content_textcolor"
+                    android:textSize="@dimen/zy_float_content_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zy_float_gift_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/zy_float_line_margin" >
+
+                <View
+                    android:layout_width="@dimen/zy_float_line_width"
+                    android:layout_height="@dimen/zy_float_line_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/zy_float_line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/zy_float_line_margin"
+                    android:text="@string/zy_gift"
+                    android:textColor="@color/zy_float_content_textcolor"
+                    android:textSize="@dimen/zy_float_content_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/zy_float_strategy_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/zy_float_line_margin" >
+
+                <View
+                    android:layout_width="@dimen/zy_float_line_width"
+                    android:layout_height="@dimen/zy_float_line_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/zy_float_line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/zy_float_line_margin"
+                    android:text="@string/zy_strategy"
+                    android:textColor="@color/zy_float_content_textcolor"
+                    android:textSize="@dimen/zy_float_content_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.zhuoyou.pay.sdk.window.ZYFloatView>
+
+    <LinearLayout
+        android:id="@+id/zy_jw_pay_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/zy_jw_pay_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.2"
+            android:background="#000000"
+            android:clickable="false"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/zy_jw_pay_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:alpha="0.3"
+            android:background="#000000"
+            android:src="@drawable/zy_pay_cancel"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:contentDescription="@string/yk_content_description_mini_ui_input_layout"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mini_input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mini_input_bg"
+        android:contentDescription="@string/yk_content_description_mini_ui_input_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/mini_margin_default" >
+
+        <TextView
+            android:id="@+id/mini_input_lable"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mini_text_color_gray"
+            android:textSize="@dimen/mini_text_size_large" />
+
+        <com.alipay.android.mini.widget.CustomEditText
+            android:id="@+id/mini_input_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:minHeight="@dimen/msp_dimen_input_40"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/mini_input_hint_color"
+            android:textSize="@dimen/mini_text_size_large"
+            android:visibility="gone" />
+
+        <com.alipay.android.mini.widget.CustomPasswordEditText
+            android:id="@+id/mini_input_et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:minHeight="@dimen/msp_dimen_input_40"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/mini_input_hint_color"
+            android:textSize="@dimen/mini_text_size_large"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mini_input_error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mini_error_input"
+        android:textSize="@dimen/mini_text_size_medium"
+        android:visibility="gone" />
+
+</LinearLayout>

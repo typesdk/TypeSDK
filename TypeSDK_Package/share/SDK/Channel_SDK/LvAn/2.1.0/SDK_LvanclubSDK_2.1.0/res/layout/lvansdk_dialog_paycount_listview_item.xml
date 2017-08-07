@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/lvansdk_dialog_bg"
+    android:minWidth="80dp" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_margin_16"
+        android:text="@string/txt_choosecard"
+        android:textColor="#00c0ed"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_title"
+        android:layout_marginTop="@dimen/normal_margin_16"
+        android:background="#00c0ed" />
+
+    <ListView
+        android:id="@+id/dialog_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:divider="@drawable/lvansdk_line"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

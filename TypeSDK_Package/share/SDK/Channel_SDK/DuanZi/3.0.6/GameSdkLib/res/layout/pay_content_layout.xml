@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <LinearLayout
+        android:id="@+id/commodity_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <com.ss.android.sdk.pay.view.JustifyTextView 
+            android:id="@+id/commodity_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="56dp"
+            android:textColor="@color/pay_dialog_label_name_color"
+            android:textSize="@dimen/pay_dialog_label_textsize"
+            android:singleLine="true"
+            android:text="@string/pay_dialog_commodity_name_label"/>
+       
+        <TextView
+            android:id="@+id/commodity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/pay_dialog_commodity_name_color"
+            android:textSize="@dimen/pay_dialog_commodity_name_textsize"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="@string/pay_dialog_test"/>
+    
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/pay_dialog_currency_textsize"
+        android:textColor="@color/pay_dialog_commodity_price_color"
+        android:layout_alignTop="@+id/commodity_price_view"
+        android:layout_marginLeft="71.0dp"
+        android:layout_marginTop="2.4dp"
+        android:text="@string/pay_dialog_currency_rmb">
+    </TextView>
+    
+    <LinearLayout
+        android:id="@+id/commodity_price_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commodity_name_view"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <com.ss.android.sdk.pay.view.JustifyTextView
+            android:id="@+id/commodity_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="56.0dp"
+            android:textColor="@color/pay_dialog_label_name_color"
+            android:textSize="@dimen/pay_dialog_label_textsize"
+            android:singleLine="true"
+            android:text="@string/pay_dialog_commodity_price_label"/>
+        
+        <TextView
+            android:id="@+id/commodity_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:textColor="@color/pay_dialog_commodity_price_color"
+            android:textSize="@dimen/pay_dialog_commodity_price_textsize"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="55.0"/>
+    </LinearLayout>
+</RelativeLayout>

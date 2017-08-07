@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="essay_sdk_name">GameSdkEssay</string>
+    <string name="essay_user_agreement">内涵段子用户协议</string>
+    <string name="essay_login_toutiao">登录内涵段子</string>
+    <string name="essay_user_agreement_title">内涵段子用户协议</string>
+    <string name="essay_error_user_agreement_disagree">请同意《内涵段子用户协议》</string>
+    <string name="essay_login_frag_title">登录内涵段子</string>
+    <string name="essay_login_frag_desc">使用段子账号和密码进行登录</string>
+    <string name="essay_bind_prompt2">, 30分钟内有效,\n绑定完成后也可用此密码登录段子</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/com_lenovo_lsf_pay_goods_bg" >
+
+    <TextView
+        android:id="@+id/msg_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="22dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textColor="#191919"
+        android:textSize="16sp" />
+
+</RelativeLayout>

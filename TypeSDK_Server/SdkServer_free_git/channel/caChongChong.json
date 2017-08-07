@@ -1,0 +1,35 @@
+{
+  "version":"1.4.0.20151231",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "token" : ""
+    }
+    ,"out_url" :"http://android-api.ccplay.com.cn/api/v2/payment/checkUser"
+    ,"out_params" :
+    {
+      "token" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "transactionNo": ""
+      ,"partnerTransactionNo": ""
+      ,"statusCode": ""
+      ,"orderPrice" : ""
+      ,"packageId": ""
+      }
+    ,"out_url" :"http://android-api.ccplay.com.cn/api/v2/payment/checkUser"
+    ,"out_params" :
+      {
+        "code": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lion_common_basic_bg">#FFF4F5F7</color>
+    <color name="lion_common_basic_red">#FFD33D3E</color>
+    <color name="lion_common_basic_red_pre">#80D33D3E</color>
+    <color name="lion_common_black">#FF000000</color>
+    <color name="lion_common_blue">#0090ff</color>
+    <color name="lion_common_down_item_nor">#FF252525</color>
+    <color name="lion_common_down_item_pre">#80252525</color>
+    <color name="lion_common_floating_pre">#FF393939</color>
+    <color name="lion_common_game_info_size">#3c3c3c</color>
+    <color name="lion_common_gray">#FFDEDEDE</color>
+    <color name="lion_common_gray_deep">#FFCCCCCC</color>
+    <color name="lion_common_gray_light">#FFE1E1E1</color>
+    <color name="lion_common_gray_while">#F4F5F7</color>
+    <color name="lion_common_line">#FFE6E6E6</color>
+    <color name="lion_common_search_bg">#F1F1F1</color>
+    <color name="lion_common_text_gray">#FF646464</color>
+    <color name="lion_common_translucence">#80000000</color>
+    <color name="lion_common_translucence_deep">#A0000000</color>
+    <color name="lion_common_translucence_light">#40000000</color>
+    <color name="lion_common_translucence_lighter">#26000000</color>
+    <color name="lion_common_transparent">#00000000</color>
+    <color name="lion_common_white">#FFFFFFFF</color>
+    <color name="lion_common_white_pre">#80FFFFFF</color>
+    <color name="lion_common_yellow">#FFAE00</color>
+    <dimen name="lion_dlg_input">40.0dip</dimen>
+    <dimen name="lion_dlg_margin">7.5dip</dimen>
+    <item name="lion_action_menu_post" type="id"/>
+    <item name="lion_action_menu_post_media" type="id"/>
+    <item name="lion_action_menu_post_normal" type="id"/>
+    <item name="lion_action_menu_search" type="id"/>
+    <item name="lion_activity_community_subject_detail_header_content" type="id"/>
+    <item name="lion_activity_hover_layout" type="id"/>
+    <item name="lion_dlg_title" type="id"/>
+    <item name="lion_layout_fit_input_layout" type="id"/>
+    <string name="lion_dlg_activity">最新活动</string>
+    <string name="lion_dlg_activity_1">前往充值</string>
+    <string name="lion_dlg_activity_2">查看详情</string>
+    <string name="lion_dlg_activity_3">查看详情</string>
+    <string name="lion_dlg_activity_4">取消</string>
+    <string name="lion_dlg_already_bind_phone">已绑定手机号:</string>
+    <string name="lion_dlg_bind">绑定</string>
+    <string name="lion_dlg_bind_phone">绑定手机号</string>
+    <string name="lion_dlg_bind_phone_check_first">请先验证绑定的手机号，才可绑定新的手机号</string>
+    <string name="lion_dlg_bind_phone_code_checked">验证完毕，请绑定新的手机号</string>
+    <string name="lion_dlg_bind_phone_notice">绑定手机号，保障账户安全，同时快速找回密码</string>
+    <string name="lion_dlg_bind_phone_notice_1">请先验证绑定的手机号，才可绑定新的手机号</string>
+    <string name="lion_dlg_bind_phone_notice_2">下一步</string>
+    <string name="lion_dlg_cancel">取消</string>
+    <string name="lion_dlg_ccpay_check_notice_1">账户余额</string>
+    <string name="lion_dlg_ccpay_check_notice_2">订单名称</string>
+    <string name="lion_dlg_ccpay_check_notice_3">支付金额</string>
+    <string name="lion_dlg_ccpay_check_notice_4">确认支付</string>
+    <string name="lion_dlg_ccpay_check_notice_5">其他方式</string>
+    <string name="lion_dlg_chang_recharge_account">更换充值帐号</string>
+    <string name="lion_dlg_chang_recharge_account_notices">虫币将充值到更换后的帐号中（请确保输入的帐号无误）</string>
+    <string name="lion_dlg_commit_ing">正在提交中，请稍后…</string>
+    <string name="lion_dlg_community_commit_comment">正在提交评论中，请稍候…</string>
+    <string name="lion_dlg_community_commit_reply">正在提交回复中，请稍候…</string>
+    <string name="lion_dlg_contact_service">若已绑定的手机号无法验证，\n请先联系虫虫客服：2802586192</string>
+    <string formatted="false" name="lion_dlg_create_account_ing">正在为你创建账号，请稍后…</string>
+    <string name="lion_dlg_create_file_ing">正在生成文件中，请稍候…</string>
+    <string formatted="false" name="lion_dlg_del_account">您确定要删除账号:%s</string>
+    <string name="lion_dlg_edit_nike_name">修改昵称</string>
+    <string name="lion_dlg_edit_pwd">修改密码</string>
+    <string name="lion_dlg_enter_game">进入游戏</string>
+    <string name="lion_dlg_fast_registration_failure">一键注册失败</string>
+    <string name="lion_dlg_finish">完成</string>
+    <string name="lion_dlg_forgot_pwd">忘记密码</string>
+    <string name="lion_dlg_forgot_pwd_notice">未绑定手机的用户，联系QQ：2802586192</string>
+    <string name="lion_dlg_get_order_info">正在获取订单信息，请稍候…</string>
+    <string name="lion_dlg_get_phone_fail">获取手机号失败</string>
+    <string name="lion_dlg_get_phone_fail_notice">您可以使用其他手机号进行注册</string>
+    <string name="lion_dlg_get_phone_fail_notice_2">注册即同意</string>
+    <string name="lion_dlg_get_phone_fail_notice_3">《用户协议》</string>
+    <string name="lion_dlg_get_security_code">获取验证码</string>
+    <string name="lion_dlg_goto_register">一键注册</string>
+    <string name="lion_dlg_help_commit">正在提交反馈中，请稍候…</string>
+    <string name="lion_dlg_input_new_pwd">请输入新密码</string>
+    <string name="lion_dlg_input_nick_name">请输入昵称</string>
+    <string name="lion_dlg_input_old_pwd">请输入原密码</string>
+    <string name="lion_dlg_input_second_pwd">再次填写新密码</string>
+    <string name="lion_dlg_loading">正在加载中，请稍候…</string>
+    <string name="lion_dlg_login">登录</string>
+    <string name="lion_dlg_login_ing_btn">切换账号</string>
+    <string formatted="false" name="lion_dlg_login_ing_notice">用户%s登录中…</string>
+    <string name="lion_dlg_login_notice">将用您的手机发送一条短信进行验证</string>
+    <string name="lion_dlg_login_notice_2">已为您获取到账号</string>
+    <string name="lion_dlg_logout_game">退出游戏</string>
+    <string name="lion_dlg_logout_game_2">暂不退出</string>
+    <string name="lion_dlg_next_step">下一步</string>
+    <string name="lion_dlg_notice">提示</string>
+    <string name="lion_dlg_notice_play_video_1">建议浏览视频的时候不要同时离线下载</string>
+    <string name="lion_dlg_notice_play_video_2">好，看视频为主</string>
+    <string name="lion_dlg_notice_play_video_3">不了，我要下载</string>
+    <string name="lion_dlg_pay_ing">正在支付中，请稍后…</string>
+    <string formatted="false" name="lion_dlg_phone_register_account">账号：%s\n</string>
+    <string formatted="false" name="lion_dlg_phone_register_pwd">密码：%s\n</string>
+    <string name="lion_dlg_register_fast">快速注册</string>
+    <string name="lion_dlg_screen_shot_notice">确定要删除该截图？</string>
+    <string name="lion_dlg_screen_shot_save_account_info">游戏将截图保存您的账号与密码\n请及时修改密码并删除截图~\n\n</string>
+    <string formatted="false" name="lion_dlg_screen_shot_save_ing">正在保存截图中，请稍后…</string>
+    <string name="lion_dlg_sure">确定</string>
+    <string name="lion_dlg_update_nick_name_ing">正在修改昵称中，请稍后…</string>
+    <string name="lion_dlg_update_phone">更换手机号码</string>
+    <string name="lion_dlg_update_user_pwd_ing">正在修改密码中，请稍后…</string>
+    <string name="lion_dlg_upload_ing">发布中，请稍候…</string>
+    <string name="lion_dlg_upload_subject">发表贴子</string>
+    <string name="lion_dlg_user_game_card_pay">正在进行点卡支付，请稍后…</string>
+    <string name="lion_dlg_user_recharge_card_pay">正在充值卡支付，请稍后…</string>
+    <string name="lion_dlg_user_recharge_card_pay_check">正在查询支付结果，过程可能有点漫长，请稍后…</string>
+    <string name="lion_dlg_user_recharge_check_account">正在验证帐号，请稍后…</string>
+    <string name="lion_dlg_video_notice">确定要删除该视频？</string>
+    <string name="lion_hint_account">手机号/邮箱/账号</string>
+    <string name="lion_hint_feedback_contact">请填写您的联系方式（非必填）</string>
+    <string name="lion_hint_feedback_content">请描述您遇到的问题或建议（譬如代金券 、论坛 、充值遇到的问题）</string>
+    <string name="lion_hint_input_card_no">请输入充值卡账号</string>
+    <string name="lion_hint_input_card_pwd">请输入充值卡密码</string>
+    <string name="lion_hint_input_post_content">请输入贴子内容</string>
+    <string name="lion_hint_input_post_title">请输入标题</string>
+    <string name="lion_hint_phone">请输入手机号</string>
+    <string name="lion_hint_pwd">请输入密码</string>
+    <string name="lion_hint_pwd_second">再次输入密码</string>
+    <string name="lion_hint_register_account">请输入账号</string>
+    <string name="lion_hint_security_code">请输入验证码</string>
+    <string name="lion_hint_user_card">请输入您的身份证号</string>
+    <string name="lion_hint_user_name">请输入您的真实姓名</string>
+    <string name="lion_load_fail">加载失败,请点击重试</string>
+    <string name="lion_load_loading">正在获取数据中,请稍后</string>
+    <string name="lion_load_no_data">无数据</string>
+    <string name="lion_text_FAQ">常见问题</string>
+    <string name="lion_text_account_change">帐号退出</string>
+    <string name="lion_text_all">全部</string>
+    <string name="lion_text_anti_addict_system">防沉迷系统</string>
+    <string name="lion_text_anti_addict_system_real_name">实名认证</string>
+    <string name="lion_text_available_coupon_use">选择可用代金卷</string>
+    <string name="lion_text_available_coupon_use_notice">无可用代金卷</string>
+    <string name="lion_text_available_coupon_use_sure">确定提交</string>
+    <string name="lion_text_back">返回</string>
+    <string name="lion_text_camera">拍照</string>
+    <string name="lion_text_camera_film">相机胶卷</string>
+    <string name="lion_text_choice">请选择</string>
+    <string name="lion_text_click_to_retry">点此重试</string>
+    <string name="lion_text_click_view">点击查看</string>
+    <string name="lion_text_community_all_comment">全部评论</string>
+    <string name="lion_text_community_attention">关注</string>
+    <string name="lion_text_community_attention_cancel">取消关注</string>
+    <string name="lion_text_community_attention_cancel_commit">正在取消关注，请稍候…</string>
+    <string name="lion_text_community_attention_commit">正在提交关注信息，请稍候…</string>
+    <string formatted="false" name="lion_text_community_comment_floor">%s楼</string>
+    <string name="lion_text_community_comment_sort_by_num">按楼层排序</string>
+    <string name="lion_text_community_comment_sort_by_time">按时间排序</string>
+    <string name="lion_text_community_floor_no_comment">还没人回复，快来抢沙发~</string>
+    <string name="lion_text_community_no_essence">暂无精华贴~</string>
+    <string name="lion_text_community_no_video">暂无视频贴~</string>
+    <string name="lion_text_community_photo_add">添加图片</string>
+    <string name="lion_text_community_plate_detail_item_all">全部</string>
+    <string name="lion_text_community_plate_detail_item_essence">精华</string>
+    <string name="lion_text_community_plate_detail_item_video">视频</string>
+    <string name="lion_text_community_post_media">发表视频</string>
+    <string name="lion_text_community_post_no_comment">还没有人评论，快来抢沙发吧~</string>
+    <string name="lion_text_community_post_normal">发表贴子</string>
+    <string formatted="false" name="lion_text_community_post_time">发表时间：%s</string>
+    <string formatted="false" name="lion_text_community_reply">回复%s:%2s</string>
+    <string formatted="false" name="lion_text_community_reply_more">更多%s条回复>></string>
+    <string name="lion_text_community_reply_str">回复</string>
+    <string formatted="false" name="lion_text_community_subject_count_today">今日∶%s</string>
+    <string formatted="false" name="lion_text_community_subject_count_total">贴子∶%s</string>
+    <string name="lion_text_community_subject_detail">贴子详情</string>
+    <string name="lion_text_community_sure">确定</string>
+    <string formatted="false" name="lion_text_community_update_time">更新时间：%s</string>
+    <string name="lion_text_continue">继续</string>
+    <string name="lion_text_delete">删除</string>
+    <string name="lion_text_down">下载</string>
+    <string name="lion_text_exchange">兑换</string>
+    <string name="lion_text_expense_log">消费记录</string>
+    <string name="lion_text_fast_register">快速注册</string>
+    <string name="lion_text_feedback">意见反馈</string>
+    <string name="lion_text_feedback_commit">提交反馈</string>
+    <string name="lion_text_feedback_notice">游戏内问题（譬如对战、游戏内信息等问题） 请联系游戏客服GG</string>
+    <string name="lion_text_floating_community">社区</string>
+    <string name="lion_text_floating_help">帮助</string>
+    <string name="lion_text_floating_msg">消息</string>
+    <string name="lion_text_floating_record">录制</string>
+    <string name="lion_text_floating_record_start">开始录制</string>
+    <string name="lion_text_floating_return">返回</string>
+    <string name="lion_text_floating_screen_shot">截图</string>
+    <string name="lion_text_floating_user_info">个人中心</string>
+    <string name="lion_text_game_card_pay">点卡支付</string>
+    <string name="lion_text_game_care_choice">请选择点卡类型</string>
+    <string name="lion_text_game_care_how_much">请选择点卡面值</string>
+    <string name="lion_text_game_care_input_notice">请输入点卡信息</string>
+    <string formatted="false" name="lion_text_game_coupon_1">%s元代金券</string>
+    <string formatted="false" name="lion_text_game_coupon_2">有效期至：%s</string>
+    <string formatted="false" name="lion_text_game_coupon_3">最低消费：%s元</string>
+    <string formatted="false" name="lion_text_goto_pay_type">正在跳转到%s支付~</string>
+    <string name="lion_text_help">帮助</string>
+    <string name="lion_text_help_notice">暂无消息~</string>
+    <string name="lion_text_input_card_num">请输入卡号</string>
+    <string name="lion_text_install">安装</string>
+    <string name="lion_text_last_day">最近一天</string>
+    <string name="lion_text_last_month">近一个月</string>
+    <string name="lion_text_last_three_month">近三个月</string>
+    <string name="lion_text_last_week">最近一周</string>
+    <string name="lion_text_loading">正在加载中,请稍候…</string>
+    <string name="lion_text_loading_video">正在加载视频中，请稍候…</string>
+    <string name="lion_text_money_not_enough">余额不足</string>
+    <string name="lion_text_net_unlink">网络连接失败，请检查网络！网络恢复将自动继续播放！</string>
+    <string name="lion_text_notice_down_ccplay">下载虫虫助手，抢百万现金红包!</string>
+    <string name="lion_text_parents_2_supervise">家长监督工程</string>
+    <string name="lion_text_pay_other_way">其他方式</string>
+    <string name="lion_text_pay_type_UnionPay">银联</string>
+    <string name="lion_text_pay_type_qq">QQ</string>
+    <string name="lion_text_pay_type_weixin">微信</string>
+    <string name="lion_text_pay_type_zhifubao">支付宝</string>
+    <string name="lion_text_phone">手机</string>
+    <string name="lion_text_please_choice_type">请选择类型</string>
+    <string name="lion_text_post">发表</string>
+    <string name="lion_text_qq">QQ</string>
+    <string name="lion_text_recharge">充值虫币</string>
+    <string name="lion_text_recharge_account_change">更换帐号</string>
+    <string name="lion_text_recharge_account_notices">充值帐号：</string>
+    <string name="lion_text_recharge_activity_explain">活动说明</string>
+    <string name="lion_text_recharge_card">充值卡支付</string>
+    <string formatted="false" name="lion_text_recharge_coupon_pay">抵扣： %.2f</string>
+    <string name="lion_text_recharge_coupon_pay_full">代金劵已抵扣，可点击支付方式直接支付~</string>
+    <string name="lion_text_recharge_log">充值记录</string>
+    <string name="lion_text_recharge_must_pay">应付金额</string>
+    <string name="lion_text_recharge_notice_1">请选择充值卡类型</string>
+    <string name="lion_text_recharge_notice_2">请选择充值面值(1元=1虫币)</string>
+    <string name="lion_text_recharge_notice_3">请输入充值卡信息</string>
+    <string name="lion_text_recharge_notice_4">友情提示</string>
+    <string name="lion_text_recharge_notice_5">1.您选择并使用的充值卡面值必须和消费面值一致，否则可能导致支付不成功或余额丢失。\n2.由于网络原因，可能会出现延迟情况。若超过24小时未到账，请联系虫虫客服</string>
+    <string name="lion_text_recharge_notice_6">立即充值</string>
+    <string name="lion_text_recharge_num">请选择充值数量(%s)</string>
+    <string name="lion_text_recharge_other_money">其他金额</string>
+    <string name="lion_text_register_account">用户名注册</string>
+    <string name="lion_text_register_phone">手机号注册</string>
+    <string formatted="false" name="lion_text_remaining_second">剩余%s秒</string>
+    <string name="lion_text_replay">重播</string>
+    <string name="lion_text_screen_shot">查看截图</string>
+    <string name="lion_text_screen_shot_no_data">快去截图吧，虫虫工具截图又快又准~</string>
+    <string name="lion_text_sdk_name">LionSdk</string>
+    <string name="lion_text_search">搜索</string>
+    <string name="lion_text_see">查看</string>
+    <string name="lion_text_send">发送</string>
+    <string name="lion_text_stop">暂停</string>
+    <string name="lion_text_stop_ing">暂停中</string>
+    <string name="lion_text_sure">确定</string>
+    <string name="lion_text_system_msg">系统消息</string>
+    <string name="lion_text_system_msg_1">暂无消息~</string>
+    <string name="lion_text_temporarily_no_overdue_coupon">暂无过期代金劵~"</string>
+    <string name="lion_text_temporarily_no_use_coupon">暂无可用代金劵~</string>
+    <string name="lion_text_unbind">未绑定</string>
+    <string name="lion_text_unlink_url">该网络地址不可用,无法播放视频</string>
+    <string name="lion_text_user_anti_addict_system_btn">确认提交</string>
+    <string name="lion_text_user_anti_addict_system_checked">已认证</string>
+    <string name="lion_text_user_anti_addict_system_notice_card">身份证号</string>
+    <string name="lion_text_user_anti_addict_system_notice_icon">身份证照片</string>
+    <string name="lion_text_user_anti_addict_system_notice_name">真实姓名</string>
+    <string name="lion_text_user_auth_notice">根据国家规定，游戏用户需实名认证~</string>
+    <string name="lion_text_user_center">个人中心</string>
+    <string name="lion_text_user_center_account">帐号</string>
+    <string name="lion_text_user_center_balance">余额</string>
+    <string formatted="false" name="lion_text_user_center_balance_1">%s虫币</string>
+    <string name="lion_text_user_center_bill">消费明细</string>
+    <string name="lion_text_user_center_coupon">代金券</string>
+    <string formatted="false" name="lion_text_user_center_coupon_1">%s张</string>
+    <string name="lion_text_user_center_nike_name">昵称</string>
+    <string name="lion_text_user_center_phone">手机号</string>
+    <string name="lion_text_user_center_update_pwd">修改密码</string>
+    <string name="lion_text_user_change_choice">筛选</string>
+    <string name="lion_text_user_change_log">消费明细</string>
+    <string name="lion_text_user_change_log_detail">消费明细详情</string>
+    <string name="lion_text_user_change_log_detail_1">订单号</string>
+    <string name="lion_text_user_change_log_detail_2">订单名称</string>
+    <string name="lion_text_user_change_log_detail_3">订单金额</string>
+    <string formatted="false" name="lion_text_user_change_log_detail_4">%s元</string>
+    <string name="lion_text_user_change_log_detail_5">代金券抵扣</string>
+    <string name="lion_text_user_change_log_detail_6">付款明细</string>
+    <string name="lion_text_user_change_log_detail_7">创建时间</string>
+    <string formatted="false" name="lion_text_user_change_log_detail_8">%s\t\t实际支付：%s元</string>
+    <string name="lion_text_user_change_log_money">金额</string>
+    <string name="lion_text_user_change_log_null">暂无消费明细~</string>
+    <string name="lion_text_user_change_log_time">时间</string>
+    <string name="lion_text_user_coupon_can_use">可使用</string>
+    <string name="lion_text_user_coupon_out_data">已过期</string>
+    <string name="lion_text_user_recharge">账号充值</string>
+    <string name="lion_text_user_service_agreement">用户服务协议</string>
+    <string formatted="false" name="lion_text_user_wallet_balance_money">%s元</string>
+    <string name="lion_text_user_wallet_cc_recharge_immediately">立即充值</string>
+    <string name="lion_text_user_wallet_cc_recharge_notice">请选择充值数量 (1虫币=1元)</string>
+    <string name="lion_text_user_wallet_order_give_coupon">赠送代金券</string>
+    <string name="lion_text_video_list">查看视频</string>
+    <string name="lion_text_video_no_data">记录游戏精彩瞬间，与虫虫一起分享~</string>
+    <string name="lion_text_video_record_notice_1">未知错误，请尝试关闭应用后重启！</string>
+    <string name="lion_text_video_record_notice_2">视频将在3秒内开始录制\n视频录制最大时长为15分钟，请注意录制时间</string>
+    <string name="lion_text_wallet_order_channel_list">请选择支付方式</string>
+    <string name="lion_text_wallet_order_must_pay">应付金额</string>
+    <string name="lion_text_wallet_order_name">订单名称</string>
+    <string name="lion_text_wallet_order_notice_1">我已阅读并同意</string>
+    <string name="lion_text_wallet_order_notice_2">《用户支付协议》</string>
+    <string name="lion_text_wallet_order_notice_3">订单详情</string>
+    <string formatted="false" name="lion_text_wallet_order_notice_4">电话：%s</string>
+    <string formatted="false" name="lion_text_wallet_order_notice_5">邮箱：%s</string>
+    <string name="lion_text_wallet_order_notice_6">用户支付协议</string>
+    <string name="lion_text_wallet_order_price">支付金额</string>
+    <string name="lion_text_wallet_order_privilege_notice_1">代金劵抵扣</string>
+    <string name="lion_text_wallet_order_privilege_notice_2">优惠信息</string>
+    <string name="lion_text_wallet_order_privilege_notice_3">（折扣与代金券不可同时使用）</string>
+    <string name="lion_text_wallet_order_privilege_notice_4">折扣</string>
+    <string formatted="false" name="lion_text_wallet_order_privilege_notice_4_discount">-%.2f(%.1f折)</string>
+    <string name="lion_text_wallet_order_privilege_notice_5">代金劵</string>
+    <string name="lion_text_wallet_order_privilege_notice_5_coupon">请选择代金劵</string>
+    <string name="lion_text_wallet_order_privilege_notice_6">（享受会员折扣时无法使用）</string>
+    <string name="lion_toast_account_length_error">账号长度不够~</string>
+    <string name="lion_toast_apk_is_not_exist"> 打开失败~</string>
+    <string name="lion_toast_can_not_screen_shot">录制过程中请不要截图~</string>
+    <string name="lion_toast_card_number_is_null">卡号不能为空~</string>
+    <string name="lion_toast_card_pay_way_fail">获取点卡支付方式失败~</string>
+    <string name="lion_toast_card_pwd_is_null">密码不能为空~</string>
+    <string name="lion_toast_change_pwd_success">修改密码成功~</string>
+    <string name="lion_toast_community_comment_del">该评论由于违反规定已被删除!</string>
+    <string name="lion_toast_community_comment_success">评论成功~</string>
+    <string name="lion_toast_community_create_file_fail">文件生成失败~</string>
+    <string name="lion_toast_community_not_choice_photo">您一张图片也没有选哟~</string>
+    <string name="lion_toast_community_not_open_photo">无法打开图片~</string>
+    <string name="lion_toast_community_parse_already">您已经点过赞，请不要重复操作~</string>
+    <string name="lion_toast_community_parse_success">点赞成功~</string>
+    <string name="lion_toast_community_post_subject_content_length">内容15个字以上!</string>
+    <string name="lion_toast_community_post_subject_success">贴子发表成功~</string>
+    <string name="lion_toast_community_post_subject_title_length">标题在8~25个字以内!</string>
+    <string name="lion_toast_community_reply_success">评论成功~</string>
+    <string name="lion_toast_community_sdcard_unavailable">SD卡不可用,无法使用此功能~</string>
+    <string name="lion_toast_community_subject_del">该贴由于违反规定已被删除!</string>
+    <string name="lion_toast_community_upload_video">在虫虫助手中可发表视频哦，请先下载虫虫助手~</string>
+    <string name="lion_toast_download_pause">下载被暂停~</string>
+    <string name="lion_toast_fast_registration_failure">一键注册失败!</string>
+    <string name="lion_toast_feedback_notice">反馈内容至少2个字以上~</string>
+    <string name="lion_toast_feedback_notice_2">QQ号码不能为空~</string>
+    <string formatted="false" name="lion_toast_floating_record_notice">SD卡空间只有%sM，建议您录制不超过%s分钟的视频，以免空间不足</string>
+    <string name="lion_toast_floating_record_notice_slow">SD卡空间不足，您需要先清理您的SD卡，保证至少有100M空间</string>
+    <string name="lion_toast_get_config_fail">获取配置失败，请确认网络连接是否正常~</string>
+    <string name="lion_toast_get_screenshot_permission_success">已获取截图权限</string>
+    <string name="lion_toast_get_verification_code_fail">获取验证码失败~</string>
+    <string name="lion_toast_get_verification_code_success">获取验证码成功~</string>
+    <string name="lion_toast_get_video_recorder_permission_success">已获取视频录制权限</string>
+    <string name="lion_toast_has_no_account">无任何账号记录~</string>
+    <string name="lion_toast_login_success">登录成功~</string>
+    <string name="lion_toast_match_pwd_fail">两次密码不一致，请重新输入~</string>
+    <string name="lion_toast_nick_name_cannot_empty">昵称不能为空~</string>
+    <string name="lion_toast_nick_name_no_update">昵称无更改~~</string>
+    <string name="lion_toast_nick_name_too_long">昵称长度不能大于15个字~</string>
+    <string name="lion_toast_nick_name_too_small">昵称长度不能小于2个字~</string>
+    <string formatted="false" name="lion_toast_not_less_than_minimum_amount">最低消费金额不能小于%s元</string>
+    <string name="lion_toast_open_fail"> 打开失败~</string>
+    <string name="lion_toast_pay_and_coupon_not_support">该支付方式暂时不支持代金劵抵扣~</string>
+    <string name="lion_toast_pay_cancel">支付取消~</string>
+    <string name="lion_toast_pay_fail">支付失败~</string>
+    <string name="lion_toast_pay_success">支付成功，将在1~10分钟内到账~</string>
+    <string name="lion_toast_pay_unknown">支付结果未知~</string>
+    <string name="lion_toast_pay_wait">充值结果需几分钟，请稍后查看~</string>
+    <string name="lion_toast_phone_length_error">电话号码输入有误~</string>
+    <string name="lion_toast_photo_choose_too_much">所选的图片不能超过三张~</string>
+    <string name="lion_toast_please_enter_content">请输入回复内容~</string>
+    <string name="lion_toast_please_frequent_refresh">请不要频繁刷新~</string>
+    <string name="lion_toast_pwd_length_error">密码长度6~16位</string>
+    <string formatted="false" name="lion_toast_register_ing">正在注册中，请稍后…</string>
+    <string name="lion_toast_register_success">注册成功~</string>
+    <string name="lion_toast_screen_success_and_save">视频录制成功，文件已保存到 %s</string>
+    <string name="lion_toast_screenshot_fail">截图失败！请尝试同时按下电源键+音量下键或者电源键+HOME键进行截图!</string>
+    <string name="lion_toast_screenshot_fail_root">截图失败，请确认是否授予权限!</string>
+    <string name="lion_toast_screenshot_fail_saved">截图保存失败，请手动保存~</string>
+    <string name="lion_toast_screenshot_success_and_save">截图成功，文件已保存到 %s</string>
+    <string name="lion_toast_screenshot_successfully_saved">截图保存成功，保存在系统图库内~</string>
+    <string name="lion_toast_sd_card_unable">SD卡不可用，无法使用此功能~</string>
+    <string name="lion_toast_sdcard_unable">SD卡不可用，无法保存图片，请手动保存~</string>
+    <string name="lion_toast_two_password_not_unified"> 前后两次密码不统一~</string>
+    <string name="lion_toast_update_user_info_success">修改成功~</string>
+    <string name="lion_toast_user_center_refresh_success">余额刷新成功~</string>
+    <string name="lion_toast_user_coupon_input_change_code">请先输入兑换码~</string>
+    <string name="lion_toast_user_pay_discount_and_cc">享受会员折扣的同时无法使用虫币支付~</string>
+    <string name="lion_toast_user_recharge_check_account_fail">帐号验证失败~</string>
+    <string name="lion_toast_user_recharge_check_account_success">帐号验证成功~</string>
+    <string name="lion_toast_user_recharge_choice_one">请选择要充值的金额~</string>
+    <string name="lion_toast_user_recharge_input_number">请输入一个正确的金额~</string>
+    <string name="lion_toast_user_recharge_number_too_small">数额太小无法充值~</string>
+    <string name="lion_toast_verification_code_length_error"> 验证码长度不够~</string>
+    <string name="lion_toast_video_fail">视频录制失败，请确认是否授予权限!</string>
+    <style name="SingleDialogStyle">
+        <!--设置dialog的背景，此处为系统给定的透明值-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否显示标题-->
+        <item name="android:windowNoTitle">false</item>　　　　　　　　
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--是否有覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置Activity出现方式-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="lion_CCpayTheme" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:textColor">@color/lion_common_black</item>
+        <item name="android:textColorHint">@color/lion_common_text_gray</item>
+    </style>
+    <style name="lion_actionbar_menu_list_item">
+        <item name="android:layout_width">125.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:background">@drawable/lion_common_menu_list_item_selector</item>
+        <item name="android:drawablePadding">7.5dip</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">@color/lion_common_text_black_2_red_selector</item>
+    </style>
+    <style name="lion_activity_expense_choice_type">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/lion_common_expense_choice_selsetor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginLeft">7.5dp</item>
+    </style>
+    <style name="lion_fragment_text_tab">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/lion_common_transparent_selector</item>
+        <item name="android:textColor">@color/lion_common_text_black_2_red_selector</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:drawableBottom">@drawable/lion_common_line_transparent_2_red_selector
+        </item>
+    </style>
+    <style name="lion_layout_floating_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minWidth">50.0dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:textColor">@color/lion_common_white</item>
+        <item name="android:textSize">10.0sp</item>
+    </style>
+    <style name="lion_register_style" parent="lion_fragment_text_tab">
+        <item name="android:drawableBottom">@null</item>
+    </style>
+    <style name="lion_style_dlg_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">110.0dip</item>
+        <item name="android:minHeight">40.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="lion_style_dlg_btn_right" parent="lion_style_dlg_btn">
+        <item name="android:background">@drawable/lion_common_red_frame_round_selector</item>
+        <item name="android:textColor">@color/lion_common_text_white_2_red_selector</item>
+    </style>
+    <style name="lion_style_dlg_phone_notice">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginBottom">13.0dip</item>
+    </style>
+    <style name="lion_style_dlg_single" parent="lion_style_dlg_btn">
+        <item name="android:background">@drawable/lion_common_red_round_selector</item>
+        <item name="android:textColor">@color/lion_common_text_red_2_white_selector</item>
+    </style>
+    <style name="lion_style_dlg_title">
+        <item name="android:id">@id/lion_dlg_title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/lion_common_dialog_title_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">50.0dip</item>
+        <item name="android:textColor">@color/lion_common_basic_red</item>
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="lion_style_user_auth"/>
+    <style name="lion_style_user_center">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">7.5dip</item>
+        <item name="android:drawableRight">@drawable/lion_arrow_right_gray</item>
+        <item name="android:textColor">@color/lion_common_black</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <style name="lion_text_red_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">40.0dip</item>
+        <item name="android:background">@drawable/lion_common_red_frame_round_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/lion_common_text_white_2_red_selector</item>
+    </style>
+    <style name="lion_text_red_stroke_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">53.0dip</item>
+        <item name="android:minHeight">23.0dip</item>
+        <item name="android:background">@drawable/lion_common_red_round_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/lion_common_text_red_2_white_selector</item>
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:paddingLeft">7.5dip</item>
+        <item name="android:paddingRight">7.5dip</item>
+    </style>
+    <style name="lion_transparent" parent="@style/lion_CCpayTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

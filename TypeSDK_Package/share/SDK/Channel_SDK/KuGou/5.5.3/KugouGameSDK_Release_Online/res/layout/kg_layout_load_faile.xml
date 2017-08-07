@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_load_faile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/img_load_faile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kg_icon_load_failed" />
+
+    <TextView
+        android:id="@+id/tv_loading_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/kg_loading_wrong"
+        android:textColor="@color/kg_common_gray_darker"
+        android:textSize="@dimen/kg_common_large" />
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/kg_selector_btn_refresh"
+        android:minHeight="40dp"
+        android:minWidth="120dp"
+        android:text="@string/kg_click_refresh"
+        android:textColor="@color/kg_common_blue"
+        android:textSize="@dimen/kg_common_large" />
+
+</LinearLayout>

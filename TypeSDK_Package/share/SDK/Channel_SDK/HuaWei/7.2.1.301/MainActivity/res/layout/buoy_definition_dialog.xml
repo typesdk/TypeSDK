@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="#b3000000">
+
+<LinearLayout 
+    android:layout_width="324dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="18dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp" 
+    android:background="@drawable/buoy_dialog_backgroud">
+
+    <TextView
+        android:id="@+id/record_definition_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/buoy_screen_record"
+        android:textSize="14sp" 
+        android:textColor="@color/buoy_black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/buoy_screen_record_description"
+        android:textSize="13sp" 
+        android:textColor="@color/buoy_black" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+        
+        <RadioButton
+	         android:id="@+id/standard_definition_radio"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:button="@drawable/buoy_definition_radio_selector"
+	         android:text="@string/buoy_standard_definition" 
+	         android:textSize="12sp"
+	         android:textColor="@color/buoy_black" />
+        
+        <RadioButton
+	        android:id="@+id/high_definition_radio"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="8dp"
+	        android:layout_weight="1"
+	        android:button="@drawable/buoy_definition_radio_selector"
+	        android:text="@string/buoy_high_definition" 
+	        android:textSize="12sp"
+	        android:textColor="@color/buoy_black" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="137dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/buoy_dialog_btn_bg"
+            android:text="@string/buoy_cancel" 
+            android:textSize="14sp"
+            android:textColor="@color/buoy_black" />
+
+        <Button
+            android:id="@+id/continues"
+            android:layout_width="137dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buoy_dialog_btn_bg"
+            android:text="@string/buoy_continue" 
+            android:textSize="14sp"
+            android:textColor="@color/buoy_black"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

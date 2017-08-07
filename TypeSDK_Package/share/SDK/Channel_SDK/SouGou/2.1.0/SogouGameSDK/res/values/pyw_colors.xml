@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 基本颜色 -->
+    <color name="pyw_common_white">#ffffffff</color>
+    <color name="pyw_common_white_lighter">#aaffffff</color>
+    <color name="pyw_common_black">#ff000000</color>
+    <color name="pyw_common_red">#ffff0000</color>
+    <color name="pyw_common_green">#ff82C94D</color>
+    <color name="pyw_common_blue">#ff0000ff</color>
+    <color name="pyw_common_pink">#ffff5681</color>
+    <color name="pyw_common_orange">#ffff6600</color>
+
+    <!-- 字体，灰色（深色） -->
+    <color name="pyw_common_gray_darker">#FF3F3F3F</color>
+    <!-- 灰色（稍深色） -->
+    <color name="pyw_common_gray_light">#646464</color>
+    <!-- 字体，灰色（浅色） -->
+    <color name="pyw_common_gray_lighter">#ffababab</color>
+    <!-- 字体，灰色（最浅色） -->
+    <color name="pyw_common_gray_more_lighter">#ffcccccc</color>
+    <!-- 水蓝色 -->
+    <color name="pyw_common_blue_text">#00B0FF</color>
+    <!-- 标题栏色值 -->
+    <color name="pyw_common_title_background">#ff323232</color>
+    <!-- 底部栏色值 -->
+    <color name="pyw_common_bottom_background">#fff7f7f8</color>
+    <!-- 透明颜色 -->
+    <color name="pyw_common_transparent">#00000000</color>
+    <!-- 通用按钮点击色:灰色 -->
+    <color name="pyw_common_item_pressed">#eaeff3</color>
+    <!-- 分割线颜色 -->
+    <color name="pyw_common_item_divider">#C7C7C7</color>
+    <!-- 通用背景色:浅灰色 -->
+    <color name="pyw_common_background">#EAEAEA</color>
+    <!-- 用户中心通用字体颜色 -->
+    <color name="pyw_common_usercenter_textcolor">#4A4A4A</color>
+    <color name="pyw_common_hint_color">#C7C7C7</color>
+
+    <!-- 白色按钮的点击色 -->
+    <color name="pyw_btn_white_pressed">#F0F0F0</color>
+    <!-- 蓝色按钮常态色 -->
+    <color name="pyw_btn_blue_normal">#3FA8EC</color>
+    <!-- 蓝色按钮点击色 -->
+    <color name="pyw_btn_blue_pressed">#2792D7</color>
+    <!-- 不可点击字体色 -->
+    <color name="pyw_disable_textcolor">#BDBDBD</color>
+    <color name="pyw_safe_text">#555555</color>
+    <color name="pyw_forget_text">#666666</color>
+
+    <!-- 光速新皮肤 -->
+    <color name="pyw_yq_title_bg">#ffffff</color>
+    <color name="pyw_yq_common_item_divider">#ee970f</color>
+    <color name="pyw_yq_btn_blue_pressed">#ee970f</color>
+    <color name="pyw_yq_btn_blue_normal">#d98b0d</color>
+
+    <!--  -->
+    <color name="pyw_register_success_text">#ee970f</color>
+    <color name="pyw_charger_text">#FF3F3F3F</color>
+    <color name="pyw_charger_text_money_total_or_reduce">#d98b0d</color>
+    <color name="pyw_account_select">#ee970f</color>
+    <color name="pyw_account_unselect">#ffffff</color>
+    <color name="pyw_edit_focus">#FF3F3F3F</color>
+    <color name="pyw_edit_unfocus">#BDBDBD</color>
+    <color name="pyw_confirmnewpsd_account_name">#ee970f</color>
+    <color name="pyw_rp_bg">#F1F1F1</color>
+    <color name="pyw_rp_prograss">#FF8B52</color>
+    <color name="pyw_rp_text">#FF3F3F3F</color>
+    <color name="pyw_tips_fail">#00B0FF</color>
+    <color name="pyw_circle_fill_color">#EAEAEA</color>
+    <color name="pyw_circle_stroke_color">#C7C7C7</color>
+
+</resources>

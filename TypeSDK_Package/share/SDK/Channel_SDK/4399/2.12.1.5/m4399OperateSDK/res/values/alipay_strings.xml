@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="confirm_title">提示</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="processing">加载中</string>
+</resources>

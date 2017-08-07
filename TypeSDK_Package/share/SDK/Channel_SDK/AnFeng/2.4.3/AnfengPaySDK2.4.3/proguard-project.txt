@@ -1,0 +1,78 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+
+
+ # -libraryjars /libs/alipaySDK-20150610.jar
+ # -libraryjars /libs/ipaynow_plugin_phone_onlywechat_v1.3.0.jar
+ # -libraryjars /libs/UPPayAssistEx.jar
+ # -libraryjars /libs/UPPayPluginExStd.jar
+ # -libraryjars /libs/testinagent.jar
+
+ #  -dontwarn com.alipay.android.app.**
+ #  -keep interface com.alipay.android.app.** {*;}
+ #  -keep class com.alipay.android.app.** {*;}
+
+
+# -dontwarn com.UCMobile.**
+# -keep  interface com.UCMobile.** {*;}
+# -keep  class com.UCMobile.** {*;}
+ 
+ # -dontwarn com.unionpay.**
+ # -keep  interface com.unionpay.** {*;}
+ # -keep  class com.unionpay.** {*;}
+ 
+# -dontwarn com.testin.agent.**
+# -keep class     com.testin.agent.** {*;}
+
+-keepattributes JavascriptInterface
+-renamesourcefileattribute SourceFile  
+-keepattributes Signature, Exceptions,InnerClasses,Deprecated,SourceFile,LineNumberTable,EnclosingMethod
+
+
+-keepclassmembers class com.anfeng.pay.activity.AFPayByRenGong$MyJavaScript
+ {
+   public *;
+}
+
+
+
+-keep  class  com.anfeng.pay.AnFengPaySDK{
+   *;
+ }
+
+
+
+
+ 
+-keep  class  com.anfeng.pay.entity.CPInfo{
+    *;
+ }
+
+-keep   class com.anfeng.pay.entity.OrderInfo{ 
+    *;
+}
+-keep   class com.anfeng.pay.entity.UserInfo{ 
+    *;
+}
+
+
+
+
+
+

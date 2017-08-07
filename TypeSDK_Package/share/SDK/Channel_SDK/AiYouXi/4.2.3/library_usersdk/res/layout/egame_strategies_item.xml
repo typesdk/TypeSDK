@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/egame_list_item_selector" >
+
+        <TextView
+            android:id="@+id/title"
+            android:textSize="@dimen/dp_16"
+            android:textColor="@color/egame_usersdk_dark_gray"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_13"
+            android:lines="1"
+            android:text="pjsjdop" />
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="112dp"
+            android:layout_height="72dp"
+            android:layout_below="@id/title"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_9"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:textSize="@dimen/dp_14"
+            android:textColor="@color/egame_usersdk_regist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginRight="@dimen/dp_22"
+            android:layout_marginTop="@dimen/dp_6"
+            android:layout_toRightOf="@id/iv_pic"
+            android:maxLines="3"
+            android:text="lslsls了算了算了算了算了算了是算了算了算了算了算了了试了试" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:textSize="@dimen/dp_11"
+            android:textColor="@color/egame_index_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_des"
+            android:layout_marginRight="@dimen/dp_22"
+            android:layout_marginTop="8dp"
+            android:text="2014-5-13" />
+    </RelativeLayout>
+
+</RelativeLayout>

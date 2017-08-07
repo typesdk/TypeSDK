@@ -1,0 +1,83 @@
+#
+# generated on 2013/08/06 07:33:47
+#
+# --table-start--
+dataClass=com.sdk.libproject.bean.LibAccount
+tableName=account
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=userId
+columnName=userId
+indexName=account_userId_idx
+# --field-end--
+# --field-start--
+fieldName=nick
+columnName=nick
+# --field-end--
+# --field-start--
+fieldName=nickname
+columnName=nickname
+# --field-end--
+# --field-start--
+fieldName=avatar
+columnName=avatar
+# --field-end--
+# --field-start--
+fieldName=email
+columnName=email
+# --field-end--
+# --field-start--
+fieldName=phone
+columnName=phone
+# --field-end--
+# --field-start--
+fieldName=games
+columnName=games
+# --field-end--
+# --field-start--
+fieldName=credit
+columnName=credit
+# --field-end--
+# --field-start--
+fieldName=platform
+columnName=platform
+# --field-end--
+# --field-start--
+fieldName=isCurrentLoginAccount
+columnName=isCurrentLoginAccount
+# --field-end--
+# --field-start--
+fieldName=activeState
+columnName=activeState
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.sdk.libproject.bean.LibUserToken
+tableName=usertoken
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=appId
+columnName=appId
+# --field-end--
+# --field-start--
+fieldName=userId
+columnName=userId
+# --field-end--
+# --field-start--
+fieldName=token
+columnName=token
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

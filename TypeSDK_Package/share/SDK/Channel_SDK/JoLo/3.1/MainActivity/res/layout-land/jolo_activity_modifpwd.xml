@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jolo_sdk_bg"
+    android:paddingLeft="80dp"
+    android:paddingRight="80dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/jolo_edit_bg"
+        android:addStatesFromChildren="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:digits="@string/jolo_register_digits"
+            android:gravity="center_vertical"
+            android:hint="@string/jolo_login_username_hint"
+            android:imeOptions="actionNext"
+            android:inputType="textVisiblePassword"
+            android:textColor="@color/color_tv"
+            android:textColorHint="@color/hint_color"
+            android:maxLength="20"
+            android:textSize="16sp"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+             />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/jolo_edit_bg"
+        android:addStatesFromChildren="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+         <EditText
+	        android:id="@+id/modifypwd_oldpwd_et"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/transparent"
+	        android:digits="@string/jolo_register_digits"
+	        android:gravity="center_vertical"
+	        android:inputType="textPassword"
+	        android:maxLength="20"
+	        android:singleLine="true"
+	        android:textColor="@color/color_tv"
+            android:textColorHint="@color/hint_color"
+	        android:textCursorDrawable="@null"
+	        android:hint="@string/jolo_modifypwd_hint_old_pwd"
+	        android:textSize="16sp"
+            android:padding="7dp" />
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/jolo_edit_bg"
+        android:addStatesFromChildren="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+         <EditText
+	        android:id="@+id/modifypwd_newpwd_et"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/transparent"
+	        android:digits="@string/jolo_register_digits"
+	        android:gravity="center_vertical"
+	        android:inputType="textPassword"
+	        android:maxLength="20"
+	        android:singleLine="true"
+	        android:textColor="@color/color_tv"
+            android:textColorHint="@color/hint_color"
+	        android:hint="@string/jolo_modifypwd_hint_new_pwd"
+	        android:textCursorDrawable="@null"
+	        android:textSize="16sp"
+            android:padding="7dp" />
+    </LinearLayout>
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/jolo_edit_bg"
+        android:addStatesFromChildren="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+          <EditText
+	        android:id="@+id/modifypwd_confirm_et"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/transparent"
+	        android:digits="@string/jolo_register_digits"
+	        android:gravity="center_vertical"
+	        android:imeOptions="actionDone"
+	        android:inputType="textPassword"
+	        android:maxLength="20"
+	        android:singleLine="true"
+	        android:textColor="@color/color_tv"
+            android:textColorHint="@color/hint_color"
+	        android:textCursorDrawable="@null"
+	        android:hint="@string/jolo_modifypwd_hint_new_pwd_again"
+	        android:textSize="16sp"
+            android:padding="7dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/jolo_green_bg"
+        android:onClick="doModify"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/jolo_ok"
+        android:textColor="@color/jolo_white"
+        android:textSize="18sp" />
+</LinearLayout>

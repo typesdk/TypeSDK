@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        >
+
+        <ImageView
+            android:id="@+id/lepay_banklist_item_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/lepay_bind_zhaoshang" />
+
+        <CheckBox
+            android:id="@+id/lepay_banklist_item_checbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="27.5dp"
+            android:background="@drawable/lepay_checkbox_selector"
+            android:button="@null"
+            android:clickable="false" />
+
+        <ImageView
+            android:id="@+id/lepay_banklist_item_samil_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/lepay_banklist_item_title"
+            android:src="@drawable/lepay_bind_chucuka" />
+
+        <TextView
+            android:id="@+id/lepay_banklist_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="89dp"
+            android:layout_marginTop="12dp"
+            android:text="招商银行"
+            android:textColor="@color/lepay_item_bankname_font_color"
+            android:textSize="@dimen/lepay_et_cardinfo_font_size" />
+
+        <TextView
+            android:id="@+id/lepay_banklist_item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lepay_banklist_item_title"
+            android:layout_below="@+id/lepay_banklist_item_checbox"
+            android:layout_marginTop="-10dp"
+            android:text="6222****2929"
+            android:textColor="@color/lepay_paychannel_item_desc_font_color"
+            android:textSize="@dimen/lepay_cashier_trade_desc" />
+
+        <ImageView
+            android:id="@+id/lepay_bindcard_item_spilt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="0.0dp"
+            android:layout_marginRight="0.0dp"
+            android:background="@drawable/lepay_layout_line" />
+    </RelativeLayout>
+
+</LinearLayout>

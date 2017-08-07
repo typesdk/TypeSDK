@@ -1,0 +1,35 @@
+{
+  "version":"2.6.0.20160427",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "sessionid" : ""
+    }
+    ,"out_url" : "https://pay.slooti.com/?r=auth/verify"
+    ,"out_params" :
+    {
+      "appid" : ""
+    ,"sessionid" : ""
+    ,"sign" :""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "notify_data" : ""
+      ,"sign": ""
+      }
+    ,"out_url" :"https://pay.slooti.com/?r=auth/verify"
+    ,"out_params" :
+      {
+        "notify_data" : ""
+      ,"sign": ""
+      }
+    }
+  ]
+}

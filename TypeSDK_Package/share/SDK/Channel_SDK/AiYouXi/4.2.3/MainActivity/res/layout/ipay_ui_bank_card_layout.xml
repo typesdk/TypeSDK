@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/v_title_bar_aipay"
+        layout="@layout/ipay_ui_title_bar_normal" />
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/ipay_color_1"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/linear_layout_select_car_type_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12"
+            android:background="@color/ipay_color_1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_listView_bankCard"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_marginRight="@dimen/margin_12"
+                android:background="@color/transparent"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_add_bankCard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_27"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_marginRight="@dimen/margin_12"
+                android:layout_marginTop="@dimen/margin_12"
+                android:background="@color/ipay_color_2"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/wh_20"
+                    android:layout_height="@dimen/wh_20"
+                    android:src="@drawable/ipay_ui_button_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_9"
+                    android:text="@string/ipay_tip25"
+                    android:textColor="@color/ipay_color_4"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

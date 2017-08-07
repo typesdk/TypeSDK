@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_input_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_rec_gridview_item_height"
+        android:background="@drawable/m4399_rec_edittext_bg"
+        android:gravity="center"
+        android:hint="@string/m4399_rec_other_sum"
+        android:maxLength="5"
+        android:inputType="numberDecimal"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:textSize="@dimen/font_normal" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <com.stargame.sdk.ui.view.WebViewControlLayout
+            android:id="@+id/lib_webview_control"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"/>
+
+    <ProgressBar
+            android:id="@+id/lib_webview_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            style="@style/LibProgressBar_Horizontal"/>
+
+    <WebView
+            android:id="@+id/lib_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+</LinearLayout>

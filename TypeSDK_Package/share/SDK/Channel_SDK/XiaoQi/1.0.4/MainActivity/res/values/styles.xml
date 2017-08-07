@@ -1,0 +1,97 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        <style name="Theme.Transparent" parent="android:Theme">
+
+        <item name="android:windowBackground">@drawable/dialog_box_2</item>//此对话框的背景
+        <item name="android:windowIsTranslucent">true</item>//对话框是否透明
+        <item name="android:windowContentOverlay">@null</item>//对话框是否有遮盖
+        <item name="android:windowNoTitle">true</item>//对话框无标题
+        <item name="android:windowIsFloating">true</item>//对话框是否浮动
+        <item name="android:backgroundDimEnabled">false</item>
+
+        </style>
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+     <style name="radio_button_style" >         
+         <item name="android:layout_width">0dip</item>
+         <item name="android:layout_weight">1</item>
+         <item name="android:layout_height">wrap_content</item>         
+         <item name="android:button">@null</item>            
+         <item name="android:textColor">@drawable/wordcolor_main_radio_bg</item> 
+         <item name="android:drawablePadding">3dip</item> 
+         <item name="android:textSize">12sp</item>                   
+    </style> 
+
+    <style name="act_pre_pay">
+       <item name="android:layout_width">match_parent</item> 
+       <item name="android:gravity">center_vertical</item> 
+       <item name="android:textSize">16sp</item> 
+       <item name="android:background">@color/white</item> 
+       <item name="android:layout_height">40dip</item> 
+       <item name="android:paddingLeft">15dip</item>  
+       <item name="android:textColor">#333333</item>                  
+    </style> 
+       
+    <style name="act_chongzhi_tv">
+       <item name="android:layout_width">0dip</item> 
+       <item name="android:layout_weight">1</item> 
+       <item name="android:layout_height">40dip</item> 
+       <item name="android:clickable">true</item> 
+       <item name="android:gravity">center</item> 
+       <item name="android:textColor">@drawable/wordcolor_pay_bg</item>       
+       <item name="android:layout_gravity">center_vertical</item>
+       <item name="android:background">@drawable/white_green_kuang</item>   
+    </style> 
+    
+    <style name="WhiteDialog" parent="@android:style/Theme.Dialog">
+       <item name="android:windowBackground">@drawable/smallhao_alertdialog_top_bg</item>      
+       <item name="android:windowNoTitle">true</item>
+    </style>
+    
+     <style name="DialogLoad" parent="@android:style/Theme.Dialog">
+       <item name="android:windowBackground">@drawable/loading_shape</item>      
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+     <style name="activity_horizontal_width">
+         <item name="android:width">320dip</item>
+         
+     </style>
+    <style name="et_tc_textColorHint">
+        <item name="android:textColorHint" >#333333</item>
+        <item name="android:textColor" >#000000</item>
+    </style>
+    
+      <!--  <item name="android:windowIsTranslucent">true</item>//对话框是否透明      
+       <item name="android:windowIsFloating">true</item> -->
+    
+      <style name="HideDialog" parent="@android:style/Theme.Dialog">
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:backgroundDimEnabled">false</item>
+       <item name="android:windowBackground">@color/transparent</item>          
+    </style>
+      <style name="XuanFuDialog" parent="@android:style/Theme.Dialog">
+       <item name="android:windowBackground">@drawable/x7_change_xuanfu_dialog_bg</item>      
+       <item name="android:windowNoTitle">true</item>
+    </style>
+    
+        <style name="GongGaoDialog" parent="@android:style/Theme.Dialog">
+       <item name="android:windowNoTitle">true</item>
+       <item name="android:backgroundDimEnabled">true</item>
+       <item name="android:windowBackground">@color/transparent</item>          
+    </style>
+          
+</resources>

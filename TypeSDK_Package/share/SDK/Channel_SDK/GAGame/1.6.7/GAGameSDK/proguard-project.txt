@@ -1,0 +1,59 @@
+
+-injars 'D:\GAGame\GAGameSDK\bin\gagamesdk.jar'
+-outjars 'D:\GAGame\GAGameSDK_lib\libs\gagamesdk_3.3.4.jar'
+
+-libraryjars 'D:\Develop\sdk\platforms\android-23\android.jar'
+-libraryjars 'D:\GAGame\GAGameSDK\libs\alipaySdk-20160223.jar'
+-libraryjars 'D:\GAGame\GAGameSDK\libs\libammsdk.jar'
+
+-keepattributes Exceptions,InnerClasses,*Annotation*,Signature,LineNumberTable
+
+-keepnames class * implements java.io.Serializable
+-keepclassmembers class * implements java.io.Serializable { *; }
+
+-optimizationpasses 5   
+-dontusemixedcaseclassnames   
+-dontskipnonpubliclibraryclasses   
+-dontpreverify   
+-verbose   
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keep public class * extends android.app.Activity
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.view.View {*;}
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.support.v7.**
+-keep public class * extends android.internal.**
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-dontwarn com.goldautumn.sdk.**
+-keep class com.goldautumn.sdk.Activity.GAGameSDKApplication{*;}
+-keep class com.goldautumn.sdk.floatview.GAGameFloat{*;}
+-keep class com.goldautumn.sdk.minterface.GAGameSDK{*;}
+-keep class com.goldautumn.sdk.minterface.GAGameResult{*;}
+-keep class **.R$*{*;}
+
+-keep public interface com.goldautumn.sdk.minterface.**{
+	public <methods>;}
+
+-dontwarn android.support.**
+-keep class android.support.v4.** { *; }
+
+-dontwarn com.alipay.sdk.app.**
+-keep class com.alipay.sdk.app.** { *; }

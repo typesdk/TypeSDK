@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#0099ff" />
+</shape><!-- From: file:/E:/GfanSDK/SDK/src/main/res/drawable/gfan_cards_box_tab_bg.xml -->

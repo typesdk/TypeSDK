@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "330dp"
+              android:layout_height = "wrap_content"
+              android:background = "@drawable/umipay_background_stroke"
+              android:orientation = "vertical" >
+
+	<include
+			layout = "@layout/umipay_ouwan_title"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginTop = "10dp"
+			android:layout_marginLeft="16dp"/>
+
+	<TextView
+			android:id="@+id/umipay_content_tv"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout_margin="16dp"
+			android:textSize="18sp"
+			android:textColor = "@color/strip"/>
+
+	<Button
+			android:id = "@+id/umipay_comfirm_btn"
+			android:layout_width = "232dp"
+			android:layout_height = "40dp"
+			android:layout_gravity = "center"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom = "20dp"
+			android:layout_marginLeft = "16dp"
+			android:layout_marginRight = "16dp"
+			android:background = "@drawable/umipay_btn_yellow"
+			android:text = "@string/umipay_confirm"
+			android:textColor = "#ffffff"
+			android:textSize = "17dp" />
+
+</LinearLayout >

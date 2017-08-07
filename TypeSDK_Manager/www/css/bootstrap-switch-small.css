@@ -1,0 +1,33 @@
+/* 
+    * Created on : 2014-01-14
+    * Author     : Meritoo.pl, http://www.meritoo.pl
+    * Copyright  : Meritoo.pl
+*/
+
+.has-switch label,
+.has-switch span{
+    font-size: 13px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.has-switch span.switch-mini,
+.has-switch label.switch-mini {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    font-size: 9px;
+    line-height: 10px;
+}
+.has-switch span.switch-small,
+.has-switch label.switch-small {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-size: 11px;
+    line-height: 16px;
+}
+.has-switch span.switch-large,
+.has-switch label.switch-large {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-size: 15px;
+    line-height: normal;
+}

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_add"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin_12"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="当前积分"
+            android:textColor="#333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/normal_margin_8"
+            android:drawableLeft="@drawable/lvansdk_icon_integral"
+            android:drawablePadding="@dimen/normal_margin_8"
+            android:gravity="left"
+            android:text="积分说明"
+            android:textColor="#999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin_16"
+        android:gravity="left"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:text="10123"
+        android:textColor="#ff9812"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/bt_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="@dimen/normal_margin_16"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:background="@drawable/lvansdk_btn_style_one_normal"
+        android:gravity="center"
+        android:text="积分兑换商品"
+        android:textColor="#fff"
+        android:textSize="@dimen/user_button_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/normal_margin_16"
+        android:background="#e5e5e5" />
+
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin_8"
+        android:gravity="left"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:text="最近30天积分记录"
+        android:textColor="#999"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/normal_margin_8"
+        android:visibility="invisible"
+        android:background="#e5e5e5" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kg_selector_item_click" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/kg_iv_helpmenu_icon"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/kg_tv_menuname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/kg_iv_helpmenu_icon"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/kg_common_gray_lighter"
+            android:textSize="@dimen/kg_common_small"
+            android:typeface="monospace" />
+    </RelativeLayout>
+
+</LinearLayout>

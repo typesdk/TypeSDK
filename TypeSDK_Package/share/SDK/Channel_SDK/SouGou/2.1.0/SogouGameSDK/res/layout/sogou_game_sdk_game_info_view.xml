@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sogou_game_sdk_white" >
+
+    <include
+        android:id="@+id/include_view"
+        layout="@layout/sogou_game_sdk_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_view"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/sogou_game_sdk_game_info_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="61dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp" >
+
+                <com.sogou.wan.common.NetworkImageView
+                    android:id="@+id/sogou_game_sdk_recomgame_icon_iv"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_recomgame_app_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/sogou_game_sdk_recomgame_icon_iv"
+                    android:text="暂无游戏"
+                    android:textColor="@color/sogou_game_sdk_color_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_game_info_app_category_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sogou_game_sdk_recomgame_app_name_tv"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/sogou_game_sdk_recomgame_icon_iv"
+                    android:text="0 MB"
+                    android:textColor="@color/sogou_game_sdk_color_666666"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/sogou_game_sdk_game_info_app_size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sogou_game_sdk_recomgame_app_name_tv"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/sogou_game_sdk_game_info_app_category_tv"
+                    android:text="0 MB"
+                    android:textColor="@color/sogou_game_sdk_color_666666"
+                    android:textSize="11sp" />
+
+                <RatingBar
+                    android:id="@+id/sogou_game_sdk_game_info_rating_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dp"
+                    android:layout_below="@+id/sogou_game_sdk_game_info_app_category_tv"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/sogou_game_sdk_recomgame_icon_iv"
+                    android:isIndicator="true"
+                    android:progressDrawable="@drawable/sogou_game_sdk_game_info_ratingbar_small"
+                    android:rating="2.5" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/sogou_game_sdk_game_info_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/sogou_game_sdk_game_info_rl"
+                android:background="@color/sogou_game_sdk_color_gray1" />
+
+            <HorizontalScrollView
+                android:id="@+id/sogou_game_sdk_game_info_horsv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sogou_game_sdk_game_info_line"
+                android:layout_marginTop="7dp"
+                android:fillViewport="true"
+                android:padding="5dp"
+                android:scrollbars="none" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_game_info_app_version_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sogou_game_sdk_game_info_horsv"
+                android:layout_marginTop="7dp"
+                android:text="版本:"
+                android:textColor="@color/sogou_game_sdk_color_666666"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_game_info_app_updatetime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sogou_game_sdk_game_info_horsv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="更新时间:"
+                android:textColor="@color/sogou_game_sdk_color_666666"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_game_info_app_developer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sogou_game_sdk_game_info_app_version_tv"
+                android:layout_marginTop="7dp"
+                android:text="开发商:"
+                android:textColor="@color/sogou_game_sdk_color_666666"
+                android:textSize="11sp" />
+
+            <View
+                android:id="@+id/sogou_game_sdk_game_info_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/sogou_game_sdk_game_info_app_developer_tv"
+                android:layout_marginTop="7dp"
+                android:background="@color/sogou_game_sdk_color_gray1" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_game_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sogou_game_sdk_game_info_line1"
+                android:layout_marginTop="13dp"
+                android:text="游戏介绍:"
+                android:textColor="@color/sogou_game_sdk_color_black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_game_info_des_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sogou_game_sdk_game_info_tv"
+                android:layout_marginTop="7dp"
+                android:text="好玩高大上这游戏不错哟~!"
+                android:textColor="@color/sogou_game_sdk_color_666666"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/sogou_game_sdk_game_info_switch_tv"
+                android:layout_width="13dp"
+                android:layout_height="6dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/sogou_game_sdk_game_info_des_tv"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sogou_game_sdk_pay_dropdown"
+                android:textColor="@color/sogou_game_sdk_color_666666"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

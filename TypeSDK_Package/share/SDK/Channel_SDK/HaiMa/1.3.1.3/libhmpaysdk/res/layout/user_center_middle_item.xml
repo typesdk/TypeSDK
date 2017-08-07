@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_center_item_border_layer"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/item_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_center_recharge"
+                    android:paddingRight="18dp"
+                    android:paddingLeft="18dp"/>
+
+                <ImageView
+                    android:id="@+id/item_red_point_iv"
+                    android:layout_alignRight="@id/item_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/red_point_indicator_shape"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/item_message_num_tv"
+                    android:layout_alignRight="@id/item_icon_iv"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:text="9+"
+                    android:gravity="center"
+                    android:textSize="@dimen/font_size_float_text"
+                    android:textColor="@color/user_register_button_disable_text_color"
+                    android:background="@drawable/message_num_shape"
+                    android:visibility="gone"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/user_center_recharge"/>
+
+        <TextView
+            android:id="@+id/item_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="   "/>
+
+</LinearLayout>

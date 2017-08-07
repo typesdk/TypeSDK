@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_record_entry"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/m4399_rec_record_entry_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:paddingBottom="4dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="4dp"
+    android:text="@string/m4399_rec_entry_text"
+    android:textColor="#ffffff"
+    android:textSize="14sp" >
+
+</TextView>

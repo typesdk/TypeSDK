@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0897BA51-3EEA-4A16-8A49-1AF741B668AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDKPackage.Utils</RootNamespace>
+    <AssemblyName>SDKPackage.Utils</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\SDKPackage\bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AES.cs" />
+    <Compile Include="ApplicationSettings.cs" />
+    <Compile Include="CollectionHelper.cs" />
+    <Compile Include="CtrlHelper.cs" />
+    <Compile Include="CWHEncryptNet.cs" />
+    <Compile Include="DataHelper.cs" />
+    <Compile Include="DES.cs" />
+    <Compile Include="EnumDescription.cs" />
+    <Compile Include="FileManager.cs" />
+    <Compile Include="FolderInfo.cs" />
+    <Compile Include="FrameworkExcption.cs" />
+    <Compile Include="GameRequest.cs" />
+    <Compile Include="ImageHelper.cs" />
+    <Compile Include="index\AppExceptions.cs" />
+    <Compile Include="IPQuery.cs" />
+    <Compile Include="IPSelect.cs" />
+    <Compile Include="PrintTxt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionHelper.cs" />
+    <Compile Include="SendEamil.cs" />
+    <Compile Include="SerializationHelper.cs" />
+    <Compile Include="SessionState.cs" />
+    <Compile Include="StringBuffer.cs" />
+    <Compile Include="StringFilter.cs" />
+    <Compile Include="SymmetricMethod.cs" />
+    <Compile Include="Terminator.cs" />
+    <Compile Include="TextConvert.cs" />
+    <Compile Include="TextEncrypt.cs" />
+    <Compile Include="TextFilter.cs" />
+    <Compile Include="TextLogger.cs" />
+    <Compile Include="TextLoggerEntity.cs" />
+    <Compile Include="TextUtility.cs" />
+    <Compile Include="TypeHelper.cs" />
+    <Compile Include="TypeParse.cs" />
+    <Compile Include="UCException.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="Validate.cs" />
+    <Compile Include="XmlOperate.cs" />
+    <Compile Include="ZipHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

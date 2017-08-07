@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:paddingLeft="@dimen/mg_forum_post_item_padding"
+              android:paddingRight="@dimen/mg_forum_post_item_padding"
+        >
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/forum_post_media_container"
+            android:layout_marginTop="6dp"
+            >
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forum_post_media_pic_main">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_m_1"
+                    android:src="@drawable/main_normal_icon"
+                    android:scaleType="centerCrop"
+                    />
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_m_2"
+                    android:src="@drawable/main_normal_icon"
+                    android:layout_toRightOf="@id/img_m_1"
+                    android:layout_marginLeft="6dp"
+                    android:scaleType="centerCrop"
+                    />
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_m_3"
+                    android:layout_toRightOf="@id/img_m_2"
+                    android:layout_marginLeft="6dp"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main_normal_icon"/>
+
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/images_count"
+                  android:padding="4dp"
+                  android:textSize="12sp"
+                  android:background="#b2000000"
+                  android:textColor="@android:color/white"
+                  android:text="共0张"
+                  android:layout_alignBottom="@+id/forum_post_media_pic_main"
+                  android:layout_alignRight="@+id/forum_post_media_pic_main"
+                />
+    </RelativeLayout>
+
+</LinearLayout>

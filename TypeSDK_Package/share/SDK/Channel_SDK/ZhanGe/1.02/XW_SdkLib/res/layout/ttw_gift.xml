@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    android:padding="25dip"
+    android:orientation="vertical"
+    >
+	<RelativeLayout
+	    android:id="@+id/ll_gift"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/ttw_edit_bg"
+	     >
+
+	    <ListView
+	        android:id="@+id/lv_gift"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:divider="@color/gray1"
+	        android:focusable="true"
+	        android:listSelector="@drawable/ttw_pw_list_selector"
+	        android:layout_marginBottom="60dip"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="5dip" />
+	    
+      <TextView
+         android:id="@+id/tv_back"
+         android:layout_width="80dip"
+         android:layout_height="42dip"
+         android:background="@drawable/ttw_login_in"
+         android:gravity="center"
+         android:layout_marginBottom="7dip"
+         android:text="返回"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:textColor="@android:color/white"
+         android:textSize="16dip" />
+	</RelativeLayout>
+	
+	
+</LinearLayout>

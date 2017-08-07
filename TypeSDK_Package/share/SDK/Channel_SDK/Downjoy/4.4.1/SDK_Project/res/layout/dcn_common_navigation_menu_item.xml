@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dcn_icon"
+                android:layout_width="@dimen/dcn_menu_icon"
+                android:layout_height="@dimen/dcn_menu_icon"
+                android:layout_margin="2dp" />
+
+            <TextView
+                android:id="@+id/dcn_count"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_gravity="top|right"
+                android:background="@drawable/dcn_actionbar_msg_count_bg"
+                android:gravity="center"
+                android:textColor="@color/dcn_common_navi_menu_text_selector"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/dcn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:singleLine="true"
+            android:text="@string/dcn_menu"
+            android:textColor="@color/dcn_common_navi_menu_text_selector"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</FrameLayout>

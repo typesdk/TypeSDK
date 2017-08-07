@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lion_dlg_margin"
+        android:background="@drawable/lion_common_white_frame_nor"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/lion_dlg_edit_input_account"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/lion_dlg_input"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:drawableLeft="@drawable/lion_icon_name_gray"
+            android:drawablePadding="7.5dip"
+            android:hint="@string/lion_hint_register_account"
+            android:paddingLeft="10.0dip"
+            android:singleLine="true"
+            android:textColor="@color/lion_common_black"
+            android:textColorHint="@color/lion_common_text_gray"
+            android:textSize="14.0sp"/>
+
+        <ImageView
+            android:id="@+id/lion_dlg_iv_clear_input"
+            android:layout_width="@dimen/lion_dlg_input"
+            android:layout_height="@dimen/lion_dlg_input"
+            android:scaleType="center"
+            android:src="@drawable/lion_icon_del"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/lion_dlg_register_input_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"/>
+
+</LinearLayout>

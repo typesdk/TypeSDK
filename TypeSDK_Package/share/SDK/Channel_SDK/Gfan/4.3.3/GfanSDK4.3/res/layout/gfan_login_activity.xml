@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_relative_layout"
+    style="@style/gfan_no_padding_bg"
+    tools:context="com.mappn.sdk.uc.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_icon_layout"
+        style="@style/gfan_title_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gfan_login_logo" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#fff">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="登录游戏"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/login_scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/login_icon_layout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/login_num_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gfan_uc_bg_lr_margin"
+                android:layout_marginRight="@dimen/gfan_uc_bg_lr_margin"
+                android:layout_marginTop="@dimen/gfan_uc_view_space"
+                android:background="@drawable/gfan_edit_layout_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/gfan_edit_style"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入登录手机号/账号"></EditText>
+
+
+                <ImageView
+                    android:id="@+id/iv_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:src="@drawable/gfan_history_down_arrow"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_psd_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_num_layout"
+                android:layout_marginLeft="@dimen/gfan_uc_bg_lr_margin"
+                android:layout_marginRight="@dimen/gfan_uc_bg_lr_margin"
+                android:layout_marginTop="@dimen/gfan_uc_view_space"
+                android:background="@drawable/gfan_edit_layout_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_psd"
+                    style="@style/gfan_edit_style"
+                    android:layout_weight="1"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/tv_forget_psd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/gfan_text_layout_bg"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:text="忘记密码"
+                    android:textColor="#c8c8c8"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gfan_edit_layout_height"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/login_psd_layout"
+                android:layout_marginLeft="@dimen/gfan_uc_bg_lr_margin"
+                android:layout_marginRight="@dimen/gfan_uc_bg_lr_margin"
+                android:layout_marginTop="@dimen/gfan_uc_view_space"
+                android:background="@drawable/gfan_blue_selector"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/login_register_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_login"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/gfan_uc_bg_lr_margin"
+                android:layout_marginRight="@dimen/gfan_uc_bg_lr_margin"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/tv_visitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="免注册登录"
+                    android:textColor="#e5e5e5"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="立即注册"
+                    android:textColor="#e5e5e5"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_version_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="V4.3"
+                android:textColor="#979797"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_login_activity.xml -->

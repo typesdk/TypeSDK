@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <dimen name="com_lenovo_lsf_pay_good_fontsize">14sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_price_fontsize">16sp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_marginLeft">16dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_marginTop">12dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_paddingBottom">16dp</dimen>
+    <dimen name="com_lenovo_lsf_pay_goods_fontsize">24sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_button_fontsize">18sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_button_height">60dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_line_space">8dp</dimen>
+	
+	<dimen name="com_lenovo_lsf_pay_record_detail_order">16sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_record_detail_text">12sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_record_detail_leftspace">6dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_record_detail_topspace">8dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_record_detail_margin">8dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_record_detail_margin_bottom">16dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_record_detail_header_height">24dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_record_detail_margin_left">16dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_account_setting_item_font_size_left">16sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_divider_height">1px</dimen>
+	
+		<dimen name="com_lenovo_lsf_pay_title_height">45dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_title_internal_space">16dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_title_userinfo_width">330dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_title_fontsize">14sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_title_balance_fontsize">12sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_height">180dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_fontsize">22sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_unit_fontsize">12sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_price_tip_fontsize">9sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_balance_fontsize">16sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_space">4dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_paytpye_fontsize">12sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_paytpye_margin">50dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_paytpye_height">90dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_paytpye_top_height">10dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_goods_item_paytpye_bottom_height">80dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_gamecard_item_index_font_size">18sp</dimen>
+	<dimen name="com_lenovo_lsf_pay_gamecard_item_index_width">136dp</dimen>
+	<dimen name="com_lenovo_lsf_pay_gamecard_item_index_height">46dp</dimen>
+	
+	<dimen name="com_lenovo_lsf_pay_edit_text_height_for_theme">36dp</dimen>
+
+</resources>

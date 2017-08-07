@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/sdk_login_bg"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/sdk_login_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/pp_tip_title"
+            android:textColor="@color/text_title"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pp_exit"
+            android:textColor="@color/text_normal"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <Button
+            android:id="@+id/exit_gift_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/sdk_login_btn_orange_selector"
+            android:text="@string/pp_exit_gift"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/exit_forum_btn"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_marginBottom="30dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/sdk_login_btn_blue_selector"
+            android:text="@string/pp_exit_forum"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/sdk_exit_bg_pressed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/exit_exit_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sdk_exit_selector"
+            android:text="@string/pp_exit_exit"
+            android:textColor="@color/text_normal"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@drawable/sdk_exit_bg_pressed" />
+
+        <Button
+            android:id="@+id/exit_continue_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sdk_exit_selector"
+            android:text="@string/pp_exit_continue"
+            android:textColor="@color/text_normal"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

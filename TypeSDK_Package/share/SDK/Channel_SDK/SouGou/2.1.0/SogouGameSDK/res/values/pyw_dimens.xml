@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- 普通顶部标题的高度 -->
+    <dimen name="pyw_common_title_height">48dp</dimen>
+	<dimen name="pyw_log_padding">12dp</dimen>
+    <!-- 通用字体大小 -->
+    <!-- 超级大字号，作为抢眼信息来用 -->
+    <dimen name="pyw_text_size_super">24sp</dimen>
+    <!-- 超级字号，一般用于最大标题 -->
+    <dimen name="pyw_common_super">20sp</dimen>
+    <!-- 稍大字号，一般用于用户输入 -->
+    <dimen name="pyw_common_larger">18sp</dimen>
+    <!-- 大字号，一般用于一级标题 -->
+    <dimen name="pyw_common_large">16sp</dimen>
+    <!-- 中字号，一般用于二级标题 -->
+    <dimen name="pyw_common_medium">14sp</dimen>
+    <!-- 小字号，一般用于三级标题，介绍性文字 -->
+    <dimen name="pyw_common_small">12sp</dimen>
+    <!-- 超小字号 -->
+    <dimen name="pyw_common_little">10sp</dimen>
+    <!-- 适配字号 -->
+    <dimen name="pyw_common_adapter_little">10sp</dimen>
+    <!-- 游戏详情和更多开服的中号字体 -->
+    <dimen name="pyw_common_server_medium">14sp</dimen>
+    <!-- 列表项高度 -->
+    <dimen name="pyw_common_item_height">70dip</dimen>
+    <!-- 列表图标宽度 -->
+    <dimen name="pyw_common_icon_width_and_height">55dip</dimen>
+    <!-- 游戏图标宽度 -->
+    <dimen name="pyw_common_larger_icon_width_and_height">60dip</dimen>
+    <!-- 通用按钮高度 -->
+    <dimen name="pyw_common_btn_height">45dip</dimen>
+    <!-- 弹出框的按钮宽高 -->
+    <dimen name="pyw_dialog_btn_width">80dip</dimen>
+    <dimen name="pyw_dialog_btn_height">35dip</dimen>
+    <!-- 通用文本编辑框的高度 -->
+    <dimen name="pyw_common_editext_height">40dip</dimen>
+    <!-- 通用文本编辑框的宽度 -->
+    <dimen name="pyw_common_editext_width">300dip</dimen>
+    <!-- 悬浮窗宽 -->
+    <dimen name="pyw_float_width">25dp</dimen>
+    <!-- 悬浮窗高 -->
+    <dimen name="pyw_float_height">50dp</dimen>
+
+</resources>

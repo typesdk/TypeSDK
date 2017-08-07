@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_recharge_record_game_des_oid_children_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="订单号:123123123"
+        android:textColor="@color/sogou_game_sdk_color_888888"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_recharge_record_game_des_ptype_children_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sogou_game_sdk_recharge_record_game_des_oid_children_tv"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:text="支付方式:支付宝付款"
+        android:textColor="@color/sogou_game_sdk_color_888888"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_recharge_record_game_des_pname_children_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sogou_game_sdk_recharge_record_game_des_ptype_children_tv"
+        android:layout_marginLeft="16dp"
+        android:text="商品名称:砖石大礼包"
+        android:textColor="@color/sogou_game_sdk_color_888888"
+        android:textSize="10sp" />
+
+</RelativeLayout>

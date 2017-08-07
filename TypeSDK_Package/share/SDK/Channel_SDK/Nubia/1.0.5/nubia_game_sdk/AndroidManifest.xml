@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nubia.sdk.demo2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- ndhwsdk 权限配置  开始 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="nubia.permission.nbaccountservice" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- ndhwsdk 权限配置 结束 -->
+
+    <!-- 最低android固件：2.2 -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application>
+        
+
+
+        <!-- ndhwsdk activity 开始 -->
+        <activity
+            android:name="cn.nubia.sdk.activity.AccountInstructionActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <activity
+            android:name="cn.nubia.sdk.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.InitActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.RegisterByEmailActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.ResetPwdActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <activity
+            android:name="cn.nubia.sdk.activity.ValidateEmailActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.FindPwdActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.FindPwdByEmailActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.AvatarActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.ChangeAvatarActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.ChangeNickActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="cn.nubia.sdk.activity.PayActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowBackground="@null"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <!-- ndhwsdk activity 结束 -->
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+
+        <!-- unionpay sdk begin -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity">
+        </activity>
+        <!-- unionpay sdk end -->
+    </application>
+
+</manifest>

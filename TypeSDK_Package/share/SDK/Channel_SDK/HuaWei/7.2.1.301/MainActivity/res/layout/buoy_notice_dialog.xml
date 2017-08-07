@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/buoy_notice_marginLR"
+    android:layout_marginRight="@dimen/buoy_notice_marginLR">
+    
+    <TextView
+	        android:id="@+id/buoy_notice_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="60dp"
+	        android:alpha="0.9"
+	        android:gravity="center"
+	        android:textColor="@color/buoy_black"
+	        android:textSize="@dimen/buoy_notice_textSize" >
+	    </TextView>
+	    
+	    <WebView
+	        android:id="@+id/buoy_notice_content"
+	        android:layout_below="@+id/buoy_notice_title"
+	        android:layout_above="@+id/buoy_notice_ok"
+	        android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp" />
+	
+	
+	    <Button
+	        android:id="@+id/buoy_notice_ok"
+	        android:layout_above="@+id/buoy_notice_bottom"
+	        android:layout_width="fill_parent"
+	        android:layout_height="44dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginTop="18dp"
+	        android:alpha="0.85"
+	        android:background="@drawable/buoy_dialog_btn_bg"
+	        android:gravity="center"
+	        android:text="@string/buoy_close"
+	        android:textColor="@color/buoy_black"
+	        android:textSize="@dimen/buoy_notice_textSize" >
+	    </Button>
+	    
+	    <View 
+	        android:id="@+id/buoy_notice_bottom"
+	        android:layout_alignParentBottom="true"
+	        android:layout_width="fill_parent"
+	        android:layout_height="18dp">
+        </View>
+</RelativeLayout>

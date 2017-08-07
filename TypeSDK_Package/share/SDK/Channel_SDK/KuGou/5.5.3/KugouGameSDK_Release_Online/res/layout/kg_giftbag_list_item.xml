@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/kg_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/kg_giftbag_list_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <com.kugou.game.sdk.ui.widget.UnpressableLinearLayout
+            android:id="@+id/kg_layout_base_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/kg_iv_giftbag_icon"
+                android:layout_width="@dimen/kg_common_item_height"
+                android:layout_height="@dimen/kg_common_item_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/kg_app_icon_default" />
+
+            <RelativeLayout
+                android:id="@+id/kg_layout_baseinfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/kg_tv_giftbag_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="@dimen/kg_common_large" />
+
+                <LinearLayout
+                    android:id="@+id/kg_layout_progeress_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kg_tv_giftbag_name"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ProgressBar
+                        android:id="@+id/kg_pb_giftbag_num"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="1"
+                        android:progressDrawable="@drawable/kg_giftbag_progressbar_style" />
+
+                    <TextView
+                        android:id="@+id/kg_tv_giftbag_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="right"
+                        android:minEms="3"
+                        android:singleLine="true"
+                        android:textColor="@color/kg_common_orange"
+                        android:textSize="@dimen/kg_common_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/kg_tv_giftbag_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kg_tv_giftbag_name"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:textSize="@dimen/kg_common_small"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/kg_tv_giftbag_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kg_tv_giftbag_number"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/kg_back_to_taohao"
+                    android:textColor="@color/kg_common_gray_lighter"
+                    android:textSize="@dimen/kg_common_small"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/kg_btn_get_giftbag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kg_giftbag_item_btn_bg_no_left"
+                android:minEms="4"
+                android:minHeight="35dp"
+                android:minWidth="60dp"
+                android:textColor="@color/kg_common_white"
+                android:textSize="@dimen/kg_common_medium" />
+        </com.kugou.game.sdk.ui.widget.UnpressableLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/kg_common_divider" />
+
+        <LinearLayout
+            android:id="@+id/kg_layout_gift_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="7dp" >
+
+            <TextView
+                android:id="@+id/kg_tv_giftbag_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.3"
+                android:maxLines="2"
+                android:textColor="@color/kg_common_gray_lighter_2"
+                android:textSize="@dimen/kg_common_medium" />
+
+            <ImageView
+                android:id="@+id/kg_ib_open_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/kg_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

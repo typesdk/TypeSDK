@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pp_login_title">用户登录</string>
+    <string name="pp_login_input_name_hint">请输入用户名/手机号</string>
+    <string name="pp_login_input_password_hint">请输入密码</string>
+    <string name="pp_login_immediately">立即登录</string>
+    <string name="pp_register_account">注册帐号</string>
+    <string name="pp_forget_password">忘记密码？</string>
+    <string name="pp_tip_title">温馨提示</string>
+    <string name="pp_bind_tip">您的账号尚未绑定手机，为了保障您的账号安全，请前往绑定。</string>
+    <string name="pp_bind_immediately">立即绑定</string>
+    <string name="pp_bind_later">稍后绑定</string>
+    <string name="pp_register_input_name_hint">请输入6-15位字母或者数字</string>
+    <string name="pp_register_input_password_hint">请输入最少8位密码</string>
+    <string name="pp_register">注册</string>
+    <string name="pp_quick_register">手机号一键注册</string>
+    <string name="pp_agree_terms">已阅读并同意</string>
+    <string name="pp_terms">《琵琶网服务条款》</string>
+    <string name="pp_terms_title">琵琶网服务条款</string>
+    <string name="pp_login">登录</string>
+    <string name="pp_agree">同意</string>
+    <string name="pp_disagree">不同意</string>
+    <string name="pp_quick_register_title">手机号注册</string>
+    <string name="pp_register_input_phone_number_hint">请输入手机号码</string>
+    <string name="pp_register_input_code_hint">请输入验证码</string>
+    <string name="pp_username_register">用户名注册</string>
+    <string name="pp_gift">礼包</string>
+    <string name="pp_prefecture">专区</string>
+    <string name="pp_forum">论坛</string>
+    <string name="pp_ucenter">个人中心</string>
+    <string name="pp_get_code"><u>获取验证码</u></string>
+    <string name="pp_account">琵琶网帐号</string>
+    <string name="pp_logining">正在登录...</string>
+    <string name="pp_switch_account">切换帐号</string>
+    <string name="pp_exit">您需要退出游戏吗？</string>
+    <string name="pp_exit_gift">找找新礼包</string>
+    <string name="pp_exit_forum">我有话要说</string>
+    <string name="pp_exit_exit">退出游戏</string>
+    <string name="pp_exit_continue">继续游戏</string>
+    <string name="pp_exit_prompt">再按一次返回键退出</string>
+    <string name="pp_enter_game">进入游戏</string>
+    <string name="pp_back">返回</string>
+    <string name="pp_setting">设置</string>
+    <string name="pp_recharge">充值</string>
+
+</resources>

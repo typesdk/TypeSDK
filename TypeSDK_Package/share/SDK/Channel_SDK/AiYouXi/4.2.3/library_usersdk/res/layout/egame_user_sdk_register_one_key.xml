@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="18dp" 
+    android:background="@color/egame_usersdk_white"
+    android:layout_gravity="center">
+
+    <include layout="@layout/egame_user_sdk_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="您的"
+            android:textColor="@color/egame_usersdk_dark_gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="手机号码"
+            android:textColor="#ff642e"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="将作为注册账号"
+            android:textColor="@color/egame_usersdk_dark_gray"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/egame_input_box"
+        android:hint="@string/egame_input_hint_password"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="9dp"
+        android:paddingTop="8dp"
+        android:textColorHint="@color/egame_usersdk_light_gray"
+        android:textColor="@color/egame_usersdk_dark_gray"
+        android:textSize="13dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:text="继续操作表示您阅读并同意"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/egame_register_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="9dp"
+            android:text="爱游戏注册协议"
+            android:textColor="#429fff"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/egame_btn_light_green_status"
+        android:text="完成注册"
+        android:textColor="@color/egame_usersdk_white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:gravity="center_horizontal"
+        android:text="将发送短信进行注册，费用由运营商收取"
+        android:textColor="@color/egame_usersdk_light_gray"
+        android:textSize="11dp" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="orange" >#FF8400</color>
+     <color name="orange_1">#FF7600</color>
+     <color name="orange_2">#FF6000</color>
+     <color name="orange_3">#FC9713</color>
+     <color name="orange_4">#FC6013</color>
+     <color name="orange_5">#CC4300</color>
+     <color name="orange_6">#FF5502</color>
+     <color name="gray">#7F7C7C</color>
+     <color name="gray_text">#B1B1B1</color>
+     <color name="gray1">#C3C3C3</color>
+     <color name="gray2">#DDDDDD</color>
+     <color name="gray3">#D6D6D6</color>
+     <color name="gray4">#DEDEDE</color>
+     <color name="gray5">#d8d8d8</color>
+     <color name="blues">#4c6791</color>
+     <color name="gray_textcolor">#BEBDBD</color>
+     <color name="white">#F8F8F8</color>
+     <color name="tranparent">#00000000</color>
+     <color name="green" >#42BAE2</color>
+     <color name="green1" >#199F5B</color>
+     <color name="red" >#FF3C00</color>
+     <color name="red1" >#CC3636</color>
+     <color name="black">#2A2A2A</color>
+      <color name="blacks">#767575</color>
+     <color name="blue">#1F59FC</color>
+     <color name="bg_style">#ebebeb</color>
+</resources>

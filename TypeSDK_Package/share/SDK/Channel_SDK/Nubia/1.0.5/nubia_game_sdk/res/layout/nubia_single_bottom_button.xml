@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/nubia_bottom_padding"
+    android:paddingTop="@dimen/nubia_bottom_padding"
+    android:paddingLeft="@dimen/nubia_item_padding_side"
+    android:paddingRight="@dimen/nubia_item_padding_side" >
+    
+    <Button
+        style="@style/NubiaaccountSetupButton"
+        android:id="@+id/single_button"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="发送验证邮件"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         />
+
+</LinearLayout>

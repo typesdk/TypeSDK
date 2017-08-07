@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/view_head"
+        layout="@layout/sogou_game_sdk_dialog_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/sogou_game_sdk_dialog_common_bottom"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的账号是:"
+                android:textColor="#555555"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_tv_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="***"
+                android:textColor="#ff6a00"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/sogou_game_sdk_icon_wraning"
+            android:drawablePadding="5dp"
+            android:text="建议绑定手机，防止忘记密码或账号被盗时找回"
+            android:textColor="#ee4242"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+            <Button
+                android:id="@+id/sogou_game_sdk_cancel"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/sogou_game_sdk_register_btn"
+                android:text="稍后再说"
+                android:textColor="@drawable/sogou_game_sdk_register_btn_text_color"
+                android:textSize="14sp"/>
+            <Button
+                android:id="@+id/sogou_game_sdk_enter"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/sogou_game_sdk_bt_red"
+                android:text="绑定手机"
+                android:textColor="@color/sogou_game_sdk_white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

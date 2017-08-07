@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dcn_login_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="40dip"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/dcn_exit_logo" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/dcn_ads_group"
+        android:layout_height="135dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" >
+
+        <LinearLayout
+            android:id="@+id/dcn_exit_ll_content_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/dcn_exit_fl_group_01"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/dcn_edit_verify_btn_selector"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+
+                <com.downjoy.android.volley.toolbox.NetworkImageView
+                    android:id="@android:id/icon"
+                    android:layout_width="@dimen/dcn_menu_icon"
+                    android:layout_height="@dimen/dcn_menu_icon"
+                    android:layout_marginRight="4dip"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dcn_exit_gift" />
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"   android:singleLine="true"
+                    android:text="@string/dcn_exit_gift"
+                    android:textColor="#525252"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dcn_exit_fl_group_02"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/dcn_edit_verify_btn_selector"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+
+                <com.downjoy.android.volley.toolbox.NetworkImageView
+                    android:id="@android:id/icon"
+                    android:layout_width="@dimen/dcn_menu_icon"
+                    android:layout_height="@dimen/dcn_menu_icon"
+                    android:layout_marginRight="4dip"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/dcn_exit_activity" />
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"   android:singleLine="true"
+                    android:text="@string/dcn_exit_activity"
+                    android:textColor="#525252"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dcn_exit_fl_group_03"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/dcn_edit_verify_btn_selector"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:orientation="horizontal"
+                android:visibility="invisible" >
+
+                <com.downjoy.android.volley.toolbox.NetworkImageView
+                    android:id="@android:id/icon"
+                    android:layout_width="@dimen/dcn_menu_icon"
+                    android:layout_height="@dimen/dcn_menu_icon"
+                    android:layout_marginRight="4dip"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/dcn_exit_question" />
+
+                <TextView
+                    android:id="@android:id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/dcn_exit_question"
+                    android:textColor="#525252"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/dcn_exit_rl_adv_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.downjoy.android.volley.toolbox.NetworkImageView
+                android:id="@+id/dcn_exit_iV_adv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY" />
+
+            <FrameLayout
+                android:id="@+id/dcn_exit_fl_adv_close"
+                android:layout_width="36dip"
+                android:layout_height="36dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:alpha="0.5"
+                android:background="@android:color/black" >
+
+                <ImageView
+                    android:id="@+id/dcn_exit_ib_adv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@null"
+                    android:src="@drawable/dcn_popup_closed_selector" />
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="6dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dcn_exit_btn_exit"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/dcn_edit_verify_btn_selector"
+            android:text="@string/dcn_exit_exit"
+            android:textColor="@color/dcn_henp_chapter_sencond_level_content"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/dcn_exit_btn_continue"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dcn_orange_btn_selector"
+            android:text="@string/dcn_exit_continue"
+            android:textColor="#fff4ee"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

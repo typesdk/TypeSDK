@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/lion_page_loading1"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/lion_page_loading2"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/lion_page_loading3"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/lion_page_loading4"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/lion_page_loading5"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/lion_page_loading6"
+        android:duration="200"/>
+    <item
+        android:drawable="@drawable/lion_page_loading7"
+        android:duration="200"/>
+
+</animation-list>

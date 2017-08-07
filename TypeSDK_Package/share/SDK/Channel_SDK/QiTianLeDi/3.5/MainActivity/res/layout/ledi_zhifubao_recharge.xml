@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <include
+            android:id="@+id/zhifubao_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+             android:layout_marginTop="10dp"
+            layout="@layout/ledi_info" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zhifubao_info"
+            android:text="@string/ledi_zhifubao_affirm"
+            android:textColor="#454545"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/zhifubao_phone_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/ledi_phone_number"
+            android:hint="@string/ledi_input_phone_number"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:phoneNumber="true"
+            android:visibility="gone"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/zhifubao_bootom_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ledi_recharge_bottom_bg"
+        android:gravity="center"
+        android:onClick="bootomBtnOnclick"
+        android:text="@string/ledi_zhifubao_next"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>

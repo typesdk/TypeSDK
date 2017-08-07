@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:state_enabled="false">
+		<color android:color="@color/wepay_bg_operate_button" />
+	</item>
+	<item
+		android:state_enabled="true"
+		android:state_pressed="true">
+		<color android:color="@color/wepay_bg_operate_button_pressed" />
+	</item>
+	<item android:state_enabled="true">
+		<color android:color="@color/wepay_bg_operate_button" />
+	</item>
+</selector>

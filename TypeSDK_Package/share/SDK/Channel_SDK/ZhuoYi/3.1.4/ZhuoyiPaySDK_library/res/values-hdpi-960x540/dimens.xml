@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- global -->
+    <dimen name="lib_droi_account_global_margin_top">30dp</dimen>
+
+    <dimen name="lib_droi_account_welcome_btn_register_margin_top">30dp</dimen>
+</resources>

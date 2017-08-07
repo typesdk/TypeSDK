@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_voucher_background_color">
+
+    <com.haimawan.paysdk.library.PullToRefreshListView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:divider="@drawable/myprops_listview_item_divider_shape">
+
+    </com.haimawan.paysdk.library.PullToRefreshListView>
+
+    <TextView
+        android:id="@+id/message_no_data_hint_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/unread_message_no_data"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</RelativeLayout>

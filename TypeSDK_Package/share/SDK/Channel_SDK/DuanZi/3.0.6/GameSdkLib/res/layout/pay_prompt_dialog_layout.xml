@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/pay_dialog_bg">
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="@dimen/pay_exit_alert_dialog_content_size"
+        android:textColor="@color/pay_exit_alert_dialog_content_color"
+        android:gravity="center"
+        android:text="@string/pay_alert_dialog_content">
+    </TextView>
+    <include 
+        android:layout_below="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/pay_button_layout"/>
+</RelativeLayout>

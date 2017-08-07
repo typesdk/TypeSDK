@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SdkPackage" Class="GamesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=ADMIN4-PC;Initial Catalog=SdkPackage;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SdkPackageConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.sdk_Games" Member="sdk_Games">
+    <Type Name="sdk_Games">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GameName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GameDisplayName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GameStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GamePic" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="GameIntroduce" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="GameWebSite" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

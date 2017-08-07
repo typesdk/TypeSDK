@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.CustomSearchLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                          android:id="@+id/lion_layout_search"
+                                          android:layout_width="match_parent"
+                                          android:layout_height="45.0dip"
+                                          android:background="@color/lion_common_search_bg"
+                                          android:gravity="center"
+                                          android:paddingLeft="15.0dip">
+
+    <LinearLayout
+        android:id="@+id/lion_layout_search_content"
+        android:layout_width="0.dip"
+        android:layout_height="33dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/lion_common_white_frame_round_nor"
+        android:gravity="center"
+        android:paddingLeft="7.5dip"
+        android:paddingRight="7.5dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/lion_nav_search"/>
+
+        <EditText
+            android:id="@+id/lion_layout_search_input"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/lion_common_black"
+            android:textColorHint="@color/lion_common_text_gray"
+            android:textSize="14.0sp"/>
+
+        <ImageView
+            android:id="@+id/lion_layout_search_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lion_nav_del"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lion_layout_search_btn"
+        android:layout_width="50.0dip"
+        android:layout_height="33dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:background="@drawable/lion_common_transparent_selector"
+        android:gravity="center"
+        android:text="@string/lion_text_search"
+        android:textColor="@color/lion_common_text_gray"/>
+
+</com.lion.ccpay.widget.CustomSearchLayout>

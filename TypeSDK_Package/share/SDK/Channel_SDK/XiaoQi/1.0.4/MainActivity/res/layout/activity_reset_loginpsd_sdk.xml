@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id="@+id/reset_loginpsd_title_rl"
+        layout="@layout/item_main_title_rl"        
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" 
+        android:layout_gravity="center_horizontal"
+        >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" 
+         >
+
+    <RelativeLayout
+        android:layout_marginTop="25dip"
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/reset_loginpsd_iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/activity_phonenumber" />
+
+        <EditText
+            android:id="@+id/reset_loginpsd_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/reset_loginpsd_iv_1"
+            android:background="@null"
+            android:textSize="14sp"
+            android:hint="16888888888"
+            style="@style/et_tc_textColorHint"
+            android:imeOptions="flagNoExtractUi"
+            android:enabled="false" />
+        <View
+        android:id="@+id/reset_loginpsd_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"       
+        android:layout_marginRight="15dip"
+        android:background="@color/line" 
+        android:layout_below="@+id/reset_loginpsd_iv_1"
+        android:layout_marginLeft="15dip"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/reset_loginpsd_iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/activity_loginpsd" />
+
+        <EditText
+            android:id="@+id/reset_loginpsd_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/reset_loginpsd_iv_2"
+            android:background="@null"
+            android:textSize="14sp"
+            android:hint="请输入密码(6~16位字符)"
+            style="@style/et_tc_textColorHint"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword" />
+        <ImageView
+            android:id="@+id/reset_loginpsd_iv_deletepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/activity_login_delete"
+             android:visibility="invisible" />
+        <View
+        android:id="@+id/reset_loginpsd_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"       
+        android:layout_marginRight="15dip"
+        android:background="@color/line" 
+        android:layout_below="@+id/reset_loginpsd_iv_2"
+        android:layout_marginLeft="15dip"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/reset_loginpsd_iv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/activity_loginpsd" />
+
+        <EditText
+            android:id="@+id/reset_loginpsd_et_confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/reset_loginpsd_iv_3"
+            android:background="@null"
+            android:textSize="14sp"
+            style="@style/et_tc_textColorHint"
+            android:hint="请再次输入密码(6~16位字符)"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword" />
+        
+        <ImageView
+            android:id="@+id/reset_loginpsd_iv_deleteconfirmpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/activity_login_delete"
+             android:visibility="invisible" />
+       
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/reset_loginpsd_btn_commit" 
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dip"
+        android:background="@drawable/green_radio_bg"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:text="提交"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        />
+    </LinearLayout>
+    
+    </ScrollView>
+   
+</LinearLayout>

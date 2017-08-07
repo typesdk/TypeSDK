@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.lenovo"
+    android:versionCode="265"
+    android:versionName="2.6.5"
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- sdk -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    
+    <uses-permission android:name="com.lenovo.lsf.device.permission.MESSAGE" />
+    <uses-permission android:name="com.lenovo.lsf.device.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <!-- end -->
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:debuggable="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.type.sdk.android.lenovo.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="lenovoid.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+
+        <!-- 支付配置开始 -->
+
+        <!-- 收银台界面，默认横屏，通过screenOrientation可以进行修改 -->
+        <activity
+            android:name="com.lenovo.pay.api.PayManagerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation|locale|layoutDirection"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_pay_theme_dialog" />
+        <!-- 收银台界面结束 -->
+
+        <!-- 支付配置结束 -->
+
+
+        <!-- 登录配置开始 -->
+        <meta-data
+            android:name="lenovo.open.appid"
+            android:value="@app_id@" />
+        <!-- 在此处填入申请的lenovo open AppID -->
+
+        <meta-data
+            android:name="lenovo.gamesdk.new"
+            android:value="2.6.1" />
+
+        <!-- 游戏接入时请直接复制此项内容；其他应用此处填写分配给应用的token -->
+        <meta-data
+            android:name="lenovo:applicationToken"
+            android:value="WQMF9HG8J5WZ" />
+
+        <!-- 游戏接入时请写申请的openappid；其他应用此处填写该apk的渠道标识，用于某渠道的用户数等指标统计。渠道标识请使用字母和数字组合，不超过64个字符 -->
+        <meta-data
+            android:name="lenovo:channel"
+            android:value="@app_id@" />
+
+        <!-- 闪屏界面，默认横屏，通过screenOrientation可以进行修改 -->
+        <activity
+            android:name="com.lenovo.lsf.gamesdk.ui.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 闪屏界面结束 -->
+
+        <!-- 登录成功欢迎条界面，默认横屏，通过screenOrientation可以进行修改 -->
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.KeyLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <!-- 登录成功欢迎条界面结束 -->
+
+        <!-- 登录过程界面，默认横屏，通过screenOrientation可以进行修改 -->
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.PsLoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/com_lenovo_lsf_ui_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.PsLoginCommonActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog"
+            android:windowSoftInputMode="stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.USERSETTING" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.StartLoginingGameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.StartGameErrorActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.FindPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.RegistByPhoneActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.RegistByPhoneConfirmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.FindPasswordConfirmActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label=""
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_ui" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lenovo.pop.ui.FlexibleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.FlexibleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity
+            android:name="com.lenovo.pop.ui.QuiteActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTop"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity
+            android:name="com.lenovo.lsf.lenovoid.ui.QuitActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/com_lenovo_lsf_Translucent_NoTitle_Dialog" >
+        </activity>
+        <activity 
+            android:name="com.lenovo.lsf.lenovoid.ui.minewebview.HomeHtmlActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="com.lenovo.lsf.lenovoid.action.ACTION_START_WEB_VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <!-- 登录过程界面结束 -->
+
+        <service android:name="com.lenovo.lsf.lenovoid.toolbar.AppCheckService" >
+        </service>
+
+        <receiver
+            android:name="com.lenovo.lsf.gamesdk.receiver.GameSdkReceiver"
+            android:permission="com.lenovo.lsf.device.permission.MESSAGE" >
+            <intent-filter>
+                <action android:name="com.lenovo.lsf.gamesdk.receiver.GameSdkReceiver" >
+                </action>
+                <action android:name="@app_id@" >
+                </action>
+                <!-- 在此处填入申请的lenovo open AppID -->
+                <category android:name="@package@" />
+                <!-- 在此处填入Package Name -->
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.lenovo.lsf.gamesdk.receiver.GameSdkAndroidLReceiver">
+            <intent-filter>
+                <action android:name="com.lenovo.lsf.device.ANDROID_L_MSG" >
+                </action>
+                <category android:name="@package@" />
+                <!-- 在此处填入Package Name -->
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.lenovo.lsf.push.receiver.PushReceiver"
+            android:process=":PushService" >
+            <intent-filter>
+                <action android:name="com.lenovo.lsf.intent.REGISTER" />
+                <action android:name="com.lenovo.lsf.intent.UNREGISTER" />
+                <action android:name="com.lenovo.lsf.intent.LOG_CONTROL" />
+                <action android:name="com.lenovo.lsf.intent.PUSH_TYPE_CONTROL" />
+                <action android:name="com.lenovo.lsf.intent.PUSH_TEST_MESSAGE" />
+                <action android:name="com.lenovo.lsf.intent.SWITCH_ON_SERVICE" />
+                <action android:name="com.lenovo.lsf.intent.SWITCH_OFF_SERVICE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.lenovo.lsf.push.service.PushService"
+            android:exported="true"
+            android:process=":PushService" >
+        </service>
+
+        <activity
+            android:name="com.lenovo.lsf.push.ui.DisplayActivity"
+            android:process=":DisplayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <service
+            android:name="com.lenovo.lsf.push.ui.DisplayService"
+            android:exported="true"
+            android:process=":PushService" >
+        </service>
+        <!-- 登录配置结束 -->
+    </application>
+</manifest>

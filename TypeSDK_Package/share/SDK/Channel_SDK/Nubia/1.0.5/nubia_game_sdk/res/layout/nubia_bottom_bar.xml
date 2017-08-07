@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/nubia_bottom_padding"
+    android:paddingLeft="@dimen/nubia_item_padding_side"
+    android:paddingRight="@dimen/nubia_item_padding_side"
+    android:paddingTop="@dimen/nubia_bottom_padding">
+
+    <Button
+
+        android:id="@+id/nubia_left_button"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/my_btn_register"/>
+
+    <Button
+        android:id="@+id/nubia_right_button"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/my_btn_login"/>
+
+</LinearLayout>

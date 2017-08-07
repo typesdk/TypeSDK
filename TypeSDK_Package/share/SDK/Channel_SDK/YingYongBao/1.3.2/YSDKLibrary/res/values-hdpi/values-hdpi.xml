@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values-hdpi/com_tencent_ysdk_dimens.xml -->
+    <eat-comment/>
+    <dimen name="com_tencent_ysdk_real_name_auth_button_top">35dp</dimen>
+    <dimen name="com_tencent_ysdk_real_name_auth_check_box_top">25dp</dimen>
+    <dimen name="com_tencent_ysdk_real_name_auth_edit_height">50dp</dimen>
+    <dimen name="com_tencent_ysdk_real_name_auth_edit_text_size">16dp</dimen>
+    <dimen name="com_tencent_ysdk_real_name_auth_edit_top">25dp</dimen>
+    <dimen name="com_tencent_ysdk_real_name_auth_text_top">25dp</dimen>
+    <dimen name="com_tencent_ysdk_real_name_auth_title_size">18dp</dimen>
+</resources>

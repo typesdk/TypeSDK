@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gray"
+    tools:context=".MainActivity" >  
+   <ScrollView 
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent" 
+      android:scrollbars="none"
+       >
+   <LinearLayout 
+     android:layout_width="@dimen/activity_horizontal_width"
+     android:layout_gravity="center_horizontal"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+       >    
+    <!-- 用户名 -->
+    <com.smwl.smsdk.myview.PersonCenterItemViewSDK
+        android:id="@+id/fragment_personcenter_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"   
+        android:layout_marginTop="20dip"  
+        android:clickable="true"  
+          >
+    </com.smwl.smsdk.myview.PersonCenterItemViewSDK>
+
+    <!-- 小号 -->
+
+    <com.smwl.smsdk.myview.PersonCenterItemViewSDK
+        android:id="@+id/fragment_personcenter_smallusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:clickable="true"
+         >
+    </com.smwl.smsdk.myview.PersonCenterItemViewSDK>
+
+    <!-- 钱包 -->
+
+    <com.smwl.smsdk.myview.PersonCenterItemViewSDK
+        android:id="@+id/fragment_personcenter_purse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" 
+         >
+    </com.smwl.smsdk.myview.PersonCenterItemViewSDK>
+
+    <!-- 手机号 -->
+
+    <com.smwl.smsdk.myview.PersonCenterItemViewSDK
+        android:id="@+id/fragment_personcenter_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dip"
+        android:clickable="true"
+         >
+    </com.smwl.smsdk.myview.PersonCenterItemViewSDK>
+
+    <!-- 登录密码 -->
+
+    <com.smwl.smsdk.myview.PersonCenterItemViewSDK
+        android:id="@+id/fragment_personcenter_loginpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:clickable="true"
+         >
+    </com.smwl.smsdk.myview.PersonCenterItemViewSDK>
+
+    <!-- 支付密码 -->
+
+    <com.smwl.smsdk.myview.PersonCenterItemViewSDK
+        android:id="@+id/fragment_personcenter_paypassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:clickable="true"
+         >
+    </com.smwl.smsdk.myview.PersonCenterItemViewSDK>
+
+    <!-- 充值记录 -->
+
+    <com.smwl.smsdk.myview.PersonCenterItemViewSDK
+        android:id="@+id/fragment_personcenter_payrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dip"
+        android:clickable="true"
+        android:visibility="gone"
+         >
+    </com.smwl.smsdk.myview.PersonCenterItemViewSDK>
+
+    <!-- 消费记录 -->
+
+    <com.smwl.smsdk.myview.PersonCenterItemViewSDK
+        android:id="@+id/fragment_personcenter_consumerecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" 
+        >
+    </com.smwl.smsdk.myview.PersonCenterItemViewSDK>
+
+    <!-- 客服 -->
+
+    <com.smwl.smsdk.myview.PersonCenterItemViewSDK
+        android:id="@+id/fragment_personcenter_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:clickable="true"
+        android:visibility="gone"
+        >
+    </com.smwl.smsdk.myview.PersonCenterItemViewSDK>
+    
+    <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                                           
+                android:clickable="true" 
+                android:layout_marginTop="30dip"
+                android:layout_marginBottom="30dip">
+
+                <TextView
+                    android:id="@+id/fragment_helpcenter_versioncode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#c2c2c2"
+                    android:textSize="13sp" 
+                    android:visibility="invisible"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <Button
+                        android:id="@+id/fragment_helpcenter_btn_telephone"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:background="@drawable/selector_help_telephone" />
+
+                    <TextView
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fragment_helpcenter_btn_telephone"
+                        android:layout_marginTop="3dip"
+                        android:gravity="center"
+                        android:text="联系客服"
+                        android:textColor="#4bd790"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                     >
+
+                    <Button
+                        android:id="@+id/fragment_helpcenter_btn_qq"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:background="@drawable/selector_help_qq" />
+
+                    <TextView
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fragment_helpcenter_btn_qq"
+                        android:layout_marginTop="3dip"
+                        android:gravity="center"
+                        android:text="加入Q群"
+                        android:textColor="#0ec0ec"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+ </LinearLayout>
+   </ScrollView> 
+    
+</LinearLayout>

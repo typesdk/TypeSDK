@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/slyx_pay_web_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/slyx_title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/slyx_title_bar"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="5dip">
+
+                <ImageView
+                    android:id="@+id/slyx_pay_back"
+                    android:layout_width="60dip"
+                    android:layout_height="45dip"
+                    android:layout_margin="0dip"
+                    android:contentDescription="@string/slyx_img_des"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="30dip"
+                    android:paddingTop="10dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/slyx_back_s" />
+
+                <TextView
+                    android:id="@+id/slyx_pay_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="#8b8686"
+                    android:textSize="18sp" />
+
+                
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/slyx_pay_wv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:background="@android:color/white">
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#d0d0d0"
+            android:focusable="false"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+
+        <Button
+                android:id="@+id/btn_chat_praise"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/unlike"
+                android:gravity="center"
+                />
+
+        <Button
+                android:id="@+id/btn_chat_extension"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/post_send_extension"
+                android:gravity="center"
+                />
+
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+            <view class="com.papa91.pay.widget.ClearEditText"
+                    android:id="@+id/edit_user_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.0"
+                    android:imeOptions="flagNoExtractUi"
+                    android:background="@drawable/forum_comment_editor_bg"
+                    android:maxLines="5"
+                    android:minHeight="35dip"
+                    android:padding="6dp"
+                    android:textSize="14sp"
+                  android:textColor="#6a6a6a"
+                    android:textColorHint="#989898"
+                    android:hint="添加评论"
+                  android:textCursorDrawable="@null"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="已有0条回复"
+                      android:visibility="visible"
+                      android:gravity="center_vertical"
+                      android:layout_centerVertical="true"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginRight="5dp"
+                      android:textColor="#989898"
+                      android:id="@+id/edit_comment_count"
+                      android:textSize="14sp"
+                    />
+
+        </RelativeLayout>
+
+        <Button
+                android:id="@+id/btn_chat_send"
+                android:layout_width="48dp"
+                android:layout_height="34dp"
+                android:background="@drawable/posts_send"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="top"
+                android:visibility="visible"
+                android:textColor="#454545"
+                android:text="发送"
+                android:textSize="14sp"
+                >
+        </Button>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffa1a1a1"
+            android:focusable="false"/>
+
+    <LinearLayout
+            android:id="@+id/chat_layout_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:background="#f3f3f3"
+            android:maxHeight="200dp">
+
+        <LinearLayout
+                android:id="@+id/chat_layout_emo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                    android:id="@+id/pager_emo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include
+                android:id="@+id/chat_layout_extension"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/include_chat_add"/>
+
+        <LinearLayout
+                android:id="@+id/chat_layout_extension_container" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical">
+
+            <it.sephiroth.android.library.widget.HListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:id="@+id/matchListView"
+                    app:hlv_dividerWidth="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

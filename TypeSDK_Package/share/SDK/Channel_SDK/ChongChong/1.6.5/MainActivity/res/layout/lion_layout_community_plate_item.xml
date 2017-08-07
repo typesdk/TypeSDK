@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lion.ccpay.widget.community.CommunityPlateItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                          android:id="@+id/lion_layout_community_plate_item"
+                                                          android:layout_width="match_parent"
+                                                          android:layout_height="match_parent"
+                                                          android:orientation="horizontal" >
+
+    <com.lion.ccpay.view.RatioColorFilterImageView
+        android:id="@+id/lion_layout_community_plate_item_icon"
+        android:layout_width="65.0dip"
+        android:layout_height="65.0dip"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65.0dip"
+        android:orientation="vertical"
+        android:paddingLeft="10.0dip" >
+
+        <TextView
+            android:id="@+id/lion_layout_community_plate_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/lion_common_black"
+            android:textSize="14.0sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/lion_layout_community_plate_item_total_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/lion_common_text_gray"
+            android:textSize="12.0sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/lion_layout_community_plate_item_current_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/lion_common_text_gray"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+</com.lion.ccpay.widget.community.CommunityPlateItemLayout>

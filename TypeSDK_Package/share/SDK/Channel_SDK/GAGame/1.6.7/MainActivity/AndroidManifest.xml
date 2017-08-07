@@ -1,0 +1,196 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.typesdk"
+    android:installLocation="auto"
+    android:versionCode="167"
+    android:versionName="1.6.7" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <!-- SDK2.1新增获取用户位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    
+    
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.type.sdk.android.typesdk.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.activity.ProtocolActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.activity.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <!-- alipay sdk end -->
+		
+		<!-- UPPay start -->
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.galaxy.sdk.pay.YLpay"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <!-- UPPay end -->
+		
+		<!-- qq login -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent@qq_appid@" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- qq login end -->
+		
+		<!-- wx pay begin -->
+        <activity
+            android:name="com.goldautumn.sdk.pay.GAGameSDKWXEntryLoginActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+		
+		<activity
+            android:name="com.goldautumn.sdk.pay.GAGameSDKWXEntryPayActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+			
+		<activity-alias
+            android:name="@package@.wxapi.WXEntryActivity"
+            android:exported="true"
+			android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:targetActivity="com.goldautumn.sdk.pay.GAGameSDKWXEntryLoginActivity" />
+
+        <activity-alias
+            android:name="@package@.wxapi.WXPayEntryActivity"
+            android:exported="true"
+			android:launchMode="singleTop"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:targetActivity="com.goldautumn.sdk.pay.GAGameSDKWXEntryPayActivity" />
+        <!-- wx pay end -->
+		
+        <!-- baselib config start -->
+        <!-- 服务逻辑 -->
+        <service
+            android:name="com.type.sdk.notification.PushService"
+            android:process=":process1" />
+        <!-- baselib config end -->
+    </application>
+
+</manifest>

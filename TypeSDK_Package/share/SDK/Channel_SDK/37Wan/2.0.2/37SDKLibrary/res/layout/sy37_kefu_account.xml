@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="335dip"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dip">
+
+        <!-- 导航 -->
+
+        <RadioGroup
+            android:id="@+id/bar"
+            android:layout_width="348dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/sy37_icon_account"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/sy37_icon_service"
+                android:button="@null"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/sy37_icon_activity"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/hotGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/sy37_icon_game"
+                android:button="@null"
+                android:gravity="center" />
+        </RadioGroup>
+
+        <!-- 内容 -->
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="350dip"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/bar"
+            android:background="@drawable/sy37_bg_kefu_dialog" />
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/sdkVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp"
+        android:background="#00000000"
+        android:textColor="#40000000"/>
+
+</RelativeLayout>

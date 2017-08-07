@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sogou_game_sdk_recomgame_view_item_sr"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="7dp" >
+
+        <com.sogou.wan.common.NetworkImageView
+            android:id="@+id/sogou_game_sdk_recomgame_icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_recomgame_app_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/sogou_game_sdk_recomgame_icon_iv"
+            android:text="暂无游戏"
+            android:textColor="@color/sogou_game_sdk_color_black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_recomgame_app_size_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/sogou_game_sdk_recomgame_app_name_tv"
+            android:text="0 MB"
+            android:textColor="@color/sogou_game_sdk_color_black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_recomgame_app_des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/sogou_game_sdk_recomgame_icon_iv"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:text="暂无游戏，正在努力获取中..."
+            android:textColor="@color/sogou_game_sdk_input_font_color"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sogou_game_sdk_recomgame_btn"
+        android:layout_width="49dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sogou_game_sdk_download_btn"
+        android:focusable="false"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <com.sogou.gamecenter.sdk.views.DownloadProgress
+        android:id="@+id/sogou_game_sdk_recomgame_Bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="47dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true" 
+        android:layout_centerVertical="true"
+        android:layout_marginRight="1dp"
+        android:focusable="false"
+        android:progressDrawable="@drawable/sogou_game_sdk_progress_horizontal"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.youku.gamesdk.orderlist.AutoListView
+        android:id="@+id/pager_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:scrollingCache="false" />
+
+</LinearLayout>

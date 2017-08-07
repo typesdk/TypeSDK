@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/gfan_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_toLeftOf="@+id/tv_notification_time"/>
+    <TextView
+        android:id="@+id/tv_notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tv_notification_title"
+        android:gravity="center"
+        android:textSize="10sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/tv_notification_title"/>
+
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_notification_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="6dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="15sp"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+</ScrollView><!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_notification_detail_activity.xml -->

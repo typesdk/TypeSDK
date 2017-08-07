@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="msp_font_medium">16sp</dimen>
+    <dimen name="msp_margin_left">10dp</dimen>
+    <dimen name="msp_margin_top">7dp</dimen>
+    <dimen name="msp_margin_right">10dp</dimen>
+    <dimen name="msp_margin_bottom">7dp</dimen>
+    <dimen name="msp_margin_default">7dp</dimen>
+    <dimen name="msp_dimen_40">40dp</dimen>
+    <dimen name="msp_dimen_input_40">40dp</dimen>
+
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="15dp">
+
+    <com.sogou.wan.common.NetworkImageView
+        android:id="@+id/sogou_game_sdk_iv_game_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/sogou_game_sdk_app_default_icon" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_tv_game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sogou_game_sdk_iv_game_icon"
+        android:singleLine="true"
+        android:textColor="@color/sogou_game_sdk_color_111111"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_tv_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sogou_game_sdk_tv_game_name"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/sogou_game_sdk_iv_game_icon"
+        android:singleLine="true"
+        android:textColor="@color/sogou_game_sdk_color_888888"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sogou_game_sdk_tv_deadline"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/sogou_game_sdk_iv_game_icon"
+        android:singleLine="true"
+        android:textColor="@color/sogou_game_sdk_color_888888"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sogou_game_sdk_tv_game_name"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/sogou_game_sdk_personal_center_icon_arrow" />
+
+    <LinearLayout
+        android:id="@+id/sogou_game_sdk_ll_gift_code1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/sogou_game_sdk_iv_game_icon"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_code_name1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="礼包码:"
+            android:textColor="@color/sogou_game_sdk_color_111111"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_gift_code1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sogou_game_sdk_selector_white_gray_border"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/sogou_game_sdk_color_111111"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/sogou_game_sdk_btn_gift_code1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sogou_game_sdk_bt_red"
+            android:text="复制"
+            android:textColor="@color/sogou_game_sdk_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sogou_game_sdk_ll_gift_code2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/sogou_game_sdk_ll_gift_code1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_code_name2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="礼包码:"
+            android:textColor="@color/sogou_game_sdk_color_111111"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_gift_code2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sogou_game_sdk_selector_white_gray_border"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/sogou_game_sdk_color_111111"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/sogou_game_sdk_btn_gift_code2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sogou_game_sdk_bt_red"
+            android:text="复制"
+            android:textColor="@color/sogou_game_sdk_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sogou_game_sdk_ll_gift_code3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/sogou_game_sdk_ll_gift_code2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_code_name3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="礼包码:"
+            android:textColor="@color/sogou_game_sdk_color_111111"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_tv_gift_code3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/sogou_game_sdk_selector_white_gray_border"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/sogou_game_sdk_color_111111"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/sogou_game_sdk_btn_gift_code3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/sogou_game_sdk_bt_red"
+            android:text="复制"
+            android:textColor="@color/sogou_game_sdk_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

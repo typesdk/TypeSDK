@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="230dp"
+	android:background="@drawable/wepay_kuang_bg"
+	android:orientation="vertical" >
+
+	<com.wangyin.wepay.widget.CPActionBar
+		android:id="@+id/bar_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<com.wangyin.wepay.widget.CPWebView
+		android:id="@+id/webview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layerType="software"
+		android:layout_marginBottom="@dimen/wepay_space_large" />
+	
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radio_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/radio_card_szx"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:button="@drawable/jolopay_radiobtn"
+            android:checked="true"
+            android:text="@string/jolopay_card_szx"
+            android:textSize="16sp" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio_card_unicom"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:button="@drawable/jolopay_radiobtn"
+            android:text="@string/jolopay_card_unicom"
+            android:textSize="16sp" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio_card_telecom"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:button="@drawable/jolopay_radiobtn"
+            android:text="@string/jolopay_card_telecom"
+            android:textSize="16sp" >
+        </RadioButton>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/jolopay_card_price"
+            android:textColor="@color/jolopay_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/jolopay_card_price_tv"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/jolopay_dropdown_bg"
+            android:drawablePadding="40dip"
+            android:drawableRight="@drawable/jolopay_dropdown"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="6dip"
+            android:text="@string/jolopay_card_price_value"
+            android:textColor="@color/jolopay_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/jolopay_edittext_no" />
+
+    <include layout="@layout/jolopay_edittext_sn" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/jolopay_warning_bg"
+        android:text="@string/jolopay_card_warning"
+        android:textColor="@color/jolopay_red"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dip"
+        android:text="@string/jolopay_card_tip"
+        android:textColor="@color/jolopay_gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/jolopay_card_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jolopay_note_bg"
+        android:padding="10dip"
+        android:textColor="@color/jolopay_gray"
+        android:textSize="14sp" />
+
+</LinearLayout>

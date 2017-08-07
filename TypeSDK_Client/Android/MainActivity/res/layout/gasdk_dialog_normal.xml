@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="200dip"
+        android:layout_height="80dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gasdk_dialog_act" >
+        
+        <LinearLayout 
+            android:id="@+id/normal_liner"
+            android:layout_width="match_parent"
+            android:layout_height="50dip" >
+            
+            <TextView 
+            android:id="@+id/dia_tv"
+            style="@style/text_dialog_del"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:gravity="center"
+            android:text="@string/dialog_del"/>
+            
+        </LinearLayout>
+                
+        <View 
+            android:id="@+id/dia_vie"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/normal_liner"
+            android:background="@color/dialog_del_len"/>
+        
+        <LinearLayout 
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dia_vie"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true" >
+            
+            <TextView 
+                android:id="@+id/dialog_del_no"
+                style="@style/text_dialog_del_yesorno"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/dialog_del_no"
+                android:gravity="center"/>
+            
+            <View 
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/dialog_del_len"/>
+            
+            <TextView 
+                android:id="@+id/dialog_del_yes"
+                style="@style/text_dialog_del_yesorno"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/dialog_del_yes"
+                android:gravity="center"/>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

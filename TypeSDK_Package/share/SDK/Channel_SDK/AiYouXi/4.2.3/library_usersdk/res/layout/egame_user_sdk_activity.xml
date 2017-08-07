@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/egame_user_activity_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/egame_user_activity_account"
+            layout="@layout/egame_user_sdk_account" 
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_activity_account_info"
+            layout="@layout/egame_user_sdk_accountinfo"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_activity_account_msg"
+            layout="@layout/egame_user_sdk_accmessage"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_activity_gold_browser"
+            layout="@layout/egame_user_sdk_gold_browser"
+            android:visibility="gone" />
+        
+        <include
+            android:id="@+id/egame_user_activity_coupon_browser"
+            layout="@layout/egame_user_sdk_coupon_browser"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_activity_gift"
+            layout="@layout/egame_user_sdk_gift"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_activity_guide"
+            layout="@layout/egame_user_sdk_guide"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_activity_account_detials"
+            layout="@layout/egame_user_sdk_accountdetials"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_activity_bbs"
+            layout="@layout/egame_user_sdk_browser"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_activity_customer"
+            layout="@layout/egame_user_sdk_help"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_giftdetail"
+            layout="@layout/egame_gift_detail"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/egame_user_sdkloading"
+            layout="@layout/egame_user_sdk_activity_loading"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/egame_activity_buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/egame_bg_bottombar"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/egame_activity_rbgift"
+                style="@style/pop_style"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/egame_btn_buttom"
+                android:drawableTop="@drawable/egame_btn_libao"
+                android:text="礼包"
+                android:textColor="@color/egame_color_radiobutton" />
+
+            <RadioButton
+                android:id="@+id/egame_activity_rbguide"
+                style="@style/pop_style"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/egame_btn_buttom"
+                android:drawableTop="@drawable/egame_btn_gonglve"
+                android:text="攻略"
+                android:textColor="@color/egame_color_radiobutton" />
+
+            <RadioButton
+                android:id="@+id/egame_activity_rbbbs"
+                style="@style/pop_style"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/egame_btn_buttom"
+                android:drawableTop="@drawable/egame_btn_luntan"
+                android:text="论坛"
+                android:textColor="@color/egame_color_radiobutton" />
+            
+            <RadioButton
+                android:id="@+id/egame_activity_rbcustomer"
+                style="@style/pop_style"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/egame_btn_buttom"
+                android:drawableTop="@drawable/egame_btn_help"
+                android:text="客服"
+                android:textColor="@color/egame_color_radiobutton" />
+            
+            <RadioButton
+                android:id="@+id/egame_activity_rbaccount"
+                style="@style/pop_style"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/egame_btn_buttom"
+                android:drawableTop="@drawable/egame_btn_zhanghu"
+                android:text="账户"
+                android:textColor="@color/egame_color_radiobutton" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</FrameLayout>

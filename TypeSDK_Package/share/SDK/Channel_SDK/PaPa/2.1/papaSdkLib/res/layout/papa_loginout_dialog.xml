@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp604">
+<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/adImage"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/exit_dialog_normal_back"
+        />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            >
+        <!--取消支付-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+            <ImageView
+                    android:id="@+id/extApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp140"
+                    android:src="@drawable/papa_cancel_exit_btn"
+                    android:scaleType="fitXY"
+                    />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出游戏"
+                    android:textColor="#ff5d5d5d"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/extText"
+                    />
+        </RelativeLayout>
+
+        <!--继续支付-->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+            <ImageView
+                    android:id="@+id/enterForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp140"
+                    android:src="@drawable/papa_pay_btn"
+                    android:scaleType="fitXY"
+                    />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="进入社区"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/cancle"
+                    />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

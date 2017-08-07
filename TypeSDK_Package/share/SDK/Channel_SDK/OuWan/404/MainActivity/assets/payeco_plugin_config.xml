@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 配 置文件根节点，版本为:20120201.0, 版本号x.y形式。x:yyyyMMdd,y当天更新次数从0开始 -->
+<config version = "20120201.0" >
+	<!-- 前置公钥，公钥信息在传输的时候为明文，插件端收到更新的配置文件后将该项存为密文，下同。前置公钥版本号不用于更新， 只用于识别公钥是哪一次发布的 -->
+	<frontPubKey version = "20120201.0" >
+		<!-- one-line格式BASE64公钥串 -->
+		<oneline >
+			<![CDATA[MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCKbugXOOJPYXPx7izGJiMyB1gF7Uvi/4ESsx418GSdg9q9MCeyTjbxodErZXmdkDWWOFhq3vLHRI8TD9BzYmw0aUhPMxoaZVrKyZdf0PBhT04iftoIS10/MK31PDQ19rnvj9/05ljTzqM5K0rG53R4+3YViIdGKT7wlHU2u/3d8QIDAQAB]]></oneline >
+		<!-- 格式:16进制的 N,E -->
+		<n >
+			8a6ee81738e24f6173f1ee2cc6262332075805ed4be2ff8112b31e35f0649d83dabd3027b24e36f1a1d12b65799d90359638586adef2c7448f130fd073626c3469484f331a1a655acac9975fd0f0614f4e227eda084b5d3f30adf53c3435f6b9ef8fdff4e658d3cea3392b4ac6e77478fb7615888746293ef0947536bbfdddf1
+		</n >
+		<e >10001</e >
+	</frontPubKey >
+</config >

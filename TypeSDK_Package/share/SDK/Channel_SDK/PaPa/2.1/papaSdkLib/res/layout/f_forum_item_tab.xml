@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:orientation="vertical">
+
+    <View android:layout_width="match_parent" android:layout_height="1px" android:background="#ebebeb"/>
+
+    <view xmlns:android="http://schemas.android.com/apk/res/android"
+          class="com.papa91.pay.widget.SlidingTabForumLayout"
+          android:id="@+id/tabs"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/mg_forum_forum_activity_sliding_tab_height"
+          android:background="#ffffff"/>
+
+
+</LinearLayout>

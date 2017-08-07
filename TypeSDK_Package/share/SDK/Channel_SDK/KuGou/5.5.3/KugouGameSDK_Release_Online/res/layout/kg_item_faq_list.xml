@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:background="@drawable/kg_selector_item_click"
+    android:textSize="@dimen/kg_common_larger" >
+
+</TextView>

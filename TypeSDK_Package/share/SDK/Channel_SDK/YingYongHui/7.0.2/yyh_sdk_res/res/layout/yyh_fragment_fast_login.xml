@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_content"
+    android:padding="15dp" >
+
+    <TextView
+        android:id="@+id/tv_header_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/yyh_back"
+        android:drawablePadding="10dp"
+        android:paddingTop="10dp"
+        android:text="极速登录"
+        android:textColor="@color/yyh_gray_dark"
+        android:textSize="17dp" />
+
+    <TextView 
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/yyh_fast_login_notify"
+        android:layout_width="match_parent"
+        android:textSize="14dp"
+        android:textColor="@color/yyh_black"
+        android:layout_height="wrap_content" 
+        />
+    <com.appchina.usersdk.WidgetSetPasswordLayout
+        android:id="@+id/set_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yyh_btn_blue_bg"
+        android:text="登录"
+        android:textColor="@color/yyh_white"
+        android:textSize="14dp" />
+
+</LinearLayout>

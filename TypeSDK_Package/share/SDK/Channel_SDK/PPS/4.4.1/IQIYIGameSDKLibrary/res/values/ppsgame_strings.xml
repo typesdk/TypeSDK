@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ppsgame_init_error">初始化失败</string>
+    <string name="ppsgame_plugin_loading">正在加载资源</string>
+    <string name="ppsgame_plugin_space_error">SD卡存储空间不足</string>
+</resources>

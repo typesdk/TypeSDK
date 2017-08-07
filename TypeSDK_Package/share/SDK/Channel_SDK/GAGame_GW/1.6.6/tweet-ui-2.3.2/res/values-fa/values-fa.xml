@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 ساعت</item>
+        <item quantity="other">%d ساعت</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 دقیقه</item>
+        <item quantity="other">%d دقیقه</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 ثانیه</item>
+        <item quantity="other">%d ثانیه</item>
+    </plurals>
+    <string name="tw__like_tweet">پسندیدن توییت</string>
+    <string name="tw__liked_tweet">لغو پسندیدن</string>
+    <string name="tw__loading_tweet">بارگیری توییت</string>
+    <string name="tw__pause">توقف موقت</string>
+    <string name="tw__play">پخش</string>
+    <string name="tw__relative_date_format_long">y/M/d</string>
+    <string name="tw__relative_date_format_short">d LLL</string>
+    <string name="tw__replay">پخش مجدد</string>
+    <string name="tw__retweeted_by_format">بازتوییت‌شده توسط %1$s</string>
+    <string name="tw__share_content_format">توییت ‎\@%1$s را بر‌رسی کنید: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">توییت‌ از %1$s (‎\@%2$s)</string>
+    <string name="tw__share_tweet">به اشتراک‌گذاری توییت</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">محتوای چند رسانه‌ای توییت</string>
+</resources>

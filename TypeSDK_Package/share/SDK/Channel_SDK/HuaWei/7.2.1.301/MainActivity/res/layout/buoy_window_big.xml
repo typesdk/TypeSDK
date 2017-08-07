@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/big_window_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#b3000000"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/bigViewLayout"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buoy_dialog_backgroud" >
+        
+        <ImageView
+        
+            android:id="@+id/closeIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/buoy_grid_close_btn_selector" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/buoy_gamebox_appname"
+            android:textColor="@color/buoy_black"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:id="@+id/scrollViewCenter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:padding="0dp" >
+            <LinearLayout
+                android:id="@+id/girdLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginLeft="20dp"
+        		android:layout_marginRight="20dp"/>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

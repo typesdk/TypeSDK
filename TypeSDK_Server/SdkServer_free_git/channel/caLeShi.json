@@ -1,0 +1,29 @@
+{
+  "version":"v2.2.1.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "access_token" : "",
+      "uid":""
+    }
+    ,"out_url" :"https://sso.letv.com/oauthopen/userbasic"
+    ,"out_params" :
+    {
+      "access_token" : ""
+      ,"uid" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {}
+    ,"out_url" :"https://sso.letv.com/oauthopen/userbasic"
+    ,"out_params" :
+      {}
+    }
+  ]
+}

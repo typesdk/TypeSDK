@@ -1,0 +1,15 @@
+/* 
+    * Created on : 2014-01-10, 22:47:39
+    * Author     : Meritoo.pl, http://www.meritoo.pl
+    * Copyright  : Meritoo.pl
+*/
+
+.bootstrap-admin-theme-change-size li:first-of-type{
+    padding-left: 0 !important;
+}
+.bootstrap-admin-theme-change-size .size-changer{
+    cursor: pointer;
+}
+.bootstrap-admin-theme-change-size .size-changer.active{
+    color: #00A1F1;
+}

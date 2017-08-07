@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <RadioButton
+        android:id="@+id/radio_card_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:button="@drawable/m4399_rec_radio_btn_image"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingRight="12dp"
+        android:textColor="@color/m4399_rec_sdk_card_text_color"
+        android:textSize="16sp"
+        tools:text="@string/m4399_rec_liantong" />
+</LinearLayout>

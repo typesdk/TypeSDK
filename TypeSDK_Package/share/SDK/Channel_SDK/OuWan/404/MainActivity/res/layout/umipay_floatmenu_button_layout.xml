@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		style = "@style/um_tab_btn_container">
+
+			<ImageView
+				android:id="@+id/umipay_tab_btn_icon"
+				style = "@style/um_tab_btn_icon"/>
+
+			<TextView
+				android:id="@+id/umipay_tab_btn_text"
+				style="@style/um_tab_btn_text"/>
+
+			<TextView
+				android:id = "@+id/umipay_tab_bubble"
+				style = "@style/um_tab_bubble"
+				android:visibility = "gone" />
+
+
+</FrameLayout >

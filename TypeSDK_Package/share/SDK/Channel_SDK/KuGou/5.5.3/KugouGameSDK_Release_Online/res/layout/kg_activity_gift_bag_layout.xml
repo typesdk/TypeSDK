@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kg_common_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/kg_common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/kg_common_white"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/kg_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp" >
+
+            <RadioButton
+                android:id="@+id/kg_rb_left"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/kg_all"
+                android:textColor="@drawable/kg_selector_gift_tag_text"
+                android:textSize="@dimen/kg_common_large" />
+
+            <RadioButton
+                android:id="@+id/kg_rb_right"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/kg_received"
+                android:textColor="@drawable/kg_selector_gift_tag_text"
+                android:textSize="@dimen/kg_common_large" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="matrix"
+            android:src="@drawable/kg_cursor_blue" />
+    </LinearLayout>
+
+    <com.kugou.game.sdk.ui.widget.ParentViewPager
+        android:id="@+id/kg_appcenter_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

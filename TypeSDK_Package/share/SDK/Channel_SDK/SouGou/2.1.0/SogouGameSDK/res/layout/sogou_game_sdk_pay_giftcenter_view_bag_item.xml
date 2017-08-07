@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="53dp"
+    android:descendantFocusability="blocksDescendants">
+    <TextView
+        android:id="@+id/sogou_game_sdk_pay_giftcenter_view_bag_item_getgift_bt"
+        android:layout_width="49dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#ff6a00"
+        android:textSize="12sp"/>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/sogou_game_sdk_pay_giftcenter_view_bag_item_getgift_bt" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_pay_giftcenter_view_bag_item_game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/sogou_game_sdk_pay_giftcenter_view_bag_item_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sogou_game_sdk_pay_giftcenter_view_bag_item_game_name"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/sogou_game_sdk_pay_giftcenter_view_bag_item_gift_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sogou_game_sdk_pay_giftcenter_view_bag_item_game_name"
+                android:singleLine="true"
+                android:textColor="#999999"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_giftcenter_view_bag_item_key"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sogou_game_sdk_pay_giftcenter_getbt_sharp_get"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:text="@string/sogou_game_sdk_giftcenter_view_bag_item_key"
+            android:textColor="#ff6a00"
+            android:textSize="11sp"  />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

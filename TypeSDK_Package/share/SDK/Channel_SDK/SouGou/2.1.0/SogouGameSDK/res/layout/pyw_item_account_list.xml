@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pyw_tv_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_title_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/pyw_selector_account_bg"
+        android:gravity="center"
+        android:textColor="@drawable/select_account"
+        android:textSize="@dimen/pyw_common_large" />
+
+</RelativeLayout>

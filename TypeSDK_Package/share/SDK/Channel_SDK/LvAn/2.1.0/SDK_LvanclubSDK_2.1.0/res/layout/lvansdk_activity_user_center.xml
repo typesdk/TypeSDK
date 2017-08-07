@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include layout="@layout/lvansdk_title_user_center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_user_banner"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="@dimen/normal_margin_8"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/normal_margin_8"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/lvansdk_pannel_bg" >
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/normal_margin_16"
+                    android:src="@drawable/lvansdk_icon_logo" />
+
+                <TextView
+                    android:id="@+id/center_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/normal_margin_8"
+                    android:layout_toRightOf="@id/iv_logo"
+                    android:text="lv123445"
+                    android:textColor="#4E4E4E"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/lvansdk_pannel_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_bind"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="@dimen/normal_margin_16"
+                        android:src="@drawable/lvansdk_icon_bind" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_margin_16"
+                        android:layout_weight="1"
+                        android:text="绑定手机"
+                        android:textColor="#4E4E4E"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_bind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/normal_margin_16"
+                        android:text="未绑定"
+                        android:textColor="#ff2f30"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_width="@dimen/normal_margin_16"
+                        android:layout_height="@dimen/normal_margin_16"
+                        android:layout_marginRight="@dimen/normal_margin_16"
+                        android:src="@drawable/lvansdk_icon_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+
+                <LinearLayout
+                    android:id="@+id/ll_alterpwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="@dimen/normal_margin_16"
+                        android:src="@drawable/lvansdk_icon_pwd" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_margin_16"
+                        android:layout_weight="1"
+                        android:text="修改密码"
+                        android:textColor="#4E4E4E"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/normal_margin_16"
+                        android:layout_height="@dimen/normal_margin_16"
+                        android:layout_marginRight="@dimen/normal_margin_16"
+                        android:src="@drawable/lvansdk_icon_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+
+                <LinearLayout
+                    android:id="@+id/ll_paylist"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/normal_margin_48"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="@dimen/normal_margin_24"
+                        android:layout_height="@dimen/normal_margin_24"
+                        android:layout_marginLeft="@dimen/normal_margin_16"
+                        android:src="@drawable/lvansdk_icon_paylist" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_margin_16"
+                        android:layout_weight="1"
+                        android:text="支付记录"
+                        android:textColor="#4E4E4E"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/normal_margin_16"
+                        android:layout_height="@dimen/normal_margin_16"
+                        android:layout_marginRight="@dimen/normal_margin_16"
+                        android:src="@drawable/lvansdk_icon_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eee" />
+
+                <LinearLayout
+                    android:id="@+id/ll_integral"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/normal_margin_48"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="@dimen/normal_margin_16"
+                        android:src="@drawable/lvansdk_icon_integral" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normal_margin_16"
+                        android:layout_weight="1"
+                        android:text="我的积分"
+                        android:textColor="#4E4E4E"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/normal_margin_16"
+                        android:layout_height="@dimen/normal_margin_16"
+                        android:layout_marginRight="@dimen/normal_margin_16"
+                        android:src="@drawable/lvansdk_icon_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/normal_margin_32"
+                android:layout_marginRight="@dimen/normal_margin_32"
+                android:layout_marginTop="@dimen/normal_margin_32"
+                android:background="@drawable/lvansdk_btn_style_one_normal"
+                android:gravity="center"
+                android:text="切换账号"
+                android:textColor="#fff"
+                android:textSize="@dimen/user_button_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

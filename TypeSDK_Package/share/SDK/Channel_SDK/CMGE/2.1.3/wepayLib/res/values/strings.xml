@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="wepay_version_internal">1.0.0</string>
+	<string name="wepay_app_name">wepay</string>
+
+	<!-- input hint -->
+	<string name="wepay_hint_mobile">银行预留手机号</string>
+	<string name="wepay_hint_card">持卡人银行卡号</string>
+	<string name="wepay_hint_valid">月/年</string>
+	<string name="wepay_hint_cvv">卡背数字后3位</string>
+	<string name="wepay_hint_name">请输入持卡人姓名</string>
+	<string name="wepay_hint_idcard">请输入身份证号</string>
+	<string name="wepay_hint_msg_birthday">您的生日(月+日，如：0314)</string>
+	<string name="wepay_hint_msg_cvv">CVV2(银行卡背面后3位数)</string>
+	<string name="wepay_hint_msg_valid">有效期(月+年，如：11/15)</string>
+	<string name="wepay_hint_sms">短信验证码</string>
+	<string name="wepay_hint_paypwd">请输入6位数字支付密码</string>
+
+	<!-- input标题 -->
+	<string name="wepay_title_birthday">您的生日</string>
+
+	<!-- 校验不合法提示 -->
+	<string name="wepay_verify">输入信息不正确</string>
+	<string name="wepay_verify_idcard">身份证号格式不正确</string>
+	<string name="wepay_verify_cvv2">CVV2 格式不正确</string>
+	<string name="wepay_verify_valid">有效期格式不正确</string>
+	<string name="wepay_verify_bankcard">银行卡号格式不正确</string>
+	<string name="wepay_verify_mobile">手机号格式不正确</string>
+	<string name="wepay_verify_idcard_void">身份证号不正确</string>
+	<string name="wepay_verify_cvv2_void">CVV2 不能为空</string>
+	<string name="wepay_verify_valid_void">有效期不能为空</string>
+	<string name="wepay_verify_bankcard_void">银行卡号不能为空</string>
+	<string name="wepay_verify_mobile_void">手机号不能为空</string>
+	<string name="wepay_verify_cardholder_void">持卡人不能为空</string>
+
+	<!-- dialog -->
+	<string name="wepay_dialog_sure">是</string>
+	<string name="wepay_dialog_cancel">否</string>
+	<string name="wepay_dialog_quite">放弃本次付款？</string>
+	<string name="wepay_dialog_setpay_quite">放弃设置支付密码？</string>
+	<string name="wepay_dialog_extreainfo_tip">请完善%s信息</string>
+	<!-- actionBar文字 -->
+	<string name="wepay_title_next">下一步</string>
+	<string name="wepay_title_pay">付款</string>
+	<string name="wepay_title_mobile">京东支付</string>
+	<string name="wepay_title_cardinfo">完善银行卡信息</string>
+	<string name="wepay_title_sms_confirm">短信验证</string>
+	<string name="wepay_title_pwd_confirm">支付密码验证</string>
+	<string name="wepay_title_set_pwd">设置支付密码</string>
+	<string name="wepay_title_sure">完成</string>
+	<string name="wepay_title_agreement">“京东支付”用户协议</string>
+	<string name="wepay_title_bank_agreement">银行协议</string>
+	<string name="wepay_title_error">错误提示</string>
+	<string name="wepay_title_agreement_select">服务协议</string>
+
+	<!-- 内容文字 -->
+	<string name="wepay_content_agreement">《“京东支付”用户协议》</string>
+	<string name="wepay_content_before_agreement">您已同意</string>
+	<string name="wepay_content_agreement_bank">《用户协议》</string>
+
+	<!-- 临时添加 -->
+	<string name="wepay_mobile_info_tip">银行预留手机号，是你在办理该银行卡时填写的手机号。\n\n如果没有预留手机号、忘记手机号、或者手机已停用，您可以联系银行客服。\n\n工商银行 <a href="tel:95588">95588</a>&#160;&#160;&#160;&#160;&#160;农业银行 <a href="tel:95599">95599</a>\n\n中国银行 <a href="tel:95566">95566</a>&#160;&#160;&#160;&#160;&#160;建设银行 <a href="tel:95533">95533</a>\n\n招商银行 <a href="tel:95555">95555</a></string>
+	<string name="wepay_error_net_unconnect">无网络连接，请检测网络！</string>
+	<string name="wepay_common_loading">正在加载&#8230;</string>
+	<string name="wepay_agreement">您已同意《“京东支付”用户协议》</string>
+	<string name="wepay_yuan">元</string>
+	<string name="wepay_bank_tip" formatted="false">您正在使用%s(尾号%s)付款</string>
+	<string name="wepay_select_bankcard">使用其他银行卡付款</string>
+	<string name="wepay_switch_checkcode_sms">通过短信验证付款</string>
+	<string name="wepay_switch_checkcode_paypwd">使用“京东支付”支付密码付款</string>
+	<string name="wepay_birthday_title_hint">您的生日</string>
+	<string name="wepay_pay_amount_title_hint">付款金额</string>
+	<string name="wepay_birthday_hint">月份+日期，如：0314</string>
+	<string name="wepay_sure">确定</string>
+	<string name="wepay_cancel">取消</string>
+	<string name="wepay_set_paypwd">设置“京东支付”支付密码</string>
+	<string name="wepay_finish">完成</string>
+	<string name="wepay_back">返回</string>
+	<string name="wepay_mobile">银行卡预留手机号</string>
+	<string name="wepay_paypwd">“京东支付”密码</string>
+	<string name="wepay_paypwd_success">设置成功！</string>
+	<string name="wepay_result_back">返回商户</string>
+	<string name="wepay_result_repay">重新支付</string>
+	<string name="wepay_setpaypwd_tip">请设置6位 “京东支付”支付密码 </string>
+	<string name="wepay_setpaypwd_confirm">重复输入“京东支付”支付密码</string>
+	<string name="wepay_setpaypwd_error">两次密码不一致</string>
+	<string name="wepay_verify_merchantsign_error">用户交易信息签名校验失败</string>
+	<string name="wepay_verify_mobile_error">手机号校验失败</string>
+	<string name="wepay_verify_merchantnum_error">商户号校验失败</string>
+	<string name="wepay_verify_tradenum_error">交易流水号校验失败</string>
+	<string name="wepay_verify_tradename_error">交易名称校验失败</string>
+	<string name="wepay_verify_tradetime_error">交易时间校验失败</string>
+	<string name="wepay_verify_tradeamount_error">交易金额校验失败</string>
+	<string name="wepay_verify_currency_error">交易币种校验失败</string>
+	<string name="wepay_verify_notifyUrl_error">交易结果通知url校验失败</string>
+	<string name="wepay_verify_key_finish">完成</string>
+	<string name="wepay_idnum_error">身份证号位数输入错误</string>
+
+	<!-- bank picker -->
+	<string name="wepay_picker_bank">所属银行</string>
+	<string name="wepay_picker_select_bank">选择所属银行</string>
+
+	<!-- new order info -->
+	<string name="wepay_order_info_recipient">收款方：</string>
+	<string name="wepay_order_info_commodity">商　品：</string>
+
+	<!-- firstpage -->
+
+	<string name="wepay_title_mobile_info">手机号说明</string>
+	<string name="wepay_title_bankcard_select">选择银行卡</string>
+	<string name="wepay_bankcard_number_title">卡&#160;&#160;&#160;&#160;号</string>
+	<string name="wepay_bankcard_title">银行卡</string>
+	<string name="wepay_mobile_number_title">手机号</string>
+	<string name="wepay_cvv_title">CVV2&#160;</string>
+
+	<!-- cardinfo -->
+	<string name="wepay_valid_title">有效期</string>
+	<string name="wepay_name_title">姓&#160;&#160;&#160;&#160;名</string>
+	<string name="wepay_idcard_title">身份证</string>
+	<string name="wepay_bankcard_select_card">更换</string>
+	<string name="wepay_bankcard_select_newcard">使用新的银行卡</string>
+	<string name="wepay_bankcard_select_newcard_nocard">您还没有绑定银行卡</string>
+	
+	<string name="wepay_repeat_send_sms">重发</string>
+	<string name="wepay_common_sms_send_click"> %s 秒 </string>
+	<string name="wepay_bankcard_tail_string">(%s)</string>
+	<string name="wepay_bankcard_cc_string">信用卡</string>
+	<string name="wepay_bankcard_dc_string">储蓄卡</string>
+	<string name="wepay_password">密码</string>
+	
+	<!-- 埋点名称 -->
+	<string name="wepay_bury_start">启动页</string>
+	<string name="wepay_bury_phone_card_input">银行卡手机号输入界面</string>
+	<string name="wepay_bury_no_fist_select_card">非首次选卡界面</string>
+	<string name="wepay_bury_cardinfo">卡详细信息界面</string>
+	<string name="wepay_bury_sign_fail">签约失败界面</string>
+	<string name="wepay_bury_select_bankcard">选择银行卡界面</string>
+	<string name="wepay_bury_pay_confirm">支付确认界面</string>
+	<string name="wepay_bury_pay_success">支付成功界面</string>
+	<string name="wepay_bury_pay_fail">支付失败界面</string>
+	<string name="wepay_bury_set_pwd_success">设置支付密码成功界面</string>
+	<string name="wepay_bury_set_pwd_fail">设置支付密码失败界面</string>
+	
+	<!-- 错误提示 -->
+	<string name="wepay_error_network">网络数据解析异常</string>
+	<string name="wepay_error_certificate_null">获取证书失败，证书数据为空</string>
+	<string name="wepay_error_certificate_des_null">获取证书失败，密钥为空</string>
+	<string name="wepay_error_certificate_rsa">获取证书失败，密钥解密失败</string>
+	<string name="wepay_error_certificate_des">获取证书失败，证书解密失败</string>
+</resources>

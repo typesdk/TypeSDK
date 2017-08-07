@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/dcn_widget29"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/dcn_float_menu_item_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dcn_float_menu_item_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/dcn_black"
+        android:textSize="10sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/dcn_float_menu_item_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/dcn_float_menu_new_msg_iv"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/dcn_float_menu_item_iv"
+        android:src="@drawable/dcn_actionbar_msg_count_bg"
+        android:visibility="visible" />
+
+</RelativeLayout>

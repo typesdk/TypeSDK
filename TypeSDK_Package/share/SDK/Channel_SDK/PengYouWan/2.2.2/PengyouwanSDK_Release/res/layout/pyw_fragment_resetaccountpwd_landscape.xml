@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_white"
+    android:paddingLeft="@dimen/pyw_dp_234"
+    android:paddingRight="@dimen/pyw_dp_234" >
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_reset_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/pyw_tv_input_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pyw_dp_42"
+            android:text="登录账号名:"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textSize="@dimen/pyw_common_medium" />
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pyw_dp_60"
+            android:background="@drawable/pyw_selector_edittext_bg" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/pyw_img_pswicon_normal" />
+
+            <EditText
+                android:id="@+id/pyw_et_register_account"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pyw_common_editext_height"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="@string/pyw_regex_code_pwd"
+                android:hint="请设置独立密码(限6-12位)"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textVisiblePassword"
+                android:maxLength="12"
+                android:paddingLeft="6dp"
+                android:singleLine="true"
+                android:textColor="@color/pyw_common_gray_darker"
+                android:textColorHint="@color/pyw_common_hint_color"
+                android:textSize="@dimen/pyw_common_large" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/pyw_pwd_visible_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pyw_img_visible_normal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pyw_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:layout_marginTop="@dimen/pyw_dp_51"
+            android:background="@drawable/pyw_selector_btn_blue_bg"
+            android:text="确定设置"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <TextView
+            android:id="@+id/pyw_tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pyw_dp_78"
+            android:gravity="center"
+            android:text="温馨提示:独立密码和手机密码不要相同"
+            android:textColor="@color/pyw_common_hint_color_dark"
+            android:textSize="@dimen/pyw_common_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_reset_finish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/pyw_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pyw_dp_102"
+            android:text="游戏账号"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textSize="@dimen/pyw_common_medium" />
+
+        <TextView
+            android:id="@+id/pyw_tv_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pyw_dp_30"
+            android:text="独立密码"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textSize="@dimen/pyw_common_medium" />
+
+        <TextView
+            android:id="@+id/pyw_tv_account_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/pyw_dp_30"
+            android:text="你也可以用游戏账号和独立密码登录游戏"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textSize="@dimen/pyw_common_medium" />
+
+        <Button
+            android:id="@+id/pyw_btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:layout_marginTop="@dimen/pyw_dp_99"
+            android:background="@drawable/pyw_selector_btn_blue_bg"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pyw_dp_78"
+            android:gravity="center"
+            android:text="温馨提示:该账号和密码仅当前游戏可用"
+            android:textColor="@color/pyw_common_hint_color_dark"
+            android:textSize="@dimen/pyw_common_medium" />
+    </LinearLayout>
+
+</RelativeLayout>

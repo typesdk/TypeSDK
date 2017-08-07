@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pay_dialog_item_divider"/>
+    
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/pay_dialog_item_center_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        
+        <ImageView 
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_alipay"/>
+        
+        <TextView 
+            android:id="@+id/content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/pay_dialog_item_text_color"
+            android:textSize="@dimen/pay_dialog_item_text_size"
+            android:singleLine="true"
+            android:text="@string/pay_dialog_item_alipay"/>
+        
+        <ImageView 
+            android:id="@+id/right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_popup"/>
+        
+    </RelativeLayout>
+
+</LinearLayout>

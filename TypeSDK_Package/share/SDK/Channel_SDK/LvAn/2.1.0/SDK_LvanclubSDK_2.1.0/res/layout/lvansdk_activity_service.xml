@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/lvansdk_title_user_center" />
+
+    <LinearLayout
+        android:id="@+id/ll_service"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/lvansdk_service_bg" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    android:layout_width="@dimen/service_text_width"
+                    android:layout_height="@dimen/service_text_height"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/lvansdk_service_text_bg"
+                    android:drawableLeft="@drawable/lvansdk_service_tel_logo"
+                    android:drawablePadding="@dimen/service_text_padding"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/service_text_padding"
+                    android:text="18810230143"
+                    android:textColor="#033b48"
+                    android:singleLine="true"
+                    android:textSize="@dimen/service_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="@dimen/service_text_width"
+                    android:layout_height="@dimen/service_text_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/lvansdk_service_text_bg"
+                    android:drawableLeft="@drawable/lvansdk_service_email_logo"
+                    android:drawablePadding="@dimen/service_text_padding"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/service_text_padding"
+                    android:text="lvanclub_service@iwgame.com"
+                    android:textColor="#033b48"
+                    android:singleLine="true"
+                    android:textSize="@dimen/service_text_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:text="上海绿岸网络科技股份有限公司"
+                android:textColor="#666666" />
+
+            <TextView
+                android:id="@+id/tv_copyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp"
+                android:text="Copyright@2009-2015 Greenshore."
+                android:textColor="#666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

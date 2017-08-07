@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="25dp" >
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_main_dialog_top_more_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/sogou_game_sdk_main_dialog_top_more"
+        android:text="点击更多游戏"
+        android:textColor="@drawable/sogou_game_sdk_color_orange_gray"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sogou_game_sdk_main_dialog_top_more_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/sogou_game_sdk_game_logo" />
+
+</RelativeLayout>

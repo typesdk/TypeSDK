@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/personal_et_bg"
+        android:gravity="center"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/personal_update_pwd_icon" />
+
+        <EditText
+            android:id="@+id/et_update_pwd_original_pwd"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="原始密码"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/personal_et_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/personal_update_pwd_icon" />
+
+            <EditText
+                android:id="@+id/et_update_pwd_new_pwd"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="新密码"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/personal_update_pwd_icon" />
+
+            <EditText
+                android:id="@+id/et_update_pwd_confirm_pwd"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="确认新密码"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/personal_updata_pwd_code_icon" />
+
+            <EditText
+                android:id="@+id/et_update_pwd_code"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="输入验证码" />
+
+            <ImageView
+                android:id="@+id/iv_security_code"
+                android:layout_width="100dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_update_pwd_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/personal_btn_orange"
+        android:text="确认"
+        android:textColor="@color/white" />
+
+</LinearLayout>

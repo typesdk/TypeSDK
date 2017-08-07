@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageView
+            android:id="@+id/zy_btn_web_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/zy_web_back_selector" />
+
+        <TextView
+            android:id="@+id/zy_web_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#676767"
+            android:textSize="22.5sp" />
+
+        <ImageView
+            android:id="@+id/zy_web_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/zy_pay_dialog_close_margin_right"
+            android:layout_marginTop="@dimen/zy_pay_dialog_close_margin_top"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/zy_pay_cancel" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#ebebeb" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <WebView
+            android:id="@+id/zy_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/zy_probar_web"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:progressDrawable="@drawable/probar_style" />
+    </RelativeLayout>
+
+</LinearLayout>

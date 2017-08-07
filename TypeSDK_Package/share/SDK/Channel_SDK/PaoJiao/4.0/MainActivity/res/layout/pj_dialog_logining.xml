@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:background="@drawable/pj_corner_background_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="150dp">
+    <TextView
+        style="@style/PjTitleText"
+        android:textSize="16sp"
+        android:id="@+id/pj_tv_title"
+        android:text="泡椒帐号为："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:background="@drawable/pj_bg_dialog_progressbar"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="@color/pj_text_black"
+            style="@style/PjDescText"
+            android:text="正在登录中..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

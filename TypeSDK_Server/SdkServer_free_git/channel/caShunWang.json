@@ -1,0 +1,47 @@
+{
+  "version": "2.4.1.20161202",
+  "actions": [
+    {
+      "name": "Login",
+      "method": "POST",
+      "in_params": {
+        "guid": "",
+        "accessToken": ""
+      },
+      "out_url": "http://interface.kedou.com/front/interface/SDKverifyToken.htm",
+      "out_params": {
+        "guid": "",
+        "gameId": "",
+        "accessToken": "",
+        "siteId": "",
+        "time": "",
+        "sign": ""
+      }
+    },
+    {
+      "name": "Pay",
+      "method": "POST",
+      "in_params": {
+        "orderNo": "",
+        "gameId": "",
+        "guid": "",
+        "money": "",
+        "coins": "",
+        "coinMes": "",
+        "time": "",
+        "sign": ""
+      },
+      "out_url": "http://interface.kedou.com/front/interface/SDKverifyToken.htm",
+      "out_params": {
+        "orderNo": "",
+        "gameId": "",
+        "guid": "",
+        "money": "",
+        "coins": "",
+        "coinMes": "",
+        "time": "",
+        "sign": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/com_lenovo_lsf_view_width_portrait"
+    android:layout_height="196dp"
+    android:background="@drawable/com_lenovo_lsf_game_bg" >
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/com_lenovo_lsf_title_height"
+        android:background="@drawable/com_lenovo_lsf_title_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/com_lenovo_lsf_lenovouser_app_name"
+                android:textColor="@color/com_lenovo_lsf_loginTabColorLight"
+                android:textSize="@dimen/com_lenovo_lsf_title_fontsize" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_login_down"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/title_layout" >
+
+        <RelativeLayout
+            android:id="@+id/layout_quicklogin"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/com_lenovo_lsf_content_padding_left_right"
+            android:layout_marginRight="@dimen/com_lenovo_lsf_content_padding_left_right"
+            android:background="@drawable/com_lenovo_lsf_register_btn_normal" >
+
+            <ImageView
+                android:id="@+id/quicklogin_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/com_lenovo_lsf_quicklogin_phone_icon" />
+
+            <LinearLayout
+                android:id="@+id/layout_quicklogin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/quicklogin_icon"
+                android:orientation="vertical"
+                android:textColor="#0062b3"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/quicklogin_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/com_lenovo_lsf_string_quick_startgame"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/quicklogin_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/com_lenovo_lsf_string_phone_quick_startgame"
+                    android:textColor="#c4ffba"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/layout_other_login"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_below="@+id/re_login_down"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:textColor="#0062b3" >
+
+            <TextView
+                android:id="@+id/other_login_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/com_lenovo_lsf_string_other_account_login"
+                android:textColor="@color/com_lenovo_lsf_text_font_blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+</RelativeLayout>

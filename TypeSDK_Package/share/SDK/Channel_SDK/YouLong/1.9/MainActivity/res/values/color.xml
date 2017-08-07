@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="recharge_gray">#737372</color>
+    <color name="recharge_line">#E3E3E3</color>
+    
+    <color name="login_forget_pwd_blue">#2393E2</color>
+    <color name="personal_btn_orange">#FF8400</color>
+    <color name="hint_text_color">#4c4c4c</color>
+    <color name="login_et_line">#dcdbdb</color>
+    <color name="personal_bg">#F5F5F5</color>
+    <color name="personal_text1">#3E3E3E</color>
+    <color name="personal_text2">#7F7F7F</color>
+    
+    <color name="win_bg_gray">#F5F5F5</color>
+    <color name="win_bag_warn">#E42E00</color>
+    <color name="win_bar_yellow">#FF8500</color>
+    
+    <color name="orange">#FF7700</color>
+    <color name="_red">#ff0000</color>
+    <color name="_blue">#0087d1</color>
+    <color name="_gray">#f7f7f7</color>
+    <color name="gray">#BFBFBF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#ff9c00</color>
+    <color name="transparent">#00000000</color>
+    
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <View android:layout_width="match_parent" android:layout_height="10dp" android:id="@+id/dividerTop"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:background="@android:color/white">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dividerTop">
+            <!-- 论坛ICON-->
+            <view class="com.papa91.pay.widget.RoundedImageView"
+                  android:layout_width="52dp"
+                  android:layout_height="52dp"
+                  android:layout_gravity="center"
+                  android:scaleType="fitXY"
+                  android:id="@+id/forum_icon"
+                  android:src="@drawable/main_normal_icon"
+                    />
+                  <!--app:riv_corner_radius="@dimen/mg_forum_avatar_round_width"-->
+                  <!--app:riv_border_width="0dp"-->
+                  <!--app:riv_oval="false"-->
+                  <!--app:riv_border_color="@color/mg_forum_avatar_round_stroke_color"-->
+
+
+            <!-- 论坛信息-->
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp"
+                          android:layout_height="fill_parent" android:layout_centerVertical="true"
+                          android:layout_toRightOf="@+id/forum_icon"
+                          android:layout_marginLeft="12dp"
+                          android:layout_weight="1">
+
+                <!-- 专区昵称-->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/forum_name" android:layout_gravity="center_vertical"
+                          android:layout_weight="1"
+                          android:gravity="center_vertical|center_horizontal"
+                          android:textSize="@dimen/mg_forum_forum_nickname_text_size"
+                          android:singleLine="true"
+                          android:textColor="#4d4d4d"
+                          android:text="礼包"/>
+
+                <!-- 专区描述-->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:id="@+id/forumDescTv"
+                          android:layout_weight="1"
+                          android:gravity="center_vertical"
+                          android:singleLine="true"
+                          android:text="礼包"
+                          android:textSize="12dp"
+                          android:textColor="#787878"
+                          android:maxLines="1"/>
+            </LinearLayout>
+            <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:id="@+id/deleteLayout">
+                <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/delete"
+                        android:background="@drawable/gift_delete"
+                        android:layout_gravity="right"
+                        android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_marginTop="8dp">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:text="Medium Text"
+                    android:id="@+id/cdkNum" android:layout_weight="1" android:layout_gravity="center_vertical"
+                    android:textColor="#a5a5a5" android:background="@drawable/shape_gift_package_cdk_bg"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textSize="14dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"/>
+            <Button
+                    android:layout_width="54dp"
+                    android:layout_height="28dp"
+                    android:text="领取"
+                    android:id="@+id/actionButton" android:textColor="@android:color/white" android:textSize="14dp"
+                    android:background="@drawable/receive_orange" android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/f_padding_lr"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_alignParentBottom="true"
+          android:background="#ebebeb"/>
+
+</LinearLayout>

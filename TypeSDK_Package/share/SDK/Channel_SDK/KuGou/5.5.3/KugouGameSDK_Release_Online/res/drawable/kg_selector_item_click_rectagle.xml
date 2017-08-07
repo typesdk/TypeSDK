@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape android:shape="rectangle">
+            <solid android:color="@color/kg_common_divider" />
+
+            <stroke android:width="1dp" android:color="@color/kg_common_divider" />
+        </shape></item>
+    <item><shape android:shape="rectangle">
+            <solid android:color="@color/kg_common_white" />
+
+            <stroke android:width="1dp" android:color="@color/kg_common_divider" />
+        </shape></item>
+
+</selector>

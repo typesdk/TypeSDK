@@ -1,0 +1,454 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="SDKPackage.Admin" %>
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title><%: Page.Title %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="/build/css/custom.css" rel="stylesheet">
+  
+    <!-- jQuery -->
+    <script src="/vendors/jquery/dist/jquery.min.js"></script>
+
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?92efd071d088dab92a3201c92743fe18";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    
+</head>
+<body class="nav-md">
+    <!-- main / large navbar -->
+  <form class="container body" runat="server">
+      <div class="main_container">
+            <!-- left, vertical navbar & content -->
+                <!-- left, vertical navbar -->
+                <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="/" class="site_title"><i style="border:none;" class="fa fa-paper-plane"></i> <span style=" font-size: 16px">TypeSDK 出包管理平台</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+      
+                                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                                    <AnonymousTemplate>
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="/images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>今日打包运势</span>
+                <h2>&nbsp宜</h2>
+              </div>
+            </div>
+                                    </AnonymousTemplate>
+                                    <LoggedInTemplate>
+
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="/images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>欢迎,</span>
+                <h2><%: Context.User.Identity.GetUserName()  %></h2>
+              </div>
+            </div>
+                                    </LoggedInTemplate>
+                                </asp:LoginView>
+            <!-- /menu profile quick info -->
+
+            <br />
+                  <!-- sidebar menu -->
+      <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>&nbsp</h3>
+                    <ul class="nav side-menu">
+            <li><a><i class="fa fa-dashboard"></i> 首页 <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+                        <li>
+                            <a href="/Default">首页</a>
+                        </li>
+            </ul>
+            </li>
+            <li><a><i class="fa fa-archive"></i> 打包 <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+                        <li>
+                            <a href="/PJPackage/SelectGame">开始打包</a>
+                        </li>
+                        <li>
+                            <a href="/PJPackage/PackageInfoList">打包任务</a>
+                        </li>
+                        <li>
+                            <a href="/PJPackage/GameProjectVersionManage">游戏版本管理</a>
+                        </li>
+            </ul>
+            </li>
+            <li><a><i class="fa fa-download"></i> 下载 <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+                        <li>
+                            <a href="/DownLoad/DownLoadAndroidPackage">Android包下载</a>
+                        </li>
+                        <li>
+                            <a href="/DownLoad/DownLoadIOSPackage">IOS包下载</a>
+                        </li>
+            </ul>
+            </li>
+            <li><a><i class="fa fa-gears"></i> 管理 <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+                        <li>
+                            <a href="/PJConfig/Platform">渠道管理</a>
+                        </li>
+<%--                        <li id="m7">
+                            <a href="/SdkPlatform/PlatformList">服务器端渠道管理</a>
+                        </li>--%>
+                        <li>
+                            <a href="/GameConfig/GameList">游戏管理</a>
+                        </li>
+                        <%--<li>
+                            <a href="/GameConfig/GameProjectVersionManage">游戏版本管理</a>
+                        </li>--%>
+                        <li>
+                            <a href="/GameConfig/GameChannelPackageManage">游戏渠道包管理</a>
+                        </li>
+                        <li>
+                            <a href="/GameIcon/GameIconList">图标管理</a>
+                        </li>
+                        <li>
+                            <a href="/PJConfig/KeyConfig">APK签名管理</a>
+                        </li>
+<%--                        <li id="m11">
+                            <a href="/SdkPlatform/OnLine/ServerList">SDK服务器管理</a>
+                        </li>
+                        <li id="m12">
+                            <a href="/SdkPlatform/GamePlatformList">SDK服务端同步器</a>
+                        </li>--%>
+                        <li id="m13">
+                            <a href="/ADMIN/Users">平台用户管理</a>
+                        </li>
+            </ul>
+            </li>
+            <li>
+      <a><i class="fa fa-github"></i> 源代码 <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+                        <li>
+                            <a target="_blank" href="https://code.csdn.net/typesdk_code">CSDN</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/typesdk">GitHub</a>
+                        </li>
+            </ul>
+            </li>
+            <li>
+      <a><i class="fa fa-book"></i> 使用帮助 <span class="fa fa-chevron-down"></span></a>
+            <ul class="nav child_menu">
+                        <li>
+                            <a target="_blank" href="http://www.typesdk.com/documents">技术文档</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.chuanke.com/s8060364.html">视频教程</a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.typesdk.com">官方网站</a>
+                        </li>
+            </ul>
+            </li>
+
+                    </ul>
+                </div>
+        </div>
+        </div>
+        </div>
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+        <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+                            <ul class="nav navbar-nav navbar-right">
+                                <asp:LoginView runat="server" ViewStateMode="Disabled">
+                                    <AnonymousTemplate>
+                                        <li class="">
+                                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                      未登录<span class=" fa fa-angle-down"></span></a>
+                                            <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                                <li><a runat="server" href="~/Account/Register">注册</a></li>
+                                                <li><a runat="server" href="~/Account/Login">登录</a></li>
+                                            </ul>
+                                        </li>
+                                    </AnonymousTemplate>
+                                    <LoggedInTemplate>
+<li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="/images/img.jpg" alt=""><%: Context.User.Identity.GetUserName()  %>
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="<i class='fa fa-sign-out pull-right'></i>注销" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" /></li>
+                  </ul>
+                </li>
+                                    </LoggedInTemplate>
+                                </asp:LoginView>
+                            </ul>
+                        <!-- /.navbar-collapse -->
+            <!-- /.container -->
+        </nav>
+    </div>
+    </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main" runat="server">  
+      <div class="page-title">
+              <div class="title_left">
+                <h3><%: Page.Title %></h3>
+              </div>
+            </div>
+      <div class="clearfix"></div>
+                    <!-- Content -->
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+          <!-- footer -->
+        <footer>
+          <div class="pull-right">
+            TypeSDK Team - &copy; 2014 <a href="http://www.typdsdk.com" target="_blank">typesdk.com</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+            </div>
+        </form>
+    <!-- Bootstrap -->
+    <script src="/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="/vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="/vendors/bernii/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="/vendors/iCheck/icheck.min.js"></script>
+    <!-- Switchery -->
+    <script src="/vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Skycons -->
+    <script src="/vendors/skycons/skycons.js"></script>
+  <!-- Jquery cookie -->
+    <script src="/vendors/jquery.cookie/jquery.cookie.min.js"></script>
+    <!-- Flot -->
+    <script src="/vendors/Flot/jquery.flot.js"></script>
+    <script src="/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="/vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="/js/flot/jquery.flot.orderBars.js"></script>
+    <script src="/js/flot/date.js"></script>
+    <script src="/js/flot/jquery.flot.spline.js"></script>
+    <script src="/js/flot/curvedLines.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="/js/moment/moment.min.js"></script>
+    <script src="/js/datepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="/build/js/custom.js"></script>
+
+    <!-- Flot -->
+    <script>
+      $(document).ready(function() {
+        var data1 = [
+          [gd(2012, 1, 1), 17],
+          [gd(2012, 1, 2), 74],
+          [gd(2012, 1, 3), 6],
+          [gd(2012, 1, 4), 39],
+          [gd(2012, 1, 5), 20],
+          [gd(2012, 1, 6), 85],
+          [gd(2012, 1, 7), 7]
+        ];
+
+        var data2 = [
+          [gd(2012, 1, 1), 82],
+          [gd(2012, 1, 2), 23],
+          [gd(2012, 1, 3), 66],
+          [gd(2012, 1, 4), 9],
+          [gd(2012, 1, 5), 119],
+          [gd(2012, 1, 6), 6],
+          [gd(2012, 1, 7), 9]
+        ];
+        $("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
+          data1, data2
+        ], {
+          series: {
+            lines: {
+              show: false,
+              fill: true
+            },
+            splines: {
+              show: true,
+              tension: 0.4,
+              lineWidth: 1,
+              fill: 0.4
+            },
+            points: {
+              radius: 0,
+              show: true
+            },
+            shadowSize: 2
+          },
+          grid: {
+            verticalLines: true,
+            hoverable: true,
+            clickable: true,
+            tickColor: "#d5d5d5",
+            borderWidth: 1,
+            color: '#fff'
+          },
+          colors: ["rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)"],
+          xaxis: {
+            tickColor: "rgba(51, 51, 51, 0.06)",
+            mode: "time",
+            tickSize: [1, "day"],
+            //tickLength: 10,
+            axisLabel: "Date",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 12,
+            axisLabelFontFamily: 'Verdana, Arial',
+            axisLabelPadding: 10
+          },
+          yaxis: {
+            ticks: 8,
+            tickColor: "rgba(51, 51, 51, 0.06)",
+          },
+          tooltip: false
+        });
+
+        function gd(year, month, day) {
+          return new Date(year, month - 1, day).getTime();
+        }
+      });
+    </script>
+    <!-- /Flot -->
+
+    <!-- Skycons -->
+    <script>
+      $(document).ready(function() {
+        var icons = new Skycons({
+            "color": "#73879C"
+          }),
+          list = [
+            "clear-day", "clear-night", "partly-cloudy-day",
+            "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+            "fog"
+          ],
+          i;
+
+        for (i = list.length; i--;)
+          icons.set(list[i], list[i]);
+
+        icons.play();
+      });
+    </script>
+    <!-- /Skycons -->
+
+    <!-- bootstrap-daterangepicker -->
+    <script>
+      $(document).ready(function() {
+
+        var cb = function(start, end, label) {
+          console.log(start.toISOString(), end.toISOString(), label);
+          $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        };
+
+        var optionSet1 = {
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment(),
+          minDate: '01/01/2012',
+          maxDate: '12/31/2015',
+          dateLimit: {
+            days: 60
+          },
+          showDropdowns: true,
+          showWeekNumbers: true,
+          timePicker: false,
+          timePickerIncrement: 1,
+          timePicker12Hour: true,
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          opens: 'left',
+          buttonClasses: ['btn btn-default'],
+          applyClass: 'btn-small btn-primary',
+          cancelClass: 'btn-small',
+          format: 'MM/DD/YYYY',
+          separator: ' to ',
+          locale: {
+            applyLabel: 'Submit',
+            cancelLabel: 'Clear',
+            fromLabel: 'From',
+            toLabel: 'To',
+            customRangeLabel: 'Custom',
+            daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+            monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            firstDay: 1
+          }
+        };
+        $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+        $('#reportrange').daterangepicker(optionSet1, cb);
+        $('#reportrange').on('show.daterangepicker', function() {
+          console.log("show event fired");
+        });
+        $('#reportrange').on('hide.daterangepicker', function() {
+          console.log("hide event fired");
+        });
+        $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+          console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+        });
+        $('#reportrange').on('cancel.daterangepicker', function(ev, picker) {
+          console.log("cancel event fired");
+        });
+        $('#options1').click(function() {
+          $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+        });
+        $('#options2').click(function() {
+          $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+        });
+        $('#destroy').click(function() {
+          $('#reportrange').data('daterangepicker').remove();
+        });
+      });
+    </script>
+    <!-- /bootstrap-daterangepicker -->
+
+</body>
+</html>

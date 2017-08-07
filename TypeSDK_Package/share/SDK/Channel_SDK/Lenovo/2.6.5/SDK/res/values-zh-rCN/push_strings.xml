@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<string name="push_app_name">设备服务</string>
+    <string name="download_falied">下载失败，点击重试。</string>
+    <string name="warring_network_mobile">当前没有可用的wifi网络，是否使用移动网络下载？</string>
+    <string name="warring_no_network">当前没有可用的网络连接，请设置wifi网络。</string>
+	<string name="text_start_task">开始下载</string>
+    <string name="text_set_wifi">设置Wifi</string>
+	<string name="text_set_later">以后再说</string>
+	
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/egame_bg_green"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_top_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/egame_edge_distance"
+            android:layout_marginRight="@dimen/egame_edge_distance"
+            android:background="@drawable/egame_line_tittle"
+            android:gravity="center"
+            android:text="@string/egame_fast_login_welcome_tip"
+            android:textColor="@color/egame_fast_login_title"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/egame_bg_avatar_normal"
+                android:focusable="false"
+                android:padding="3dp"
+                android:src="@drawable/egame_avatar_user_default" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_head"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/egame_usersdk_white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_nickname"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/egame_usersdk_white"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/iv_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_nickname"
+                    android:layout_toRightOf="@id/tv_nickname"
+                    android:src="@drawable/icon_vip_0"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/egame_bt_go_into_game"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/egame_edge_distance"
+            android:layout_marginRight="@dimen/egame_edge_distance"
+            android:background="@drawable/egame_btn_fast_into_game_selector"
+            android:focusable="false"
+            android:text="@string/egame_go_into_game"
+            android:textColor="@color/egame_fast_login_btn_text"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_change_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/egame_back_changeaccount_selector" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1000"
+                android:background="@null"
+                android:paddingBottom="15dp"
+                android:paddingLeft="@dimen/egame_edge_distance"
+                android:paddingTop="15dp"
+                android:text="@string/egame_use_other_account"
+                android:textColor="@color/egame_usersdk_white"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/egame_btn_arrow_right_white_normal"
+                android:focusable="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_remind"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/egame_usersdk_white"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:src="@drawable/egame_ico_remind" />
+
+        <TextView
+            android:id="@+id/tv_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/egame_usersdk_regist_text"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</LinearLayout>

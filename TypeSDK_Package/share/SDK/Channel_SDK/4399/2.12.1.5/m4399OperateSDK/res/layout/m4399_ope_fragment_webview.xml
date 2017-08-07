@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 带导航栏WebView Fragment布局 by.zhengxu -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <cn.m4399.operate.ui.widget.NavigationBarView
+        android:id="@+id/webview_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <WebView
+        android:id="@+id/webview_browser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/webview_navigation_bar"/>
+
+    <ImageView
+        android:id="@+id/webview_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/webview_browser"
+        android:contentDescription="@string/m4399_default_content_description"
+        android:focusable="true"
+        android:padding="5dp"
+        android:src="@drawable/m4399_ope_usercenter_webview_back_btn"
+        android:visibility="gone"/>
+
+</RelativeLayout>

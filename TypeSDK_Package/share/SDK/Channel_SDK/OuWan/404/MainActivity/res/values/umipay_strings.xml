@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+
+	<string name = "umipay_reg_agreement" >偶玩服务条款</string >
+	<string name = "umipay_reg_agreement_tip">我已阅读并同意遵守</string >
+
+	<!--FloatMemu-->
+	<string name = "umipay_account" >账户</string >
+	<string name = "umipay_msg" >消息</string >
+	<string name = "umipay_bbs" >社区</string >
+	<string name = "umipay_help" >客服</string >
+	<string name = "umipay_present" >礼包</string >
+	<string name = "umipay_floatmenu_dialog_title" >摇一摇手机显示/隐藏小图标</string >
+	<string name = "umipay_floatmenu_dialog_checkbox" >不再提醒</string >
+	<string name = "umipay_floatmenu_dialog_button" >好的，我知道了</string >
+	<!--FloatMemu-->
+
+	<!--ExitDialog-->
+	<string name = "umipay_exitgame" >退出游戏</string >
+	<string name = "umipay_exitdialog_exit" >确定退出</string >
+	<string name = "umipay_exitdialog_cancel" >取消</string >
+	<string name = "umipay_exitdialog_exit_tocommunity" >前往社区</string >
+	<!--ExitDialog-->
+
+	<string name = "umipay_login_game" >登录游戏</string >
+	<string name = "umipay_reg_game" >注册账号</string >
+	<string name = "umipay_ouwan_logo" >ouwan logo</string >
+	<string name = "umipay_login_name_hint" >偶玩账号</string >
+	<string name = "umipay_account_logo" >account logo</string >
+	<string name = "umipay_down_arrow" >down arrow</string >
+	<string name = "umipay_login_psw_hint" >偶玩密码</string >
+	<string name = "umipay_pw_logo" >password logo</string >
+	<string name = "umipay_remember_pw" >记住密码</string >
+	<string name = "umipay_auto_login" >自动登录</string >
+	<string name = "umipay_quick_register" >一键注册</string >
+	<string name = "umipay_qq_login" >QQ登录</string >
+	<string name = "umipay_sina_login" >微博登录</string >
+	<string name = "umipay_login" >登录</string >
+	<string name = "umipay_other_login" >其他登录方式</string >
+	<string name = "umipay_reg_name_hint" >账号（字母/数字）</string >
+	<string name = "umipay_reg_psw_hint" >密码（6~32位字符组合）</string >
+	<string name = "umipay_reg_phone_hint" >输入11位手机号（可选）</string >
+	<string name = "umipay_phone_logo" >phone logo</string >
+	<string name = "umipay_register_agreement" >我已阅读并同意</string >
+	<string name = "umipay_register_ouwan_ag" >偶玩服务条款</string >
+	<string name = "umipay_bind_phone" >绑定手机提高账户安全</string >
+	<string name = "umipay_register" >提交</string >
+	<string name = "umipay_welcome" >%s,欢迎回来</string >
+	<string name = "umipay_logininfo_welcome" >欢迎你</string >
+	<string name = "umipay_logining" >正在进入游戏...</string >
+	<string name = "umipay_base_net_wait" >网络正在通讯中，请稍等</string >
+	<string name = "umipay_title" >标题</string >
+	<string name = "umipay_autologin_cancel" >取消登录</string >
+	<string name = "umipay_accountcenter" >账户中心</string >
+	<string name = "umipay_announcement" >官方公告</string >
+	<string name = "umipay_bindmobile_num_hint" >请输入手机号</string >
+	<string name = "umipay_bindmobile_code_hint" >请输入短信验证码</string >
+	<string name = "umipay_get_voice_code_hint" >请输入语音验证码</string >
+	<string name = "umipay_bindmobile_notify" >温馨提示：绑定手机提高账号安全性</string >
+	<string name = "umipay_bindmobile_skip" >跳过此步</string >
+	<string name = "umipay_bindmobile_bind" >完成绑定&amp;登录</string >
+	<string name = "umipay_bindmobile_getsms" >获取验证码</string >
+	<string name = "umipay_reg_success_title" >一键注册成功，请妥善保管账号</string >
+	<string name = "umipay_reg_success_notify" >截图已保存到手机相册中</string >
+	<string name = "umipay_reg_success_light_notify" >一键注册成功，截图已保存到手机相册中</string >
+	<string name = "umipay_reg_success_entergame" >进入游戏</string>
+	<string name = "umipay_ouwan">偶玩</string>
+	<string name = "umipay_reg_to_login">直接登录</string>
+	<string name = "umipay_login_to_reg">注册一个</string>
+	<string name = "umipay_confirm">确认</string>
+	<string name = "umipay_return">返回</string>
+	<string name = "umipay_enter_game">进入游戏</string>
+
+
+	<string name = "umipay_titile_login">偶玩账号登录</string>
+	<string name = "umipay_titile_select_account">选择账号</string>
+	<string name = "umipay_titile_mobile_login">手机登录</string>
+	<string name = "umipay_titile_bind_mobile">绑定手机</string>
+	<string name = "umipay_titile_bind_oauth">设置账号密码</string>
+	<string name = "umipay_titile_register">注册偶玩账号</string>
+	<string name = "umipay_titile_lightsdk_login">快速登录</string>
+	<string name = "umipay_titile_lightsdk_register">一键注册</string>
+	<string name = "umipay_title_select_account">系统检测到您最近登录了以下偶玩账号，请设置当前手机号的主账号:</string>
+	<string name = "umipay_title_select_common_account">系统检测到您最近登录了以下偶玩账号:</string>
+
+	<string name = "umipay_verificate_sms_tips">不方便电话?使用短信验证</string>
+	<string name = "umipay_verificate_voice_tips">收不到短信?使用语音验证</string>
+
+
+	<string name = "umipay_forget_password" >忘记登录密码？</string >
+
+	<string name ="umipay_change_account_titile">切换账号</string>
+	<string name ="umipay_announcement_confirm">我知道了</string>
+	<string name ="umipay_logout_tips">切换后将退出原来的账号%s </string>
+	<string name ="umipay_change_account_hints">是否使用%1$s的账号%2$s登陆%3$s </string>
+
+
+	<!-- 实名制 -->
+	<string name ="umipay_register_realname_title">实名制信息登记</string>
+	<string name ="umipay_register_realname_username_hint">真实名字</string>
+	<string name ="umipay_register_realname_userid_hint">身份证号码</string>
+	<string name ="umipay_register_realname_tips">根据国家规定，游戏用户需要进行实名认证，实名注册资料只用于认证并且绝对保密</string>
+	<string name ="umipay_register_realname_warning">请谨慎填写实名注册资料，一旦填写确认将无法随意更改！</string>
+	<string name ="umipay_register_realname_skip">跳过此步</string>
+	<string name ="umipay_register_realname_cancel">取消</string>
+</resources >

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 全局变量 -->
+    <string name="ipay_common_pay_fail">支付失败，请重试。</string>
+    <string name="ipay_common_dialog_title">提  示</string>
+    <string name="pay_network_unconnent">网络连接失败，请检查网络！</string>
+    <string name="ipay_common_loading">正在加载%s...</string>
+    <string name="ipay_tip1">知道了，不再提示</string>
+    <string name="ipay_kuaifu">爱贝快付</string>
+    <string name="ipay_tip2">本次交易需要短信确认，验证码已发送至手机号123 **** 1111，请输入验证码！</string>
+    <string name="ipay_tip3">请输入短信验证码</string>
+    <string name="ipay_tip4">重新获取(60s)</string>
+    <string name="ipay_tip5">确认支付</string>
+    <string name="ipay_tip6">收不到验证码？</string>
+    <string name="ipay_tip7">点击获取</string>
+    <string name="ipay_tip8">采用银联标准安全加密</string>
+    <string name="ipay_tip9">登录</string>
+    <string name="ipay_tip10">已有账户，</string>
+    <string name="ipay_tip11">注册账号</string>
+    <string name="ipay_tip12">设置登录支付密码，保证账号安全</string>
+    <string name="ipay_tip13">保  存</string>
+    <string name="ipay_tip14">建议勿与银行卡取款密码相同</string>
+    <string name="ipay_tip15">*</string>
+    <string name="ipay_tip16">完成</string>
+    <string name="ipay_tip17">卡号格式不对，请检查并重新输入</string>
+    <string name="ipay_tip18">密码错误，请检查并重新输入</string>
+    <string name="ipay_tip19">温馨提示：请确保输入的卡面额和卡实际面额一致，否则可能导致支付失败，意外销卡或资金损失。</string>
+    <string name="ipay_tip20">默认使用</string>
+    <string name="ipay_tip21">XX银行</string>
+    <string name="ipay_tip22">信用卡</string>
+    <string name="ipay_tip23">**** **** **** </string>
+    <string name="ipay_tip24">6798</string>
+    <string name="ipay_tip25">使用新卡支付</string>
+    <string name="ipay_tip26">请选择充值方式</string>
+    <string name="ipay_tip27">充值到账户后，请使用</string>
+    <string name="ipay_tip28">进行支付</string>
+    <string name="ipay_tip29">请输入密码</string>
+    <string name="ipay_tip30">完  成</string>
+    <string name="ipay_tip31">本交易满足免密条款，可在收银台中心修改设置</string>
+    <string name="ipay_tip32">确认支付</string>
+    <string name="ipay_tip33">商品名称：</string>
+    <string name="ipay_tip34">资费：</string>
+    <string name="ipay_tip35">应付金额：</string>
+    <string name="ipay_tip36">金额</string>
+    <string name="ipay_tip37">元</string>
+    <string name="ipay_tip38">点击充值</string>
+    <string name="ipay_tip39">客服电话：</string>
+    <string name="ipay_tip40">4000000000</string>
+    <string name="ipay_tip41">服务中心</string>
+    <string name="ipay_tip42">常用支付方式</string>
+    <string name="ipay_tip43">9折</string>
+    <string name="ipay_tip44">首次消费送 50 虚拟币</string>
+    <string name="ipay_tip45">其他支付方式</string>
+    <string name="ipay_tip46">预计到账：</string>
+    <string name="ipay_tip47">请选择充值金额</string>
+    <string name="ipay_tip48">其他金额（元）</string>
+    <string name="ipay_tip49">充  值</string>
+    <string name="ipay_tip50">请输入密码</string>
+    <string name="ipay_tip51">小额免密</string>
+    <string name="ipay_tip52">使用爱贝快付和虚拟币日累计消费金额小于500元，无需输入支付密码</string>
+    <string name="ipay_tip53">保  存</string>
+    <string name="ipay_tip54">爱贝快付</string>
+    <string name="ipay_tip55">登陆</string>
+    <string name="ipay_tip56">招商银行    储蓄卡</string>
+    <!-- 一键支付 -->
+    <string name="aipay_pay_fail">支付失败，请重试。</string>
+
+    <!-- 查询界面  interface-->
+    <string name="pay_query_payresult_time_out">未查到支付结果，是否继续查询</string>
+    <string name="pay_query_chargeresult_time_out">未查到支付结果，是否继续查询</string>
+    <string name="pay_querying_payresult">正在查询支付结果...</string>
+    <string name="pay_querying_chargeresult">正在查询充值结果...</string>
+    <string name="pay_querying_Ensure">继续查询</string>
+    <string name="pay_querying_Cancel">取消查询</string>
+
+    <!-- 财付通/wap -->
+    <string name="pay_tenpay_title">财付通提示</string>
+    <string name="pay_tenpay_init">正在初始化,请稍侯。。。</string>
+    <string name="pay_tenpay_err_66200004">稍后查询</string>
+    <string name="pay_tenpay_err_66210013">查询订单信息出错</string>
+    <string name="pay_tenpay_err_66210020">暂不支持此支付类型</string>
+    <string name="pay_tenpay_err_66210035">此订单已支付成功，请勿重复支付</string>
+    <string name="pay_tenpay_err_data">应用出现异常，请退出重新登录</string>
+
+    <!-- game pay -->
+    <string name="ipay_sub_game_final_rate_msg">本次充值%1$s元,其中支付商户%2$s元,剩余%3$s元充入爱贝账户%4$s%5$s（代第三方收取%5$s元手续费）.</string>
+   	<string name="ipay_sub_game_chargefeee_tips">本次支付%1$s元，其中%2$s元为通道手续费，实际到账%3$s元</string>
+   	<string name="ipay_sub_game_final_rate_msg_new">支付%1$s元，其中支付商品%2$s元(含%3$s元手续费)，剩余%4$s元将充值%5$s%6$s(其中%7$s元为手续费)</string>
+   	<string name="ipay_sub_game_final_rate_msg_charge">支付%1$s元，其中支付商品%2$s元，剩余%3$s元将充值%4$s%5$s(其中%6$s元为手续费)</string>
+   	<string name="ipay_sub_game_final_rate_msg_pay">支付%1$s元，其中支付商品%2$s元(含%3$s元手续费)，剩余%4$s元将充值%5$s%6$s</string>
+    <string name="ipay_sub_game_balance_yuan">%1$s元</string>
+    
+</resources>

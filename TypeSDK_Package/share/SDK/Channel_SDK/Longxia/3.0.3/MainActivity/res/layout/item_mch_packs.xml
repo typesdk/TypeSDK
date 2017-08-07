@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <com.mchsdk.paysdk.view.round.CircleImageView
+        android:id="@+id/iv_mch_pack_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_margin="10dp"
+        android:scaleType="center"
+        android:src="@drawable/pack_image_new" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_mch_pack_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="礼包"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_mch_pack_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left|center_vertical"
+            android:text="礼包介绍"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="#6f6f6f"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp" >
+            
+            <TextView
+                android:id="@+id/txt_mch_pack_effective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center_vertical"
+                android:text="剩余有效期：1天"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_mch_receive_pack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="#ff0000"
+                android:padding="3dp"
+                android:text="领取礼包"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

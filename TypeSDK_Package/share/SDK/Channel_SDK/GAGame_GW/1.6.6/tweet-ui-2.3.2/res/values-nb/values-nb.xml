@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 t</item>
+        <item quantity="other">%d t</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 m</item>
+        <item quantity="other">%d m</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <string name="tw__like_tweet">Lik Tweet</string>
+    <string name="tw__liked_tweet">Angre Liker</string>
+    <string name="tw__loading_tweet">Laster inn tweeten</string>
+    <string name="tw__pause">pause</string>
+    <string name="tw__play">spill</string>
+    <string name="tw__relative_date_format_long">d.M.y</string>
+    <string name="tw__relative_date_format_short">d. MMM</string>
+    <string name="tw__replay">spill på nytt</string>
+    <string name="tw__retweeted_by_format">Retweetet av %1$s</string>
+    <string name="tw__share_content_format">Sjekk \@%1$s\s tweet: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_subject_format">Tweet fra %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Del tweeten</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Tweet-medium</string>
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="订单号：" />
+
+            <EditText
+                android:id="@+id/et_order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:hint="请输入订单号"
+                android:padding="5.0dip"
+                android:paddingRight="30dp"
+                android:textColor="#ff3b3b3b"
+                android:textSize="16.0sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="用户名：" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:padding="5.0dip"
+                android:paddingRight="30dp"
+                android:textColor="#ff3b3b3b"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="服务器区服：" />
+
+            <EditText
+                android:id="@+id/et_server_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:padding="5.0dip"
+                android:paddingRight="30dp"
+                android:text="1"
+                android:textColor="#ff3b3b3b"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="玩家角色名：" />
+
+            <EditText
+                android:id="@+id/et_player_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:padding="5.0dip"
+                android:paddingRight="30dp"
+                android:text="骷髅小怪"
+                android:textColor="#ff3b3b3b"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <!-- 商品名称   add 2014.11.3 by YWL-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="商品名称：" />
+
+            <EditText
+                android:id="@+id/et_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="请输入商品名称"
+                android:padding="5.0dip"
+                android:paddingRight="30dp"
+                android:text="月费会员"
+                android:textColor="#ff3b3b3b"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="充值金额：" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:hint="请输入金额"
+                android:padding="5.0dip"
+                android:paddingRight="30dp"
+                android:text="1"
+                android:textColor="#ff3b3b3b"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bag_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="扩展信息：" />
+
+            <EditText
+                android:id="@+id/extra"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:focusableInTouchMode="true"
+                android:padding="5.0dip"
+                android:paddingRight="30dp"
+                android:text="无"
+                android:textColor="#ff3b3b3b"
+                android:textSize="16.0sp"></EditText>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

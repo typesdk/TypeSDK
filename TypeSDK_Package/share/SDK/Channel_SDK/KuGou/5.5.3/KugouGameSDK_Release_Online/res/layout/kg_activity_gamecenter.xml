@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kg_gamecenter_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_weight="1"
+        layout="@layout/kg_common_title_bar"
+        android:visibility="gone" >
+    </include>
+
+    <LinearLayout
+        android:id="@+id/kg_gamecenter_web_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/kg_common_transparent"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/kg_gamecenter_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/kg_common_transparent"
+            android:layerType="software"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kg_gamecenter_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/kg_loading_title_layout"
+            layout="@layout/kg_layout_common_title_bar_1" />
+
+        <com.kugou.game.sdk.ui.widget.TipsLayout
+            android:id="@+id/kg_tips_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>

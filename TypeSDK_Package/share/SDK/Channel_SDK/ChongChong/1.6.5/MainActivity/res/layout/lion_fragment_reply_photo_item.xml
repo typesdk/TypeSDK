@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/lion_activity_community_choice_photo_item"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" >
+
+    <com.lion.ccpay.view.RatioColorFilterImageView
+        android:id="@+id/lion_fragment_reply_photo_item_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/lion_fragment_reply_photo_item_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:src="@drawable/lion_icon_community_interrupt" />
+
+</FrameLayout>

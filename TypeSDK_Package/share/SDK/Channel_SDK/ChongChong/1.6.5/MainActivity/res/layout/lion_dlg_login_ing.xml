@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/lion_dlg_margin"
+              android:background="@drawable/lion_common_dialog_bg"
+              android:gravity="center"
+              android:minHeight="135.0dip"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.lion.ccpay.view.RotateIcon
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:scaleType="center"
+            android:src="@drawable/lion_icon_loading_1"/>
+
+        <TextView
+            android:id="@+id/lion_dlg_tv_loading_notices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:text="@string/lion_dlg_login_ing_notice"
+            android:textColor="@color/lion_common_black"
+            android:textSize="14.0sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lion_dlg_tv_goto_login"
+        style="@style/lion_text_red_button"
+        android:layout_width="150.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="@string/lion_dlg_login_ing_btn"/>
+
+</LinearLayout>

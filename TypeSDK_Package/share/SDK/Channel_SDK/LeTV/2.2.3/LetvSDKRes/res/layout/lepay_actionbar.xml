@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.letv.lepaysdk.view.LePayActionBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/lepay_actionbar_bg_color" >
+
+    <LinearLayout
+        android:id="@+id/lepay_ll_leftbutton"
+        style="@style/lepay_height_fillparent"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:paddingRight="5dp"
+        android:background="@drawable/lepay_actionbar_left_button_selector" >
+
+        <ImageView
+            android:id="@+id/lepay_actionbar_left_icon"
+            style="@style/lepay_wrapparent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/lepay_new_back_icon" />
+
+        <ImageView
+            android:id="@+id/lepay_actionbar_letv_logo"
+            style="@style/lepay_wrapparent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/lepay_actionbar_left_icon"
+            android:visibility="gone"
+            android:src="@drawable/lepay_actionbar_letv_logo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lepay_actionbar_main_title"
+        style="@style/lepay_wrapparent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/lepay_leshi_pay"
+        android:textColor="@color/lepay_actionbar_title_font_color"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/lepay_action_right_icon"
+        style="@style/lepay_wrapparent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp" 
+        android:visibility="gone"
+        />
+
+</com.letv.lepaysdk.view.LePayActionBar>

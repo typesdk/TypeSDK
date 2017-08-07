@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+	<color name = "bg" >#fafafa</color >
+	<!-- 背景 -->
+	<color name = "strip" >#e8e8e8</color >
+
+	<color name = "umipay_yellow" >#ffff00</color >
+	<color name = "umipay_orange" >#ffaa16</color >
+	<color name = "umipay_orange_dark" >#f99d26</color >
+	<color name = "umipay_gold" >#ffcb23</color >
+	<color name = "umipay_light_gold" >#ffd850</color >
+	<color name = "umipay_goldenrod" >#cc9f1a</color >
+
+
+	<color name = "umipay_royal_blue" >#1583b8</color >
+	<color name = "umipay_royal_blue_dark" >#4785a5</color >
+	<color name = "umipay_dodger_blue" >#1caff6</color >
+
+	<color name = "umipay_light_black" >#90000000</color >
+	<color name = "umipay_dark_state_gray" >#434343</color >
+	<color name = "umipay_slate_gray" >#717171</color >
+	<color name = "umipay_light_state_gray" >#7f7f7f</color >
+	<color name = "umipay_gray" >#959595</color >
+	<color name = "umipay_dark_gray" >#a0a0a0</color >
+	<color name = "umipay_silver" >#bababa</color >
+	<color name = "umipay_gainsboro" >#d6d6d6</color >
+	<color name = "umipay_white" >#FFFFFF</color >
+</resources >

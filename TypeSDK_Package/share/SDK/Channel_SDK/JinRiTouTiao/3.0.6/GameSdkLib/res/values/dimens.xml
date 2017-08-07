@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="pay_dialog_corner_radius">5dp</dimen>
+    <dimen name="pay_dialog_title_textsize">18sp</dimen>
+    <dimen name="pay_dialog_currency_textsize">12sp</dimen>
+    <dimen name="pay_dialog_label_textsize">14sp</dimen>
+    <dimen name="pay_dialog_commodity_name_textsize">14sp</dimen>
+    <dimen name="pay_dialog_commodity_price_textsize">21sp</dimen>
+    <dimen name="pay_dialog_item_text_size">14sp</dimen>
+    <dimen name="pay_exit_alert_dialog_title_size">21sp</dimen>
+    <dimen name="pay_exit_alert_dialog_content_size">14sp</dimen>
+    <dimen name="pay_exit_alert_dialog_button_textsize">14sp</dimen>
+    <dimen name="pay_env_monitor_dialog_content_size">14sp</dimen>
+    <dimen name="pay_topup_item_horizontal_gap">10dp</dimen>
+    <dimen name="pay_topup_item_vertical_gap">10dp</dimen>
+    <dimen name="pay_button_text_size">16sp</dimen>
+    <dimen name="pay_consult_text_size">10sp</dimen>
+    <dimen name="pay_topup_item_textsize">14sp</dimen>
+<dimen name="shadow_height">5dp</dimen>
+    <dimen name="title_bar_height">44dp</dimen>
+<dimen name="capture_image_width">220dp</dimen>
+    <dimen name="big_avatar_size">90dp</dimen>
+</resources>

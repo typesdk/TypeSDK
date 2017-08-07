@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp" >
+
+            <ImageView
+                android:id="@+id/banner_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/banner_default" />
+
+            <TextView
+                android:id="@+id/go_to_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:text=""
+                android:textColor="@color/lepay_white"
+                 />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/horizontal_split_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/sdk_thread" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2.0" >
+
+            <Button
+                android:id="@+id/close_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_close_long"
+                android:gravity="center"
+                android:text="@string/lesdk_quit_game"
+                android:textColor="@color/sdk_gray"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/sdk_thread" />
+
+            <Button
+                android:id="@+id/continue_game"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_close_long"
+                android:gravity="center"
+                android:text="@string/lesdk_continue_game"
+                android:textColor="@color/sdk_green"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

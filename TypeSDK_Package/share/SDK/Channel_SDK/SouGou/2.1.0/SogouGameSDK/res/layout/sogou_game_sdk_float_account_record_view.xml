@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sogou_game_sdk_white" >
+
+    <include
+        android:id="@+id/include_view"
+        layout="@layout/sogou_game_sdk_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_view"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/sogou_game_sdk_float_account_myaccount_rl"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/sogou_game_sdk_float_account_record_icon_iv"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_float_account_record_uname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/sogou_game_sdk_float_account_record_icon_iv"
+                android:text="用户名称"
+                android:textColor="@color/sogou_game_sdk_color_black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_float_account_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sogou_game_sdk_float_account_record_uname_tv"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@+id/sogou_game_sdk_float_account_record_icon_iv"
+                android:text="消费游戏:"
+                android:textColor="@color/sogou_game_sdk_input_font_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_float_account_appname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sogou_game_sdk_float_account_record_uname_tv"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/sogou_game_sdk_float_account_info_tv"
+                android:text="APPName"
+                android:textColor="@color/sogou_game_sdk_input_font_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_float_account_safe_setting_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="12dp"
+                android:text="请设置您的账户安全"
+                android:textColor="@color/sogou_game_sdk_color_ff6a00"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@color/sogou_game_sdk_color_gray1" />
+
+        <com.sogou.gamecenter.sdk.views.PagerSlidingTabStrip
+            android:id="@+id/sogou_game_sdk_float_record_strip"
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/sogou_game_sdk_float_record_mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+</RelativeLayout>

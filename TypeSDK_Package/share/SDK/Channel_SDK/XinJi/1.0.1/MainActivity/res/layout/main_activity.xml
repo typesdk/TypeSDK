@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_channel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="相关信息"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_auth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="授权" />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登录" />
+
+            <Button
+                android:id="@+id/button_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="立即充值" />
+
+            <Button
+                android:id="@+id/button_collect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据采集" />
+
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注销登录" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

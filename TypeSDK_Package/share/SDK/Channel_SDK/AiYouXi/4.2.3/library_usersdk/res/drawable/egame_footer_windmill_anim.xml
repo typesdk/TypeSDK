@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <rotate
+            android:drawable="@drawable/egame_footer_windmill"
+            android:duration="600"
+            android:fromDegrees="0"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:repeatCount="infinite"
+            android:repeatMode="restart"
+            android:toDegrees="360" />
+    </item>
+
+</layer-list>

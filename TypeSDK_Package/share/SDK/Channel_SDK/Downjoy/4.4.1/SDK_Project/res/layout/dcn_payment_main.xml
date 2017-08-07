@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dcn_login_background">
+
+    <LinearLayout
+        android:id="@+id/dcn_payment_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height">
+
+            <LinearLayout
+                android:id="@+id/dcn_recharge_back"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/dcn_back_btn_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/dcn_back_ic_n" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dcn_recharge_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/dcn_le_dou_recharge"
+                android:textColor="@color/dcn_light_black"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/dcn_recharge_enter_game_bt"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dcn_ucenter_btn_selector"
+                android:text="@string/dcn_enter_game"
+                android:textColor="@color/dcn_ucenter_btn_text"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/dcn_recharge_enter_game"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/dcn_close_btn_selector" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_divider_size"
+            android:background="@color/dcn_color_login_box_gb" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/dcn_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dcn_white"
+        android:layout_below="@+id/dcn_payment_ly"
+        android:visibility="visible" />
+</RelativeLayout>

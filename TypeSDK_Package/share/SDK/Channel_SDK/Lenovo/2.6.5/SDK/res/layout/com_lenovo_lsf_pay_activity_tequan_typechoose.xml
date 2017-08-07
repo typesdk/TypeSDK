@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/com_lenovo_lsf_pay_appcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_cashier"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:background="#fff3f3f3">
+
+        <LinearLayout
+            android:id="@+id/layout_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="24dp"
+            android:paddingLeft="@dimen/com_lenovo_lsf_pay_goods_marginLeft"
+            android:background="#f3f3f3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@null"
+                android:background="@drawable/com_lenovo_lsf_pay_cashier_safe" />
+
+            <TextView
+                android:id="@+id/security_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="@string/com_lenovo_lsf_pay_security_label"
+                android:textColor="#757575"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_goods"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_tip"
+            android:gravity="left"
+            android:paddingBottom="@dimen/com_lenovo_lsf_pay_goods_paddingBottom"
+            android:background="@drawable/com_lenovo_lsf_pay_order_bg" >
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/com_lenovo_lsf_pay_goods_border_line"/>
+                
+            <TextView
+                android:id="@+id/need_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_lenovo_lsf_pay_goods_marginLeft"
+                android:layout_marginTop="@dimen/com_lenovo_lsf_pay_goods_marginTop"
+                android:textColor="@color/com_lenovo_lsf_pay_goods_label"
+                android:textSize="@dimen/com_lenovo_lsf_pay_goods_fontsize"
+                android:includeFontPadding="false" />
+
+            <TextView 
+                android:id="@+id/goods_item_name_and_account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:layout_alignLeft="@+id/need_price"
+                android:layout_below="@+id/need_price"
+                android:layout_marginTop="@dimen/com_lenovo_lsf_pay_goods_item_space"
+                android:textSize="@dimen/com_lenovo_lsf_pay_good_fontsize"
+                android:textColor="@color/com_lenovo_lsf_pay_goods_unit" />
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/layout_seperator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_goods"
+            android:layout_marginTop="@dimen/com_lenovo_lsf_pay_goods_line_space"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@null"
+                android:background="@drawable/com_lenovo_lsf_pay_dash_line" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_charge_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_cashier"
+        android:background="#f3f3f3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_charge_type"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/com_lenovo_lsf_pay_charge_pay_tequan_type_title" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_charge_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_charge_tips"
+        android:layout_above="@+id/layout_announcement"
+        android:background="#ffffff"
+        android:listSelector="@drawable/com_lenovo_lsf_pay_list_item_selector" />
+
+    <LinearLayout
+        android:id="@+id/layout_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+       <View
+           android:id="@+id/layout_announcement_line"
+           android:layout_width="match_parent"
+           android:layout_height="1px"
+           android:background="#d1d1d1"/>
+           
+  		<TextView
+               android:id="@+id/use_custom_service_phonenumber"
+               android:paddingTop="12dp"
+               android:paddingBottom="12dp"
+               android:background="#f3f3f3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ll_notice"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/com_lenovo_lsf_pay_cashier_information_bg"
+            android:paddingLeft="@dimen/com_lenovo_lsf_pay_goods_marginLeft"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="@null"
+                android:background="@drawable/com_lenovo_lsf_pay_cashier_inform" />
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="24dp"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

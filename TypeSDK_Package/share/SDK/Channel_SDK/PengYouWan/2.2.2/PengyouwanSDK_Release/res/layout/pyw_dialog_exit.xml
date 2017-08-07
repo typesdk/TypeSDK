@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pyw_login_dialog_content"
+    android:layout_width="@dimen/pyw_dp_942"
+    android:layout_height="match_parent" >
+
+    <WebView
+        android:id="@+id/pyw_wv_ad"
+        android:layout_width="@dimen/pyw_dp_942"
+        android:layout_height="@dimen/pyw_dp_402"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/pyw_iv_click_web"
+        android:layout_width="@dimen/pyw_dp_942"
+        android:layout_height="@dimen/pyw_dp_402"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/pyw_common_gray_darker"
+        android:textSize="@dimen/pyw_common_large" />
+
+    <View
+        android:id="@+id/pyw_view_divider"
+        android:layout_width="@dimen/pyw_dp_942"
+        android:layout_height="1px"
+        android:layout_below="@id/pyw_iv_click_web"
+        android:background="@color/pyw_common_item_divider" />
+
+    <LinearLayout
+        android:id="@+id/pyw_layout_bottom"
+        android:layout_width="@dimen/pyw_dp_942"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pyw_view_divider"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/pyw_btn_exit_ensure"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:layout_weight="1"
+            android:background="@color/pyw_common_white"
+            android:text="@string/pyw_exit"
+            android:textColor="@color/pyw_common_black_ligther"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:background="@color/pyw_common_item_divider" />
+
+        <Button
+            android:id="@+id/pyw_btn_exit_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/pyw_common_btn_height"
+            android:layout_weight="1"
+            android:background="@color/pyw_common_white"
+            android:text="@string/pyw_back"
+            android:textColor="@color/pyw_common_black_ligther"
+            android:textSize="@dimen/pyw_common_large" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.downjoy"
+    android:versionCode="440"
+    android:versionName="4.4.0"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    
+    
+    <!-- downjoy SDK -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.webkit.permission.PLUGIN" />
+    <uses-permission android:name="cn.swiftpass.wxpay.permission.MMOAUTH_CALLBACK" />
+    <uses-permission android:name="cn.swiftpass.wxpay.permission.MM_MESSAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="xvtian.gai.receiver" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+	<!-- SDK end -->
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+		
+        
+        <!-- 当乐SDK初始化界面 ，此界面的横竖屏与CP游戏的横竖屏保持一致，请根据游戏横竖屏设置screenOrientation参数 -->
+        <activity
+            android:name="com.downjoy.activity.SdkLoadActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/dcn_full_screen_activity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--此处配置的Activity为初始化界面后跳转的界面,CP在此处填写游戏的Activity-->
+            <meta-data
+                android:name="CP_ACTIVITY"
+                android:value="com.type.sdk.android.downjoy.MainActivity" />
+            <!--当乐分配的MERCHANT_ID-->
+            <meta-data
+                android:name="MERCHANT_ID"
+                android:value="@sdk_cp_id@" />
+            <!--当乐分配的APP_ID-->
+            <meta-data
+                android:name="APP_ID"
+                android:value="@app_id@" />
+            <!--当乐分配的当乐分配的 APP_KEY-->
+            <meta-data
+                android:name="APP_KEY"
+                android:value="@app_key@" />
+            <!--此参数自定义，需登录CP后台配置支付通知回调，其中的服务器序号就是SERVER_SEQ_NUM-->
+            <meta-data
+                android:name="SERVER_SEQ_NUM"
+                android:value="1" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.type.sdk.android.downjoy.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- downjoy activity -->
+        <!-- SdkActivity 和 PayActivity 横竖屏设置与游戏保持一致 -->
+		<activity
+            android:name="com.downjoy.activity.SdkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/dcn_dialog_activity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <!--V4.2.2 添加-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--需要替换成自己的appid,195是demo的appid-->
+                <!--如你的appid为195，则下面填写dcnngsdk195-->
+                <data android:scheme="dcnngsdk@app_id@"></data>
+            </intent-filter>
+        </activity>
+
+
+<!--     UPPay sdk begin -->
+    <activity
+	android:name="com.unionpay.uppay.PayActivity"
+	android:configChanges="orientation|keyboardHidden|screenSize"
+    android:excludeFromRecents="true" 
+    android:label="@string/app_name"
+    android:screenOrientation="portrait"
+    android:windowSoftInputMode="adjustResize" >
+    </activity>
+  <!--   UPPay sdk end -->
+    <!-- alipay sdk begin -->
+    <activity
+        android:name="com.alipay.sdk.app.H5PayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+        android:exported="false"
+        android:screenOrientation="behind"
+        android:windowSoftInputMode="adjustResize|stateHidden">
+    </activity>
+    <activity
+        android:name="com.alipay.sdk.auth.AuthActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind">
+    </activity>
+    <!-- alipay sdk end -->
+    <!-- QQ sdk end -->
+    <activity
+    android:name="com.tencent.connect.common.AssistActivity"
+    android:screenOrientation="portrait"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+    <activity
+        android:name="com.tencent.tauth.AuthActivity"
+        
+        android:launchMode="singleTask" android:noHistory="true">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="tencent100772260" />
+        </intent-filter>
+    </activity>
+    <!-- nfc -->
+    <activity android:name="com.wepayplugin.nfc.ui.PayStartActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:screenOrientation="behind">
+    </activity>
+    <activity
+        android:name="com.wepayplugin.nfc.ui.SwiperCardActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:screenOrientation="behind">
+    </activity>
+    <activity
+        android:name="com.wepayplugin.nfc.ui.PayResultActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:screenOrientation="behind">
+    </activity>
+        <!--wechat-->
+        <activity
+            android:name="com.ipaynow.wechatpay.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="behind">
+        </activity>
+        <!-- Polling Service -->
+        <service android:name="com.downjoy.service.PollingService">
+            <intent-filter>
+                <action android:name="action.downjoy.polling.service" />
+            </intent-filter>
+        </service>
+    
+		<!-- downjoy end -->
+		
+    </application>
+
+</manifest>

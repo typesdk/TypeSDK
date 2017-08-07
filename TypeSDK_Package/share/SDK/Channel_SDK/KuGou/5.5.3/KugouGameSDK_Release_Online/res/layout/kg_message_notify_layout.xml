@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/kg_message_iv"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/kg_kugou_logo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/kg_message_tv_title"
+        style="@style/NotificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/kg_message_iv" />
+
+    <TextView
+        android:id="@+id/kg_message_tv_content"
+        style="@style/NotificationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kg_message_tv_title"
+        android:layout_toRightOf="@+id/kg_message_iv" />
+
+</RelativeLayout>

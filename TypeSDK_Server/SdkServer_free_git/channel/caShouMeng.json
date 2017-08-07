@@ -1,0 +1,38 @@
+{
+  "version":"v2.5.3.20160226",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "user_id":"",
+      "session_id":""
+    }
+    ,"out_url" :"http://www.19meng.com/api/v1/verify_session_id"
+    ,"out_params" :
+    {
+      "session_id" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "orderId": "",
+        "uid": "",
+        "amount": "",
+        "coOrderId": "",
+        "serverId": "",
+        "success": "",
+        "sign": ""
+      }
+    ,"out_url" :"http://www.19meng.com/api/v1/verify_session_id"
+    ,"out_params" :
+      {
+        "code": ""
+      }
+    }
+  ]
+}

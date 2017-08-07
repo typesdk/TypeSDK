@@ -1,0 +1,47 @@
+{
+  "version":"4.1.01.150514.20151018",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "sessionid" : ""
+    ,"username" : ""
+    }
+    ,"out_url" : "http://api.user.vas.pptv.com/c/v2/cksession.php"
+    ,"out_params" :
+    {
+      "type" : ""
+    ,"sessionid" : ""
+    ,"username" : ""
+    ,"app" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "sid" : ""
+      ,"username" : ""
+      ,"oid" : ""
+      ,"amount" : ""
+      ,"extra" : ""
+      ,"time" : ""
+      ,"sign":""
+      }
+    ,"out_url" :"http://api.user.vas.pptv.com/c/v2/cksession.php"
+    ,"out_params" :
+      {
+        "sid" : ""
+      ,"username" : ""
+      ,"oid" : ""
+      ,"amount" : ""
+      ,"extra" : ""
+      ,"time" : ""
+      ,"sign":""
+      }
+    }
+  ]
+}

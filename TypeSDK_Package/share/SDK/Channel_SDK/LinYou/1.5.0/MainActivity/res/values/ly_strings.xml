@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ly_code_init_succ">初始化成功</string>
+    <string name="ly_code_init_err">初始化失败</string>
+    <string name="ly_code_no_init">请先初始化</string>
+    <string name="ly_code_no_login">请先登录</string>
+    <string name="ly_code_param_err">参数错误</string>
+    <string name="ly_code_order_err">获取订单失败</string>
+
+    <!-- common -->
+    <string name="ly_pwd_regex">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="ly_next_step">下一步</string>
+    <string name="ly_finish">完成</string>
+    <string name="ly_card">卡号:</string>
+    <string name="ly_pwd">密码:</string>
+    <string name="ly_please_choose">请选择</string>
+    <string name="ly_dou">%s游豆</string>
+    <string name="ly_abs_dou">游豆</string>
+    <string name="ly_yuan">%s元</string>
+    <string name="ly_abs_yuan">元</string>
+    
+    <string name="ly_fragment_title_pay">确认支付方式</string>
+
+    <!-- 注册模块 -->
+    <string name="ly_sign_phone">用户名</string>
+    <string name="ly_sign_set_pwd">设置密码</string>
+    <string name="ly_sign_set_new_pwd">设置新密码</string>
+    <string name="ly_sign_sign">注册</string>
+    <string name="ly_sign_agreement">已阅读并同意用户协议</string>
+    <string name="ly_sign_account_login">账户登录</string>
+    <string name="ly_sign_invaild_phone">手机号码格式有误</string>
+    <string name="ly_sign_invaild_pwd">密码只能是6到20位字符</string>
+    <string name="ly_sign_uncheck_agreement">请同意用户协议</string>
+    <string name="ly_agreement_title">用户协议</string>
+    <string name="ly_agreement_sure">确定</string>
+    <string name="ly_fast_sign">一键登录</string>
+    <string name="ly_input_uname">请输入用户名</string>
+    <string name="ly_input_pwd">请输入密码</string>
+    <string name="ly_login_login">登录</string>
+    <string name="ly_login_input_pwd">登录密码</string>
+    <string name="ly_login_forget_pwd">忘记密码</string>
+    <string name="ly_login_unlogin_tip">用户未登录</string>
+    <string name="ly_welcome_back_to_game">%s,欢迎回到游戏！</string>
+    <string name="ly_welcome_join_game">%s,欢迎加入游戏！</string>
+    <string name="ly_welcome_go_to_game">进入游戏</string>
+    <string name="ly_forget_pwd_signin_phone">注册的用户名</string>
+    <string name="ly_forget_pwd_input_your_verification_code">输入您短信收到的验证码</string>
+    <string name="ly_forget_pwd_send_verification_code">发送验证码</string>
+    <string name="ly_forget_pwd_send_verification_code_suc">验证码已发送</string>
+    <string name="ly_forget_pwd_re_send">重新发送</string>
+    <string name="ly_forget_pwd_invaild_ver_code">请输入验证码</string>
+    <string name="ly_input_bind_phone">输入要绑定的手机号</string>
+    <string name="ly_user_center_change_phone">修改手机</string>
+    <string name="ly_user_center_bind_phone">绑定账号</string>
+    <string name="ly_user_center_bind_phone_success">绑定成功</string>
+    <string name="ly_user_center_change_pwd">修改密码</string>
+    <string name="ly_user_center_change_logout">退出登录</string>
+    <string name="ly_user_center_guest">游客</string>
+    <string name="ly_unbind_tip">为了您的账户安全，请绑定手机号</string>
+    <string name="ly_unbind_guide_tip">还没有验证手机，请先验证手机</string>
+    <string name="ly_unbind_bind_immediateme">马上验证</string>
+    <string name="ly_bind_set_name_pwd">设置用户名密码</string>
+    <string name="ly_reset_pwd_old">原密码</string>
+    <string name="ly_reset_pwd_new">新密码</string>
+    <string name="ly_reset_pwd_repeat_new">重复新密码</string>
+    <string name="ly_reset_pwd_success">密码设置成功</string>
+    <string name="ly_reset_pwd_invaild_old">请输入原密码</string>
+    <string name="ly_reset_pwd_invaild_new">请输入新密码</string>
+    <string name="ly_reset_pwd_different_pwd">两次密码不一致</string>
+    <string name="ly_pay_sum_money">需要支付</string>
+    <string name="ly_pay_charge_tip">输入充值金额</string>
+    <string name="ly_recharge_phone_card">手机充值</string>
+    <string name="ly_recharge_game_card">游戏点卡</string>
+    <string name="ly_recharge_game_card_type">点卡类型</string>
+    <string name="ly_recharge_amount">充值金额</string>
+    <string name="ly_recharge_recharge">充值</string>
+    <string name="ly_recharge_invaild_card_or_pwd">请输入正确的卡号和密码</string>
+    <string name="ly_recharge_invaild_game_type">请先选择点卡类型</string>
+    <string name="ly_recharge_invaild_amount">请选择金额</string>
+    <string name="ly_recharge_balance">余额</string>
+    <string name="ly_recharge_lack_of_balance">余额不足</string>
+    <string name="ly_recharge_rechrage_timeout">考虑到时间不同步原因，余额可能已经充值到您的账户中</string>
+    <string name="ly_recharge_rechrage_success">充值成功</string>
+    <string name="ly_recharge_rechrage_failed">交易失败</string>
+    <string name="ly_recharge_rechrage_cancel">交易取消</string>
+    <string name="ly_recharge_tip1">1.所有面值必须与充值卡面值保持一致，选择错误将导致资金损失。</string>
+    <string name="ly_recharge_tip2">2.充值到账可能会有几分钟延迟，您可以尝试退出游戏并重新登录来刷新最新余额，如果长时间未到账，请您联系客服帮您解决！(客服邮箱 kefu@me.cn,客服电话 010-56141152)</string>
+
+</resources>

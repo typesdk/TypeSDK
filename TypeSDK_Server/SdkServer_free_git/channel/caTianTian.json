@@ -1,0 +1,32 @@
+{
+  "version":"1.2.5.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "token":""
+    }
+    ,"out_url" :"http://sdk.ttigame.com/user/info"
+    ,"out_params" :
+    {
+      "data" : ""
+      ,"sign" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "data": "",
+        "sign": ""
+      }
+    ,"out_url" :"hhttp://sdk.ttigame.com/user/info"
+    ,"out_params" :
+      {}
+    }
+  ]
+}

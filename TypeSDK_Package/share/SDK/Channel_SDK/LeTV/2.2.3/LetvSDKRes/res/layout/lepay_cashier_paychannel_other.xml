@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/lepay_white"
+    android:gravity="center">
+    <ImageView 
+        android:id="@+id/lepay_paychannel_item_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" android:layout_margin="10dp"/>
+    <TextView 
+        android:id="@+id/lepay_paychannel_item_title"
+        style="@style/lepay_wrapparent"
+        android:layout_marginLeft="12.5dp"
+        android:layout_toRightOf="@id/lepay_paychannel_item_icon"
+        android:layout_centerVertical="true"
+        android:textColor="@color/lepay_item_bankname_font_color"
+        android:textSize="@dimen/lepay_et_cardinfo_font_size"/>
+
+    <ImageView
+        android:id="@+id/lepay_cashier_paytype_other_selector_icon"
+        style="@style/lepay_wrapparent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="22dp" />
+
+</RelativeLayout>

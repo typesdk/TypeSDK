@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/jolopay_grid_item_bg"
+    android:padding="3dip">
+    <ImageView
+        android:id="@+id/jolopay_channel_image_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+         />
+    <TextView 
+        android:id="@+id/jolopay_channel_tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/jolopay_black"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:singleLine="true"/>
+</LinearLayout>

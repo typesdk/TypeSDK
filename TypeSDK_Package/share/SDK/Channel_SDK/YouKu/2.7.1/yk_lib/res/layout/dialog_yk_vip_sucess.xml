@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/YK_GameSDK_552PX"
+    android:layout_height="fill_parent"
+    android:background="@color/yk_ykbgColor"
+    android:orientation="vertical" >
+
+    <include layout="@layout/yk_title_include" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/yk_title_line" >
+    </LinearLayout>
+
+     <TextView
+        android:id="@+id/yk_quit_baner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/YK_GameSDK_32PX"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="@dimen/YK_GameSDK_30PX"
+        android:text="@string/yk_pay_vip_title"
+        android:textColor="@color/yk_color_pay_vip_text" />
+
+    <TextView
+        android:id="@+id/yk_quit_baner_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/YK_GameSDK_30PX"
+        android:layout_marginLeft="@dimen/YK_GameSDK_50PX"
+        android:textSize="@dimen/YK_GameSDK_28PX"
+        android:textColor="@color/yk_color_pay_vip_text2"
+        />
+    
+     <TextView
+        android:id="@+id/yk_vip_pay_prompt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/YK_GameSDK_30PX"
+        android:layout_marginBottom="@dimen/YK_GameSDK_30PX"
+        android:layout_marginLeft="@dimen/YK_GameSDK_40PX"
+        android:textSize="@dimen/YK_GameSDK_28PX"
+        android:textColor="@color/yk_color_pay_vip_text2"
+        android:text="@string/yk_pay_vip_prompt"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/yk_title_line_bellow" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/YK_GameSDK_94PX"
+        android:background="#FFFFFFFF"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_quit"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/yk_btn_white_selector"
+            android:text="@string/yk_text_btn_quit"
+            android:textColor="@color/yk_loading_btn_cancel"
+            android:textSize="@dimen/YK_GameSDK_32PX" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/yk_title_line_bellow" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/yk_btn_white_selector"
+            android:text="@string/yk_text_btn_qx"
+            android:textColor="@color/yk_loading_btn_cancel"
+            android:textSize="@dimen/YK_GameSDK_32PX" />
+    </LinearLayout>
+
+</LinearLayout>

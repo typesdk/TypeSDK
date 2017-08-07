@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="150.0dip"
+              android:background="@drawable/lion_common_dialog_bg"
+              android:gravity="center"
+              android:minHeight="150.0dip"
+              android:orientation="vertical" >
+
+    <com.lion.ccpay.view.PostProgressView
+        android:id="@+id/lion_dlg_post_progress"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip" />
+
+    <TextView
+        android:id="@+id/lion_dlg_post_content"
+        android:layout_width="170.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="@string/lion_dlg_upload_ing"
+        android:textColor="#a2a2a2" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+/*
+ * Bootstrap Switch (the On-Off buttons)
+ *
+ * Created on : 2014-07-24
+ * Author     : Meritoo.pl, http://www.meritoo.pl
+ * Copyright  : Meritoo.pl
+ */
+
+.has-switch span.switch-left,.has-switch span.switch-primary{background:#1e7ae3}.has-switch span.switch-info{background:#41b6e5}.has-switch span.switch-success{background:#3bbb3b}.has-switch span.switch-warning{background:#f3a02c}.has-switch span.switch-danger{background:#e7302b}.has-switch span.switch-default{color:#fff;background-color:#999}

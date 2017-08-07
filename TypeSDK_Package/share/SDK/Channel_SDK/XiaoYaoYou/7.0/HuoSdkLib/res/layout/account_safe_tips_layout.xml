@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <LinearLayout
+        android:background="#70000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+           	android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/account_safe_tips_title"
+            android:textSize="@dimen/text_size_24sp" />
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+             android:textSize="@dimen/text_size_16sp"
+            android:text="@string/account_safe_tips_string" />
+
+        <Button
+            android:id="@+id/bind_phone"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/account_safe_button_bg"
+            android:text="@string/bind_phone_string" />
+
+        <Button
+            android:id="@+id/bind_cancle"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/account_safe_button_bg"
+             android:layout_marginBottom="30dp"
+            android:text="@string/bind_phone_cancle" />
+    </LinearLayout>
+
+</RelativeLayout>

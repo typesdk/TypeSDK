@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dcn_msg_cnt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1F1F1"
+        android:gravity="right"
+        android:paddingTop="12dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="12dp"
+        android:textColor="#919191"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dcn_msg_cnt_desc">
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent" />
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="4dip"
+            android:drawableTop="@drawable/dcn_message_no_data"
+            android:gravity="center_horizontal"
+            android:text="@string/dcn_no_data"
+            android:textColor="#a89684"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

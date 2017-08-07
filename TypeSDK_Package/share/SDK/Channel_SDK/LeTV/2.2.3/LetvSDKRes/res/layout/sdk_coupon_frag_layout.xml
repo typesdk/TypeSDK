@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.le.legamesdk.widget.PagerSlidingTabStrip
+            android:id="@+id/gb_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d2d2d2" />
+
+        <com.le.legamesdk.widget.SubViewPager
+            android:id="@+id/gb_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

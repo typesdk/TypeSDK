@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/pyw_common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="30dp" >
+
+            <EditText
+                android:id="@+id/pyw_ev_phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pyw_common_editext_height"
+                android:background="@drawable/pyw_selector_edittext_bg"
+                android:hint="@string/pyw_bindphone_phone_hint"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:textColor="@color/pyw_common_gray_darker"
+                android:textColorHint="@color/pyw_common_hint_color"
+                android:textSize="@dimen/pyw_common_large" >
+
+                <requestFocus />
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/pyw_ev_validate"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/pyw_common_editext_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/pyw_selector_edittext_bg"
+                    android:hint="@string/pyw_bindphone_code_hint"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/pyw_common_gray_darker"
+                    android:textColorHint="@color/pyw_common_hint_color"
+                    android:textSize="@dimen/pyw_common_large" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/pyw_btn_getcode"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/pyw_common_editext_height"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pyw_selector_btn_blue_bg"
+                    android:text="@string/pyw_bindphone_getcode"
+                    android:textColor="@color/pyw_common_white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pyw_btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pyw_common_btn_height"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pyw_img_gray_btn_bg"
+                android:clickable="false"
+                android:text="确  定"
+                android:textColor="@color/pyw_common_white"
+                android:textSize="@dimen/pyw_common_large" />
+
+            <include
+                android:id="@+id/pyw_layout_contact"
+                layout="@layout/pyw_view_bottom_contact" />
+
+            <TextView
+                android:id="@+id/pyw_tv_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="@string/pyw_page_edge_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/pyw_common_gray_lighter"
+                android:textSize="@dimen/pyw_common_medium" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

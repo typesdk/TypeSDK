@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dcn_login_padding_left_right">25dp</dimen>
+    <dimen name="dcn_badge_number_text_size">12sp</dimen>
+
+    <!-- 输入框文字大小-->
+    <dimen name="dcn_edit_text_size">16sp</dimen>
+
+    <!-- title高度-->
+    <dimen name="dcn_title_height">50dp</dimen>
+
+    <!-- 底部栏高度 -->
+    <dimen name="dcn_footerbar_height">50dp</dimen>
+
+    <!-- 菜单栏图标大小 -->
+    <dimen name="dcn_menu_icon">28dp</dimen>
+    <dimen name="dcn_float_menu_width">262dp</dimen>
+
+    <integer name="dcn_dialog_width_scale_small">400</integer>
+    <integer name="dcn_dialog_width_scale_middle">440</integer>
+    <integer name="dcn_dialog_width_scale_large">460</integer>
+    <dimen name="dcn_divider_size">1dp</dimen>
+
+    <!-- 对话框提示统一样式 -->
+    <dimen name="dcn_dialog_common_width">320dp</dimen>
+    <dimen name="dcn_dialog_common_height">300dp</dimen>
+    <dimen name="dcn_dialog_common_interval">10dp</dimen>
+    <dimen name="dcn_dialog_common_round">5dp</dimen>
+    <dimen name="dcn_dialog_common_round_image">5dp</dimen>
+    <dimen name="dcn_dialog_common_btn_width">120dp</dimen>
+    <dimen name="dcn_dialog_common_btn_height">35dp</dimen>
+
+    <!-- 对话框上的对话框-->
+    <dimen name="dcn_secound_dialog_common_width">280dp</dimen>
+
+    <!--webview title高度 宽度 统一-->
+    <dimen name="dcn_webview_title_back_width">20dp</dimen>
+    <dimen name="dcn_webview_title_back_height">20dp</dimen>
+    <dimen name="dcn_webview_title_setting_width">30dp</dimen>
+    <dimen name="dcn_webview_title_setting_height">8dp</dimen>
+
+    <!-- 部分界面提示统一样式 -->
+    <dimen name="dcn_fragmet_common_width">320dp</dimen>
+    <dimen name="dcn_fragmet_common_height">300dp</dimen>
+
+    <!-- 悬浮窗详情界面floatContent-->
+    <dimen name="dcn_float_interval1">10dp</dimen>
+    <dimen name="dcn_float_interval2">15dp</dimen>
+    <dimen name="dcn_float_interval3">5dp</dimen>
+    <dimen name="dcn_float_interval4">3dp</dimen>
+    <dimen name="dcn_float_hide_bottom_interval">80dp</dimen>
+
+    <dimen name="dcn_message_margin">10dp</dimen>
+    <dimen name="dcn_message_toright">5dp</dimen>
+
+    <dimen name="dcn_chat_margin">60dp</dimen>
+
+
+    <!--下拉刷新属性-->
+    <dimen name="dcn_indicator_right_padding">10dp</dimen>
+    <dimen name="dcn_indicator_corner_radius">12dp</dimen>
+    <dimen name="dcn_indicator_internal_padding">4dp</dimen>
+    <dimen name="dcn_header_footer_left_right_padding">24dp</dimen>
+    <dimen name="dcn_header_footer_top_bottom_padding">12dp</dimen>
+
+</resources>

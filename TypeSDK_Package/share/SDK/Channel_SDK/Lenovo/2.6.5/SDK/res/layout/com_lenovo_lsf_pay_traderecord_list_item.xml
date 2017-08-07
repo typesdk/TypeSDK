@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/white"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_marginTop="14dp"
+        android:id="@+id/charge_type_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@null"/>
+        
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/charge_type_icon"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:textSize="16sp"
+           	android:textColor="#191919"/>
+
+        <TextView
+            android:id="@+id/tv_pay_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+           	android:textColor="#757575"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+           	android:textColor="#29a63a"/>
+    </LinearLayout>
+</RelativeLayout>

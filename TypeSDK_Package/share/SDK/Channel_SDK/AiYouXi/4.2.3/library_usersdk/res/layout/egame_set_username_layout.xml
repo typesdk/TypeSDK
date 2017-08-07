@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance"
+        android:background="@drawable/egame_input_box_normal" >
+
+        <EditText
+            android:id="@+id/egame_et_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/egame_register_delete_input"
+            android:background="@null"
+            android:digits="0123456789"
+            android:drawableLeft="@drawable/egame_ico_account"
+            android:hint="@string/egame_username_hint_tip"
+            android:singleLine="true"
+            android:textColorHint="@color/egame_usersdk_light_gray"
+            android:textColor="@color/egame_usersdk_dark_gray"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/egame_register_delete_input"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/egame_btn_small_close"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/egame_set_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/egame_btn_login_status"
+        android:text="@string/egame_confirm"
+        android:textColor="@color/egame_usersdk_white" />
+
+</LinearLayout>

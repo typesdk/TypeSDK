@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/gfan_history_item_layout_bg">
+
+    <TextView
+        android:id="@+id/pop_itemTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:text="hello"
+        android:textColor="#919191"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/pop_deleteIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="8dp"
+        android:src="@drawable/gfan_history_delete" />
+</RelativeLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_history_pop_item_layout.xml -->

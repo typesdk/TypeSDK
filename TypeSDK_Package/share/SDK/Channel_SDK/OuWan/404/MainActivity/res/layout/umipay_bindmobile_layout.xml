@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		android:id = "@+id/umipay_main_content_layout"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		android:layout_width = "match_parent"
+		android:layout_height = "match_parent"
+		android:layout_gravity = "center_horizontal" >
+
+	<include
+			android:id = "@+id/umipay_bindmobile_title_layout"
+			layout = "@layout/umipay_ouwan_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop = "15dp"/>
+	<RelativeLayout
+			android:id = "@+id/umipay_input_box_layout"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout_below="@id/umipay_bindmobile_title_layout"
+			android:layout_marginTop = "15dp"
+			android:layout_centerHorizontal = "true" >
+
+		<EditText
+				android:id = "@+id/umipay_phone_box"
+				android:layout_width = "fill_parent"
+				android:layout_height = "43dp"
+				android:digits = "0123456789"
+				android:gravity = "center_vertical|left"
+				android:hint = "@string/umipay_bindmobile_num_hint"
+				android:imeOptions = "flagNoExtractUi|actionNext"
+				android:inputType = "phone"
+				android:maxLength = "40"
+				android:paddingLeft = "35dp"
+				android:singleLine = "true"
+				android:background="@color/strip"
+				android:textColor = "@color/umipay_dark_state_gray"
+				android:textColorHint = "@color/umipay_gray"
+				android:textSize = "14sp" />
+
+
+		<ImageView
+				android:layout_width = "13dp"
+				android:layout_height = "13dp"
+				android:layout_marginTop="16dp"
+				android:layout_marginLeft = "10dp"
+				android:contentDescription = "@string/umipay_account_logo"
+				android:src = "@drawable/umipay_phone_icon" />
+
+		<TextView
+				android:id = "@+id/umipay_get_code_btn"
+				android:layout_width = "wrap_content"
+				android:layout_height = "43dp"
+				android:gravity="center"
+				android:padding="4dp"
+				android:layout_alignRight = "@id/umipay_phone_box"
+				android:background = "@drawable/umipay_btn_getsms"
+				android:singleLine = "true"
+				android:text = "@string/umipay_bindmobile_getsms"
+				android:textColor = "@drawable/umipay_btn_getsms_color"
+				android:textSize = "13sp" />
+
+		<View
+			android:id="@+id/umipay_bindmobile_layout_devider"
+			android:layout_width = "match_parent"
+			android:layout_height = "1dp"
+			android:background="#959595"
+			android:layout_below = "@id/umipay_phone_box"
+			android:layout_marginLeft="2dp"
+			android:layout_marginRight="2dp"
+			/>
+
+		<EditText
+			android:id = "@+id/umipay_code_box"
+			android:layout_width = "fill_parent"
+			android:layout_height = "43dp"
+			android:background="#ececec"
+			android:layout_below = "@id/umipay_bindmobile_layout_devider"
+			android:gravity = "center_vertical|left"
+			android:hint = "@string/umipay_bindmobile_code_hint"
+			android:imeOptions = "flagNoExtractUi|actionDone"
+			android:inputType = "textEmailAddress"
+			android:maxLength = "40"
+			android:paddingLeft = "35dp"
+			android:singleLine = "true"
+			android:textColor = "#434343"
+			android:textColorHint = "#959595"
+			android:textSize = "14sp" />
+
+
+		<ImageView
+			android:layout_width = "13dp"
+			android:layout_height = "13dp"
+			android:layout_below = "@id/umipay_bindmobile_layout_devider"
+			android:layout_marginTop="16dp"
+			android:layout_marginLeft = "10dp"
+			android:contentDescription = "@string/umipay_pw_logo"
+			android:src = "@drawable/umipay_sms_icon" />
+	</RelativeLayout >
+
+	<TextView
+			android:id = "@+id/umipay_bindmobile_notify_tv"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:layout_below = "@id/umipay_input_box_layout"
+			android:layout_marginTop="20dp"
+			android:text = "@string/umipay_bindmobile_notify"
+			android:textColor = "#1badf6"
+			android:textSize = "11sp" />
+
+	<LinearLayout
+			android:id = "@+id/umipay_bindmobile_btn_layout"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:layout_below = "@id/umipay_bindmobile_notify_tv"
+			android:layout_marginTop="20dp"
+			android:orientation = "horizontal" >
+
+		<Button
+				android:id = "@+id/umipay_bindmobile_skip_btn"
+				android:layout_weight = "0.6"
+				android:layout_width = "0dp"
+				android:layout_height = "40dp"
+				android:layout_marginRight = "15dp"
+				android:background = "@drawable/umipay_btn_black"
+				android:text = "@string/umipay_bindmobile_skip"
+				android:textColor = "#ffffff"
+				android:textSize = "15sp" />
+
+		<Button
+				android:id = "@+id/umipay_bind_login_btn"
+				android:layout_weight = "1"
+				android:layout_width = "0dp"
+				android:layout_height = "40dp"
+				android:layout_marginLeft = "15dp"
+				android:background = "@drawable/umipay_btn_yellow"
+				android:enabled = "true"
+				android:text = "@string/umipay_bindmobile_bind"
+				android:textColor = "#ffffff"
+				android:textSize = "15sp" />
+	</LinearLayout >
+
+</RelativeLayout >

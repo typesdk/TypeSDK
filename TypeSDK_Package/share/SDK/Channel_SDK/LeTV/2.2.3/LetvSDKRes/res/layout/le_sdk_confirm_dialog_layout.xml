@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_80" >
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/le_dialog_border_line_bg" >
+
+        <TextView
+            android:id="@+id/le_sdk_confirm_title"
+            style="@style/LeStyleBlack18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="@string/le_sdk_confirm_title_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/le_sdk_confirm_left_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/le_solid_button_bg"
+                android:text="@string/le_sdk_confirm"
+                android:textColor="@color/lepay_white" />
+
+            <Button
+                android:id="@+id/le_sdk_confirm_right_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/le_hollow_button_bg"
+                android:text="@string/le_sdk_cancel" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

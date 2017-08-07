@@ -1,0 +1,19 @@
+language: node_js
+branches:
+  only:
+    - master
+
+node_js:
+   - "0.10.36"
+   - "4"
+   - "6"
+
+install:
+  - npm install
+  - npm run build
+
+matrix:
+  fast_finish: true
+
+# container-base
+sudo: false

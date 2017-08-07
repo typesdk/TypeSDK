@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/YK_GameSDK_565PX"
+        android:layout_height="fill_parent"
+        android:background="@color/yk_ykbgColor"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/YK_GameSDK_100PX"
+            android:background="@color/yk_ykbgColor" >
+
+            <TextView
+                android:id="@+id/yk_dialog_show_exit_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/yk_text_version_title"
+                android:textColor="@color/yk_text_title"
+                android:textSize="@dimen/YK_GameSDK_32PX" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/yk_title_line" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/YK_GameSDK_200PX"
+            android:background="@color/yk_ykbgColor"
+            android:paddingLeft="@dimen/YK_GameSDK_44PX"
+            android:paddingRight="@dimen/YK_GameSDK_44PX" >
+
+            <TextView
+                android:id="@+id/yk_dialog_show_exit_content_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/yk_loading_btn_cancel"
+                android:textSize="@dimen/YK_GameSDK_26PX" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/yk_title_line_bellow" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/YK_GameSDK_565PX"
+            android:layout_height="@dimen/YK_GameSDK_94PX"
+            android:background="#FFFFFFFF"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/yk_btn_white_selector"
+                android:text="@string/yk_text_btn_qx"
+                android:textColor="@color/yk_loading_btn_cancel"
+                android:textSize="@dimen/YK_GameSDK_32PX" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/yk_title_line_bellow" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/yk_btn_light_blue_selector"
+                android:text="@string/yk_text_btn_gx"
+                android:textColor="@color/yk_loading_btn_cancel"
+                android:textSize="@dimen/YK_GameSDK_32PX" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

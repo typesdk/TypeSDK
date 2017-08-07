@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pywlayout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:minHeight="100dp"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <com.pengyouwan.sdk.ui.widget.WaveFrameLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/pyw_img_no_rightframe_bg"
+        android:orientation="horizontal"
+        pywlayout:waveFillColor="@color/pyw_common_background"
+        pywlayout:waveFrameColor="@color/pyw_common_item_divider"
+        pywlayout:whichFrame="left" >
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <com.pengyouwan.sdk.ui.widget.RoundProgress
+                android:id="@+id/pyw_rp_money_progress"
+                android:layout_width="80dp"
+                android:layout_height="80dp" >
+            </com.pengyouwan.sdk.ui.widget.RoundProgress>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                android:background="@drawable/pyw_img_voucher_text_bg"
+                android:focusable="false"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="剩余金额"
+                android:textColor="@color/pyw_common_gray_light"
+                android:textSize="@dimen/pyw_common_small" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pyw_img_dashed_line_left" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/pyw_tv_voucher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="1223213123213"
+                android:textColor="@color/pyw_common_gray_darker"
+                android:textSize="@dimen/pyw_common_large" />
+
+            <TextView
+                android:id="@+id/pyw_tv_voucher_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pyw_tv_voucher_name"
+                android:singleLine="true"
+                android:text="1223213123213"
+                android:textColor="@color/pyw_common_gray_light"
+                android:textSize="@dimen/pyw_common_medium" />
+
+            <TextView
+                android:id="@+id/pyw_tv_voucher_idnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:singleLine="true"
+                android:text="1223213123213"
+                android:textColor="@color/pyw_common_gray_light"
+                android:textSize="@dimen/pyw_common_medium" />
+
+            <TextView
+                android:id="@+id/pyw_tv_voucher_buymoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/pyw_tv_voucher_idnum"
+                android:singleLine="true"
+                android:text="1223213123213"
+                android:textColor="@color/pyw_common_gray_light"
+                android:textSize="@dimen/pyw_common_medium" />
+        </RelativeLayout>
+    </com.pengyouwan.sdk.ui.widget.WaveFrameLinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pyw_img_dashed_line_right" />
+
+    <com.pengyouwan.sdk.ui.widget.WaveFrameLinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/pyw_selector_blue_item_bg"
+        android:gravity="center"
+        pywlayout:waveFillColor="@color/pyw_common_background"
+        pywlayout:waveFrameColor="@color/pyw_common_item_divider"
+        pywlayout:whichFrame="right" >
+
+        <CheckBox
+            android:id="@+id/pyw_cb_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/pyw_selector_radiobutton_bg"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false" />
+    </com.pengyouwan.sdk.ui.widget.WaveFrameLinearLayout>
+
+</LinearLayout>

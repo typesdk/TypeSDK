@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 圆角 -->
+    <corners
+        android:radius="25dp" />
+    
+    <solid
+        android:color="@color/kg_item_click"/>
+          
+    <!-- 描边 -->
+    <stroke
+        android:width="2px"
+        android:color="@color/kg_common_gray_e5e5e5"/>
+
+</shape>

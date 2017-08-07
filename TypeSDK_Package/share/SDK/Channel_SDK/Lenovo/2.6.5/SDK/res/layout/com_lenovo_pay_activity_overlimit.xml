@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_lenovo_pay_button"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_vertical" >
+
+            <ImageButton
+                android:id="@+id/base_title_imb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/com_lenovo_lsf_pay_vb_center_title_back_selector"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/base_title_imb"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/com_lenovo_pay_cashier_title_text"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:id="@+id/gotovbc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:src="@drawable/com_lenovo_pay_govbc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center"
+                    android:text="@string/com_lenovo_pay_overlimit_goto_vbc"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_logo_version"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/overlimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/com_lenovo_pay_overlimit"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/overlimit_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_lenovo_pay_goods_marginLeft"
+            android:layout_marginRight="@dimen/com_lenovo_pay_goods_marginLeft"
+            android:layout_marginTop="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/guiding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_lenovo_pay_goods_marginLeft"
+            android:layout_marginRight="@dimen/com_lenovo_pay_goods_marginLeft"
+            android:layout_marginTop="@dimen/com_lenovo_pay_goods_marginLeft"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/modify_title"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/com_lenovo_pay_goods_marginLeft"
+        android:layout_marginRight="@dimen/com_lenovo_pay_goods_marginLeft"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:textColor="#757575"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/com_lenovo_lsf_list_item_selector"
+        android:paddingLeft="@dimen/com_lenovo_pay_goods_marginLeft"
+        android:paddingRight="@dimen/com_lenovo_pay_goods_marginLeft" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="姓名"
+            android:textColor="@color/com_lenovo_lsf_pay_content_text_font_color"
+            android:textSize="@dimen/com_lenovo_lsf_pay_account_setting_item_font_size_left" />
+
+        <ImageView
+            android:id="@+id/name_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/com_lenovo_pay_modify" />
+
+        <TextView
+            android:id="@+id/name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/name_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:layout_toLeftOf="@+id/name_icon"
+            android:text="李白"
+                        android:layout_alignBaseline="@+id/name"
+            
+            android:textColor="@color/com_lenovo_lsf_pay_content_text_font_color"
+            android:textSize="@dimen/com_lenovo_lsf_pay_account_setting_item_font_size_left" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_layout"
+        style="@style/com_lenovo_lsf_setting_item"
+       >
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="身份证号"
+            android:textColor="@color/com_lenovo_lsf_pay_content_text_font_color"
+            android:textSize="@dimen/com_lenovo_lsf_pay_account_setting_item_font_size_left" />
+
+        <ImageView
+            android:id="@+id/id_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/com_lenovo_pay_modify" />
+
+        <TextView
+            android:id="@+id/id_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/id"
+            android:layout_alignBottom="@+id/id_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:layout_toLeftOf="@+id/id_icon"
+            android:text="1305225552122121222"
+            android:textColor="@color/com_lenovo_lsf_pay_content_text_font_color"
+            android:textSize="@dimen/com_lenovo_lsf_pay_account_setting_item_font_size_left" />
+    </RelativeLayout>
+
+</LinearLayout>

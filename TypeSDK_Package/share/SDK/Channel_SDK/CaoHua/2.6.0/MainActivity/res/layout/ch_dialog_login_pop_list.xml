@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ch_dialog_edit_bg"
+        android:paddingBottom="1dp"
+        android:paddingTop="0dp" >
+
+        <ListView
+            android:id="@+id/ch_pop_list"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/ch_edit_stroke"
+            android:dividerHeight="1dp"
+            android:focusableInTouchMode="true"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" />
+    </LinearLayout>
+
+</LinearLayout>

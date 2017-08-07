@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gfan_notification_item_bg">
+
+    <TextView
+        android:id="@+id/tv_notification_title"
+        android:layout_width="0dp"
+        android:layout_weight="10"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tv_notification_time"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="5dp"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:gravity="right"/>
+
+</LinearLayout><!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_notifications_item.xml -->

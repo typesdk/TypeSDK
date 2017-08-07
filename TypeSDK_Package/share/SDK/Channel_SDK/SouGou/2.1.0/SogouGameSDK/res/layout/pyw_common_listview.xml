@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_common"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pyw_common_background"
+    android:orientation="vertical" >
+
+    <com.yunyou.pengyouwan.ui.widget.TipsLayout
+        android:id="@+id/pyw_custom_tipslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ListView
+        android:id="@+id/pyw_lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/pyw_common_transparent"
+        android:divider="@color/pyw_common_transparent"
+        android:listSelector="@color/pyw_common_transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+</LinearLayout>

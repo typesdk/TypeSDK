@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="290dip"
+        android:layout_height="120dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gasdk_login_rel" >
+
+        <LinearLayout
+            android:id="@+id/share_lin"
+            android:layout_width="260dip"
+            android:layout_height="44dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/share_imagebutton_1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/gasdk_login_beck" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/text_registered_title"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:text="@string/text_share_t" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+            android:layout_below="@+id/share_lin"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/share_button_2"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginRight="5dip"
+                android:gravity="center"
+                android:src="@drawable/gasdk_facebook_login" />
+
+            <ImageView
+                android:id="@+id/share_button_3"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="5dip"
+                android:gravity="center"
+                android:src="@drawable/gasdk_twitter_login" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coolpad_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/coolpad_pay_navigation" />
+
+    <ScrollView
+        android:id="@+id/main_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/sale_area_ll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/coolpad_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="活动："
+                    android:textColor="@color/pay_text_darkgray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/sale_content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="@color/pay_text_darkgray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+      
+            <LinearLayout
+                android:id="@+id/account_area_ll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/coolpad_white"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/coolpad_coolyun_account"
+                    android:textColor="@color/pay_text_darkgray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/nickname_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:ellipsize="middle"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:textColor="@color/pay_text_darkgray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+         
+
+            <LinearLayout
+                android:id="@+id/rest_area_ll"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/coolpad_white"
+                android:baselineAligned="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/coolpad_balance"
+                    android:textColor="@color/pay_text_darkgray"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rest_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/pay_text_darkgray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        
+
+            <GridView
+                android:id="@+id/charge_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:horizontalSpacing="15dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="@null"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="15dp" />
+
+            <LinearLayout
+                android:id="@+id/payment_area_ll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/coolpad_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/coolpad_payment"
+                    android:textColor="@color/coolpad_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/payment_content_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:textColor="@color/coolpad_black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/pay_bg" />
+
+            <LinearLayout
+                android:id="@+id/payment_type_ll"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/pay_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="bottom"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/coolpad_recharge_type"
+                    android:textColor="@color/text_dark_80"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/ad_tv"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="#660000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:background="@color/coolpad_white"
+                android:cacheColorHint="@null"
+                android:divider="@color/list_divider"
+                android:dividerHeight="1px"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

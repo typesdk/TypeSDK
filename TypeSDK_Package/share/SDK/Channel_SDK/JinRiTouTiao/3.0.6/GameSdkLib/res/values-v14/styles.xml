@@ -1,0 +1,11 @@
+<resources>
+
+    
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        
+    </style>
+
+<style name="edit">
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+</resources>

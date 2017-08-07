@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ch_dialog_gray_bottom_corner"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ch_dialog_title_grean_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ch_dialog_login_logo" />
+
+        <TextView
+            android:id="@+id/ch_dialog_alert_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="温馨提示"
+            android:textColor="@color/ch_white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ch_dialog_alert_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="684684"
+            android:textColor="@color/ch_green"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp" >
+
+        <Button
+            android:id="@+id/ch_dialog_alert_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@+id/ch_dialog_phone_divider"
+            android:background="@drawable/ch_dialog_gray_btn"
+            android:gravity="center"
+            android:text="稍后下载"
+            android:textColor="@drawable/ch_dialog_gray_font_bg"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/ch_dialog_phone_divider"
+            android:layout_width="15dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/ch_dialog_alert_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/ch_dialog_phone_divider"
+            android:background="@drawable/ch_dialog_pay_btn"
+            android:text="马上下载"
+            android:textColor="@drawable/ch_dialog_green_font_bg"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

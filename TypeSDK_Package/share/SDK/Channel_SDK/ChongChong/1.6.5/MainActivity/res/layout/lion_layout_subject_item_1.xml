@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lion_common_frame_two_nor"
+    android:orientation="vertical"
+    android:paddingBottom="10.0dip"
+    android:paddingLeft="15.0dip"
+    android:paddingRight="15.0dip"
+    android:paddingTop="15.0dip" >
+
+    <include layout="@layout/lion_layout_subject_item_custom_info" />
+
+    <include layout="@layout/lion_layout_subject_item_content" />
+
+    <include layout="@layout/lion_layout_subject_item_info" />
+
+</LinearLayout>

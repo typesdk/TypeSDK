@@ -1,0 +1,33 @@
+{
+  "version":"4.0.20160805",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "sid" : ""
+    }
+    ,"out_url" : "http://user.anzhi.com/web/api/sdk/third/1/queryislogin"
+    ,"out_params" :
+    {
+      "appkey" : ""
+    ,"sid" : ""
+    ,"time" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "data" : ""
+      }
+    ,"out_url" : "http://user.anzhi.com/web/api/sdk/third/1/queryislogin"
+    ,"out_params" :
+      {
+        "data" : ""
+      }
+    }
+  ]
+}

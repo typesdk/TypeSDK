@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+        >
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="@dimen/dp933"
+                android:layout_height="@dimen/dp144"
+                android:background="@drawable/title_back"
+                android:gravity="center_vertical"
+                >
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginLeft="@dimen/dp36"
+                       android:src="@drawable/login_first_title"
+                       android:id="@+id/titleIcon"
+                    />
+        </LinearLayout>
+        <FrameLayout
+                android:layout_width="@dimen/dp933"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_back"
+                >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:paddingTop="@dimen/dp57"
+                          android:paddingBottom="@dimen/dp108"
+                    >
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:textColor="@color/grey_3"
+                          android:textSize="@dimen/sp39"
+                          android:layout_gravity="center_horizontal"
+                          android:text="请选择登录方式"
+                        />
+
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                             android:layout_marginTop="@dimen/dp79"
+                             android:layout_gravity="center_horizontal"
+
+                        >
+
+                    <LinearLayout android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_gravity="center_horizontal"
+                            >
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:drawableTop="@drawable/login_first_icon_1"
+                                  android:text="快速游戏"
+                                  android:gravity="center"
+                                  android:textColor="@color/grey_4"
+                                  android:textSize="@dimen/sp36"
+                                  android:drawablePadding="@dimen/dp20"
+                                  android:id="@+id/txt_1"
+                                />
+
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:drawableTop="@drawable/login_first_icon_2"
+                                  android:text="手机登录"
+                                  android:gravity="center"
+                                  android:textColor="@color/grey_4"
+                                  android:textSize="@dimen/sp36"
+                                  android:drawablePadding="@dimen/dp20"
+                                  android:layout_marginLeft="@dimen/dp120"
+                                  android:id="@+id/txt_2"
+                                />
+
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:drawableTop="@drawable/login_first_icon_3"
+                                  android:text="啪啪账号"
+                                  android:gravity="center"
+                                  android:textColor="@color/grey_4"
+                                  android:textSize="@dimen/sp36"
+                                  android:drawablePadding="@dimen/dp20"
+                                  android:layout_marginLeft="@dimen/dp121"
+                                  android:id="@+id/txt_3"
+                                />
+
+
+
+                    </LinearLayout>
+
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                               android:src="@drawable/no_register_icon"
+                               android:layout_gravity="center|top"
+                               android:layout_marginLeft="20dip"
+                            />
+
+
+
+
+                </FrameLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

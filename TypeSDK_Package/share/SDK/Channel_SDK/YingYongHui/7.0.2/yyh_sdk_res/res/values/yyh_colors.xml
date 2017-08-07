@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yyh_white">#FFFFFF</color>
+    <color name="transparent_half">#50000000</color> 
+    <color name="yyh_black">#000000</color>
+    <color name="yyh_gray_dark">#333333</color>
+    <color name="yyh_gray_light">#aaaaaa</color>
+    <color name="yyh_gray">#CCCCCC</color>
+    <color name="yyh_blue">#0382DA</color>
+    <color name="yyh_red">#d54542</color>
+    <color name="yyh_blue_half_transparent">#7F0382DA</color>
+     <color name="yyh_transparent">#00000000</color>
+
+    <color name="yyh_color_d1d">#cacaca</color>
+    <color name="yyh_center_selected">@color/yyh_white</color>
+    <color name="yyh_center_unselected">@color/yyh_gray</color>
+
+    <color name="yyh_windowbg_dialog">#00000000</color>
+    <color name="yyh_pressed">#5a000000</color>
+
+    <color name="yyh_a_1">#ffffff</color>
+    <color name="yyh_c_3">#1588fe</color>
+    <color name="yyh_c_1">#ebebeb</color>
+    <color name="yyh_c_2">#f69b0f</color>
+    <color name="yyh_b_1">#f7f7f7</color>
+    <color name="yyh_d_1">#cacaca</color>
+</resources>

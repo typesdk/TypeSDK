@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/gfan_btn_blue_bg" android:state_pressed="true" />
+</selector><!-- From: file:/E:/GfanSDK/SDK/src/main/res/drawable/gfan_white_selector.xml -->

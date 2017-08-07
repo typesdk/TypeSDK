@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+	<item android:drawable="@drawable/sogou_game_sdk_ic_webview_loading1" android:duration="120" />
+	<item android:drawable="@drawable/sogou_game_sdk_ic_webview_loading2" android:duration="120" />
+	<item android:drawable="@drawable/sogou_game_sdk_ic_webview_loading3" android:duration="120" />
+	<item android:drawable="@drawable/sogou_game_sdk_ic_webview_loading4" android:duration="120" />
+	<item android:drawable="@drawable/sogou_game_sdk_ic_webview_loading5" android:duration="120" />
+</animation-list>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@android:color/white"
+                  android:paddingLeft="@dimen/mg_forum_post_item_padding"
+                  android:paddingRight="@dimen/mg_forum_post_item_padding">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:layout_gravity="left|center_vertical"
+                android:paddingBottom="10dp" android:paddingTop="10dp"
+                >
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="来自："
+                    android:id="@+id/textView19" android:gravity="center_vertical" android:textColor="#a9a9a9"
+                    android:textSize="12dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未知"
+                    android:id="@+id/forum_name" android:textColor="#3b3b3b" android:textSize="12dp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center_vertical|right">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:gravity="center_vertical"
+                    android:paddingBottom="10dp" android:paddingTop="10dp">
+                <ImageView android:layout_width="13dp" android:layout_height="11dp"
+                           android:id="@+id/imageView10" android:src="@drawable/look"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="0"
+                          android:id="@+id/forum_post_view" android:textColor="#a9a9a9" android:textSize="12dp"
+                          android:layout_marginLeft="8dp"
+                        />
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" android:gravity="center_vertical"
+                    android:layout_marginLeft="18dp">
+                <ImageView android:layout_width="13dp" android:layout_height="11dp"
+                           android:id="@+id/imageView9" android:src="@drawable/comment"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="0"
+                          android:id="@+id/forum_post_commit" android:textColor="#a9a9a9"
+                          android:textSize="12dp"
+                          android:layout_marginLeft="8dp"
+                        />
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" android:gravity="center_vertical">
+                <ImageView android:layout_width="13dp" android:layout_height="11dp"
+                           android:layout_marginLeft="18dp"
+                           android:id="@+id/forum_post_praise_icon"
+                           android:src="@drawable/unlike"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                          android:text="0"
+                          android:id="@+id/forum_post_praise" android:textColor="#a9a9a9"
+                          android:textSize="12dp"
+                          android:layout_marginLeft="8dp"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View android:layout_width="match_parent" android:layout_height="6dp" android:id="@+id/post_footer_divider" android:visibility="gone"/>
+</LinearLayout>

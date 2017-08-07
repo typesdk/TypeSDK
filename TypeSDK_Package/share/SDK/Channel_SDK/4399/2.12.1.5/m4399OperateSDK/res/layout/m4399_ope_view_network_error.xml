@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="100dp"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@color/m4399_ope_usercenter_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/check_network_bkimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/m4399_ope_png_no_network"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/check_network_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/m4399_ope_usercenter_grey_light"
+        android:text="@string/m4399_ope_network_no_network"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/check_network_btn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/m4399_ope_check_network_btn_selector"
+        android:textColor="@color/m4399_ope_usercenter_white"
+        android:text="@string/m4399_ope_network_set_network" />
+
+</LinearLayout>

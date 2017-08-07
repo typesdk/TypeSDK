@@ -1,0 +1,4 @@
+{
+"config_url_1":"http://g.typesdk.com/config/GAGameConfig.txt",
+"config_url_2":"http://g.typesdk.com/config/GAGameConfig.txt"
+}

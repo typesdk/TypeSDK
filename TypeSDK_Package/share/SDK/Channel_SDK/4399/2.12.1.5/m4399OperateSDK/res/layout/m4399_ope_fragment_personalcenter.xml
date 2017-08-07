@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人中心 个人中心Fragment by.zhengxu -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.m4399.operate.ui.widget.NavigationBarView
+        android:id="@+id/usercenter_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <cn.m4399.operate.ui.widget.UserInfoView
+                android:id="@+id/usercenter_userinfo_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="15dp" />
+            <View style="@style/m4399PerfectLine"
+                android:background="#dddddd"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:background="@drawable/m4399_ope_usercenter_action_item_bg"
+                    android:id="@+id/usercenter_msg"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/usercenter_message_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#dd000000"
+                        android:textSize="18sp"
+                        android:text="@string/m4399_ope_usercenter_information_center"/>
+
+                    <ImageView
+                        android:id="@+id/usercenter_message_dot"
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:src="@drawable/m4399_ope_sign_red_dot"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#dddddd"/>
+
+
+                <TextView
+                    android:background="@drawable/m4399_ope_usercenter_action_item_bg"
+                    android:id="@+id/usercenter_coupon_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#dd000000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="@string/m4399_ope_usercenter_coupon_center"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#EDEDED"/>
+            <cn.m4399.operate.ui.widget.UserCenterItemView
+                android:id="@+id/usercenter_contact_client_qq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <cn.m4399.operate.ui.widget.UserCenterItemView
+                android:id="@+id/usercenter_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <cn.m4399.operate.ui.widget.UserCenterItemView
+                android:id="@+id/usercenter_bindphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <cn.m4399.operate.ui.widget.UserCenterItemView
+                android:id="@+id/usercenter_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#EDEDED"/>
+            <cn.m4399.operate.ui.widget.UserCenterItemView
+                android:id="@+id/usercenter_show_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <cn.m4399.operate.ui.widget.UserCenterItemView
+                android:id="@+id/usercenter_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+         <!--   &lt;!&ndash; 消息列表 &ndash;&gt;
+
+            <ListView
+                android:id="@+id/usercenter_action_list_view_information_center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:divider="#000"
+                android:dividerHeight="0dp"
+                android:listSelector="@null"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            &lt;!&ndash; 账户控制列表 &ndash;&gt;
+
+            <ListView
+                android:id="@+id/usercenter_action_list_view_account_center"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:divider="#000"
+                android:dividerHeight="0dp"
+                android:listSelector="@null"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            &lt;!&ndash; 投诉列表 &ndash;&gt;
+
+            <ListView
+                android:id="@+id/usercenter_action_list_view_complaints_center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:divider="#000"
+                android:dividerHeight="0dp"
+                android:listSelector="@null"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

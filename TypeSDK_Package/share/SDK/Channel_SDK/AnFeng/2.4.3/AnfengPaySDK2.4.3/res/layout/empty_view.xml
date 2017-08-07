@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+     >
+
+    <!--     <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/new_load_bg" /> -->
+
+        <ProgressBar  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          style="?android:attr/progressBarStyle"
+         />
+       
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/no_net"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+       <!--  <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ico_no_net" /> -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="加载失败，点击重试" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+       <!--  <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/new_load_bg" /> -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="抱歉，暂无礼包"
+            android:textColor="#999999" />
+    </LinearLayout>
+
+</RelativeLayout>

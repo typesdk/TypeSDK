@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item 
+        android:state_pressed="true">
+        
+        <shape 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:shape="rectangle">
+            
+            <solid android:color="@color/button3_state_pressed_true"/>
+            <stroke android:width="1dip" android:color="@color/button3_state_pressed_true"/>
+            <corners android:radius="5dp"/>
+            
+        </shape>
+        
+    </item>
+    
+    <item 
+        android:state_pressed="false">
+        
+        <shape 
+            xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:shape="rectangle">
+            
+            <solid android:color="@color/button3_state_pressed_false"/>
+            <stroke android:width="1dip" android:color="@color/button3_state_pressed_false"/>
+            <corners android:radius="5dp"/>
+            
+        </shape>
+        
+    </item>
+
+</selector>

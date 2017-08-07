@@ -1,0 +1,57 @@
+{
+  "version":"Login v2.0.6; Pay V3.1.3",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "authtoken" : ""
+    }
+    ,"out_url" :"https://usrsys.vivo.com.cn/sdk/user/auth.do"
+    ,"out_params" :
+    {
+      "authtoken" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "respCode" : 0
+      ,"respMsg" : ""
+      ,"signMethod" :""
+      ,"signature"  : ""
+      ,"tradeType" : ""
+      ,"tradeStatus": ""
+      ,"cpId": ""
+      ,"appId": ""
+      ,"uid": ""
+      ,"cpOrderNumber": ""
+      ,"orderNumber": ""
+      ,"orderAmount": ""
+      ,"extInfo": ""
+      ,"payTime": ""
+      }
+    ,"out_url" :"https://usrsys.vivo.com.cn/sdk/user/auth.do"
+    ,"out_params" :
+      {
+        "respCode" : 0
+      ,"respMsg" : ""
+      ,"signMethod" :""
+      ,"signature"  : ""
+      ,"tradeType" : ""
+      ,"tradeStatus": ""
+      ,"cpId": ""
+      ,"appId": ""
+      ,"uid": ""
+      ,"cpOrderNumber": ""
+      ,"orderNumber": ""
+      ,"orderAmount": ""
+      ,"extInfo": ""
+      ,"payTime": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemlayout"
+    android:background="@android:color/transparent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/ItemId"
+        android:layout_width="8dip"
+        android:layout_height="2dip"
+        android:layout_marginTop="3dip"
+        android:text="00000"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lvansdk_icon_logo" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemImage"
+        android:layout_marginTop="3dip"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="Title"
+        android:gravity="center_horizontal"
+        android:textColor="#000000" >
+    </TextView>
+
+</RelativeLayout>

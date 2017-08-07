@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/com_lenovo_lsf_view_width"
+    android:layout_height="@dimen/com_lenovo_lsf_view_height"
+    android:background="@drawable/com_lenovo_lsf_game_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_startgame_error_title"
+        android:layout_width="match_parent"
+        android:background="@drawable/com_lenovo_lsf_title_bg"
+        android:layout_height="@dimen/com_lenovo_lsf_title_height" >
+
+        <ImageButton
+            android:id="@+id/tv_startgame_error_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/com_lenovo_lsf_title_back" />
+
+        <TextView
+            android:id="@+id/error_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:text="@string/com_lenovo_lsf_string_network_error"
+            android:textColor="@color/com_lenovo_lsf_loginTabColorLight"
+            android:textSize="@dimen/com_lenovo_lsf_title_fontsize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_tartgame_error_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_startgame_error_title"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_startgame_error_icon"
+            android:layout_width="108dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/com_lenovo_lsf_startgame_error_icon" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_tartgame_error_down"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/tv_startgame_error_retry"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/com_lenovo_lsf_content_padding_left_right"
+            android:layout_marginRight="@dimen/com_lenovo_lsf_content_padding_left_right"
+            android:background="@drawable/com_lenovo_lsf_btn_register_selector"
+            android:text="@string/com_lenovo_lsf_string_network_error_retry"
+            android:textColor="@color/com_lenovo_lsf_white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

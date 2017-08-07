@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sogou_game_sdk_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="1dp" >
+
+        <RelativeLayout
+            android:id="@+id/sogou_game_sdk_pay_phone_card_head_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="76dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_pay_phone_card_head"
+                style="@style/sogou_game_sdk_pay_s20_c3d3d3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sogou_game_sdk_pay_jcard" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_user"
+            style="@style/sogou_game_sdk_pay_s20_c3d3d3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_pay_phone_card_head_rl"
+            android:layout_marginLeft="19dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/sogou_game_sdk_pay_user" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_money"
+            style="@style/sogou_game_sdk_pay_s20_c3d3d3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_pay_user"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/sogou_game_sdk_pay_money" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_goods"
+            style="@style/sogou_game_sdk_pay_s20_c3d3d3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_pay_money"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/sogou_game_sdk_pay_goods" />
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_product"
+            style="@style/sogou_game_sdk_pay_s20_c3d3d3d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_pay_goods"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/sogou_game_sdk_pay_product" />
+
+        <EditText
+            android:id="@+id/sogou_game_sdk_card_number"
+            android:layout_width="fill_parent"
+            android:layout_height="33.5dp"
+            android:layout_below="@id/sogou_game_sdk_pay_product"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/sogou_game_sdk_pay_input"
+            android:hint="@string/sogou_game_sdk_pay_input_card_number"
+            android:inputType="number"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/sogou_game_sdk_card_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="33.5dp"
+            android:layout_below="@id/sogou_game_sdk_card_number"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/sogou_game_sdk_pay_input"
+            android:hint="@string/sogou_game_sdk_pay_input_card_pwd"
+            android:imeOptions="actionGo"
+            android:inputType="number"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/sogou_game_sdk_pay_ok"
+            style="@style/sogou_game_sdk_pay_bt_red"
+            android:layout_width="fill_parent"
+            android:layout_height="33.5dp"
+            android:layout_below="@id/sogou_game_sdk_card_pwd"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/sogou_game_sdk_pay_ok_red"
+            android:text="@string/sogou_game_sdk_pay_confirm" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sogou_game_sdk_pay_ok"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="21.5dp"
+            android:background="@drawable/sogou_game_sdk_pay_tips_bg"
+            android:padding="8dip" >
+
+            <TextView
+                android:id="@+id/sogou_game_pay_tips_title"
+                style="@style/sogou_game_sdk_pay_s16_c595959"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sogou_game_sdk_pay_tips" />
+
+            <TextView
+                android:id="@+id/sogou_game_pay_tips"
+                style="@style/sogou_game_sdk_pay_s16_c595959"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sogou_game_pay_tips_title"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/sogou_game_sdk_pay_links_feedback"
+                style="@style/sogou_game_sdk_pay_s16_c595959"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sogou_game_pay_tips"
+                android:text="@string/sogou_game_sdk_pay_feedback" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

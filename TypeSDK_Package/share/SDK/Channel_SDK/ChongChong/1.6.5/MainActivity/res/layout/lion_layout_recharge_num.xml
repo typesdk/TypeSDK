@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/lion_layout_recharge_num"
+          android:layout_width="match_parent"
+          android:layout_height="45.0dip"
+          android:background="@drawable/lion_common_white_2_red_selector"
+          android:gravity="center"
+          android:minHeight="45.0dip"
+          android:textColor="@color/lion_common_text_black_2_white_selector"
+          android:textSize="16.0sp"/>

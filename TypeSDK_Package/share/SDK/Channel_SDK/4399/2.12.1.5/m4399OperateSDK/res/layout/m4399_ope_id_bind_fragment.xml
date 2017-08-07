@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/m4399BindPhonePageStyle"
+    android:layout_width="@dimen/m4399_ope_page_width"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/m4399_ope_bind_padding_top"
+    android:paddingLeft="@dimen/m4399_ope_bind_padding_left"
+    android:paddingRight="@dimen/m4399_ope_bind_padding_left"
+    android:paddingTop="@dimen/m4399_ope_bind_padding_top">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/m4399_ope_bind_padding_top"
+            android:text="@string/m4399_ope_bind_id_title"
+            android:textColor="@color/m4399_ope_bind_title_black"
+            android:textSize="@dimen/m4399_ope_bind_title_font_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/m4399_ope_bind_id_msg_end"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_ope_bind_input_button_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/m4399_ope_bind_realname"
+            android:textColor="@color/m4399_ope_bind_label_gray"
+            android:textSize="@dimen/m4399_ope_bind_label_font_size" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/m4399_ope_bind_label_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/m4399_ope_bind_input_bg"
+            android:orientation="horizontal">
+
+            <cn.m4399.operate.ui.widget.LimitEditText
+                android:id="@+id/id_bind_realname"
+                style="@style/m4399BindEditStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/m4399_ope_bind_realname_hint"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/id_bind_del_realname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <ImageView style="@style/m4399PerfectDel" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_ope_bind_input_button_height"
+        android:layout_marginTop="@dimen/m4399_ope_bind_input_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/m4399_ope_bind_id_series"
+            android:textColor="@color/m4399_ope_bind_label_gray"
+            android:textSize="@dimen/m4399_ope_bind_label_font_size" />
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/m4399_ope_bind_label_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/m4399_ope_bind_input_bg"
+            android:orientation="horizontal">
+
+            <cn.m4399.operate.ui.widget.LimitEditText
+                android:id="@+id/id_bind_identify"
+                style="@style/m4399BindEditStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:digits="0123456789X"
+                android:hint="@string/m4399_ope_bind_id_series_hint"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/id_bind_del_identify"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <ImageView style="@style/m4399PerfectDel" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/m4399_ope_bind_id_example_front"
+            android:textSize="@dimen/m4399_ope_bind_label_font_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m4399_ope_bind_label_margin"
+            android:text="@string/m4399_ope_bind_id_example"
+            android:textColor="@color/m4399_ope_bind_hint"
+            android:textSize="@dimen/m4399_ope_bind_label_font_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m4399_ope_bind_input_button_height"
+        android:layout_marginTop="@dimen/m4399_ope_bind_input_margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/id_bind_switch_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/m4399_ope_bind_button_bg"
+            android:text="@string/m4399_ope_bind_id_relogin"
+            android:textColor="@color/m4399_ope_bind_label_gray" />
+
+        <cn.m4399.operate.ui.widget.SureButtonView
+            android:id="@+id/id_bind_submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/m4399_ope_bind_input_margin_left"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+</LinearLayout>

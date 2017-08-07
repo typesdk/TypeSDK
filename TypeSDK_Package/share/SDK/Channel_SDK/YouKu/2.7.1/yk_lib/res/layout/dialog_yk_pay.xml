@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/yk_pay_params_layout"
+        android:layout_width="@dimen/YK_GameSDK_664PX"
+        android:layout_height="wrap_content"
+        android:background="#FfFfFf"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/YK_GameSDK_30PX" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/YK_GameSDK_88PX"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/yk_pay_icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/YK_GameSDK_36PX"
+                android:paddingRight="@dimen/YK_GameSDK_36PX"
+                android:src="@drawable/yk_pay_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/YK_GameSDK_26PX"
+                android:layout_toRightOf="@+id/yk_pay_icon_back"
+                android:text="@string/yk_text_ykgame_pay"
+                android:textColor="@color/yk_text_title"
+                android:textSize="@dimen/YK_GameSDK_44PX" />
+
+            <ImageView
+                android:id="@+id/yk_pay_icon_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/YK_GameSDK_22PX"
+                android:paddingLeft="@dimen/YK_GameSDK_26PX"
+                android:paddingRight="@dimen/YK_GameSDK_36PX"
+                android:paddingTop="@dimen/YK_GameSDK_22PX"
+                android:src="@drawable/yk_pay_detail" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/yk_title_line" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/YK_GameSDK_18PX" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ScrollView
+                android:id="@+id/yk_paylist_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/yk_pay_paylist_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_select_alipay_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/yk_pay_alipay_arrow_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/yk_pay_alipay_logo_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_logo_alipay" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_select_wxpay_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/YK_GameSDK_14PX" >
+
+                        <ImageView
+                            android:id="@+id/yk_pay_wxpay_arrow_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/yk_pay_wxpay_logo_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_logo_wxpay" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_select_yk_wxpay_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/YK_GameSDK_14PX" >
+
+                        <ImageView
+                            android:id="@+id/yk_pay_yk_wxpay_arrow_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/yk_pay_yk_wxpay_logo_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_logo_wxpay" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_select_operator_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/YK_GameSDK_14PX" >
+
+                        <ImageView
+                            android:id="@+id/yk_pay_operator_arrow_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/yk_pay_operator_logo_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_logo_operator" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_select_sms_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/YK_GameSDK_14PX" >
+
+                        <ImageView
+                            android:id="@+id/yk_pay_sms_arrow_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/yk_pay_sms_logo_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_logo_sms" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_select_unionpay_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/YK_GameSDK_14PX"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/yk_pay_unionpay_arrow_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/yk_pay_unionpay_logo_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_logo_unionpay" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_select_tenpay_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/YK_GameSDK_14PX" >
+
+                        <ImageView
+                            android:id="@+id/yk_pay_tenpay_arrow_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/yk_pay_tenpay_logo_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_logo_tenpay" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_select_gold_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/YK_GameSDK_14PX" >
+
+                        <ImageView
+                            android:id="@+id/yk_pay_gold_arrow_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_arrow_blue" />
+
+                        <ImageView
+                            android:id="@+id/yk_pay_gold_logo_img"
+                            android:layout_width="@dimen/YK_GameSDK_150PX"
+                            android:layout_height="@dimen/YK_GameSDK_75PX"
+                            android:background="@drawable/yk_pay_logo_gold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/yk_pay_paylist_vertical_cut"
+                android:layout_width="1px"
+                android:layout_height="@dimen/YK_GameSDK_474PX"
+                android:layout_toRightOf="@+id/yk_paylist_scroll"
+                android:background="#c1c1c1" />
+
+            <include
+                android:id="@+id/yk_pay_goldrecha_include"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/YK_GameSDK_44PX"
+                android:layout_marginRight="@dimen/YK_GameSDK_44PX"
+                android:layout_toRightOf="@+id/yk_pay_paylist_vertical_cut"
+                layout="@layout/dialog_yk_pay_goldrecha_include" />
+
+            <ScrollView
+                android:id="@+id/yk_pay_content_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/YK_GameSDK_44PX"
+                android:layout_marginRight="@dimen/YK_GameSDK_44PX"
+                android:layout_toRightOf="@+id/yk_pay_paylist_vertical_cut"
+                android:scrollbars="none" >
+
+                <RelativeLayout
+                    android:id="@+id/yk_pay_content_layout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_content_layout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/YK_GameSDK_10PX"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/yk_pay_amount_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/YK_GameSDK_24PX"
+                            android:text="@string/yk_text_000.00"
+                            android:textColor="#ff9c00"
+                            android:textSize="@dimen/YK_GameSDK_44PX" />
+
+                        <ImageView
+                            android:id="@+id/yk_pay_amount_cut"
+                            android:layout_width="1px"
+                            android:layout_height="@dimen/YK_GameSDK_70PX"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/yk_pay_amount_txt"
+                            android:background="#c1c1c1" />
+
+                        <LinearLayout
+                            android:id="@+id/yk_pay_content_layout3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/YK_GameSDK_24PX"
+                            android:layout_toRightOf="@+id/yk_pay_amount_cut"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@+id/yk_pay_user_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/yk_text_user_maohao"
+                                    android:textColor="#b3b3b3"
+                                    android:textSize="@dimen/YK_GameSDK_26PX" />
+
+                                <TextView
+                                    android:id="@+id/yk_pay_user_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@string/yk_text_null"
+                                    android:textColor="#717171"
+                                    android:textSize="@dimen/YK_GameSDK_26PX" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/yk_text_good_maohao"
+                                    android:textColor="#b3b3b3"
+                                    android:textSize="@dimen/YK_GameSDK_26PX" />
+
+                                <TextView
+                                    android:id="@+id/yk_pay_product_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="@string/yk_text_0xingzuan"
+                                    android:textColor="#717171"
+                                    android:textSize="@dimen/YK_GameSDK_26PX" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/yk_pay_cutingline"
+                        android:layout_width="@dimen/YK_GameSDK_474PX"
+                        android:layout_height="1px"
+                        android:layout_below="@+id/yk_pay_content_layout2"
+                        android:background="#c1c1c1" />
+
+                    <include
+                        android:id="@+id/yk_pay_include"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/yk_pay_cutingline"
+                        android:layout_marginTop="@dimen/YK_GameSDK_36PX"
+                        layout="@layout/dialog_yk_pay_sms_include"
+                        android:orientation="vertical" />
+
+                    <include
+                        android:id="@+id/yk_pay_operator_include"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/yk_pay_content_layout2"
+                        android:layout_marginTop="@dimen/YK_GameSDK_14PX"
+                        layout="@layout/dialog_yk_pay_operator_include"
+                        android:orientation="vertical" />
+
+                    <include
+                        android:id="@+id/yk_pay_gold_include"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/yk_pay_content_layout2"
+                        layout="@layout/dialog_yk_pay_gold_include"
+                        android:orientation="vertical" />
+
+                    <TextView
+                        android:id="@+id/yk_pay_alipay_bt"
+                        android:layout_width="@dimen/YK_GameSDK_474PX"
+                        android:layout_height="@dimen/YK_GameSDK_88PX"
+                        android:layout_below="@+id/yk_pay_operator_include"
+                        android:layout_marginTop="@dimen/YK_GameSDK_24PX"
+                        android:background="@drawable/yk_btn_blue_selector"
+                        android:gravity="center"
+                        android:text="@string/yk_text_a_qzfbfk"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/YK_GameSDK_36PX" />
+
+                    <RelativeLayout
+                        android:id="@+id/yk_pay_operator_tip_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/yk_pay_alipay_bt"
+                        android:layout_marginTop="@dimen/YK_GameSDK_20PX" >
+
+                        <TextView
+                            android:id="@+id/yk_pay_operator_tip"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yk_text_prompt_xzmzxtczk"
+                            android:textColor="@color/yk_edit_text_hint"
+                            android:textSize="@dimen/YK_GameSDK_24PX" />
+
+                        <TextView
+                            android:id="@+id/yk_pay_operator_tip_link"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/yk_pay_operator_tip"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/yk_text_prompt_ljgd"
+                            android:textColor="@drawable/yk_tv_hink_find_pwd_selector"
+                            android:textSize="@dimen/YK_GameSDK_26PX" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

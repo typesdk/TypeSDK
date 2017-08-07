@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+              android:layout_width = "fill_parent"
+              android:layout_height = "wrap_content"
+              android:gravity = "center_horizontal"
+              android:orientation = "vertical" >
+
+	<ListView
+			android:id = "@+id/umipay_account_list"
+			android:layout_width = "fill_parent"
+			android:layout_height = "wrap_content"
+			android:background = "@drawable/umipay_accountlist_background_radius"
+			android:overScrollMode="never"
+			android:fadingEdge="none"
+			android:divider="#dadada"
+			android:dividerHeight="1px">
+	</ListView >
+
+</LinearLayout >

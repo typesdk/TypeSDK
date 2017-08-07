@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@color/list_bg"
+    android:orientation="vertical" >
+	
+    <cn.egame.terminal.usersdk.ui.view.CustomListView
+        android:id="@+id/egame_my_gift_fragment_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/dp_4"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:visibility="gone" />
+
+    <include layout="@layout/egame_user_sdk_activity_loading" />
+
+</LinearLayout>

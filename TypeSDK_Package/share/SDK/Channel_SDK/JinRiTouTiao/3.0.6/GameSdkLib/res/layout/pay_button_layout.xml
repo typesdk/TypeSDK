@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View 
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pay_dialog_item_divider"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/confirm_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="180dp"
+            android:minHeight="38dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:background="@drawable/pay_button_bg"
+            android:textSize="@dimen/pay_button_text_size"
+            android:textColor="@color/pay_button_text_color"
+            android:text="@string/pay_button_confirm">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

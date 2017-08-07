@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:listPreferredItemHeightSmall"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/nubia_item_padding_side"
+        android:gravity="center" >
+
+        <CheckBox
+            android:id="@+id/nubia_account_regist_policy_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:checked="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nubia_account_regist_policy_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="@string/nubia_account_regist_policy_label"
+        android:textColor="@color/nubia_color_black_100"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/nubia_account_regist_policy_label_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/nubia_item_padding_left"
+        android:gravity="center_vertical"
+        android:textColor="@color/nubia_color_black_100"
+        android:text="@string/nubia_account_regist_policy_label_link"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>

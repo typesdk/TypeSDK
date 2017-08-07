@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pay_fragment_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pay_item_layout_height"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/border_bg_bottom_line"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pay_margin_window">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/pay_amount"
+            android:textColor="@color/pay_fragment_pay_amount_text"
+            android:textSize="@dimen/font_size_middle" />
+
+        <TextView
+            android:id="@+id/pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="98.0"
+            android:textColor="@color/pay_fragment_pay_amount_value"
+            android:textSize="@dimen/font_size_middle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/yuan"
+            android:textColor="@color/pay_fragment_pay_amount_text"
+            android:textSize="@dimen/font_size_small" />
+
+        <TextView
+            android:id="@+id/pay_original_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:gravity="center_vertical"
+            android:text="@string/pay_original_amount"
+            android:textColor="@color/pay_fragment_pay_original_text"
+            android:textSize="@dimen/font_size_small"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bg_bottom_line"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/pay_haima_coin_parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pay_item_layout_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/pay_margin_window"
+            android:background="@drawable/border_bg_bottom_line"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/pay_haima_coin_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pay_haima_coin_cb"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/pay_fragment_checkbox_seletor"
+                    android:button="@null"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/pay_available_haima_coin"
+                    android:textColor="@color/pay_fragment_pay_text"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/pay_haima_coin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="230"
+                    android:textColor="@color/pay_fragment_pay_text"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/pay_ge"
+                    android:textColor="@color/pay_fragment_pay_text"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pay_help"
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:src="@drawable/pay_help" />
+
+            <LinearLayout
+                android:id="@+id/pay_goto_recharge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="14dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/go_to_recharge"
+                    android:textColor="@color/pay_go_to_recharge_text"
+                    android:textSize="@dimen/font_size_mini" />
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/pay_margin_window"
+                    android:src="@drawable/pay_next" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pay_use_parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pay_item_layout_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/pay_margin_window"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/pay_use_voucher_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/pay_use_voucher_cb"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/pay_fragment_checkbox_seletor"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/pay_voucher_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/pay_use_voucher_text"
+                    android:textColor="@color/pay_fragment_pay_text"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/pay_voucher_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="230.0"
+                    android:textColor="@color/pay_fragment_pay_text"
+                    android:textSize="@dimen/font_size_small" />
+
+                <TextView
+                    android:id="@+id/pay_voucher_yuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/yuan"
+                    android:textColor="@color/pay_fragment_pay_text"
+                    android:textSize="@dimen/font_size_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pay_voucher_other_choice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/gong"
+                    android:textColor="@color/pay_voucher_other_choice_text"
+                    android:textSize="@dimen/font_size_mini" />
+
+                <TextView
+                    android:id="@+id/pay_voucher_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="2"
+                    android:textColor="@color/pay_voucher_other_choice_text"
+                    android:textSize="@dimen/font_size_mini" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/pay_voucher_other_choice"
+                    android:textColor="@color/pay_voucher_other_choice_text"
+                    android:textSize="@dimen/font_size_mini" />
+
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/pay_margin_window"
+                    android:src="@drawable/pay_next" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/pay_mode_port" />
+
+    <TextView
+        android:id="@+id/pay_activity_marquee_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/pay_margin_window"
+        android:background="@android:color/transparent"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:text="目前盗号猖獗！为了您的账号安全和忘记密码的找回，请设置最高级密码保护！"
+        android:textColor="@color/pay_fragment_bottom_activity_text"
+        android:textSize="@dimen/font_size_mini" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pay_item_layout_height"
+        android:background="@color/pay_fragment_bottom_layout"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/pay_sure_btn"
+            android:layout_width="@dimen/pay_sure_width"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/pay_recharge_sure_button_seletor"
+            android:gravity="center"
+            android:enabled="false"
+            android:text="@string/go_to_pay"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

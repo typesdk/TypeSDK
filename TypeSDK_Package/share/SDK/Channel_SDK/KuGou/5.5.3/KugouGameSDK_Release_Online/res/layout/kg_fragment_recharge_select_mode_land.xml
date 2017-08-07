@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kg_common_background_lighter"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/kg_common_background" >
+
+        <TextView
+            android:id="@+id/kg_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/kg_land_padding"
+            android:text="账号："
+            android:textColor="@color/kg_common_gray_darker"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/kg_youbi_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/kg_land_padding"
+            android:text="游币余额："
+            android:textColor="@color/kg_common_gray_darker"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/kg_recharge_recommend_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/kg_recommend_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/kg_common_background_lighter"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/kg_land_padding"
+                    android:text="推荐使用"
+                    android:textColor="@color/kg_common_gray_lighter_2"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/kg_recharge_recommend_item_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kg_recommend_title"
+                    android:layout_marginLeft="@dimen/kg_land_padding"
+                    android:layout_marginRight="@dimen/kg_land_padding"
+                    android:background="@drawable/kg_selector_recharge_mode_back_land"
+                    android:clickable="true"
+                    android:minHeight="50dp" >
+
+                    <ImageView
+                        android:id="@+id/kg_recharge_mode_pic"
+                        android:layout_width="45dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/kg_img_recharge_mode_youbi" />
+
+                    <TextView
+                        android:id="@+id/kg_recharge_mode_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/kg_recharge_mode_pic"
+                        android:singleLine="true"
+                        android:text="@string/kg_recharge_mode_youbi"
+                        android:textColor="@color/kg_common_gray_darker"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/kg_recharge_youbi_retain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/kg_recharge_mode_red_round"
+                        android:singleLine="true"
+                        android:text="可用余额"
+                        android:textColor="@color/kg_common_gray_more_lighter"
+                        android:textSize="13sp" />
+                    
+                    <ImageView
+            			android:id="@+id/kg_recharge_mode_red_round"
+            			android:layout_width="wrap_content"
+            			android:layout_height="wrap_content"
+            			android:layout_gravity="center_vertical"
+            			android:layout_marginRight="15dp"
+            			android:layout_centerVertical="true"
+            			android:visibility="gone"
+            			android:layout_toLeftOf="@+id/kg_recharge_mode_arrow"
+            			android:background="@drawable/kg_shape_red_round" />
+
+                    <TextView
+                        android:id="@+id/kg_recharge_mode_arrow"
+                        android:layout_width="8dp"
+                        android:layout_height="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/kg_img_recharge_mode_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/kg_common_background_lighter"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/kg_land_padding"
+                android:text="请选择充值方式"
+                android:textColor="@color/kg_common_gray_lighter_2"
+                android:textSize="16sp" />
+
+            <com.kugou.game.sdk.ui.widget.InnerGridView
+                android:id="@+id/kg_recharge_mode_gv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/kg_land_padding"
+                android:layout_marginRight="@dimen/kg_land_padding"
+                android:background="@drawable/kg_gridview_bg"
+                android:listSelector="@color/kg_common_transparent"
+                android:numColumns="2" />
+            
+        </LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

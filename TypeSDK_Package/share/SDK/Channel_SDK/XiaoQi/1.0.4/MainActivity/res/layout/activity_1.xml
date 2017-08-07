@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:background="@color/background_gray"
+    >
+    
+     <TextView       
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:text="打开游戏的的第一个界面"
+        android:background="#6600ee00" 
+        android:textSize="20sp"
+        android:layout_gravity="center" 
+        android:textColor="#ff0000"       
+       />
+     
+      <TextView   
+          android:id="@+id/go"    
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:text="去登陆"
+        android:background="#000066" 
+        android:textSize="20sp"
+        android:layout_gravity="center" 
+        android:textColor="#ff0000"  
+        android:gravity="center" 
+        android:clickable="true"    
+       />
+  
+     
+
+</LinearLayout>

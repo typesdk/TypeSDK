@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <ImageView
+        android:id="@+id/big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:contentDescription="@null" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jolopay_clear_btn_bg"
+        android:layout_alignRight="@id/big"
+        android:layout_alignTop="@id/big"
+        android:layout_marginTop="1dip"
+        android:layout_marginRight="1dip"
+        android:contentDescription="@null" />
+
+  
+</RelativeLayout>

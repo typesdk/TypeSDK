@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <View android:layout_width="match_parent" android:layout_height="@dimen/mg_forum_item_divider"
+          android:id="@+id/forum_post_divider"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_posts_top"
+            android:paddingLeft="@dimen/mg_forum_post_item_padding"
+            android:paddingRight="@dimen/mg_forum_post_item_padding"
+            android:paddingBottom="6dp"
+            android:background="@android:color/white">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mg_forum_post_item_padding"
+                    android:layout_weight="1">
+
+
+                <view class="com.papa91.pay.widget.RoundedImageView" android:layout_width="34dp"
+                      android:layout_height="34dp" android:id="@+id/forum_post_avatar_src"
+                      android:src="@drawable/main_normal_icon"
+                      android:scaleType="centerCrop"
+                        />
+                      <!--app:riv_corner_radius="@dimen/mg_forum_avatar_round_width"-->
+                      <!--app:riv_border_width="@dimen/mg_forum_avatar_round_stroke_width"-->
+                      <!--app:riv_oval="false"-->
+                      <!--app:riv_border_color="@color/mg_forum_avatar_round_stroke_color"-->
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp">
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="昵称"
+                                android:id="@+id/forum_post_nickname" android:textColor="@color/f_nickname"
+                                android:textSize="@dimen/mg_forum_post_nickname_text_size"
+                                android:gravity="center_vertical" android:layout_gravity="top"/>
+                        <ImageView
+                                android:layout_width="13dp"
+                                android:layout_height="13dp"
+                                android:id="@+id/forum_post_moderator" android:src="@drawable/icon_moderator"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center_vertical"
+                                android:visibility="gone"/>
+                        <ImageView
+                                android:layout_width="23dp"
+                                android:layout_height="13dp"
+                                android:id="@+id/forum_post_host" android:src="@drawable/forum_post_host"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center_vertical"
+                                android:visibility="gone"/>
+                        <ImageView
+                                android:layout_width="23dp"
+                                android:layout_height="13dp"
+                                android:id="@+id/forum_post_stickie" android:src="@drawable/stickie"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center_vertical"
+                                android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="时间"
+                            android:id="@+id/forum_post_add_time" android:textColor="#a9a9a9"
+                            android:textSize="@dimen/mg_forum_post_addtime_text_size"
+                            android:layout_marginTop="2dp" android:layout_gravity="bottom" android:gravity="bottom"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/flagBestAnswer"
+                       android:visibility="gone"
+                       android:src="@drawable/flag_answer_resolved"
+                       android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/forumExtFunc"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:minWidth="30dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_marginTop="@dimen/mg_forum_post_item_padding">
+
+            <ImageView
+                    android:id="@+id/moreFunc"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/forum_ext_func"
+                    android:layout_gravity="right"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"/>
+
+            <ImageView android:layout_width="24dp" android:layout_height="22dp" android:id="@+id/replyFunc"
+                       android:src="@drawable/reply"
+                       android:layout_gravity="center_vertical|right"
+                       android:clickable="false"
+                       android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

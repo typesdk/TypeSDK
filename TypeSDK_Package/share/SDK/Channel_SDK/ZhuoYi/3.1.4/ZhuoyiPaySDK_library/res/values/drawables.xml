@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="translucent_background">#90000000</item>
+    <item type="drawable" name="transparent_background">#00ffffff</item>
+</resources>

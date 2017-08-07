@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/yk_rebate_adapter_bg" >
+
+    <TextView
+        android:id="@+id/yk_rebate_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="23"
+        android:singleLine="false"
+        android:textColor="#ffe66c"
+        android:textSize="@dimen/YK_GameSDK_20PX" />
+
+    <TextView
+        android:id="@+id/yk_rebate_content_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yk_rebate_title_txt"
+        android:text="@string/yk_text_rebate_tips"
+        android:textColor="#ffe66c"
+        android:textSize="@dimen/YK_GameSDK_16PX" />
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lepay_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lepay_actionbar"
+        layout="@layout/lepay_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/lepay_ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/lepay_actionbar">
+
+
+        <RelativeLayout
+            android:id="@+id/lepay_card_bind_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lepay_creditCards_layout_height"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lepay_tv_fasticon"
+                android:layout_width="100dip"
+                android:layout_height="26dip"
+                android:layout_marginLeft="0.0dp"
+                android:background="@drawable/lepay_icon_fast"
+                android:gravity="center_vertical" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/lepay_card_bind_title_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/cc7c7c7"
+            android:layout_below="@+id/lepay_card_bind_title" />
+
+
+        <TextView
+            android:id="@+id/lepay_tv_sendmsg_number"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/lepay_creditCards_layout_height"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:textColor="@color/c555555"
+            android:textSize="@dimen/lepay_cashier_trade_desc"
+            android:layout_toRightOf="@+id/lepay_no_title"
+            android:gravity="center_vertical"/>
+
+
+        <View
+            android:id="@+id/lepay_icon_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/cc7c7c7" />
+
+        <RelativeLayout
+            android:id="@+id/lepay_ll_checkcode_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lepay_card_bind_title_line">
+
+            <RelativeLayout
+                android:id="@+id/lepay_ll_checkcode_parent2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/lepay_creditCards_layout_height"
+                android:layout_toLeftOf="@+id/lepay_bt_checkcode"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:id="@+id/lepay_ll_checkcode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/lepay_tv_checkcode"
+                        style="@style/lepay_wrapparent"
+                        android:layout_marginLeft="14dp"
+                        android:layout_weight="0"
+                        android:text="@string/lepay_creditCards_checkcode_label"
+                        android:textSize="@dimen/lepay_et_cardinfo_font_size"
+                        android:textColor="@color/c333333"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true" />
+
+                    <com.letv.lepaysdk.view.ClearEditText
+                        android:id="@+id/lepay_et_checkcode"
+                        style="@style/lepay_width_fillparent"
+                        android:layout_marginLeft="24dp"
+                        android:background="@null"
+                        android:textColorHint="@color/cc7c7c7"
+                        android:hint="@string/lepay_creditCards_checkcode"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:layout_weight="1"
+                        android:textColor="@color/c333333"
+                        android:textSize="@dimen/lepay_et_cardinfo_font_size"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/lepay_tv_checkcode" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/lepay_tv_checkcode_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lepay_creditCards_getcheckcode"
+                    android:textColor="@color/lepay_red"
+                    android:drawableLeft="@drawable/lepay_icon_warning"
+                    android:layout_marginLeft="82dp"
+                    android:gravity="center|left"
+                    android:layout_below="@+id/lepay_ll_checkcode"
+                    android:layout_marginTop="1dp"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/lepay_alert_hint_size" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/lepay_bt_checkcode"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/lepay_count_sms"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/lepay_creditCards_getcheckcode"
+                android:textColor="@color/lepay_bottom_button_font_color"
+                android:textSize="@dimen/lepay_et_cardinfo_font_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/cc7c7c7"
+            android:layout_below="@+id/lepay_card_bind_title" />
+
+    </LinearLayout>
+
+    <com.letv.lepaysdk.view.MontmorilloniteLayer
+        android:id="@+id/lepay_payload_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:visibility="gone"/>
+
+    <include layout="@layout/lepay_pay_item" />
+</RelativeLayout>

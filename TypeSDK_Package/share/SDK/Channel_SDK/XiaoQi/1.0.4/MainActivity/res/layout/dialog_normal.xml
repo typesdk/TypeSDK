@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <LinearLayout
+        android:id="@+id/alertdialog_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_yuanjiao_bj"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/normal_alertdialog_ll_title_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dip"
+             >
+
+            <TextView
+                android:id="@+id/normal_alertdialog_tv_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温馨提示"
+                android:layout_marginLeft="20dip"
+                android:textColor="#000000"
+     			android:visibility="invisible"
+                android:textSize="14sp" />
+            
+            <TextView
+                android:id="@+id/normal_alertdialog_tv_title_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温馨提示"
+                android:textColor="#ff9900"
+                android:layout_marginLeft="5dip"
+                android:textSize="14sp" 
+                android:visibility="visible"/>
+        </LinearLayout>
+		<!--  
+        <View
+            android:layout_marginTop="10dip"
+            android:id="@+id/setpaypassword_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/line_shen" />
+            -->
+
+        <TextView
+            android:id="@+id/normal_alertdialog_tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:text="确定要切换？"
+            android:textColor="#ff9900"
+            android:layout_marginRight="30dip"
+            android:layout_marginLeft="30dip"
+            android:lineSpacingExtra="1dip"
+            android:lineSpacingMultiplier="1.2"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/setpaypassword_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#22000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/alertdialog_ll_top"
+        android:background="@drawable/white_yuanjiao_bj"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/normal_alertdialog_btn_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#C2C2C2"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/alertdialog_line_1"
+            android:layout_width="1dip"
+            android:layout_height="wrap_content"
+            android:background="#22000000" />
+
+        <Button
+            android:id="@+id/normal_alertdialog_btn_ensure"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#12cdb0"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

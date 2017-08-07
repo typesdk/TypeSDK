@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/m4399_rec_separator_height"
+    android:background="@color/m4399_rec_dialog_separator_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/dialog_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_separator_height"
+        android:src="@drawable/m4399_rec_dia_separator" />
+
+</LinearLayout>

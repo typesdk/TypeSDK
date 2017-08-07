@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@color/kg_common_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/kg_layout_bind_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kg_account"
+                    android:textColor="#ff666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/kg_tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/kg_common_blue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/kg_et_psd"
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="@dimen/kg_btn_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/kg_sp_bg"
+                android:digits="@string/kg_regex_code"
+                android:hint="@string/kg_input_psd_tip"
+                android:maxLength="20"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/kg_common_hint_color"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_get_auth_code"
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="@dimen/kg_btn_height"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/kg_sp_bg"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/kg_et_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/kg_transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/kg_email_input_hint"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/kg_common_hint_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/kg_tv_divider"
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="#b7b7b7" />
+
+                <TextView
+                    android:id="@+id/kg_tv_get_auth_code"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/kg_selector_bg_right_filleted_corner_gray"
+                    android:gravity="center"
+                    android:text="@string/kg_send_validate_code"
+                    android:textColor="@color/kg_common_gray_lighter"
+                    android:textSize="@dimen/kg_common_large" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/kg_tv_auth_code_state"
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="wrap_content"
+                android:text="@string/kg_auth_code_count"
+                android:textColor="@color/kg_common_gray_lighter"
+                android:textSize="@dimen/kg_common_small"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/kg_et_auth_code"
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="@dimen/kg_btn_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/kg_sp_bg"
+                android:hint="@string/kg_input_auth_code_in_email"
+                android:maxLength="20"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/kg_common_hint_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/kg_btn_confirm"
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="@dimen/kg_btn_height"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/kg_selector_btn_blue"
+                android:shadowColor="#ff000fff"
+                android:text="@string/kg_bind_confirm"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.kugou.game.sdk.ui.widget.LoadingView
+            android:id="@+id/kg_loadingView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

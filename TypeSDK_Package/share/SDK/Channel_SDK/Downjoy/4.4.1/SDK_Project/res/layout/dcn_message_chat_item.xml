@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dcn_message_chat_bag"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dcn_message_chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#999"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.downjoy.widget.vollyextend.CircleNetworkImageView
+            android:id="@+id/dcn_chat_other_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="@dimen/dcn_message_margin"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/dcn_chat_other_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="@dimen/dcn_chat_margin"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/dcn_chat_other_icon"
+            android:background="@drawable/dcn_chat_other_words"
+            android:gravity="center_vertical"
+            android:textColor="@color/dcn_message_text_title"
+            android:textIsSelectable="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.downjoy.widget.vollyextend.CircleNetworkImageView
+            android:id="@+id/dcn_chat_mine_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dcn_message_margin"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/dcn_chat_mine_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dcn_chat_margin"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="25dp"
+            android:layout_toLeftOf="@id/dcn_chat_mine_icon"
+            android:background="@drawable/dcn_chat_my_words"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/dcn_white"
+            android:textIsSelectable="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/pay_background">
+    <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#d5d5d5"/>
+
+        <include
+                layout="@layout/pay_payrecord_bottom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"/>
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/payrecord"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/bottom_layout"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            >
+    </ListView>
+</RelativeLayout>

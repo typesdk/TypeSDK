@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/sogou_game_sdk_pay_giftcenter_getbt_sharp_copy" android:state_pressed="false"/>
+    <item android:drawable="@drawable/sogou_game_sdk_pay_giftcenter_getbt_sharp_s" android:state_pressed="true"/>
+    <item android:drawable="@drawable/sogou_game_sdk_pay_giftcenter_getbt_sharp_s" android:state_focused="true"/>
+    <item android:drawable="@drawable/sogou_game_sdk_pay_giftcenter_getbt_sharp_copy"/>
+
+</selector>

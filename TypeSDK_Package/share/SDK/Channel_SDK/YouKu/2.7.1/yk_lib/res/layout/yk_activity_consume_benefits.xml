@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/yk_white"
+    android:orientation="vertical">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+        <ImageView android:id="@+id/yk_consume_benefits_back_img"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/yk_video_setting_back"
+    		android:layout_centerVertical="true"
+    		android:padding="@dimen/YK_GameSDK_25PX"
+    		android:paddingLeft="@dimen/YK_GameSDK_15PX"/>
+        <TextView android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/yk_consume_benefits_title"
+    		android:textColor="@color/yk_text_title"
+    		android:textSize="@dimen/YK_GameSDK_34PX"
+    		android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/yk_consume_benefits_level_bg">
+        <RelativeLayout android:id="@+id/yk_consume_benefits_level_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:layout_marginTop="@dimen/YK_GameSDK_110PX">
+            <ImageView android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		    	android:background="@drawable/yk_consume_progress_yes"/>
+            <ImageView android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="1"
+		    	android:background="@drawable/yk_consume_progress_no"/>
+        </LinearLayout>
+        <Gallery
+			android:id="@+id/yk_consume_benefits_level_gallery"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/YK_GameSDK_300PX"
+		    android:spacing="0px"
+		    android:layout_centerVertical="true"
+		    android:unselectedAlpha="1.0"
+		    android:gravity="center_vertical">
+		</Gallery>
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/yk_textcolor_benefit_gray"
+	    android:orientation="vertical">
+	    <TextView android:id="@+id/yk_consume_benefits_present_title"
+        	android:layout_width="fill_parent"   
+			android:layout_height="wrap_content"
+			android:textColor="@color/yk_textColorforItemTitle"
+			android:textSize="@dimen/YK_GameSDK_32PX"
+			android:padding="@dimen/YK_GameSDK_10PX"
+			android:background="@color/yk_textcolor_benefit_gray"
+			></TextView>
+	    <TextView android:id="@+id/yk_consume_benefits_present_none"
+        	android:layout_width="match_parent"   
+			android:layout_height="match_parent"
+			android:text="@string/yk_btn_text_reset_pwd"
+			android:textColor="@color/yk_textColorforItemTitle"
+			android:textSize="@dimen/YK_GameSDK_32PX"
+			android:gravity="center"
+			android:background="@color/yk_white"
+			android:paddingBottom="@dimen/YK_GameSDK_130PX"
+			android:visibility="gone"/>
+	    <GridView android:id="@+id/yk_consume_benefits_gridview"  
+		    android:layout_width="fill_parent"   
+		    android:layout_height="fill_parent"  
+		    android:numColumns="3"
+		    android:listSelector="@null"
+		    android:verticalSpacing="1.0px"  
+		    android:horizontalSpacing="1.0px"  
+		    android:stretchMode="columnWidth"  
+		    android:scrollbars="none"
+		    android:gravity="center"
+		    android:layout_below="@+id/yk_consume_benefits_present_title"
+		    android:background="@color/yk_title_line3"></GridView>
+    </RelativeLayout>
+</LinearLayout>

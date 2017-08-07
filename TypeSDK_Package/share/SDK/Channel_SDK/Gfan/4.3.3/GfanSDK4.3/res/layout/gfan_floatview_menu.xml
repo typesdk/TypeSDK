@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gfan_menu_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_menu_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:focusable="false"
+            android:scaleType="centerInside"
+            android:background="@drawable/gfan_floatview_uc" />
+
+        <ImageView
+            android:id="@+id/iv_menu_gift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:focusable="false"
+            android:scaleType="centerInside"
+            android:background="@drawable/gfan_floatview_gift" />
+
+        <RelativeLayout
+            android:id="@+id/rl_menu_msgs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+                <ImageView
+                    android:id="@+id/iv_msgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/gfan_floatview_msg" />
+
+                <TextView
+                    android:id="@+id/unread_msgs_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gfan_floatview_menu_msgs_count"
+                    android:layout_alignRight="@id/iv_msgs"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text="1"
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_menu_questions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:focusable="false"
+            android:scaleType="centerInside"
+            android:background="@drawable/gfan_floatview_question" />
+</LinearLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_floatview_menu.xml -->

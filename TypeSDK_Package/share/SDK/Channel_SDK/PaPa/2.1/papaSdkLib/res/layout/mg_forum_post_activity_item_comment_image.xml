@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:paddingLeft="@dimen/mg_forum_post_item_padding"
+              android:paddingRight="@dimen/mg_forum_post_item_padding">
+
+    <View android:layout_width="30dp"
+          android:layout_height="1px"
+          android:layout_marginRight="10dp"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_normal_icon"
+            android:scaleType="fitXY"
+            android:id="@+id/comment_img"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"/>
+
+</LinearLayout>

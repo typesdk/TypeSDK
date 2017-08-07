@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@color/kg_common_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/kg_layout_bind_result"
+            android:layout_width="@dimen/kg_btn_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/kg_tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kg_bind_phone_success"
+                android:textColor="#666666"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/kg_btn_back_to_game_or_recharge"
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="@dimen/kg_btn_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/kg_selector_btn_blue"
+                android:shadowColor="#ff000fff"
+                android:text="@string/kg_dialog_ensure"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/kg_not_receive_email"
+                android:textColor="#ff666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/kg_bind_email_hint_1"
+                android:textColor="#ff666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/kg_binded_security_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/kg_bind_email_hint_2"
+                android:textColor="#ff666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.kugou.game.sdk.ui.widget.LoadingView
+            android:id="@+id/kg_loadingView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

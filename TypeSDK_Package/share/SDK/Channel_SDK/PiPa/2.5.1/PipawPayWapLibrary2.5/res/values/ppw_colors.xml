@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_title">#ffffcc05</color>
+    <color name="text_normal">#ff526374</color>
+    <color name="text_focused">#ffb3cee8</color>
+    <color name="text_web">#ff8a9199</color>
+
+    <drawable name="sdk_back_bg_pressed">#ff222532</drawable>
+    <drawable name="sdk_exit_bg_pressed">#ff34394d</drawable>
+
+</resources>

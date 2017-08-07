@@ -1,0 +1,16 @@
+﻿{
+"app_id":"100321",
+"app_key":"a8e4324b1b7d6c0e8a9978a0e62cb824",
+"check_update_url":"http://update.typesdk.com/update/1001/201/",
+"cp_id":"1001",
+"switchconfig_url":"http://demo.typesdk.com:30003/getConfig/1001/201/config.txt",
+"channel_id":"201",
+"channelName":"typesdk",
+"platform":"unity",
+"sdk_name":"GAGame",
+"sdk_request_and_support":"support_exit_window",
+"twitter_key":"8qMtaeNtgQBxVotnwo1ExFPrw",
+"payPalId":"ASsy0rvFgnsJl18DBkbugmvxCuKmE2JwyxprS0r6mwOxKn6u_SRDdp5v7ga_8ynCB6jNiyC_c3HL6iu_",
+"Twitter_secret":"Xbvh6sQfPBniVSOKdggB0YWymL3a3Uwa3HKNcW8DA1MTBSGndh",
+"appsFlyer":"vRUXZi7yHYYmQ6wjStBU39"
+}

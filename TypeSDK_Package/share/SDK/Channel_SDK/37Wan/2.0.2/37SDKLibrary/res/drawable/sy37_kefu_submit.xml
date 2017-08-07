@@ -1,0 +1,11 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <item android:state_window_focused="false" 
+        android:drawable="@drawable/sy37_bg_org" /> 
+    <item android:state_pressed="true" 
+        android:drawable="@drawable/sy37_icon_submit_1" /> 
+    <item android:state_focused="true" 
+        android:drawable="@drawable/sy37_icon_submit_1" /> 
+    <item android:state_enabled="false" 
+         android:drawable="@drawable/sy37_bg_grew" /> 
+    
+</selector>

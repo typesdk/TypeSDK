@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical">
+    <com.ss.android.sdk.pay.view.JustifyTextView 
+        android:id="@+id/commodity_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="56dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/pay_dialog_label_name_color"
+        android:textSize="@dimen/pay_dialog_label_textsize"
+        android:singleLine="true"
+        android:text="@string/pay_dialog_topup_label"/>
+    <LinearLayout
+        android:id="@+id/topup_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+        <com.ss.android.sdk.common.ui.view.WrapLineFlowLayout
+            android:id="@+id/topup_line_wraplineflow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hSpacing="@dimen/pay_topup_item_horizontal_gap"
+            app:vSpacing="@dimen/pay_topup_item_vertical_gap" />
+        </LinearLayout>
+</LinearLayout>

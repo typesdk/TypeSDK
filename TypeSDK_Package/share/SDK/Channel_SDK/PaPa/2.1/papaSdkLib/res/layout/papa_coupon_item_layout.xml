@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp180"
+            android:gravity="center_vertical"
+            >
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp82"
+                >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额"
+                    android:id="@+id/money"
+                    android:textColor="#8a8a8a"
+                    android:textSize="@dimen/dp45"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/expireDate"
+                    android:textColor="#8a8a8a"
+                    android:textSize="@dimen/sp36"
+                    android:layout_alignTop="@+id/couponName"
+                    android:layout_marginRight="@dimen/dp76"
+                    android:layout_alignParentRight="true"
+                    android:text="2016"
+                    />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名称"
+                    android:id="@+id/couponName"
+                    android:textColor="#3b3b3b"
+                    android:textSize="@dimen/sp39"
+                    android:layout_below="@+id/money"
+                    android:layout_toLeftOf="@+id/expireDate"
+                    android:layout_alignLeft="@+id/money"
+                    android:layout_marginTop="@dimen/dp22"
+                    />
+        </RelativeLayout>
+
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                android:checked="false"
+                android:button="@drawable/papa_check_butn"
+                android:layout_marginRight="@dimen/dp82"
+                android:focusable = "false"
+                />
+
+    </LinearLayout>
+</LinearLayout>

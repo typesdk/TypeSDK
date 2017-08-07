@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="smc_tip_1">正在启用安全支付服务</string>
+    <string name="smc_tip_2">正在建立安全网络连接</string>
+    <string name="smc_tip_3">努力加载中，请稍候…</string>
+</resources>

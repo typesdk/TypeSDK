@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:drawable/screen_background_light"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="3dp">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/wd_ic_login_history_avatar"
+    >
+    </ImageView>
+
+
+    <TextView
+            android:id="@+id/wd_history_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:text="13434324">
+    </TextView>
+
+    <ImageView
+            android:id="@+id/wd_account_is_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:contentDescription="选择"
+            android:src="@drawable/wd_ic_login_history_select"
+    >
+    </ImageView>
+
+</LinearLayout>

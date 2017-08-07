@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="320dip"
+        android:layout_height="300dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gasdk_login_rel" >
+
+        <LinearLayout
+            android:id="@+id/pay_lin"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:layout_alignLeft="@+id/pay_edit_lin_1"
+            android:layout_alignRight="@+id/pay_edit_lin_1"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/text_registered_title"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:text="@string/text_pay_1"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4" />
+
+                <LinearLayout
+                    android:id="@+id/pay_imagebutton_1"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/pay_lin"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/gasdk_pay_line" />
+
+        <LinearLayout
+            android:id="@+id/pay_edit_lin_1"
+            android:layout_width="260dip"
+            android:layout_height="28dip"
+            android:layout_below="@+id/pay_lin"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_login_text"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="@string/login_text_1" />
+
+            <EditText
+                android:id="@+id/pay_username"
+                style="@style/text_username_edit"
+                android:layout_width="158dp"
+                android:layout_marginLeft="47dip"
+                android:focusable="false"
+                android:hint="" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pay_edit_lin_2"
+            android:layout_width="260dip"
+            android:layout_height="28dip"
+            android:layout_alignLeft="@+id/pay_edit_lin_1"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pay_edit_lin_1"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_login_text"
+                android:layout_marginLeft="5dip"
+                android:text="@string/text_pay_2" />
+
+            <EditText
+                android:id="@+id/pay_name"
+                style="@style/text_password_edit"
+                android:focusable="false"
+                android:hint="" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/pay_edit_lin_2"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/gasdk_pay_line" />
+
+        <TextView
+            android:id="@+id/pay_tv_1"
+            style="@style/text_login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pay_edit_lin_2"
+            android:layout_marginTop="2dip"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/text_pay_4"
+            android:textSize="12sp" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pay_button_lin_1"
+            android:layout_alignLeft="@+id/pay_tv_1"
+            android:layout_below="@+id/pay_tv_1"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:id="@+id/pay_lin_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/radioGroup1"
+                    android:layout_alignTop="@+id/radioGroup1"
+                    android:layout_toLeftOf="@+id/radioGroup1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/pay_type_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginBottom="11dp" >
+
+                        <ImageView
+                            android:id="@+id/pay_img_1"
+                            android:layout_width="30dip"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="2dip"
+                            android:src="@drawable/gasdk_pay_zfb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_toRightOf="@+id/pay_img_1"
+                            android:text="@string/text_pay_6"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pay_type_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginBottom="10dp" >
+
+                        <ImageView
+                            android:id="@+id/pay_img_2"
+                            android:layout_width="30dip"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="2dip"
+                            android:src="@drawable/gasdk_wx_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_toRightOf="@+id/pay_img_2"
+                            android:text="@string/text_pay_10"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pay_type_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip"
+                        android:layout_marginBottom="10dp" >
+
+                        <ImageView
+                            android:id="@+id/pay_img_3"
+                            android:layout_width="30dip"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="2dip"
+                            android:src="@drawable/gasdk_yl_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dip"
+                            android:layout_toRightOf="@+id/pay_img_3"
+                            android:text="@string/text_pay_12"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="20dp" >
+
+                    <RadioButton
+                        android:id="@+id/radio0"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/gasdk_radiobutton"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/gasdk_radiobutton"
+                        android:button="@null"
+                        android:checked="false" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/gasdk_radiobutton"
+                        android:button="@null"
+                        android:checked="false" />
+
+                </RadioGroup>
+            </RelativeLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_above="@+id/pay_button_lin_1"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/gasdk_pay_line" />
+
+        <LinearLayout
+            android:id="@+id/pay_button_lin_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_login_text"
+                android:text="@string/text_pay_3" />
+
+            <EditText
+                android:id="@+id/pay_prices_1"
+                style="@style/text_username_edit"
+                android:layout_width="90dp"
+                android:layout_marginLeft="5dip"
+                android:focusable="false"
+                android:hint="" >
+            </EditText>
+
+            <Button
+                android:id="@+id/pay_button_1"
+                style="@style/text_welcome_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dip"
+                android:background="@drawable/gasdk_button3_rel"
+                android:gravity="center"
+                android:text="@string/text_pay_5" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

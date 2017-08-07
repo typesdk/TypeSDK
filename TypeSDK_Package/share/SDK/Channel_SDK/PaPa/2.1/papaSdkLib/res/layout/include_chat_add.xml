@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_add"
+            android:src="@drawable/pic_add"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每次最多可以分享9张图"
+            android:id="@+id/footer_tip"
+            android:layout_centerHorizontal="true"
+            android:textSize="13dp"
+            android:textColor="#c6c6c6"
+            android:layout_below="@id/image_add"
+            android:gravity="bottom"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>

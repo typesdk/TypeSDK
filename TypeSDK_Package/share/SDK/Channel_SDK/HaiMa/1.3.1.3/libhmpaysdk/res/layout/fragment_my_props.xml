@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_voucher_background_color">
+
+    <RelativeLayout
+        android:id="@+id/recharge_return_card_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/game_voucher_bottom_color"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/recharge_return_card_use_bt"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/game_voucher_use"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/font_size_middle"
+            android:textColor="@color/user_register_button_disable_text_color"
+            android:background="@drawable/game_voucher_instant_use_shape"/>
+
+    </RelativeLayout>
+
+    <com.haimawan.paysdk.library.PullToRefreshListView
+        android:id="@+id/recharge_return_card_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/myprops_listview_item_divider_shape"
+        android:layout_above="@id/recharge_return_card_bottom_ll"
+        android:layout_margin="10dp">
+
+    </com.haimawan.paysdk.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/recharge_return_card_no_data_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/recharge_return_card_item_content_color"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/recharge_return_card_no_data_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_middle"
+            android:gravity="center"
+            android:text="@string/recharge_return_card_no_data"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+{
+    "version":"PPSDK_IOS_S156D164.20160105",
+    "actions":[
+        {
+            "name":"Login"
+            ,"method":"POST"
+            ,"in_params":
+            {
+                "id" : 0
+                ,"data" :
+                {
+                    "sid" : ""
+                }
+            }
+            ,"out_url" : "http://passport_i.25pp.com:8080/account?tunnel-command=2852126760"
+            ,"out_params" :
+            {
+                "id" : 0
+                ,"service " : ""
+                ,"data" :
+                {
+                    "sid" : ""
+                }
+                ,"game":
+                {
+                    "gameId" : 0
+                }
+                ,"encrypt" : ""
+                ,"sign" : ""
+            }
+        }
+        ,{
+            "name":"Pay"
+            ,"method":"POST"
+            ,"rate":10
+            ,"in_params":
+            {
+                "order_id": ""
+                ,"billno": ""
+                ,"account": ""
+                ,"amount" : ""
+                ,"status": ""
+                ,"sign":""
+            }
+            ,"out_url" :"http://passport_i.25pp.com:8080/account?tunnel-command=2852126760"
+            ,"out_params" :
+            {
+                "order_id": ""
+                ,"billno": ""
+                ,"account": ""
+                ,"amount" : ""
+                ,"status": ""
+                ,"app_id": ""
+                ,"uuid": ""
+                ,"roleid": ""
+                ,"zone": ""
+                ,"sign":""
+            }
+        }
+    ]
+}

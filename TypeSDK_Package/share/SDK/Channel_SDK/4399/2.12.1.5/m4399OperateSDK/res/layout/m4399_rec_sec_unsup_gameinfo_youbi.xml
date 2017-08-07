@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/m4399_rec_color_white"
+    android:gravity="left|top"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/m4399_rec_paddingLeft"
+    android:paddingRight="@dimen/m4399_rec_paddingRight"
+    android:paddingTop="@dimen/m4399_rec_gameinfo_top_margin">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="bottom"
+            android:paddingBottom="2dp"
+            android:text="@string/m4399_rec_amount_payment"
+            android:textColor="@color/m4399_rec_sdk_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/m4399_rec_acount"
+            android:textColor="@color/m4399_rec_sdk_color_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_coupon_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/m4399_rec_coupou_usage_alert_b"
+            android:textColor="@color/m4399_rec_sdk_color_black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/m4399_rec_youbi_prefix"
+            android:textColor="@color/m4399_rec_sdk_color_black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/m4399_rec_color_yellow"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:text="20" />
+
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="4dp"
+                android:text="@string/m4399_rec_unit_yuan"
+                android:textColor="@color/m4399_rec_color_grey"
+                android:textSize="@dimen/font_large" />
+
+            <TextView
+                android:id="@+id/tv_raw_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/m4399_rec_color_grey"
+                android:textSize="@dimen/font_large"
+                android:visibility="gone"
+                tools:text="原价10元" />
+
+            <cn.m4399.recharge.ui.widget.FtnnCircleTextView
+                android:id="@+id/subject"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1.0"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:singleLine="true"
+                android:text="@string/m4399_rec_good_subject"
+                android:textColor="#999999"
+                android:textSize="@dimen/font_large"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/role_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/m4399_rec_acount"
+            android:textColor="@color/m4399_rec_color_grey"
+            android:textSize="16sp"
+            tools:text="luori366" />
+
+        <LinearLayout
+            android:id="@+id/ll_coupon_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_coupon_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/m4399_rec_coupon_link_text_color"
+                android:textSize="16sp"
+                tools:text="1 Yuan 优惠券" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="6dp"
+                android:adjustViewBounds="true"
+                android:duplicateParentState="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/m4399_rec_coupon_goto_tips" />
+        </LinearLayout>
+
+        <cn.m4399.recharge.ui.widget.InquiryBar
+            android:id="@+id/inquiry_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>

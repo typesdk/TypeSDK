@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/wd_ll_welcome"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center"
+              android:background="@drawable/wd_bg_dialog_shape_corner">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/wd_wh_30"
+            android:paddingRight="@dimen/wd_wh_30"
+            android:paddingTop="@dimen/wd_wh_20"
+            android:paddingBottom="@dimen/wd_wh_20"
+            >
+
+
+        <TextView
+                android:id="@+id/wd_tv_tip_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付取消"
+                android:textColor="@color/wepay_assist_normal"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

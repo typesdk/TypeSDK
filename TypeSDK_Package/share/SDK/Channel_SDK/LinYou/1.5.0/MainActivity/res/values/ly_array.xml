@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ly_pay_switch_cp_list">
+        <item>微信</item>
+        <item>QQ钱包</item>
+        <item>支付宝</item>
+        <item>银行卡支付</item>
+    </string-array>
+
+    <array name="ly_pay_switch_cp_port_icons">
+        <item>@drawable/ly_pay_channel_weixin_port</item>
+        <item>@drawable/ly_pay_channel_qqwallet_port</item>
+        <item>@drawable/ly_pay_channel_zfb_port</item>
+        <item>@drawable/ly_pay_channel_bankonline_port</item>
+    </array>
+    <array name="ly_pay_switch_cp_land_icons">
+        <item>@drawable/ly_pay_channel_weixin_land</item>
+        <item>@drawable/ly_pay_channel_qqwallet_land</item>
+        <item>@drawable/ly_pay_channel_zfb_land</item>
+        <item>@drawable/ly_pay_channel_bankonline_land</item>
+    </array>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:wheel="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/wd_ll_loading"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center"
+              android:background="@drawable/wd_bg_loading_shape_corner"
+               >
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/wd_dialog_padding">
+
+    <com.weedong.gamesdk.view.ProgressBarView
+            android:id="@+id/wd_pb_loading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+    />
+
+    <TextView
+            android:id="@+id/wd_tv_loading_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中。。。"
+            android:paddingLeft="15dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/wd_pb_loading"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

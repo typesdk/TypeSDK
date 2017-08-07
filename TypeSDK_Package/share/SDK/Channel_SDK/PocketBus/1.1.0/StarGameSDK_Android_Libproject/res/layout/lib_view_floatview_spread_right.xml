@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:direction="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spread_layout_right"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    <ImageView
+            android:id="@+id/spread_right_append"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/lib_floatview_spread_right"
+            />
+
+    <com.stargame.sdk.floatwindow.SpreadLinearLayout
+            android:id="@+id/spread_content"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="-3dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="22dp"
+            direction:flag="1"
+            android:layout_toLeftOf="@id/spread_right_append"
+            android:background="@color/lib_light_black"
+            />
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_toLeftOf="@id/spread_content"
+            android:src="@drawable/lib_floatview_spread_left"/>
+</RelativeLayout>

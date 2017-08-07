@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/lion_layout_listview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/lion_common_transparent"
+          android:cacheColorHint="@color/lion_common_transparent"
+          android:divider="@color/lion_common_line"
+          android:dividerHeight="0.5dip"
+          android:fadingEdge="none"
+          android:fadingEdgeLength="0.0dip"
+          android:listSelector="@color/lion_common_transparent"
+          android:scrollbars="none" />

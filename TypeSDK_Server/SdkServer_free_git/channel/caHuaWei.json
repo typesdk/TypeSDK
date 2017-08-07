@@ -1,0 +1,49 @@
+{
+  "version":"7.1.0.300.20160701",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "access_token" : ""
+    }
+    ,"out_url" : "https://api.vmall.com/rest.php"
+    ,"out_params" :
+    {
+      "playerId" : ""
+    ,"ts" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "result" : ""
+      ,"userName" : ""
+      ,"productName" : ""
+      ,"payType" : ""
+      ,"amount" : ""
+      ,"orderId" : ""
+      ,"notifyTime" : ""
+      ,"requestId" : ""
+      ,"sign" : ""
+      }
+    ,"out_url" :"https://api.vmall.com/rest.php"
+    ,"out_params" :
+      {
+        "result" : ""
+      ,"userName" : ""
+      ,"productName" : ""
+      ,"payType" : ""
+      ,"amount" : ""
+      ,"orderId" : ""
+      ,"notifyTime" : ""
+      ,"requestId" : ""
+      ,"sign" : ""
+      }
+    }
+  ]
+}
+

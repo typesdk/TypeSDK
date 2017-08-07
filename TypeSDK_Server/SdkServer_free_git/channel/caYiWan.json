@@ -1,0 +1,50 @@
+{
+  "version":"1.0.20151018",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "openid" : ""
+    ,"token" : ""
+    }
+    ,"out_url" : "http://channellogin.supersdk.ewan.cn/verifyToken"
+    ,"out_params" :
+    {
+      "openid" : ""
+    ,"token" : ""
+    ,"sign" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "serverid" : ""
+      ,"custominfo" : ""
+      ,"openid" : ""
+      ,"ordernum" : ""
+      ,"status" : ""
+      ,"paytype" : ""
+      ,"amount" : ""
+      ,"paytime":""
+      ,"sign":""
+      }
+    ,"out_url" :"http://channellogin.supersdk.ewan.cn/verifyToken"
+    ,"out_params" :
+      {
+        "serverid" : ""
+      ,"custominfo" : ""
+      ,"openid" : ""
+      ,"ordernum" : ""
+      ,"status" : ""
+      ,"paytype" : ""
+      ,"amount" : ""
+      ,"paytime":""
+      ,"sign":""
+      }
+    }
+  ]
+}

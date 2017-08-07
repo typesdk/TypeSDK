@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/lepay_page_layout_bg_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="@color/lepay_white"
+            android:gravity="left" >
+
+            <TextView
+                android:id="@+id/lepay_cashier_moeny_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/lepay_pay_money"
+                android:gravity="center"
+                android:textColor="@color/c717272"
+                android:background="@color/lepay_white"
+                android:textSize="@dimen/lepay_tv_paymoney_font_size"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/lepay_cashier_moeny"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/lepay_payment_initprice"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@color/cF45353"
+                android:background="@color/lepay_white"
+                android:textSize="@dimen/lepay_font20"
+                android:layout_toRightOf="@+id/lepay_cashier_moeny_title"
+                />
+
+
+            <TextView
+                android:id="@+id/lepay_cashier_moeny_union"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/lepay_pay_money_union"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@color/c717272"
+                android:background="@color/lepay_white"
+                android:textSize="@dimen/lepay_tv_paymoney_font_size"
+                android:layout_toRightOf="@+id/lepay_cashier_moeny"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_leypay_ok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="@color/cF45353">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/Widget.GDProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginRight="4dp" 
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:id="@+id/lepay_pay_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textColor="@color/lepay_white"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/lepay_tv_paymoney_font_size" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lepay_fillparent"
+    android:background="@color/lepay_page_layout_bg_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/lepay_actionbar"
+        layout="@layout/lepay_actionbar" />
+
+    <LinearLayout
+        style="@style/lepay_wrapparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lepay_rl_fastpay_pwd_edit_forget_verify"
+        style="@style/lepay_width_fillparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="17.5dp"
+        android:background="@drawable/lepay_layout_ditu" >
+
+        <LinearLayout
+            android:id="@+id/lepay_ll_pwdverify_cardNo"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dip"
+            android:background="@color/lepay_page_layout_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/lepay_iv_pwdverify_cardNo"
+                style="@style/lepay_wrapparent"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/lepay_icon_card_gray" />
+
+            <EditText
+                android:id="@+id/lepay_et_pwdverify_cardNo"
+                style="@style/lepay_wrapparent"
+                android:layout_marginLeft="24dp"
+                android:background="@null"
+                android:hint="3952 4209 4359 "
+                android:maxLength="14"
+                android:inputType="number"
+                android:textColor="@color/lepay_et_cardinfo_font_color"
+                android:textSize="@dimen/lepay_et_cardinfo_font_size" />
+
+            <TextView
+                android:id="@+id/lepay_verifyCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/lepay_et_cardinfo_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lepay_ll_pwdverify_mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:layout_below="@id/lepay_ll_pwdverify_cardNo"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="15dip"
+            android:background="@color/lepay_page_layout_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/lepay_iv_pwdverify_mobile"
+                style="@style/lepay_wrapparent"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/lepay_icon_mobile_gray" />
+
+            <EditText
+                android:id="@+id/lepay_et_pwdverify_mobile"
+                style="@style/lepay_wrapparent"
+                android:layout_marginLeft="24dp"
+                android:background="@null"
+                android:hint="13156728890"
+                android:maxLength="11"
+                android:inputType="number"
+                android:textColor="@color/lepay_et_cardinfo_font_color"
+                android:textSize="@dimen/lepay_et_cardinfo_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lepay_ll_pwdverify_cvv2"
+            style="@style/lepay_card_edit_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="46dip"
+            android:layout_below="@id/lepay_ll_pwdverify_mobile"
+            android:layout_marginBottom="15dp"
+            android:background="@color/lepay_page_layout_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/lepay_iv_pwdverify_cvv2"
+                style="@style/lepay_wrapparent"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/lepay_icon_cvv2_gray" />
+
+            <EditText
+                android:id="@+id/lepay_et_pwdverify_cvv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:background="@null"
+                android:hint="卡背面签名栏数字后三位"
+                android:maxLength="3"
+                android:inputType="number"
+                android:textColor="@color/lepay_et_cardinfo_font_color"
+                android:textSize="@dimen/lepay_et_cardinfo_font_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/lepay_fastpay_pwd_verify_button"
+        style="@style/lepay_cashier_button_bottom_margin"
+        android:layout_width="fill_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/lepay_button_page_selector"
+        android:text="@string/lepay_fastpay_pwd_verify_submit"
+        android:textColor="@color/lepay_white"
+        android:textSize="@dimen/lepay_bottom_button_font_size" />
+
+</LinearLayout>

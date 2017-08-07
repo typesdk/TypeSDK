@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id="@+id/register_username_title_rl"
+        layout="@layout/item_main_title_rl"        
+        />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center_horizontal"
+       android:scrollbars="none"
+       >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_gravity="center_horizontal"
+       android:gravity="center_horizontal"
+        >
+
+    <RelativeLayout
+        android:layout_marginTop="25dip"
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/register_username_iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/activity_login_user" />
+
+        <EditText
+            android:id="@+id/register_username_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/register_username_iv_1"
+            android:background="@null"
+            android:textSize="14sp"
+            style="@style/et_tc_textColorHint"
+            android:imeOptions="flagNoExtractUi|actionNext"
+            android:hint="小写字母开头,4-16位小写字母或数字" />
+        <ImageView
+            android:id="@+id/register_username_iv_deleteuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/activity_login_delete"
+            android:visibility="invisible" />
+        <View
+        android:id="@+id/register_username_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"       
+        android:layout_marginRight="15dip"
+        android:background="@color/line" 
+        android:layout_below="@+id/register_username_iv_1"
+        android:layout_marginLeft="15dip"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/register_username_iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/activity_loginpsd" />
+
+        <EditText
+            android:id="@+id/register_username_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/register_username_iv_2"
+            android:background="@null"
+            android:textSize="14sp"
+            style="@style/et_tc_textColorHint"
+            android:hint="请输入密码(6~16位字符)"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword" />
+        <ImageView
+            android:id="@+id/register_username_iv_deletpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/activity_login_delete"
+            android:visibility="invisible" />
+        <View
+        android:id="@+id/register_username_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"       
+        android:layout_marginRight="15dip"
+        android:background="@color/line" 
+        android:layout_below="@+id/register_username_iv_2"
+        android:layout_marginLeft="15dip"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/register_username_iv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/activity_loginpsd" />
+
+        <EditText
+            android:id="@+id/register_username_et_confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/register_username_iv_3"
+            android:background="@null"
+            android:textSize="14sp"
+            style="@style/et_tc_textColorHint"
+            android:hint="请再次输入密码(6~16位字符)"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword" />
+        <ImageView
+            android:id="@+id/register_username_iv_deleteuserconfirmpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/activity_login_delete"
+            android:visibility="invisible" />
+       
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_username_btn_register" 
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dip"
+        android:background="@drawable/green_radio_bg"
+        android:layout_marginTop="20dip"
+        android:text="注册"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        >
+    <Button                   
+        android:layout_alignParentLeft="true" 
+        android:id="@+id/register_username_btn_phonenumber" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机注册"
+        android:textSize="14sp"
+        android:background="@null"
+        android:textColor="@color/text_green"       
+        android:paddingLeft="15dip"
+        android:paddingTop="15dip"
+        android:paddingBottom="50dip"
+        android:paddingRight="50dip"        
+        />
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

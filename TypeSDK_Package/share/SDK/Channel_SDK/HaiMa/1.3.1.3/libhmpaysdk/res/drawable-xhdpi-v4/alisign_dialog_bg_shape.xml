@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="4dp"></corners>
+
+    <solid android:color="@color/user_register_button_disable_text_color"></solid>
+
+    <stroke android:color="@color/user_register_button_disable_text_color"></stroke>
+</shape>

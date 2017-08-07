@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lib_droi_account_login_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/lib_droi_account_titlebackground"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/title_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/lib_droi_account_land_title_marginleft"
+            android:background="@drawable/lib_droi_account_back_green_arrow"
+            android:onClick="onBack" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/title_imageview"
+            android:text="@string/lib_droi_account_edit_address_title"
+            android:textColor="@color/lib_droi_account_land_titleBackground"
+            android:textSize="@dimen/lib_droi_account_land_title_textSize" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/lib_droi_account_layout_background"
+            android:paddingRight="?android:attr/scrollbarSize" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left"
+            	android:layout_marginRight="@dimen/lib_droi_account_global_margin_right"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lib_droi_account_title_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/lib_droi_account_edit_contact"
+                    android:textColor="@color/lib_droi_account_layout_titleColor"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.droi.account.widget.AccountEditText
+                    android:id="@+id/lib_droi_account_name"
+                    android:layout_width="0dp"
+                    android:layout_height="?android:attr/listPreferredItemHeight"
+                    android:layout_marginLeft="27dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/lib_droi_account_edit_contact_hint"
+                    android:maxLength="@integer/lib_droi_account_edit_address_name_length_max"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#323232" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left"
+           		android:layout_marginRight="@dimen/lib_droi_account_global_margin_right"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lib_droi_account_title_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/lib_droi_account_edit_phone"
+                    android:textColor="@color/lib_droi_account_layout_titleColor"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.droi.account.widget.AccountEditText
+                    android:id="@+id/lib_droi_account_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/lib_droi_account_edit_phone_hint"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#323232" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left"
+                android:layout_marginRight="@dimen/lib_droi_account_global_margin_right"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lib_droi_account_title_province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/lib_droi_account_edit_province"
+                    android:textColor="@color/lib_droi_account_layout_titleColor"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.droi.account.widget.AccountEditText
+                    android:id="@+id/lib_droi_account_province"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:hint="@string/lib_droi_account_edit_province_hint"
+                    android:inputType="none"
+                    android:paddingLeft="15dp"
+                    android:editable="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#323232" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left"
+                android:layout_marginRight="@dimen/lib_droi_account_global_margin_right"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lib_droi_account_title_detailed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/lib_droi_account_edit_address_detail"
+                    android:textColor="@color/lib_droi_account_layout_titleColor"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <com.droi.account.widget.AccountEditText
+                    android:id="@+id/lib_droi_account_edittext_detailed_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/lib_droi_account_edit_address_detail_hint"
+                    android:maxLength="@integer/lib_droi_account_edit_address_detailed_length_max"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#323232" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+        
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginTop="27dp">
+            <Button
+                android:id="@+id/lib_droi_account_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/lib_droi_account_button_selector"
+                android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left"
+                android:layout_marginRight="@dimen/lib_droi_account_global_margin_right"
+                android:text="@string/lib_droi_account_save_btn"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+</LinearLayout>

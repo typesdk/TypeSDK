@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/coolpad_item_click"
+        android:divider="@drawable/coolpad_devider_coupon"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:showDividers="middle" >
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="活动名称"
+            android:textColor="@color/coolpad_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="活动内容"
+            android:textColor="#797979"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/coolpad_coupon_line" />
+
+        <TextView
+            android:id="@+id/deadline_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="有效期"
+            android:textColor="#797979"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

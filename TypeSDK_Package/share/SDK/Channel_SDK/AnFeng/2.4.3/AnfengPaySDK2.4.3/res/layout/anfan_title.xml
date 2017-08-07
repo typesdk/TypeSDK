@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/anfan_title"
+     	 android:background="@color/anfan_c23c9ae"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/anfan_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anfan_ico_arrow_left" />
+
+        <TextView
+            android:id="@+id/anfan_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            
+            android:text="@string/anfan_account"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+     <TextView
+            android:id="@+id/tv_back_game"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="#2B9580"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="回到游戏"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+   <!--   <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/anfan_back"
+        android:background="#D9DDE1" /> -->
+ 
+</RelativeLayout>

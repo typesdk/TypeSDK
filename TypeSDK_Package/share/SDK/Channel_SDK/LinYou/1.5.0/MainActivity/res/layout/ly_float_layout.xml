@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_float"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ly_user_center_selector"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

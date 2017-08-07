@@ -1,0 +1,7 @@
+apply plugin: 'com.android.library'
+apply from: '../library.gradle'
+
+dependencies {
+    compile project(':PaySdk')
+    compile project(':GameLoginSdk')
+}

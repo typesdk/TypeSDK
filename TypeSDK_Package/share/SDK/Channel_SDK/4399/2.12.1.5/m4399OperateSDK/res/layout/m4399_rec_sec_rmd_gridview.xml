@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <cn.m4399.recharge.ui.widget.ExpandableGridView
+        android:id="@+id/rmd_gridview"
+		style="@style/m4399RecRmdGridviewStyle">
+    </cn.m4399.recharge.ui.widget.ExpandableGridView>
+
+</LinearLayout>

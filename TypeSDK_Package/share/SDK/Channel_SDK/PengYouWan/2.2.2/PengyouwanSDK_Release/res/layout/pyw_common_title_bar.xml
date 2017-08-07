@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pyw_common_title_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pyw_common_title_height" >
+
+        <LinearLayout
+            android:id="@+id/pyw_layout_common_title_bar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pyw_common_title_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pyw_selector_back_item_bg"
+            android:gravity="center"
+            android:padding="@dimen/pyw_log_padding" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pyw_img_return" />
+            <!-- 增加返回说明  默认隐藏 jayden 2015-12-08 start -->
+
+            <TextView
+                android:id="@+id/back_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pyw_layout_common_title_bar_back_desc"
+                android:textColor="@color/pyw_common_gray_darker"
+                android:textSize="@dimen/pyw_common_medium"
+                android:visibility="gone" />
+            <!-- 增加返回说明 jayden 2015-12-08 start -->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pyw_tv_common_title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxWidth="250dp"
+            android:minWidth="150dp"
+            android:singleLine="true"
+            android:text="界面标题"
+            android:textColor="@color/pyw_common_black_ligther"
+            android:textSize="@dimen/pyw_common_large" />
+
+        <TextView
+            android:id="@+id/pyw_tv_common_title_bar_right"
+            android:layout_width="@dimen/pyw_common_title_height"
+            android:layout_height="@dimen/pyw_common_title_height"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/pyw_common_gray_darker"
+            android:textSize="@dimen/pyw_common_larger"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pyw_title_logo"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/pyw_log_padding"
+            android:paddingTop="@dimen/pyw_log_padding"
+            android:scaleType="centerInside"
+            android:src="@drawable/pyw_img_sdk_logo"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/pyw_common_item_divider" />
+
+</LinearLayout>

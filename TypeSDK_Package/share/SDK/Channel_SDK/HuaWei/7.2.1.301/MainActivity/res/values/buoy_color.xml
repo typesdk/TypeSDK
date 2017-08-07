@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="buoy_black">#000000</color>
+    <color name="buoy_white">#ffffff</color>
+    <color name="buoy_gray">#99000000</color>
+    <color name="buoy_progress_text">#b3000000</color>
+    <color name="buoy_item_desc_gray">#80000000</color>
+    <color name="buoy_button_text_color">#cd000000</color>
+    <color name="buoy_save_title">#ff000000</color>
+    <color name="buoy_save_detail">#7f000000</color>
+</resources>

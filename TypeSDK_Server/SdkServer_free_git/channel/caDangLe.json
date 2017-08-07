@@ -1,0 +1,47 @@
+{
+    "version":"4.3.1.20160830",
+    "actions":[
+        {
+            "name":"Login"
+        ,"method":"GET"
+        ,"in_params":
+        {
+            "umid" : 0
+        ,"token" : ""
+        }
+        ,"out_url" :"http://ngsdk.d.cn/api/cp/checkToken"
+        ,"out_params" :
+        {
+            "appid" : 0
+        ,"umid" : 0
+        ,"token" : ""
+        ,"sig" : ""
+        }
+        }
+    ,{
+            "name":"Pay"
+        ,"method":"GET"
+        ,"in_params":
+            {
+                "result" : -1
+            ,"money" : 0
+            ,"order" : 0
+            ,"mid" : 0
+            ,"time" : "00000000000000"
+            ,"signature" : ""
+            ,"cpOrder " : ""
+            }
+        ,"out_url" :"http://ngsdk.d.cn/api/cp/checkToken"
+        ,"out_params" :
+            {
+                "result" : -1
+            ,"money" : 0
+            ,"syorder" : 0
+            ,"mid" : 0
+            ,"time" : "00000000000000"
+            ,"cpOrder " : ""
+            ,"sign" : ""
+            }
+        }
+    ]
+}

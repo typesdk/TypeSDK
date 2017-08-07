@@ -1,0 +1,34 @@
+{
+  "version":"1.1.0.20151018",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "token" : ""
+    }
+    ,"out_url" :"https://passport.stargame.com/api/user/me"
+    ,"out_params" :
+    {
+      "token" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "req_data": ""
+        ,"appOrder": ""
+      }
+    ,"out_url" :"http://cp.com/sdkpay"
+    ,"out_params" :
+      {
+        "req_data": ""
+        ,"appOrder": ""
+      }
+    }
+  ]
+}

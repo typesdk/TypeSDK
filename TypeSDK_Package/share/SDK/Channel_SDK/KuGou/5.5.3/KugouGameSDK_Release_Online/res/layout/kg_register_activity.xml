@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/kg_common_title_bar" />
+
+    <ScrollView
+        android:id="@+id/kg_layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/kg_common_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/kg_layout_user_register"
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/kg_ll_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/kg_login_username"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/kg_btn_height"
+                            android:background="@drawable/kg_sp_bg"
+                            android:hint="@string/kg_account_rule"
+                            android:maxLength="20"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/kg_common_hint_color"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dip" >
+                        </EditText>
+
+                        <ImageView
+                            android:id="@+id/kg_login_username_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/kg_text_clear"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+                </LinearLayout>
+                
+                <View
+                    android:layout_below="@id/kg_ll_username"
+                    android:id="@+id/kg_hidden_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px" />
+
+                <TextView
+                    android:id="@+id/kg_register_account_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kg_ll_username"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="3dp"
+                    android:text="@string/kg_account_tips"
+                    android:textColor="#ff0000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/kg_ll_passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kg_ll_username"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/kg_login_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/kg_btn_height"
+                            android:background="@drawable/kg_sp_bg"
+                            android:digits="@string/kg_regex_code"
+                            android:hint="@string/kg_password_rule"
+                            android:maxLength="16"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColorHint="@color/kg_common_hint_color"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/kg_login_password_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:src="@drawable/kg_text_clear"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/kg_register_tips"
+                    android:layout_width="215dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/kg_ll_passwd"
+                    android:layout_marginTop="1dp"
+                    android:minHeight="20dp"
+                    android:paddingLeft="3dp"
+                    android:text="@string/kg_password_tips"
+                    android:textColor="#ff0000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/kg_summit_register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:layout_below="@id/kg_ll_passwd"
+                    android:layout_marginTop="38dp"
+                    android:background="@drawable/kg_selector_btn_blue"
+                    android:shadowColor="#ff000fff"
+                    android:text="@string/kg_register_submit"
+                    android:textColor="#ffffffff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/kg_cancel_register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/kg_btn_height"
+                    android:layout_below="@id/kg_summit_register_button"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/kg_selector_btn_gray"
+                    android:shadowColor="#ffffffff"
+                    android:text="@string/kg_register_cancel"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/kg_cancel_register_button"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/kg_agree_kugou_license"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/kg_checkbox_selector"
+                        android:button="@null"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/kg_agree_kugou_license_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:layout_toRightOf="@id/kg_agree_kugou_license"
+                        android:textColor="@color/kg_common_gray_lighter"
+                        android:text="@string/kg_kugou_register_rule" />
+
+                    <TextView
+                        android:id="@+id/kg_tv_register_by_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="14sp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/kg_register_by_phone"
+                        android:textColor="@color/kg_common_orange" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/kg_common_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/kg_user_center_button_space_line" />
+
+    <RelativeLayout
+        android:id="@+id/kg_rl_register_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="@dimen/kg_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/kg_iv_register_success_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/kg_register_success_icon" />
+
+            <TextView
+                android:id="@+id/kg_iv_register_success_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/kg_register_success_tips"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/kg_btn_enter_game"
+                android:layout_width="@dimen/kg_btn_width"
+                android:layout_height="@dimen/kg_btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/kg_selector_btn_blue"
+                android:gravity="center"
+                android:text="@string/kg_enter_game"
+                android:textColor="@color/kg_common_white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+    
+    <TextView 
+        android:id="@+id/lb_hide"
+        android:layout_width="170.0dp"
+        android:layout_height="34.0dp"
+        android:text="拖入此处隐藏"
+        android:textSize="16.0sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:background="@drawable/default_lb_float_hide"/>
+    
+</LinearLayout>

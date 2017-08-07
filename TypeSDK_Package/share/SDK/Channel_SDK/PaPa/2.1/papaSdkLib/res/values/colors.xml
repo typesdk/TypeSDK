@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="activity_default_background">#f0f0f0</color>
+    <color name="f_nickname">#6d6d6d</color>
+    <color name="f_nickname_moderator">#3a85e2</color>
+    <color name="gray">#C7CBC7</color>
+
+    <!--comment_reply_btn.xml-->
+    <color name="comment_reply_btn_default">#454b63</color>
+    <color name="comment_reply_btn_pressed">#343B56</color>
+    <color name="mg_forum_avatar_round_stroke_color">#b2b2b2</color>
+    <!--forum_post_game_bg.xml-->
+    <color name="forum_post_game_bg_default">#ebebeb</color>
+    <color name="forum_post_game_bg_pressed">#e1e1e1</color>
+    <color name="main_color">#3b3b3b</color>
+
+    <color name="bluetooth_line_textcolor">#c8c8c8</color>
+    <color name="bluetooth_textcolor">#969595</color>
+    <color name="main_yello_color">#F28A2A</color>
+
+    <!--<color name="forum_nickname_color">#2a73cc</color>-->
+    <color name="forum_nickname_color">#6d6d6d</color>
+    <color name="forum_image_tag_gif_background">#b20f6487</color>
+    <color name="forum_posts_func_default">#cc000000</color>
+    <color name="forum_posts_func_pressed">#e6000000</color>
+    <color name="classify_column_color">#9a9a9a</color>
+    <color name="forum_post_moderator_nickname">#3a85e2</color>
+
+    <!--视频播放-->
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+
+
+    <color name="title_bar_color">#b2b2b2</color>
+    <color name="transparent_background">#40000000</color>
+    <color name="dialog_transparent">#7e000000</color>
+    <color name="home_page_text_title">#42c2d5</color>
+
+    <color name="grid_text">#3c3c3c</color>
+
+    <!--礼包-->
+    <color name="gift_package_green_default">#7BBA0B</color>
+    <color name="gift_package_green_pressed">#76B10C</color>
+    <color name="gift_type_exclusive">#ee3232</color>
+    <color name="gift_type_exchange">#fac431</color>
+    <color name="gift_type_normal">#4d4d4d</color>
+    <color name="cdk_proportion_h">#7BBA0B</color>
+    <color name="cdk_proportion_m">#E99931</color>
+    <color name="cdk_proportion_l">#ee3232</color>
+    <color name="cdk_proportion_null">#9a9a9a</color>
+    <drawable name="white">#ffffff</drawable>
+
+    <color name="grey_1">#B5B5B5</color>
+    <color name="grey_2">#707070</color>
+    <color name="grey_3">#D7D7D7</color>
+    <color name="grey_4">#D6D6D6</color>
+    <color name="grey_5">#C7C7C7</color>
+    <color name="text_black">#3B3B3B</color>
+
+    <color name="main_bar_color">#f47500</color>
+    <drawable name="list_back">#cfcfcf</drawable>
+</resources>

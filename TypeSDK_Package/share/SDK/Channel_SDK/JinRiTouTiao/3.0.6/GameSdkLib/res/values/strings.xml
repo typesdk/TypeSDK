@@ -1,0 +1,210 @@
+<resources>
+
+    <string name="app_name">GameSdk</string>
+
+<string name="error_param">&#21442;&#25968;&#38169;&#35823;</string>
+    <string name="error_pay">&#25903;&#20184;&#22833;&#36133;</string>
+    <string name="pay_dialog_title">&#23433;&#20840;&#25903;&#20184;</string>
+    <string name="pay_dialog_commodity_name_label">&#21830;&#21697;&#21517;&#31216;</string>
+    <string name="pay_dialog_commodity_price_label">&#20215;&#26684;</string>
+    <string name="pay_dialog_topup_label">&#38754;&#20540;</string>
+    <string name="pay_dialog_currency_rmb">&#65509;</string>
+    <string name="pay_dialog_currency_us">$</string>
+    <string name="pay_dialog_test">Just For Test</string>
+    <string name="pay_dialog_item_alipay">&#25903;&#20184;&#23453;&#25903;&#20184;</string>
+    <string name="pay_dialog_item_wechat">&#24494;&#20449;&#25903;&#20184;</string>
+    <string name="pay_dialog_item_union">&#38134;&#34892;&#21345;</string>
+    <string name="pay_dialog_item_topup">&#20805;&#20540;&#21345;</string>
+    <string name="pay_dialog_item_card">&#28857;&#21345;</string>
+    <string name="pay_alert_dialog_title">&#36864;&#20986;&#25903;&#20184;</string>
+    <string name="pay_alert_dialog_content">&#20132;&#26131;&#26410;&#23436;&#25104;&#65292;&#26159;&#21542;&#21462;&#28040;&#25903;&#20184;&#65311;</string>
+    <string name="pay_alert_dialog_cancle">&#21462;&#28040;&#25903;&#20184;</string>
+    <string name="pay_alert_dialog_continue">&#32487;&#32493;&#25903;&#20184;</string>
+    <string name="pay_evn_monitor_content">&#23433;&#20840;&#29615;&#22659;&#26816;&#27979;&#20013;&#65292;&#35831;&#31245;&#21518;&#8230;</string>
+    <string name="toast_weixin_not_install">&#23578;&#26410;&#23433;&#35013;&#24494;&#20449;&#65292;&#35831;&#20808;&#23433;&#35013;&#24494;&#20449;</string>
+    <string name="pay_alert_content">&#27491;&#22312;&#29983;&#25104;&#35746;&#21333;&#65292;&#35831;&#31245;&#21518;&#8230;</string>
+    <string name="pay_result_cancle">&#21462;&#28040;&#25903;&#20184;</string>
+    <string name="pay_result_no_init">&#25903;&#20184;&#27169;&#22359;&#26410;&#21021;&#22987;&#21270;</string>
+    <string name="pay_result_auth_fail">&#29992;&#25143;&#35748;&#35777;&#22833;&#36133;</string>
+    <string name="pay_result_login_fail">&#29992;&#25143;&#30331;&#24405;&#22833;&#36133;&#65292;&#35831;&#37325;&#35797;</string>
+    <string name="pay_result_param_empty">&#21442;&#25968;&#38169;&#35823;&#65292;&#21487;&#33021;&#26377;&#31354;&#20540;</string>
+    <string name="pay_result_trade_too_long">&#35746;&#21333;&#38271;&#24230;&#36229;&#36807;20&#20010;&#23383;&#31526;</string>
+    <string name="pay_result_subject_too_long">&#21830;&#21697;&#21517;&#31216;&#36229;&#36807;128&#20010;&#23383;&#31526;</string>
+    <string name="pay_result_request_error">&#35831;&#27714;&#22833;&#36133;</string>
+    <string name="pay_result_exception_unknow">&#26410;&#30693;&#24322;&#24120;</string>
+    <string name="pay_input_card_number_label">&#21345;&#21495;:</string>
+    <string name="pay_input_card_password_label">&#21345;&#23494;:</string>
+    <string name="pay_input_card_number_hint">&#25903;&#25345;&#31227;&#21160;&#12289;&#32852;&#36890;&#12289;&#30005;&#20449;&#20805;&#20540;&#21345;</string>
+    <string name="pay_button_confirm">&#30830;&#35748;&#25903;&#20184;</string>
+    <string name="pay_consult_label">&#22914;&#26377;&#30097;&#38382;&#65292;&#35831;&#21672;&#35810;&#23458;&#26381;&#30005;&#35805;&#65306;</string>
+    <string name="pay_consult_telephone">010&#8211;58734313</string>
+    <string name="pay_topup_dialog_title">&#20805;&#20540;&#21345;&#25903;&#20184;</string>
+    <string name="pay_card_dialog_title">&#39567;&#32593;&#28857;&#21345;&#25903;&#20184;</string>
+    <string name="pay_topup_item">300&#20803;</string>
+    <string name="pay_card_input_empty">&#21345;&#21495;&#25110;&#21345;&#23494;&#20026;&#31354;</string>
+    <string name="pay_topup_input_empty">&#38754;&#20540;&#25110;&#21345;&#21495;&#25110;&#21345;&#23494;&#20026;&#31354;</string>
+    <string name="pay_prompt_confirm">&#30830;&#35748;</string>
+<string name="mobile_hint">&#35831;&#36755;&#20837;&#25163;&#26426;&#21495;</string>
+    <string name="agree">\u0020\u0020&#21516;&#24847;</string>
+    <string name="left_of_agreement">&#21516;&#24847;</string>
+    <string name="register_by_mobile_title">&#25163;&#26426;&#21495;&#27880;&#20876;</string>
+    <string name="next">&#19979;&#19968;&#27493;</string>
+    <string name="password_hint">&#35831;&#36755;&#20837;&#23494;&#30721;</string>
+    <string name="resend_info_time">&#37325;&#26032;&#21457;&#36865; %d</string>
+    <string name="resend_info">&#37325;&#26032;&#21457;&#36865;</string>
+    <string name="register_account">&#27880;&#20876;&#24080;&#21495;</string>
+    <string name="forget_password">&#24536;&#35760;&#23494;&#30721;</string>
+    <string name="direct_login">&#25163;&#26426;&#21495;&#19968;&#38190;&#30331;&#24405; &gt;</string>
+    <string name="error_mobile_empty">&#35831;&#36755;&#20837;&#25163;&#26426;&#21495;</string>
+    <string name="error_mobile_length">&#25163;&#26426;&#21495;&#24212;&#20026;%d&#20301;&#25968;&#23383;</string>
+    <string name="mobile_registered">&#25163;&#26426;&#21495;%s&#24050;&#27880;&#20876;, &#21487;&#20197;&#30452;&#25509;&#30331;&#24405;</string>
+    <string name="goto_login">&#21435;&#30331;&#24405;</string>
+    <string name="input_captcha_title">&#35831;&#36755;&#20837;&#39564;&#35777;&#30721;</string>
+    <string name="change_captcha">&#25442;&#19968;&#24352;</string>
+    <string name="error_captcha_empty">&#39564;&#35777;&#30721;&#19981;&#33021;&#20026;&#31354;</string>
+    <string name="btn_register">&#27880;&#20876;</string>
+    <string name="error_password_empty">&#35831;&#36755;&#20837;&#23494;&#30721;</string>
+    <string name="error_password_chinese">&#19981;&#20801;&#35768;&#36755;&#20837;&#20013;&#25991;&#23383;&#31526;</string>
+    <string name="find_password">&#25214;&#22238;&#23494;&#30721;</string>
+    <string name="reset_new_password">&#35774;&#32622;&#26032;&#23494;&#30721;</string>
+    <string name="code_hint">&#36755;&#20837;&#39564;&#35777;&#30721;</string>
+    <string name="error_code_empty">&#35831;&#36755;&#20837;&#39564;&#35777;&#30721;</string>
+    <string name="edit_profile">&#35774;&#32622;&#20010;&#20154;&#20449;&#24687;</string>
+    <string name="complete">&#23436;&#25104;</string>
+    <string name="password_new_hint">&#36755;&#20837;&#26032;&#23494;&#30721;(6&#8211;20&#20301;&#33521;&#25991;&#25110;&#25968;&#23383;)</string>
+    <string name="password_error_hint">&#26032;&#23494;&#30721;&#24212;&#20026;6&#8211;20&#20301;&#33521;&#25991;&#25110;&#25968;&#23383;</string>
+    <string name="username_hint">&#35831;&#36755;&#20837;&#29992;&#25143;&#21517;</string>
+    <string name="use_default_name_prompt1">&#24744;&#27809;&#22635;&#20889;&#29992;&#25143;&#21517;, &#31995;&#32479;&#20026;&#24744;&#33258;&#21160;&#20998;&#37197;&#20102;&#19968;&#20010;</string>
+    <string name="default_name_prompt2">&#24744;&#30340;&#29992;&#25143;&#21517;: %s</string>
+    <string name="label_continue_modify">&#20462;&#25913;&#19968;&#19979;</string>
+    <string name="label_use_this">&#23601;&#29992;&#36825;&#20010;</string>
+    <string name="change_password">&#20462;&#25913;&#23494;&#30721;</string>
+    <string name="confirm_change">&#30830;&#23450;&#20462;&#25913;</string>
+    <string name="change_password_success">&#26032;&#23494;&#30721;&#35774;&#32622;&#25104;&#21151;</string>
+    <string name="bind_mobile">&#32465;&#23450;&#25163;&#26426;&#21495;</string>
+    <string name="bind_prompt1">&#23494;&#30721;&#24050;&#21457;&#21040;\u0020</string>
+    <string name="bind_mobile_success">&#25163;&#26426;&#21495;&#32465;&#23450;&#25104;&#21151;</string>
+    <string name="error_no_network">&#35831;&#26816;&#26597;&#32593;&#32476;&#36830;&#25509;</string>
+    <string name="error_ssl">SSL&#36830;&#25509;&#38169;&#35823;</string>
+    <string name="error_unknown">&#25805;&#20316;&#22833;&#36133;&#65292;&#35831;&#31245;&#21518;&#20877;&#35797;</string>
+    <string name="default_mcc">+ 86</string>
+    <string name="ss_username_exists">%1$s&#24050;&#34987;&#27880;&#20876;&#65292;&#35831;&#25442;&#19968;&#20010;&#35797;&#35797;&#65281;</string>
+    <string name="ss_username_invalid">&#26080;&#25928;&#30340;&#29992;&#25143;&#21517;&#65306;%1$s</string>
+    <string name="ss_modify_retry">&#20462;&#25913;&#22833;&#36133;&#65292;&#35831;&#37325;&#35797;&#65281;</string>
+    <string name="account_upload_avatar_fail">&#20462;&#25913;&#22836;&#20687;&#22833;&#36133;,&#35831;&#31245;&#21518;&#20877;&#35797;</string>
+    <string name="account_upload_avatar_success">&#20462;&#25913;&#22836;&#20687;&#25104;&#21151;</string>
+    <string name="ss_pname_mobile">&#25163;&#26426;&#21495;</string>
+    <string name="onekey_send_sms_info">&#20351;&#29992;&#24744;&#30340;&#25163;&#26426;&#21457;&#36865;&#19968;&#26465;&#26222;&#36890;&#30701;&#20449;&#36827;&#34892;&#30331;&#24405;\n&#19981;&#20250;&#20135;&#29983;&#20854;&#20182;&#36153;&#29992;</string>
+    <string name="onekey_send_sms_btn">&#25163;&#26426;&#21495;&#19968;&#38190;&#30331;&#24405;</string>
+    <string name="onekey_align_left">&#20999;&#25442;&#33267;</string>
+    <string name="onekey_to_normal">&#26222;&#36890;&#30331;&#24405;</string>
+
+    <string name="label_ok">&#30830;&#23450;</string>
+    <string name="label_confirm">&#30830;&#35748;</string>
+    <string name="label_cancel">&#21462;&#28040;</string>
+    <string name="label_continue">&#32487;&#32493;</string>
+    <string name="btn_login">&#36827;&#20837;&#28216;&#25103;</string>
+
+    <string name="send_text_message_confirm">&#25105;&#20204;&#23558;&#20197;&#20813;&#36153;&#30701;&#20449;&#30340;&#26041;&#24335;&#21521;&#24744;&#21457;&#36865;&#39564;&#35777;&#30721;&#65292;&#26159;&#21542;&#32487;&#32493;&#65311;</string>
+
+    <string name="progress_waiting">&#21152;&#36733;&#20013;&#8230;</string>
+
+    
+    <string name="ss_states_fail_session_expire">&#33719;&#21462;&#25480;&#26435;&#20449;&#24687;&#20986;&#38169;&#65306;&#20250;&#35805;&#36807;&#26399;</string>
+    <string name="ss_states_fail_no_connection">&#33719;&#21462;&#25480;&#26435;&#20449;&#24687;&#20986;&#38169;&#65306;&#27809;&#26377;&#32593;&#32476;&#36830;&#25509;</string>
+    <string name="ss_states_fail_network_timeout">&#33719;&#21462;&#25480;&#26435;&#20449;&#24687;&#20986;&#38169;&#65306;&#32593;&#32476;&#36229;&#26102;</string>
+    <string name="ss_states_fail_network_error">&#33719;&#21462;&#25480;&#26435;&#20449;&#24687;&#20986;&#38169;&#65306;&#32593;&#32476;&#38169;&#35823;</string>
+    <string name="ss_states_fail_unknown">&#33719;&#21462;&#25480;&#26435;&#20449;&#24687;&#20986;&#38169;, &#35831;&#37325;&#35797;</string>
+    <string name="ss_states_fail_bind_account">&#27492;&#36134;&#21495;&#24050;&#23384;&#22312;&#32465;&#23450;&#65281;&#20026;&#20102;&#20445;&#35777;&#36134;&#21495;&#23433;&#20840;&#65292;&#35831;&#24744;&#36864;&#20986;&#21644;&#21407;&#36134;&#21495;&#30340;&#32465;&#23450;&#20197;&#32487;&#32493;&#12290;</string>
+    <string name="ss_logout_fail_no_connection">&#27880;&#38144;&#36134;&#21495;&#22833;&#36133;&#65306;&#27809;&#26377;&#32593;&#32476;&#36830;&#25509;</string>
+    <string name="ss_logout_fail_network_timeout">&#27880;&#38144;&#36134;&#21495;&#22833;&#36133;&#65306;&#32593;&#32476;&#36229;&#26102;</string>
+    <string name="ss_logout_fail_network_error">&#27880;&#38144;&#36134;&#21495;&#22833;&#36133;&#65306;&#32593;&#32476;&#38169;&#35823;</string>
+    <string name="ss_logout_fail_unknown">&#27880;&#38144;&#36134;&#21495;&#22833;&#36133;, &#35831;&#37325;&#35797;</string>
+    <string name="sim_not_plugined">&#35831;&#25554;&#20837;SIM&#21345;</string>
+    <string name="sim_logout_fail_send_sms_fail">&#19968;&#38190;&#30331;&#24405;&#22833;&#36133;</string>
+
+    <string name="ss_modify_failed">&#20462;&#25913;&#22833;&#36133;&#65306;</string>
+    <string name="account_desc_dialog_title">&#20462;&#25913;&#31614;&#21517;</string>
+    <string name="account_btn_ok">&#30830;&#23450;</string>
+    <string name="account_btn_cancel">&#21462;&#28040;</string>
+    <string name="account_left_number">&#21097;&#20313;%1$d&#23383;</string>
+
+    <string name="login_frag_wait">&#36134;&#21495;&#30331;&#24405;&#20013;&#65292;&#35831;&#31245;&#21518;&#8230;</string>
+    <string name="login_frag_wait_default">&#29992;&#25143;&#21517;</string>
+    
+    <string name="ss_logout_success">&#27880;&#38144;&#36134;&#21495;&#25104;&#21151;</string>
+    
+    <string name="ss_user_check_fail_no_connection">&#29992;&#25143;&#30331;&#24405;&#22833;&#36133;&#65306;&#27809;&#26377;&#32593;&#32476;&#36830;&#25509;</string>
+    <string name="ss_user_check_fail_network_timeout">&#29992;&#25143;&#30331;&#24405;&#22833;&#36133;&#65306;&#32593;&#32476;&#36229;&#26102;</string>
+    <string name="ss_user_check_fail_network_error">&#29992;&#25143;&#30331;&#24405;&#22833;&#36133;&#65306;&#32593;&#32476;&#38169;&#35823;</string>
+    <string name="ss_user_check_fail_unknown">&#29992;&#25143;&#30331;&#24405;&#22833;&#36133;, &#35831;&#37325;&#35797;</string>
+    <string name="ss_user_check_success">&#29992;&#25143;&#30331;&#24405;&#25104;&#21151;</string>
+    <string name="ss_user_check_fail">&#29992;&#25143;&#30331;&#24405;&#24322;&#24120;&#65292;&#35831;&#37325;&#26032;&#30331;&#24405;</string>
+    <string name="ss_user_check_token_expire">&#20250;&#35805;&#36807;&#26399;&#65292;&#35831;&#37325;&#26032;&#30331;&#24405;</string>
+
+    <string name="ss_password_setup_title">&#20026;&#20102;&#24744;&#30340;&#36134;&#25143;&#23433;&#20840;&#65292;&#35831;&#21450;&#26102;&#20462;&#25913;&#23494;&#30721;!</string>
+    <string name="ss_password_setup_account">&#24403;&#21069;&#36134;&#21495;&#65306;%s</string>
+    <string name="ss_password_setup_password_hint">&#35831;&#36755;&#20837;&#23494;&#30721;6-20&#20301;&#33521;&#25991;&#25110;&#25968;&#23383;</string>
+    <string name="ss_password_setup_code_hint">&#35831;&#36755;&#20837;&#39564;&#35777;&#30721;</string>
+    <string name="ss_password_setup_code_button_first">&#21457;&#36865;</string>
+    <string name="ss_password_setup_code_button_second">&#37325;&#26032;&#21457;&#36865;</string>
+    <string name="ss_password_setup_cancel">&#21462;&#28040;</string>
+    <string name="ss_password_setup_ok">&#30830;&#23450;</string>
+    <string name="ss_password_setup_change_account">&#20999;&#25442;&#36134;&#21495; &gt;</string>
+    <string name="ss_password_setup_change_account_tip">&#25552;&#31034;</string>
+    <string name="ss_password_setup_change_account_alert">&#26159;&#21542;&#20999;&#25442;&#36134;&#21495;&#65311;</string>
+
+<string name="app_notify_title">NewMedia</string>
+    <string name="label_back">&#36820;&#22238;</string>
+    
+    <string name="toast_download_not_cached">&#22270;&#29255;&#36824;&#26410;&#19979;&#36733;&#21040;&#26412;&#22320;&#65292;&#35831;&#31245;&#21518;&#37325;&#35797;</string>
+    <string name="toast_download_successful">&#24050;&#20445;&#23384;&#33267;SD&#21345;funnygallery&#25991;&#20214;&#22841;&#19979;</string>
+    <string name="toast_download_failed">&#20445;&#23384;&#25991;&#20214;&#22833;&#36133;&#65292;&#35831;&#37325;&#35797;</string>
+    <string name="toast_download_sdcard_unavail">&#20445;&#23384;&#25991;&#20214;&#22833;&#36133;, sd-card&#19981;&#21487;&#29992;</string>
+    <string name="toast_download_app">&#24050;&#24320;&#22987;&#19979;&#36733;</string>
+    
+    <string name="file_download_confirm">&#30830;&#35748;&#35201;&#19979;&#36733;&#27492;&#38142;&#25509;&#21527;&#65311;</string>
+    <string name="retry_large_image"><u>&#21152;&#36733;&#22833;&#36133;&#65292;&#28857;&#20987;&#37325;&#35797;</u></string>
+    
+    <string name="ss_error_no_connections">&#27809;&#26377;&#32593;&#32476;&#36830;&#25509;, &#35831;&#31245;&#21518;&#37325;&#35797;</string>
+    <string name="ss_error_connect_timeout">&#36830;&#25509;&#36229;&#26102;, &#35831;&#31245;&#21518;&#37325;&#35797;</string>
+    <string name="ss_error_network_timeout">&#32593;&#32476;&#36229;&#26102;, &#35831;&#31245;&#21518;&#37325;&#35797;</string>
+    <string name="ss_error_network_error">&#32593;&#32476;&#38169;&#35823;, &#35831;&#31245;&#21518;&#37325;&#35797;</string>
+    <string name="ss_error_server_error">&#26381;&#21153;&#32321;&#24537;, &#35831;&#31245;&#21518;&#37325;&#35797;</string>
+    <string name="ss_error_service_unavailable">&#26381;&#21153;&#19981;&#21487;&#29992;, &#35831;&#31245;&#21518;&#37325;&#35797;</string>
+    <string name="ss_error_api_error">&#26381;&#21153;&#20986;&#29616;&#38382;&#39064;, &#35831;&#31245;&#21518;&#37325;&#35797;</string>
+    <string name="ss_error_unknown">&#21152;&#36733;&#22833;&#36133;, &#35831;&#31245;&#21518;&#37325;&#35797;</string>
+    
+    <string name="photo_error_no_photo">&#29031;&#29255;&#19981;&#23384;&#22312;,&#35831;&#37325;&#35797;</string>
+    <string name="photo_error_no_gallery">&#31995;&#32479;&#26410;&#23433;&#35013;&#30456;&#20876;</string>
+    <string name="photo_error_no_camera">&#27809;&#26377;&#25214;&#21040;&#25668;&#20687;&#22836;</string>
+    <string name="photo_error_no_sdcard">&#20869;&#23384;&#21345;&#27809;&#26377;&#25346;&#36733;&#65292;&#26080;&#27861;&#25293;&#29031;&#65281;</string>
+    
+    <string name="geo_dlg_title">&#22320;&#29702;&#20301;&#32622;&#25480;&#26435;</string>
+    <string name="geo_dlg_message">&#20801;&#35768;%1$s&#35775;&#38382;&#20320;&#24403;&#21069;&#30340;&#22320;&#29702;&#20301;&#32622;&#20449;&#24687;?</string>
+    <string name="geo_dlg_allow">&#20801;&#35768;</string>
+    <string name="geo_dlg_disallow">&#19981;&#20801;&#35768;</string>
+    
+    <string name="webview_save_image">&#20445;&#23384;&#22270;&#29255;</string>
+    <string name="webview_start_download">&#24320;&#22987;&#19979;&#36733;&#8230;</string>
+    <string name="webview_sdcard_not_available">SD&#21345;&#19981;&#21487;&#29992;</string>
+    <string name="webview_download_fail">&#19979;&#36733;&#22833;&#36133;</string>
+    <string name="webview_download_success">&#19979;&#36733;&#25104;&#21151;</string>
+    
+    <string name="ss_title_browser">&#32593;&#39029;&#27983;&#35272;</string>
+    <string name="browser_popup_menu_open_with_browser">&#29992;&#27983;&#35272;&#22120;&#25171;&#24320;</string>
+    <string name="browser_popup_menu_copy_link">&#22797;&#21046;&#38142;&#25509;</string>
+    <string name="browser_popup_menu_refresh">&#21047;&#26032;</string>
+    <string name="toast_copylink_success">&#38142;&#25509;&#22797;&#21046;&#25104;&#21151;</string>
+    
+    <string name="sdk_stream_title">&#20449;&#24687;&#27969;&#39029;</string>
+    <string name="sdk_detail_tile">&#35814;&#24773;&#39029;</string>
+    
+    <string name="sdk_title">&#20170;&#26085;&#22836;&#26465;</string>
+    
+    <string name="system_share_fmt">&#12304;%1$s&#12305;\n%2$s\n(&#24819;&#30475;&#26356;&#22810;&#21512;&#20320;&#21475;&#21619;&#30340;&#20869;&#23481;&#65292;&#39532;&#19978;&#19979;&#36733; &#20170;&#26085;&#22836;&#26465;)\n%3$s</string>
+    <string name="app_download_link">http://app.toutiao.com/news_article/?utm_source=link</string>
+    <string name="share_subject_fmt">&#20170;&#26085;&#22836;&#26465;&#12304;%1$s&#12305;</string>
+    <string name="action_system_share">&#36716;&#21457;&#38142;&#25509;</string>
+
+</resources>

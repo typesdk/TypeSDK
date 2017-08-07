@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nubia_window_background"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/common"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/nubia_color_blue_100" >
+
+        <include layout="@layout/nubia_header_background" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/title2_reset_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/nubia_item_padding_side"
+                android:layout_marginRight="@dimen/nubia_item_padding_side"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="设置新密码"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/nubia_color_black_87" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/title2_reset_pwd"
+                android:background="@color/nubia_color_black_10" />
+
+            <LinearLayout
+                android:id="@+id/new_password_reset_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/title2_reset_pwd"
+                android:layout_marginLeft="@dimen/nubia_item_padding_side"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/phone_new_password_reset_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/nubia_password"
+                    android:hint="新密码至少6位"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textCursorDrawable="@drawable/nubia_cursor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/new_password_reset_pwd"
+                android:layout_marginLeft="@dimen/nubia_line_padding"
+                android:background="@color/nubia_color_black_10" />
+
+            <LinearLayout
+                android:id="@+id/confirm_password_password_reset_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/new_password_reset_pwd"
+                android:layout_marginLeft="@dimen/nubia_item_padding_side"
+                android:layout_marginRight="@dimen/nubia_item_padding_side"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/phone_confirm_password_reset_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/nubia_password"
+                    android:hint="确认密码"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textCursorDrawable="@drawable/nubia_cursor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/confirm_password_password_reset_pwd"
+                android:layout_marginLeft="@dimen/nubia_line_padding"
+                android:background="@color/nubia_color_black_10" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/nubia_line_padding_top"
+        android:background="@color/nubia_color_black_10" />
+
+    <include layout="@layout/nubia_bottom_bar" />
+
+</LinearLayout>

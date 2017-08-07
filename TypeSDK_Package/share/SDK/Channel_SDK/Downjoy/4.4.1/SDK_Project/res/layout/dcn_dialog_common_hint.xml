@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dcn_dialog_common_width"
+    android:layout_height="@dimen/dcn_dialog_common_height"
+    android:background="@drawable/dcn_shape_dialog_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/dcn_dialog_common_titlebar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dcn_dialog_common_interval"
+        android:layout_marginTop="@dimen/dcn_dialog_common_interval"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dcn_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:textColor="#999"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.downjoy.android.volley.toolbox.NetworkImageView
+        android:id="@+id/dcn_imageView"
+        android:layout_width="@dimen/dcn_dialog_common_width"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+         />
+
+    <TextView
+        android:id="@+id/dcn_content_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#999"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/dcn_btn_set"
+        android:layout_width="@dimen/dcn_dialog_common_btn_width"
+        android:layout_height="@dimen/dcn_dialog_common_btn_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dcn_dialog_common_interval"
+        android:layout_marginTop="@dimen/dcn_dialog_common_interval"
+        android:background="@drawable/dcn_selector_dialog_btn"
+        android:text="@string/dcn_dialog_common_now_set"
+        android:textColor="@color/dcn_orange_common" />
+</LinearLayout>

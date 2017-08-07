@@ -1,0 +1,9 @@
+/* 
+    * Created on : 2013-10-02, 18:16:42
+    * Author     : Meritoo.pl, http://www.meritoo.pl
+    * Copyright  : Meritoo.pl
+*/
+
+.table-condensed tbody > tr > td{
+    padding: 4px 7px;
+}

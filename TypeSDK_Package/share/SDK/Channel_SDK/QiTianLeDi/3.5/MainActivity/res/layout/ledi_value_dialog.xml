@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#fffbf1"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ledi_dialog_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/ledi_input_card_values"
+            android:textColor="#a7842b"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/value_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:divider="@drawable/ledi_no"
+        android:scrollbars="none"
+        />
+
+</LinearLayout>

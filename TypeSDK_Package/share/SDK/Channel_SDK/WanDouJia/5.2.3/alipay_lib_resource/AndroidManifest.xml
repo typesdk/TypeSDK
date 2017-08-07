@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.oakenshield.alipayresource.alipay_lib_resource2">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="18" />
+
+
+</manifest>

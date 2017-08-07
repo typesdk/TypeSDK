@@ -1,0 +1,171 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mch_play_img" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_margin="10px"
+        android:background="@android:color/transparent" >
+
+        <EditText
+            android:id="@+id/edt_promoteAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_promoteId"
+            android:layout_below="@+id/edt_promoteId"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/edt_gameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_promoteAccount"
+            android:layout_below="@+id/edt_promoteAccount"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/edt_gameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_gameId"
+            android:layout_below="@+id/edt_gameId"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/edt_gameAppId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_gameName"
+            android:layout_below="@+id/edt_gameName"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/edt_promoteId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="37dp"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/edt_paysdk_signkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_gameAppId"
+            android:layout_below="@+id/edt_gameAppId"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/promoteId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edt_promoteId"
+            android:layout_alignBottom="@+id/edt_promoteId"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/edt_promoteId"
+            android:text="promoteId"
+            android:textColor="#ff00ff" />
+
+        <TextView
+            android:id="@+id/promoteAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edt_promoteAccount"
+            android:layout_alignBottom="@+id/edt_promoteAccount"
+            android:layout_alignLeft="@+id/promoteId"
+            android:text="promoteAccount"
+            android:textColor="#ff00ff" />
+
+        <TextView
+            android:id="@+id/gameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edt_gameId"
+            android:layout_alignBottom="@+id/edt_gameId"
+            android:layout_alignLeft="@+id/promoteAccount"
+            android:text="gameId"
+            android:textColor="#ff00ff" />
+
+        <TextView
+            android:id="@+id/gameAppid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edt_gameAppId"
+            android:layout_alignBottom="@+id/edt_gameAppId"
+            android:layout_alignLeft="@+id/gameName"
+            android:text="gameAppid"
+            android:textColor="#ff00ff" />
+
+        <TextView
+            android:id="@+id/gameName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edt_gameName"
+            android:layout_alignBottom="@+id/edt_gameName"
+            android:layout_alignLeft="@+id/gameId"
+            android:text="gameName"
+            android:textColor="#ff00ff" />
+
+        <AutoCompleteTextView
+            android:id="@+id/act_paysdk_ipaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_paysdk_signkey"
+            android:layout_below="@+id/edt_paysdk_signkey"
+            android:ems="10"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/paysdk_signkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/edt_paysdk_signkey"
+            android:layout_alignBottom="@+id/edt_paysdk_signkey"
+            android:layout_alignLeft="@+id/gameAppid"
+            android:text="paysdk_signkey"
+            android:textColor="#ffff00" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edt_paysdk_signkey"
+            android:layout_alignRight="@+id/paysdk_signkey"
+            android:layout_below="@+id/act_paysdk_ipaddress"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/paysdk_ipaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_number"
+            android:layout_alignBottom="@+id/et_number"
+            android:layout_alignParentRight="true"
+            android:text="paysdk_ipaddress"
+            android:textColor="#ff0000" />
+
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/et_number"
+            android:layout_alignRight="@+id/et_number"
+            android:layout_below="@+id/et_number"
+            android:text="确定" />
+
+        <ImageButton
+            android:id="@+id/ib_down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_number"
+            android:layout_alignTop="@+id/et_number"
+            android:layout_toRightOf="@+id/promoteId"
+            android:background="@drawable/icon_spinner_down_arrow" />
+
+    </RelativeLayout>
+
+</ScrollView>

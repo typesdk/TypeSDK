@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<RelativeLayout     android:layout_width="@dimen/YK_GameSDK_580PX"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:paddingBottom="@dimen/YK_GameSDK_5PX">>
+    <RelativeLayout
+        android:layout_width="@dimen/YK_GameSDK_580PX"
+        android:layout_height="@dimen/YK_GameSDK_474PX"
+        android:layout_marginTop="@dimen/YK_GameSDK_60PX"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/yk_announcement_bg">
+
+        <TextView
+            android:id="@+id/item_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/YK_GameSDK_70PX"
+            android:maxLines="1"
+            android:textColor="#A17D4B"
+            android:textSize="@dimen/YK_GameSDK_35PX" />
+
+        <TextView
+            android:id="@+id/item_content_txt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/YK_GameSDK_200PX"
+            android:layout_below="@id/item_title_txt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/YK_GameSDK_15PX"
+            android:layout_marginRight="@dimen/YK_GameSDK_15PX"
+            android:layout_marginTop="@dimen/YK_GameSDK_20PX"
+            android:background="@drawable/yk_announcement_content"
+            android:lineSpacingExtra="@dimen/YK_GameSDK_3PX"
+            android:padding="@dimen/YK_GameSDK_20PX"
+            android:singleLine="false"
+            android:textColor="#A17D4B"
+            android:textSize="@dimen/YK_GameSDK_28PX" />
+
+        <TextView
+            android:id="@+id/item_url_txt"
+            android:layout_width="@dimen/YK_GameSDK_400PX"
+            android:layout_height="@dimen/YK_GameSDK_70PX"
+            android:layout_below="@id/item_content_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/YK_GameSDK_30PX"
+            android:layout_marginTop="@dimen/YK_GameSDK_30PX"
+            android:background="@drawable/yk_announcement_button" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/yk_icon_title"
+        android:layout_width="@dimen/YK_GameSDK_496PX"
+        android:layout_height="@dimen/YK_GameSDK_100PX"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/yk_announcement_title" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="@dimen/YK_GameSDK_44PX"
+        android:layout_height="@dimen/YK_GameSDK_44PX"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/YK_GameSDK_40PX"
+        android:layout_marginRight="@dimen/YK_GameSDK_10PX"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/yk_announcement_cancel" /> 
+</RelativeLayout>
+</RelativeLayout>

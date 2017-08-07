@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- 字体大小 -->
+    <dimen name="ipay_text_size_28">28sp</dimen>
+    <dimen name="ipay_text_size_20">20sp</dimen>
+    <dimen name="ipay_text_size_19">19sp</dimen><!-- oneclick -->
+    <dimen name="ipay_text_size_18">18sp</dimen>
+    <dimen name="ipay_text_size_17">17sp</dimen><!-- oneclick -->
+    <dimen name="ipay_text_size_16">16sp</dimen>
+    <dimen name="ipay_text_size_15">15sp</dimen>
+    <dimen name="ipay_text_size_14">14sp</dimen>
+    <dimen name="ipay_text_size_13">13sp</dimen>
+    <dimen name="ipay_text_size_12">12sp</dimen>
+
+    <!-- 边距 -->
+    <dimen name="ipay_margin_40">40dp</dimen>
+    <dimen name="ipay_margin_30">30dp</dimen>
+    <dimen name="ipay_margin_27">27dp</dimen>
+    <dimen name="ipay_margin_26">26dp</dimen>
+    <dimen name="ipay_margin_25">25dp</dimen>
+    <dimen name="ipay_margin_22">22dp</dimen>
+    <dimen name="ipay_margin_20">20dp</dimen>
+    <dimen name="ipay_margin_19">19dp</dimen>
+    <dimen name="ipay_margin_18">18dp</dimen>
+    <dimen name="ipay_margin_17">17dp</dimen>
+    <dimen name="ipay_margin_16">16dp</dimen>
+    <dimen name="ipay_margin_15">15dp</dimen>
+    <dimen name="ipay_margin_13">13dp</dimen>
+    <dimen name="ipay_margin_12">12dp</dimen>
+    <dimen name="ipay_margin_11">11dp</dimen>
+    <dimen name="ipay_margin_10">10dp</dimen>
+    <dimen name="ipay_margin_9">9dp</dimen>
+    <dimen name="ipay_margin_8">8dp</dimen>
+    <dimen name="ipay_margin_7">7dp</dimen>
+    <dimen name="ipay_margin_6">6dp</dimen>
+    <dimen name="ipay_margin_5">5dp</dimen>
+    <dimen name="ipay_margin_4">4dp</dimen>
+    <dimen name="ipay_margin_3">3dp</dimen>
+    <dimen name="ipay_title_bar_text_line_margin">1dp</dimen>
+
+    <!-- 正方形宽高 -->
+    <dimen name="ipay_wh_13">13dp</dimen>
+    <dimen name="ipay_wh_20">20dp</dimen>
+
+    <dimen name="ipay_password_edittext_w">318dp</dimen>
+    <dimen name="ipay_password_edittext_h">53dp</dimen>
+    
+    <dimen name="ipay_divid_line_h">0.5dp</dimen>
+ 
+    <!-- title -->
+    <dimen name="ipay_title_h">50dp</dimen>
+    <dimen name="ipay_title_mini_h">45dp</dimen>
+    
+    <!-- 框架定义 -->
+    <dimen name="ipay_button_heigth">50dp</dimen>
+    <dimen name="ipay_title_line_heigth">1dp</dimen>
+    
+    <!-- 主界面定义 -->
+    <dimen name="ipay_height_50">50dp</dimen>
+    <dimen name="ipay_height_38">38dp</dimen>
+    <dimen name="ipay_height_48">48dp</dimen>
+
+    
+</resources>

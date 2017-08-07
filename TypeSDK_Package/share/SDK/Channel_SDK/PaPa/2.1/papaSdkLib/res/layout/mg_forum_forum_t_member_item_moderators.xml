@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/f_padding_lr"
+              android:paddingRight="@dimen/f_padding_lr"
+              android:background="@android:color/white">
+
+    <view class="it.sephiroth.android.library.widget.HListView" android:layout_width="match_parent"
+          android:layout_height="96dp" android:id="@+id/list"
+          app:hlv_dividerWidth="30dp"
+          android:background="@android:color/white"/>
+
+    <TextView
+            android:id="@+id/noMoreModerator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextViewStyle_12sp"
+            android:textColor="#3b3b3b"
+            android:text="@string/forum_t_member_fragment_no_more_moderators"
+            android:singleLine="true"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+</LinearLayout>

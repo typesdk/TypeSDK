@@ -1,0 +1,81 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+-keepattributes *Annotation*   #保护注解
+#==================sdk==========================
+-dontwarn com.game.sdk.**
+-keep class com.game.sdk.** {*;}
+
+# keep annotated by NotProguard 保护使用NotProguard不混淆
+# 特别注意内部类会被混淆掉
+-keep @com.game.sdk.domain.NotProguard class * {*;}
+-keep class * {
+@com.game.sdk.domain.NotProguard <fields>;
+}
+-keepclassmembers class * {
+@com.game.sdk.domain.NotProguard <methods>;
+}
+#==================gson==========================
+-dontwarn com.google.**
+-keep class com.google.gson.** {*;}
+
+#==================okvolly_1.1.0.jar==========================
+-dontwarn com.kymjs.rxvolley.**
+-keep class com.kymjs.rxvolley.** {*;}
+
+#==================alipaySdk支付宝支付==========================
+-dontwarn com.alipay.**
+-dontwarn com.ta.utdid2.**
+-dontwarn com.ut.device.**
+-dontwarn org.json.alipay.**
+-dontwarn com.alipay.android.app.IAlixPay.**
+-keep class com.alipay.android.app.IAlixPay.**
+-keep class com.alipay.** {*;}
+-keep class com.ta.utdid2.** {*;}
+-keep class com.ut.device.** {*;}
+-keep class org.json.alipay.** {*;}
+
+#==================威富通支付==========================
+-dontwarn com.switfpass.pay.**
+-keep class com.switfpass.pay.** {*;}
+
+#==================汇付宝支付==========================
+-dontwarn com.heepay.plugin.**
+-keep class com.heepay.plugin.** {*;}
+-dontwarn com.junnet.**
+-keep class com.junnet.** {*;}
+
+
+#==================易联银联支付==========================
+-dontwarn com.payeco.android.plugin.**
+-keep class com.payeco.android.plugin.** {*;}
+
+#==================百度定位==========================
+-dontwarn com.baidu.location.**
+-keep class com.baidu.location.** {*;}
+
+
+#apache
+-dontwarn org.apache.**
+-keep class org.apache.** {*;}
+-dontwarn android.net.http.**
+-keep class android.net.http.** { *;}
+-keep class com.android.volley.**{*;}

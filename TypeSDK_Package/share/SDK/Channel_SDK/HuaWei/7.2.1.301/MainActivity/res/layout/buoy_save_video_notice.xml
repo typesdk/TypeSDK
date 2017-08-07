@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_notice_view"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:descendantFocusability="afterDescendants" >
+
+    <LinearLayout
+        android:id="@+id/top_notice_video_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#b3ffffff"
+        android:descendantFocusability="afterDescendants" >
+
+        <RelativeLayout
+            android:id="@+id/text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp" >
+
+            <TextView
+                android:id="@+id/save_video_titile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/buoy_save_title"
+                android:textSize="15sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/save_video_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="19dp"
+                android:textColor="@color/buoy_save_detail"
+                android:textSize="13sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/share_video"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/buoy_share_selector"
+            android:clickable="true" >
+        </ImageView>
+    </RelativeLayout>
+
+</FrameLayout>

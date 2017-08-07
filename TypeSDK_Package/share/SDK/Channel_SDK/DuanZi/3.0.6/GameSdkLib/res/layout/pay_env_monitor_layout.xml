@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="222.0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/pay_dialog_bg">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:indeterminateDrawable="@drawable/dialog_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18.0dp" >
+
+    </ProgressBar>
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:textSize="@dimen/pay_env_monitor_dialog_content_size"
+        android:textColor="@color/pay_env_monitor_dialog_content_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12.0dp"
+        android:paddingBottom="18.0dp"
+        android:text="@string/pay_evn_monitor_content">
+    </TextView>
+</RelativeLayout>

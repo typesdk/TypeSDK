@@ -1,0 +1,72 @@
+{
+  "version":"v 6.1.0",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "id" : 0
+    ,"data":
+    {
+      "sid":""
+    }
+    }
+    ,"out_url" : "http://sdk.9game.cn/cp/account.verifySession"
+    ,"out_params" :
+    {
+      "id" : 0
+    ,"data":
+    {
+      "sid":""
+    }
+    ,"game":
+    {
+      "gameId":0
+    }
+    ,"sign" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "ver" : ""
+      ,"data" :
+      {
+        "orderId": ""
+      ,"gameId": ""
+      ,"accountId": ""
+      ,"creator" : ""
+      ,"payWay": ""
+      ,"amount": ""
+      ,"callbackInfo": ""
+      ,"orderStatus": ""
+      ,"failedDesc": "_"
+      ,"cpOrderId": -1
+      }
+      ,"sign" : ""
+      }
+    ,"out_url" :"http://sdk.g.uc.cn/cp/account.verifySession"
+    ,"out_params" :
+      {
+        "ver" : ""
+      ,"data" :
+      {
+        "orderId": ""
+      ,"gameId": ""
+      ,"accountId": ""
+      ,"creator" : ""
+      ,"payWay": ""
+      ,"amount": ""
+      ,"callbackInfo": ""
+      ,"orderStatus": ""
+      ,"failedDesc": "_"
+      ,"cpOrderId": -1
+      }
+      ,"sign" : ""
+      }
+    }
+  ]
+}

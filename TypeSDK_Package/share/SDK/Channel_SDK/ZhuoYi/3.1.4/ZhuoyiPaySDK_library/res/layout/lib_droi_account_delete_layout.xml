@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/lib_droi_account_global_margin_top"
+    android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left"
+    android:layout_marginRight="@dimen/lib_droi_account_global_margin_right"
+    android:orientation="vertical" >
+    
+    
+        <EditText android:id="@+id/lib_droi_account_username"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left"
+           android:layout_marginRight="@dimen/lib_droi_account_global_margin_right"
+           android:enabled="true"
+           android:focusable="true"
+           android:inputType="textPassword"
+           android:focusableInTouchMode="true"
+           android:singleLine="true"
+           android:textColorHint="@color/lib_droi_account_edit_text_color"
+           android:hint="Input account name please"
+           android:textSize="14sp" />
+        
+        <EditText android:id="@+id/lib_droi_account_pasword"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="30dp"
+           android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left"
+           android:layout_marginRight="@dimen/lib_droi_account_global_margin_right"
+           style="@style/LibDroiAccountPasswordStyle"
+           android:textColorHint="@color/lib_droi_account_edit_text_color"
+           android:hint="Input password please" />
+    
+    
+    <Button android:id="@+id/lib_droi_account_account_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+    
+    
+    <Button android:id="@+id/lib_droi_account_delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"/>
+    
+</LinearLayout>
+
+

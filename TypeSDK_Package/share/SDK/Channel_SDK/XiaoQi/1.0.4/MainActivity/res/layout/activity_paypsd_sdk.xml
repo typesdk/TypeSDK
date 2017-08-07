@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id="@+id/setpaypassword_title_rl"
+        layout="@layout/item_main_title_rl"        
+        />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" 
+        >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" 
+         >
+    
+     <RelativeLayout
+        android:layout_marginTop="25dip"
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/setpaypassword_iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/activity_loginpsd" />
+
+        <EditText
+            android:id="@+id/setpaypassword_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/setpaypassword_iv_1"
+            android:background="@null"
+            android:textSize="14sp"
+            android:hint="请输入支付密码(6~16位字符)"
+            style="@style/et_tc_textColorHint"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword" />
+        <ImageView
+            android:id="@+id/setpaypassword_iv_deletepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/activity_login_delete"
+            android:visibility="invisible" />
+        <View
+        android:id="@+id/setpaypassword_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"       
+        android:layout_marginRight="15dip"
+        android:background="@color/line" 
+        android:layout_below="@+id/setpaypassword_iv_1"
+        android:layout_marginLeft="10dip"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/setpaypassword_iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:src="@drawable/activity_loginpsd" />
+
+        <EditText
+            android:id="@+id/setpaypassword_et_confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/setpaypassword_iv_2"
+            android:background="@null"
+            android:textSize="14sp"
+            style="@style/et_tc_textColorHint"
+            android:hint="确认支付密码(6~16位字符)"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword" />
+        <ImageView
+            android:id="@+id/setpaypassword_iv_deleteconfirmpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:clickable="true"
+            android:padding="10dip"
+            android:src="@drawable/activity_login_delete"
+            android:visibility="invisible" />
+       
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/setpaypassword_btn_save" 
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dip"
+        android:background="@drawable/green_radio_bg"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:text="保存"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        />
+    
+    </LinearLayout>
+    
+    </ScrollView>
+
+</LinearLayout>

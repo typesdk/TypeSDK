@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.wandoujia"
+    android:versionCode="523"
+    android:versionName="5.2.3" 
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    
+     <!-- baselib permission start -->
+    <!-- 获取设备信息权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 自动装权限 -->
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <!-- 获取指定Tag日志需要的权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 获取网络状态并存到本地需要的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--  uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" / -->
+    <!-- 崩溃日志收集 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 本地推送 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- baselib permission end -->
+    
+    
+    
+    <!-- wdj SDK -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.webkit.permission.PLUGIN"/>
+    <!-- SDK end -->
+	
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+		
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+		android:persistent="true"
+		android:theme="@style/AppTheme"
+		android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+
+        <!-- baselib config start -->
+        <service
+            android:name="com.type.sdk.notification.PushService"
+            android:enabled="true"
+            android:process=":message" >
+        </service>
+        <receiver android:name="com.type.sdk.notification.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.type.sdk.android.typeAccessibility"
+            android:label="@string/accessibility_service_label"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+        <!-- baselib config end -->
+        
+		<activity
+            android:name="com.type.sdk.android.wdj.TypeSDKSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+			<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.type.sdk.android.wdj.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+			
+			<intent-filter>
+                <action android:name="wdj.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+		
+        <!-- SDK Activity -->
+        <activity
+            android:name="com.wandoujia.mariosdk.plugin.apk.activity.MarioAccountActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+
+        <activity
+                android:name="com.wandoujia.mariosdk.plugin.apk.activity.MarioAccountChangeActivity"
+                android:configChanges="orientation|keyboardHidden|screenSize"
+                android:launchMode="singleTop"
+                android:screenOrientation="sensor"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity
+            android:name="com.wandoujia.mariosdk.plugin.apk.activity.UserInfoSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+
+        <activity
+            android:name="com.wandoujia.mariosdk.plugin.apk.activity.LeaderboardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+
+        <activity
+            android:name="com.wandoujia.mariosdk.plugin.apk.activity.AchievementActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+
+        <activity
+            android:name="com.wandoujia.mariosdk.plugin.apk.activity.InviteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+
+        <activity
+            android:name="com.wandoujia.mariosdk.plugin.apk.activity.MiniProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+
+        <activity
+            android:name="com.wandoujia.mariosdk.plugin.apk.activity.MarioActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+
+        <activity
+            android:name="com.wandoujia.mariosdk.plugin.apk.fantasy.activity.FFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            />
+
+        <receiver android:name="com.wandoujia.mariosdk.plugin.api.WandouPluginReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="pheonix.intent.action.LOGIN_SUCCESS"/>
+                <action android:name="pheonix.intent.action.REGISTER_SUCCESS"/>
+                <action android:name="pheonix.intent.action.LOGOUT_SUCCESS"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.wandoujia.mariosdk.plugin.apk.message_push.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.wandoujia.mariosdk.plugin.api.WandouPluginService"
+            android:exported="false"/>
+
+        <!-- message push -->
+        <service
+            android:name="com.wandoujia.mariosdk.plugin.apk.message_push.MessagePushService"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <!--  pay sdk plugin -->
+        <activity
+            android:name="com.wandoujia.oakenshield.activity.OakenshieldActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="com.wandoujia.oakenshield"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!-- Make sure to replace XXX by your AppKeyid -->
+                <data android:scheme="Wandoujia-PaySdk-@app_key@"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Alipay SDK begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+        </activity>
+        <!-- Alipay SDK end -->
+
+        <!-- UnionPay start -->
+        <service android:name="com.UCMobile.PayPlugin.PayPluginService">
+            <intent-filter>
+                <action android:name="android.webkit.PLUGIN"/>
+            </intent-filter>
+            <meta-data
+                android:name="type"
+                android:value="native"/>
+        </service>
+        <activity android:name="com.unionpay.uppay.PayActivity">
+        </activity>
+        <!-- UnionPay end -->
+
+        <activity
+            android:name="com.shandianshua.nen.activity.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <!-- 微信支付 -->
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"/>
+        <!-- Activity end -->
+    </application>
+
+
+</manifest>

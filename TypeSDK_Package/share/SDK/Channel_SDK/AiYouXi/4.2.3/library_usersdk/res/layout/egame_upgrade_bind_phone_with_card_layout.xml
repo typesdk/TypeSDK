@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance"
+        android:background="@drawable/egame_input_box_normal" >
+
+        <EditText
+            android:id="@+id/egame_et_register_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/egame_register_delete_input_pwd"
+            android:background="@null"
+            android:drawableLeft="@drawable/egame_ico_lock"
+            android:hint="@string/egame_input_hint_password"
+            android:textColorHint="@color/egame_usersdk_light_gray"
+            android:textSize="16dp" 
+            android:textColor="@color/egame_usersdk_dark_gray"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/egame_register_delete_input_pwd"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/egame_cb_register_password"
+            android:background="@drawable/egame_btn_small_close"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/egame_cb_register_password"
+            style="@style/MyCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/egame_bt_bind_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginRight="@dimen/egame_edge_distance"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/egame_btn_login_status"
+        android:text="@string/egame_bind_phone"
+        android:textSize="15dp"
+        android:textColor="@color/egame_usersdk_white" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/egame_edge_distance"
+        android:layout_marginTop="10dp"
+        android:text="@string/egame_sms_tip"
+        android:textColor="@color/egame_usersdk_light_gray"
+        android:textSize="13dp" />
+
+</LinearLayout>

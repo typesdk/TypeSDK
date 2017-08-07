@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp142"
+            android:id="@+id/coupon"
+            android:gravity="center_vertical"
+            android:background="@drawable/expand_bg_papa"
+            android:baselineAligned="false"
+            android:layout_marginTop="@dimen/dp60"
+                >
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/papa_coupon_icon"
+                        android:layout_marginLeft="@dimen/dp24"
+                        android:layout_marginRight="@dimen/dp14"
+                        />
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/papa_copuon_notice"
+                        android:textSize="@dimen/sp39"
+                        android:textColor="#6e5336"
+                        android:text="游戏代金券"
+                        android:gravity="center_vertical"
+                                />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="(暂不支持和啪币，红包混合使用)"
+                                android:textColor="#9e7439"
+                                android:textSize="@dimen/dp33"
+                                android:id="@+id/noteText"
+                                />
+
+                </LinearLayout>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="没有可用代金券"
+                android:id="@+id/papa_copuon_select_message"
+                android:textColor="#a9a9a9"
+                android:textSize="@dimen/sp39"
+                android:layout_marginRight="@dimen/dp33"
+                />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/papa_more"
+                android:layout_marginRight="@dimen/dp15"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp13"
+            >
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp286"
+                    android:layout_weight="0"
+                    android:background="@drawable/expand_bg_papa"
+                    android:id="@+id/pabiPay"
+                    android:layout_marginBottom="@dimen/dp13"
+                    >
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pabiCheckBox"
+                        android:checked="false"
+                        android:button="@drawable/papa_check_butn"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp45"
+                        android:layout_marginTop="@dimen/dp45"
+                            />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView2"
+                            android:src="@drawable/papa_pabi_icon"
+                            android:layout_marginTop="@dimen/dp27"
+                            android:layout_marginLeft="@dimen/dp24"
+                            />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="啪币支付"
+                            android:id="@+id/textView"
+                            android:textColor="#6e5336"
+                            android:textSize="@dimen/sp39"
+                            android:layout_alignTop="@+id/imageView2"
+                            android:layout_toRightOf="@+id/imageView2"
+                            android:layout_marginLeft="@dimen/dp24"
+                            />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="啪币余额："
+                            android:id="@+id/pabiNumber"
+                            android:textSize="@dimen/sp39"
+                            android:textColor="#a9a9a9"
+                            android:layout_alignLeft="@+id/textView"
+                            android:layout_below="@+id/textView"
+                            android:layout_marginTop="@dimen/dp42"
+                            />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp120"
+                            android:text="如何获取啪币？"
+                            android:id="@+id/getPabi"
+                            android:textColor="#f9961e"
+                            android:textSize="@dimen/sp33"
+                            android:layout_marginRight="@dimen/dp45"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center_vertical"
+                            />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp286"
+                    android:id="@+id/hongbaoPay"
+                    android:layout_weight="0"
+                    android:background="@drawable/expand_bg_papa"
+                    >
+
+                    <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/hongbaoCheckBox"
+                            android:checked="false"
+                            android:button="@drawable/papa_check_butn"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dp45"
+                            android:layout_marginTop="@dimen/dp45"
+                            />
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView3"
+                            android:src="@drawable/papa_hongbao_icon"
+                            android:layout_marginTop="@dimen/dp27"
+                            android:layout_marginLeft="@dimen/dp24"
+                            />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="红包支付"
+                            android:id="@+id/hongbaoPAyText"
+                            android:textColor="#6e5336"
+                            android:textSize="@dimen/sp39"
+                            android:layout_alignTop="@+id/imageView3"
+                            android:layout_toRightOf="@+id/imageView3"
+                            android:layout_marginLeft="@dimen/dp24"
+                            />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="啪币余额："
+                            android:id="@+id/hongbaoNumber"
+                            android:textSize="@dimen/sp39"
+                            android:textColor="#a9a9a9"
+                            android:layout_alignLeft="@+id/hongbaoPAyText"
+                            android:layout_below="@+id/hongbaoPAyText"
+                            android:layout_marginTop="@dimen/dp42"
+                            />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp120"
+                            android:text="如何获取红包？"
+                            android:id="@+id/getHongbao"
+                            android:textColor="#f9961e"
+                            android:textSize="@dimen/sp33"
+                            android:layout_marginRight="@dimen/dp45"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center_vertical"
+                            />
+            </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

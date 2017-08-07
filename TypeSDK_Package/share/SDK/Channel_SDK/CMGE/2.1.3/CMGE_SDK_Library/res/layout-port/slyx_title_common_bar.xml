@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slyx_title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff2ebdc"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:id="@+id/slyx_title_bar_mc"
+        android:layout_width="fill_parent"
+        android:layout_height="49dip"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/slyx_title_bar" >
+
+        <ImageView
+            android:id="@+id/slyx_back"
+            android:layout_width="60dip"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dip"
+            android:contentDescription="@string/slyx_img_des"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="30dip"
+            android:paddingTop="12dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/slyx_back_s" />
+
+        <TextView
+            android:id="@+id/slyx_title_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/slyx_title_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="0dip"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/slyx_step1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/slyx_title_step1"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip"
+                android:textColor="@drawable/slyx_title_steps_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/slyx_step2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/slyx_title_step2"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip"
+                android:textColor="@drawable/slyx_title_steps_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/slyx_menu_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="0dip"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/slyx_menu_acct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/slyx_title_step1"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingTop="5dip"
+                android:text="@string/slyx_m_title_acct"
+                android:textColor="@drawable/slyx_title_steps_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/slyx_menu_serv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/slyx_title_step2"
+                android:gravity="center"
+                android:paddingBottom="5dip"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingTop="5dip"
+                android:text="@string/cmge_m_title_services"
+                android:textColor="@drawable/slyx_title_steps_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/slyx_title_close"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dip"
+            android:contentDescription="@string/slyx_img_des"
+            android:paddingBottom="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/slyx_title_close" />
+    </RelativeLayout>
+<!-- line and shadow -->
+ <!--    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.0dip"
+        android:background="#fff2ebdc"
+        android:orientation="vertical"
+        android:padding="0.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_gravity="center"
+            android:layout_margin="0.0dip"
+            android:background="@drawable/slyx_line"
+            android:orientation="horizontal"
+            android:padding="0.0dip" />
+
+        <LinearLayout
+            android:id="@+id/slyx_account_title_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="5.0dip"
+            android:layout_gravity="center"
+            android:layout_margin="0.0dip"
+            android:background="@drawable/cmge_shadow"
+            android:orientation="horizontal"
+            android:padding="0.0dip" />
+    </LinearLayout> -->
+
+    <!-- line and shadow -->
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用颜色 -->
+    <color name="cmmn_black">#292a2f</color>
+    <color name="cmmn_green">#5bc002</color>
+    <color name="cmmn_gray">#636363</color>
+    <color name="cmmn_blue">#3eb7c8</color>
+    <color name="hint_color">#afafaf</color>
+
+    <!-- textView 字体 -->
+    <color name="color_tv">#a3a3a3</color>
+    <color name="jolo_white">#ffffff</color>
+    <color name="jolo_black">#000000</color>
+    <color name="divider_color">#d4d4d4</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <color name="translucence">#88000000</color>
+</resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ewan_supersdk_blue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ewan_supersdk_activity_login_content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_activity_login_top_logo_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ewan_supersdk_activity_login_top_logo_iv"
+                android:layout_width="150dip"
+                android:layout_height="84dip"
+                android:layout_gravity="center"
+                android:background="@drawable/ewan_supersdk_top_logo"
+                android:gravity="center"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_activity_login_tip_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cw_activity_recharge_done_icon_layout"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ewan_supersdk_activity_login_tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="@string/ewan_supersdk_login_title"
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dip"
+            android:layout_height="42dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="32dip"
+                android:gravity="center|right"
+                android:text="@string/ewan_supersdk_login_username"
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ewan_supersdk_activity_login_username_et"
+                android:layout_width="170dip"
+                android:layout_height="32dip"
+                android:background="@color/ewan_supersdk_grey"
+                android:clickable="false"
+                android:gravity="center|left"
+                android:inputType="text"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/ewan_supersdk_blue"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button_switchaccount"
+                android:gravity="center"
+                android:layout_width="70dip"
+                android:layout_height="42dip"
+                android:textSize="13dip"
+                android:text="切换" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dip"
+            android:layout_height="42dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dip"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="32dip"
+                android:gravity="center|right"
+                android:text="@string/ewan_supersdk_login_pwd"
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ewan_supersdk_activity_login_pwd_et"
+                android:layout_width="170dip"
+                android:layout_height="32dip"
+                android:background="@color/ewan_supersdk_grey"
+                android:clickable="false"
+                android:gravity="center|left"
+                android:inputType="text|textPassword"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/ewan_supersdk_blue"
+                android:textSize="14sp" />
+            
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="70dip"
+                android:layout_height="32dip"
+                android:text="Button" 
+                android:visibility="invisible"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_activity_login_btn_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ewan_supersdk_activity_login_left_btn"
+                android:layout_width="80.0dip"
+                android:layout_height="30.0dip"
+                android:background="@color/ewan_supersdk_white"
+                android:gravity="center"
+                android:text="@string/ewan_supersdk_login_success_btn"
+                android:textColor="@color/ewan_supersdk_blue" />
+
+            <Button
+                android:id="@+id/ewan_supersdk_activity_login_center_btn"
+                android:layout_width="80.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:background="@color/ewan_supersdk_white"
+                android:gravity="center"
+                android:text="@string/ewan_supersdk_login_cancel_btn"
+                android:textColor="@color/ewan_supersdk_blue" />
+
+            <Button
+                android:id="@+id/ewan_supersdk_activity_login_right_btn"
+                android:layout_width="80.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:background="@color/ewan_supersdk_white"
+                android:gravity="center"
+                android:text="@string/ewan_supersdk_login_fail_btn"
+                android:textColor="@color/ewan_supersdk_blue" />
+
+            <Button
+                android:id="@+id/ewan_supersdk_activity_switch_accout_btn"
+                android:layout_width="80.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:background="@color/ewan_supersdk_white"
+                android:gravity="center"
+                android:text="@string/ewan_supersdk_switch_account_btn"
+                android:textColor="@color/ewan_supersdk_blue" 
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ewan_supersdk_activity_login_info_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="@string/ewan_supersdk_login_tip"
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/ewan_supersdk_activity_sdkversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/ewan_supersdk_white"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ewan_supersdk_activity_login_bottom_logo_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/ewan_supersdk_activity_login_bottom_logo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ewan_supersdk_bottom_logo"
+            android:gravity="center"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+</RelativeLayout>

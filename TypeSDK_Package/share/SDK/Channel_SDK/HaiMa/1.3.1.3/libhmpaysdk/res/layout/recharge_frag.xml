@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recharge_root_container"
+    style="@style/MatchMatch"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/sl_pay_container"
+        style="@style/MatchMatch"
+        android:layout_above="@+id/ll_bottom">
+
+        <!--ScrollView根布局容器-->
+        <LinearLayout
+            style="@style/MatchMatch.Vertical">
+
+            <!--选择福利-->
+            <LinearLayout
+                android:id="@+id/recharge_rebate_title"
+                style="@style/MatchWrap.Horizontal"
+                android:background="@color/pay_fragment_background"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/pay_item_title_layout_height"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/pay_margin_window"
+                    android:text="@string/recharge_select_rabate"
+                    android:textColor="@color/pay_mode_title"
+                    android:textSize="@dimen/font_size_small"/>
+
+                <ImageView
+                    android:id="@+id/recharge_help"
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:src="@drawable/pay_help"/>
+            </LinearLayout>
+
+            <!--返利活动-->
+            <RelativeLayout
+                android:id="@+id/recharge_rebate_activity_linear"
+                style="@style/MatchAuto.Horizontal"
+                android:background="@drawable/border_bg_bottom_line"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/pay_margin_window"
+                android:paddingRight="@dimen/pay_margin_window"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    style="@style/WrapWrap.Vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/recharge_rebate_activity_checkbox"
+                    android:paddingRight="8dp">
+
+                    <TextView
+                        android:id="@+id/recharge_rebate_activity_title_text"
+                        style="@style/WrapWrap"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/font_size_middle"/>
+
+                    <TextView
+                        android:id="@+id/recharge_rebate_activity_content_text"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:textColor="@color/pay_mode_title"
+                        android:textSize="@dimen/font_size_mini"/>
+
+                    <TextView
+                        android:id="@+id/recharge_rebate_activity_vip_msg"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:textColor="@color/pay_mode_title"
+                        android:textSize="@dimen/font_size_mini"/>
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/recharge_rebate_activity_checkbox"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/ic_radio_status"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recharge_back_card_linear"
+                style="@style/MatchAuto.Horizontal"
+                android:background="@drawable/border_bg_bottom_line"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/pay_margin_window"
+                android:paddingRight="@dimen/pay_margin_window"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_back_card"
+                    style="@style/WrapWrap.Vertical"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/recharge_back_card_checkbox"
+                    android:paddingRight="8dp">
+
+                    <LinearLayout
+                        style="@style/WrapWrap.Horizontal">
+
+                        <TextView
+                            android:id="@+id/recharge_back_card_title_text"
+                            style="@style/WrapWrap"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/font_size_middle"/>
+
+                        <TextView
+                            android:id="@+id/recharge_back_card_count_text"
+                            style="@style/WrapWrap"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="#FFFF9A22"
+                            android:textSize="@dimen/font_size_mini"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/recharge_back_card_content_text"
+                        style="@style/WrapWrap"
+                        android:layout_marginTop="4dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/pay_mode_title"
+                        android:textSize="@dimen/font_size_mini"/>
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/recharge_back_card_checkbox"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/ic_radio_status"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pay_item_title_layout_height"
+                android:background="@color/pay_fragment_background"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/pay_margin_window"
+                android:paddingRight="@dimen/pay_margin_window"
+                android:text="@string/recharge_money_selecte"
+                android:textColor="@color/pay_mode_title"
+                android:textSize="@dimen/font_size_small"/>
+
+            <com.haimawan.paysdk.custom.NoScrollGridView
+                android:id="@+id/recharge_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:padding="8dp"
+                android:verticalSpacing="10dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--自定义金额-->
+                <FrameLayout
+                    android:id="@+id/fl_custom_money"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/btn_calculate_custom_recharge_back_money">
+
+                    <TextView
+                        android:id="@+id/recharge_back_money_text"
+                        style="@style/WrapWrap"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="返利：0.0"
+                        android:textColor="#FFFF0000"
+                        android:textSize="@dimen/font_size_small"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/recharge_custom_money_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/gray_edging"
+                        android:focusable="false"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="6"
+                        android:padding="6dp"
+                        android:textColor="#FFFF0000"
+                        android:textSize="@dimen/font_size_small"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/recharge_custom_money_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/gray_edging"
+                        android:gravity="center"
+                        android:text="自定义金额"
+                        android:textSize="@dimen/font_size_small"/>
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btn_calculate_custom_recharge_back_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/go_to_pay_button_selector"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="计算返利"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="@dimen/font_size_small"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--底部布局，包含 实际支付，获赠，和充值按钮-->
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/MatchWrap"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/MatchWrap"
+            android:gravity="center"
+            android:text="客服：QQ 3065861697"
+            android:textColor="#FF666666"
+            android:textSize="@dimen/font_size_mini"/>
+
+        <RelativeLayout
+            style="@style/MatchMatch"
+            android:background="#90000000"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                style="@style/WrapWrap"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:text="实际支付："
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/font_size_small"/>
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:text="获赠："
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/font_size_small"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/WrapWrap"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/recharge_pay_value_text"
+                        style="@style/WrapWrap"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/font_size_small"/>
+
+                    <TextView
+                        android:id="@+id/recharge_obtain_value_text"
+                        style="@style/WrapWrap"
+                        android:text="0.0"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/font_size_small"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/go_to_recharge_button"
+                style="@style/WrapWrap"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/go_to_pay_button_selector"
+                android:text="@string/go_to_recharge"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/font_size_middle"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

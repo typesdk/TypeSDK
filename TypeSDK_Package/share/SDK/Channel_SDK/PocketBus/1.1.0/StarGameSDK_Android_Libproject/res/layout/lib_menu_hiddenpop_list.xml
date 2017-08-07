@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/menu_hidden_pop_listview"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:cacheColorHint="@android:color/transparent"
+          android:divider="@color/lib_divider_color"
+          android:dividerHeight="0.5dp"
+        />

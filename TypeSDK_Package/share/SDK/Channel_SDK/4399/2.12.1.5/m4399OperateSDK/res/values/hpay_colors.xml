@@ -1,0 +1,13 @@
+<resources>
+
+    <color name="hpay_title_color">#333333</color>
+    <color name="hpay_wxts_color">#B7B3AB</color>
+    <color name="hpay_ok_wz_color">#007AFF</color>
+    <color name="hpay_cancel_wz_color">#737065</color>
+    <color name="hpay_bg_color">#FBF6F2</color>
+    <color name="hpay_line_color">#E6DED7</color>
+    <color name="hpay_getyzm_bg_color">#ECE5DF</color>
+    <color name="hpay_edit_color">#D7CEC5</color>
+    <color name="hpay_ok_submit">#FF9515</color>
+    <color name="hpay_ok_normal">#B2B2B2</color>
+</resources>

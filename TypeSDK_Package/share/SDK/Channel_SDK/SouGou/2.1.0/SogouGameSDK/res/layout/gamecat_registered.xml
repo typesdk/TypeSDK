@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#90000000"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/gamecat_dialog_shape">
+
+
+        <include
+            android:id="@+id/title"
+            layout="@layout/gamecat_title" />
+
+        <LinearLayout
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/verification_view"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gamecat_edit_shape"
+
+                >
+
+                <EditText
+                    android:id="@+id/registered_phone_edit"
+                    style="@style/gamecat_item_input_edittext"
+                    android:layout_centerHorizontal="true"
+                    android:hint="@string/gamecat_phone_number"
+                    android:inputType="number"
+                    android:maxLength="11" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/registered_wrong_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:text="*请输入正确的账号"
+                    android:textColor="@color/gamecat_color_f74c31"
+                    android:textSize="10dp"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/password_view"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/gamecat_edit_shape"
+
+                >
+
+                <EditText
+                    android:id="@+id/rigistered_password"
+                    style="@style/gamecat_item_input_edittext"
+                    android:layout_centerHorizontal="true"
+                    android:hint="@string/gamecat_password"
+                    android:inputType="textPassword"
+                    android:maxLength="18" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/registered_wrong_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:text="*密码必须大于6位"
+                    android:textColor="@color/gamecat_color_f74c31"
+                    android:textSize="10dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/phone_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_toLeftOf="@+id/registered_get_verification_text"
+                    android:background="@drawable/gamecat_edit_shape">
+
+                    <EditText
+                        android:id="@+id/rigistered_verification"
+                        style="@style/gamecat_item_input_edittext"
+                        android:layout_centerHorizontal="true"
+                        android:hint="@string/gamecat_verification"
+                        android:inputType="number"
+                        android:maxLength="16" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/registered_get_verification_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@drawable/gamecat_button_shape_unpressed"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/gamecat_white"
+                    android:textSize="11dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/registered_wrong_verification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:text="*验证码错误"
+                    android:textColor="@color/gamecat_color_f74c31"
+                    android:textSize="10dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/rigistered_button"
+
+                style="@style/gamecat_button_common_orange"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:text="注册" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout><!--<View
+        android:id="@+id/xian"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="22dp"
+        android:layout_above="@+id/tv_last"
+        android:background="#EEEEEE" />
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+

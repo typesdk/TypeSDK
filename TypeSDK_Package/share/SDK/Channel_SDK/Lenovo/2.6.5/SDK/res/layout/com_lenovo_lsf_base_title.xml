@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/windowTitleBackgroundStyle"
+    android:layout_width="@dimen/com_lenovo_lsf_view_width_portrait"
+    android:layout_height="@dimen/com_lenovo_lsf_title_height"
+    android:background="@drawable/com_lenovo_lsf_title_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/com_lenovo_lsf_title_height" >
+
+        <TextView
+            android:id="@+id/custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/com_lenovo_lsf_loginTabColorLight"
+            android:textSize="@dimen/com_lenovo_lsf_title_fontsize" />
+
+        <ImageButton
+            android:id="@+id/base_title_imb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:onClick="onBackClicked"
+            android:src="@drawable/com_lenovo_lsf_title_back" />
+    </RelativeLayout>
+
+</LinearLayout>

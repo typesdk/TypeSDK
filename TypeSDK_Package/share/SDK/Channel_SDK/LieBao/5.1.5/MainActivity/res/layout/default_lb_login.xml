@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01000000">
+    
+    <!-- 登录框 -->
+    <RelativeLayout 
+        android:id="@+id/lb_login_layout"
+        android:layout_width="281.0dp"
+        android:layout_height="299.0dp"
+        android:background="@drawable/default_lb_login"     
+        android:layout_centerInParent="true"
+        android:paddingLeft="19.0dp"
+        android:paddingRight="19.0dp"
+        android:paddingTop="22.0dp"
+        android:paddingBottom="22.0dp"
+        android:visibility="gone">
+        <TextView 
+            android:id="@+id/lb_logo"
+            android:layout_width="113.0dp"
+            android:layout_height="45.0dp"
+            android:background="@drawable/default_lb_logo_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+        <RelativeLayout 
+            android:id="@+id/lb_account_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_logo"
+            android:layout_marginTop="14.0dp">
+            <EditText 
+                android:id="@+id/lb_account_et"
+                android:layout_width="match_parent"
+                android:layout_height="39.0dp"
+                android:hint="帐号/手机号"
+                android:textSize="14.0sp"
+                android:textColorHint="#bfbfbc"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:maxLength="20"
+                android:selectAllOnFocus="true"
+                android:background="@null"/>
+            
+            <TextView
+                android:id="@+id/lb_login_username_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="#bebeb9"
+                android:layout_below="@id/lb_account_et"/>
+            
+            <LinearLayout 
+                android:id="@+id/lb_user_select_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="33.0dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="11.0dp"
+                android:paddingLeft="11.0dp"
+                android:orientation="horizontal">
+                <TextView
+                	android:layout_width="14.0dp"
+                	android:layout_height="7.0dp"
+                	android:background="@drawable/default_lb_account_up_arrow"
+                	android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lb_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lb_account_layout"
+            android:layout_marginTop="6.0dp">
+            <EditText
+                android:id="@+id/lb_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="39.0dp"
+                android:hint="密码"
+                android:textSize="14.0sp"
+                android:textColorHint="#bfbfbc"
+                android:textColor="#666666"
+                android:gravity="center"
+                android:selectAllOnFocus="true"
+                android:inputType="textPassword"               
+                android:paddingLeft="69.0dp"
+                android:paddingRight="69.0dp"
+                android:background="@null"/>
+            
+            <TextView
+                android:id="@+id/lb_login_password_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:background="#bebeb9"             
+                android:layout_below="@id/lb_password_et"/>
+             
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lb_login_bottom_layout" 
+            android:layout_width="match_parent"
+            android:layout_height="30.0dp"
+            android:layout_alignParentBottom="true">
+          
+            <LinearLayout 
+                android:id="@+id/lb_register_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dp"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"              
+                android:layout_marginRight="20.0dp"              
+                android:layout_marginTop="40dp"
+                android:paddingRight="10.0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="注册"
+                    android:textColor="@drawable/default_lb_login_textcolor"                                   
+                    android:textSize="12.0sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lb_forget_pwd_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="忘记密码"
+                android:textColor="@drawable/default_lb_login_textcolor"              
+                android:textSize="12.0sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lb_login_tv"
+            android:layout_width="250.0dp"
+            android:layout_height="35.0dp"
+            android:layout_above="@id/lb_login_bottom_layout"
+            android:layout_alignLeft="@id/lb_login_bottom_layout"
+            android:layout_marginBottom="14.0dp "
+            android:background="@drawable/default_lb_login_button_selector"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#fff100"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+    
+  	<!-- 登录加载框 -->
+    <RelativeLayout
+        android:id="@+id/lb_switch_account_loading"
+        android:layout_width="295.0dp"
+        android:layout_height="122.0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/default_lb_logloading"
+        android:visibility="visible" >
+
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="V5.1.4(4)"
+	        android:textColor="#fafff4"
+	        android:textSize="11.0sp" 
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginTop="5.0dp"
+	        android:layout_marginRight="5.0dp"/>
+        
+        <RelativeLayout 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:paddingBottom="27.0dp"
+        	android:paddingTop="25.0dp">
+            <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:id="@+id/lb_circle_icon"
+	                android:layout_width="17.0dp"
+	                android:layout_height="17.0dp"
+	                android:background="@drawable/default_lb_loading_circle" />
+	
+	            <TextView
+	                android:id="@+id/lb_welcome_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="9.0dp"
+	                android:ems="4"
+	                android:ellipsize="end"
+	                android:gravity="center"
+	                android:singleLine="true"
+	                android:text=""
+	                android:textColor="#fafff4"
+	                android:textSize="15.0sp" />
+	
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:text="，欢迎回来!"
+	                android:textColor="#fafff4"
+	                android:textSize="15.0sp" />
+	        </LinearLayout>
+	
+	        <TextView
+	            android:id="@+id/lb_switch_account_tv"
+	            android:layout_width="129.0dp"
+	            android:layout_height="28.0dp"
+	            android:layout_alignParentBottom="true"
+	            android:layout_centerHorizontal="true"
+	            android:background="@drawable/default_lb_button_selector"
+	            android:gravity="center"
+	            android:text="取消登录"
+	            android:textColor="@drawable/default_lb_change_nb"
+	            android:textSize="15.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

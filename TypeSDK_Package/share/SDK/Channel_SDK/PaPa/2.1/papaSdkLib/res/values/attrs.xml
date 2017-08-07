@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<declare-styleable name="RoundedImageView">-->
+        <!--<attr name="riv_corner_radius" format="dimension"/>-->
+        <!--<attr name="riv_border_width" format="dimension"/>-->
+        <!--<attr name="riv_border_color" format="color"/>-->
+        <!--<attr name="riv_mutate_background" format="boolean"/>-->
+        <!--<attr name="riv_oval" format="boolean"/>-->
+        <!--<attr name="android:scaleType"/>-->
+        <!--<attr name="riv_tile_mode">-->
+            <!--<enum name="clamp" value="0"/>-->
+            <!--<enum name="repeat" value="1"/>-->
+            <!--<enum name="mirror" value="2"/>-->
+        <!--</attr>-->
+        <!--<attr name="riv_tile_mode_x">-->
+            <!--<enum name="clamp" value="0"/>-->
+            <!--<enum name="repeat" value="1"/>-->
+            <!--<enum name="mirror" value="2"/>-->
+        <!--</attr>-->
+        <!--<attr name="riv_tile_mode_y">-->
+            <!--<enum name="clamp" value="0"/>-->
+            <!--<enum name="repeat" value="1"/>-->
+            <!--<enum name="mirror" value="2"/>-->
+        <!--</attr>-->
+    <!--</declare-styleable>-->
+
+    <!--<declare-styleable name="CircleImageView">-->
+        <!--<attr name="border_width" format="dimension"/>-->
+        <!--<attr name="border_color" format="color"/>-->
+        <!--<attr name="border_overlay" format="boolean"/>-->
+    <!--</declare-styleable>-->
+
+    <!--<declare-styleable name="PagerSlidingTabStrip">-->
+        <!--<attr name="pstsIndicatorColor" format="color"/>-->
+        <!--<attr name="pstsUnderlineColor" format="color"/>-->
+        <!--<attr name="pstsDividerColor" format="color"/>-->
+        <!--<attr name="pstsIndicatorHeight" format="dimension"/>-->
+        <!--<attr name="pstsUnderlineHeight" format="dimension"/>-->
+        <!--<attr name="pstsDividerPadding" format="dimension"/>-->
+        <!--<attr name="pstsTabPaddingLeftRight" format="dimension"/>-->
+        <!--<attr name="pstsScrollOffset" format="dimension"/>-->
+        <!--<attr name="pstsTabBackground" format="reference"/>-->
+        <!--<attr name="pstsShouldExpand" format="boolean"/>-->
+        <!--<attr name="pstsTextAllCaps" format="boolean"/>-->
+    <!--</declare-styleable>-->
+</resources>

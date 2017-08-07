@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_300"
+    android:background="@drawable/egame_shape_corner_white"
+    android:paddingBottom="@dimen/dp_5"
+    android:paddingLeft="@dimen/dp_3"
+    android:paddingRight="@dimen/dp_3"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_18"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/dp_22"
+        android:textColor="#505050"
+        android:text="@string/egame_choose_your_adress" />
+    
+    
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="#00000000">
+
+        <TextView
+            android:id="@+id/m_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textColor="#ff642e"
+            android:textSize="@dimen/dp_14"
+            android:textStyle="bold"
+            android:visibility="invisible" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/m_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_6"
+        android:background="#00000000"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+      <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_8"
+            android:background="@drawable/egame_btn_blue_selector"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_7"
+                android:paddingBottom="@dimen/dp_7"
+                android:layout_gravity="center_vertical"
+                android:text="@string/egame_cancel"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dp_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 显示数据布局 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="@dimen/dp_6"
+        android:orientation="vertical" 
+        android:layout_below="@id/layout1"
+        android:layout_above="@id/m_layout1">
+
+       <GridView
+             android:id="@+id/m_province_listview"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:gravity="center"
+             android:cacheColorHint="#00000000"
+             android:listSelector="#00000000"
+             android:horizontalSpacing="5dp"
+             android:numColumns="2"
+             android:columnWidth="110dp"
+             android:verticalSpacing="@dimen/dp_10" >
+       </GridView>
+       
+       <GridView
+             android:id="@+id/m_city_listview"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:gravity="center"
+             android:cacheColorHint="#00000000"
+             android:listSelector="#00000000"
+             android:horizontalSpacing="@dimen/dp_5"
+             android:numColumns="2"
+             android:columnWidth="110dp"
+             android:verticalSpacing="@dimen/dp_10" >
+       </GridView>
+    </LinearLayout>
+
+</RelativeLayout>

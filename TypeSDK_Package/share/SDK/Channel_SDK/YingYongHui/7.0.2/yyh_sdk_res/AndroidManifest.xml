@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appchina.sdk"
+    android:versionCode="7"
+    android:versionName="7.0.0" >
+
+</manifest>

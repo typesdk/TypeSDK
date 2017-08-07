@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pyw_sdk_type">3</string>
+    <string name="app_name">PengyouwanSDK</string>
+    <string name="pyw_login_account_hint">请输入账号</string>
+    <string name="pyw_login_psw_hint">请输入密码</string>
+    <string name="pyw_regex_code">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="pyw_login_forgetpsw_tips">忘记密码?点击这里找回</string>
+    <string name="pyw_login_forgetpsw">忘记密码?</string>
+    <string name="pyw_page_edge_text">powered by 光速</string>
+    <string name="pyw_setpassword_hint">设置交易密码</string>
+    <string name="pyw_inputpassword_noset">暂不设置</string>
+    <string name="pyw_contact_qq">无法找回密码，请联系客服QQ:4000607659</string>
+    <string name="pyw_service_phone_num">4000709394</string>
+    <string name="pyw_service_phone">客服热线:400–0709–394</string>
+    <string name="pyw_usercenter">个人中心</string>
+    <string name="pyw_usercenter_switchaccount">切换账户</string>
+    <string name="pyw_usercenter_voucher">代金券</string>
+    <string name="pyw_usercenter_safe">安全</string>
+    <string name="pyw_next_step">下一步</string>
+    <string name="pyw_game_money">游戏币</string>
+    <!-- 绑定手机界面 -->
+    <string name="pyw_bindphone_phone_hint">手机号</string>
+    <string name="pyw_bindphone_code_hint">验证码</string>
+    <string name="pyw_bindphone_getcode">获取验证码</string>
+    <!-- 安全页面 -->
+    <string name="pyw_safe_securitymobile">密保手机</string>
+    <string name="pyw_safe_loginpassword">登录密码</string>
+    <string name="pyw_safe_paypassword">交易密码</string>
+    <string name="pyw_safe_modify">修改</string>
+    <string name="pyw_safe_hint">*在使用代金券支付时，需要验证交易密码</string>
+    <!-- 代金券界面 -->
+    <string name="pyw_voucher_hint">代金券使用说明</string>
+    <string name="pyw_voucher_instructions">限%1$s游戏可用，本代金券如超出实际所需支付金额，剩余面值将按等值金额返还给您。</string>
+    <!-- 找回密码 -->
+    <string name="pyw_accountRetrieve_inputPhone_hint">请输入绑定的手机号</string>
+    <string name="pyw_accountRetrieve_inputCode_hint">验证码</string>
+    <string name="pyw_accountRetrieve_getCode">获取验证码</string>
+    <string name="pyw_bind_phone_tips">手机号可用来找回密码和防止账号被盗</string>
+    <string name="pyw_bindphone_tips_first">绑定手机支付更安全，享受更贴心服务</string>
+    <!-- 登录密码重置 -->
+    <string name="pyw_resetlogin_old">请输入原有登录密码   (6–12位)</string>
+    <string name="pyw_resetlogin_new">请输入新的登录密码   (6–12位)</string>
+    <string name="pyw_resetlogin_new_again">请再次输入新密码</string>
+    <string name="pyw_resetlogin_modify">立刻修改</string>
+    <string name="pyw_confirm_pay">确认支付</string>
+    <!-- 交易密码重置 -->
+    <string name="pyw_resetpay_old">请输入原有交易密码   (6位)</string>
+    <string name="pyw_resetpay_new">请输入新的交易密码   (6位)</string>
+    <string name="pyw_regist_success">亲已经注册成功了!</string>
+    <string name="pyw_buy_voucher_text">购买代金券</string>
+    <!-- 支付成功 -->
+    <string name="pyw_buy_success_title">支付成功</string>
+    <string name="pyw_buy_fail_title">支付失败</string>
+    <string name="pyw_buy_success">支付成功！已充值完成！</string>
+    <string name="pyw_buy_fail">支付失败！</string>
+    <string name="pyw_back_game">返回游戏</string>
+    <string name="pyw_networkunavilable">网络不可用，请检查当前网络状态</string>
+    <string name="pyw_login_tip">请先登录！</string>
+    <string name="pyw_layout_common_title_bar_back_desc">返回登录</string>
+    <!-- 快速注册 -->
+    <string name="pyw_layout_common_title_register">快速注册</string>
+
+    <!-- 返回游戏描述 -->
+    <string name="pyw_back_to_game">返回游戏</string>
+
+    <!-- 代金券列表title -->
+    <string name="pyw_my_voucher_title">我的代金券</string>
+    <string name="pyw_reset_pwd_title">设置新的账号密码</string>
+    <string name="pyw_reset_txt_title">您的账号为：</string>
+    <string name="pyw_net_exception_tip">网络异常,请重试</string>
+    <string name="pyw_phone_bind_result_title">该手机号没有绑定账户</string>
+
+</resources>

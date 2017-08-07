@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--MessageList-->
+    <dimen name="lib_message_width">345dp</dimen>
+</resources>

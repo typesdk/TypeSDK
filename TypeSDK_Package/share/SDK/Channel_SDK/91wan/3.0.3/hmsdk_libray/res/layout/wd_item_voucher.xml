@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wd_image_voucheritem_bg"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6" >
+
+        <LinearLayout
+            android:id="@+id/voucheritem_moneylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/wd_image_voucheritem_avatar" />
+
+            <TextView
+                android:id="@+id/voucheritem_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="200"
+                android:textColor="@android:color/white"
+                android:textSize="33sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="代金券"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voucheritem_moneylayout"
+            android:layout_centerHorizontal="true"
+            android:text="(指定游戏使用)"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/voucheritem_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" >
+
+        <TextView
+            android:id="@+id/voucheritem_gamename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:maxLines="2"
+            android:text="武林侠客之功夫熊猫"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+             android:id="@+id/voucheritem_moneyoverdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voucheritem_gamename"
+            android:layout_centerHorizontal="true"
+            android:maxLines="2"
+            android:text="2016-03-10到期"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

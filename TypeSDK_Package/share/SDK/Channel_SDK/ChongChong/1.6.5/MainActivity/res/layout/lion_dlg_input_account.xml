@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/lion_common_white_frame_nor"
+              android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/lion_dlg_edit_input_account"
+        android:layout_width="0.0dip"
+        android:layout_height="@dimen/lion_dlg_input"
+        android:layout_weight="1.0"
+        android:background="@null"
+        android:drawableLeft="@drawable/lion_icon_name_gray"
+        android:drawablePadding="7.5dip"
+        android:hint="@string/lion_hint_account"
+        android:textColorHint="@color/lion_common_text_gray"
+        android:paddingLeft="10.0dip"
+        android:singleLine="true"
+        android:textColor="@color/lion_common_black"
+        android:textSize="14.0sp" />
+
+    <ImageView
+        android:id="@+id/lion_dlg_iv_clear_input"
+        android:layout_width="@dimen/lion_dlg_input"
+        android:layout_height="@dimen/lion_dlg_input"
+        android:scaleType="center"
+        android:src="@drawable/lion_icon_del"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/lion_dlg_iv_get_more"
+        android:layout_width="@dimen/lion_dlg_input"
+        android:layout_height="@dimen/lion_dlg_input"
+        android:background="@drawable/lion_common_gray_frame_stoke_nor"
+        android:scaleType="center"
+        android:src="@drawable/lion_common_drop_selector" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/kg_common_background"
+    android:orientation="vertical" >
+    
+    <include
+        android:layout_weight="1"
+        layout="@layout/kg_common_title_bar" />
+    
+    <com.kugou.game.sdk.ui.widget.LoadingView
+        android:id="@+id/kg_loadingView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/kg_common_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" />   	
+        
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/kg_common_tips_bar_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:textColor="@color/kg_common_gray_lighter"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/kg_common_tips_bar_exchange_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:textColor="@color/kg_common_gray_lighter"
+            android:textSize="16sp" />
+    </LinearLayout>
+    
+		<Button
+	        android:id="@+id/kg_btn_summit"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/kg_btn_height"
+	        android:layout_marginTop="10dip"
+	        android:background="@drawable/kg_selector_btn_blue"
+	        android:shadowColor="#ff000fff"
+	        android:text="@string/kg_recharge_kubi_btn"
+	        android:textColor="#ffffffff"
+	        android:textSize="16sp" />
+</LinearLayout>

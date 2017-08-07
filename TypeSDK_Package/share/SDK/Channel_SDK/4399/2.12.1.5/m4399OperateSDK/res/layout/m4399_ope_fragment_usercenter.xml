@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 个人中心 个人中心Fragment by.zhengxu -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.m4399.operate.ui.widget.NavigationBarView
+        android:id="@+id/usercenter_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <cn.m4399.operate.ui.widget.UserInfoView
+                android:id="@+id/usercenter_userinfo_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp" />
+            <!-- 消息列表 -->
+
+            <ListView
+                android:id="@+id/usercenter_action_list_view_information_center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:divider="#000"
+                android:dividerHeight="0dp"
+                android:listSelector="@null"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            <!-- 账户控制列表 -->
+
+            <ListView
+                android:id="@+id/usercenter_action_list_view_account_center"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:divider="#000"
+                android:dividerHeight="0dp"
+                android:listSelector="@null"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            <!-- 投诉列表 -->
+
+            <ListView
+                android:id="@+id/usercenter_action_list_view_complaints_center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:divider="#000"
+                android:dividerHeight="0dp"
+                android:listSelector="@null"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

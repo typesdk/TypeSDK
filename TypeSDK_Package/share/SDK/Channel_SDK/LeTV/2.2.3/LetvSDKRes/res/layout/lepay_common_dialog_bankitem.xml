@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lepay_width_fillparent"
+    android:clickable="false" >
+    <TextView 
+        android:id="@+id/lepay_common_dialog_bankitem_lefttext"
+        style="@style/lepay_width_fillparent"
+        android:layout_marginBottom="5dp"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/lepay_common_dialog_13.0sp"
+        android:textColor="@color/lepay_common_dialog_font_color"/>
+    <TextView
+        android:id="@+id/lepay_common_dialog_bankitem_righttext"
+        style="@style/lepay_width_fillparent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="146dp"
+        android:textSize="@dimen/lepay_common_dialog_13.0sp"
+        android:textColor="@color/lepay_common_dialog_font_color"/>
+</RelativeLayout>

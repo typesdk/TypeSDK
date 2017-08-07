@@ -1,0 +1,36 @@
+{
+  "version":"2.1.5.20151218",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"GET"
+    ,"in_params":
+    {
+      "access_token" : ""
+    }
+    ,"out_url" :"http://open.zhuoyi.com/phone/index.php/ILoginAuth/auth"
+    ,"out_params" :
+    {
+      "access_token" : ""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+      "Recharge_Id": ""
+      ,"App_Id": ""
+      ,"Uin": ""
+      ,"Recharge_Money": ""
+      ,"Pay_Status": ""
+      ,"Create_Time": ""
+      }
+    ,"out_url" :"http://open.zhuoyi.com/phone/index.php/ILoginAuth/auth"
+    ,"out_params" :
+      {
+        "status": ""
+      }
+    }
+  ]
+}

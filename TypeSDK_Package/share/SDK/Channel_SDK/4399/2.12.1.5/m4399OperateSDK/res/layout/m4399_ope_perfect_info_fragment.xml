@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/m4399_ope_perfect_bg"
+    android:orientation="vertical">
+
+<!--    <cn.m4399.operate.ui.widget.NavigationBarView
+        android:id="@+id/webview_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+    <include layout="@layout/m4399_ope_perfect_navigation_bar"/>
+
+    <cn.m4399.operate.ui.widget.CommonEditView
+        android:id="@+id/perfect_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <cn.m4399.operate.ui.widget.CommonEditView
+        android:id="@+id/perfect_realname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <cn.m4399.operate.ui.widget.CommonEditView
+        android:id="@+id/perfect_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <cn.m4399.operate.ui.widget.CommonEditView
+        android:layout_marginTop="@dimen/m4399_ope_perfect_la_margin_top"
+        android:id="@+id/perfect_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <cn.m4399.operate.ui.widget.CommonEditView
+        android:id="@+id/perfect_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                android:layout_width = "@dimen/umipay_main_diglog_width"
+                android:layout_height = "match_parent" >
+
+	<TextView
+			android:id = "@+id/umipay_logininfo_tips_tv"
+			android:maxWidth = "180dp"
+			android:layout_width = "wrap_content"
+			android:layout_height = "wrap_content"
+			android:paddingTop = "12dp"
+			android:paddingBottom = "12dp"
+			android:paddingLeft = "20dp"
+			android:paddingRight = "20dp"
+			android:layout_centerHorizontal = "true"
+			android:layout_alignParentTop = "true"
+			android:gravity = "center"
+			android:text = "@string/umipay_welcome"
+			android:singleLine = "true"
+			android:ellipsize = "middle"
+			android:textSize = "14sp"
+			android:textColor = "@color/umipay_gainsboro"
+			android:background = "@drawable/umipay_login_tips_background_stroke" />
+
+	<LinearLayout
+			android:id = "@+id/umipay_logininfo_content_ll"
+			android:layout_width = "match_parent"
+			android:layout_height = "wrap_content"
+			android:background = "@drawable/umipay_background_stroke"
+			android:gravity = "center"
+			android:layout_centerHorizontal = "true"
+			android:layout_centerVertical = "true"
+			android:orientation = "vertical" >
+
+		<ImageView
+				android:layout_width = "120dp"
+				android:layout_height = "60dp"
+				android:layout_marginTop = "10dp"
+				android:layout_marginBottom = "10dp"
+				android:src = "@drawable/umipay_logo_white" />
+
+		<TextView
+				android:id = "@+id/umipay_logininfo_status_tv"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginBottom = "10dp"
+				android:singleLine = "true"
+				android:gravity = "center_horizontal"
+				android:layout_gravity = "center"
+				android:textColor = "@color/umipay_gainsboro"
+				android:textSize = "18dp"
+				android:text = "@string/umipay_logininfo_welcome" />
+
+		<TextView
+				android:id = "@+id/umipay_logininfo_username_tv"
+				android:maxWidth="180dp"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginBottom = "10dp"
+				android:focusable = "true"
+				android:focusableInTouchMode = "true"
+				android:gravity = "center_horizontal"
+				android:layout_gravity = "center"
+				android:singleLine="true"
+				android:ellipsize = "marquee"
+				android:marqueeRepeatLimit = "marquee_forever"
+				android:textColor = "@color/umipay_orange"
+				android:textSize = "19sp" />
+
+
+		<FrameLayout
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_marginBottom = "10dp" >
+
+			<ImageView
+					android:layout_width = "240dp"
+					android:layout_height = "5dp"
+					android:layout_gravity = "center_vertical"
+					android:layout_marginBottom = "3dp"
+					android:layout_marginTop = "3dp"
+					android:background = "@drawable/umipay_loading_bg" />
+
+			<ImageView
+					android:id = "@+id/umipay_logininfo_progress"
+					android:layout_width = "18dp"
+					android:layout_height = "6dp"
+					android:layout_gravity = "center_vertical"
+					android:background = "@drawable/umipay_loading_bg" />
+		</FrameLayout >
+
+		<TextView
+				android:id = "@+id/umipay_logininfo_entergame_tv"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:gravity = "center"
+				android:layout_marginBottom = "10dp"
+				android:text = "@string/umipay_logining"
+				android:textColor = "@color/umipay_silver"
+				android:textSize = "11sp" />
+
+		<Button
+				android:id = "@+id/umipay_logininfo_cancel"
+				android:layout_width = "72dp"
+				android:layout_height = "30dp"
+				android:layout_marginBottom = "20dp"
+				android:gravity = "center"
+				android:background = "@drawable/umipay_btn_cancel_login"
+				android:text = "@string/umipay_autologin_cancel"
+				android:textColor = "@color/umipay_royal_blue_dark"
+				android:textSize = "12sp" />
+
+	</LinearLayout >
+</RelativeLayout >

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+  
+ <!-- 修改密码布局 -->
+ <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/modifyPWLayout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/loginLayout"
+      >
+
+     <LinearLayout
+         android:id="@+id/pwBtnLayout"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/sy37_layout_white_bg"
+         android:gravity="center_vertical"
+         android:orientation="horizontal"
+         >
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dip"
+             android:src="@drawable/sy37_change_password" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="8.0dip"
+             android:layout_weight="1.0"
+             android:text="@string/fg_modify_pw"
+             android:textColor="@color/s_orange"
+             android:textSize="20.0sp" />
+
+         <Button
+             android:id="@+id/modifyPWback"
+             style="@style/backBut"
+              />
+     </LinearLayout>
+
+     <TableLayout
+         android:id="@+id/modifyDesc"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/pwBtnLayout"
+         android:layout_gravity="center_horizontal"
+         android:layout_marginTop="5dip"
+         android:background="@drawable/sy37_kefu_bg_modifypw_et"
+         android:gravity="center"
+         android:orientation="horizontal" >
+
+         <TableRow
+             android:layout_marginBottom="5.0dip"
+             android:layout_marginLeft="15.0dip"
+             android:layout_marginRight="15dip"
+             android:layout_marginTop="5dip"
+             android:layout_weight="1.0"
+             android:gravity="bottom" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/fg_old_pw"
+                 android:textColor="@color/s_gray"
+                 android:textSize="18sp" />
+
+             <EditText
+                 android:id="@+id/oldPW"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1.0"
+                 android:background="@null"
+                 android:hint="@string/fg_old_pw_hint"
+                 android:inputType="textCapWords"
+                 android:maxLength="20"
+                 android:singleLine="true"
+                 android:textColor="@color/s_light_gray"
+                 android:textSize="18sp" />
+         </TableRow>
+
+
+         <TableRow
+             android:layout_marginBottom="5dip"
+             android:layout_marginLeft="15.0dip"
+             android:layout_marginRight="15dip"
+             android:layout_marginTop="10.0dip"
+             android:layout_weight="1.0"
+             android:gravity="top" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/fg_new_pw"
+                 android:textColor="@color/s_gray"
+                 android:textSize="18sp" />
+
+             <EditText
+                 android:id="@+id/newsPW"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1.0"
+                 android:background="@null"
+                 android:hint="@string/fg_new_pw_hint"
+                 android:inputType="textCapWords"
+                 android:maxLength="20"
+                 android:singleLine="true"
+                 android:textColor="@color/s_light_gray"
+                 android:textSize="18sp" />
+         </TableRow>
+         
+         <TableRow
+             android:layout_marginBottom="5dip"
+             android:layout_marginLeft="15.0dip"
+             android:layout_marginRight="15dip"
+             android:layout_marginTop="6.0dip"
+             android:layout_weight="1.0"
+             android:gravity="top" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/fg_new_pw_conform"
+                 android:textColor="@color/s_gray"
+                 android:textSize="18sp" />
+
+             <EditText
+                 android:id="@+id/newsPWConform"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1.0"
+                 android:background="@null"
+                 android:hint="@string/fg_new_pw_conform_hint"
+                 android:inputType="textCapWords"
+                 android:maxLength="20"
+                 android:singleLine="true"
+                 android:textColor="@color/s_light_gray"
+                 android:textSize="18sp" />
+         </TableRow>
+     </TableLayout>
+
+     <Button
+         android:id="@+id/modifySub"
+         android:layout_width="fill_parent"
+         android:layout_height="40dip"
+         android:layout_below="@id/modifyDesc"
+         android:layout_marginTop="10dip"
+         android:background="@drawable/sy37_kefu_submit"
+         android:text="@string/fg_submit"
+         android:textColor="@color/s_white"
+         android:textSize="23sp" />
+ </RelativeLayout>
+    

@@ -1,0 +1,173 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/reg_content_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/normal_margin_8"
+            android:paddingRight="@dimen/normal_margin_8" >
+
+            <RelativeLayout
+                android:id="@+id/user_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin_16" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lvansdk_login_input"
+                    android:gravity="center_vertical" >
+
+                    <ImageView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/lvansdk_user"
+                        android:src="@drawable/lvansdk_user" />
+
+                    <EditText
+                        android:id="@+id/txt_username"
+                        style="@style/sdkUsernameInput"
+                        android:background="@android:color/transparent"
+                        android:cursorVisible="true"
+                        android:drawableLeft="@drawable/lvansdk_vertical_line"
+                        android:drawablePadding="8dp"
+                        android:hint="@string/register_user_text"
+                        android:inputType="text"
+                        android:textColor="#333333" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/username_clear_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:padding="6dp"
+                    android:src="@drawable/lvansdk_search_clear_normal"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/iw_password_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin_8"
+                android:background="@drawable/lvansdk_login_input" >
+
+                <ImageView
+                    android:id="@+id/iv_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/normal_margin_16"
+                    android:layout_marginRight="@dimen/normal_margin_16"
+                    android:background="@drawable/lvansdk_pwd"
+                    android:src="@drawable/lvansdk_pwd" />
+
+                <CheckBox
+                    android:id="@+id/cb_password"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin_8"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/lvansdk_cb_password_bg"
+                    android:checked="false" />
+
+                <ImageButton
+                    android:id="@+id/password_clear_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toLeftOf="@id/cb_password"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/normal_margin_16"
+                    android:src="@drawable/lvansdk_search_clear_normal"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/txt_password"
+                    style="@style/sdkPasswordInput"
+                    android:layout_toLeftOf="@id/password_clear_btn"
+                    android:layout_toRightOf="@id/iv_pwd"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/lvansdk_vertical_line"
+                    android:drawablePadding="8dp"
+                    android:hint="@string/desc_password"
+                    android:inputType="textPassword"
+                    android:textColor="#333333" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_handle_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_content_panel"
+            android:layout_marginTop="@dimen/normal_margin_8"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/xieyi_check"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:button="@drawable/lvansdk_check_button_style"
+                android:checked="true" />
+
+            <TextView
+                android:id="@+id/tv_rule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/normal_margin_16"
+                android:layout_toRightOf="@id/xieyi_check"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:text="@string/txt_agree"
+                android:textColor="#000000"
+                android:textSize="14sp" 
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/reg_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_handle_panel"
+            android:layout_marginLeft="@dimen/normal_margin_8"
+            android:layout_marginRight="@dimen/normal_margin_8"
+            android:layout_marginTop="@dimen/normal_margin_8"
+            android:background="@drawable/lvansdk_btn_style_one_normal"
+            android:text="@string/Registration_btntxt"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/user_button_size" />
+
+        <TextView
+            android:id="@+id/tv_blank"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/normal_margin_16"
+            android:layout_below="@id/reg_btn"
+            android:layout_marginLeft="@dimen/normal_margin_8"
+            android:layout_marginRight="@dimen/normal_margin_8"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/list_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/egame_loading_titile"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_54"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:background="@color/egame_usersdk_white" >
+
+        <include
+            layout="@layout/egame_user_sdk_activity_title"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/egame_des_imageview" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_26"
+            android:text="@string/egame_loading_loading"
+            android:textColor="@color/egame_usersdk_light_gray"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_noData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_noData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/egame_ico_state_helpless"
+            android:contentDescription="@string/egame_des_imageview"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/tv_noData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_3"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:text="@string/egame_loading_noData"
+            android:textColor="@color/egame_usersdk_light_gray"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/egame_ico_state_halo"
+            android:contentDescription="@string/egame_des_imageview" />
+
+        <TextView
+            android:id="@+id/btn_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_16"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:text="@string/egame_loading_err"
+            android:textColor="@color/egame_usersdk_light_gray"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+
+</RelativeLayout>

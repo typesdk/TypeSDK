@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <LinearLayout
+                    android:id="@+id/lib_selected_account_layout_main"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/lib_start_account_background_land"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    >
+
+                <ImageView
+                        android:id="@+id/login_start_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/lib_button_close_selector"/>
+
+                <ImageView
+                        android:id="@+id/login_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/lib_login_icon"/>
+
+                <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lib_select_account_divider"
+                        android:layout_marginTop="20dp"
+                        />
+
+                <RelativeLayout
+                        android:id="@+id/lib_selected_account_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginRight="22dp">
+
+                    <ImageView
+                            android:id="@+id/lib_platform_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/lib_logo_star_game"/>
+
+                    <TextView
+                            android:id="@+id/lib_name"
+                            style="@style/LibSelectAccountTextStyle"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:hint="@string/lib_name_hint"
+                            android:singleLine="true"
+                            android:layout_toRightOf="@id/lib_platform_tip"
+                            android:layout_toLeftOf="@+id/lib_select_account_layout"/>
+
+                    <LinearLayout
+                            android:id="@id/lib_select_account_layout"
+                            android:layout_width="46dp"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center">
+
+                        <ImageView
+                                android:id="@+id/lib_select_account"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/lib_select_account_arrow"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                        android:id="@+id/lib_popup_window_anchor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/lib_select_account_divider"
+                        />
+
+                <LinearLayout
+                        android:id="@+id/lib_login_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="25dp">
+
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:gravity="center"
+                            android:text="@string/lib_start"
+                            android:textColor="@color/lib_white"
+                            android:textSize="21sp"
+                            android:background="@drawable/lib_button_red_background">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

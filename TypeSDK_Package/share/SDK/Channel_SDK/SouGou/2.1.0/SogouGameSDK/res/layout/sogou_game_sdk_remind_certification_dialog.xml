@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sogou_game_sdk_exit_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sogou_game_sdk_exit_dialog_bg">
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="实名信息填写"
+        android:textColor="@color/sogou_game_sdk_color_333333"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/sogou_game_sdk_tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="下次再填"
+        android:textColor="@color/sogou_game_sdk_color_ff8a00"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/sogou_game_sdk_btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/sogou_game_sdk_bt_red"
+        android:text="去填写"
+        android:textColor="@color/sogou_game_sdk_white"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@id/sogou_game_sdk_tv_title"
+        android:layout_above="@id/sogou_game_sdk_btn_ok">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="亲爱的玩家，您好，
+搜狗手游为响应国家《文化部关于规范网络游戏运营加强事中事后监管工作的通知》政策，需要登记您的实名信息。搜狗游戏承诺绝不会泄露您的信息，您提交的信息只留作备案储存。
+几周之后，没有实名登记的用户将可能无法正常登录游戏。请您尽快提交实名信息，感谢您的配合。"
+            android:textColor="@color/sogou_game_sdk_color_333333"
+            android:textSize="15sp" />
+    </ScrollView>
+</RelativeLayout>

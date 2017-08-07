@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/mg_forum_post_item_padding"
+              android:background="@android:color/white">
+
+    <view class="com.papa91.pay.widget.RoundedImageView" android:layout_width="42dp"
+          android:layout_height="42dp" android:id="@+id/avatar"
+          android:src="@drawable/main_normal_icon"
+          android:scaleType="centerCrop"
+            />
+          <!--app:riv_corner_radius="@dimen/mg_forum_avatar_round_width"-->
+          <!--app:riv_border_width="@dimen/mg_forum_avatar_round_stroke_width"-->
+          <!--app:riv_oval="false"-->
+          <!--app:riv_border_color="@color/mg_forum_avatar_round_stroke_color"-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="42dp"
+                  android:orientation="horizontal">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="昵称"
+                    android:id="@+id/nickName"
+                    android:textColor="#353535" android:textSize="15sp"
+                    android:gravity="center_vertical"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="时间"
+                    android:id="@+id/desc"
+                    android:textColor="#a9a9a9" android:textSize="12sp"
+                    android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/follow"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp">
+
+            <ImageView
+                    android:id="@+id/followImg"
+                    android:layout_width="62dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/forum_follow_1"
+                    android:layout_gravity="right"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+
+            <ImageView
+                    android:id="@+id/followedImg"
+                    android:layout_width="59dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/forum_unfollow_1"
+                    android:layout_gravity="right"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

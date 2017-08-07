@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sogou_game_sdk_white"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/sogou_game_sdk_pay_input"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:scrollbars="none" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_record_success_label"
+            style="@style/sogou_game_sdk_pay_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sogou_game_sdk_pay_record_success_text" />
+
+        <ImageView
+            android:id="@+id/sogou_game_sdk_pay_tab_img_line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/sogou_game_sdk_pay_record_line_descrip"
+            android:src="@drawable/sogou_game_sdk_pay_record_black_line" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_record_solveFail_label"
+            style="@style/sogou_game_sdk_pay_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sogou_game_sdk_pay_record_fail_text" />
+
+        <ImageView
+            android:id="@+id/sogou_game_sdk_pay_tab_img_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/sogou_game_sdk_pay_record_line_descrip"
+            android:src="@drawable/sogou_game_sdk_pay_record_black_line" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_record_solving_label"
+            style="@style/sogou_game_sdk_pay_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/sogou_game_sdk_pay_record_solving_string" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_record_account_label"
+            style="@style/sogou_game_sdk_pay_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="@string/sogou_game_sdk_pay_record_account" />
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_pay_record_norecord_label"
+            style="@style/sogou_game_sdk_pay_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/sogou_game_sdk_pay_record_norecord_text" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/sogou_game_sdk_pay_record_list"
+        android:layout_width="197dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/sogou_game_sdk_white"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="none"
+        android:divider="@color/sogou_game_sdk_white"
+        android:dividerHeight="6dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollingCache="true" />
+
+</LinearLayout>

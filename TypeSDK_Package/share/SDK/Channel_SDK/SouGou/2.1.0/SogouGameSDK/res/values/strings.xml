@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sogou_game_sdk_isexit">是否退出游戏？</string>
+    <string name="sogou_game_sdk_yes">是</string>
+    <string name="sogou_game_sdk_no">否</string>
+    <!-- SDK三期字符定义 -->
+    <string name="sogou_game_sdk_head_title">搜狗游戏</string>
+    <string name="sogou_game_sdk_loading_check">正在检查账号...</string>
+    <string name="sogou_game_sdk_loading_express_id">正在使用快注账号登录...</string>
+    <string name="sogou_game_sdk_loading_main_id">正在使用使用普通账号登录...</string>
+
+    <!-- 用户体系 -->
+    <string name="sogou_game_sdk_login_qq_sso">QQ 一键登录</string>
+    <string name="sogou_game_sdk_login_express">搜狗一键登录</string>
+    <string name="sogou_game_sdk_login_other">其他帐号登录 >></string>
+    <string name="sogou_game_sdk_login_akey">一键登录</string>
+    <string name="sogou_game_sdk_login_express_user">游客 %1$s</string>
+    <string name="sogou_game_sdk_login_alert_user_label">搜狗通行证</string>
+    <string name="sogou_game_sdk_login_alert_loading">登录中...</string>
+    <string name="sogou_game_sdk_login_input_passwd_label">请输入密码</string>
+    <string name="sogou_game_sdk_login_page_img_tips">登录页面图片描述</string>
+    <string name="sogou_game_sdk_login_btn_label">登录</string>
+    <string name="sogou_game_sdk_login_remember_password_label">第三方账号登录</string>
+    <string name="sogou_game_sdk_login_forgot_password_label">忘记密码</string>
+    <string name="sogou_game_sdk_login_title_label">搜狗账号登录</string>
+    <string name="sogou_game_sdk_bindin_sogou_btn">搜狗账号</string>
+    <string name="sogou_game_sdk_bindin_qq_btn">Q Q</string>
+    <string name="des_other">或者绑定:</string>
+    <string name="sogou_game_sdk_bindin_pwd_edit">设置密码: 6-20个字符，区分大小写</string>
+    <string name="sogou_game_sdk_login_input_user_name_label">请输入账号</string>
+    <string name="sogou_game_sdk_login_third_loading">数据加载中...</string>
+    <string name="sogou_game_sdk_login_tips">登录中&#8230;</string>
+    <string name="sogou_game_sdk_login_title_qq">QQ登录</string>
+    <string name="sogou_game_sdk_login_title_sina">新浪微博登录</string>
+    <string name="sogou_game_sdk_login_title_renren">人人登录</string>
+    <string name="sogou_game_sdk_login_label">登录</string>
+    <string name="sogou_game_sdk_reg_agree"><u>&#x0020;同意</u></string>
+    <string name="sogou_game_sdk_reg_protocol"><u>《搜狗服务使用协议》</u></string>
+    <string name="sogou_game_sdk_reg_tips">注册中&#8230;</string>
+    <string name="sogou_game_sdk_reg_succeed">恭喜你，注册成功!</string>
+    <string name="sogou_game_sdk_feed_back_msg">您也可以联系搜狗手游企业客服 QQ:xxxx</string>
+    <string name="sogou_game_sdk_bindin_submit_btn">确 定</string>
+    <string name="sogou_game_sdk_bindin_other">不,我就是老用户 >></string>
+    <string name="des_title">请您为在该游戏的搜狗游客ID绑定账号</string>
+    <string name="des_info">操作完成之后，请使用绑定账号进行登录</string>
+
+    <!-- 支付中心 -->
+    <string name="sogou_game_sdk_pay_scoin_pw_tips">第一次请设置支付密码</string>
+    <string name="sogou_game_sdk_pay_scoin_about">什么是S豆？</string>
+    <string name="sogou_game_sdk_pay_scoin_modify_pwd">修改支付密码</string>
+    <string name="sogou_game_sdk_pay_alipay">支付宝</string>
+    <string name="sogou_game_sdk_pay_wxpay">微信</string>
+    <string name="sogou_game_sdk_pay_refresh">刷新</string>
+    <string name="sogou_game_sdk_pay_deposit_card">储蓄卡</string>
+    <string name="sogou_game_sdk_pay_union">银联</string>
+    <string name="sogou_game_sdk_pay_credit_card">信用卡</string>
+    <string name="sogou_game_sdk_pay_scoin">S豆充值</string>
+    <string name="sogou_game_sdk_pay_jcard">骏网一卡通</string>
+    <string name="sogou_game_sdk_pay_record">充值记录</string>
+    <string name="sogou_game_sdk_pay_Bonus">我的红包</string>
+    <string name="sogou_game_sdk_pay_voucher">我的代金券</string>
+    <string name="sogou_game_sdk_pay_redpkg">我的红包</string>
+    <string name="sogou_game_sdk_pay_phone_dropdown">请选择充值卡</string>
+    <string name="sogou_game_sdk_pay_phone_card_head">电话充值卡支付</string>
+    <string name="sogou_game_sdk_pay_phone_card_subhead">支持中国移动、联通、电信充值卡支付</string>
+    <string name="sogou_game_sdk_pay_telcom">电信充值卡</string>
+    <string name="sogou_game_sdk_pay_unicom">联通充值卡</string>
+    <string name="sogou_game_sdk_pay_mobile">移动充值卡</string>
+    <string name="sogou_game_sdk_pay_aliwap">网银充值</string>
+    <string name="sogou_game_sdk_pay_scoin_balance">账号余额：%1$sS豆</string>
+    <string name="sogou_game_sdk_pay_user">账号：%1$s</string>
+    <string name="sogou_game_sdk_pay_game_info">游戏红包余额：%1$s元</string>
+    <string name="sogou_game_sdk_pay_money">充值金额：%1$s元</string>
+    <string name="sogou_game_sdk_pay_wallet_history">查看红包记录 >></string>
+    <string name="sogou_game_sdk_pay_wallet_count">收到红包%1$s个</string>
+    <string name="sogou_game_sdk_pay_use_voucher">使用%1$s元代金券 >></string>
+    <string name="sogou_game_sdk_pay_use_voucher_default">使用代金券>></string>
+    <string name="sogou_game_sdk_pay_un_use_voucher">取消使用代金券</string>
+    <string name="sogou_game_sdk_pay_goods">购买商品：%1$s%2$s</string>
+    <string name="sogou_game_sdk_pay_product">道具名称：%1$s</string>
+    <string name="sogou_game_sdk_pay_confirm">确认充值</string>
+    <string name="sogou_game_sdk_pay_bonus_hint">新消息提示：</string>
+    <string name="sogou_game_sdk_pay_bonus_message">您新收到一个红包 %1$s元</string>
+    <string name="sogou_game_sdk_pay_bonus_balance">XXX游戏红包余额：%1$s元</string>
+    <string name="sogou_game_sdk_pay_bonus_received">收到的红包 %1$s个</string>
+    <string name="sogou_game_sdk_pay_links_bonus">查看红包记录>></string>
+    <string name="sogou_game_sdk_pay_bonus_confirm">确认用红包付款</string>
+    <string name="sogou_game_sdk_pay_feedback">如有任何问题请点击问题反馈</string>
+    <string name="sogou_game_sdk_pay_red_feedback">红包是搜狗平台推出的一款优惠产品，不定期通过活动的形式发放给玩家的一种虚拟货币，红包里的金额可以用来购买游戏道具，为游戏充值。本活动由朋友玩支持。如有任何问题请点击问题反馈。
+</string>
+    <string name="sogou_game_sdk_pay_tips">温馨提示:</string>
+    <string name="sogou_game_sdk_pay_debit_card">借记卡</string>
+    <string name="sogou_game_sdk_pay_record_account">账号:%1$s</string>
+    <string name="sogou_game_sdk_pay_head_title">充值中心</string>
+    <string name="sogou_game_sdk_ok">确认</string>
+    <string name="sogou_game_sdk_pay_input_pay_pwd">请输入支付密码</string>
+    <string name="sogou_game_sdk_pay_input_pay_pwd_confirm">确认支付密码</string>
+    <string name="sogou_game_sdk_pay_input_pay_pwd_error_tips">两次密码不一致，请重新输入</string>
+    <string name="sogou_game_sdk_pay_other_amount">请输入其他金额</string>
+    <string name="sogou_game_sdk_pay_input_card_number">请输入充值卡号</string>
+    <string name="sogou_game_sdk_pay_input_card_pwd">请输入充值卡密码</string>
+    <string name="sogou_game_sdk_pay_aliwap_head_title_credit_card">网银在线-信用卡</string>
+    <string name="sogou_game_sdk_pay_aliwap_head_title_debit_card">网银在线-借记卡</string>
+    <string name="sogou_game_sdk_pay_confirm_install_hint">"安装提示"</string>
+    <string name="sogou_game_sdk_pay_confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="sogou_game_sdk_pay_ensure">"确定"</string>
+    <string name="sogou_game_sdk_pay_cancel">"取消"</string>
+    <string name="sogou_game_sdk_pay_amount_format_err_hint">"您输入的金额数值过大或格式错误！"</string>
+
+    <!-- 用户注册页 -->
+    <string name="sogou_game_sdk_reg_title_main">用户名</string>
+    <string name="sogou_game_sdk_reg_title_express">快速注册</string>
+    <string name="sogou_game_sdk_reg_tab_express">手机号</string>
+    <string name="sogou_game_sdk_reg_page_username_tips">用户名： 4-16个字符，字母开头。</string>
+    <string name="sogou_game_sdk_reg_page_password_tips">密  码： 6-16个字符，区分大小写。</string>
+    <string name="sogou_game_sdk_reg_page_captcha">输入验证码，点击图片刷新</string>
+    <string name="sogou_game_sdk_reg_btn_label">注册</string>
+    <string name="sogou_game_sdk_reg_account_perfect">完善账号可保障安全</string>
+    <string name="sogou_game_sdk_reg_account_perfect_success">成功完善账号</string>
+    <string name="sogou_game_sdk_reg_account_perfect_point_out1">● 永不丢失的游戏进度 </string>
+    <string name="sogou_game_sdk_reg_account_perfect_point_out1_success">恭喜%1$s,成功完善账号。</string>
+    <string name="sogou_game_sdk_reg_account_perfect_point_out2">● 更安全的充值环境</string>
+    <string name="sogou_game_sdk_reg_account_perfect_point_out2_success">您现在要退出游戏吗？</string>
+    <string name="sogou_game_sdk_reg_account_perfect_btn_back">退出游戏</string>
+    <string name="sogou_game_sdk_reg_account_perfect_btn_back_success">继续游戏</string>
+    <string name="sogou_game_sdk_reg_account_perfect_btn_right_away_perfect">立即完善</string>
+    <string name="sogou_game_sdk_reg_account_perfect_btn_right_away_perfect_success">退出游戏</string>
+    <string name="sogou_game_sdk_reg_account_perfect_ok">确认完善</string>
+    <string name="sogou_game_sdk_reg_mobile_tips">手机号: 请输入手机号</string>
+    <string name="sogou_game_sdk_reg_mobile_captcha_tips">验证码: 5位验证码</string>
+    <string name="sogou_game_sdk_reg_mobile_pwd_tips">密  码: 6-20个字符，区分大小写</string>
+    <string name="sogou_game_sdk_reg_mobile_verify_tips">获取验证码</string>
+
+    <!-- 问题反馈页面 -->
+    <string name="sogou_game_sdk_feed_back_contact_label">联系方式:</string>
+    <string name="sogou_game_sdk_feed_back_input_hint">请输入QQ或手机号</string>
+    <string name="sogou_game_sdk_feed_back_issues_label_text">问题描述:</string>
+    <string name="sogou_game_sdk_feed_back_submitBtn_label">提交</string>
+    <string name="sogou_game_sdk_feed_back_info_string">温馨提示:为了安全请不要在提问中泄露账号密码等信息,我们将尽快给您回复</string>
+    <string name="sogou_game_sdk_feed_back_recordBtn_label">反馈记录</string>
+    <string name="sogou_game_sdk_feed_back_record_count_text">反馈共计0条</string>
+    <string name="sogou_game_sdk_feed_back_record_friendlyInfo_text">友情提示:记录只显示最新提交的10条</string>
+    <string name="sogou_game_sdk_feed_back_record_item_issues_label_text">问题：</string>
+    <string name="sogou_game_sdk_feed_back_record_item_feed_content_text">反馈：</string>
+    <string name="sogou_game_sdk_feed_back_head_title">问题反馈</string>
+
+    <!-- 充值记录 -->
+    <string name="sogou_game_sdk_pay_record_success_text">成功</string>
+    <string name="sogou_game_sdk_pay_record_fail_text">失败</string>
+    <string name="sogou_game_sdk_pay_record_solving_string">处理中</string>
+    <string name="sogou_game_sdk_pay_record_account_label_string">账号:</string>
+    <string name="sogou_game_sdk_pay_record_line_descrip"></string>
+    <string name="sogou_game_sdk_pay_record_norecord_text">该分类暂无记录</string>
+    <string name="sogou_game_sdk_pay_record_title">充值记录</string>
+
+    <!-- 内悬浮 -->
+    <string name="sogou_game_sdk_float_menu_forum">论坛</string>
+    <string name="sogou_game_sdk_float_menu_service">客服</string>
+    <string name="sogou_game_sdk_float_menu_recom_game">推荐游戏</string>
+    <string name="sogou_game_sdk_float_menu_user">账户</string>
+    <string name="sogou_game_sdk_float_menu_pack">礼包</string>
+    <string name="sogou_game_sdk_float_menu_activity">活动</string>
+    <string name="sogou_game_sdk_float_menu_perfect_account">完善账号</string>
+
+    <!-- 活动 -->
+    <string name="sogou_game_sdk_activity_dialog_des">《暂无活动，敬请期待》</string>
+    <!-- 代金卷 -->
+    <string name="sogou_game_sdk_pay_voucher_view_tv">获得代金券</string>
+    <string name="sogou_game_sdk_pay_voucher_view_tv1">您可用的代金券</string>
+    <string name="sogou_game_sdk_pay_voucher_view_tv2">不使用</string>
+    <string name="blank_page_manager_msg">空落落的,感觉不会再爱了</string>
+    <string name="sogou_game_sdk_looding">正在努力加载中...</string>
+    <string name="passport_string_title_findpassword">找回密码</string>
+    <string name="passport_string_title_login">登录</string>
+    <string name="passport_string_titleright_login">注册</string>
+    <string name="passport_string_title_regist_page1">填写手机号</string>
+    <string name="passport_string_title_regist_page2">填写验证码、密码</string>
+    <string name="passport_string_title_regist_page3">协议</string>
+    <string name="passport_string_content_regist_retrieve_verifycode_btn">重获验证码</string>
+    <string name="passport_string_content_sso_check_info">检测到搜狗产品中已登录的账号，请点击登录</string>
+    <string name="passport_string_content_sso_other_login">其他登录方式</string>
+    <string name="passport_string_content_sso_bottom_tip">没有账号？</string>
+    <string name="passport_string_content_sso_bottom_regist">立即注册</string>
+    <string name="passport_string_title_sso">快速登录</string>
+    <!-- 红包记录 -->
+    <string name="sogou_game_sdk_pay_bonus_record_view_tv">红包记录:</string>
+    <string name="sogou_game_sdk_pay_bonus_record_back_tv">返回我的红包 >></string>
+    <string name="sogou_game_sdk_pay_bonus_record_item_amount">红包 %1$s元</string>
+    <!-- 礼包中心 -->
+    <string name="sogou_game_sdk_giftcenter_view_head_gift_count">礼包个数：%1$s个</string>
+    <string name="sogou_game_sdk_giftcenter_view_head_gift_detail_remainscount">剩余数量：%1$s个</string>
+    <string name="sogou_game_sdk_giftcenter_view_bag_item_getgift">领取</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_reco_item_install">安装</string>
+    <string name="sogou_game_sdk_giftcenter_view_bag_item_key">激活码：%1$s</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_bag_item_gotgift">已领取</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_bag_item_copy">复制</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_gift_item_install">安装</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_activationcode">激活码：%1$s</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_head_title">搜狗礼包中心</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_details_expiredformat">截止至%1$s</string>
+    <string name="sogou_game_sdk_pay_giftcenter_view_head_gift_detail_name">《%1$s》%2$s</string>
+    <string name="sogou_game_sdk_mygift_expired">已过期</string>
+    <string name="sogou_game_sdk_pay_giftcenter_recotv">大家还领了这些礼包</string>
+    <string name="sogou_game_sdk_pay_giftcenter_empty_msg">《%1$s》暂时没有可领取的礼包，来看看其他游戏的礼包吧~</string>
+    <string name="sogou_game_sdk_pay_giftcenter_game_name_format">《%1$s》</string>
+
+    <!--账户-->
+    <string name="sogou_game_sdk_float_account_record_amount">支付%1$s元</string>
+    <string name="sogou_game_sdk_float_account_record_setting">前去设置</string>
+    <string name="sogou_game_sdk_switch_account_text">切换账号></string>
+    <string name="sogou_game_sdk_switch_account_setting_setting">立即设置</string>
+    <string name="sogou_game_sdk_switch_account_setting_update">确认修改</string>
+    
+    <!-- 登录注册流程-->
+    <string name="sogou_game_sdk_one_click_login">一键登录</string>
+    <string name="sogou_game_sdk_one_click_login_note">发送短信完成验证 手机号即为账号</string>
+    <string name="sogou_game_sdk_other_login">其他方式注册、登录</string>
+    
+    <!-- 游戏猫-->
+    <string name="gamecat_phone_number">"手机号码"</string>
+    <string name="gamecat_wrong_phone_number">"*请输入正确的账号"</string>
+
+    <string name="gamecat_password">"密码（6~18位数字或字符）"</string>
+    <string name="gamecat_wrong_password">"*密码错误"</string>
+    <string name="gamecat_new_password">"新密码（6~18位数字或字符）"</string>
+    <string name="gamecat_verification">"验证码"</string>
+    <string name="gamecat_get_verification">"获取验证码"</string>
+    <string name="gamecat_wrong_verification">"*验证码错误"</string>
+    <string name="gamecat_ok">"完成"</string>
+    <string name="sogou_game_sdk_title_activity_we_chat_pay">搜狗支付</string>
+    
+    <!-- Q2 -->
+    <string name="sogou_game_sdk_personal_center">个人中心</string>
+</resources>

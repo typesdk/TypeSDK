@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SapiTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:screenOrientation">sensor</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme"></style>
+
+    <style name="translucent" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@color/transparent_75</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="hintTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+
+    <style name="icon_common_style">
+        <item name="android:layout_width">@dimen/line_height</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:contentDescription">@string/img</item>
+    </style>
+
+    <style name="edit_common_style">
+        <item name="android:textSize">@dimen/text_size_7</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="iapppay_prompt_dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>    
+　　 		<item name="android:windowNoTitle">true</item>   
+		<item name="android:textColor">@color/ipay_color_5</item>
+		<item name="android:windowBackground">@color/transparent</item>
+    	<item name="android:windowIsFloating">true</item>
+    </style>
+    
+</resources>

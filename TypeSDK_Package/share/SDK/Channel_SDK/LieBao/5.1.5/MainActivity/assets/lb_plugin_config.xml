@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin name="com.liebao.join.sdk.MyLBUser" type="1" desc="用户登录接口"/>
+<plugin name="com.liebao.join.sdk.MyLBPay" type="2" desc="用户支付接口"/>
+<plugin name="com.liebao.join.sdk.MyLBData" type="3" desc="统计数据接口"/>
+<plugin name="com.liebao.join.sdk.MyLBVersion" type="4" desc="升级接口"/>

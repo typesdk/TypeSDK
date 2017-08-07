@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    style="@style/gfan_cancel_bg"
+
+    >
+
+    <ImageView
+        android:id="@+id/iv_cancel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/gfan_cancel_bg" />
+</RelativeLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_base_cancel_layout.xml -->

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/yyh_corner_white_bg" >
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/yyh_activity_close" />
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="35dp"
+        android:text="活动"
+        android:textColor="@color/yyh_black"
+        android:textSize="18dp" />
+
+    <ScrollView
+        android:id="@+id/yyh_dialog_scontent"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/page_title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/yyh_dialog_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yyh_black" />
+
+            <TextView
+                android:id="@+id/yyh_dialog_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="http://www.baidu.com"
+                android:textColor="@color/yyh_black"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/yyh_dialog_ckbnomorealert"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/yyh_dialog_scontent"
+        android:layout_gravity="center_horizontal"
+        android:background="#ebebeb"
+        android:button="@null"
+        android:drawableLeft="@drawable/yyh_notifydialog_checkbox_selector"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/yyh_dialog_now_show"
+        android:textColor="#747474"
+        android:textSize="12sp" />
+
+</RelativeLayout>

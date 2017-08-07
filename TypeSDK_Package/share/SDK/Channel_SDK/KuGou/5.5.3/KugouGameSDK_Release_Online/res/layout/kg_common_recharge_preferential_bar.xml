@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kg_common_recharge_preferential_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/kg_rl_recharge_preferential"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/kg_shape_frame_gray_gray_back"
+        android:paddingBottom="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/kg_rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/kg_iv_preferential_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/kg_recharge_preferential_icon" />
+
+            <TextView
+                android:id="@+id/kg_recharge_preferential_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/kg_iv_preferential_icon"
+                android:layout_toLeftOf="@+id/kg_tv_recharge_preferential_more"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="@string/kg_kubi_recharge_2"
+                android:textColor="@color/kg_common_gray_lighter"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/kg_iv_arrow"
+                android:layout_width="16dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/kg_blue_arrow_down" />
+
+            <TextView
+                android:id="@+id/kg_tv_recharge_preferential_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/kg_iv_arrow"
+                android:gravity="center_vertical"
+                android:text="@string/kg_kubi_recharge_3"
+                android:textColor="@color/kg_common_blue_lighter"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/kg_tv_recharge_preferential_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kg_rl_title"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/kg_kubi_recharge_8"
+            android:textColor="@color/kg_common_gray_lighter"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

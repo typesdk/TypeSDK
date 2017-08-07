@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/passport_activity_regist_btn_accept_down" android:state_enabled="true" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/passport_activity_regist_btn_accept_normal" android:state_enabled="true" android:state_pressed="false"></item>
+    <item android:drawable="@color/passport_color_activity_regist_page_psw_retrieve_btn_disable" android:state_enabled="false"></item>
+
+</selector>

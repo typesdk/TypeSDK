@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/lib_droi_account_land_titleBackground"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/title_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/lib_droi_account_land_title_marginleft"
+            android:background="@drawable/lib_droi_account_back_arrow"
+            android:onClick="onBack" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/lib_droi_account_app_name"
+            android:textColor="@color/lib_droi_account_land_titleColor"
+            android:textSize="@dimen/lib_droi_account_land_title_textSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left_land"
+        android:layout_marginRight="@dimen/lib_droi_account_global_margin_right_land"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/lib_droi_account_updated" />
+
+        <Button
+            android:id="@+id/lib_droi_account_btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/lib_droi_account_button_selector"
+            android:text="@string/lib_droi_account_ok"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

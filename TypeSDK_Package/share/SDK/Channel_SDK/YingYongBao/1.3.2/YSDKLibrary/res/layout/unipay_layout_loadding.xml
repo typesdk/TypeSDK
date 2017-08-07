@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+     android:id="@+id/unipay_id_ProgressDialog">
+     <!-- tips -->
+    <LinearLayout
+       style="@style/unipay_toast"
+       android:gravity="center"
+       android:padding="10dp"
+       android:layout_centerInParent="true">
+       <ProgressBar
+         android:id="@+id/unipay_progress"
+         android:layout_width="24dip"
+         android:layout_height="24dip"
+         android:indeterminateDrawable="@drawable/unipay_pic_load" 
+         />
+       
+       <TextView
+         android:id="@+id/unipay_id_LoadingTxt"
+         style="@style/unipay_text"
+         android:layout_marginLeft="5dp"
+         android:gravity="center"
+         android:textColor="#FFffffff"
+         android:text="请稍候&#8230;"/>
+    </LinearLayout>
+    <!-- tips over-->
+</RelativeLayout><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/unipay_layout_loadding.xml -->

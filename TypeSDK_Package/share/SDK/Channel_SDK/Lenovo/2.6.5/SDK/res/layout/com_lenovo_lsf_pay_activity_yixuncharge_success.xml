@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/com_lenovo_lsf_pay_goods_bg">
+
+
+
+     <ImageView
+            android:id="@+id/success_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/com_lenovo_lsf_pay_yixun_success" />
+     
+     
+     <TextView
+                android:id="@+id/confirm_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/success_icon"
+                android:text="@string/com_lenovo_lsf_pay_yixun_success_tip"
+                android:gravity="center"
+                android:textColor="#191919"
+                android:textSize="16sp" />
+      <TextView
+                android:id="@+id/success_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/confirm_tip"
+                android:gravity="center"
+                android:textColor="#757575"
+                android:textSize="12sp" />
+     
+
+    <Button
+        android:id="@id/pay_charge_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_above="@+id/nullid"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/com_lenovo_lsf_pay_btn_selector_up"
+        android:text="@string/com_lenovo_lsf_pay_dlg_ok_text" />
+    
+    <TextView
+        android:id="@id/nullid"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

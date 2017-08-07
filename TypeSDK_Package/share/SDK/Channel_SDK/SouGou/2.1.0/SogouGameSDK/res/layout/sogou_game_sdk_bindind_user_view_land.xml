@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sogou_game_sdk_login_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/sogou_game_sdk_bindin_phone_edit_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/sogou_game_sdk_bindin_phone_edit"
+            style="@style/sogou_game_sdk_bindin_edit"
+            android:hint="@string/sogou_game_sdk_reg_mobile_tips"
+            android:inputType="phone"
+            android:nextFocusDown="@+id/sogou_game_sdk_bindin_code_edit"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/sogou_game_sdk_bindin_phone_btn"
+            style="@style/sogou_game_sdk_bindin_bt_red"
+            android:layout_gravity="right"
+            android:background="@drawable/sogou_game_sdk_reg_bt"
+            android:text="@string/sogou_game_sdk_reg_mobile_verify_tips"
+            android:textColor="@color/sogou_game_sdk_white" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/sogou_game_sdk_bindin_code_edit"
+        style="@style/sogou_game_sdk_bindin_edit"
+        android:hint="@string/sogou_game_sdk_reg_mobile_captcha_tips"
+        android:inputType="numberSigned"
+        android:nextFocusDown="@+id/sogou_game_sdk_bindin_pwd_edit"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/sogou_game_sdk_bindin_pwd_edit"
+        style="@style/sogou_game_sdk_bindin_edit"
+        android:digits="0123456789QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm.@"
+        android:hint="@string/sogou_game_sdk_bindin_pwd_edit"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/des_other"
+            style="@style/sogou_game_sdk_bindin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/des_other"
+            android:textColor="@color/sogou_game_sdk_input_font_color" />
+<!-- 
+        <TextView
+            android:id="@+id/sogou_game_sdk_bindin_qq_btn"
+            android:layout_width="103dp"
+            android:layout_height="33.5dp"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="@string/sogou_game_sdk_bindin_qq_btn"
+            android:textColor="@color/sogou_game_sdk_color_000000"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/sogou_game_sdk_color_000000" /> -->
+
+        <TextView
+            android:id="@+id/sogou_game_sdk_bindin_sogou_btn"
+            android:layout_width="103dp"
+            android:layout_height="33.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center"
+            android:text="@string/sogou_game_sdk_bindin_sogou_btn"
+            android:textColor="@color/sogou_game_sdk_color_000000"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sogou_game_sdk_bindin_submit_btn"
+        style="@style/sogou_game_sdk_bindin_bt_red1"
+        android:layout_width="267dp"
+        android:layout_height="33.5dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/sogou_game_sdk_bt_red"
+        android:text="@string/sogou_game_sdk_bindin_submit_btn"
+        android:textSize="15sp" />
+
+</LinearLayout>

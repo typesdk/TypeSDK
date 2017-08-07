@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingBottom="10dp"
+              android:minWidth="@dimen/dp861"
+              android:gravity="center_horizontal"
+        >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:text="支付成功"
+            android:id="@+id/title"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    <TextView
+            android:layout_width="@dimen/dp861"
+            android:layout_height="wrap_content"
+            android:text="支付尚未完成,您确定放弃此次支付吗?"
+            android:id="@+id/message"
+            android:textColor="#8a8a8a"
+            android:layout_marginLeft="@dimen/dp39"
+            android:layout_marginRight="@dimen/dp39"
+            />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/noPhoneNotice"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp39"
+            android:layout_marginRight="@dimen/dp39"
+            >
+
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/notice_image"
+                android:layout_alignParentRight="false"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                android:layout_toLeftOf="@+id/noPhone"
+                android:id="@+id/imageView"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的账号存在安全风险,建议绑定手机"
+                android:id="@+id/notice"
+                android:textColor="@color/main_yello_color"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp30"
+                android:drawablePadding="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                />
+
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/papa_dialog_line"
+            />
+
+    <LinearLayout
+            android:layout_width="@dimen/dp861"
+            android:layout_height="@dimen/dp102"
+            android:layout_marginTop="@dimen/dp45"
+            android:layout_weight="0"
+            android:id="@+id/linearLayout"
+            >
+
+        <Button
+                android:id="@+id/bindPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/dp16"
+                android:background="@drawable/papa_cancel_exit_btn"
+                android:textColor="#3b3b3b"
+                android:textSize="@dimen/dp39"
+                android:text="返回游戏"
+                android:visibility="gone"
+                />
+
+        <Button
+                android:id="@+id/backGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp16"
+                android:background="@drawable/papa_pay_btn"
+                android:textSize="@dimen/dp39"
+                android:textColor="@color/white"
+                android:text="返回游戏"
+                />
+    </LinearLayout>
+
+</LinearLayout>

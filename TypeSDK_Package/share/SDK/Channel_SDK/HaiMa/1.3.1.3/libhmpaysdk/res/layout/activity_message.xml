@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/Paysdk.AppTheme">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Paysdk.AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/message_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            app:popupTheme="@style/Paysdk.AppTheme.PopupOverlay"
+
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/message_unread_indicator_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/message_tab_unread_indicator_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_selected"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/message_tab_unread_indicator_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message_unread"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/game_voucher_no_data_edge_color"></View>
+
+        <RelativeLayout
+            android:id="@+id/message_read_indicator_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/message_tab_read_indicator_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_unselected"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/message_tab_read_indicator_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message_read"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/message_unread_indicator_iv"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@color/common_dialog_negative_button_bg"/>
+
+            <ImageView
+                android:id="@+id/message_read_indicator_iv"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/game_voucher_no_data_edge_color"></View>
+
+    <include
+        android:id="@+id/message_content_container"
+        layout="@layout/message_content_container">
+
+    </include>
+
+</LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

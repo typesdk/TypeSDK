@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:paddingLeft="14.0dp"
+    android:paddingRight="14.0dp" >
+
+    <TextView
+        android:id="@+id/tv_order_time"
+        style="@style/pay_record_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="2015-07-24" />
+
+    <TextView
+        android:id="@+id/tv_order_amount"
+        style="@style/pay_record_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="500" />
+
+    <TextView
+        android:id="@+id/tv_order_type"
+        style="@style/pay_record_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="充值卡" />
+
+    <TextView
+        android:id="@+id/tv_orderid"
+        style="@style/pay_record_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="PB500415072114423749678" />
+
+</LinearLayout>

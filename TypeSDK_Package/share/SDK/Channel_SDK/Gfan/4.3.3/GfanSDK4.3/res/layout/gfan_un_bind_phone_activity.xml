@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/gfan_bg"
+    android:background="@drawable/gfan_login_layout_bg"
+    android:orientation="vertical"
+    tools:context="com.mappn.sdk.uc.UnBindPhoneActivity">
+
+    <TextView
+        style="@style/gfan_title_style"
+        android:text="解绑手机号" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gfan_edit_layout_height"
+                android:layout_marginTop="@dimen/gfan_uc_bg_title_margin_top"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_phone_num"
+                    style="@style/gfan_edit_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:hint="请输入手机号"
+                    android:inputType="number"
+                    android:maxLength="11" />
+
+                <TextView
+                    android:id="@+id/tv_get_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gfan_cyan_selector"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="@color/gfan_col_00b0ff" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_code"
+                style="@style/gfan_edit_style"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/gfan_uc_view_space_small"
+                android:hint="请输入验证码" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gfan_edit_layout_height"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/gfan_uc_view_space"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_negative"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/gfan_yellow_selector"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/gfan_btn_text_size" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_positive"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/gfan_blue_selector"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/gfan_btn_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+<!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_un_bind_phone_activity.xml -->

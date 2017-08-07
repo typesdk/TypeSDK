@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/coupon_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/coupon_usable_bg" >
+
+        <ImageView
+            android:id="@+id/choose"
+            style="@style/lepay_wrapparent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/choose"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/lepay_coupon_item_left"
+            style="@style/lepay_wrapparent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <LinearLayout
+                style="@style/lepay_wrapparent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/yuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="@color/lepay_coupon_red"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/lepay_coupon_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="100"
+                        android:textColor="@color/lepay_coupon_red"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/zhe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="折"
+                        android:textColor="@color/lepay_coupon_red"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lepay_coupon_conditions"
+                    style="@style/lepay_wrapparent"
+                    android:layout_gravity="center_horizontal"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="不限额使用"
+                    android:textColor="@color/lepay_cashier_trade_desc_font_color"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/lepay_wrapparent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/lepay_coupon_item_left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lepay_coupon_name"
+                style="@style/lepay_wrapparent"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="10元游戏券"
+                android:textColor="@color/lepay_tv_paymoney_font_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lepay_coupon_scope"
+                style="@style/lepay_wrapparent"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="适用于:部落冲突"
+                android:textColor="@color/lepay_cashier_trade_desc_font_color"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/lepay_coupon_endtime"
+                style="@style/lepay_wrapparent"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="有效期至:2015-09-12"
+                android:textColor="@color/lepay_coupon_red"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

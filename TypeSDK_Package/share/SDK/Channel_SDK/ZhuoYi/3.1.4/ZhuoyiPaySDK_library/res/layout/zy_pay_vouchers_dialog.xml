@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="140dp"
+    android:background="@drawable/zy_vouchers_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/zy_voucher_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/zy_pay_voucher_text"
+        android:text="@string/zy_vouchers" />
+
+    <TextView
+        android:id="@+id/zy_voucher_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zy_voucher_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/zy_pay_voucher_text"
+        android:text="@string/zy_vouchers_path" />
+
+    <TextView
+        android:id="@+id/zy_voucher_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/zy_pay_voucher_text"
+        android:layout_below="@id/zy_voucher_path"
+        android:layout_centerHorizontal="true"
+        android:text="@string/zy_vouchers_tip" />
+
+    <TextView
+        android:id="@+id/zy_voucher_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zy_voucher_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:text="@string/zy_vouchers_entry"
+        android:textColor="#1dcc7e" />
+
+</RelativeLayout>

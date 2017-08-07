@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/wepay_kuang_bg"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:id="@+id/layout_result"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+
+		<!-- 标题 -->
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/wepay_space_xxlarge"
+			android:layout_marginTop="@dimen/wepay_space_xxlarge" >
+
+			<ImageView
+				android:id="@+id/img_result"
+				android:layout_width="wrap_content"
+				android:layout_height="@dimen/wepay_space_xxxlarge"
+				android:layout_alignParentLeft="true"
+				android:paddingLeft="@dimen/wepay_space_xlarge"
+				android:src="@drawable/wepay_icon_success" />
+
+			<TextView
+				android:id="@+id/txt_result"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:gravity="center"
+				android:text="您已经成功付款"
+				android:textColor="@color/wepay_txt_main"
+				android:textSize="@dimen/wepay_txt_xlarge" />
+		</RelativeLayout>
+
+		<!-- 文字提示 -->
+
+		<TextView
+			android:id="@+id/txt_tip"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingBottom="@dimen/wepay_space_middle"
+			android:paddingLeft="@dimen/wepay_space_large"
+			android:paddingRight="@dimen/wepay_space_large"
+			android:paddingTop="@dimen/wepay_space_large"
+			android:textColor="@color/wepay_txt_main"
+			android:textSize="@dimen/wepay_txt_middle"
+			android:visibility="gone" />
+
+		<!-- 金额结果 -->
+
+		<RelativeLayout
+			android:id="@+id/layout_pay_amount"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/wepay_content_height"
+			android:layout_marginLeft="@dimen/wepay_space_large"
+			android:layout_marginRight="@dimen/wepay_space_large"
+			android:layout_marginTop="@dimen/wepay_space_large"
+			android:background="@color/wepay_bg_main"
+			android:gravity="center"
+			android:visibility="gone" >
+
+			<TextView
+				android:id="@+id/txt_amount_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:paddingLeft="@dimen/wepay_space_middle"
+				android:text="@string/wepay_pay_amount_title_hint"
+				android:textColor="@color/wepay_txt_main"
+				android:textSize="@dimen/wepay_txt_middle" />
+
+			<TextView
+				android:id="@+id/txt_yuan"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:paddingRight="@dimen/wepay_space_middle"
+				android:text="@string/wepay_yuan"
+				android:textColor="@color/wepay_txt_main"
+				android:textSize="@dimen/wepay_txt_middle" />
+
+			<TextView
+				android:id="@+id/txt_pay_amount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@id/txt_yuan"
+				android:textColor="@color/wepay_txt_amount"
+				android:textSize="@dimen/wepay_txt_middle" />
+		</RelativeLayout>
+	</LinearLayout>
+
+	<!-- 按钮区域 -->
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/wepay_space_xsmall"
+		android:src="@color/wepay_main_line" />
+
+	<LinearLayout
+		android:id="@+id/layout_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/wepay_space_large"
+		android:layout_marginRight="@dimen/wepay_space_large"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:id="@+id/layout_buttons_pay"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/wepay_space_large"
+			android:layout_marginTop="@dimen/wepay_space_small"
+			android:orientation="vertical" >
+
+			<Button
+				android:id="@+id/btn_set_pwd"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/wepay_dialog_button_height"
+				android:layout_marginTop="@dimen/wepay_space_middle"
+				android:background="@drawable/wepay_first_btn_bg"
+				android:text="@string/wepay_set_paypwd"
+				android:textColor="@color/wepay_first_btn_txt"
+				android:textSize="@dimen/wepay_txt_large"
+				android:visibility="gone" />
+
+			<Button
+				android:id="@+id/btn_left"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/wepay_dialog_button_height"
+				android:layout_marginTop="@dimen/wepay_space_middle"
+				android:background="@drawable/wepay_first_btn_bg"
+				android:gravity="center"
+				android:textColor="@color/wepay_first_btn_txt"
+				android:textSize="@dimen/wepay_txt_large" />
+
+			<Button
+				android:id="@+id/btn_right"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/wepay_dialog_button_height"
+				android:layout_gravity="center_vertical"
+				android:layout_marginTop="@dimen/wepay_space_middle"
+				android:background="@drawable/wepay_second_btn_bg"
+				android:text="@string/wepay_finish"
+				android:textColor="@color/wepay_second_btn_txt"
+				android:textSize="@dimen/wepay_txt_large" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

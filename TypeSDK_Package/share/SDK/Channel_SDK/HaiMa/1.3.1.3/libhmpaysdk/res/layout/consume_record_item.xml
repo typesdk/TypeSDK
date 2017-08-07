@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/consume_record_time_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/UserRegisterSecond"
+            android:text="@string/consume_record_time"/>
+
+        <TextView
+            android:id="@+id/consume_record_consume_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/consume_record_consume_state_true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_size_middle"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/consume_record_consume_content_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/consume_record_consume_content"
+            android:textSize="@dimen/font_size_middle"
+            android:textColor="@color/consume_record_product_name"/>
+
+        <TextView
+            android:id="@+id/consume_record_game_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/consume_record_consume_game_name"
+            style="@style/UserRegisterSecond"/>
+
+        <TextView
+            android:id="@+id/consume_record_consume_money_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/consume_record_consume_money"
+            style="@style/UserRegisterSecond"
+            android:gravity="end"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

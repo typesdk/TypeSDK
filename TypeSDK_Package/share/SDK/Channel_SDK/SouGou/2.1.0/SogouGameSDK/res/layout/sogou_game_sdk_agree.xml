@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sogou_game_sdk_agree_line"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/sogou_game_sdk_main_background_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/sogou_game_sdk_head" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <WebView
+            android:id="@+id/sogou_game_sdk_agree_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </WebView>
+    </ScrollView>
+
+</LinearLayout>

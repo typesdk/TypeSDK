@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="identity_type">
+        <item>身份证</item>
+    </string-array>
+    
+    <string-array name="card_type">
+        <item>借记卡</item>
+        <item>信用卡</item>
+    </string-array>
+    
+        <string-array name="iapppay_month">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+</resources>

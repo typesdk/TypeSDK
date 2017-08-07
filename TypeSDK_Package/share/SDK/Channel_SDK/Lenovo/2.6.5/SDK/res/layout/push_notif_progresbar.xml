@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/push_progressBar_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:padding="12dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/stat_sys_download" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/push_progressBar_image" >
+
+        <RelativeLayout
+            android:id="@+id/push_progressBar_center_up"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/push_progressBar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="3dp"
+                android:gravity="bottom"
+                android:text="爱奇艺PPS影音"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/push_progressBar_status"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:gravity="bottom"
+                android:text="正在下载"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/push_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/push_progressBar_center_up"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:id="@+id/push_progressBar_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/push_progressBar"
+            android:layout_marginRight="5dp"
+            android:gravity="top"
+            android:text="(25.3%)"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/push_progressBar_net"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/push_progressBar"
+            android:layout_marginLeft="3dp"
+            android:gravity="top"
+            android:text="~仅在wifi网络下载~"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

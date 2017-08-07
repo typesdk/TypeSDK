@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="3dp"></corners>
+
+
+    <solid android:color="@color/user_register_service_clause_color" ></solid>
+
+    <padding
+        android:top="10dp"
+        android:bottom="10dp"
+        android:left="10dp"
+        android:right="10dp"></padding>
+
+    <size android:height="42dp" android:width="150dp"></size>
+
+</shape>

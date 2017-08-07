@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/lib_droi_account_global_margin_top"
+    android:layout_marginLeft="@dimen/lib_droi_account_global_margin_left"
+    android:layout_marginRight="@dimen/lib_droi_account_global_margin_right"
+    android:orientation="vertical" >
+    
+    	<LinearLayout 
+    	   android:layout_width="match_parent"
+	       android:layout_height="@dimen/lib_droi_account_global_button_height"
+	       android:layout_gravity="center_horizontal"
+	       android:background="@drawable/lib_droi_account_edittext_selector"
+	       android:orientation="horizontal">
+
+    	    <TextView android:layout_width="70dp"
+    	        android:layout_height="match_parent"
+    	        android:text="uid"
+    	        android:gravity="center_vertical"/>
+    	    
+	        <EditText android:id="@+id/lib_droi_account_uid"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_marginLeft="20dp"
+	           android:enabled="true"
+	           android:focusable="true"
+	           android:inputType="textPassword"
+	           android:focusableInTouchMode="true"
+	           android:singleLine="true"
+	           android:background="@null"
+	           android:textColorHint="@color/lib_droi_account_edit_text_color"
+	           android:hint=""
+	           android:textSize="14sp" />
+        </LinearLayout>
+        
+    	<LinearLayout 
+    	   android:layout_width="match_parent"
+	       android:layout_height="@dimen/lib_droi_account_global_button_height"
+	       android:layout_gravity="center_horizontal"
+	       android:layout_marginTop="5dp"
+	       android:background="@drawable/lib_droi_account_edittext_selector"
+	       android:orientation="horizontal">
+	        
+    	    <TextView android:layout_width="70dp"
+    	        android:layout_height="match_parent"
+    	        android:text="token"
+    	        android:gravity="center" />
+    	    
+	        <EditText android:id="@+id/lib_droi_account_token"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_marginLeft="20dp"
+	           android:background="@null"
+	           android:enabled="true"
+	           android:focusable="true"
+	           android:inputType="textPassword"
+	           android:focusableInTouchMode="true"
+	           android:singleLine="true"
+	           android:textColorHint="@color/lib_droi_account_edit_text_color"
+	           android:hint=""
+	           android:textSize="14sp" />
+        
+        </LinearLayout>
+        
+    	<LinearLayout 
+    	   android:layout_width="match_parent"
+	       android:layout_height="@dimen/lib_droi_account_global_button_height"
+	       android:layout_gravity="center_horizontal"
+	       android:layout_marginTop="5dp"
+	       android:background="@drawable/lib_droi_account_edittext_selector"
+	       android:orientation="horizontal">
+	        
+    	    <TextView android:layout_width="70dp"
+    	        android:layout_height="match_parent"
+    	        android:text="securityCode"
+    	        android:gravity="center" />
+    	    
+	        <EditText android:id="@+id/lib_droi_account_securityCode"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_marginLeft="20dp"
+	           android:background="@null"
+	           android:enabled="true"
+	           android:focusable="true"
+	           android:inputType="textPassword"
+	           android:focusableInTouchMode="true"
+	           android:singleLine="true"
+	           android:textColorHint="@color/lib_droi_account_edit_text_color"
+	           android:hint=""
+	           android:textSize="14sp" />
+        
+        </LinearLayout>    	
+        
+        <Button android:id="@+id/lib_droi_account_finish"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="30dp"
+           android:textColor="@android:color/white"
+           android:background="@drawable/lib_droi_account_button_selector"
+           android:text="@string/lib_droi_account_finish"/>
+</LinearLayout>

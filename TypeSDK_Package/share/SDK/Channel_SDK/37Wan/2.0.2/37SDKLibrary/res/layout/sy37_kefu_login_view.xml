@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+     >
+
+    <RelativeLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:visibility="visible"
+        >
+
+        <TableLayout
+            android:id="@+id/loginInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/sy37_kefu_user_et_bg2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="15dip" >
+            
+            <TableRow
+                android:id="@+id/fg_name_layout"
+                android:layout_weight="1.0"
+                android:gravity="bottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/text_flag_account"
+                    android:text="@string/fg_account"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/s_gray"
+                    android:paddingLeft="15dip"
+                    android:textSize="18.0sp" />
+
+                <EditText
+                    android:id="@+id/loginName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_en_account_hint"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColorHint="@color/s_light_gray"
+                    android:textColor="@color/s_light_gray"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:id="@+id/fg_select_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingBottom="13dp"
+                    android:src="@drawable/sy37_user_set_down_bg_down" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="7dp"
+                android:layout_weight="1.0"
+                android:gravity="top" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fg_pw"
+                    android:textColor="@color/s_gray"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dip"
+                    android:textSize="18.0sp" />
+
+                <EditText
+                    android:id="@+id/loginPW"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="@string/fg_en_pw_hint"
+                    android:textColorHint="@color/s_light_gray"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@color/s_light_gray"
+                    android:textSize="18.0sp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginInfo"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/modifyPW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/fg_modify_pw_go"
+                android:textColor="@color/sy37_text_color_findpass"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/findPW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:clickable="true"
+                android:text="@string/fg_find_pw_go"
+                android:textColor="@color/sy37_text_color_findpass"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLayout"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/toReg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/sy37_reg"
+                android:text="@string/fg_reg_account"
+                android:textColor="@color/s_white"
+                android:textSize="21.0sp" />
+
+            <Button
+                android:id="@+id/toLogin"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1"
+                android:background="@drawable/sy37_kefu_submit"
+                android:text="@string/fg_login_btn"
+                android:textColor="@color/s_white"
+                android:textSize="21.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    
+    <include
+        android:id="@+id/modifyPWLayout"
+        android:layout_below="@id/loginLayout"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/sy37_kefu_modifypw"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/fg_secure"
+        android:layout_below="@id/modifyPWLayout"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/sy37_kefu_secure"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/bindAccountLayout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/sy37_kefu_secure_bind"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/bindMobileLayout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/sy37_kefu_secure_mobilel"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/bindEmailLayout"
+        android:layout_below="@id/bindMobileLayout"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/sy37_kefu_secure_email"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/findAccountLayout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/sy37_kefu_secure_find"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/fg_find_by_mobile_layout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/sy37_kefu_secure_find_mobile"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/findByEmailLayout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/sy37_kefu_secure_find_email"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/regLayout"
+        android:layout_below="@id/fg_secure"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        layout="@layout/sy37_kefu_reg"
+        android:visibility="gone" />
+
+    
+
+    <com.sy37sdk.widget.MarqueeTextView
+        android:id="@+id/notice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/loginLayout"
+        android:layout_below="@id/regLayout"
+        android:layout_marginBottom="1dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dp"
+        android:paddingRight="10dip"
+        android:drawableLeft="@drawable/sy37_landing_bottom_message_img"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/fg_welcome"
+        android:textColor="#ff9a9a9a"
+        android:textSize="14.0sp" />
+
+    <com.sy37sdk.widget.MarqueeTextView
+        android:id="@+id/downInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/notice"
+        android:layout_below="@id/notice"
+        android:drawableLeft="@drawable/sy37_icon_kefu_down"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingRight="10dip"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="3dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="这是测试信息     这是测试信息     这是测试信息   这是测试信息   这是测试信息   这是测试信息   "
+        android:textColor="#ff9a9a9a"
+        android:textSize="14.0sp"
+         />
+
+</RelativeLayout>

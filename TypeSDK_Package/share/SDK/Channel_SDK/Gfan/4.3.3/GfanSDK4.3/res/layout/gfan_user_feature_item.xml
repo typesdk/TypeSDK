@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/gfan_white_no_radius_selector">
+
+    <ImageView
+        android:id="@+id/feature_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gfan_change_psd" />
+
+    <TextView
+        android:id="@+id/feature_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/feature_icon"
+        android:text="修改密码"
+        android:textColor="#353535" />
+
+
+    <ImageView
+        android:id="@+id/feature_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/gfan_right_arrow" />
+
+    <ImageView
+        android:id="@+id/feature_alert_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/feature_more"
+        android:src="@drawable/gfan_personal_alert"
+        android:layout_marginRight="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout><!-- From: file:/E:/GfanSDK/SDK/src/main/res/layout/gfan_user_feature_item.xml -->

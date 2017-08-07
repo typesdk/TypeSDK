@@ -1,0 +1,287 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.downjoy.fragment.FloatContentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dcn_search_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#ECECEC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/dcn_float_search" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#E5E5E5" />
+        </RelativeLayout>
+
+        <!-- 标题栏 -->
+        <LinearLayout
+            android:id="@+id/dcn_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dcn_title_height"
+            android:background="@color/dcn_orange_common"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dcn_actionbar_btn_back_game"
+                android:layout_width="@dimen/dcn_webview_title_back_width"
+                android:layout_height="@dimen/dcn_webview_title_back_width"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/dcn_webview_back"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/dcn_actionbar_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@id/dcn_actionbar_btn_back_game"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/dcn_game_forum"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dcn_account_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/float_account_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dcn_float_interval1"
+            android:paddingRight="@dimen/dcn_float_interval1"
+            android:paddingTop="@dimen/dcn_float_interval1">
+
+            <com.downjoy.widget.vollyextend.CircleNetworkImageView
+                android:id="@+id/dcn_user_avatar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/dcn_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dcn_float_interval3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dcn_float_user_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:textColor="@color/dcn_white"
+                        android:ellipsize="end"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/dcn_floating_menu_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dcn_float_interval4"
+                        android:background="@drawable/dcn_float_level_bg"
+                        android:gravity="right|center_vertical"
+                        android:textColor="@color/dcn_white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/dcn_floating_guild_menu_level_vip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dcn_float_interval4"
+                        android:background="@drawable/dcn_float_guild_level_bg"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:textColor="@color/dcn_white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/dcn_floating_menu_level_vip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dcn_float_interval4"
+                        android:background="@drawable/dcn_float_vip_level_bg"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:textColor="@color/dcn_white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/dcn_float_guild"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dcn_float_interval4"
+                        android:background="@drawable/dcn_float_user_guild_tag_level_bg"
+                        android:gravity="center"
+                        android:textColor="@color/dcn_white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dcn_float_interval1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/dcn_float_task_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        >
+
+                            <TextView
+                                android:id="@+id/dcn_float_task"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/dcn_float_task_bg"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dcn_float_sign_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="@dimen/dcn_float_interval3"
+                        >
+
+                            <TextView
+                                android:id="@+id/dcn_float_sign"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/dcn_float_sign_bg1"
+                                android:text="@string/dcn_float_sign"
+                                android:textColor="#333333"
+                                android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/dcn_float_login_out"
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/dcn_float_login_out_new" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/dcn_gv_float_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dcn_float_interval3"
+            android:listSelector="@null"
+            android:numColumns="3"></GridView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/dcn_float_join_groups_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="@dimen/dcn_float_interval1"
+            android:paddingRight="@dimen/dcn_float_interval1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#E5E5E5" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:src="@drawable/dcn_float_join_groups" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:text="@string/dcn_float_join_groups" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/dcn_float_logo"
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dcn_footerbar_ic_goforward_n" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

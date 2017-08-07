@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/gfan_checkbox_checked" android:state_checked="true">
+
+    </item>
+
+    <item android:drawable="@drawable/gfan_checkbox_unchecked" android:state_checked="false"></item>
+
+    <item android:drawable="@drawable/gfan_checkbox_unchecked">
+
+    </item>
+</selector><!-- From: file:/E:/GfanSDK/SDK/src/main/res/drawable-xhdpi/gfan_check_selector.xml -->

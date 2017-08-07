@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- activity可正反向检测，service/provider/broadcast只做反向检测 -->
+<tests xmlns:android="http://schemas.android.com/apk/res/com.vivo.sdkplugin">
+
+    <!-- 正向 -->
+    <!-- 权限 -->
+    <uses-permission android:name="vivo.game.permission.OPEN_JUMP_INTENTS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.bbk.account.permission.READ_ACCOUNTINFO" />
+
+    <!-- APK/SDK:通用activity -->
+    <activity android:name="com.vivo.unionsdk.ui.UnionActivity"
+              android:theme="@android:style/Theme.Dialog"
+              android:configChanges="orientation|keyboardHidden|navigation|screenSize">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data
+                android:scheme="vivounion"
+                android:host="union.vivo.com"
+                android:path="/openjump"/>
+        </intent-filter>
+    </activity>
+
+    <!--APK/SDK:微信支付回调Activity-->
+    <activity
+        android:name="@_pkg_@.wxapi.WXPayEntryActivity"
+        android:exported="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:launchMode="singleTop"/>
+
+    <!--APK/SDK:QQ钱包支付回调Activity-->
+    <activity
+        android:name="com.vivo.sdkplugin.payment.qqpay.VivoQQPayResultActivity"
+        android:launchMode="singleTop"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:scheme="qwallet@_pkg_@"/>
+        </intent-filter>
+    </activity>
+
+    <!--APK/SDK:银联支付的Activity-->
+    <activity
+        android:name="com.unionpay.uppay.PayActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden"
+        android:excludeFromRecents="true"
+        android:windowSoftInputMode="adjustResize"/>
+
+    <!--APK/SDK:支付宝支付的Activity-->
+    <activity
+        android:name="com.alipay.sdk.app.H5PayActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind"
+        android:windowSoftInputMode="adjustResize|stateHidden" >
+    </activity>
+
+    <!--APK/SDK:实名制activity-->
+    <activity
+        android:name="com.alipay.sdk.auth.AuthActivity"
+        android:configChanges="orientation|keyboardHidden|navigation"
+        android:exported="false"
+        android:screenOrientation="behind" >
+    </activity>
+
+    <!-- SDK meta -->
+    <meta-data android:name="APP_MONITOR_APPID"
+               android:value="b1002c"/>
+    <meta-data android:name="vivo_union_sdk"/>
+
+    <!-- 反向 -->
+    <!-- 测试界面 -->
+    <activity android:name="com.vivo.sdkplugin.TestActivity"
+              android:include="false"/>
+    <!-- aidl service -->
+    <service android:name="com.vivo.plugin.aidl.LoginAccInfoService"
+             android:include="false"/>
+    <!-- 自升级对话框 -->
+    <activity android:name="com.vivo.upgradelibrary.upmode.VivoUpgradeActivityDialog"
+              android:include="false"/>
+    <!-- 权限检测对话框 -->
+    <activity android:name="com.vivo.unionsdk.ui.PermissionAlertActivity"
+              android:include="false"/>
+
+    <!-- 老版本声明 start -->
+    <activity android:name="com.vivo.sdkplugin.activity.LoginActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.ChangePassWordActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.BindQuestionActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.BindPhoneActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.GameInfoMoreListActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.AccountPersonalCenterActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.AccountAssistWebViewActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.FindpwdVerifyPhoneNumActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.LoginDialogActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.UserFeedBackActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.SetpwdActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.RegisterEmailActiviy"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.RegisterActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.PhoneRegisterCommitActivity"
+              android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.RegisterOneKeyActivity"
+			  android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.VerifyPhoneNumActivity"
+			  android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.FindPasswordActivity"
+        	  android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.SetPassWordActivity"
+        	  android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.RegisterProtocolActivity"
+        	  android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.CommitUserIdentifyActivity"
+        	  android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.CommitUserContactActivity"
+        	  android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.StrategyDetailActivity"
+        	  android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.SubAccountActivity"
+        	  android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.SubAccountEditActivity"
+    	      android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.SubAccountEditCommitActivity"
+     	      android:include="false"/>
+    <activity android:name="com.vivo.sdkplugin.activity.SubAccountAddCommitActivity"
+     	      android:include="false"/>
+	<activity android:name="com.vivo.sdkplugin.activity.VivoUserInfoActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.dealRecord.VivoDealRecordActivity"
+     	      android:include="false"/>
+    <activity android:name="com.bbk.payment.dealRecord.VivoDealRecordDetailActivity"
+     	      android:include="false"/>
+    <activity android:name="com.bbk.payment.PaymentActivity"
+	          android:include="false"/>
+    <activity android:name="com.bbk.payment.PaymentRechargeActivity"
+      	      android:include="false"/>
+    <activity android:name="com.bbk.payment.SelectMoreChannelActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.TicketActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.PaymentActionActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.CardActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.RechargeChoiceActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.PaySuccActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.JCardActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.DetectPayResultActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.PayContinueActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.RechargeFailActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.PaymentDetailsActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbk.payment.tenpay.VivoQQPayResultActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbkmobile.iqoo.payment.PaymentActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbkmobile.iqoo.payment.CardActivity"
+        	  android:include="false"/>
+    <activity android:name="com.bbkmobile.iqoo.payment.tenpay.VivoQQPayResultActivity"
+        	  android:include="false"/>
+    <activity android:name="@_pkg_@.wxapi.WXSPayEntryActivity"
+        	  android:include="false"/>
+
+    <service android:name="com.vivo.sdkplugin.accounts.LocalService"
+        	 android:include="false"/>
+    <service android:name="com.vivo.sdkplugin.accounts.LogWatcherService"
+        	 android:include="false"/>
+    <service android:name="com.vivo.sdkplugin.service.VivoAccountService"
+        	 android:include="false"/>
+    <service android:name="com.vivo.assist.AssistService"
+             android:include="false"/>
+    <receiver android:name="com.vivo.sdkplugin.accounts.SendMsgReceiver"
+              android:include="false"/>
+    <receiver android:name="com.vivo.sdkplugin.accounts.ManageAccountReceiver"
+              android:include="false"/>
+    <receiver android:name="com.vivo.sdkplugin.accounts.VivoApkInstallRecevier"
+              android:include="false"/>
+    <receiver android:name="com.vivo.sdkplugin.accounts.VivoIThemeChangeRecevier"
+              android:include="false"/>
+    <receiver android:name="com.bbkmobile.iqoo.payment.util.ManagePamentReceiver"
+              android:include="false"/>
+	<!-- 老版本声明 end -->
+	
+	<!-- 更老版本声明 start -->
+	<activity android:name="com.vivo.account.base.activity.LoginActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.GameInfoMoreListActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.ChangePassWordActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.BindQuestionActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.BindPhoneActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.AccountPersonalCenterActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.AccountAssistWebViewActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.FindpwdVerifyPhoneNumActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.LoginDialogActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.UserFeedBackActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.SetpwdActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.RegisterEmailActiviy"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.RegisterActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.PhoneRegisterCommitActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.RegisterOneKeyActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.VerifyPhoneNumActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.FindPasswordActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.SetPassWordActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.RegisterProtocolActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.CommitUserIdentifyActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.CommitUserContactActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.StrategyDetailActivity"
+              android:include="false"/>
+	<activity android:name="com.vivo.account.base.activity.SubAccountActivity"
+              android:include="false"/>
+	<activity android:name="com.bbk.payment.weixin.VivoWXPayEntryActivity"
+              android:include="false"/>
+        
+	<service android:name="com.vivo.account.base.accounts.LocalService"
+            android:include="false"/>
+	<service android:name="com.vivo.account.base.accounts.LogWatcherService"
+            android:include="false"/>
+	<receiver android:name="com.vivo.account.base.accounts.SendMsgReceiver"
+            android:include="false"/>
+	<receiver android:name="com.vivo.account.base.accounts.ManageAccountReceiver"
+            android:include="false"/>
+	<receiver android:name="com.vivo.account.base.accounts.VivoApkInstallRecevier"
+            android:include="false"/>
+	<!-- 更老版本声明 end -->
+
+</tests>

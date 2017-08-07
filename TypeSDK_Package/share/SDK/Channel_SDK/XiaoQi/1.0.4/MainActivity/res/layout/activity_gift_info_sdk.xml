@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+     >
+    
+    <include
+        android:id="@+id/gift_info_title_rl"
+        layout="@layout/item_main_title_rl" />
+    
+    <ScrollView
+        android:layout_below="@+id/gift_info_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" 
+       android:layout_centerHorizontal="true"
+        >
+    
+    <LinearLayout 
+        android:layout_width="@dimen/activity_horizontal_width"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal" 
+        >
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/gift_info_iv_icon"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:padding="3dip"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/gift_info_tv_gamename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:textColor="#000000"
+                    android:text=""
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/gift_info_tv_giftname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:textColor="#000000"
+                    android:text=""
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                >
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="剩余数量："
+                android:id="@+id/gift_info_tv_giftword"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+                
+                <TextView
+                    android:layout_below="@+id/gift_info_tv_giftword"
+                    android:id="@+id/gift_info_tv_giftsurplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_below="@+id/gift_info_tv_giftword"
+                    android:layout_toRightOf="@+id/gift_info_tv_giftsurplus"
+                    android:id="@+id/gift_info_tv_giftamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_below="@+id/gift_info_tv_giftword"
+                    android:id="@+id/gift_info_tv_cardcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999999"
+                    android:visibility="invisible"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/gift_info_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:text="使用范围："
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/gift_info_tv_userange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:text="有效时间："
+            android:textColor="#999999"
+            android:textSize="12sp" />
+		<LinearLayout
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    >
+        <TextView
+            android:id="@+id/gift_info_tv_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/gift_info_tv_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+		</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:text="礼包内容："
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/gift_info_tv_giftinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:text="领取方法："
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/gift_info_tv_getmeans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+    
+
+    <Button
+        android:id="@+id/gift_info_btn_getgift"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/green_radio_bg"
+        android:text="领取礼包"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dip"
+        android:textSize="18sp" />
+    </LinearLayout>
+    </ScrollView>
+ 
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/bag_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="19196礼包"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bag_surplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="0%"
+            android:textColor="@color/win_bar_yellow" />
+
+        <TextView
+            android:id="@+id/win_bag_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/bag_surplus"
+            android:text="剩余:"
+            android:textColor="#A9A9A9" />
+
+        <TextView
+            android:id="@+id/bag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bag_title"
+            android:layout_marginTop="10dp"
+            android:lines="2"
+            android:text="超级天山雪莲1个 超级深海灵分解结构机构IgG放假地锅鸡哦i和家庭妇女点击 "
+            android:textColor="#797979" />
+
+        <TextView
+            android:id="@+id/bag_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bag_text"
+            android:layout_marginTop="10dp"
+            android:text="截止时间：2015-07-27"
+            android:textColor="#A9A9A9"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/bag_get"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bagget_btn"
+            android:padding="10dp"
+            android:text="立即领取"
+            android:textColor="@drawable/bagget_text" />
+    </LinearLayout>
+
+</LinearLayout>

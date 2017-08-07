@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goldautumn.sdk.lib"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.goldautumn.sdk.activity.GAGameSDKApplication"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:screenOrientation="sensor"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.goldautumn.sdk.activity.ProtocolActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/myTransparent" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.activity.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/myTransparent" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/myTransparent" >
+        </activity>
+        <activity
+            android:name="com.goldautumn.sdk.pay.GAGameSDKWXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- alipay sdk end -->
+    </application>
+</manifest>

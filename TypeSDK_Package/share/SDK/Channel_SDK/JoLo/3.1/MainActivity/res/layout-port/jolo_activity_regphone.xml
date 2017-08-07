@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jolo_sdk_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tip_reset_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/jolo_tip_reset_pwd"
+        android:textColor="@color/jolo_white"
+        android:textSize="14sp"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center_horizontal">
+        
+        <EditText
+            android:id="@+id/reginputphone_et"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jolo_edit_bg"
+            android:digits="@string/jolo_register_digits"
+            android:gravity="center_vertical"
+            android:hint="@string/jolo_input_phone"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:padding="7dp"
+            android:textColor="@color/color_tv"
+            android:textColorHint="@color/hint_color"
+            android:textCursorDrawable="@null" />
+        
+         <Button
+            android:id="@+id/fetch_code_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/jolo_green_bg"
+            android:gravity="center"
+            android:padding="7dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/jolo_fetchcode"
+            android:textColor="@color/jolo_white"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+  	<EditText
+          android:id="@+id/reginput_code_et"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="5dp"
+          android:inputType="number"
+          android:background="@drawable/jolo_edit_bg"
+          android:digits="@string/jolo_register_digits"
+          android:gravity="center_vertical"
+          android:hint="@string/jolo_input_code"
+          android:imeOptions="actionNext"
+          android:maxLength="6"
+          android:singleLine="true"
+          android:textSize="15sp"
+          android:padding="7dp"
+          android:textColor="@color/color_tv"
+          android:textColorHint="@color/hint_color"
+          android:textCursorDrawable="@null" />
+  
+  	<EditText
+        android:id="@+id/reginput_pwd_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/jolo_edit_bg"
+        android:digits="@string/jolo_register_digits"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColor="@color/color_tv"
+        android:textColorHint="@color/hint_color"
+        android:hint="@string/jolo_modifypwd_hint_new_pwd"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        android:padding="7dp" />
+  	
+ 	<EditText
+       android:id="@+id/reginput2_pwd_et"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="5dp"
+       android:background="@drawable/jolo_edit_bg"
+       android:digits="@string/jolo_register_digits"
+       android:gravity="center_vertical"
+       android:imeOptions="actionDone"
+       android:inputType="textPassword"
+       android:maxLength="20"
+       android:singleLine="true"
+       android:textColor="@color/color_tv"
+       android:textColorHint="@color/hint_color"
+       android:textCursorDrawable="@null"
+       android:hint="@string/jolo_modifypwd_hint_new_pwd_again"
+       android:textSize="15sp"
+       android:padding="7dp" />
+ 	
+    <Button
+        android:id="@+id/regok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/jolo_green_bg"
+        android:gravity="center"
+        android:padding="7dp"
+     	android:layout_gravity="center_horizontal"
+        android:text="@string/jolo_reg_phone"
+        android:textColor="@color/jolo_white"
+        android:textSize="18sp" />
+
+</LinearLayout>

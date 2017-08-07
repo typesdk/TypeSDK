@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ProgressBar
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:clickable="false"
+            android:indeterminateDrawable="@drawable/sogou_game_sdk_custom_progressbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="@string/sogou_game_sdk_looding"
+            android:textColor="@color/sogou_game_sdk_color_ff6a00"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

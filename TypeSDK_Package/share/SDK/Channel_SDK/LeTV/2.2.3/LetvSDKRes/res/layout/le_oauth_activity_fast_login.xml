@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.le.accountoauth.widget.LeMainViewParentForOA
+        android:id="@+id/le_main_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:background="@drawable/le_main_view_border_line_bg_white">
+
+                <RelativeLayout
+                    android:id="@+id/le_fast_login_bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/le_fast_login_user_other_account_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginStart="6dp"
+                        android:text="@string/le_oauth_account_manager_other_login"
+                        android:textColor="@color/le_oauth_loading_dot_gray"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/le_fast_login_user_other_account_login"
+                        android:layout_toStartOf="@id/le_fast_login_user_other_account_login"
+                        android:background="@drawable/le_oauth_anthor_login_icon" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/le_fast_login_bottom_layout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="@string/le_oauth_account_manager_slogan"
+                        android:textSize="16dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/le_fast_login_input_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/le_oauth_fast_login_input_background">
+
+                        <EditText
+                            android:id="@+id/le_fast_login_phone_number_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@null"
+                            android:hint="@string/le_oauth_fast_login_phone_number_edit_hint"
+                            android:inputType="number"
+                            android:paddingLeft="16dp"
+                            android:paddingStart="16dp"
+                            android:textColor="@color/le_oauth_orange"
+                            android:textColorHint="@color/le_oauth_orange_light"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:id="@+id/le_fast_login_phone_number_edit_clear"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/le_oauth_clear_icon"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginStart="20dp">
+
+                        <Button
+                            android:id="@+id/le_fast_login_now_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/le_oauth_fast_login_button_background"
+                            android:text="@string/le_oauth_fast_login_login_immediately"
+                            android:textColor="@color/le_oauth_text_color_white"
+                            android:textSize="18dp" />
+
+                        <ProgressBar
+                            android:id="@+id/le_fast_login_progress_bar"
+                            android:layout_width="42dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:indeterminate="true"
+                            android:indeterminateDrawable="@drawable/le_oauth_loading" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginStart="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/le_fast_login_terms_check_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/le_oauth_check_box_bg" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/le_oauth_fast_login_agree" />
+
+                        <TextView
+                            android:id="@+id/le_fast_login_user_terms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoLink="web"
+                            android:text="@string/le_oauth_fast_login_user_terms"
+                            android:textColor="@color/le_oauth_orange_light" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/le_oauth_fast_login_and" />
+
+                        <TextView
+                            android:id="@+id/le_fast_login_privacy_agreement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoLink="web"
+                            android:text="@string/le_oauth_fast_login_privacy_agreement"
+                            android:textColor="@color/le_oauth_orange_light" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/le_oauth_fast_login_head_bg">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/le_oauth_logo_small" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.le.accountoauth.widget.LeMainViewParentForOA>
+
+    <View
+        android:id="@+id/le_fast_login_cover_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

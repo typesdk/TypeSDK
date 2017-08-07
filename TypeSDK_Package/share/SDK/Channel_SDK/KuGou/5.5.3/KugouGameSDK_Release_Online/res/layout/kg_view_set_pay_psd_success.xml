@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+         >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/kg_recharge_success_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/kg_set_pay_psd_success"
+                android:textColor="@color/kg_common_gray_lighter"
+                android:textSize="@dimen/kg_common_large" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/kg_security_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/kg_common_gray_lighter"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/kg_security_img_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/kg_security_account"
+                android:src="@drawable/kg_security_phone_default" />
+
+            <ImageView
+                android:id="@+id/kg_security_img_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@id/kg_security_img_1"
+                android:layout_below="@id/kg_security_account"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/kg_security_img_1"
+                android:src="@drawable/kg_security_email_binded" />
+
+            <ImageView
+                android:id="@+id/kg_security_img_3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@id/kg_security_img_1"
+                android:layout_below="@id/kg_security_account"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/kg_security_img_2"
+                android:src="@drawable/kg_security_question_default" />
+
+            <ImageView
+                android:id="@+id/kg_security_img_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@id/kg_security_img_1"
+                android:layout_below="@id/kg_security_account"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/kg_security_img_3"
+                android:src="@drawable/kg_security_identity_binded" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/kg_security_set_tip"
+            android:textColor="@color/kg_common_gray_lighter"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/kg_iv_check_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:button="@drawable/kg_checkbox_selector"
+            android:paddingLeft="10dp"
+            android:text="@string/kg_no_remind"
+            android:textColor="@color/kg_common_gray_lighter"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>

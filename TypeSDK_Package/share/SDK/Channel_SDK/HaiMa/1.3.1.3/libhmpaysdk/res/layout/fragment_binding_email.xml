@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/binding_email_top_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/binding_email_address_et"
+            style="@style/UserRegisterSecond"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:hint="@string/binding_email_address"
+            android:textColorHint="@color/user_register_common_color_first"
+            android:singleLine="true"
+            android:background="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/user_register_divide_line_color"/>
+
+        <LinearLayout
+            android:id="@+id/binding_email_verify_num_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/binding_email_verify_num_et"
+                    style="@style/UserRegisterSecond"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/binding_email_verify_num_hint"
+                    android:textColorHint="@color/user_register_common_color_first"
+                    android:singleLine="true"
+                    android:background="@null"/>
+
+                <Button
+                    android:id="@+id/binding_email_verify_num_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/binding_email_send_verify_num_hint"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/user_register_get_verify_num_button_color"
+                    android:background="@drawable/user_register_get_verify_num_shape"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/user_register_divide_line_color"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/binding_email_affirm_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/user_register_affirm_button_selector"
+            android:text="@string/enter_security_center_submit_text"
+            android:enabled="false"
+            android:textColor="@color/user_register_button_text_selector"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/common_bottom"
+        layout="@layout/include_common_bottom"></include>
+
+</RelativeLayout>

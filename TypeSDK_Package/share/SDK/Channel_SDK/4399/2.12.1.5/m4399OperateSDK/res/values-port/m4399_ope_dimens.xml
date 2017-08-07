@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="m4399_ope_usercenter_avatar_size">65dp</dimen>
+    <dimen name="m4399_ope_usercenter_nickname_font_size">18sp</dimen>
+    <dimen name="m4399_ope_usercenter_username_font_size">12sp</dimen>
+    <dimen name="m4399_ope_usercenter_youbi_label_font_size">13sp</dimen>
+    <dimen name="m4399_ope_usercenter_youbi_balance_font_size">13sp</dimen>
+    <dimen name="m4399_ope_usercenter_account_type_image_size">18dp</dimen>
+    <dimen name="m4399_ope_dialog_common_width">300dp</dimen>
+    <dimen name="m4399_ope_dialog_common_height">185dp</dimen>
+
+    <dimen name="m4399_ope_page_width">300dp</dimen>
+    <dimen name="m4399_ope_page_height">250dp</dimen>
+    <dimen name="m4399_ope_page_phone_height">280dp</dimen>
+    <dimen name="m4399_ope_bind_label_margin">0dp</dimen>
+
+    <dimen name="m4399_ope_bind_input_margin">15dp</dimen>
+    <dimen name="m4399_ope_bind_input_margin_left">10dp</dimen>
+    <dimen name="m4399_ope_bind_padding_left">15dp</dimen>
+
+    <dimen name="m4399_ope_usercenter_tv_margin">8dp</dimen>
+    <dimen name="m4399_ope_usercenter_img_margin">10dp</dimen>
+    <dimen name="m4399_ope_usercenter_tv_size">15sp</dimen>
+    <dimen name="m4399_ope_usercenter_icon_size">15dp</dimen>
+
+    <dimen name="m4399_ope_activation_page_width">300dp</dimen>
+    <dimen name="m4399_ope_activation_page_height">250dp</dimen>
+    <dimen name="m4399_ope_activation_icon_with">16dp</dimen>
+    <dimen name="m4399_ope_activation_font_size">16sp</dimen>
+    <dimen name="m4399_ope_activation_font_padding">14dp</dimen>
+    <dimen name="m4399_ope_activation_padding">20dp</dimen>
+    <dimen name="m4399_ope_activation_get_padding">5dp</dimen>
+    <dimen name="m4399_ope_activation_top_margin">12dp</dimen>
+    <dimen name="m4399_ope_activation_button_height">44dp</dimen>
+
+
+    <dimen name="m4399_ope_vip_page_width">330dp</dimen>
+    <dimen name="m4399_ope_vip_tv_size">17sp</dimen>
+    <dimen name="m4399_ope_vip_tv_size_two">15sp</dimen>
+    <dimen name="m4399_ope_coupon_green_width">85dp</dimen>
+
+
+
+</resources>

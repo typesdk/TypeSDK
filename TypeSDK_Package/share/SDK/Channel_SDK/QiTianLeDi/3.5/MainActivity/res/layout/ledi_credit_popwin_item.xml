@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/ledi_card_dialog_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/ledi_buy_pop_bg"
+        android:clickable="true"
+        android:onClick="card_recharge_dialog_onclick"
+        android:visibility="visible"
+         >
+
+        <ImageView
+            android:id="@+id/ledi_card_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/ledi_bank_name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ledi_card_img"
+            android:gravity="center_vertical"
+            android:text="@string/ledi_zhaoshang"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/ledi_card_name_item"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ledi_bank_name_item"
+            android:gravity="center_vertical"
+            android:text="@string/ledi_credit"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/ledi_number_item"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ledi_card_name_item"
+            android:gravity="center_vertical"
+            android:text="@string/ledi_shortcut_Tailnumber"
+            android:textColor="#6a6a6a" />
+
+        <TextView
+            android:id="@+id/ledi_number_value_item"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ledi_number_item"
+            android:gravity="center_vertical"
+            android:text="3626"
+            android:textColor="#6a6a6a" />
+
+        <ImageView
+            android:id="@+id/ledi_xiala_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ledi_jiantou" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ledi_card_dialog_lin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/ledi_buy_pop_bg"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/popwin_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ledi_buy_dialog_plus"
+            />
+
+        <TextView
+            android:id="@+id/popwin_bank_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/ledi_shortcut_qita"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

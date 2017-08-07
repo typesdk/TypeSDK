@@ -1,0 +1,41 @@
+{
+  "version":"2.1.20160819",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "username" : ""
+    ,"memkey":""
+    }
+    ,"out_url" : "http://game.6y.com.cn/sdk/islogin.php"
+    ,"out_params" :
+    {
+      "username" : ""
+    ,"memkey":""
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "orderid" : ""
+      ,"username": ""
+      ,"gameid": ""
+      ,"roleid": ""
+      ,"serverid": ""
+      ,"paytype": ""
+      ,"amount": ""
+      ,"paytime": ""
+      ,"attach": ""
+      ,"sign": ""
+      }
+    ,"out_url" :"http://game.6y.com.cn/sdk/islogin.php"
+    ,"out_params" :
+      {
+      }
+    }
+  ]
+}

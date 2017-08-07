@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:background="@color/lib_droi_account_login_background" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="@string/lib_droi_account_add_address_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/lib_droi_account_layout_titleColor" />
+
+        <ImageView
+            android:id="@+id/lib_droi_account_add_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/lib_droi_account_btn_add_address_selector"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/m4399_rec_page_bg"
+    android:minHeight="180dp"
+    android:minWidth="256dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hpay_tv_rt_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="10dip"
+        android:textColor="@color/hpay_title_color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <include
+        layout="@layout/m4399_rec_sec_mvcenter_separator"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_separator_height" />
+
+    <TextView
+        android:id="@+id/hpay_tv_rt_context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1.0"
+        android:textColor="@color/hpay_title_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/m4399_rec_sum_btns_eara_height"
+        android:layout_margin="16dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hpay_btn_rt_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/m4399_rec_white_btn_bg"
+            android:gravity="center"
+            android:text="@string/hpay_cancel"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/hpay_btn_rt_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/m4399_rec_right_btn_bg"
+            android:gravity="center"
+            android:text="@string/hpay_ok"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

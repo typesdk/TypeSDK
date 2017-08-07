@@ -1,0 +1,45 @@
+{
+  "version":"v1.1.9.20160427",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "validateToken" : ""
+    }
+    ,"out_url" : "http://api.haimawan.com/index.php?m=api&a=validate_token"
+    ,"out_params" :
+    {
+      "validateToken" : ""
+    ,"appid" : ""
+    }
+
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "notify_time": ""
+      ,"appid": ""
+      ,"out_trade_no": ""
+      ,"total_fee" : ""
+      ,"subject": ""
+      ,"trade_status" : ""
+      ,"sign" : ""
+      }
+    ,"out_url" :"http://api.haimawan.com/index.php?m=api&a=validate_token"
+    ,"out_params" :
+      {
+        "notify_time": ""
+      ,"appid": ""
+      ,"out_trade_no": ""
+      ,"total_fee" : ""
+      ,"subject":""
+      ,"trade_status" : ""
+      ,"sign" : ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#70000000"
+    android:gravity="bottom" >
+
+    <RelativeLayout
+        android:id="@+id/payeco_keyboardLayout_hx"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebecee"
+        android:gravity="bottom" >
+
+        <LinearLayout
+            android:id="@+id/payeco_keyboard_hx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/keyboard_invisable"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:background="@null"
+                android:src="@drawable/payeco_plugin_bomarr" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c1c1c1" />
+
+            <LinearLayout
+                android:id="@+id/payeco_keyboard_editText_hx"
+                android:layout_width="fill_parent"
+                android:layout_height="38.0dp"
+                android:layout_margin="5dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/payeco_keyboard_password_hx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/payeco_plugin_editbg"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="请输入号码"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:textColorHint="#687887"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/payeco_digit_ok_hx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/payeco_stand_btnselector"
+                    android:text="确 定"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#c1c1c1" />
+
+            <RelativeLayout
+                android:id="@+id/payeco_keyboardBodyLayout_hx"
+                android:layout_width="fill_parent"
+                android:layout_height="180.0dip" >
+
+                <LinearLayout
+                    android:id="@+id/payeco_digitBodyLayout_hx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <LinearLayout
+                        android:id="@+id/payeco_digit_display_1_hx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/payeco_digit_1_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="1" />
+
+                        <Button
+                            android:id="@+id/payeco_digit_2_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="2" />
+
+                        <Button
+                            android:id="@+id/payeco_digit_3_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/payeco_digit_display_2_hx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/payeco_digit_4_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="4" />
+
+                        <Button
+                            android:id="@+id/payeco_digit_5_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="5" />
+
+                        <Button
+                            android:id="@+id/payeco_digit_6_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="6" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/payeco_digit_display_3_hx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/payeco_digit_7_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="7" />
+
+                        <Button
+                            android:id="@+id/payeco_digit_8_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="8" />
+
+                        <Button
+                            android:id="@+id/payeco_digit_9_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="9" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/payeco_digit_display_4_hx"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/payeco_digit_x_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="X" />
+
+                        <Button
+                            android:id="@+id/payeco_digit_0_hx"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_weight="1"
+                            android:text="0" />
+
+                        <LinearLayout
+                            android:id="@+id/keyboard_back"
+                            style="@style/payeco_keyboardDigitButton_hx"
+                            android:layout_width="0px"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:clickable="true" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/payeco_plugin_back" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

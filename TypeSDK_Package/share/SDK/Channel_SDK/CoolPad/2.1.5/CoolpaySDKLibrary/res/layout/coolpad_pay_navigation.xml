@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/navigation_bg_blue" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/navigation_bg_blue"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/back_re"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical" >
+
+                <ImageView android:layout_marginLeft="20dp"
+                    android:id="@+id/back_iv"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/coolpad_back_white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tittle_re"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tittle_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/coolpad_white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/more_re"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical" >
+
+                <com.yulong.paysdk.widget.RoundImageView
+                    android:id="@+id/user_head_img"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"
+                    android:src="@drawable/coolpad_account_default"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

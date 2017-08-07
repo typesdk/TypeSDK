@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.fourthree"
+    android:versionCode="21215"
+    android:versionName="2.12.1.5"
+	android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+    
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    
+	<!-- Common permission -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- For Dial 4399 hotline -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- SMS pay permission -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- YouYiFu permission -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+  <!-- end -->
+	       
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+   <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+		
+        <activity
+            android:name="com.type.sdk.android.fourthree.TypeSDKSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+        </activity>
+        <activity
+            android:name="com.type.sdk.android.fourthree.MainActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="fourthree.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        
+        <!--
+            For 4399 recharging SDK. 请不要在此处修改RechargeActivity的方向设置，因为某些2。3的机型启动Activity总是先启动
+            竖屏，然后强制转换成横屏，这会导致潜在问题.
+        -->
+        <!--
+		activity的配置不能少于orientation|screenSize|keyboardHidden，这些配置是为了防止Activity被系统或第三方界面强
+		拉成竖屏时，发生重建而加入的。SDK的Activity支持横屏或竖屏，但不支持横竖屏切换，否则会包初始化问题
+        -->
+        <!-- For 4399 recharging SDK. -->
+        
+         <activity
+            android:name="cn.m4399.common.permission.AuthActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@style/m4399PermissionActivityStyle" />
+        
+        <activity
+            android:name="cn.m4399.recharge.ui.activity.RechargeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="true"
+            android:theme="@style/m4399ActivityTheme" >
+        </activity>
+
+        <!-- For 4399 Operation SDK -->
+        <activity
+            android:name="cn.m4399.operate.ui.activity.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/m4399TransparentStyle" />
+        <activity
+            android:name="cn.m4399.operate.ui.activity.UserCenterActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="cn.m4399.operate.ui.activity.CustomWebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <!-- For AliPay SDK -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- For YouYiFu -->
+        <activity
+            android:name="com.arcsoft.hpay100.HPaySdkActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="behind"
+            android:theme="@style/hpay_dialog_style" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.web.HPayWebActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="behind"
+            android:theme="@style/hpay_custom_confim_dialog" >
+        </activity>
+        <activity
+            android:name="com.arcsoft.hpay100.web.HPayWebFullActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="behind" >
+        </activity>
+    </application>
+
+</manifest>

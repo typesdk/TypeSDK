@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="298dp"
+              android:layout_height="159dp"
+              android:layout_margin="10dp"
+              android:background="@drawable/exit_dialog_back"
+              android:gravity="center">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="109dp"
+            android:layout_weight="0">
+        <ImageView
+                android:id="@+id/dialog_title_image"
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/exit_dialog_normal_back"
+                android:scaleType="centerCrop"/>
+        <TextView
+                android:id="@+id/dialog_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_centerInParent="true"
+                android:text="你确定要终止传输吗？"
+                android:layout_toRightOf="@id/dialog_title_image"
+                android:textColor="@color/bluetooth_textcolor"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+    </RelativeLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/bluetooth_line_textcolor"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"/>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+    >
+        <Button
+                android:id="@+id/dialog_button_close"
+                android:layout_alignParentLeft="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#cccccc"
+                android:background="@drawable/exitdialog_selector"
+                android:textSize="18sp"
+                android:text="退出"
+                android:layout_weight="1"/>
+        <Button
+                android:id="@+id/dialog_button_keep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/exitdialog_again_selector"
+                android:textColor="@color/main_yello_color"
+                android:textSize="18sp"
+                android:text="再玩一把" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

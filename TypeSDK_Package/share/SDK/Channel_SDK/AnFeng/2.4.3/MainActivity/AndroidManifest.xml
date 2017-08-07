@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.type.sdk.android.anfan"
+    android:versionCode="243"
+    android:versionName="2.4.3"
+    android:installLocation="auto">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 需要的权限，请添加到自己工程的清单文件中 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <application
+        android:name="com.type.sdk.application.TypeApplication"
+        android:allowBackup="true"
+        android:persistent="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+         <activity
+            android:name="com.type.sdk.android.anfeng.TypeSDKSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+
+        <activity
+            android:name="com.type.sdk.android.anfeng.MainActivity"
+           android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="af.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+            <meta-data
+                android:name="unityplayer.ForwardNativeEventsToDalvik"
+                android:value="false" />
+        </activity>
+        
+        <!-- 需要的注册的activity，请添加到自己工程的清单文件中 -->
+        <activity
+            android:name="com.anfeng.pay.activity.AFUpdate"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/anfan_update" >
+        </activity>
+        
+        <activity
+            android:name="com.anfeng.pay.activity.AFPayRecord"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFBoundPhone"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFBoundEmail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFLogin"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/anfan_Transparent" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFManager"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFmoneyDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFMissPass"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/anfan_Transparent" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFPayType"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFRegister"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@style/anfan_Transparent" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFProtocolActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFUpdatePWD"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFPayByGameCard"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFPayByPhoneCard"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFPayByM9"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFWelfare"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFGameGiftBag"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.WebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFPayFmoney"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFUnBoundEmail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFUnBoundPhone"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.anfeng.pay.activity.AFShare"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- 支付宝相关 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- 银联 -->
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 微信支付 -->
+        <activity
+            android:name="com.ipaynow.plugin.activity.PayMethodActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.ipaynow.plugin.inner_plugin.wechat_plugin.activity.WeChatNotifyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.NoDisplay" >
+        </activity>
+        <!-- 安锋提供给合作方的gameId或appId(应用数字id)  接入时请修改值为在安锋商户后台申请的appid -->
+        <meta-data
+            android:name="productid"
+            android:value="@app_id@" />
+        <!-- SDK需要知晓请求的来源 ，即分销商,游戏厂商无须修改 -->
+        <meta-data
+            android:name="retailer"
+            android:value="1" />
+    </application>
+</manifest>

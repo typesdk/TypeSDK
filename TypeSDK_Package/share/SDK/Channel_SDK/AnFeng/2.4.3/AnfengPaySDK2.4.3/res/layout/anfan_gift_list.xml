@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+        android:background="@color/anfan_defealut_bg"
+    android:layout_height="fill_parent" >
+    <include layout="@layout/empty_view" />
+
+   <com.anfeng.pay.view.XListView
+    android:id="@+id/anfan_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cacheColorHint="@android:color/transparent"
+    android:divider="@null"
+    android:listSelector="@android:color/transparent"
+     />
+
+  
+</RelativeLayout>

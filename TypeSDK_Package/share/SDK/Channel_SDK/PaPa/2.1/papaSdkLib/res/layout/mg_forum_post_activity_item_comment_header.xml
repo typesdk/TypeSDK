@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:background="@android:color/white"
+                  android:paddingLeft="@dimen/mg_forum_post_item_padding"
+                  android:paddingRight="@dimen/mg_forum_post_item_padding"
+                  android:paddingBottom="8dp">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mg_forum_post_item_padding"
+                    android:layout_weight="1">
+                <view class="com.papa91.pay.widget.RoundedImageView" android:layout_width="30dp"
+                      android:layout_height="30dp" android:id="@+id/comment_avatar_src"
+                      android:src="@drawable/main_normal_icon"
+                      android:layout_marginRight="10dp"
+                      android:scaleType="centerCrop"
+                        />
+                      <!--app:riv_corner_radius="@dimen/mg_forum_avatar_round_width"-->
+                      <!--app:riv_border_width="@dimen/mg_forum_avatar_round_stroke_width"-->
+                      <!--app:riv_oval="false"-->
+                      <!--app:riv_border_color="@color/mg_forum_avatar_round_stroke_color"-->
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp"
+                              android:layout_height="wrap_content"
+                              android:layout_weight="1">
+
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:orientation="horizontal">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="昵称"
+                                  android:id="@+id/comment_nickname" android:textColor="@color/forum_nickname_color"
+                                  android:textSize="12dp"
+                                  android:gravity="center_vertical" android:layout_gravity="top"/>
+                        <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:id="@+id/forum_post_moderator" android:src="@drawable/icon_moderator"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center_vertical"
+                                android:visibility="gone"/>
+                        <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="12dp"
+                                android:id="@+id/forum_post_host" android:src="@drawable/forum_post_host"
+                                android:layout_marginLeft="8dp"
+                                android:layout_gravity="center_vertical"
+                                android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:orientation="horizontal"
+                                  android:layout_marginTop="2dp">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="#"
+                                  android:contentDescription="楼层"
+                                  android:id="@+id/comment_floor" android:textColor="#a9a9a9" android:textSize="10dp"
+                                  android:layout_gravity="bottom"
+                                  android:gravity="bottom"
+                                  android:layout_marginRight="8dp"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                  android:text="时间"
+                                  android:id="@+id/comment_add_time" android:textColor="#a9a9a9" android:textSize="10dp"
+                                  android:layout_gravity="bottom"
+                                  android:gravity="bottom"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:id="@+id/flagBestAnswer"
+                       android:visibility="gone"
+                       android:src="@drawable/flag_answer_resolve_best"
+                       android:layout_alignParentRight="true"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/mg_forum_post_item_padding">
+            <ImageView android:layout_width="24dp" android:layout_height="22dp" android:id="@+id/comment_reply"
+                       android:src="@drawable/reply"
+                       android:layout_gravity="center_vertical|right"
+                       android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

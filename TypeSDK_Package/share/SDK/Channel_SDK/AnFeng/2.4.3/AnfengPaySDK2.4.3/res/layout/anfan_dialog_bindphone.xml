@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/anfan_defealut_bg"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#39c5a9"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="绑定手机,尊享特权"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="10dp"
+        android:src="@drawable/anfan_diag_close" />
+
+    <LinearLayout
+        android:id="@+id/ll_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/anfan_line" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/anfan_bind_phone_one"
+            android:textColor="@color/anfan_c8f8b92"
+            android:textSize="12sp" />
+
+        <include layout="@layout/anfan_line_margin" />
+
+        <TextView
+            android:id="@+id/tv_content1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/anfan_bind_phone_two"
+            android:textColor="@color/anfan_c8f8b92"
+            android:textSize="12sp" />
+
+        <include layout="@layout/anfan_line_margin" />
+
+        <TextView
+            android:id="@+id/tv_content2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/anfan_bind_phone_three"
+            android:textColor="@color/anfan_c8f8b92"
+            android:textSize="12sp" />
+
+        <include layout="@layout/anfan_line_margin" />
+
+        <TextView
+            android:id="@+id/tv_content3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/anfan_bind_phone_four"
+            android:textColor="@color/anfan_c8f8b92"
+            android:textSize="12sp" />
+
+        <include layout="@layout/anfan_line_margin" />
+
+        <TextView
+            android:id="@+id/tv_content4"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/anfan_bind_phone_five"
+            android:textColor="@color/anfan_c8f8b92"
+            android:textSize="12sp" />
+
+        <include layout="@layout/anfan_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_bind"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#39C5A9"
+            android:gravity="center"
+            android:text="立即绑定"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:text="以后绑定"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

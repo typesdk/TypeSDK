@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    
+    <LinearLayout
+        android:id="@+id/showLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/leftText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        
+        <RelativeLayout 
+            android:id="@+id/layout_float_content"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            >
+            
+	        <!-- 左边布局layout -->
+	        <LinearLayout
+	            android:id="@+id/sq_wm_l_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="13dp"
+	            android:visibility="visible" 
+	            >
+	
+	            <TextView
+	                android:id="@+id/leftUser"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dip"
+	                android:gravity="center"
+	                android:text="个人中心"
+	                android:textSize="14dp"
+	                android:textColor="#ff884a0e"
+	                android:paddingLeft="10dp"
+	                android:paddingRight="5dp"
+	                android:background="@drawable/sy37_float_bg_left"
+	                />
+	            <TextView
+	                android:id="@+id/leftBbs"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:text="游戏论坛"
+	                android:textSize="14dp"
+	                android:textColor="#ff884a0e"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:background="@drawable/sy37_float_bg_center" />
+	            
+	            <TextView
+	                android:id="@+id/leftService"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:text="联系客服"
+	                android:textSize="14dp"
+	                android:textColor="#ff884a0e"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:background="@drawable/sy37_float_bg_center" />
+	            
+	            <TextView
+	                android:id="@+id/leftChange"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:text="切换账号"
+	                android:singleLine="true"
+	                android:textSize="14dp"
+	                android:textColor="#ff884a0e"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="19dp"
+	                android:background="@drawable/sy37_float_bg_right" />
+	        </LinearLayout>
+	
+	        
+	        
+	        <!-- 右边布局layout -->
+	        <LinearLayout
+	            android:id="@+id/sq_wm_r_layout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_vertical" 
+	            android:layout_marginLeft="23dp"
+	            android:layout_marginTop="13dp"
+	            android:visibility="gone"
+	            
+	            >
+	
+	            <TextView
+	                android:id="@+id/rightUser"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:text="个人中心"
+	                android:singleLine="true"
+	                android:textSize="14dp"
+	                android:textColor="#ff884a0e"
+	                android:paddingLeft="15dp"
+	                android:paddingRight="5dp"
+	                android:background="@drawable/sy37_float_bg_left"
+	                />
+	
+	
+	            <TextView
+	                android:id="@+id/rightBbs"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:text="游戏论坛"
+	                android:textSize="14dp"
+	                android:textColor="#ff884a0e"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:background="@drawable/sy37_float_bg_center"
+	                 />
+	
+	            <TextView
+	                android:id="@+id/rightService"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:text="联系客服"
+	                android:textSize="14dp"
+	                android:textColor="#ff884a0e"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="5dp"
+	                android:background="@drawable/sy37_float_bg_center"
+	                />
+	
+	            <TextView
+	                android:id="@+id/rightChange"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center"
+	                android:text="切换账号"
+	                android:singleLine="true"
+	                android:textSize="14dp"
+	                android:textColor="#ff884a0e"
+	                android:paddingLeft="5dp"
+	                android:paddingRight="10dp"
+	                android:background="@drawable/sy37_float_bg_right" />
+	        </LinearLayout>
+            
+                
+            <!-- 中间悬浮标图标 -->
+            <ImageView
+                android:id="@+id/move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sy37_wm_move_hidden"
+                 />
+    
+	        
+        </RelativeLayout>
+        
+        
+        
+         <TextView
+            android:id="@+id/rightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

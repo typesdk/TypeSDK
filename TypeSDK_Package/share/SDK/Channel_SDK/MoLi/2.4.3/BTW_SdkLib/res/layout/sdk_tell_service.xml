@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sdk_circle_bg"
+    android:padding="15dip" >
+
+    <RelativeLayout
+        android:id="@+id/rl_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:layout_marginLeft="5dip"
+            android:text="请登录平台个人中心\n修改密码或联系"
+            android:textColor="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_tip"
+        android:layout_centerHorizontal="true"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv_orderid_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:text="客服 QQ:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/tv_orderid_title"
+            android:text=""
+            android:textColor="#6361FF"
+            android:textSize="14dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_order1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_order"
+        android:layout_centerHorizontal="true"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/tv_orderid_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:text="客服电话:"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/tv_orderid_title1"
+            android:autoLink="phone"
+            android:text=""
+            android:textColor="#6361FF"
+            android:textSize="14dip" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_below="@id/rl_order1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/sdk_btn_selector"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="18dip" />
+
+</RelativeLayout>

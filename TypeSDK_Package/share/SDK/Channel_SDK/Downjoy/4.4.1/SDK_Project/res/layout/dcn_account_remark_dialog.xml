@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|center">
+
+        <TextView
+            android:id="@+id/dcn_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/dcn_white"
+            android:layout_marginBottom="6dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dcn_remark_edit"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@color/dcn_white"
+                android:hint="@string/dcn_input_remark"
+                android:lines="2"
+                android:maxLength="24"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/dcn_black"
+                android:textColorHint="@color/dcn_gray_light"
+                android:textCursorDrawable="@null"
+                android:imeOptions="flagNoExtractUi"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/dcn_remark_confirm"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="@color/dcn_orange_common"
+                android:text="@string/dcn_ok"
+                android:textColor="@color/dcn_white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

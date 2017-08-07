@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/pipaw_sdk_user_lg" />
+
+    <include layout="@layout/pipaw_sdk_user_bt" />
+
+    <include layout="@layout/pipaw_sdk_user_rg" />
+
+    <include layout="@layout/pipaw_sdk_user_terms" />
+
+    <include layout="@layout/pipaw_sdk_user_quick_rg" />
+
+    <include layout="@layout/pipaw_sdk_user_web" />
+
+    <include layout="@layout/pipaw_sdk_user_exit" />
+
+    <include layout="@layout/pipaw_sdk_user_fp" />
+
+</RelativeLayout>
