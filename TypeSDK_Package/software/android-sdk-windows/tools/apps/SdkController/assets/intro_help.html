@@ -1,0 +1,42 @@
+<html>
+<!--
+/*
+ * Copyright (C) 2012 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+-->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style type="text/css">
+     body      { color: white;  background-color: black }
+     a:link    { color: #33B5E5; /*blue*/    }
+     a:visited { color: #99CC00; /*green*/   }
+     a:hover   { color: #FFBB33; /*yellow*/; }
+  </style>
+</head>
+<body>
+<hr/>
+<b>SdkController</b> is used to send sensor data from an actual device to an emulator. <p/>
+To use it, do the following: <br/>
+<ol>
+<li>Connect your device to your computer via USB. Make sure to enable <i>USB Debugging</i> in <i>Settings &gt; Developer Options</i>. </li>
+<li>Start this application on your device. </li>
+<li>On the computer in a shell, run: <br/><i>adb forward tcp:1970 localabstract:android.sdk.controller</i> </li>
+<li>Finally <b>run an emulator</b> with an AVD targetting <b>API 15</b>.
+Multi-touch emulation must be explicitly enabled in emulator either by setting "Touch screen type" property to "multi-touch" in AVD Manager,
+or by starting the emulator with "-screen multi-touch" option.</li>
+</ol>
+<a href="https://sites.google.com/a/android.com/tools/recent/sensoremulation">Read more.</a>
+</body>
+</html>

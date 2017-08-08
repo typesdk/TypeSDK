@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="2"
+    name="Android Manifest File"
+    description="Creates an Android Manifest XML File."
+    >
+
+    <category value="Other" />
+
+    <parameter
+        id="remapFile"
+        name="Change File Location"
+        type="boolean"
+        constraints=""
+        default="false"
+        help="Change the file location to another destination within the module." />
+
+    <parameter
+        id="newLocation"
+        name="New File Location"
+        type="string"
+        constraints="nonempty|source_set_folder|unique"
+        suggest="src/${sourceProviderName}/AndroidManifest.xml"
+        help="The location for the new file"
+        visibility="remapFile" />
+
+    <execute file="recipe.xml.ftl" />
+
+</template>

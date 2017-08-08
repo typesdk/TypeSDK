@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="2"
+    name="Java Resources Folder"
+    description="Creates a source root for Java Resource (NOT Android resource) files."
+    >
+
+    <category value="Folder" />
+
+    <parameter
+        id="remapFolder"
+        name="Change Folder Location"
+        type="boolean"
+        constraints=""
+        default="false"
+        help="Change the folder location to another folder within the module." />
+
+    <parameter
+        id="newLocation"
+        name="New Folder Location"
+        type="string"
+        constraints="nonempty|source_set_folder|unique"
+        suggest="src/${sourceProviderName}/resources/"
+        help="The location for the new folder"
+        visibility="remapFolder" />
+
+    <execute file="recipe.xml.ftl" />
+
+</template>

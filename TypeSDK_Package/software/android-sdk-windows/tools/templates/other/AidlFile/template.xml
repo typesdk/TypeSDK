@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="1"
+    name="AIDL File"
+    description="Creates a new Android Interface Description Language file."
+    >
+
+    <category value="AIDL" />
+
+    <parameter
+        id="interfaceName"
+        name="Interface Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="IMyAidlInterface"
+        help="Name of the Interface." />
+
+    <execute file="recipe.xml.ftl" />
+
+</template>

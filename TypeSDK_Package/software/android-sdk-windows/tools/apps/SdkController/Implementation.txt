@@ -1,0 +1,85 @@
+Implementation Details for SdkControllerApp
+-------------------------------------------
+
+---- 2012-03-22
+App is in the namespace com.android.tools.sdkcontroller.
+
+This is an app that has a minSdkVersion of 7 (Eclair)
+and a targetSdkVersion of 15 (ICS). The target version
+means the app is forbidden under ICS from doing any network
+communication on its main thread.
+
+The overall design:
+- A background service is started by the app. It handles the connection
+  to the emulator and provides a number of "handlers". Handlers can be
+  though as being separate tasks that the user wants to achieve, for example
+  sending sensor data, sending multi-touch events, receiving screen updates,
+  sending a camera feed, etc.
+- All the handlers are started when the service starts and shutdown with it.
+  They basically stay there as long as the app is running, and its up to the
+  handler to deal with emulator connections starts/stopping. Some handlers
+  will run in the background (e.g. sending sensor data) whereas other might
+  need an activity to connect to them first.
+- The app has a number of activities which connect to existing handlers.
+
+Another way to see it is that the app handles a number of tasks which are
+composed of a background handler (that consumes data form the emulator and
+can send data to the emulator) and an optional activity for UI (that displays
+or controls the handler's state.)
+
+
+Here's a quick overview of the classes in the application:
+
+
+The main UI is in activities.MainActivity.
+There are 2 tasks activities: SensorActivity and MultiTouchActivity.
+
+These all derive from BaseBindingActivity which provides a few convenient common features
+- in onResume this will bind to the service, creating and starting it if necessary.
+- in onPause, this will unbind from the service, but does not stop it.
+
+Note however that due to the asynchronous nature of the bind operation, the activity
+must not attempt to use the service from onResume. Instead there are 2 callbacks to use:
+- onServiceConnected when the bind succeeded.
+- onServiceDisconnected as the reverse operation.
+
+When the activity is connected to the service, it can then use getServiceBinder()
+to get an interface to talk to the service.
+
+In the other direction, the activity provides a listener for the service to notify
+the application: ControllerListener createControllerListener().
+
+The activity can then access the handler:
+  handler = getServiceBinder().getHandler(HandlerType....)
+
+and then the activity wants to provide a listener to get notified by the handler:
+  handler.addUiHandler(new android.os.Handler(this));
+
+The emulator connection is separated in the "lib" subpackage:
+- EmulatorConnection abstracts a connection to the emulator.
+    - Object is first created by giving a non-null EmulatorListener.
+    - then connect(port) is called to initiate the connection.
+    - The EmulatorConnection is always created in SYNC mode.
+- EmulatorListener is a callback: the emulator connection uses it to indicate
+    when the connection is actually connected or disconnected.
+
+In the end we have the following workflow describing who controls what (-->):
+
+
+                                        Emulator
+                                         ^   ^
+                                         |   | EmuCnxHandler
+                      sendEventToEmulator|   | (EmulatorListener)
+                                         |   +-------------+
+                                         |                 |
+              handlers.BaseHandler       |                 v
+ Activity  ------------------------>  Handler  <---- ControllerService
+    UI     <------------------------                     |     ^
+              android.os.Handler                         |     |
+   |  ^                                                  |     |
+   |  |               ControllerListener                 |     |
+   |  +--------------------------------------------------+     |
+   +-----------------------------------------------------------+
+                       ControllerBinder
+
+----

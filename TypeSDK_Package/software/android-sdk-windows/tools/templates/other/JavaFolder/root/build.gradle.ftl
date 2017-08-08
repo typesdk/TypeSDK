@@ -1,0 +1,1 @@
+android {sourceSets {${sourceProviderName} {java.srcDirs=['src/${sourceProviderName}/java', '${newLocation}']}}}

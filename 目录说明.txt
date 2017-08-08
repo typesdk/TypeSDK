@@ -1,3 +1,7 @@
+TypeSDK渠道SDK联运一键接入工具使用教程
+http://www.typesdk.com/documents
+
+
 TypeSDK_Clinet 客户端接入资源
     └ Android 原生Android接入资源
     └ Unity Unity3D项目接入资源

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="1"
+    name="Values XML File"
+    description="Creates a new XML values file."
+    >
+
+    <category value="XML" />
+
+    <parameter
+        id="fileName"
+        name="Values File Name"
+        type="string"
+        constraints="unique|nonempty"
+        default="values"
+        help="Name of the values XML file." />
+
+    <execute file="recipe.xml.ftl" />
+
+</template>

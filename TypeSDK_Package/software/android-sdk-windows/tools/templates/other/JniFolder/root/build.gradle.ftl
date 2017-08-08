@@ -1,0 +1,1 @@
+android {sourceSets {${sourceProviderName} {jni.srcDirs=['src/${sourceProviderName}/jni', '${newLocation}']}}}

@@ -1,0 +1,2 @@
+TypeSDK渠道聚合工具Unity接入
+http://www.typesdk.com/docs/typesdk%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3/client

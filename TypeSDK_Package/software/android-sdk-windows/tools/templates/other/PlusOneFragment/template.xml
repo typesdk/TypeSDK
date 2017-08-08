@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<template
+    format="3"
+    revision="1"
+    name="Fragment (with a +1 button)"
+    description="Creates a fragment with a Google Plus +1 button."
+    minApi="8"
+    minBuildApi="8">
+
+    <category value="Fragment" />
+
+    <dependency name="android-support-v4" revision="8" />
+
+    <category value="Other" />
+
+    <parameter
+        id="className"
+        name="Fragment Name"
+        type="string"
+        constraints="class|nonempty|unique"
+        default="PlusOneFragment"
+        help="The name of the fragment class to create" />
+
+    <parameter
+        id="includeFactory"
+        name="Include fragment factory methods?"
+        type="boolean"
+        default="true"
+        help="Generate static fragment factory methods for easy instantiation" />
+
+    <parameter
+        id="includeCallbacks"
+        name="Include interface callbacks?"
+        type="boolean"
+        default="true"
+        help="Generate event callbacks for communication with an Activity or other fragments" />
+
+    <thumbs>
+        <thumb>templates_plusone_fragment.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

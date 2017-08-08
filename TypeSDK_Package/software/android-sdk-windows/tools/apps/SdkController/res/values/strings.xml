@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2012 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+-->
+
+<resources>
+
+    <!-- Strings for manifest. -->
+    <string name="app_name">SDK Controller</string>
+    <string name="service_description">Background service for SDK Controller</string>
+
+    <!-- Strings for service. -->
+    <string name="service_notif_title">SDK Controller is running</string>
+
+    <!-- Strings for layout/main -->
+    <string name="main_label_service">Service:</string>
+    <string name="main_label_buttons">What you can do:</string>
+    <string name="main_btn_open_multitouch">Control Multi-touch</string>
+    <string name="main_btn_open_sensors">Control Sensors</string>
+    <string name="main_service_status_connected">Emulator Connected</string>
+    <string name="main_service_status_disconnected">Emulator Connected</string>
+
+    <!-- Strings for layout/sensors -->
+    <string name="sensors_activity_title">SDK Controller &gt; Sensors</string>
+    <string name="sensors_top_description">Available Sensors:</string>
+    <string name="sensors_sample_rate">Sample Rate</string>
+    <string name="sensors_hz_per_sensor">Hz per sensor</string>
+    <string name="sensors_actual_rate">Actual</string>
+    <string name="sensors_hz_average">Hz average</string>
+    <!-- Default sample rate for SensorsActivity UI.
+         Should match the default for SensorsHandler.mUpdateTargetMs. -->
+    <string name="sensors_default_sample_rate">20</string>
+
+</resources>

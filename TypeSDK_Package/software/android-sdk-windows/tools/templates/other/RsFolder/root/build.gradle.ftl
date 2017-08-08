@@ -1,0 +1,1 @@
+android {sourceSets {${sourceProviderName} {renderscript.srcDirs=['src/${sourceProviderName}/rs', '${newLocation}']}}}

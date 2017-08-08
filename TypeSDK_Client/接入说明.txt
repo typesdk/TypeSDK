@@ -1,0 +1,2 @@
+TypeSDK渠道聚合工具接入包含客户端、服务端两部分接入。
+http://www.typesdk.com/docs/typesdk%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3/%E6%8E%A5%E5%85%A5%E4%BB%8B%E7%BB%8D

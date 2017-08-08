@@ -1,0 +1,2 @@
+TypeSDK渠道聚合工具Android原生接入文档
+http://www.typesdk.com/docs/typesdk%E6%8E%A5%E5%85%A5%E6%96%87%E6%A1%A3/%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8E%A5%E5%85%A5%E5%8E%9F%E7%94%9Fandroid%E9%A1%B9%E7%9B%AE%E6%8E%A5%E5%85%A5
