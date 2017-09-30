@@ -284,7 +284,8 @@ namespace SDKPackage.GameConfig
                 request.Method = "POST";
                 request.ContentType = "application/x-www-form-urlencoded";
 
-                string strdata = JsonConvert.SerializeObject(new { objgameid = objgameid, jsonoutlist = jsonoutlist });
+                string strdata = HttpUtility.UrlEncode(JsonConvert.SerializeObject(new { objgameid = objgameid, jsonoutlist = jsonoutlist }), Encoding.UTF8);
+                //myEncodedString = HttpUtility.HtmlEncode(myString);
 
                 byte[] data = encoding.GetBytes(url + "&data=" + strdata);
                 request.ContentLength = data.Length;

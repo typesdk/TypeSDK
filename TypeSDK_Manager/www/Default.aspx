@@ -1,10 +1,10 @@
-ï»¿<%@ Page Title="é¦–é¡µ" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SDKPackage._Default" %>
+<%@ Page Title="Ê×Ò³" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SDKPackage._Default" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2><i class="fa fa-flag"> æ¬¢è¿Ž</i></h2>
+                    <h2><i class="fa fa-flag"> »¶Ó­</i></h2>
 					<ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -12,9 +12,9 @@
 				<div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <p>æ‚¨å¯ä»¥åœ¨TypeSDKå®˜ç½‘å‘çŽ°æ›´å¤šç²¾å½©å†…å®¹ã€‚æˆ‘ä»¬ä¸ºæ‚¨å‡†å¤‡äº†ï¼šTypeSDKç›¸å…³ä¸“ä¸šæ–‡æ¡£å’Œè§†é¢‘æ•™ç¨‹ã€æ¸ é“SDKæŽ¥å…¥ç»éªŒåˆ†äº«ã€æ¸¸æˆä¸Šçº¿æŒ‡å¯¼ã€å„ç±»å®žç”¨å·¥å…·ã€æŠ€æœ¯æ”¯æŒæœåŠ¡ã€äºŒæ¬¡å¼€å‘æŒ‡å¯¼ã€ç‰ˆå·å…¬å…³æœåŠ¡ã€‚
+                    <p>Äú¿ÉÒÔÔÚTypeSDK¹ÙÍø·¢ÏÖ¸ü¶à¾«²ÊÄÚÈÝ¡£ÎÒÃÇÎªÄú×¼±¸ÁË£ºTypeSDKÏà¹Ø×¨ÒµÎÄµµºÍÊÓÆµ½Ì³Ì¡¢ÇþµÀSDK½ÓÈë¾­Ñé·ÖÏí¡¢ÓÎÏ·ÉÏÏßÖ¸µ¼¡¢¸÷ÀàÊµÓÃ¹¤¾ß¡¢¼¼ÊõÖ§³Ö·þÎñ¡¢¶þ´Î¿ª·¢Ö¸µ¼¡¢°æºÅ¹«¹Ø·þÎñ¡£
                     </p>
-                    <a href="http://typesdk.com" target="_block" class="btn btn-primary btn-lg">è¿›å…¥TypeSDKå®˜ç½‘</a>
+                    <a href="http://www.typesdk.com" target="_block" class="btn btn-primary btn-lg">½øÈëTypeSDK¹ÙÍø</a>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2><i class="fa fa-book"> ä½¿ç”¨å¸®åŠ©</i></h2>
+                    <h2><i class="fa fa-book"> Ê¹ÓÃ°ïÖú</i></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -32,11 +32,11 @@
                 <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <p>è¯·ç‚¹å‡»ä¸‹é¢æŒ‰é’®ç§»æ­¥æµè§ˆæˆ‘ä»¬çš„å¹³å°ä½¿ç”¨è¯´æ˜Žï¼š</p>
-                    <div class="row"><div class="col-md-3 col-sm-6 col-xs-12" style=" float: none; margin: 0 auto;"><a class="btn btn-success btn-block" target="_block" href="http://www.typesdk.com/docs/typesdk_install/manage_guilde/">TypeSDKæ‰“åŒ…å¹³å°ä½¿ç”¨è¯´æ˜Ž</a></div></div>
+                    <p>Çëµã»÷ÏÂÃæ°´Å¥ÒÆ²½ä¯ÀÀÎÒÃÇµÄÆ½Ì¨Ê¹ÓÃËµÃ÷£º</p>
+                    <div class="row"><div class="col-md-3 col-sm-6 col-xs-12" style=" float: none; margin: 0 auto;"><a class="btn btn-success btn-block" target="_block" href="http://www.typesdk.com/docs/typesdk_install/manage_guilde/">TypeSDK´ò°üÆ½Ì¨Ê¹ÓÃËµÃ÷</a></div></div>
                     
-                    <p>æˆ–ç›´æŽ¥ä¸‹è½½æˆ‘ä»¬ä¸ºæ‚¨å‡†å¤‡çš„Unity Demoæºä»£ç :</p>
-                    <div class="row"><div class="col-md-3 col-sm-6 col-xs-12" style=" float: none; margin: 0 auto;"><a class="btn btn-success btn-block" target="_block" href="https://code.csdn.net/typesdk_code/typesdk_client/tree/master">Unity Demo æºä»£ç </a></div></div>
+                    <p>»òÖ±½ÓÏÂÔØÎÒÃÇÎªÄú×¼±¸µÄUnity DemoÔ´´úÂë:</p>
+                    <div class="row"><div class="col-md-3 col-sm-6 col-xs-12" style=" float: none; margin: 0 auto;"><a class="btn btn-success btn-block" target="_block" href="http://demo.typesdk.com:56789/TypeSDKDemo.zip ">Unity Demo Ô´´úÂë</a></div></div>
                     
                 </div>
             </div>
@@ -47,7 +47,7 @@
         <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2><i class="fa fa-download"> ä¸‹è½½åŒ…</i></h2>
+                    <h2><i class="fa fa-download"> ÏÂÔØ°ü</i></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -55,16 +55,16 @@
 				<div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <p>ä¸‹è½½å¹¶ç®¡ç†æ‚¨çš„APKã€ipaåŒ…</p>
-                    <a class="btn btn-default btn-block" href="/DownLoad/DownLoadAndroidPackage.aspx">AndroidåŒ…</a>
-                    <a class="btn btn-default btn-block" href="/DownLoad/DownLoadIOSPackage.aspx">IOSåŒ…</a>
+                    <p>ÏÂÔØ²¢¹ÜÀíÄúµÄAPK¡¢ipa°ü</p>
+                    <a class="btn btn-default btn-block" href="/DownLoad/DownLoadAndroidPackage.aspx">Android°ü</a>
+                    <a class="btn btn-default btn-block" href="/DownLoad/DownLoadIOSPackage.aspx">IOS°ü</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2><i class="fa fa-archive"> æ‰“åŒ…æ“ä½œ</i></h2>
+                    <h2><i class="fa fa-archive"> ´ò°ü²Ù×÷</i></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -72,18 +72,18 @@
 				<div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <p>è¿›è¡Œæ¸ é“æ‰“åŒ…æ“ä½œ</p>
-                    <a class="btn btn-default btn-block" href="/PJPackage/SelectGame.aspx">å‘èµ·æ‰“åŒ…ä»»åŠ¡</a>
-                    <a class="btn btn-default btn-block" href="/PJPackage/PackageInfoList.aspx">æŸ¥è¯¢æ‰“åŒ…ä»»åŠ¡</a>
-<%--                    <a class="btn btn-default btn-block" href="/AdPackage/SelectPackage.aspx">å‘èµ·å¹¿å‘Šåˆ†åŒ…ä»»åŠ¡</a>
-                    <a href="#">ä»€ä¹ˆæ˜¯å¹¿å‘Šåˆ†åŒ…ï¼Ÿ</a>--%>
+                    <p>½øÐÐÇþµÀ´ò°ü²Ù×÷</p>
+                    <a class="btn btn-default btn-block" href="/PJPackage/SelectGame.aspx">·¢Æð´ò°üÈÎÎñ</a>
+                    <a class="btn btn-default btn-block" href="/PJPackage/PackageInfoList.aspx">²éÑ¯´ò°üÈÎÎñ</a>
+<%--                    <a class="btn btn-default btn-block" href="/AdPackage/SelectPackage.aspx">·¢Æð¹ã¸æ·Ö°üÈÎÎñ</a>
+                    <a href="#">Ê²Ã´ÊÇ¹ã¸æ·Ö°ü£¿</a>--%>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2><i class="fa fa-gears"> é…ç½®ç®¡ç†</i></h2>
+                    <h2><i class="fa fa-gears"> ÅäÖÃ¹ÜÀí</i></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -91,11 +91,11 @@
 				<div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <p>ç®¡ç†æ¸¸æˆã€æ¸ é“é…ç½®ã€ç­¾åã€å¹³å°ç”¨æˆ·ã€‚</p>
-                    <a class="btn btn-default btn-block" href="/GameConfig/GameList.aspx">ç®¡ç†æ¸¸æˆ</a>
-                    <a class="btn btn-default btn-block" href="/PJConfig/Platform.aspx">ç®¡ç†æ¸ é“å‚æ•°ã€SDKç‰ˆæœ¬</a>
-                    <a class="btn btn-default btn-block" href="/GameIcon/GameIconList.aspx">ç®¡ç†å›¾æ ‡</a>
-                    <a class="btn btn-default btn-block" href="/PJConfig/KeyConfig.aspx">ç®¡ç†ç­¾åå¯†é’¥</a>
+                    <p>¹ÜÀíÓÎÏ·¡¢ÇþµÀÅäÖÃ¡¢Ç©Ãû¡¢Æ½Ì¨ÓÃ»§¡£</p>
+                    <a class="btn btn-default btn-block" href="/GameConfig/GameList.aspx">¹ÜÀíÓÎÏ·</a>
+                    <a class="btn btn-default btn-block" href="/PJConfig/Platform.aspx">¹ÜÀíÇþµÀ²ÎÊý¡¢SDK°æ±¾</a>
+                    <a class="btn btn-default btn-block" href="/GameIcon/GameIconList.aspx">¹ÜÀíÍ¼±ê</a>
+                    <a class="btn btn-default btn-block" href="/PJConfig/KeyConfig.aspx">¹ÜÀíÇ©ÃûÃÜÔ¿</a>
                 </div>
             </div>
         </div>

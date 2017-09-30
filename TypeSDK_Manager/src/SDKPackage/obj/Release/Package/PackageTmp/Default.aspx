@@ -14,7 +14,7 @@
                 <div class="x_content">
                     <p>您可以在TypeSDK官网发现更多精彩内容。我们为您准备了：TypeSDK相关专业文档和视频教程、渠道SDK接入经验分享、游戏上线指导、各类实用工具、技术支持服务、二次开发指导、版号公关服务。
                     </p>
-                    <a href="http://typesdk.com" target="_block" class="btn btn-primary btn-lg">进入TypeSDK官网</a>
+                    <a href="http://www.typesdk.com" target="_block" class="btn btn-primary btn-lg">进入TypeSDK官网</a>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
                     <div class="row"><div class="col-md-3 col-sm-6 col-xs-12" style=" float: none; margin: 0 auto;"><a class="btn btn-success btn-block" target="_block" href="http://www.typesdk.com/docs/typesdk_install/manage_guilde/">TypeSDK打包平台使用说明</a></div></div>
                     
                     <p>或直接下载我们为您准备的Unity Demo源代码:</p>
-                    <div class="row"><div class="col-md-3 col-sm-6 col-xs-12" style=" float: none; margin: 0 auto;"><a class="btn btn-success btn-block" target="_block" href="https://code.csdn.net/typesdk_code/typesdk_client/tree/master">Unity Demo 源代码</a></div></div>
+                    <div class="row"><div class="col-md-3 col-sm-6 col-xs-12" style=" float: none; margin: 0 auto;"><a class="btn btn-success btn-block" target="_block" href="http://demo.typesdk.com:56789/TypeSDKDemo.zip">Unity Demo 源代码</a></div></div>
                     
                 </div>
             </div>

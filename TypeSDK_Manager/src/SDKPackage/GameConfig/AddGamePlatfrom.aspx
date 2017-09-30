@@ -45,12 +45,26 @@
                 for (var i = 0; i < checkboxList.length; i++) {
                     if (checkboxList[i].checked) {
                         strhidden = strhidden + checkboxList[i].value + ",";
-                        strsign = strsign + $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(3).children("select").val() + ",";
-                        if ($(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val() == null || $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val() == undefined) {
-                            alert("未配置渠道版本");
+
+                        var ss = $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(3).children("select").val();
+                        if (!ss)
+                            ss = $(checkboxList[i]).parent("td").parent("tr").children("td").eq(3).children("select").val();
+                        if (!ss) {
+                            alert("渠道签名未配置！");
                             return false;
                         }
-                        strVersion = strVersion + $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val() + ",";
+
+                        strsign = strsign + ss + ",";
+
+                        var sv = $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val();
+                        if (!sv)
+                            sv = $(checkboxList[i]).parent("td").parent("tr").children("td").eq(1).children("select").val();
+
+                        if (!sv) {
+                            alert("渠道版本未配置！");
+                            return false;
+                        }
+                        strVersion = strVersion + sv + ",";
                     }
                 }
                 if (strhidden.length > 0) {

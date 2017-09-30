@@ -36,13 +36,14 @@ function convertParamLogin(query,ret)
             return false;
         }
     }
+
+    var cloned_token = urlencode.decode(cloned.token);
+
     ret.playerId = cloned.id;
-    ret.access_token = cloned.token.split("|")[0];
-    ret.ts = cloned.token.split("|")[1];
+    ret.access_token = cloned_token.split("|")[0];
+    ret.ts = cloned_token.split("|")[1];
     return true;
 }
-
-
 
 function callChannelLogin(attrs,params,query,ret,retf)
 {

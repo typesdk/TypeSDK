@@ -46,8 +46,8 @@
                     if (checkboxList[i].checked) {
                         strhidden = strhidden + checkboxList[i].value + ",";
                         strsign = strsign + $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(3).children("select").val() + ",";
-                        if ($(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val() == null || $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val() == undefined) {
-                            alert("未配置渠道版本");
+                        if ($(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val() == null || $(checkboxList[i]).parent("td").parent("tr").children("td").eq(1).children("select").val() == undefined) {
+                            alert("渠道版本未配置！");
                             return false;
                         }
                         strVersion = strVersion + $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val() + ",";

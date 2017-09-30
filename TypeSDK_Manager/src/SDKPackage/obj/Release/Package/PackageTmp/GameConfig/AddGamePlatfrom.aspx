@@ -45,12 +45,26 @@
                 for (var i = 0; i < checkboxList.length; i++) {
                     if (checkboxList[i].checked) {
                         strhidden = strhidden + checkboxList[i].value + ",";
-                        strsign = strsign + $(checkboxList[i]).parent("td").parent("tr").children("td").eq(3).children("select").val() + ",";
-                        if ($(checkboxList[i]).parent("td").parent("tr").children("td").eq(1).children("select").val() == null || $(checkboxList[i]).parent("td").parent("tr").children("td").eq(1).children("select").val() == undefined) {
+
+                        var ss = $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(3).children("select").val();
+                        if (!ss)
+                            ss = $(checkboxList[i]).parent("td").parent("tr").children("td").eq(3).children("select").val();
+                        if (!ss) {
+                            alert("渠道签名未配置！");
+                            return false;
+                        }
+
+                        strsign = strsign + ss + ",";
+
+                        var sv = $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val();
+                        if (!sv)
+                            sv = $(checkboxList[i]).parent("td").parent("tr").children("td").eq(1).children("select").val();
+
+                        if (!sv) {
                             alert("渠道版本未配置！");
                             return false;
                         }
-                        strVersion = strVersion + $(checkboxList[i]).parent("td").parent("tr").children("td").eq(1).children("select").val() + ",";
+                        strVersion = strVersion + sv + ",";
                     }
                 }
                 if (strhidden.length > 0) {
@@ -71,7 +85,7 @@
                 for (var i = 0; i < checkboxList.length; i++) {
                     if (checkboxList[i].checked) {
                         strhidden = strhidden + checkboxList[i].value + ",";
-                        strVersion = strVersion + $(checkboxList[i]).parent("td").parent("tr").children("td").eq(1).children("select").val() + ",";
+                        strVersion = strVersion + $(checkboxList[i]).parent("div").parent("td").parent("tr").children("td").eq(1).children("select").val() + ",";
                     }
                 }
                 if (strhidden.length > 0){

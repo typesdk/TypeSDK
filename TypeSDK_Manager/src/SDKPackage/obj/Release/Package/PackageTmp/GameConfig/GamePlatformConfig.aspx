@@ -218,7 +218,12 @@
                             </table>
                         </LayoutTemplate>
                     </asp:ListView>
-                    <asp:SqlDataSource ID="SqlDataSourcePlatformConfig" runat="server" ConnectionString="<%$ ConnectionStrings:SdkPackageConnString %>" DeleteCommand="DELETE FROM [sdk_PlatformConfig] WHERE [Id] = @Id" InsertCommand="INSERT INTO [sdk_PlatformConfig] ([GameName], [PlatformName], [SDKKey], [Explain], [StringValue], [isUser], [isCPSetting], [isBuilding], [isServer],[PlugInID]) VALUES (@GameID, @PlatformID, @SDKKey, @Explain, @StringValue,@isUser, @isCPSetting, @isBuilding, @isServer,@PlugInID)" SelectCommand="[sdk_getGamePlatfromConfig]" SelectCommandType="StoredProcedure" UpdateCommand="UPDATE [sdk_PlatformConfig] SET [Explain] = @Explain, [StringValue] = @StringValue, [isUser] = @isUser, [isCPSetting] = @isCPSetting, [isBuilding] = @isBuilding, [isServer] = @isServer WHERE [Id] = @Id">
+                    <asp:SqlDataSource ID="SqlDataSourcePlatformConfig" runat="server" ConnectionString="<%$ ConnectionStrings:SdkPackageConnString %>" 
+                        DeleteCommand="DELETE FROM [sdk_PlatformConfig] WHERE [Id] = @Id" 
+                        InsertCommand="INSERT INTO [sdk_PlatformConfig] ([GameName], [PlatformName], [SDKKey], [Explain], [StringValue], [isUser], [isCPSetting], [isBuilding], [isServer],[PlugInID]) VALUES (@GameID, @PlatformID, @SDKKey, @Explain, @StringValue,@isUser, @isCPSetting, @isBuilding, @isServer,@PlugInID)" 
+                        SelectCommand="[sdk_getGamePlatfromConfig]" 
+                        SelectCommandType="StoredProcedure" 
+                        UpdateCommand="UPDATE [sdk_PlatformConfig] SET [Explain] = @Explain, [StringValue] = @StringValue, [isUser] = @isUser, [isCPSetting] = @isCPSetting, [isBuilding] = @isBuilding, [isServer] = @isServer WHERE [Id] = @Id">
                         <DeleteParameters>
                             <asp:Parameter Name="Id" Type="Int32" />
                         </DeleteParameters>

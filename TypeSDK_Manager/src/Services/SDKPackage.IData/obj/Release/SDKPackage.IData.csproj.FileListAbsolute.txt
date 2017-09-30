@@ -39,17 +39,3 @@ E:\WORK\TypeSDK\1.CodeServer\Package\Package_Enterprise\Services\SDKPackage.IDat
 E:\WORK\TypeSDK\1.CodeServer\Package\Package_Enterprise\Services\SDKPackage.IData\obj\Release\SDKPackage.IData.dll
 E:\WORK\TypeSDK\1.CodeServer\Package\Package_Enterprise\Services\SDKPackage.IData\obj\Release\SDKPackage.IData.pdb
 E:\WORK\TypeSDK\1.CodeServer\Package\Package_Enterprise\Services\SDKPackage.IData\bin\Release\Newtonsoft.Json.pdb
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\SDKPackage.IData.dll
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\SDKPackage.IData.pdb
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\SDKPackage.Entity.dll
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\SDKPackage.Kernel.dll
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\SDKPackage.Utils.dll
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\ICSharpCode.SharpZipLib.dll
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\SDKPackage.Kernel.pdb
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\SDKPackage.Entity.pdb
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\Newtonsoft.Json.pdb
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\Newtonsoft.Json.xml
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\bin\Release\SDKPackage.Utils.pdb
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\obj\Release\SDKPackage.IData.csprojResolveAssemblyReference.cache
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\obj\Release\SDKPackage.IData.dll
-D:\工作资料文件夹\星渠\代码\Package_Enterprise\Services\SDKPackage.IData\obj\Release\SDKPackage.IData.pdb

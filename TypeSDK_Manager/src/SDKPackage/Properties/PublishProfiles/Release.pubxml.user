@@ -149,28 +149,28 @@
       <publishTime>11/18/2016 15:27:17</publishTime>
     </File>
     <File Include="bin/SDKPackage.Data.dll">
-      <publishTime>08/03/2017 10:30:02</publishTime>
+      <publishTime>08/11/2017 11:40:19</publishTime>
     </File>
     <File Include="bin/SDKPackage.dll">
-      <publishTime>08/03/2017 10:30:04</publishTime>
+      <publishTime>09/29/2017 10:02:52</publishTime>
     </File>
     <File Include="bin/SDKPackage.dll.config">
       <publishTime>06/26/2017 11:08:46</publishTime>
     </File>
     <File Include="bin/SDKPackage.Entity.dll">
-      <publishTime>08/03/2017 10:30:01</publishTime>
+      <publishTime>08/11/2017 11:40:17</publishTime>
     </File>
     <File Include="bin/SDKPackage.Facade.dll">
-      <publishTime>08/03/2017 10:30:02</publishTime>
+      <publishTime>08/11/2017 11:40:20</publishTime>
     </File>
     <File Include="bin/SDKPackage.IData.dll">
-      <publishTime>08/03/2017 10:30:01</publishTime>
+      <publishTime>08/11/2017 11:40:18</publishTime>
     </File>
     <File Include="bin/SDKPackage.Kernel.dll">
-      <publishTime>08/03/2017 10:30:00</publishTime>
+      <publishTime>08/11/2017 11:40:16</publishTime>
     </File>
     <File Include="bin/SDKPackage.Utils.dll">
-      <publishTime>08/03/2017 10:30:00</publishTime>
+      <publishTime>08/11/2017 11:40:15</publishTime>
     </File>
     <File Include="bin/ServiceStack.Common.dll">
       <publishTime>11/03/2016 11:47:22</publishTime>
@@ -305,7 +305,7 @@
       <publishTime>11/03/2016 11:47:10</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>04/22/2017 14:19:27</publishTime>
+      <publishTime>09/26/2017 15:26:17</publishTime>
     </File>
     <File Include="DownLoad/DownLoadAndroidPackage.aspx">
       <publishTime>03/21/2017 19:08:50</publishTime>
@@ -368,7 +368,7 @@
       <publishTime>11/03/2016 11:47:10</publishTime>
     </File>
     <File Include="GameConfig/AddGamePlatfrom.aspx">
-      <publishTime>07/28/2017 16:38:40</publishTime>
+      <publishTime>09/22/2017 15:51:42</publishTime>
     </File>
     <File Include="GameConfig/GameChannelPackageManage.aspx">
       <publishTime>03/21/2017 18:30:59</publishTime>
@@ -383,7 +383,7 @@
       <publishTime>11/07/2016 17:01:36</publishTime>
     </File>
     <File Include="GameConfig/GamePlatformConfig.aspx">
-      <publishTime>11/07/2016 11:36:55</publishTime>
+      <publishTime>08/11/2017 09:59:29</publishTime>
     </File>
     <File Include="GameConfig/GamePlatformIcon.aspx">
       <publishTime>01/13/2017 18:35:39</publishTime>
@@ -4511,7 +4511,7 @@
       <publishTime>11/03/2016 11:47:05</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/03/2017 10:30:04</publishTime>
+      <publishTime>07/25/2017 11:36:25</publishTime>
     </File>
     <File Include="Web.sitemap">
       <publishTime>11/03/2016 11:47:05</publishTime>

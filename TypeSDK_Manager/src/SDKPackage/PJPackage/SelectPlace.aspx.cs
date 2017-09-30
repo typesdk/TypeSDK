@@ -98,7 +98,7 @@ namespace SDKPackage.PJPackage
                 configPath += gameId + "\\" + (pluginid == "0" ? platformName : platformName + "_LeBian") + "\\";
                 if (!System.IO.Directory.Exists(configPath)) //判断config文件是否存在
                 {
-                    dtNew.Rows[row]["error"] = "config文件不存在";
+                    dtNew.Rows[row]["error"] = "渠道未配置，请先配置渠道参数";
                     return;
                 }
                 if (!System.IO.File.Exists(configPath + "local.properties")) //判断config文件是否存在

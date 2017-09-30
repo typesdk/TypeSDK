@@ -63,7 +63,9 @@ function callChannelLogin(attrs, params, query, ret, retf) {
     cloned.appkey = attrs.app_key;
     cloned.sid = query.sid;
     var signStr = new Buffer(attrs.app_key + query.sid + attrs.secret_key);
-    var signBase64 = signStr.toString('base64');
+    //var signBase64 = signStr.toString('base64');
+    var signBase64 = crypto.createHash('md5').update(signStr, 'utf8').digest('hex');
+
     cloned.sign = signBase64;
     cloned.time = GetNowStr();
     var options = {

@@ -786,18 +786,20 @@ function callShell(taskId, callback) {
 						callback(taskId, "error");
 					} else {
 						if (fs.existsSync(path.join(TMP_FOLDER, 'Game/bin'))) {
-							try {
-								pkgFinsh(taskId);
-							} catch (e) {
-								ErrLog("Package error:" + e);
-								PkgLog(e);
+							setTimeout(function() {
+								try {
+									pkgFinsh(taskId);
+								} catch (e) {
+									ErrLog("Package error:" + e);
+									PkgLog(e);
+									fs.removeSync(FLAG_FILE);
+									callback(taskId, "error");
+								}
+								PkgLog("编译成功");
+								InfoLog("\nOutput package log information.\n" + stdout);
 								fs.removeSync(FLAG_FILE);
-								callback(taskId, "error");
-							}
-							PkgLog("编译成功");
-							InfoLog("\nOutput package log information.\n" + stdout);
-							fs.removeSync(FLAG_FILE);
-							callback(taskId, "normal");
+								callback(taskId, "normal");
+							}, 20000);
 						} else {
 							//shell执行失败
 							ErrLog("打包失败：未生成APK文件。");

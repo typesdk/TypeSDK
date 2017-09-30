@@ -5,7 +5,7 @@
 "channelName":"typesdk",
 "check_update_url":"http://update.typesdk.com/update/1001/201/",
 "cp_id":"1001",
-"platform":"unity",
+"platform":"android",
 "sdk_name":"GAGame",
 "sdk_request_and_support":"support_exit_window",
 "switchconfig_url":"http://demo.typesdk.com:30003/getConfig/1001/200/config.txt"
