@@ -111,7 +111,6 @@ function getGameNewChannels(gameid, callBack) {
                 obj[i] = JSON.parse(obj[i]);
             }
 
-            console.log('obj:',obj);
 
             channelsBuffer['game' + gameid] = obj ? obj : {};
             getGameByID(gameid, function (objG) {

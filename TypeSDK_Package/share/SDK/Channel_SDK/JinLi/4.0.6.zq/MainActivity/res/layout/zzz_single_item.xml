@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/zzz_single_choice_padding_top_bottom"
+                android:paddingLeft="@dimen/zzz_single_choice_padding_left"
+                android:paddingRight="@dimen/zzz_single_choice_padding_right"
+                android:paddingTop="@dimen/zzz_single_choice_padding_top_bottom">
+
+    <TextView
+        android:id="@+id/zzz_single_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/zzz_dialog_message_color"
+        android:textSize="@dimen/zzz_dialog_message_size"/>
+
+    <ImageView
+        android:id="@+id/zzz_single_choice_button"
+        android:layout_width="@dimen/zzz_single_choice_button_size"
+        android:layout_height="@dimen/zzz_single_choice_button_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/zzz_empty_message"/>
+
+</RelativeLayout>

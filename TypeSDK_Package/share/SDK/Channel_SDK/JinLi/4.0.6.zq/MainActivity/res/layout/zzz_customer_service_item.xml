@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/zzz_customer_service_item_height"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="@dimen/zzz_customer_service_item_margin"
+    android:layout_marginRight="@dimen/zzz_customer_service_item_margin">
+
+    <ImageView
+        android:id="@+id/zzz_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/zzz_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/zzz_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zzz_customer_service_title_text_margin"
+            android:textColor="@color/zzz_customer_service_title_color"
+            android:textSize="@dimen/zzz_customer_service_title_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zzz_customer_service_title_text_margin"
+            android:singleLine="true"
+            android:textColor="@color/zzz_customer_service_detail_default_color"
+            android:textSize="@dimen/zzz_customer_service_detail_text_size"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/zzz_seperate_line_color"/>
+</RelativeLayout>

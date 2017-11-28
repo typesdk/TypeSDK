@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/zzz_white"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/zzz_wallet_item_margin_left"
+    />
+
+    <TextView
+        android:id="@+id/item_property"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/zzz_wallet_item_margin_left"
+        android:layout_toRightOf="@id/item_icon"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/zzz_wallet_item_name"/>
+
+    <TextView
+        android:id="@+id/item_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/zzz_wallet_item_margin_left"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/zzz_wallet_item_value_no_arrow"/>
+
+</RelativeLayout>

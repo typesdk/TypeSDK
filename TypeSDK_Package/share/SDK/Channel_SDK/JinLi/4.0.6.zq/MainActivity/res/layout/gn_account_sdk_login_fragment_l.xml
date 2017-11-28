@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Gionee <lantian> <2013-06-24> modify for CR00808808 begin -->
+
+    <LinearLayout
+        android:id="@+id/login_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 帐号 -->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|bottom"
+            android:paddingLeft="20dip"
+            android:paddingTop="15dip"
+            android:text="@string/gn_account_login_amigo_account"
+            android:textColor="@color/gn_account_orange_bg"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/username_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gn_account_login_activity_margin_left_right"
+            android:layout_marginRight="@dimen/gn_account_login_activity_margin_left_right"
+            android:layout_marginTop="@dimen/gn_account_login_activity_margin_left_right" >
+
+            <!-- Gionee <maxw> <2013-04-27> modify for CR00802020 begin -->
+
+            <EditText
+                android:id="@+id/username_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gn_account_editText_height"
+                android:background="@color/gn_account_editer_text_backgroud_color"
+                android:hint="@string/gn_account_login_edittext_prompt"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/gn_account_main_body_color"
+                android:textSize="@dimen/gn_account_text_size_subhead_information" >
+
+                <!-- Gionee <maxw> <2013-04-27> modify for CR00802020 end -->
+            </EditText>
+        </LinearLayout>
+
+        <!-- 密码 -->
+
+
+        <!-- Gionee <lantian> <2013-06-21> modify for CR00808808 begin -->
+
+        <LinearLayout
+            android:id="@+id/password_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gn_account_login_activity_margin_left_right"
+            android:layout_marginRight="@dimen/gn_account_login_activity_margin_left_right"
+            android:layout_marginTop="12dip" >
+
+            <!-- Gionee < changwy > <2014-05-21> modify for CR01237976 begin -->
+
+            <EditText
+                android:id="@+id/password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gn_account_editText_height"
+                android:background="@color/gn_account_editer_text_backgroud_color"
+                android:hint="@string/gn_account_input_password_hint"
+                android:imeOptions="flagNoExtractUi"
+                android:maxLength="16"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/gn_account_main_body_color"
+                android:textSize="@dimen/gn_account_text_size_subhead_information" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_btn_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 验证码 -->
+
+
+            <!-- <include layout="@layout/auth_code" /> -->
+
+
+            <!-- Gionee <lantian> <2013-06-13> modify for CR00823401 begin -->
+
+            <include
+                android:id="@+id/auth_code_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gn_account_login_activity_margin_left_right"
+                android:layout_marginRight="@dimen/gn_account_login_activity_margin_left_right"
+                android:layout_marginTop="12dip"
+                layout="@layout/gn_account_sdk_auth_code_no_progress"
+                android:gravity="center_vertical"
+                android:visibility="gone" />
+            <!-- Gionee <lantian> <2013-06-13> modify for CR00823401 end -->
+
+
+            <!-- 激活帐号入口，重置密码入口 -->
+
+            <RelativeLayout
+                android:id="@+id/resetpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gn_account_login_activity_margin_left_right"
+                android:layout_marginRight="@dimen/gn_account_login_activity_margin_left_right"
+                android:layout_marginTop="12dp" >
+
+                <Button
+                    android:id="@+id/login_more"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/gn_account_forget_password_button_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:minHeight="@dimen/gn_account_amigo_alert_dialog_button_bar_height"
+                    android:text="@string/gn_account_more"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/gn_account_text_size_prompt" />
+
+                <LinearLayout
+                    android:id="@+id/third_part_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:baselineAligned="false"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/qq_ll"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip" />
+
+                    <ImageView
+                        android:id="@+id/sina_ll"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/forget_password_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/gn_account_forget_password_button_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:minHeight="@dimen/gn_account_amigo_alert_dialog_button_bar_height"
+                    android:text="@string/gn_account_login_forgetpassword_new"
+                    android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                    android:textColor="@color/gn_account_account_black_tv_selector"
+                    android:textSize="@dimen/gn_account_text_size_prompt" />
+            </RelativeLayout>
+
+            <!-- 登录按钮 -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/fill_width_login_fl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/gn_account_login_activity_margin_left_right"
+                android:layout_marginRight="@dimen/gn_account_login_activity_margin_left_right"
+                android:gravity="center_vertical"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/fill_width_login_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gn_account_account_orange_button_bg_selector"
+                    android:minHeight="@dimen/gn_account_amigo_alert_dialog_button_bar_height"
+                    android:text="@string/gn_account_login_button"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gn_account_white"
+                    android:textSize="@dimen/gn_account_amigo_textSizeAlertDialogBtn" />
+
+                <ProgressBar
+                    android:id="@+id/fill_width_wait_pb"
+                    android:layout_width="50dip"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dip"
+                    android:indeterminateDrawable="@drawable/gn_account_progressbar_circle_gray"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_linearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:gravity="center_horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/register_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1" >
+
+                    <!-- Gionee <lantian> <2013-06-24> modify for CR00808808 end -->
+
+                    <Button
+                        android:id="@+id/register_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gn_account_account_orange_button_bg_selector"
+                        android:minHeight="@dimen/gn_account_amigo_alert_dialog_button_bar_height"
+                        android:text="@string/gn_account_register_new_member"
+                        android:textColor="@color/gn_account_white"
+                        android:textSize="@dimen/gn_account_amigo_textSizeAlertDialogBtn" />
+
+                    <ProgressBar
+                        android:id="@+id/register_wait_pb"
+                        android:layout_width="50dip"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:indeterminateDrawable="@drawable/gn_account_progressbar_circle_gray"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/login_fl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/login_button"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gn_account_account_white_button_bg_selector"
+                        android:minHeight="@dimen/gn_account_amigo_alert_dialog_button_bar_height"
+                        android:text="@string/gn_account_login_button"
+                        android:textColor="@color/gn_account_amigo_accent_color_g1"
+                        android:textSize="@dimen/gn_account_amigo_textSizeAlertDialogBtn" />
+
+                    <ProgressBar
+                        android:id="@+id/wait_pb"
+                        android:layout_width="50dip"
+                        android:layout_height="30dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="1dip"
+                        android:indeterminateDrawable="@drawable/gn_account_progressbar_circle_gray"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Gionee <lantian> <2013-06-19> modify for CR00826759 begin -->
+
+</RelativeLayout>

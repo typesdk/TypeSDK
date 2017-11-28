@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- for gionee_dialog_resource -->
+    <color name="zzz_float_transparent">#00FFFFFF</color>
+    <color name="zzz_dialog_title_color">#FF80BC38</color>
+    <color name="zzz_dialog_divider_color">#FF80BC38</color>
+    <color name="zzz_negative_button_press_color_new">#FF80BC38</color>
+    <color name="zzz_positive_button_normal_color">#FF222222</color>
+    <color name="zzz_positive_button_press_color_new">#FF80BC38</color>
+    <color name="zzz_button_border_color">#FFE0E0E0</color>
+    <color name="zzz_share_item_press_bg_color">#FFFF9000</color>
+    <color name="zzz_money_list_item_color">#FF777777</color>
+    <color name="zzz_white">#FFFFFFFF</color>
+    <color name="zzz_main_green">#22C485</color>
+    <color name="zzz_positive_button_background_normal">#00FFFFFF</color>
+    <color name="zzz_negative_button_background_normal">#00FFFFFF</color>
+    <color name="zzz_dialog_message_color">#FF222222</color>
+    <color name="zzz_negative_button_normal_color">#FF222222</color>
+    <color name="zzz_negative_button_press_color">#FFFFFFFF</color>
+    <color name="zzz_float_positive_button_normal_color">#FF222222</color>
+    <color name="zzz_positive_button_press_color">#FFFFFFFF</color>
+    <color name="zzz_float_button_border_color">#FFE0E0E0</color>
+    <color name="zzz_permission_text_color">#FF424242</color>
+    <color name="zzz_permission_button_text_green">#FF22C685</color>
+    <color name="zzz_permission_button_text_grey">#FFCDCDCD</color>
+</resources>

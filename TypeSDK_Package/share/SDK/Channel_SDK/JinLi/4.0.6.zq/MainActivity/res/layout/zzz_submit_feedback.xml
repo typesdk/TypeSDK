@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/zzz_feedback_padding_bottom"
+        android:paddingLeft="@dimen/zzz_feedback_padding_horizon"
+        android:paddingRight="@dimen/zzz_feedback_padding_horizon">
+
+        <EditText
+            android:id="@+id/zzz_feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_feedback_content_height"
+            android:layout_marginTop="@dimen/zzz_feedback_content_margin_top"
+            android:background="@drawable/zzz_feedback_edit_bg"
+            android:gravity="top|left"
+            android:hint="@string/zzz_feedback_content_hint"
+            android:includeFontPadding="false"
+            android:maxLength="@integer/zzz_feedback_content_length"
+            android:padding="@dimen/zzz_feedback_content_padding"
+            android:textColor="@color/zzz_feedback_edit_text_color"
+            android:textColorHint="@color/zzz_feedback_edit_hint"
+            android:textCursorDrawable="@drawable/zzz_edit_cursor"
+            android:textSize="@dimen/zzz_feedback_edit_text_size"/>
+
+        <LinearLayout
+            android:id="@+id/zzz_select_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_select_image_layout_height"
+            android:layout_below="@id/zzz_feedback_content"
+            android:layout_marginTop="@dimen/zzz_select_image_layout_margin_top"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/zzz_feedback_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zzz_feedback_contact_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/zzz_feedback_edit_bg"
+                    android:gravity="center_vertical"
+                    android:hint="@string/zzz_feedback_contact_hint"
+                    android:inputType="number"
+                    android:maxLength="@integer/zzz_feedback_contact_length"
+                    android:paddingLeft="@dimen/zzz_feedback_content_padding"
+                    android:textColor="@color/zzz_feedback_edit_text_color"
+                    android:textColorHint="@color/zzz_feedback_edit_hint"
+                    android:textCursorDrawable="@drawable/zzz_edit_cursor"
+                    android:textSize="@dimen/zzz_feedback_edit_text_size"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_select_image_layout_height"
+                android:layout_marginLeft="@dimen/zzz_feedback_contact_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/zzz_feedback_edit_bg">
+                <ImageView
+                    android:id="@+id/zzz_feedback_image"
+                    android:layout_width="@dimen/zzz_feedback_image_size"
+                    android:layout_height="@dimen/zzz_feedback_image_size"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/zzz_feedback_image_margin_left"
+                    android:visibility="gone"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/zzz_select_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/zzz_feedback_select_image_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/zzz_select_image_margin_left"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/zzz_add"
+                    android:includeFontPadding="false"
+                    android:layout_toRightOf="@id/zzz_feedback_image"
+                    android:drawablePadding="@dimen/zzz_select_image_text_padding"
+                    android:text="@string/zzz_upload_image"
+                    android:textColor="@color/zzz_feedback_edit_hint"
+                    android:textSize="@dimen/zzz_feedback_edit_text_size"/>
+
+                <Button
+                    android:id="@+id/zzz_remove_image"
+                    android:layout_width="@dimen/zzz_feedback_image_cancel_size"
+                    android:layout_height="@dimen/zzz_feedback_image_cancel_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/zzz_feedback_image_cancel"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/zzz_feedback_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_feedback_submit_height"
+            android:layout_below="@id/zzz_select_image_layout"
+            android:layout_marginBottom="@dimen/zzz_feedback_submit_button_margin_bottom"
+            android:layout_marginTop="@dimen/zzz_feedback_submit_margin_top"
+            android:background="@drawable/zzz_green_submit_button"
+            android:enabled="false"
+            android:text="@string/zzz_commit"
+            android:textColor="@color/zzz_main_green"
+            android:textSize="@dimen/zzz_feedback_submit_size"/>
+
+        <LinearLayout
+            android:id="@+id/zzz_feedback_submitting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/zzz_feedback_submit_button"
+            android:layout_alignTop="@id/zzz_feedback_submit_button"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.gionee.gamesdk.business.core.ui.GameProgressBar
+                android:id="@+id/zzz_progress"
+                style="@style/zzz_CircleProgressBarMini"
+                android:layout_width="@dimen/zzz_mini_circle_progress_size"
+                android:layout_height="@dimen/zzz_mini_circle_progress_size"/>
+
+            <TextView
+                android:id="@+id/zzz_progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/zzz_feedback_progress_text_margin_left"
+                android:includeFontPadding="false"
+                android:text="@string/zzz_wait_submitting"
+                android:textColor="@color/zzz_feedback_submitting_color"
+                android:textSize="@dimen/zzz_feedback_submitting_size"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zzz_feedback_custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zzz_feedback_submit_button"
+            android:layout_marginTop="@dimen/zzz_feedback_custom_layout_margin_top"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/zzz_feedback_custom_layout_padding"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/zzz_telephone"
+                layout="@layout/zzz_customer_service_item"/>
+
+            <include
+                android:id="@+id/zzz_qq"
+                layout="@layout/zzz_customer_service_item"/>
+
+
+            <include
+                android:id="@+id/zzz_service_time_interval"
+                layout="@layout/zzz_customer_service_item"/>
+
+            <include
+                android:id="@+id/zzz_spuervise"
+                layout="@layout/zzz_customer_service_item"/>
+
+            <include
+                android:id="@+id/zzz_wechat_official_account"
+                layout="@layout/zzz_customer_service_item"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

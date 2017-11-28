@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="buoy_close">"关闭"</string>
+    <string name="buoy_cancel">"取消"</string>
+    <string name="buoy_update">"更新"</string>
+    <string name="buoy_confirm">"确定"</string>
+    <string name="buoy_start">"开启"</string>
+    <string name="buoy_app_update">"应用更新"</string>
+    <string name="buoy_async_login_notice">"欢迎，华为用户 %1$s"</string>
+    <string name="buoy_notification_title_game_coupon">"华为游戏券到账，点击查看"</string>
+    <string name="buoy_download_gamebox_tips">"正在加载华为游戏中心"</string>
+    <string name="buoy_download_gamebox_background_toast">"正在后台加载"</string>
+    <string name="buoy_redownload_gamebox_tips">"重新加载华为游戏中心"</string>
+    <string name="buoy_dialog_download_gamebox_tips">"要使用此功能，需安装最新版本华为游戏中心。是否安装？"</string>
+    <string name="buoy_dialog_download_gamebox_title">"提示"</string>
+    <string name="buoy_download_notification_tips">"正在加载%s"</string>
+    <string name="buoy_gamebox_appname">"华为游戏中心"</string>
+    <string name="buoy_hms_appname">"华为移动服务"</string>
+	<string name="buoy_install">安装</string>
+	<string name="buoy_splash_skip">跳过</string>
+	<string name="buoy_server_exception">"无法连接服务器，请稍后重试 (%1$s)。"</string>
+	<string name="buoy_server_response_error">"无法获取数据，请稍后重试 (%1$s)。"</string>
+	<string name="buoy_network_error">"网络未连接，请检查网络设置。"</string>
+	<string name="buoy_retry">重试</string>
+	<string name="buoy_server_retry">"无法连接服务器，请稍后重试 (%1$s)。"</string>
+	<string name="buoy_download_storage_not_enough">"存储空间不足 (%1$s)。"</string>
+	<string name="buoy_download_higame_error">"游戏中心下载失败，请稍后重试 (%1$s)。"</string>
+	<string name="buoy_dialog_install_gamebox_msg">"安装新版华为游戏中心 (%1$s)，可开启华为游戏服务、使用华为帐号和游戏支付。"</string>
+	<string name="buoy_dialog_openbuoy_install_gamebox_msg">"安装新版华为游戏中心 (%1$s)，可开启游戏浮标，体验便捷游戏服务。"</string>
+	<string name="buoy_dialog_install_gamebox_hms_msg">"安装新版%1$s，可开启华为游戏服务、使用华为帐号和游戏支付。"</string>
+	<string name="buoy_dialog_openbuoy_install_gamebox_hms_msg">"安装新版%1$s，可开启游戏浮标，体验便捷游戏服务。"</string>
+</resources>

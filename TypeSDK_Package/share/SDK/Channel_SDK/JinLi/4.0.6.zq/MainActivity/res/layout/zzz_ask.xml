@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/zzz_ask_commit_margin_bottom">
+
+            <include
+                android:id="@+id/zzz_ask_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_ask_content_height"
+                android:layout_marginLeft="@dimen/zzz_ask_content_margin_left"
+                android:layout_marginRight="@dimen/zzz_ask_content_margin_right"
+                android:layout_marginTop="@dimen/zzz_ask_content_margin_top"
+                layout="@layout/zzz_ask_content_layout"/>
+
+            <include
+                android:id="@+id/zzz_ask_contact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_ask_contact_height"
+                android:layout_below="@id/zzz_ask_content"
+                android:layout_marginLeft="@dimen/zzz_ask_contact_margin_left"
+                android:layout_marginRight="@dimen/zzz_ask_contact_margin_right"
+                android:layout_marginTop="@dimen/zzz_ask_contact_margin_top"
+                layout="@layout/zzz_ask_contact_layout"/>
+
+            <Button
+                android:id="@+id/zzz_ask_commit"
+                android:layout_width="@dimen/zzz_ask_commit_width"
+                android:layout_height="@dimen/zzz_ask_commit_height"
+                android:layout_below="@id/zzz_ask_contact"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_ask_commit_margin_top"
+                android:background="@drawable/zzz_ask_commit_btn_selector"
+                android:gravity="center"
+                android:text="@string/zzz_commit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/zzz_ask_commit_text_size"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

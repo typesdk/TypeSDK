@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/zzz_activity_width"
+    android:layout_height="@dimen/zzz_activity_height">
+
+    <include
+        android:id="@+id/zzz_title"
+        layout="@layout/zzz_common_title_layout"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zzz_title"
+        layout="@layout/zzz_dialog_tab_viewpager"/>
+</RelativeLayout>

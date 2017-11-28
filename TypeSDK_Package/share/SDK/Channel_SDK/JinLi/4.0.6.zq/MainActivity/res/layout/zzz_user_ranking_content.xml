@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/zzz_host_view_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_billboard_ranking_user_item_height">
+
+        <ImageView
+            android:id="@+id/zzz_user_icon"
+            android:layout_width="@dimen/zzz_billboard_host_icon_size"
+            android:layout_height="@dimen/zzz_billboard_host_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zzz_billboard_host_icon_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/zzz_user_icon"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zzz_billboard_host_icon_margin"
+            android:layout_toRightOf="@+id/zzz_user_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zzz_host_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/zzz_host_ranking_text_color"
+                android:textSize="@dimen/zzz_billboard_host_ranking_text_size"/>
+
+            <TextView
+                android:id="@+id/zzz_host_spend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/zzz_billboard_host_spend_margin_top"
+                android:textColor="@color/zzz_host_spend_color"
+                android:textSize="@dimen/zzz_billboard_host_spend_text_size"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/zzz_receive_prize"
+            android:layout_width="@dimen/zzz_billboard_achieve_prize_btn_width"
+            android:layout_height="@dimen/zzz_billboard_achieve_prize_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/zzz_billboard_achieve_prize_btn_margin_right"
+            android:background="@drawable/zzz_circle_billboard_achieve_prize"
+            android:textColor="@color/zzz_white"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/zzz_rank_top_three_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zzz_two_pix">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/zzz_two_pix">
+
+            <ImageView
+                android:id="@+id/zzz_rank_third"
+                android:layout_width="@dimen/zzz_billboard_host_icon_size"
+                android:layout_height="@dimen/zzz_billboard_host_icon_size"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_other_margin_top"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_user_icon"/>
+
+            <ImageView
+                android:id="@+id/zzz_rank_third_flag_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_three_flag_view_margin_top"
+                android:src="@drawable/zzz_billboard_third_flag"/>
+
+            <TextView
+                android:id="@+id/zzz_rank_third_spend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zzz_rank_third_flag_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_spend_margin_top"
+                android:textColor="@color/zzz_rank_spend_color"/>
+
+            <TextView
+                android:id="@+id/zzz_rank_third_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zzz_rank_third_spend"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/zzz_billboard_item_user_name_margin_bottom"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_name_margin_top"
+                android:singleLine="true"
+                android:textColor="@color/zzz_rank_name_color"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/zzz_rank_first"
+                android:layout_width="@dimen/zzz_billboard_rank_first_icon_size"
+                android:layout_height="@dimen/zzz_billboard_rank_first_icon_size"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_view_margin_top"
+                android:src="@drawable/zzz_user_icon"/>
+
+            <ImageView
+                android:id="@+id/zzz_rank_first_flag_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_first_flag_view_margin_top"
+                android:src="@drawable/zzz_billboard_first_flag"/>
+
+            <TextView
+                android:id="@+id/zzz_rank_first_spend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zzz_rank_first_flag_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_first_spend_margin_top"
+                android:textColor="@color/zzz_rank_spend_color"/>
+
+            <TextView
+                android:id="@+id/zzz_rank_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zzz_rank_first_spend"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/zzz_billboard_item_user_name_margin_bottom"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_name_margin_top"
+                android:singleLine="true"
+                android:textColor="@color/zzz_rank_name_color"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zzz_two_pix"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/zzz_rank_second"
+                android:layout_width="@dimen/zzz_billboard_host_icon_size"
+                android:layout_height="@dimen/zzz_billboard_host_icon_size"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_other_margin_top"
+                android:src="@drawable/zzz_user_icon"/>
+
+            <ImageView
+                android:id="@+id/zzz_rank_second_flag_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_three_flag_view_margin_top"
+                android:src="@drawable/zzz_billboard_second_flag"/>
+
+            <TextView
+                android:id="@+id/zzz_rank_second_spend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zzz_rank_second_flag_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_spend_margin_top"
+                android:textColor="@color/zzz_rank_spend_color"/>
+
+            <TextView
+                android:id="@+id/zzz_rank_second_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zzz_rank_second_spend"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/zzz_billboard_item_user_name_margin_bottom"
+                android:layout_marginTop="@dimen/zzz_billboard_rank_name_margin_top"
+                android:singleLine="true"
+                android:textColor="@color/zzz_rank_name_color"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zzz_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zzz_two_pix"
+        android:orientation="vertical"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/zzz_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/zzz_logo"
+        android:layout_width="@dimen/zzz_no_question_width"
+        android:layout_height="@dimen/zzz_no_question_height"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/zzz_empty_message"
+        android:src="@drawable/zzz_no_data_logo"/>
+
+    <TextView
+        android:id="@+id/zzz_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/zzz_no_question_tip_margin_top"
+        android:textColor="@color/zzz_no_question_tip_color"
+        android:textSize="@dimen/zzz_no_question_tip_text_size"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners
+        android:radius="@dimen/zzz_permission_button_radius"
+        android:topLeftRadius="@dimen/zzz_permission_button_corner"
+        android:topRightRadius="@dimen/zzz_permission_button_corner"
+        android:bottomLeftRadius="@dimen/zzz_permission_button_corner"
+        android:bottomRightRadius="@dimen/zzz_permission_button_corner"/>
+
+    <solid
+        android:color="@color/zzz_white"/>
+</shape>

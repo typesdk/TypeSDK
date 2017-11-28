@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/zzz_item_divider_height">
+
+    <RelativeLayout
+        android:id="@+id/zzz_gift_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/zzz_gift_list_item_padding_left"
+        android:paddingRight="@dimen/zzz_gift_list_item_padding_rights">
+
+
+        <TextView
+            android:id="@+id/zzz_gift_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/zzz_gift_item_name_margin_top"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/zzz_game_list_name"
+            android:textSize="@dimen/zzz_gift_list_item_name_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_gift_item_time_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/zzz_gift_item_name"
+            android:layout_below="@id/zzz_gift_item_name"
+            android:layout_marginTop="@dimen/zzz_gift_list_item_time_word_margin_top"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/zzz_gift_item_time_word"
+            android:textColor="@color/zzz_gifttext_gray"
+            android:textSize="@dimen/zzz_gift_list_item_time_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_gift_item_time_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/zzz_gift_item_time_word"
+            android:layout_toRightOf="@id/zzz_gift_item_time_word"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/zzz_gift_item_time_word"
+            android:textColor="@color/zzz_gifttext_gray"
+            android:textSize="@dimen/zzz_gift_list_item_time_text_size"/>
+
+        <ImageView
+            android:id="@+id/zzz_my_gift_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/zzz_gift_item_copy_margin_right"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zzz_gift_item_activate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_gift_item_content"
+        android:background="@drawable/zzz_gift_gray_box"
+        android:layout_marginLeft="@dimen/zzz_gift_list_item_padding_left"
+        android:layout_marginRight="@dimen/zzz_gift_list_item_padding_rights"
+        android:layout_marginTop="@dimen/zzz_gift_item_activate_padding_top">
+
+        <TextView
+            android:id="@+id/zzz_gift_item_activate_word"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/zzz_gift_item_activate_word_height"
+            android:layout_marginLeft="@dimen/zzz_gift_list_item_activate_word_margin_left"
+            android:gravity="center_vertical"
+            android:text="@string/zzz_gift_activation"
+            android:textColor="@color/zzz_secondary_text_color"
+            android:textSize="@dimen/zzz_gift_item_activate_word_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_gift_item_activate_key"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_gift_item_activate_word_height"
+            android:layout_marginLeft="@dimen/zzz_activation_key_margin_left"
+            android:layout_toLeftOf="@+id/zzz_gift_item_key_copy"
+            android:layout_toRightOf="@id/zzz_gift_item_activate_word"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/zzz_gift_activate_code_text_color"
+            android:textSize="@dimen/zzz_gift_item_activate_word_text_size"/>
+
+        <Button
+            android:id="@+id/zzz_gift_item_key_copy"
+            android:layout_width="@dimen/zzz_gift_item_copy_width"
+            android:layout_height="@dimen/zzz_gift_item_activate_word_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/zzz_btn_gift_copy"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="@string/zzz_copy"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/zzz_gift_item_activate_word_text_size"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/zzz_gift_list_item_padding_left"
+        android:layout_marginRight="@dimen/zzz_gift_list_item_padding_rights"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/zzz_my_gift_line_margin_top"
+        android:background="@color/zzz_seperate_line_color"
+        android:layout_height="@dimen/zzz_one_pixel"
+        android:layout_below="@+id/zzz_gift_item_activate"/>
+
+</RelativeLayout>

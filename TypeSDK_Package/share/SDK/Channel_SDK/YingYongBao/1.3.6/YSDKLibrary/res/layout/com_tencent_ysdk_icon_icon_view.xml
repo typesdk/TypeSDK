@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/com_tencent_ysdk_icon_icon_layout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/com_tencent_ysdk_icon_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/com_tencent_ysdk_icon_icon"
+        android:visibility="visible"
+        />
+
+    <ImageView
+        android:id="@+id/com_tencent_ysdk_icon_icon_redr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/com_tencent_ysdk_icon_icon"
+        android:src="@drawable/com_tencent_ysdk_icon_red"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/com_tencent_ysdk_icon_icon_redl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-15dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/com_tencent_ysdk_icon_icon"
+        android:src="@drawable/com_tencent_ysdk_icon_red"
+        android:visibility="invisible"
+        />
+</RelativeLayout>
+
+<!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/com_tencent_ysdk_icon_icon_view.xml -->

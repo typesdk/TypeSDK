@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_string.xml -->
+    <eat-comment/>
+    <string-array name="com_tencent_ysdk_identity_type_str_arr">
+        <item>身份证</item>
+        <item>港澳通行证</item>
+        <item>港澳台身份证</item>
+        <item>护照</item>
+        <item>军警证</item>
+    </string-array>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_icon_colors.xml -->
+    <eat-comment/>
+    <color name="apk_list_bg">#edf2f4</color>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_style.xml -->
+    <eat-comment/>
+    <color name="com_tencent_ysdk_real_name_title_color">#3997ee</color>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_icon_colors.xml -->
+    <eat-comment/>
+    <color name="download_btn_pressed">#0a000000</color>
+    <color name="download_btn_solid_disable">#f4f4f4</color>
+    <color name="download_btn_stroke_disable">#e5e5e5</color>
+    <color name="download_btn_stroke_normal">#81d5ff</color>
+    <color name="floating_winddow_result_text_color_highlight">#f19d18</color>
+    <color name="white">#FFFFFF</color>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_icon_dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_icon_strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">FloatWindow</string>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_string.xml -->
+    <eat-comment/>
+    <string name="com_tencent_ysdk_real_name_agreement"><u>用户隐私和保护策略</u></string>
+    <string name="com_tencent_ysdk_real_name_agreement_ok">同意</string>
+    <string name="com_tencent_ysdk_real_name_agreement_tips">请勾选用户隐私和保护政策</string>
+    <string name="com_tencent_ysdk_real_name_agreement_url">http://game.qq.com/contract.shtml</string>
+    <string name="com_tencent_ysdk_real_name_back">返回首页</string>
+    <string name="com_tencent_ysdk_real_name_commit">提交认证信息</string>
+    <string name="com_tencent_ysdk_real_name_commit_progress_msg">提交中请稍后……</string>
+    <string name="com_tencent_ysdk_real_name_des1">您的%1$s账号%2$s尚未进行实名注册。按照文化部《网络游戏管理暂行办法》的相关要求，网络游戏用户需要使用有效身份证件进行实名注册才可登录游戏。</string>
+    <string name="com_tencent_ysdk_real_name_des1_qq_str">手Q</string>
+    <string name="com_tencent_ysdk_real_name_des1_wx_str">微信</string>
+    <string name="com_tencent_ysdk_real_name_des2">*身份证信息只能提交一次不可修改，请慎重填写\n*您的身份证信息仅用于实名认证，我们不会将此信息用于其他任何场景。</string>
+    <string name="com_tencent_ysdk_real_name_dialog_webview_title">腾讯游戏许可及服务协议</string>
+    <string name="com_tencent_ysdk_real_name_fail">认证失败</string>
+    <string name="com_tencent_ysdk_real_name_fail_count_limit">该证件号已经绑定多个号码，请更换证件号重试（%1$s）。</string>
+    <string name="com_tencent_ysdk_real_name_fail_invalid_birth">提供的出生日期不正确，请提供正确的出生日期（%1$s）。</string>
+    <string name="com_tencent_ysdk_real_name_fail_invalid_id">提供的身份证件为非法证件，请提供有效地身份证件（%1$s）。</string>
+    <string name="com_tencent_ysdk_real_name_fail_invalid_name">提供的中文姓名不合法，请提供有效的中文姓名（%1$s）。</string>
+    <string name="com_tencent_ysdk_real_name_fail_invalid_para">输入参数错误，请重试（%1$s）。</string>
+    <string name="com_tencent_ysdk_real_name_fail_reg_already">该账号已实名认证，请重新登录游戏（%1$s）。</string>
+    <string name="com_tencent_ysdk_real_name_fail_server_error">系统错误，请重试（%1$s）。</string>
+    <string name="com_tencent_ysdk_real_name_identity_num">请输入有效证件号码</string>
+    <string name="com_tencent_ysdk_real_name_identity_type">请选择有效证件类型</string>
+    <string name="com_tencent_ysdk_real_name_login">登录游戏</string>
+    <string name="com_tencent_ysdk_real_name_name">请输入您的姓名</string>
+    <string name="com_tencent_ysdk_real_name_qq">客服QQ:1000</string>
+    <string name="com_tencent_ysdk_real_name_success">认证成功</string>
+    <string name="com_tencent_ysdk_real_name_success_des">您的账号实名认证成功!\n您现在可以登录游戏。</string>
+    <string name="com_tencent_ysdk_real_name_title">实名认证</string>
+    <string name="com_tencent_ysdk_real_name_tryagain">重新输入</string>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_icon_strings.xml -->
+    <eat-comment/>
+    <string name="disconnected_setting">重新加载</string>
+    <string name="error_title">出错啦</string>
+    <string name="error_word">哎呀~没有网络啦~</string>
+    <string name="floating_window_result_release_memory_tips">%s内存已清理</string>
+    <string name="force_pop_view_content">10月17，18日，QQ币礼包大放送</string>
+    <string name="force_pop_view_title">周末礼包限时抢</string>
+    <string name="hello_world">单击home键开启悬浮窗</string>
+    <string name="message_text">消息</string>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_icon_styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme">
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/com_tencent_ysdk_style.xml -->
+    <eat-comment/>
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="com_tencent_ysdk_dialog_theme" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/values/unipay_styles.xml -->
+    <eat-comment/>
+    <style name="unipay_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+    <style name="unipay_toast">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/unipay_pic_tipsbg_thin</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+</resources>

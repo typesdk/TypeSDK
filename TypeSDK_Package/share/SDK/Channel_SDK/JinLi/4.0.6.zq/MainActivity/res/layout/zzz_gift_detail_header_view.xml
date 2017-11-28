@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/zzz_gift_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/zzz_giftdetailtitle_padding_bottom"
+        android:paddingLeft="@dimen/zzz_giftdetailtitle_padding_left"
+        android:paddingRight="@dimen/zzz_giftdetailtitle_padding_right"
+        android:paddingTop="@dimen/zzz_giftdetailtitle_padding_top">
+
+        <include
+            android:id="@+id/zzz_gift_icon"
+            layout="@layout/zzz_alpha_anim_imageview"
+            android:layout_width="@dimen/zzz_gifticon_width_height"
+            android:layout_height="@dimen/zzz_gifticon_width_height"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/zzz_gift_grabbing"
+            style="@style/zzz_GameHall.CircleProgressBar"
+            android:layout_width="@dimen/zzz_giftgrap_width"
+            android:layout_height="@dimen/zzz_giftgrap_height"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+        <Button
+            android:id="@+id/zzz_gift_grab"
+            android:layout_width="@dimen/zzz_grap_gift_btn_width"
+            android:layout_height="@dimen/zzz_grap_gift_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/zzz_giftgrap_margin_top"
+            android:background="@drawable/zzz_shap_corner_btn"
+            android:textColor="@color/zzz_green_text_color"
+            android:textSize="@dimen/zzz_gift_grab_key_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_gift_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/zzz_gift_grab"
+            android:layout_toRightOf="@id/zzz_gift_icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/zzz_main_text_color"
+            android:textSize="@dimen/zzz_gift_item_name_text_size"/>
+
+        <ImageView
+            android:id="@+id/zzz_remainder_progress_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_activation_progress_height"
+            android:layout_alignLeft="@id/zzz_gift_name"
+            android:layout_below="@id/zzz_gift_name"
+            android:layout_marginRight="@dimen/zzz_activation_progress_marginright"
+            android:layout_marginTop="@dimen/zzz_activation_progress_margintop"
+            android:layout_toLeftOf="@id/zzz_gift_grab"
+            android:background="@drawable/zzz_common_progressbar_background"
+            android:contentDescription="@string/zzz_empty_message"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/zzz_remainder_progress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_activation_progress_height"
+            android:layout_alignLeft="@id/zzz_gift_name"
+            android:layout_below="@id/zzz_gift_name"
+            android:layout_marginRight="@dimen/zzz_activation_progress_marginright"
+            android:layout_marginTop="@dimen/zzz_activation_progress_margintop"
+            android:layout_toLeftOf="@id/zzz_gift_grab"
+            android:background="@drawable/zzz_common_progressbar_progress_clip"
+            android:contentDescription="@string/zzz_empty_message"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/zzz_gift_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/zzz_gift_name"
+            android:layout_below="@id/zzz_remainder_progress"
+            android:layout_marginTop="@dimen/zzz_gift_item_remainder_margin_top"
+            android:layout_toLeftOf="@id/zzz_gift_grab"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/zzz_gift_remainder"
+            android:textColor="@color/zzz_gifttext_gray"
+            android:textSize="@dimen/zzz_gift_item_remainder_text_size"/>
+
+        <include
+            layout="@layout/zzz_gift_detail_footer_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zzz_gift_tips"
+            android:layout_marginTop="@dimen/zzz_gift_item_remainder_margin_top"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_gift_title"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/zzz_giftdetail_padding_leftright"
+        android:paddingRight="@dimen/zzz_giftdetail_padding_leftright">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_list_single_divider_height"
+            android:background="@color/zzz_game_normal_item_line_background"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

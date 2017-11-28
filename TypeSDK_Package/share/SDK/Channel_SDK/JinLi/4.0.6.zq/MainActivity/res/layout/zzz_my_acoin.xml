@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zzz_local_page_bg">
+
+    <include
+        android:id="@+id/zzz_acoin_title"
+        layout="@layout/zzz_second_title_layout"/>
+
+    <include
+        android:id="@+id/zzz_money_helper_view"
+        layout="@layout/zzz_load_helper_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zzz_acoin_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zzz_acoin_title">
+
+
+        <LinearLayout
+            android:id="@+id/zzz_money_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <include
+                style="@style/zzz_MoneyContentMarginStyle"
+                android:layout_marginTop="@dimen/zzz_zero_pixel"
+                layout="@layout/zzz_my_acoin_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_money_info_height"/>
+
+            <include
+                style="@style/zzz_MoneyContentMarginStyle"
+                layout="@layout/zzz_tab_viewpager_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_title_gradient_height"
+            android:background="@drawable/zzz_title_gradient"/>
+    </RelativeLayout>
+</RelativeLayout>

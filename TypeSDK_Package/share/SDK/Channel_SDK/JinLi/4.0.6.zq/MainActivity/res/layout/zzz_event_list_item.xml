@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_event_item_height"
+                android:paddingLeft="@dimen/zzz_event_item_padding_left_right"
+                android:paddingRight="@dimen/zzz_event_item_padding_left_right"
+                android:paddingBottom="@dimen/zzz_event_item_parent_padding_bottom">
+
+    <FrameLayout
+        android:id="@+id/zzz_event_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_event_item_height">
+
+        <com.gionee.gamesdk.business.core.ui.RatioImageView
+            android:id="@+id/zzz_event_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_zero_pixel"
+            android:contentDescription="@string/zzz_empty_message"
+            app:zzz_relative="zzz_width"/>
+
+        <TextView
+            android:id="@+id/zzz_event_active_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="@dimen/zzz_event_active_progress_margin_top"
+            android:background="@drawable/zzz_event_progress_background"
+            android:textColor="@color/zzz_event_activity_progress_text_color"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/zzz_event_content"
+        android:layout_width="match_parent"
+        android:background="@color/zzz_event_content_background"
+        android:layout_height="@dimen/zzz_event_item_content_height"
+        android:layout_alignBottom="@+id/zzz_event_image_container">
+
+        <TextView
+            android:id="@+id/zzz_event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zzz_event_item_name_margin_left"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxWidth="@dimen/zzz_event_item_name_max_width"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="8dip"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/zzz_event_entrance"
+            android:textSize="@dimen/zzz_event_item_name_text_size"/>
+
+        <ImageView
+            android:id="@+id/zzz_arrow"
+            android:layout_width="@dimen/zzz_event_item_arrow_width"
+            android:layout_height="@dimen/zzz_event_item_arrow_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/zzz_event_item_arrow_margin_right"
+            android:contentDescription="@string/zzz_empty_message"
+            android:scaleType="fitXY"
+            android:src="@drawable/zzz_enter_event"/>
+
+        <TextView
+            android:id="@+id/zzz_event_entrance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/zzz_event_item_entrance_margin_right"
+            android:layout_toLeftOf="@id/zzz_arrow"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/zzz_click_into"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="@dimen/zzz_event_item_entrance_text_size"/>
+    </RelativeLayout>
+
+</RelativeLayout>

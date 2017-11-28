@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/zzz_alpha_anim_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/zzz_security_image_view_game_list"/>
+
+    <com.gionee.gamesdk.business.core.ui.AlphaAnimImageView
+        android:id="@+id/zzz_alpha_anim_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/zzz_security_image_view_game_list"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--    <item android:state_pressed="true" android:drawable="@drawable/common_blue_btn_press" />
+
+    <item android:state_focused="true" android:drawable="@drawable/common_blue_btn_press" />
+    <item android:drawable="@drawable/common_blue_btn_press" />-->
+
+    <item android:state_enabled="false" android:drawable="@drawable/com_tencent_ysdk_icon_state_bg_disable_bd"/>
+    <item android:state_pressed="true" android:drawable="@drawable/com_tencent_ysdk_icon_state_bg_normal_bd_pressed"/>
+    <item android:state_selected="true" android:drawable="@drawable/com_tencent_ysdk_icon_state_bg_normal_bd_pressed"/>
+    <item android:state_focused="true" android:drawable="@drawable/com_tencent_ysdk_icon_state_bg_normal_bd_pressed"/>
+    <item android:drawable="@drawable/com_tencent_ysdk_icon_state_bg_normal_bd"/>
+    </selector>
+<!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/drawable/com_tencent_ysdk_icon_common_errorpage_btn_selector.xml -->

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/zzz_address_submit_dialog_margin_left"
+        android:layout_marginRight="@dimen/zzz_address_submit_dialog_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/server_tag"
+            android:text="@string/zzz_role_info_server"
+            android:paddingRight="@dimen/zzz_feedback_content_padding"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/server"
+            android:layout_toRightOf="@id/server_tag"
+            android:hint="@string/zzz_server_hint"
+            android:height="@dimen/zzz_address_dialog_edittext_item_height"
+            android:paddingLeft="@dimen/zzz_feedback_content_padding"
+            android:textColor="@color/zzz_feedback_edit_text_color"
+            android:textColorHint="@color/zzz_feedback_edit_hint"
+            android:textCursorDrawable="@drawable/zzz_edit_cursor"
+            android:textSize="@dimen/zzz_feedback_edit_text_size"
+            android:background="@drawable/zzz_feedback_edit_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/zzz_address_submit_dialog_margin_top"
+        android:layout_marginLeft="@dimen/zzz_address_submit_dialog_margin_left"
+        android:layout_marginRight="@dimen/zzz_address_submit_dialog_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingRight="@dimen/zzz_feedback_content_padding"
+            android:id="@+id/role_name_tag"
+            android:text="@string/zzz_role_info_name"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/role_name"
+            android:layout_toRightOf="@id/role_name_tag"
+            android:hint="@string/zzz_role_name_hint"
+            android:height="@dimen/zzz_address_dialog_edittext_item_height"
+            android:paddingLeft="@dimen/zzz_feedback_content_padding"
+            android:textColor="@color/zzz_feedback_edit_text_color"
+            android:textColorHint="@color/zzz_feedback_edit_hint"
+            android:textCursorDrawable="@drawable/zzz_edit_cursor"
+            android:textSize="@dimen/zzz_feedback_edit_text_size"
+            android:background="@drawable/zzz_feedback_edit_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/zzz_address_submit_dialog_margin_top"
+        android:layout_marginLeft="@dimen/zzz_address_submit_dialog_margin_left"
+        android:layout_marginRight="@dimen/zzz_address_submit_dialog_margin_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingRight="@dimen/zzz_feedback_content_padding"
+            android:id="@+id/role_id_tag"
+            android:text="@string/zzz_role_info_id"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/role_id"
+            android:layout_toRightOf="@id/role_id_tag"
+            android:hint="@string/zzz_role_id_hint"
+            android:height="@dimen/zzz_address_dialog_edittext_item_height"
+            android:paddingLeft="@dimen/zzz_feedback_content_padding"
+            android:textColor="@color/zzz_feedback_edit_text_color"
+            android:textColorHint="@color/zzz_feedback_edit_hint"
+            android:textCursorDrawable="@drawable/zzz_edit_cursor"
+            android:textSize="@dimen/zzz_feedback_edit_text_size"
+            android:background="@drawable/zzz_feedback_edit_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

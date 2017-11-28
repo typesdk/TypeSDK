@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welfare_itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/qihoo360_a_bg"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/puchBigImg"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="center|top"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY" />
+
+     <FrameLayout  
+             android:id="@+id/headup_line"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_marginLeft="12dp"
+             android:layout_marginRight="12dp"
+             android:layout_gravity="bottom|center_horizontal"
+             android:layout_marginBottom="15dp"
+             android:background="#505050"
+              />
+    
+    <ImageView
+        android:id="@+id/headup2"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/qihoo360_a_upglide" />
+
+</FrameLayout>

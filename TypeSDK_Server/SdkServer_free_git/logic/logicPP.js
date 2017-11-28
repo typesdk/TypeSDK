@@ -43,7 +43,7 @@ function createSignLogin(query,key)
     return crypto.createHash('md5').update('sid=' + query.data.sid + key).digest('hex').toLowerCase();
 }
 
-function callChannelLogin(attrs,params,query,ret,retf)
+function callChannelLogin(attrs,params,query,ret,retf,gattrs)
 {
     var cloned = merge(true, params.out_params);
     merge(cloned,query);
@@ -72,6 +72,7 @@ function callChannelLogin(attrs,params,query,ret,retf)
                 ret.nick = retOut.data.nickName;
                 ret.token = "";
                 ret.value = retOut;
+                logicCommon.createLoginLog(gattrs.id,attrs.channel_id,attrs.sdk_name,ret.id);
             }else
             {
                 //打点：验证失败
@@ -105,7 +106,16 @@ function compareOrder(attrs,gattrs,params,query,ret,game,channel,retf){
         if (!hasData) {
             retf('FAILURE');
             return;
-        } else {
+        }
+        else  if (query.app_order_id == params.orderdata && query.product_id == params.goodsid && query.amount >= params.goodsprice*0.9&&query.amount <= params.goodsprice)
+        {
+            var data  = {};
+            data.code = '0000';
+            data.msg = 'NORMAL';
+            retf(data);
+            return;
+        }
+        else {
             retValue.sign = logicCommon.createSignPay(retValue,gattrs.gkey);
             logicCommon.UpdateOrderStatus(game,channel,retValue.cporder,retValue.order,1,0,query);
             var options = {

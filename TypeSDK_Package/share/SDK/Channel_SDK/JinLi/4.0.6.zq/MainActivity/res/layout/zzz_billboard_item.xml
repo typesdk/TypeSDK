@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_billboard_item_height">
+
+    <RelativeLayout
+        android:id="@+id/zzz_billboard_ranking_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/zzz_one_pixel">
+
+        <ImageView
+            android:id="@+id/zzz_billboard_rank_background"
+            android:layout_width="@dimen/zzz_billboard_rank_size"
+            android:layout_height="@dimen/zzz_billboard_rank_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zzz_billboard_user_rank_margin"/>
+
+        <TextView
+            android:id="@+id/zzz_billboard_rank"
+            android:layout_width="@dimen/zzz_billboard_rank_size"
+            android:layout_height="@dimen/zzz_billboard_rank_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zzz_billboard_user_rank_margin"
+            android:gravity="center"
+            android:textColor="@color/zzz_white"
+            android:textSize="@dimen/zzz_billboard_item_rank_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_billboard_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zzz_billboard_user_name_margin"
+            android:layout_toRightOf="@+id/zzz_billboard_rank"
+            android:textColor="@color/zzz_rank_name_color"
+            android:textSize="@dimen/zzz_billboard_user_name_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_billboard_spend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/zzz_billboard_user_spend_margin"
+            android:textColor="@color/zzz_rank_spend_color"
+            android:textSize="@dimen/zzz_billboard_spend_text_size"/>
+    </RelativeLayout>
+</RelativeLayout>

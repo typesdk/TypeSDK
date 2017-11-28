@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/zzz_ask_module_bg">
+
+    <ImageView
+        android:id="@+id/zzz_must_hint"
+        android:layout_width="@dimen/zzz_ask_content_must_hint_size"
+        android:layout_height="@dimen/zzz_ask_content_must_hint_size"
+        android:layout_marginLeft="@dimen/zzz_ask_content_must_hint_margin_left"
+        android:layout_marginTop="@dimen/zzz_ask_content_must_hint_margin_top"
+        android:contentDescription="@string/zzz_empty_message"
+        android:scaleType="fitXY"
+        android:src="@drawable/zzz_ask_must_hint"/>
+
+    <TextView
+        android:id="@+id/zzz_content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/zzz_ask_content_title_margin_left"
+        android:layout_marginTop="@dimen/zzz_ask_content_title_margin_top"
+        android:layout_toRightOf="@id/zzz_must_hint"
+        android:includeFontPadding="false"
+        android:text="@string/zzz_ask_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/zzz_ask_content_title_text_size"/>
+
+    <EditText
+        android:id="@+id/zzz_content_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_ask_content_input_height"
+        android:layout_below="@id/zzz_content_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/zzz_ask_content_input_margin_left"
+        android:layout_marginRight="@dimen/zzz_ask_content_input_margin_right"
+        android:layout_marginTop="@dimen/zzz_ask_content_input_margin_top"
+        android:background="@drawable/zzz_ask_input_bg"
+        android:gravity="top|left"
+        android:hint="@string/zzz_ask_input_hint"
+        android:paddingLeft="@dimen/zzz_ask_content_input_padding_left"
+        android:paddingTop="@dimen/zzz_ask_content_input_padding_top"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textCursorDrawable="@drawable/zzz_edit_cursor"
+        android:textSize="@dimen/zzz_ask_content_input_text_size"/>
+
+    <TextView
+        android:id="@+id/zzz_content_attach_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_content_input"
+        android:layout_marginLeft="@dimen/zzz_ask_content_attach_text_margin_left"
+        android:layout_marginTop="@dimen/zzz_ask_content_attach_text_margin_top"
+        android:text="@string/zzz_ask_attach"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/zzz_ask_content_attach_text_size"/>
+
+    <Button
+        android:id="@+id/zzz_content_attach_btn"
+        android:layout_width="@dimen/zzz_ask_content_attach_btn_width"
+        android:layout_height="@dimen/zzz_ask_content_attach_btn_height"
+        android:layout_below="@id/zzz_content_input"
+        android:layout_marginLeft="@dimen/zzz_ask_content_attach_btn_margin_left"
+        android:layout_marginTop="@dimen/zzz_ask_content_attach_btn_margin_top"
+        android:layout_toRightOf="@id/zzz_content_attach_textview"
+        android:background="@drawable/zzz_add_attach_selector"
+        android:text="@string/zzz_add_attcah"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/zzz_ask_content_attach_add_text_size"/>
+
+    <TextView
+        android:id="@+id/zzz_content_attach_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_content_input"
+        android:layout_marginLeft="@dimen/zzz_ask_content_attach_limit_margin_left"
+        android:layout_marginTop="@dimen/zzz_ask_content_attach_limit_margin_top"
+        android:layout_toRightOf="@id/zzz_content_attach_btn"
+        android:text="@string/zzz_ask_attach_limit"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/zzz_ask_content_attach_limit_text_size"/>
+
+    <TextView
+        android:id="@+id/zzz_content_attach_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/zzz_content_attach_textview"
+        android:layout_marginLeft="@dimen/zzz_ask_content_attach_name_margin_left"
+        android:layout_toRightOf="@id/zzz_content_attach_textview"
+        android:ellipsize="middle"
+        android:maxWidth="@dimen/zzz_ask_content_attach_name_max_width"
+        android:singleLine="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/zzz_ask_content_attach_name_text_size"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/zzz_content_delete_attach"
+        android:layout_width="@dimen/zzz_ask_content_delete_attach_size"
+        android:layout_height="@dimen/zzz_ask_content_delete_attach_size"
+        android:layout_alignRight="@id/zzz_content_input"
+        android:layout_below="@id/zzz_content_input"
+        android:layout_marginTop="@dimen/zzz_ask_content_delete_attach_margin_top"
+        android:contentDescription="@string/zzz_empty_message"
+        android:scaleType="fitXY"
+        android:src="@drawable/zzz_delete_attach"
+        android:visibility="gone"/>
+
+</RelativeLayout>

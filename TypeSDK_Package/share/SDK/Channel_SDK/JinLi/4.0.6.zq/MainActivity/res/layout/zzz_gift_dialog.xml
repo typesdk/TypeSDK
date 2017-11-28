@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/zzz_dialog_content_padding_bottom"
+                android:paddingLeft="@dimen/zzz_dialog_content_margin_left_right"
+                android:paddingRight="@dimen/zzz_dialog_content_margin_left_right"
+                android:paddingTop="@dimen/zzz_dialog_content_margin_top">
+
+    <TextView
+        android:id="@+id/zzz_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zzz_giftdialog_line_margintop"
+        android:text="@string/zzz_grab_tip"
+        android:textColor="@color/zzz_dialog_message_color"
+        android:textSize="@dimen/zzz_dialog_message_size"/>
+
+    <TextView
+        android:id="@+id/zzz_activation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/zzz_giftdialog_copy_height"
+        android:layout_below="@id/zzz_context"
+        android:layout_marginRight="@dimen/zzz_gift_item_activate_word_margin_right"
+        android:layout_marginTop="@dimen/zzz_giftdialog_text_margintop"
+        android:gravity="center_vertical"
+        android:text="@string/zzz_gift_activation"
+        android:textColor="@color/zzz_dialog_message_color"
+        android:textSize="@dimen/zzz_dialog_message_size"/>
+
+    <TextView
+        android:id="@+id/zzz_activation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_giftdialog_copy_height"
+        android:layout_below="@id/zzz_context"
+        android:layout_marginTop="@dimen/zzz_giftdialog_text_margintop"
+        android:layout_toRightOf="@id/zzz_activation_text"
+        android:background="@drawable/zzz_gift_dialog_gray_box"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/zzz_activation_key_paddingleft"
+        android:singleLine="true"
+        android:textColor="@color/zzz_main_green"
+        android:textSize="@dimen/zzz_gift_item_key_text_size"/>
+
+</RelativeLayout>

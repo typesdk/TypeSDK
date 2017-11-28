@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/zzz_gn_tab_selected_holo" android:state_selected="true"/>
+    <item android:drawable="@android:color/transparent"/>
+
+</selector>

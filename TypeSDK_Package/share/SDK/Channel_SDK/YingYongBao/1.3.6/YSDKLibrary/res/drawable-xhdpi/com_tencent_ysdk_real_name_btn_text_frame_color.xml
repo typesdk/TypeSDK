@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+	android:state_pressed="false"
+	android:color="#3997ee"/>
+	<!--选中时的字体颜色  -->  
+	<item
+	android:state_pressed="true"
+	android:color="#ffffff"/>
+	
+
+</selector>
+<!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/drawable-xhdpi/com_tencent_ysdk_real_name_btn_text_frame_color.xml -->

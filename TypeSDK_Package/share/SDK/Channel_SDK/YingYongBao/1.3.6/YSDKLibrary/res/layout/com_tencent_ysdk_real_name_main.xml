@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f5f5f5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout 
+    android:background="#f5f5f5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:paddingTop="@dimen/com_tencent_ysdk_real_name_auth_title_padding"
+        android:paddingBottom="@dimen/com_tencent_ysdk_real_name_auth_title_padding"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="@dimen/com_tencent_ysdk_real_name_auth_title_size"
+        android:textStyle="bold"
+        android:textColor="#f5f5f5"
+        android:background="@color/com_tencent_ysdk_real_name_title_color"
+        android:text="@string/com_tencent_ysdk_real_name_title"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingTop="@dimen/com_tencent_ysdk_real_name_auth_text_top"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="@dimen/com_tencent_ysdk_real_name_auth_edit_text_size"
+        android:textStyle="bold"
+        android:textColor="#28292d"
+        android:id="@+id/com_tencent_ysdk_real_name_act_des1"
+        android:text="@string/com_tencent_ysdk_real_name_des1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+     <TextView
+         android:paddingTop="@dimen/com_tencent_ysdk_real_name_auth_text_top"
+         android:paddingLeft="15dp"
+         android:paddingRight="15dp"
+         android:textSize="16dp"
+         android:textColor="#47494c"
+        android:text="@string/com_tencent_ysdk_real_name_des2"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"/>
+
+
+     <RelativeLayout
+         android:layout_marginTop="@dimen/com_tencent_ysdk_real_name_auth_edit_top"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/com_tencent_ysdk_real_name_auth_edit_height">
+         <EditText 
+             android:background="@drawable/com_tencent_ysdk_real_name_item_bg"
+             android:id="@+id/com_tencent_ysdk_real_name_act_name"
+             android:hint="@string/com_tencent_ysdk_real_name_name"
+             android:gravity="center"
+             android:textSize="@dimen/com_tencent_ysdk_real_name_auth_edit_text_size"
+             android:singleLine="true"
+             android:textColor="#343539"
+             android:textColorHint="#d6d6d6"
+             android:layout_width="match_parent"
+    		 android:layout_height="match_parent"/>
+         
+         <ImageView 
+             android:id="@+id/com_tencent_ysdk_real_name_act_name_must"
+             android:layout_marginRight="15dp"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:src="@drawable/com_tencent_ysdk_real_name_must"
+             android:scaleType="centerInside"
+             android:layout_width="25dp"
+             android:layout_height="25dp"/>
+         
+     </RelativeLayout>
+     
+     <RelativeLayout
+         android:layout_marginTop="@dimen/com_tencent_ysdk_real_name_auth_edit_top"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/com_tencent_ysdk_real_name_auth_edit_height">
+         <TextView
+             android:background="@drawable/com_tencent_ysdk_real_name_item_bg"
+             android:id="@+id/com_tencent_ysdk_real_name_act_identity_type"
+             android:hint="@string/com_tencent_ysdk_real_name_identity_type"
+             android:gravity="center"
+             android:textSize="@dimen/com_tencent_ysdk_real_name_auth_edit_text_size"
+             android:textColor="#343539"
+             android:textColorHint="#d6d6d6"
+             android:layout_width="match_parent"
+    		 android:layout_height="match_parent"/>
+         
+         <ImageView 
+             android:id="@+id/com_tencent_ysdk_real_name_act_identity_type_must"
+             android:layout_marginRight="15dp"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:scaleType="centerInside"
+             android:src="@drawable/com_tencent_ysdk_real_name_must"
+             android:layout_width="25dp"
+             android:layout_height="25dp"/>
+         
+     </RelativeLayout>
+     
+     <RelativeLayout
+         android:layout_marginTop="@dimen/com_tencent_ysdk_real_name_auth_edit_top"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/com_tencent_ysdk_real_name_auth_edit_height">
+         <EditText 
+             android:background="@drawable/com_tencent_ysdk_real_name_item_bg"
+             android:id="@+id/com_tencent_ysdk_real_name_act_identity_num"
+             android:hint="@string/com_tencent_ysdk_real_name_identity_num"
+             android:gravity="center"
+             android:textSize="@dimen/com_tencent_ysdk_real_name_auth_edit_text_size"
+             android:maxLength="200"
+             android:singleLine="true"
+             android:textColor="#343539"
+             android:textColorHint="#d6d6d6"
+             android:layout_width="match_parent"
+    		 android:layout_height="match_parent"/>
+         
+         <ImageView 
+             android:id="@+id/com_tencent_ysdk_real_name_act_identity_num_must"
+             android:layout_marginRight="15dp"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:src="@drawable/com_tencent_ysdk_real_name_must"
+             android:scaleType="centerInside"
+             android:layout_width="25dp"
+             android:layout_height="25dp"/>
+         
+     </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/com_tencent_ysdk_real_name_auth_check_box_top"
+        android:layout_marginBottom="@dimen/com_tencent_ysdk_real_name_auth_check_box_top"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <CheckBox
+            android:button="@null"
+            android:id="@+id/com_tencent_ysdk_real_name_agreement_check_box"
+            android:background="@drawable/com_tencent_ysdk_real_name_checkbox_style"
+            android:checked="true"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:text="@string/com_tencent_ysdk_real_name_agreement_ok"
+            android:textColor="#888f99"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:id="@+id/com_tencent_ysdk_real_name_act_agreement"
+            android:text="@string/com_tencent_ysdk_real_name_agreement"
+            android:textColor="#3399eb"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/com_tencent_ysdk_real_name_auth_button_top"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_tencent_ysdk_real_name_auth_edit_height">
+
+        <Button
+            android:id="@+id/com_tencent_ysdk_real_name_act_back"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/com_tencent_ysdk_real_name_btn_frame_bg"
+            android:text="@string/com_tencent_ysdk_real_name_back"
+            android:layout_weight="1"
+            android:textColor="@drawable/com_tencent_ysdk_real_name_btn_text_frame_color"
+            android:textSize="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <Button
+            android:background="@drawable/com_tencent_ysdk_real_name_btn_bg"
+            android:id="@+id/com_tencent_ysdk_real_name_act_commit"
+            android:text="@string/com_tencent_ysdk_real_name_commit"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColor="@drawable/com_tencent_ysdk_real_name_btn_text_color"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+     
+</LinearLayout>
+
+</ScrollView>
+<!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/com_tencent_ysdk_real_name_main.xml -->

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/zzz_welfare_guide_dialog_item_padding_horizon"
+              android:paddingRight="@dimen/zzz_welfare_guide_dialog_item_padding_horizon"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/zzz_welfare_guide_item_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zzz_welfare_guide_dialog_Rl_margin_top">
+        <TextView
+            android:id="@+id/zzz_welfare_guide_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingRight="@dimen/zzz_welfare_guide_item_text_margin_right"
+            android:textSize="@dimen/zzz_welfare_guide_dialog_item_text_size"
+            android:textColor="@color/zzz_main_text_color"/>
+
+        <ImageView
+            android:id="@+id/zzz_welfare_guide_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zzz_welfare_guide_item_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zzz_welfare_guide_item_content_rl_margin_top">
+
+        <TextView
+            android:id="@+id/zzz_welfare_guide_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/zzz_welfare_guide_item_text_margin_right"
+            android:textSize="@dimen/zzz_welfare_guide_item_content_text_size"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/zzz_welfare_guide_item_content_space"
+            android:textColor="@color/zzz_welfare_guide_item_content_text_color"/>
+
+        <TextView
+            android:id="@+id/zzz_welfare_guide_item_detail_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zzz_welfare_guide_item_content"
+            android:layout_marginTop="@dimen/zzz_welfare_guide_item_button_margin_top"
+            android:paddingRight="@dimen/zzz_welfare_guide_item_text_margin_right"
+            android:gravity="left"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="@string/zzz_welfare_detail"
+            android:textSize="@dimen/zzz_welfare_guide_item_detail_button_text_size"
+            android:textColor="@color/zzz_welfare_guide_item_detail_button_text_color"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/zzz_help_horizental_line_margin_top"
+        android:background="@color/zzz_seperate_line_color"/>
+
+</LinearLayout>

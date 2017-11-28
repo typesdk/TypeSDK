@@ -1,0 +1,166 @@
+﻿body {text-decoration: none;margin:0;padding:0;color:#444444; background:#fff8df;word-break:break-all; font: 16px/36px "微软雅黑"; }
+body img{ border:none;}
+body form{ margin:0; padding:0;}
+body ul{ margin:0; padding:0;float:left}
+body li{ list-style:none; float:left;}
+a:link{ color:#d50000; text-decoration:none;position:relative;}
+a:visited{color:#d50000; text-decoration:none;}
+a:hover{color:#d50000; text-decoration:none;}
+a:active{color:#d50000; text-decoration:none;}
+body input{ border:0;}
+
+.allwkg{ width:480px; margin:0 auto;overflow:hidden;}
+.allkg{ width:480px; float:left; }
+.infokg{ float:left; width:480px;background:url(../images/icon.jpg) no-repeat center top; height:40px; line-height:40px; color:#FFFFFF; text-align:center; font-size:24px;}
+.infokg img{  position:relative; left:20px; float:left; top:13px;}
+.tpkg{ float:left; width:480px; }
+.ctnlist{ float:left; width:480px;}
+.ctnlist ul{ float:left; width:480px;}
+.ctnlist li{ float:left; width:420px; padding:0 30px;}
+.ctnlist .pad{ padding-top:14px;}
+.ctnlist .pad1{ padding-top:43px;}
+.ctnlist .pad2{ padding:36px 30px 20px 30px;}
+.ctnlist .pad3{ padding-bottom:6px;}
+.ctnlist .pad4{ padding:42px 30px 4px 30px;}
+.ctnlist .pad5{ padding:30px;}
+.ctnlist .pad6{ padding-top:21px;}
+.ctnlist .pad7{ padding:30px 30px 6px 30px;}
+.ctnlist .pad8{ padding:20px 30px 10px 30px;}
+.agreekg{ float:left; background:url(../images/icon1.gif) no-repeat left center; width:145px; height:46px; line-height:46px; padding-left:15px; font-size:20px; color:#515151; cursor:pointer;}
+.prolist{ float:left; width:452px; padding:0 14px; }
+.prolist ul{  width:452px;  margin-top:15px;}
+.prolist .bg{background:url(../images/icon4.gif) no-repeat center;height:184px;}
+.prolist .bg1{background:url(../images/icon7.gif) no-repeat center;height:182px;}
+.prolist .bg2{background:url(../images/icon22.gif) no-repeat center;height:211px;}
+.prolist .proleft{ background:url(../images/icon5.gif) no-repeat center; width:97px; height:102px; padding:25px 0 0 20px;}
+.prolist .proright{ font:20px/34px "微软雅黑"; padding:15px 10px 0 10px; width:315px;}
+.prolist .proright .othercode{ padding:10px 0 0 80px; float:left;}
+.prolist .proright .pad{ padding-top:5px; float:left;}
+.prolist .prorightot{ font:20px/30px "微软雅黑"; padding:10px 20px 0 10px; width:305px;}
+
+.mygiftkg{ float:left; width:406px; height:135px; padding:10px 37px 0 37px;  background:url(../images/icon9.gif) no-repeat top center; line-height:28px; margin-top:7px; }
+.mygiftlistkg{ float:left; width:452px; padding:10px 14px 14px 14px; }
+.mygiftkgot{ float:left; width:406px; height:154px; padding:10px 37px 0 37px;  background:url(../images/icon24.gif) no-repeat top center; line-height:28px; margin-top:7px; font:20px/32px "微软雅黑";}
+
+.noregkg{ float:left; width:390px; height:108px; padding:30px 45px 5px 45px;  background:url(../images/icon26.gif) no-repeat top center; line-height:32px; margin-top:7px; text-align:right;}
+
+.nosameidkg{ float:left; width:280px; height:118px; padding:20px 10px 5px 190px;  background:url(../images/icon26.gif) no-repeat top center; line-height:32px; margin-top:7px; text-align:left;}
+
+.allgiftkg{ float:left; width:420px; height:123px; padding:15px 30px 5px 30px;  background:url(../images/icon13.gif) no-repeat top center; line-height:32px; margin-top:7px; }
+.allgiftlist{ float:left; width:480px; color:#666666; }
+.allgiftlist ul{ text-align:center; width:480px; padding-bottom:8px;}
+.allgiftlist .left{ float:left; width:240px; background:url(../images/icon16.gif) no-repeat 10px top; height:107px;  overflow:hidden; font:18px/26px "微软雅黑";   }
+.allgiftlist .left img{ float:left; margin:15px 0 0 23px;}
+.allgiftlist .left span{ float:right; padding:28px 0 0 5px;text-align:left; width:134px;}
+.allgiftlist .left .aldusr{ position:relative; top:-41px; right:-48px;}
+.allgiftlist .right{ float:left; width:240px; background:url(../images/icon16.gif) no-repeat 3px top; height:107px;  overflow:hidden; font:18px/26px "微软雅黑";   }
+.allgiftlist .right img{ float:left; margin:15px 0 0 16px;}
+.allgiftlist .right span{ float:right; padding:28px 0 0 5px;text-align:left; width:141px;}
+.allgiftlist .right .aldusr{ position:relative; top:-41px; right:-55px;}
+
+.allgiftlist .pad{ padding:1px 0 6px 0;}
+.allgiftlist a{ color:#666666;}
+.allgiftlist a:visited{ color:#666666;}
+
+.allgiftlist h2{ font-weight:normal; float:right; color:#d50000; font-size:22px; margin:0; padding:0; padding-right:15px;}
+.allgiftlist h2 a{color:#d50000; text-decoration:underline;}
+.allgiftlist h2 a:visited{color:#d50000; text-decoration:underline;}
+.allgiftlist h2 a:hover{color:#d50000; text-decoration:underline;}
+
+.mygiftlistkg .tabbg{background:url(../images/icon11.gif) no-repeat top center #ffffff; float:left; width:452px; }
+.mygiftlistkg .tabbg .bgchoose{ background:#f8f8f8;}
+.mygiftlistkg table{color:#666666;font-size:20px;}
+.mygiftlistkg table td{ text-align:center;}
+.mygiftlistkg table .title{ width:480px; height:34px; line-height:34px; color:#6f0002; font-size:20px;}
+.mygiftlistkg .tableft{ border:solid 1px #d7d7d7; border-bottom:solid 3px #d7d7d7; border-top:0; padding:5px 0;}
+.mygiftlistkg .tableft a{color:#666666;}
+.mygiftlistkg .tableft a:visited{color:#666666;}
+.mygiftlistkg .tableft a:hover{color:#666666;}
+.mygiftlistkg .tabright{ border-right:solid 1px #d7d7d7;border-bottom:solid 3px #d7d7d7;}
+.mygiftlistkg .tableft table td{ height:32px; line-height:32px;}
+
+.mbkg{ background:url(../images/icon1.png) no-repeat center top; position:absolute; width:480px; height:800px;}
+
+.wronglist{ float:left; width:446px; padding:0 17px; font-size:20px; color:#666666; }
+.wronglist .title{ color:#743434; font-size:22px; padding:32px 30px 20px 30px; }
+.wronglist ul{ width:386px; float:left;padding:0 30px;}
+.wronglist li{ width:374px; float:left;background:url(../images/icon28.gif) no-repeat left center; padding-left:12px; line-height:38px;}
+.wronglist .line{ background:url(../images/icon29.gif) repeat-x left bottom;}
+.wronglist a{ color:#00379d; cursor:pointer;}
+.wronglist a:visited{ color:#00379d;}
+.wronglist a:hover{ color:#00379d;}
+.wronglist img{ position:relative;margin-right:10px; top:3px;}
+.wronglist .pad{ margin-bottom:15px; padding-bottom:10px;}
+
+.applist{ float:left; width:354px; background:#ffe7c2; color:#666666; margin:10px 0 0 30px; padding:20px 34px;font: 20px/32px "微软雅黑";}
+.applist span{ float:left; width:354px; padding-top:20px;}
+.applist a{color:#00379d;padding:0 5px; text-decoration:underline;}
+
+.stepkg{ float:left; width:480px; padding-top:10px;font:20px/34px "微软雅黑";color:#666666;}
+.stepkg ul{ float:left; width:328px;padding:0 66px 0 86px;margin-bottom:11px;}
+.stepkg li{ width:328px;}
+.stepkg .bg{background:url(../images/icon32.gif) no-repeat center; height:116px;padding-top:5px;}
+.stepkg .bg1{background:url(../images/icon35.gif) no-repeat center; height:164px;padding-top:5px; }
+.stepkg .bg2{background:url(../images/icon37.gif) no-repeat center; height:38px;width:273px; padding:8px 20px 0 35px; margin:5px 0;}
+.stepkg .bg2 img{ position:relative; top:2px;}
+.stepkg .bg2 span{ padding-left:40px;}
+.stepkg .bg3{background:url(../images/icon33.gif) no-repeat center; height:164px;padding-top:5px; }
+/*btn style*/
+.btn{ background:url(../images/icon.gif) no-repeat; width:334px; height:71px; color:#FFFFFF;font: 22px "微软雅黑"; padding-left:90px; cursor:pointer;}
+.btn1{ background:url(../images/icon3.gif) no-repeat; width:124px; height:38px; color:#515151;font: 20px "微软雅黑"; cursor:pointer;}
+.btn2{ background:url(../images/icon6.gif) no-repeat; width:88px; height:39px; line-height:39px; color:#ffffff;font: 20px "微软雅黑"; cursor:pointer;}
+.btn3{ background:url(../images/icon10.gif) no-repeat; width:81px; height:34px; color:#ffffff;font: 16px "微软雅黑"; cursor:pointer;}
+.btn4{ background:url(../images/icon14.gif) no-repeat; width:122px; height:44px; color:#cc1700;font: 20px "微软雅黑"; cursor:pointer;}
+.btn5{ background:url(../images/icon15.gif) no-repeat; width:283px; height:60px; color:#ffffff;font: 24px "微软雅黑"; cursor:pointer;}
+.btn6{ background:url(../images/icon18.gif) no-repeat; width:100px; height:30px; color:#ffffff;font: 16px "微软雅黑"; cursor:pointer;}
+.btn7{ background:url(../images/icon20.gif) no-repeat; width:128px; height:40px; line-height:40px; color:#b42f00;font: 18px "微软雅黑"; cursor:pointer;}
+.btn8{ background:url(../images/icon20.gif) no-repeat; width:128px; height:40px; line-height:40px; color:#b42f00;font: 18px "微软雅黑"; cursor:pointer;}
+.btn9{ background:url(../images/icon23.gif) no-repeat; width:125px; height:41px; line-height:41px; font: 20px "微软雅黑"; cursor:pointer; float:right; text-align:center; color:#FFFFFF;}
+.btn10{ background:url(../images/icon25.gif) no-repeat; width:108px; height:44px; line-height:44px; font: 22px "微软雅黑"; cursor:pointer; text-align:center; color:#FFFFFF;}
+.btn11{ background:url(../images/icon27.gif) no-repeat; width:128px; height:40px; font: 20px "微软雅黑"; cursor:pointer; text-align:center; color:#b42f00; margin:15px 55px 0 0;}
+.btn12{ background:url(../images/icon34.gif) no-repeat; width:328px; height:67px; cursor:pointer;}
+.btn13{ background:url(../images/icon41.gif) no-repeat; width:328px; height:67px; cursor:pointer;}
+/*comm style*/
+.comright{ float:right;}
+.comleft{ float:left;}
+.txtalign{ text-align:center;}
+.comtitle{ float:left;background:url(../images/icon2.gif) no-repeat left center; width:120px; height:37px;  padding:5px 0 0 42px; font:24px "微软雅黑"; color:#d70005; font-weight:900;}
+.commrpad10{ padding-right:10px;}
+.commtpad10{ padding-top:10px;}
+.commargin10{ margin-top:10px; }
+.commargin_5{ margin-top:-5px;}
+.commtpad100{ padding-top:100px;}
+.commtpad20{ padding-top:20px;}
+.commargin5{ margin-top:5px;}
+.commargin10{ margin-top:10px;}
+/*wz style*/
+.font20wz{ font-size:20px;}
+.font22wz{ font-size:22px;}
+.font18wz{ font-size:18px;}
+.font14wz{ font-size:14px;}
+.font15wz{ font-size:15px;}
+.font24wz{ font-size:24px;}
+.font30wz{ font-size:30px;}
+.hwz{ color:#666666;}
+.redwz{ color:#ff0000;}
+a.txtline{ text-decoration:underline;}
+.line34wz{ line-height:34px;}
+.linewz{ text-decoration:underline;}
+
+
+/*
+------------------------------
+	Impromptu's
+------------------------------
+*/
+.jqinewfade{ background-color: #000000; position: absolute; height: 100%; width: 100%;  top: 0px; left: 0px; right: 0px; bottom: 0px; z-index: 999;  filter:alpha(opacity=50);-moz-opacity:0.5;opacity: 0.5;}
+div.jqinew{ width: 380px; position: absolute; font-size: 12px; z-index: 1000; display: block; top: 130px; +margin-left:-475px;}
+div.jqinew .jqinewcontainer{ width: 380px; margin-left:50px;}
+.tpcontact{background:url(../images/icon2.png) no-repeat left top; font-size:18px; color:#FFFFFF; text-align:center;width:380px;float:left;}
+.tpcontact img{ cursor:pointer;}
+.tpcontact span{ float:right; padding:8px 10px 0 0;}
+.btcontact{ background:url(../images/icon3.png) no-repeat left top; height:6px; width:380px;float:left; }
+.cencontact{ background:#ffffff;float:left; width:380px; line-height:150%; font-size:16px; padding-top:28px;}
+.cencontact ul{ float:left; width:380px; padding-bottom:20px;}
+.cencontact .wd1{ width:44px; padding:0 21px 0 30px;}
+.cencontact .wd2{ width:285px; }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="gn_account_text_size_title_large">30sp</dimen>
+    <dimen name="gn_account_text_size_subhead_information">14sp</dimen>
+    <dimen name="gn_account_text_size_prompt">12sp</dimen>
+    <dimen name="gn_account_text_size_prompt2">10sp</dimen>
+    <dimen name="gn_account_divide_line_height">0.6dip</dimen>
+    <dimen name="gn_account_content_left_right">16dip</dimen>
+    <dimen name="gn_account_edit_margin">12dip</dimen>
+    <dimen name="gn_account_bind_mobile_content_left_right">12dip</dimen>
+    <dimen name="gn_account_title_left_right">10dip</dimen>
+    <dimen name="gn_account_between_widget_small">3dip</dimen>
+    <dimen name="gn_account_between_widget_big">10dip</dimen>
+    <dimen name="gn_account_button_left_right">40dip</dimen>
+    <dimen name="gn_account_widget_padding">10dip</dimen>
+    <dimen name="gn_account_text_size_normal">18sp</dimen>
+    <dimen name="gn_account_text_size_normal_2">16sp</dimen>
+    <dimen name="gn_account_text_size_small">12sp</dimen>
+    <dimen name="gn_account_button_height">46dp</dimen>
+    <dimen name="gn_account_two_lines_text_margin">1dp</dimen>
+    <dimen name="gn_account_framelist_margin">8dp</dimen>
+    <dimen name="gn_account_button_text_size">18sp</dimen>
+    <!-- Gionee < changwy > <2013-12-03> modify for CR00965024 begin -->
+    <dimen name="gn_account_editText_height">40dip</dimen>
+    <!-- Gionee < changwy > <2013-12-03> modify for CR00965024 end -->
+    <!-- Gionee < changwy > <2014-05-21> modify for CR01237976 begin -->
+    <dimen name="gn_account_sms_auth_code_btn_width">130dp</dimen>
+    <dimen name="gn_account_sms_auth_code_edittext_width">150dp</dimen>
+    <!-- Gionee < changwy > <2014-05-21> modify for CR01237976 end -->
+    <dimen name="gn_account_two_button_width">100dp</dimen>
+    <dimen name="gn_account_layout_margin_top">5dp</dimen>
+    <dimen name="gn_account_padding_left">5dp</dimen>
+    <dimen name="gn_account_sns_padding_left">10dp</dimen>
+    <dimen name="gn_account_forget_password_button_height">30dp</dimen>
+    <dimen name="gn_account_editer_margin">12dp</dimen>
+    <dimen name="gn_account_amigo_textSizeAlertDialogBtn">14sp</dimen>
+    <dimen name="gn_account_account_two_button_width">146dip</dimen>
+    <dimen name="gn_account_account_two_button_height">42dip</dimen>
+    <dimen name="gn_account_account_one_button_height">40dip</dimen>
+    <dimen name="gn_account_account_layout_margin_left_right">20dp</dimen>
+    <dimen name="gn_account_edit_text_height">42dp</dimen>
+    <dimen name="gn_account_account_logo_margin">26dp</dimen>
+    <dimen name="gn_account_text_size_edittext">14sp</dimen>
+    <dimen name="gn_account_account_between_button">18dp</dimen>
+    <dimen name="gn_account_account_textview_edittext">10dp</dimen>
+    <dimen name="gn_account_account_context_buttom">20dp</dimen>
+    <dimen name="gn_account_account_security_code_width">100dip</dimen>
+    <dimen name="gn_account_account_login_auth_top">5dp</dimen>
+    <dimen name="gn_account_text_size_middle">18sp</dimen>
+    <dimen name="gn_account_account_login_auth_buttom">4dp</dimen>
+    <dimen name="gn_account_layout_height">275dp</dimen>
+    <dimen name="gn_account_amigo_alert_dialog_button_bar_height">52dip</dimen>
+    <dimen name="gn_account_login_activity_button_margin_left_right">10dp</dimen>
+
+</resources>

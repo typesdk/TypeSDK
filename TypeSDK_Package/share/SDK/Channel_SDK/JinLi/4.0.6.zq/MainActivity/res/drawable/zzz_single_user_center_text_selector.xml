@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/zzz_white" android:state_pressed="false"></item>
+    <item android:drawable="@color/zzz_single_user_center_text_pressed"
+          android:state_pressed="true"></item>
+
+</selector>

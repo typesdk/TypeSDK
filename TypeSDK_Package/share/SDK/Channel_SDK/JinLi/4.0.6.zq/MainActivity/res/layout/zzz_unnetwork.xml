@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/zzz_unnetwork"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/zzz_local_page_bg"
+                android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/zzz_unnetwork_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/zzz_empty_message"
+        android:layout_marginTop="@dimen/zzz_exception_margin_top"
+        android:src="@drawable/zzz_dialog_theme_exception"/>
+
+    <TextView
+        android:id="@+id/zzz_exception_discription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_unnetwork_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/zzz_exception_discription_margin_top"
+        android:text="@string/zzz_exception_discription"
+        android:textColor="@color/zzz_unnetwork_word_color"
+        android:textSize="@dimen/zzz_unnetwork_word_size"/>
+
+</RelativeLayout>

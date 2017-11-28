@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gionee.gamesdk.business.core.ui.ScrollViewLayout
+        android:id="@+id/zzz_scroll_view"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/zzz_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/zzz_billboard_content_margin_top"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zzz_billboard_head_blank_margin_top"/>
+
+                <include
+                    android:id="@+id/zzz_billboard_prize_title"
+                    layout="@layout/zzz_cost_billboard_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/zzz_billboard_head_margin_top">
+                </include>
+
+                <include
+                    android:id="@+id/zzz_billboard_prize_content"
+                    layout="@layout/zzz_billboard_prize_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/zzz_billboard_head_margin_top"/>
+
+                <include
+                    android:id="@+id/zzz_billboard_title"
+                    layout="@layout/zzz_cost_billboard_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/zzz_billboard_head_margin_top">
+                </include>
+
+                <com.gionee.gamesdk.business.usercenter.billboard.UserRankingView
+                    android:id="@+id/zzz_user_ranking_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/zzz_billboard_margin"
+                    android:layout_marginRight="@dimen/zzz_billboard_margin"
+                    android:layout_marginTop="@dimen/zzz_billboard_head_margin_top"/>
+
+                <include
+                    android:id="@+id/zzz_billboard_event_desc_title"
+                    layout="@layout/zzz_cost_billboard_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/zzz_billboard_head_margin_top">
+                </include>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/zzz_billboard_margin"
+                    android:layout_marginRight="@dimen/zzz_billboard_margin"
+                    android:layout_marginTop="@dimen/zzz_billboard_head_margin_top"
+                    android:background="@color/zzz_transparent_half"
+                    android:padding="@dimen/zzz_billboard_desc_padding">
+
+                    <WebView
+                        android:id="@+id/zzz_billboard_desc_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/zzz_event_explain_belong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/zzz_billboard_belong_text_height"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/zzz_billboard_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_billboard_banner_height"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/zzz_billboard_event_desc_icon"
+                android:layout_width="@dimen/zzz_billboard_ranking_desc_width"
+                android:layout_height="@dimen/zzz_billboard_ranking_desc_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/zzz_billboard_event_desc_icon_margin_right"/>
+
+            <TextView
+                android:id="@+id/zzz_billboard_count_down_end_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_count_down_end_text_margin_top"
+                android:text="@string/zzz_billboard_count_down_end"
+                android:textSize="@dimen/zzz_billboard_count_down_end_text_size"
+                android:textStyle="bold"/>
+
+            <com.gionee.gamesdk.business.core.ui.CountDownViewGroup
+                android:id="@+id/zzz_billboard_count_down_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zzz_billboard_count_down_end_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_billboard_count_down_view_margin_top"/>
+        </RelativeLayout>
+    </com.gionee.gamesdk.business.core.ui.ScrollViewLayout>
+
+    <include
+        layout="@layout/zzz_big_title_bar"/>
+</RelativeLayout>

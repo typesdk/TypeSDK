@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<resources>
+    <!--following id is for float window -->
+    <item type="id" name="zzz_help"/>
+    <item type="id" name="zzz_event"/>
+    <item type="id" name="zzz_ticket_num"/>
+    <item type="id" name="zzz_no_more_hint_btn"/>
+    <item type="id" name="zzz_textView"/>
+    <item type="id" name="zzz_icon"/>
+    <item type="id" name="zzz_hint"/>
+    <item type="id" name="zzz_start_page"/>
+    <item type="id" name="zzz_realname_commit_checkbox"/>
+    <item type="id" name="zzz_realname_commit_agree"/>
+    <item type="id" name="zzz_realname_commit_name"/>
+    <item type="id" name="zzz_realname_commit_id"/>
+    <item type="id" name="zzz_dialog_title_icon"/>
+    <item type="id" name="zzz_dialog_close_button"/>
+    <item type="id" name="zzz_lottery_img"/>
+    <item type="id" name="zzz_lottery_text"/>
+    <item type="id" name="zzz_lottery_click"/>
+</resources>
+

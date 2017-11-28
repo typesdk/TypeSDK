@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:gravity="center"
+     android:background="#80000000"
+     >
+
+    <WebView 
+     android:id="@+id/unipay_id_WebView" 
+     android:layout_width="460dp" 
+     android:layout_height="204dp"
+     android:gravity="center"
+     android:background="#fff7a6"
+     android:visibility="invisible" >
+     </WebView>
+     
+</LinearLayout><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout-land/unipay_layout_activity_web.xml -->

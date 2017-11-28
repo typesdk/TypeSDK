@@ -1,0 +1,45 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <!-- 统一设置自定义Dialog样式 -->
+    <style name="buoy_baseDialog" parent="@android:style/Theme.Dialog">
+
+        <!-- <item name="android:windowBackground">@drawable/uniform_dialog_src</item> -->
+        <!--  <item name="android:windowBackground">@drawable/buoy_dialog_radius</item> -->
+        <item name="android:background">@drawable/buoy_radius</item><!--dialog背景样式-->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+    </style>
+    
+    <!-- 统一设置自定义Dialog样式 -->
+    <style name="buoyDialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:colorForeground">#fff</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+    <style name="buoy_loading_activity_style" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+    
+    <!-- ProgressDilaog主题定义 -->
+    <style name="buoy_progressDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="buoy_style_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFullscreen">true</item> 
+    </style>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_game_ticket_item_height">
+
+    <RelativeLayout
+        android:id="@+id/zzz_game_ticket_header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/zzz_game_ticket_item_content_margin"
+        android:layout_marginTop="@dimen/zzz_game_ticket_item_content_margin"
+        android:layout_marginLeft="@dimen/zzz_game_ticket_item_content_margin_left"
+        android:background="@drawable/zzz_game_ticket_valid">
+
+        <RelativeLayout
+            android:id="@+id/zzz_ticket_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/zzz_game_ticket_value_margin_top">
+            <TextView
+                android:id="@+id/zzz_game_ticket_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/zzz_game_ticket_value_text_size"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/zzz_game_ticket_value"
+                android:layout_toRightOf="@+id/zzz_game_ticket_value"
+                android:text="@string/zzz_yuan"
+                android:textColor="@color/zzz_white"
+                android:textSize="@dimen/zzz_yuan_text_size"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/zzz_game_ticket_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zzz_ticket_value"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/zzz_game_ticket_rule_margin_top"
+            android:layout_marginBottom="@dimen/zzz_game_ticket_rule_margin_bottom"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/zzz_game_ticket_rule_text_color"
+            android:textSize="@dimen/zzz_game_ticket_rule_text_size"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zzz_game_ticket_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/zzz_game_ticket_item_content_margin_left"
+        android:layout_toRightOf="@id/zzz_game_ticket_header">
+
+        <ImageView
+            android:id="@+id/zzz_game_ticket_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/zzz_game_ticket_used"/>
+
+        <View
+            android:id="@+id/zzz_padding_view"
+            android:layout_width="@dimen/zzz_padding_view_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/zzz_game_ticket_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zzz_game_ticket_title_margin_left"
+            android:layout_marginTop="@dimen/zzz_game_ticket_title_margin_top"
+            android:layout_toLeftOf="@id/zzz_padding_view"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/zzz_game_ticket_title_color"
+            android:textSize="@dimen/zzz_game_ticket_title_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_game_ticket_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/zzz_game_ticket_title"
+            android:layout_below="@id/zzz_game_ticket_title"
+            android:layout_marginTop="@dimen/zzz_game_ticket_description_margin_top"
+            android:layout_toLeftOf="@id/zzz_padding_view"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/zzz_game_ticket_description_text_color"
+            android:textSize="@dimen/zzz_game_ticket_description_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_game_ticket_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/zzz_game_ticket_title"
+            android:layout_below="@id/zzz_game_ticket_description"
+            android:layout_marginTop="@dimen/zzz_game_ticket_time_margin_top"
+            android:layout_toLeftOf="@id/zzz_padding_view"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/zzz_game_ticket_time_text_color"
+            android:textSize="@dimen/zzz_game_ticket_time_text_size"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/zzz_record_item_num_margin_left"
+        android:layout_marginRight="@dimen/zzz_record_item_channel_margin_right"
+        android:layout_below="@+id/zzz_gift_remainder_text"
+        android:background="@color/zzz_seperate_line_color"/>
+</RelativeLayout>

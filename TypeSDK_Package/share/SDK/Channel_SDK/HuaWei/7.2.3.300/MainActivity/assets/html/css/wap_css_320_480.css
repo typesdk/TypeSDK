@@ -1,0 +1,35 @@
+body {text-decoration: none;margin:0;padding:0;color:#444444; background:#fff8df;word-break:break-all; font: 13px/25px "微软雅黑"; }
+body img{ border:none;}
+body form{ margin:0; padding:0;}
+body ul{ margin:0; padding:0;float:left}
+body li{ list-style:none; float:left;}
+a:link{ color:#d50000; text-decoration:none;position:relative;}
+a:visited{color:#d50000; text-decoration:none;}
+a:hover{color:#d50000; text-decoration:none;}
+a:active{color:#d50000; text-decoration:none;}
+body input{ border:0;}
+
+.allwkg{ width:320px; margin:0 auto;overflow:hidden;}
+.allkg{ width:320px; float:left; height:480px; overflow:hidden; }
+.tpkg{ float:left; width:320px; }
+
+.wronglist{ float:left; width:298px; padding:0 11px; color:#666666; }
+.wronglist .title{ color:#743434; font-size:16px; padding:10px 40px 15px 20px;width:258px; }
+.wronglist ul{ width:258px; float:left;padding:0 20px;}
+.wronglist li{ width:246px; float:left;background:url(../images/new_icon28_320_480.gif) no-repeat left center; padding-left:12px; }
+.wronglist .line{ background:url(../images/icon29.gif) repeat-x left bottom;}
+.wronglist a{ color:#00379d; cursor:pointer;}
+.wronglist a:visited{ color:#00379d;}
+.wronglist a:hover{ color:#00379d;}
+.wronglist img{ position:relative;margin-right:10px; top:1px;}
+.wronglist .pad{ margin-bottom:5px; padding-bottom:10px; font-size:15px;}
+
+.applist{ float:left; width:240px; background:#ffe7c2; color:#666666; margin:10px 0 0 20px; padding:13px 20px;font: 15px/22px "微软雅黑";}
+.applist .apad1{ float:left; width:240px; padding-top:10px;}
+.applist .apad2{ float:left; width:240px; padding-top:20px;}
+.applist a{ color:#1f55aa; text-decoration:underline;}
+.applist a:hover{ color:#1f55aa; text-decoration:none;}
+
+/*comm style*/
+.txtalign{ text-align:center;}
+.commtpad10{ padding-top:10px;}

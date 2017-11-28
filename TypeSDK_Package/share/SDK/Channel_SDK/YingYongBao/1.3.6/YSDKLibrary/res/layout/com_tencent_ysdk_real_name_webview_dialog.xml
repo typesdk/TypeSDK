@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:background="#3997ee"
+        android:layout_width="match_parent"
+    	android:layout_height="45dp" >
+        <TextView 
+        android:text="@string/com_tencent_ysdk_real_name_dialog_webview_title"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/com_tencent_ysdk_real_name_btn_close"
+            android:minWidth="40dp"
+            android:id="@+id/com_tencent_ysdk_real_name_webview_dialog_close"
+            android:layout_width="wrap_content"
+    		android:layout_height="match_parent"/>
+    </RelativeLayout>
+    
+    <WebView
+        android:background="#ffffff"
+        android:id="@+id/com_tencent_ysdk_real_name_webview_dialog_webview"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"/>
+
+</LinearLayout>
+<!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/com_tencent_ysdk_real_name_webview_dialog.xml -->

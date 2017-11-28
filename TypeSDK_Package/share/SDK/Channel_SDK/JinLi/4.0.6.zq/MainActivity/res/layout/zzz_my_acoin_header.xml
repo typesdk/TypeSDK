@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/zzz_white"
+>
+
+    <TextView
+        android:id="@+id/zzz_acoin_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/zzz_money_num_margin_left"
+        android:layout_centerVertical="true"
+        android:includeFontPadding="false"
+        android:textColor="@color/zzz_main_red"
+        android:textSize="@dimen/zzz_acoin_num_text_size"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/zzz_acoin_amount"
+        android:layout_marginLeft="@dimen/zzz_money_num_money_margin_left"
+        android:layout_toRightOf="@id/zzz_acoin_amount"
+        android:includeFontPadding="false"
+        android:text="@string/zzz_a_coin"
+        android:textColor="@color/zzz_money_header_suffix_color"
+        android:textSize="@dimen/zzz_money_num_money_text_size"/>
+
+    <Button
+        android:id="@+id/zzz_acoin_recharge"
+        android:layout_width="@dimen/zzz_money_recharge_btn_width"
+        android:layout_height="@dimen/zzz_money_recharge_btn_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/zzz_money_recharge_btn_margin_right"
+        android:layout_marginTop="@dimen/zzz_money_recharge_btn_margin_top"
+        android:background="@drawable/zzz_wallet_recharge_button_selector"
+        android:text="@string/zzz_recharge"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/zzz_money_recharge_btn_text_size"/>
+
+    <TextView
+        android:id="@+id/zzz_acoin_intro_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/zzz_acoin_recharge"
+        android:layout_below="@id/zzz_acoin_recharge"
+        android:layout_marginTop="@dimen/zzz_money_intro_link_margin_top"
+        android:text="@string/zzz_money_intro_link"
+        android:textColor="@color/zzz_main_green"
+        android:textSize="@dimen/zzz_money_intro_link_text_size"/>
+
+</RelativeLayout>

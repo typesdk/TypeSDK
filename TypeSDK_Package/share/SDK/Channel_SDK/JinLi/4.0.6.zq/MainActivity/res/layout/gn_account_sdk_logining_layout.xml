@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gn_account_xf_corners_bg"
+        android:gravity="center_vertical" >
+
+        <ProgressBar
+            android:id="@+id/pd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:indeterminateDrawable="@drawable/gn_account_progressbar_circle" >
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/wel_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gn_account_welcome_back" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="48dp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/change_account_bt"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gn_account_account_orange_button_bg_selector"
+            android:text="@string/gn_account_change_account"
+            android:textColor="@color/gn_account_white"
+            android:textSize="12sp" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

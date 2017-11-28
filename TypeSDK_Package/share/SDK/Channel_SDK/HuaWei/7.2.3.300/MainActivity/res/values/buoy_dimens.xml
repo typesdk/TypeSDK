@@ -1,0 +1,10 @@
+<resources>
+    <!-- default -->
+   	<dimen name="icon_width">66dp</dimen>
+   	<dimen name="big_height">55dp</dimen>
+   	<dimen name="red_icon_margin">10dp</dimen>
+   	<dimen name="buoy_notice_textSize">14dp</dimen>
+   	<dimen name="buoy_update_textSize">16dp</dimen>
+   	<dimen name="buoy_update_title">18dp</dimen>
+   	<dimen name="buoy_notice_marginLR">15dp</dimen>
+</resources>

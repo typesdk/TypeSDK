@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center">
+
+    <com.gionee.gamesdk.business.core.pulltorefresh.PullToRefreshWebView
+        android:id="@+id/zzz_page_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_title_gradient_height"
+        android:background="@drawable/zzz_title_gradient"/>
+</RelativeLayout>

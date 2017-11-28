@@ -1,0 +1,6 @@
+<resources>
+    <!-- D1 ,P6 -->
+   	<dimen name="icon_width">79dp</dimen>
+   	<dimen name="big_height">65dp</dimen>
+   	<dimen name="red_icon_margin">12dp</dimen>
+</resources>

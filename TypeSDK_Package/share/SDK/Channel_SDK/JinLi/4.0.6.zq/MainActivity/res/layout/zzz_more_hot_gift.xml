@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/zzz_hot_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/zzz_more_hot_gift_margin_top"
+        android:layout_marginBottom="@dimen/zzz_more_hot_gift_margin_bottom"
+        android:text="@string/zzz_more_hot_gift"
+        android:textColor="@color/zzz_main_green"
+        android:textSize="@dimen/zzz_more_hot_gift_size"/>
+
+</LinearLayout>

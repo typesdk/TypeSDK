@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/zzz_main_tab_padding_bottom">
+
+    <ImageView
+        android:id="@+id/zzz_tab_icon"
+        android:layout_width="@dimen/zzz_main_tab_icon_width"
+        android:layout_height="@dimen/zzz_main_tab_icon_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/zzz_main_tab_icon_margin_top"
+        android:scaleType="fitXY"
+        android:src="@drawable/zzz_recommend_selector"/>
+
+    <TextView
+        android:id="@+id/zzz_tab_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_tab_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/zzz_main_tab_text_margin_top"
+        android:ellipsize="none"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:textColor="@color/zzz_main_tab_text_color"
+        android:textSize="@dimen/zzz_main_tab_text_size"/>
+
+</RelativeLayout>

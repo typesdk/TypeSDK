@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="zzz_tab_names">
+        <item>@string/zzz_ask</item>
+        <item>@string/zzz_my_question</item>
+    </string-array>
+
+    <string-array name="zzz_main_tab_icons">
+        <item>@drawable/zzz_user_center</item>
+        <item>@drawable/zzz_gift</item>
+        <item>@drawable/zzz_event</item>
+        <item>@drawable/zzz_strategy</item>
+        <item>@drawable/zzz_help</item>
+    </string-array>
+    <array name="zzz_daily_gift_date_corner_icons">
+        <item>@drawable/zzz_daily_sign_day_1</item>
+        <item>@drawable/zzz_daily_sign_day_2</item>
+        <item>@drawable/zzz_daily_sign_day_3</item>
+        <item>@drawable/zzz_daily_sign_day_4</item>
+        <item>@drawable/zzz_daily_sign_day_5</item>
+        <item>@drawable/zzz_daily_sign_day_6</item>
+        <item>@drawable/zzz_daily_sign_day_7</item>
+        <item>@drawable/zzz_daily_sign_day_8</item>
+        <item>@drawable/zzz_daily_sign_day_9</item>
+        <item>@drawable/zzz_daily_sign_day_10</item>
+        <item>@drawable/zzz_daily_sign_day_11</item>
+        <item>@drawable/zzz_daily_sign_day_12</item>
+        <item>@drawable/zzz_daily_sign_day_13</item>
+        <item>@drawable/zzz_daily_sign_day_14</item>
+        <item>@drawable/zzz_daily_sign_day_15</item>
+        <item>@drawable/zzz_daily_sign_day_16</item>
+        <item>@drawable/zzz_daily_sign_day_17</item>
+        <item>@drawable/zzz_daily_sign_day_18</item>
+        <item>@drawable/zzz_daily_sign_day_19</item>
+        <item>@drawable/zzz_daily_sign_day_20</item>
+        <item>@drawable/zzz_daily_sign_day_21</item>
+        <item>@drawable/zzz_daily_sign_day_22</item>
+        <item>@drawable/zzz_daily_sign_day_23</item>
+        <item>@drawable/zzz_daily_sign_day_24</item>
+        <item>@drawable/zzz_daily_sign_day_25</item>
+        <item>@drawable/zzz_daily_sign_day_26</item>
+        <item>@drawable/zzz_daily_sign_day_27</item>
+        <item>@drawable/zzz_daily_sign_day_28</item>
+        <item>@drawable/zzz_daily_sign_day_29</item>
+        <item>@drawable/zzz_daily_sign_day_30</item>
+        <item>@drawable/zzz_daily_sign_day_31</item>
+    </array>
+</resources>

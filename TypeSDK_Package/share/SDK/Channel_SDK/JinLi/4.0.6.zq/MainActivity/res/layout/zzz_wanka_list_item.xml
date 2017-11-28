@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/zzz_wanka_list_item_padding_bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_wanka_list_item_height"
+        android:background="@drawable/zzz_list_round_corner_bg">
+
+        <TextView
+            android:id="@+id/zzz_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/zzz_add_info_item_time_margin_right"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/zzz_add_info_item_time_color"
+            android:textSize="@dimen/zzz_add_info_item_time_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zzz_add_info_item_title_margin_left"
+            android:layout_marginRight="@dimen/zzz_wanka_list_item_title_margin_right"
+            android:layout_toLeftOf="@id/zzz_time"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/zzz_wanka_list_item_title_text_color"
+            android:textSize="@dimen/zzz_add_info_item_title_text_size"/>
+    </RelativeLayout>
+
+</RelativeLayout>

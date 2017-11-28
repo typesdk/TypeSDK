@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/zzz_title_bar_group"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/zzz_big_title_height"
+    android:background="@color/zzz_white">
+
+    <TextView
+        android:id="@+id/zzz_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/zzz_title_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/zzz_second_title_back_marginLeft"
+        android:drawableLeft="@drawable/zzz_back_src_light"
+        android:drawablePadding="@dimen/zzz_second_title_back_marginRight"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/zzz_back_to_game"
+        android:textColor="@color/zzz_title_text_color"
+        android:textSize="@dimen/zzz_title_textsize"/>
+
+</RelativeLayout>

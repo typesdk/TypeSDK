@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.gionee.gamesdk.business.help.MyFeedbackListView
+        android:id="@+id/zzz_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/zzz_feedback_padding_horizon"
+        android:paddingLeft="@dimen/zzz_feedback_padding_horizon"
+        android:dividerHeight="@dimen/zzz_feedback_question_content_padding_horizon"/>
+</RelativeLayout>

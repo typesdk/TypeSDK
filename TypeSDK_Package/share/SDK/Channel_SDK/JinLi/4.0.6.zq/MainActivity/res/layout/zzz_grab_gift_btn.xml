@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/zzz_grab_gift_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/zzz_gift_grabbing"
+        style="@style/zzz_CircleProgressBar"
+        android:layout_width="@dimen/zzz_giftgrap_width"
+        android:layout_height="@dimen/zzz_giftgrap_width"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/zzz_gift_grab"
+        android:layout_width="@dimen/zzz_grap_gift_btn_width"
+        android:layout_height="@dimen/zzz_grap_gift_btn_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/zzz_shap_corner_btn"
+        android:focusable="false"
+        android:textColor="@color/zzz_green_text_color"
+        android:textSize="@dimen/zzz_gift_grap_text_size"
+        android:typeface="normal"/>
+</RelativeLayout>

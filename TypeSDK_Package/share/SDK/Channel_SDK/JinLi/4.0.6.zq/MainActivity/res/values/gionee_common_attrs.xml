@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="zzz_UserInfoItemView">
+        <attr name="type" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="zzz_RatioImageView">
+        <attr name="zzz_relative" format="enum">
+            <enum name="zzz_width" value="0"/>
+            <enum name="zzz_height" value="1"/>
+        </attr>
+        <attr name="zzz_defaultRatio" format="float"></attr>
+    </declare-styleable>
+
+</resources>

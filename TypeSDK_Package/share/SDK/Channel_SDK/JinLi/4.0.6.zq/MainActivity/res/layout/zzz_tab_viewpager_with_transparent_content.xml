@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    android:id="@+id/zzz_tabhost"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:id="@+id/zzz_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/zzz_normal_tabwidget_bg"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/zzz_tab_height"
+                    android:background="@color/zzz_normal_tabwidget_bg"
+                    android:divider="@null"
+                    android:paddingLeft="@dimen/zzz_sub_tab_padding_left"
+                    android:paddingRight="@dimen/zzz_sub_tab_padding_right">
+                </TabWidget>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_below="@id/zzz_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_title_gradient_height"
+                android:background="@drawable/zzz_title_gradient"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.gionee.gamesdk.business.core.ui.TabViewPager
+                android:id="@+id/zzz_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/zzz_local_page_bg"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

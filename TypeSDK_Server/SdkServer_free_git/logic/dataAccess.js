@@ -50,7 +50,7 @@ function saveRequsetLog(game, channel, action, detail) {
 }
 
 //function createOrder(game,channel,cporder,verifyurl,channelId)
-function createOrder(game, channel, cporder, verifyurl, channelId, notifyurl) {
+function createOrder(game, channel, cporder, verifyurl, channelId, notifyurl,channellaccountid,goods_price,goods_name) {
     poolgeneric.acquire(function (err, client) {
         if (err) {
             console.log(err);
@@ -64,8 +64,11 @@ function createOrder(game, channel, cporder, verifyurl, channelId, notifyurl) {
         sqlparam += ", @verifyurl='" + verifyurl + "'";
         sqlparam += ", @channelId='" + channelId + "'";
         sqlparam += ", @notifyurl='" + notifyurl + "'";
+        sqlparam += ", @channellaccountid='" + channellaccountid + "'";
+        sqlparam += ", @goods_price='" + goods_price + "'";
+        sqlparam += ", @goods_name='" + goods_name + "'";
 
-        client.query(sqlparam + '; CALL  p_sdk_order_create(@game,@channel,@cporder,@verifyurl,@channelId,@notifyurl); ', function (err, rows) {
+        client.query(sqlparam + '; CALL  p_sdk_order_create(@game,@channel,@cporder,@verifyurl,@channelId,@notifyurl,@channellaccountid,@goods_price,@goods_name); ', function (err, rows) {
             //console.log(rows);
             if (err) console.log(err);
 
@@ -246,6 +249,31 @@ function asGameSearch(cporder, userId, ret, retf) {
     });
 }
 
+
+function createLoginLog(game, channelid, channelname, channeluserid) {
+    poolgeneric.acquire(function (err, client) {
+        if (err) {
+            console.log(err);
+            poolgeneric.release(client);
+            return;
+        }
+        var sqlparam = '';
+        sqlparam += "SET @SdkGameID = '" + game + "'";
+        sqlparam += " , @SdkChannelID = '" + channelid + "'";
+        sqlparam += " , @SdkChannelName = '" + channelname + "'";
+        sqlparam += ", @ChannelUserID='" + channeluserid + "'";
+
+
+        client.query(sqlparam + '; CALL  p_sdk_login_log(@SdkGameID,@SdkChannelID,@SdkChannelName,@ChannelUserID); ', function (err, rows) {
+            //console.log(rows);
+            if (err) console.log(err);
+
+            poolgeneric.release(client);
+        });
+    });
+}
+
+
 exports.saveRequsetLog = saveRequsetLog;
 exports.createOrder = createOrder;
 exports.UpdateOrderStatus = UpdateOrderStatus;
@@ -253,3 +281,4 @@ exports.searchOrder = searchOrder;
 exports.selectAllOrder = selectAllOrder;
 exports.searchByCporderAndOrder = searchByCporderAndOrder;
 exports.asGameSearch = asGameSearch;
+exports.createLoginLog = createLoginLog;

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="gn_account_btn_padding">25dip</dimen>
+    <dimen name="gn_account_draw_padding">4dip</dimen>
+    <dimen name="gn_account_detail_text_width">210dip</dimen>
+    <!-- Gionee < changwy > <2013-08-12> modify for  CR00852615 begin -->
+    <dimen name="gn_account_single_line_list_height">48dp</dimen>
+    <dimen name="gn_account_two_line_list_height">64dp</dimen>
+    <dimen name="gn_account_three_list_height">64dp</dimen>
+    <dimen name="gn_account_bottom_progressbar_marginbottom">8dp</dimen>
+    <dimen name="gn_account_button_image_length">36dp</dimen>
+    <dimen name="gn_account_edittext_width">80dp</dimen>
+    <!-- Gionee < changwy > <2013-08-12> modify for  CR00852615 end -->
+    <dimen name="gn_account_login_activity_margin_left_right">16dp</dimen>
+
+</resources>

@@ -1,0 +1,52 @@
+{
+  "version":"7.1",
+  "actions":[
+    {
+      "name":"Login"
+    ,"method":"POST"
+    ,"in_params":
+    {
+      "username" : "",
+      "token" : ""
+    }
+    ,"out_url" : "http://sdk-nscs.btgame01.com/index.php/User/v4"
+    ,"out_params" :
+    {
+      "username" : ""
+    ,"token" : ""
+    ,"pid" : 0
+    }
+    }
+  ,{
+      "name":"Pay"
+    ,"method":"POST"
+    ,"in_params":
+      {
+        "data" :
+        {
+          "orderid": ""
+        ,"gameid": ""
+        ,"serverid": ""
+        ,"uid" : ""
+        ,"amount": ""
+        ,"time": ""
+        ,"extendsInfo": ""
+        }
+      }
+    ,"out_url" :"http://sdk-nscs.btgame01.com/index.php/User/v4"
+    ,"out_params" :
+      {
+        "data" :
+        {
+          "orderid": ""
+        ,"gameid": ""
+        ,"serverid": ""
+        ,"uid" : ""
+        ,"amount": ""
+        ,"time": ""
+        ,"extendsInfo": ""
+        }
+      }
+    }
+  ]
+}

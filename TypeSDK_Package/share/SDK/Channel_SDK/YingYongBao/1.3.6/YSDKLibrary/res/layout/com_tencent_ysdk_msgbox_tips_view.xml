@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="540dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ysdk_msg_box_tips_icon"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp" />
+
+
+        <TextView
+            android:id="@+id/ysdk_msg_box_tips_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ysdk_msg_box_tips_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/ysdk_msg_box_tips_button"
+            android:layout_toRightOf="@+id/ysdk_msg_box_tips_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="玩游戏，豪礼送不停"
+            android:textColor="#FF231815"
+            android:textSize="21dp" />
+
+
+        <TextView
+            android:id="@+id/ysdk_msg_box_tips_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ysdk_msg_box_tips_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/ysdk_msg_box_tips_button"
+            android:layout_toRightOf="@+id/ysdk_msg_box_tips_icon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="首充元20就送紫色道具大礼包"
+            android:textColor="#FF969696"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/ysdk_msg_box_tips_button"
+            android:layout_width="96dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/bg_round_corner"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="立即查看"
+            android:textColor="#FF1D82FF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/com_tencent_ysdk_msgbox_tips_view.xml -->

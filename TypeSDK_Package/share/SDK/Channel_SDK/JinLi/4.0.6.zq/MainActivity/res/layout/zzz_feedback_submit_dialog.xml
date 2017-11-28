@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/zzz_feedback_submit_dialog_padding_left"
+                android:paddingTop="@dimen/zzz_feedback_submit_dialog_padding_top"
+                android:paddingBottom="@dimen/zzz_feedback_submit_dialog_padding_bottom">
+
+    <TextView
+        android:id="@+id/zzz_thanks_for_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:paddingBottom="@dimen/zzz_feedback_submit_dialog_message_padding_bottom"
+        android:text="@string/zzz_thanks_for_feedback"
+        android:textColor="@color/zzz_feedback_submit_dialog_message"
+        android:textSize="@dimen/zzz_feedback_submit_dialog_message_size"/>
+
+    <TextView
+        android:id="@+id/zzz_custom_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_thanks_for_feedback"
+        android:includeFontPadding="false"
+        android:paddingBottom="@dimen/zzz_feedback_submit_dialog_tips_padding_bottom"
+        android:text="@string/zzz_custom_tips"
+        android:textColor="@color/zzz_feedback_submit_dialog_tips"
+        android:textSize="@dimen/zzz_feedback_submit_dialog_tips_size"/>
+
+    <TextView
+        android:id="@+id/zzz_custom_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_custom_tips"
+        android:includeFontPadding="false"
+        android:paddingBottom="@dimen/zzz_feedback_submit_dialog_phone_padding_bottom"
+        android:text="@string/zzz_custom_phone"
+        android:textColor="@color/zzz_feedback_submit_dialog_phone"
+        android:textSize="@dimen/zzz_feedback_submit_dialog_phone_size"/>
+
+</RelativeLayout>

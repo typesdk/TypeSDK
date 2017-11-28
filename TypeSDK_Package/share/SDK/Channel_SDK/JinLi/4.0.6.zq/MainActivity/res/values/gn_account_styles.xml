@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="gn_account_Theme.AndroidDevelopers.white" parent="android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/gn_account_background_color</item>
+        <item name="android:textColorHint">@color/gn_account_edittext_hint_color</item>
+        <item name="android:actionBarStyle">@style/gn_account_LightActionBarStyle</item>
+    </style>
+
+    <!--
+    <style name="gn_account_Theme.AndroidDevelopers.Translucent" parent="android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@android:style/Theme.Translucent</item>
+    </style>
+    -->
+
+    <style name="gn_account_LightActionBarStyle" parent="android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:titleTextStyle">@style/gn_account_GnTitleTextStyle</item>
+        <item name="android:backgroundStacked">@color/gn_account_background_color</item>
+        <item name="android:background">@color/gn_account_background_color</item>
+    </style>
+
+    <style name="gn_account_GnTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/gn_account_white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="gn_account_TextSize_Normal">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#222222</item>
+    </style>
+
+    <style name="gn_account_TextSize_small">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
+    <style name="gn_account_TextView_Style_small_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:shadowColor">@color/gn_account_white</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="gn_account_AnimationUp">
+        <!-- <item name="android:windowEnterAnimation">@anim/push_up_in</item> -->
+    </style>
+
+    <style name="gn_account_MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- <item name="android:windowBackground">@drawable/dialog_full_holo_light</item> -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowAnimationStyle">@style/AnimationUp</item> -->
+    </style>
+
+    <style name="gn_account_Theme.FloatActivity" parent="@android:Theme.Dialog">
+        <item name="android:windowBackground">@color/gn_account_white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- <item name="android:windowFullscreen">true</item> -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="gn_account_account_anim_down_up_style" parent="android:Animation">
+        <!--
+        <item name="@android:windowEnterAnimation">@anim/account_enter</item>
+        <item name="@android:windowExitAnimation">@anim/account_exit</item>
+        -->
+    </style>
+
+    <style name="gn_account_TextView_Style_Name">
+        <item name="android:textSize">@dimen/gn_account_text_size_edittext</item>
+        <item name="android:textColor">@color/gn_account_textview_name</item>
+        <item name="android:paddingLeft">@dimen/gn_account_account_textview_edittext</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="gn_account_AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="gn_account_sdk_Theme.FloatActivity" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/gn_account_transparent_color</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- <item name="android:windowFullscreen">true</item> -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="gn_account_EditText_Style">
+        <item name="android:textSize">@dimen/gn_account_text_size_subhead_information</item>
+        <item name="android:textColor">@color/gn_account_main_body_color</item>
+        <item name="android:background">@color/gn_account_editer_text_backgroud_color</item>
+    </style>
+
+    <style name="gn_account_Button_orange_Style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gn_account_white</item>
+        <item name="android:background">@drawable/gn_account_account_orange_button_bg_selector</item>
+    </style>
+
+    <style name="gn_account_Button_white_Style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gn_account_main_body_color</item>
+        <item name="android:background">@drawable/gn_account_account_orange_button_bg_selector</item>
+    </style>
+
+    <style name="gn_account_Transparent">
+        <item name="android:windowBackground">@color/gn_account_transparent_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="gn_account_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="gn_account_base_content_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="gn_account_tv_main_black_style" parent="gn_account_base_content_style">
+        <item name="android:textSize">@dimen/gn_account_text_size_middle</item>
+        <item name="android:textColor">@color/gn_account_black5</item>
+    </style>
+
+</resources>

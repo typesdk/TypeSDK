@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="zzz_float_quit_dialog_general_margin_right">14dip</dimen>
+
+    <dimen name="zzz_common_float_quit_dialog_width">286dip</dimen>
+    <dimen name="zzz_common_float_upgrade_bg_height">118dip</dimen>
+    <dimen name="zzz_money_info_margin_left">0dip</dimen>
+    <dimen name="zzz_money_info_margin_right">0dip</dimen>
+    <dimen name="zzz_my_money_tab_margin_top">6dip</dimen>
+    <dimen name="zzz_money_list_item_text_max_width">110dip</dimen>
+
+    <!-- for gionee_dialog_resource -->
+    <dimen name="zzz_dialog_default_width">320dip</dimen>
+    <dimen name="zzz_dialog_title_size">18dip</dimen>
+    <dimen name="zzz_dialog_title_margin_left">14dip</dimen>
+    <dimen name="zzz_dialog_title_height">48dip</dimen>
+    <dimen name="zzz_dialog_message_size">18dip</dimen>
+    <dimen name="zzz_dialog_message_max_height">300dip</dimen>
+    <dimen name="zzz_dialog_button_bar_height">53dip</dimen>
+    <dimen name="zzz_dialog_button_size">16dip</dimen>
+    <dimen name="zzz_dialog_content_margin_left_right">18dip</dimen>
+    <dimen name="zzz_dialog_content_margin_top">18dip</dimen>
+    <dimen name="zzz_dialog_content_padding_bottom">18dip</dimen>
+    <dimen name="zzz_dialog_button_border_size">0.3dip</dimen>
+    <dimen name="zzz_single_choice_padding_left">17dip</dimen>
+    <dimen name="zzz_single_choice_padding_right">10dip</dimen>
+    <dimen name="zzz_single_choice_padding_top_bottom">16dip</dimen>
+    <dimen name="zzz_single_choice_button_size">20dip</dimen>
+    <dimen name="zzz_dialog_button_layout_padding_horizon">4dip</dimen>
+    <dimen name="zzz_dialog_button_layout_padding_vertical">6.5dip</dimen>
+    <dimen name="zzz_permission_dialog_width">286.3dip</dimen>
+    <dimen name="zzz_permission_dialog_height">162dip</dimen>
+    <dimen name="zzz_permission_dialog_padding_vertical">17dip</dimen>
+    <dimen name="zzz_permission_dialog_padding_horizon">14dip</dimen>
+    <dimen name="zzz_permission_text_size_14">14dip</dimen>
+    <dimen name="zzz_permission_text_size_13">13dip</dimen>
+    <dimen name="zzz_permission_content_margin_top">12dip</dimen>
+    <dimen name="zzz_permission_button_margin_top">12dip</dimen>
+    <dimen name="zzz_permission_button_width">123dip</dimen>
+    <dimen name="zzz_permission_button_height">37dip</dimen>
+    <dimen name="zzz_permission_button_corner">2dip</dimen>
+    <dimen name="zzz_permission_button_radius">9dip</dimen>
+</resources>

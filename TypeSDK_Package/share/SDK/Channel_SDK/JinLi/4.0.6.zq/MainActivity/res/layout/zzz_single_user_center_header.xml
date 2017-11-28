@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="@drawable/zzz_single_user_center_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/zzz_user_icon"
+            android:layout_width="@dimen/zzz_single_usercenter_icon_width"
+            android:layout_height="@dimen/zzz_single_usercenter_icon_width"
+            android:background="@drawable/zzz_user_icon"/>
+
+        <TextView
+            android:id="@+id/zzz_user_name"
+            android:layout_marginTop="@dimen/zzz_single_usercenter_username_margin_top"
+            android:textColor="@color/zzz_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/zzz_single_usercenter_username_text_size"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

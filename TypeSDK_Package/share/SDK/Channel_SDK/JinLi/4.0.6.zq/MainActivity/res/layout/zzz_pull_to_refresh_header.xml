@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/zzz_fl_inner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/zzz_header_footer_bottom_padding"
+                android:paddingTop="@dimen/zzz_header_footer_top_padding">
+
+    <ImageView
+        android:id="@+id/zzz_refreshing_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/zzz_loadind_icon_height"/>
+
+    <ImageView
+        android:id="@+id/zzz_pull_to_refresh_icon"
+        android:layout_width="@dimen/zzz_loadind_icon_width"
+        android:layout_height="@dimen/zzz_loadind_icon_height"
+        android:src="@drawable/zzz_pull_to_refresh_icon"/>
+
+    <TextView
+        android:id="@+id/zzz_pull_to_refresh_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/zzz_pull_to_refresh_icon"
+        android:layout_alignTop="@id/zzz_pull_to_refresh_icon"
+        android:layout_toRightOf="@id/zzz_pull_to_refresh_icon"
+        android:gravity="center"
+        android:text="@string/zzz_pull_to_refresh_pull_label"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@color/zzz_loading_text"/>
+
+</RelativeLayout>

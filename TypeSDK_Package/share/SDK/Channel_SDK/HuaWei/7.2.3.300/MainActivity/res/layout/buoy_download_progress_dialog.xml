@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_download_dialog_layout"
+    android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/uniform_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/buoy_black"
+        android:textSize="13sp"
+        />
+    
+    <RelativeLayout
+	     android:id="@+id/progress_bar_layout"
+	     android:layout_width="match_parent"
+	     android:layout_height="18dp" 
+	     android:layout_marginBottom="16dp"
+	     android:layout_marginRight="8dp"
+	     android:layout_below="@+id/uniform_dialog_title">
+	     
+	        <ProgressBar
+	            android:id="@+id/download_info_progress"
+	            style="?android:attr/progressBarStyleHorizontal"
+	            android:layout_width="match_parent"
+	            android:layout_height="7dp"
+	            android:layout_centerVertical="true" />
+
+     </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/uniform_dialog_title"
+        android:layout_alignRight="@+id/progress_bar_layout"
+        android:textColor="@color/buoy_black"
+        android:textSize="13sp"/>
+        
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="zzz_GameHall.LoadindProgressBar.Horizontal"
+           parent="@android:style/Widget.Holo.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/zzz_loading_progress_bar</item>
+    </style>
+
+    <style name="zzz_GameHall.ProgressBar.Horizontal"
+           parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/zzz_progress_bar</item>
+        <item name="android:indeterminateDrawable">@drawable/zzz_progress_bar_indeter</item>
+    </style>
+
+    <style name="zzz_GameHall.CircleProgressBar" parent="@android:style/Widget.Holo.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/zzz_circle_progress_bar_normal</item>
+    </style>
+
+    <style name="zzz_CircleProgressBarNormal" parent="@android:style/Widget.Holo.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/zzz_circle_progress_bar_normal</item>
+    </style>
+
+    <style name="zzz_CircleProgressBarMini" parent="@android:style/Widget.Holo.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/zzz_circle_progress_bar_mini</item>
+    </style>
+    <style name="zzz_MoneyContentMarginStyle">
+        <item name="android:layout_marginLeft">@dimen/zzz_money_info_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/zzz_money_info_margin_right</item>
+        <item name="android:layout_marginTop">@dimen/zzz_my_money_tab_margin_top</item>
+    </style>
+
+    <style name="zzz_MoneyListItemTextViewStyle">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/zzz_money_list_item_color</item>
+        <item name="android:maxWidth">@dimen/zzz_money_list_item_text_max_width</item>
+    </style>
+
+    <style name="zzz_CircleProgressBar" parent="@android:style/Widget.Holo.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/zzz_circle_progress_bar_normal</item>
+    </style>
+
+
+    <style name="zzz_Activity_GiftDialog"
+           parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+
+    <style name="zzz_activity_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="zzz_quit_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

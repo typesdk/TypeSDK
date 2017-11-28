@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/zzz_one_pixel"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="@dimen/zzz_wallet_line_margin_left"
+      android:background="@color/zzz_wallet_line_color"/>

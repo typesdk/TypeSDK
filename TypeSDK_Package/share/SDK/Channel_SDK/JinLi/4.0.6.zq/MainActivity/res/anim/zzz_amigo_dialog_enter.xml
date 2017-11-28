@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:interpolator="@anim/zzz_amigo_overshoot_interpolator">
+
+    <translate
+        android:duration="@integer/zzz_amigo_longAnimTime"
+        android:fromYDelta="100%p"
+        android:toYDelta="0"/>
+
+</set>

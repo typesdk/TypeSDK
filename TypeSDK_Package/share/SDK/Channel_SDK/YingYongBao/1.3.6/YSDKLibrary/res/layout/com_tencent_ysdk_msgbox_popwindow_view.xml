@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:focusable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/com_tencent_ysdk_icon_forcepop_layout"
+        android:layout_width="280dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/com_tencent_ysdk_icon_forcepop_banner"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/com_tencent_ysdk_icon_forcepopbanner" />
+
+        <ImageView
+            android:id="@+id/com_tencent_ysdk_icon_forcepop_xx"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/com_tencent_ysdk_icon_forcepopxx"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/com_tencent_ysdk_icon_forcepop_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/com_tencent_ysdk_icon_forcepop_banner"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/force_pop_view_title"
+            android:textColor="#f68826"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/com_tencent_ysdk_icon_forcepop_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/com_tencent_ysdk_icon_forcepop_title"
+            android:background="#ffffff"
+            android:paddingBottom="25dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:paddingTop="14dp"
+            android:text="@string/force_pop_view_content"
+            android:textColor="#939393"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/com_tencent_ysdk_icon_forcepop_button"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/com_tencent_ysdk_icon_forcepop_content"
+            android:background="@drawable/com_tencent_ysdk_icon_forcepopbutton"
+            android:gravity="center"
+            android:textColor="#fffcf5"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/com_tencent_ysdk_msgbox_popwindow_view.xml -->

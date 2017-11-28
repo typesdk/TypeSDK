@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:state_enabled="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item>
+               <shape>
+                   <corners android:radius="40dp" />
+                   <solid android:color="@color/buoy_button_select_pressed" />
+               </shape>
+           </item>
+           <item android:drawable="@drawable/buoy_btn_emphasis_normal_layer"></item>
+        </layer-list>
+    </item>
+    
+    <item android:state_pressed="false" android:state_enabled="true">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item >
+               <shape>
+                   <corners android:radius="40dp" />
+                   <solid android:color="@color/buoy_blue_text_007dff" />
+               </shape>
+            </item>
+            <item android:drawable="@drawable/buoy_btn_emphasis_normal_layer"></item>
+        </layer-list>
+    </item>
+    
+    <item android:state_pressed="false" android:state_enabled="false">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item >
+                <shape>
+	            	<corners android:radius="40dp" />	
+	            	<stroke
+		                android:width="1px"
+		                android:color="@color/buoy_button_select_stroke" />		
+		            <solid android:color="@color/buoy_blue_text_007dff_alpha_20" />
+        		</shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

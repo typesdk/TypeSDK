@@ -8,7 +8,7 @@
         "id": 0,
         "tokenid": ""
       },
-      "out_url": "http://120.132.11.160:51880/users/checkTokenID",
+      "out_url": "http://g.typesdk.com:51880/users/checkTokenID",
       "out_params": {
         "appid": 0,
         "tokenid": ""
@@ -28,7 +28,7 @@
         },
         "sign" : ""
       },
-      "out_url": "http://120.132.11.160:51880/users/checkTokenID",
+      "out_url": "http://g.typesdk.com:51880/users/checkTokenID",
       "out_params": {
       }
     }

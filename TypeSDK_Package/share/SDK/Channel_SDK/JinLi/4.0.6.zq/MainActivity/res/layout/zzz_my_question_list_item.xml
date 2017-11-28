@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/zzz_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/zzz_feedback_answer_padding"
+        android:background="@drawable/zzz_feedback_up"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/zzz_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/zzz_feedback_question_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_question_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zzz_question"
+            android:layout_marginTop="@dimen/zzz_my_question_question_margin_left"
+            android:gravity="right"
+            android:includeFontPadding="false"
+            android:textColor="@color/zzz_feedback_grey"
+            android:textSize="@dimen/zzz_my_question_time_text_size"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/zzz_feedback_answer_padding"
+        android:background="@drawable/zzz_feedback_bottom">
+
+        <TextView
+            android:id="@+id/zzz_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/zzz_feedback_grey"
+            android:textSize="@dimen/zzz_feedback_answer_text_size"/>
+    </RelativeLayout>
+
+</LinearLayout>

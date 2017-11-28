@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/zzz_recharge_parent_top_line_color"/>
+
+    <Button
+        android:id="@+id/zzz_recharge"
+        android:layout_width="@dimen/zzz_recharge_btn_width"
+        android:layout_height="@dimen/zzz_recharge_btn_height"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/zzz_recharge_btn_margin_bottom"
+        android:background="@drawable/zzz_recharge_selector"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/zzz_recharge_btn_text_size"/>
+
+</RelativeLayout>

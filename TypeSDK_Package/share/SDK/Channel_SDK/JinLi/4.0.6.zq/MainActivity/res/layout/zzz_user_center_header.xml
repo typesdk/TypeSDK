@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/zzz_user_center_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_user_center_header_height"
+                android:background="@drawable/zzz_user_center_header_bg">
+
+    <ImageView
+        android:id="@+id/zzz_user_icon"
+        android:layout_width="@dimen/zzz_user_icon_size"
+        android:layout_height="@dimen/zzz_user_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/zzz_user_icon_margin_left"
+        android:src="@drawable/zzz_user_icon"/>
+
+    <View
+        android:id="@+id/zzz_recharge_expand"
+        android:layout_width="@dimen/zzz_user_recharge_expand_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/zzz_recharge_btn"
+        android:layout_width="@dimen/zzz_user_recharge_btn_width"
+        android:layout_height="@dimen/zzz_user_recharge_btn_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/zzz_user_recharge_btn_margin_right"
+        android:background="@drawable/zzz_recharge_button"
+        android:text="@string/zzz_recharge"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/zzz_recharge_btn_text_size"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/zzz_user_recharge_btn_margin_right"
+        android:src="@drawable/zzz_user_info_item_indicate"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/zzz_user_name_margin_left"
+        android:layout_marginRight="@dimen/zzz_user_name_margin_right"
+        android:layout_toLeftOf="@id/zzz_recharge_btn"
+        android:layout_toRightOf="@id/zzz_user_icon"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/zzz_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/zzz_user_info_title_color"
+            android:textSize="@dimen/zzz_user_name_text_size"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/zzz_user_vip_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/zzz_user_info_item_text_margin"
+            android:textColor="@color/zzz_money_info_highlight"
+            android:textSize="@dimen/zzz_user_info_vip_level_text_size"/>
+    </LinearLayout>
+</RelativeLayout>

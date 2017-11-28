@@ -57,7 +57,7 @@ function GetNowStr() {
     return result;
 }
 
-function callChannelLogin(attrs, params, query, ret, retf) {
+function callChannelLogin(attrs, params, query, ret, retf,gattrs) {
     var cloned = merge(true, params.out_params);
     merge(cloned, query);
     cloned.appkey = attrs.app_key;
@@ -87,13 +87,13 @@ function callChannelLogin(attrs, params, query, ret, retf) {
 
                 var idobjstr = new Buffer(retOut.msg, 'base64').toString("utf8");
                 var idobj = JSON.parse(idobjstr.replace(/\'/g, "\""));
-
                 ret.code = 0;
                 ret.msg = "NORMAL";
                 ret.id = idobj.uid;
                 ret.nick = "";
                 ret.token = "";
                 ret.value = retOut;
+                logicCommon.createLoginLog(gattrs.id,attrs.channel_id,attrs.sdk_name,ret.id);
             }
             else {
                 //打点：验证失败
@@ -137,7 +137,15 @@ function compareOrder(attrs, gattrs, params, query, ret, game, channel, retf) {
         if (!hasData) {
             retf('FAILURE');
             return;
-        } else {
+        }  else  if (query.app_order_id == params.orderdata && query.product_id == params.goodsid && query.amount >= params.goodsprice*0.9&&query.amount <= params.goodsprice)
+        {
+            var data  = {};
+            data.code = '0000';
+            data.msg = 'NORMAL';
+            retf(data);
+            return;
+        }
+        else {
             retValue.sign = logicCommon.createSignPay(retValue, gattrs.gkey);
             logicCommon.UpdateOrderStatus(game, channel, retValue.cporder, retValue.order, 1, 0,query);
 

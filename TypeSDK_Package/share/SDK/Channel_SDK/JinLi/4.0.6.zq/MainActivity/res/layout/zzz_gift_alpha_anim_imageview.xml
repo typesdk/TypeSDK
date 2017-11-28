@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gionee.gamesdk.business.usercenter.daily_sign.DailySignItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/zzz_daily_sign_gift_icon_size"
+    android:layout_height="@dimen/zzz_daily_sign_gift_icon_size"
+    android:background="@drawable/zzz_daily_sign_gift_background">
+    <ImageView
+        android:id="@+id/zzz_highlight_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:src="@drawable/zzz_daily_wait_sign"/>
+
+    <com.gionee.gamesdk.business.core.ui.AlphaAnimImageView
+        android:id="@+id/zzz_daily_gift_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/zzz_empty_message"/>
+
+    <ImageView
+        android:id="@+id/zzz_daily_gift_corner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/zzz_empty_message"/>
+</com.gionee.gamesdk.business.usercenter.daily_sign.DailySignItemView>

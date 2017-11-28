@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/zzz_activity_width"
+    android:layout_height="@dimen/zzz_activity_height"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/zzz_title"
+        layout="@layout/zzz_common_title_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/zzz_dialog_content_shape">
+
+
+        <include
+            android:id="@+id/zzz_game_ticket"
+            layout="@layout/zzz_welfare_item_view"/>
+
+
+        <include
+            android:id="@+id/zzz_game_gift"
+            layout="@layout/zzz_welfare_item_view"/>
+
+
+        <include
+            android:id="@+id/zzz_game_activity"
+            layout="@layout/zzz_welfare_item_view"/>
+    </LinearLayout>
+</LinearLayout>

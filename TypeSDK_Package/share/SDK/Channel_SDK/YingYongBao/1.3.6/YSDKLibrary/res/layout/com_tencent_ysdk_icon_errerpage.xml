@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/com_tencent_ysdk_icon_bg_corner"
+                >
+    
+    <TextView
+        android:id="@+id/com_tencent_ysdk_icon_error_title"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:background="#f68a25"
+        android:text="@string/error_title"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="fill_vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_below="@id/com_tencent_ysdk_icon_error_title"
+            android:layout_marginTop="45dp"
+            android:id="@+id/com_tencent_ysdk_icon_error_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/com_tencent_ysdk_icon_errorpageicon"
+            />
+        <TextView
+            android:id="@+id/com_tencent_ysdk_icon_error_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_word"
+            android:layout_below="@id/com_tencent_ysdk_icon_error_icon"
+            android:layout_marginTop="12dp"
+            android:textSize="13sp"
+            android:textColor="#939393"
+            />
+        <Button
+            android:id="@+id/com_tencent_ysdk_icon_fresh_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minHeight="35dp"
+            android:layout_below="@id/com_tencent_ysdk_icon_error_word"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="@string/disconnected_setting"
+            android:textColor="#00a3ef"
+            android:textSize="14sp"
+            android:background="@drawable/com_tencent_ysdk_icon_common_errorpage_btn_selector" />
+
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/com_tencent_ysdk_icon_errerpage.xml -->

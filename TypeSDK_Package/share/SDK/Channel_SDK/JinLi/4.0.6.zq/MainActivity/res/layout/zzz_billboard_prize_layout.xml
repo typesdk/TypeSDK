@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/zzz_billboard_prize_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/zzz_billboard_head_margin_top">
+
+    <LinearLayout
+        android:id="@+id/zzz_billboard_prize_second_prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/zzz_billboard_second_prize_img"
+                android:layout_width="@dimen/zzz_billboard_prize_img_width"
+                android:layout_height="@dimen/zzz_billboard_prize_img_height"
+                android:scaleType="centerInside"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/zzz_billboard_prize_second_prize_desc_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zzz_billboard_second_prize_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/zzz_billboard_prize_name_margin_top"
+                android:singleLine="true"
+                android:textColor="@color/zzz_white"
+                android:textSize="@dimen/zzz_billboard_prize_name_text_size"/>
+
+            <TextView
+                android:id="@+id/zzz_billboard_second_prize_rank_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/zzz_white"
+                android:textSize="@dimen/zzz_billboard_prize_rank_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_two_dip_width"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/zzz_billboard_prize_margin"
+        android:layout_toLeftOf="@+id/zzz_billboard_prize_second_prize"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/zzz_billboard_first_prize_img"
+                android:layout_width="@dimen/zzz_billboard_prize_img_width"
+                android:layout_height="@dimen/zzz_billboard_prize_img_height"
+                android:scaleType="fitCenter"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/zzz_billboard_prize_first_prize_desc_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zzz_billboard_first_prize_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/zzz_billboard_prize_name_margin_top"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/zzz_white"
+                android:textSize="@dimen/zzz_billboard_prize_name_text_size"/>
+
+            <TextView
+                android:id="@+id/zzz_billboard_first_prize_rank_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/zzz_white"
+                android:textSize="@dimen/zzz_billboard_prize_rank_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_two_dip_width"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/zzz_billboard_prize_margin"
+        android:layout_toRightOf="@+id/zzz_billboard_prize_second_prize"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/zzz_billboard_third_prize_img"
+                android:layout_width="@dimen/zzz_billboard_prize_img_width"
+                android:layout_height="@dimen/zzz_billboard_prize_img_height"
+                android:scaleType="fitCenter"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/zzz_billboard_prize_third_desc_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/zzz_billboard_third_prize_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/zzz_billboard_prize_name_margin_top"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/zzz_white"
+                android:textSize="@dimen/zzz_billboard_prize_name_text_size"/>
+
+            <TextView
+                android:id="@+id/zzz_billboard_third_prize_rank_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/zzz_white"
+                android:textSize="@dimen/zzz_billboard_prize_rank_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_two_dip_width"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

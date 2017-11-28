@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gn_account_error_1009">HTTP format error</string>
+    <string name="gn_account_error_1011">authentication failure</string>
+    <string name="gn_account_error_1012">application there is no</string>
+    <string name="gn_account_error_1020">server internal error</string>
+    <string name="gn_account_error_1030">send failure</string>
+    <string name="gn_account_error_1031">send timeout</string>
+    <string name="gn_account_error_1040">validation session is already in use</string>
+    <string name="gn_account_error_1041">resources does not exist</string>
+    <string name="gn_account_error_1042">issued by text message authentication code is beyond the frequency</string>
+    <string name="gn_account_error_1042_reset_ready">frequent operation, please try again an hour later</string>
+    <string name="gn_account_error_1050">Mac authentication timestamp is out of date</string>
+    <string name="gn_account_error_1051">Mac authentication nonce repeat</string>
+    <string name="gn_account_error_1100">your cell phone number has been registered, please login directly</string>
+    <string name="gn_account_error_1101">verification code error</string>
+    <string name="gn_account_error_1102">account there is no</string>
+    <string name="gn_account_error_1103">server did not receive text messages</string>
+    <string name="gn_account_error_1104">account have been frozen</string>
+    <string name="gn_account_error_1105">not set safety</string>
+    <string name="gn_account_error_1106">received text messages, but SMS verification by</string>
+    <string name="gn_account_error_1107">no sim card</string>
+    <string name="gn_account_error_1108">received text messages, but the phone number is not corresponding to the</string>
+    <string name="gn_account_error_1109">user skip process</string>
+    <string name="gn_account_error_1110">verification code error</string>
+    <string name="gn_account_error_1111">reply expired</string>
+    <string name="gn_account_error_1114">captcha expired</string>
+    <string name="gn_account_error_1115">user level less than</string>
+    <string name="gn_account_error_1116">binding mobile phone number has been in existence</string>
+    <string name="gn_account_error_1117">is not allowed to repeat registration</string>
+    <string name="gn_account_error_1118">please enter the graphical verification code</string>
+    <string name="gn_account_error_1204">Token provider does not exist</string>
+    <string name="gn_account_error_1220">get less than weibo information</string>
+    <string name="gn_account_error_1221">repeat binding</string>
+    <string name="gn_account_error_1201">refresh verification code failure</string>
+    <string name="gn_account_error_1222">save the token failure</string>
+    <string name="gn_account_error_1223">failed to get the QQ information</string>
+    <string name="gn_account_error_1224">not allow unbundling didnt phone number last SNS account</string>
+    <string name="gn_account_error_1251">this number has been binding, please replace the other number</string>
+    <string name="gn_account_error_1253">upgrade failure</string>
+    <string name="gn_account_error_9999">network abnormal</string>
+    <string name="gn_account_account_or_password_error">user name or password is not correct</string>
+    <string name="gn_account_error_unknow">An unknown error</string>
+    <string name="gn_account_rigistered_error">this number has been binding, please replace the other number</string>
+    <string name="gn_account_ssl_time_error">Sorry, please retry after synchronous mobile phone time</string>
+
+</resources>

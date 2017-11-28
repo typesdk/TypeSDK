@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/zzz_my_feedback_item_bg">
+
+    <TextView
+        android:id="@+id/zzz_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/zzz_my_question_margin_left"
+        android:layout_marginRight="@dimen/zzz_my_question_margin_right"
+        android:layout_marginTop="@dimen/zzz_my_question_margin_top"
+        android:includeFontPadding="false"
+        android:textColor="@color/zzz_my_question_text"
+        android:textSize="@dimen/zzz_my_question_text_size"/>
+
+    <TextView
+        android:id="@+id/zzz_question_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/zzz_question"
+        android:layout_marginRight="@dimen/zzz_my_question_time_margin_right"
+        android:layout_marginTop="@dimen/zzz_my_question_time_margin_top"
+        android:includeFontPadding="false"
+        android:textColor="@color/zzz_my_question_time_text"
+        android:textSize="@dimen/zzz_my_feedback_time_text_size"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_question_time"
+        android:layout_marginTop="@dimen/zzz_service_answer_layout_margin_top"
+        android:background="@drawable/zzz_service_answer_layout_bg"
+        android:paddingBottom="@dimen/zzz_service_answer_layout_padding_bottom"
+        android:paddingLeft="@dimen/zzz_service_answer_layout_padding_left"
+        android:paddingRight="@dimen/zzz_service_answer_layout_padding_right"
+        android:paddingTop="@dimen/zzz_service_answer_layout_padding_top">
+
+        <TextView
+            android:id="@+id/zzz_service_answer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textColor="@color/zzz_service_answer_text"
+            android:textSize="@dimen/zzz_service_answer_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_service_answer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zzz_service_answer_label"
+            android:layout_marginTop="@dimen/zzz_service_answer_content_margin_top"
+            android:includeFontPadding="false"
+            android:textColor="@color/zzz_service_answer_text"
+            android:textSize="@dimen/zzz_service_answer_text_size"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/zzz_service_answer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/zzz_service_answer_content"
+            android:includeFontPadding="false"
+            android:layout_marginTop="@dimen/zzz_service_answer_time_margin_top"
+            android:textColor="@color/zzz_service_answer_text"
+            android:textSize="@dimen/zzz_my_feedback_time_text_size"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

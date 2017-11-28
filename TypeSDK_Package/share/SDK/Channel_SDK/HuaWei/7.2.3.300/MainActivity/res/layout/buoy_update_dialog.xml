@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/buoy_notice_marginLR"
+    android:layout_marginRight="@dimen/buoy_notice_marginLR" >
+
+    <TextView
+        android:id="@+id/buoy_title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:alpha="0.9"
+        android:gravity="center"
+        android:text="@string/buoy_app_update"
+        android:textColor="@color/buoy_black"
+        android:textSize="@dimen/buoy_update_title" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/buoy_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buoy_notice_bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buoy_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1"
+            android:alpha="0.85"
+            android:background="@drawable/buoy_dialog_btn_bg"
+            android:gravity="center"
+            android:text="@string/buoy_cancel"
+            android:textColor="@color/buoy_black"
+            android:textSize="@dimen/buoy_notice_textSize" >
+        </Button>
+
+        <Button
+            android:id="@+id/buoy_update"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1"
+            android:alpha="0.85"
+            android:background="@drawable/buoy_dialog_btn_bg"
+            android:gravity="center"
+            android:text="@string/buoy_update"
+            android:textColor="@color/buoy_black"
+            android:textSize="@dimen/buoy_notice_textSize" >
+        </Button>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/buoy_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/buoy_button"
+        android:layout_below="@id/buoy_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <TextView
+            android:id="@+id/buoy_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:alpha="0.9"
+            android:gravity="left"
+            android:textColor="@color/buoy_black"
+            android:textSize="@dimen/buoy_update_textSize" />
+    </ScrollView>
+    
+    <View 
+      android:id="@+id/buoy_notice_bottom"
+      android:layout_alignParentBottom="true"
+      android:layout_width="fill_parent"
+      android:layout_height="10dp">
+     </View>
+
+</RelativeLayout>

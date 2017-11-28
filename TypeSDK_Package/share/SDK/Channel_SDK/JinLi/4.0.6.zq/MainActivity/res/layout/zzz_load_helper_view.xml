@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/zzz_load_helper_view">
+
+    <include layout="@layout/zzz_unnetwork"/>
+
+    <com.gionee.gamesdk.business.core.ui.GameProgressBar
+        android:id="@+id/zzz_page_loading"
+        style="@style/zzz_CircleProgressBarNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <View
+        android:id="@+id/zzz_transparent_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_title_gradient_height"
+        android:visibility="gone"
+        android:background="@drawable/zzz_title_gradient"/>
+</FrameLayout>

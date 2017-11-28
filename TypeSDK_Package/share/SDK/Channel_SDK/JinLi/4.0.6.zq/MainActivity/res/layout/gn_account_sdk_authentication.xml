@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gn_account_au_background"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/calling_app_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp" />
+
+        <TextView
+            android:id="@+id/calling_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calling_app_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/gn_account_white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/account_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28.5dp"
+            android:layout_marginTop="152dp" >
+
+            <ImageView
+                android:id="@+id/amigo_app_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/gn_account_people" />
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/amigo_app_iv"
+                android:textColor="@color/gn_account_main_body_color"
+                android:textSize="@dimen/gn_account_button_text_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_info"
+            android:layout_marginLeft="35dip"
+            android:layout_marginTop="15dp"
+            android:text="@string/gn_account_authorization_rompt"
+            android:textColor="@color/gn_account_main_body_color"
+            android:textSize="@dimen/gn_account_text_size_normal_2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/login_fl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gn_account_login_activity_button_margin_left_right"
+            android:layout_marginRight="@dimen/gn_account_login_activity_button_margin_left_right" >
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gn_account_account_orange_button_bg_selector"
+                android:minHeight="@dimen/gn_account_amigo_alert_dialog_button_bar_height"
+                android:text="@string/gn_account_authorization_and_login"
+                android:textColor="@color/gn_account_white"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/wait_pb"
+                android:layout_width="50dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dip"
+                android:indeterminateDrawable="@drawable/gn_account_progressbar_circle_gray"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/zzz_message_padding_left"
+    android:paddingRight="@dimen/zzz_message_padding_right">
+
+    <TextView
+        android:id="@+id/zzz_message_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/zzz_exception_description_margin_top"
+        android:drawableTop="@drawable/zzz_no_data"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="@string/zzz_no_data"
+        android:textColor="@color/zzz_exception_description_word_color"
+        android:textSize="@dimen/zzz_exception_description_word_size"
+        android:visibility="gone"/>
+
+    <com.gionee.gamesdk.business.message.MessageListView
+        android:id="@+id/zzz_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"/>
+
+</RelativeLayout>

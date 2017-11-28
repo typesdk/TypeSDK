@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="replaceKey">
+    <replace dir="../MainActivity" includes="AndroidManifest.xml" encoding="UTF-8">
+        <replacefilter token="@package@" value="${package}"/>
+        <replacefilter token="@minSdkVersion@" value="${minSdkVersion}"/>
+        <replacefilter token="@targetSdkVersion@" value="${targetSdkVersion}"/>
+        <replacefilter token="@app_id@" value="${app_id}"/>
+        <replacefilter token="@app_key@" value="${app_key}"/>
+        <replacefilter token="@private_key@" value="${private_key}"/>
+        <replacefilter token="@sdk_name@" value="${sdk_name}"/>
+        <replacefilter token="@channelName@" value="${channelName}"/>
+        <replacefilter token="@version.code@" value="${version.code}" />
+        <replacefilter token="@version.name@" value="${version.name}" />
+        <replacefilter token="@wx_app_id@" value="${wx_app_id}" />
+    </replace>
+    <replace dir="../MainActivity" includes="project.properties" encoding="UTF-8">
+        <replacefilter token="@targetSdkVersion@" value="${targetSdkVersion}"/>
+    </replace>
+    <replace dir="../MainActivity" includes="WXEntryActivity.java" encoding="UTF-8">
+        <replacefilter token="@package@" value="${package}"/>
+    </replace>
+    <mkdir dir="${wx}"></mkdir>
+    <copy todir="${wx}" file="../MainActivity/WXEntryActivity.java"></copy>
+	<replace dir="../MainActivity/res/xml" includes="qihoo_game_sdk_sync_adapter.xml" encoding="UTF-8">
+    	  <replacefilter token="@package@" value="${package}"/>
+    </replace>
+	<replace dir="../MainActivity/src/com/type/sdk/android" includes="TypeSDKHelper.java" encoding="UTF-8">
+        <replacefilter token="@channelName@" value="${channelName}"/>
+    </replace>
+</project>

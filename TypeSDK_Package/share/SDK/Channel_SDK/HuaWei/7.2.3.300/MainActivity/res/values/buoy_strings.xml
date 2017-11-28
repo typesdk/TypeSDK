@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="buoy_close">Close</string>
+    <string name="buoy_cancel">Cancel</string>
+    <string name="buoy_update">Update</string>
+    <string name="buoy_confirm">Install</string>
+    <string name="buoy_start">Install</string>
+    <string name="buoy_app_update">App update</string>
+    <string name="buoy_async_login_notice">Welcome %1$s</string>
+    <string name="buoy_notification_title_game_coupon">Game tickets received, touch to view</string>
+    <string name="buoy_download_gamebox_tips">Downloading HiGame</string>
+    <string name="buoy_download_gamebox_background_toast">Downloading in the background. Please wait.</string>
+    <string name="buoy_redownload_gamebox_tips">Redownloading HiGame</string>
+    <string name="buoy_dialog_download_gamebox_tips">You need to install the latest HiGame version to use this feature. Install it?</string>
+    <string name="buoy_dialog_download_gamebox_title">Notice</string>
+    <string name="buoy_download_notification_tips">Downloading %s</string>
+    <string name="buoy_gamebox_appname">HiGame</string>
+    <string name="buoy_hms_appname">HMS</string>
+	<string name="buoy_install">Install</string>
+	<string name="buoy_splash_skip">Skip</string>
+	<string name="buoy_server_exception">Unable to connect to server. Please try again later (%1$s).</string>
+	<string name="buoy_server_response_error">Unable to access data. Please try again later (%1$s).</string>
+	<string name="buoy_network_error">No Internet connection. Please check your network settings.</string>
+	<string name="buoy_retry">Retry</string>
+	<string name="buoy_server_retry">Unable to connect to server. Please touch Retry (%1$s).</string>
+	<string name="buoy_download_storage_not_enough">Insufficient storage (%1$s).</string>
+	<string name="buoy_download_higame_error">Failed to download HiGame. Please try again (%1$s).</string>
+	<string name="buoy_dialog_install_gamebox_msg">Install the latest version of HiGame (%1$s) to use your Huawei ID and pay for games. Install?</string>
+	<string name="buoy_dialog_openbuoy_install_gamebox_msg">Install the latest version of HiGame (%1$s) to use floating menu. Install?</string>
+	<string name="buoy_dialog_install_gamebox_hms_msg">Install the latest version of %1$s to use your Huawei ID and pay for games. Install?</string>
+	<string name="buoy_dialog_openbuoy_install_gamebox_hms_msg">Install the latest version of %1$s to use floating menu.</string>
+</resources>

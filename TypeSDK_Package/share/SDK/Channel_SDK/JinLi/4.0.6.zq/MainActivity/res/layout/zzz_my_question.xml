@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/zzz_load_helper_view"/>
+
+    <com.gionee.gameservice.online.help.MyQuestionListView
+        android:id="@+id/zzz_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <include layout="@layout/zzz_no_data"/>
+
+</RelativeLayout>

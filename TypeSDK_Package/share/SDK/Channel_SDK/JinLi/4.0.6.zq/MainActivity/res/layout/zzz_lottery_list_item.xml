@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_event_item_parent_height"
+                android:paddingBottom="@dimen/zzz_event_item_parent_padding_bottom"
+                android:paddingLeft="@dimen/zzz_event_item_parent_padding_left"
+                android:paddingRight="@dimen/zzz_event_item_parent_padding_right">
+
+    <include layout="@layout/zzz_lottery_list_item_content"/>
+
+</RelativeLayout>

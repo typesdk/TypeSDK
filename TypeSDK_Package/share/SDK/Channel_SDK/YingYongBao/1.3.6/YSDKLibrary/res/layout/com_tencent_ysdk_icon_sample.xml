@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/com_tencent_ysdk_icon_h5_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/com_tencent_ysdk_icon_h5_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <com.tencent.smtt.sdk.WebView
+            android:id="@+id/com_tencent_ysdk_icon_webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.tencent.ysdk.framework.web.browser.ErrorPageView
+            android:id="@+id/com_tencent_ysdk_icon_errorpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/com_tencent_ysdk_icon_h5_xx"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignRight="@id/com_tencent_ysdk_icon_webView"
+            android:layout_alignTop="@id/com_tencent_ysdk_icon_webView"
+            android:background="@drawable/com_tencent_ysdk_icon_h5_xx" />
+
+    </RelativeLayout>
+</LinearLayout><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/layout/com_tencent_ysdk_icon_sample.xml -->

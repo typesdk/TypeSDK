@@ -55,7 +55,7 @@ function convertParamLogin(query, ret) {
  * @param callBack
  * @returns {{url: *, method: *, body: {}, json: boolean}}
  */
-function callChannelLogin(attrs, matchAction, query, ret, callBack) {
+function callChannelLogin(attrs, matchAction, query, ret, callBack,gattrs) {
     var keyNum = Object.keys(matchAction);
     var cloned = {};
     if (keyNum > 0) {
@@ -99,6 +99,7 @@ function callChannelLogin(attrs, matchAction, query, ret, callBack) {
                 ret.msg = "NORMAL";
                 ret.id = query.ucid;
                 ret.value = bodyData;
+                logicCommon.createLoginLog(gattrs.id,attrs.channel_id,attrs.sdk_name,ret.id);
             } else {
                 //打点：验证失败
                 logicCommon.sdkMonitorDot(logicCommon.dotType.LoginDot.ChVerifyErr);
@@ -227,7 +228,16 @@ function compareOrder(attrs, gattrs, params, query, ret, game, channel, retf) {
             retData = getRetData('FAIL');  //  11
             retf(JSON.stringify(retData));
             return;
-        } else {
+        }
+        else  if (query.app_order_id == params.orderdata && query.product_id == params.goodsid && query.amount >= params.goodsprice*0.9&&query.amount <= params.goodsprice)
+        {
+            var data  = {};
+            data.code = '0000';
+            data.msg = 'NORMAL';
+            retf(data);
+            return;
+        }
+        else {
 
             retValue.sign = logicCommon.createSignPay(retValue, gattrs.gkey);
             logicCommon.UpdateOrderStatus(game, channel, retValue.cporder, retValue.order, 1,0, query);

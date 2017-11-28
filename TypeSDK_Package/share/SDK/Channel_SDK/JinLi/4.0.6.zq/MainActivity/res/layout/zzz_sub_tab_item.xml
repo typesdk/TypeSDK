@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/zzz_tab_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/zzz_tab_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxLength="6"
+            android:textColor="@color/zzz_sub_tab_text_color"
+            android:textSize="@dimen/zzz_sub_tab_text_size"/>
+
+        <View
+            android:id="@+id/zzz_tab_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_sub_tab_line_height"
+            android:layout_marginTop="@dimen/zzz_tab_line_margin_top"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/zzz_sub_tab_line_bg"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

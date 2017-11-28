@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zzz_user_info">
+
+    <LinearLayout
+        android:id="@+id/zzz_net_work_error_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/zzz_exception_margin_top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/zzz_no_network"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/zzz_exception_discription_margin_top"
+            android:text="@string/zzz_check_net"
+            android:textColor="@color/zzz_unnetwork_word_color"
+            android:textSize="@dimen/zzz_unnetwork_word_size"/>
+    </LinearLayout>
+
+    <com.gionee.gamesdk.business.core.ui.GameProgressBar
+        android:id="@+id/zzz_progress"
+        style="@style/zzz_CircleProgressBarMini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/zzz_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/zzz_user_center_header"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zzz_user_info_padding"
+            android:layout_marginRight="@dimen/zzz_user_info_padding"
+            android:layout_marginTop="@dimen/zzz_user_info_margin_top"
+            android:orientation="horizontal">
+
+            <com.gionee.gamesdk.business.usercenter.UserInfoItemView
+                android:id="@+id/zzz_user_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_user_info_item_high"
+                android:layout_weight="1"
+                android:background="@drawable/zzz_user_info_item_shape"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                app:type="@string/zzz_user_wallet"/>
+
+            <com.gionee.gamesdk.business.usercenter.UserInfoItemView
+                android:id="@+id/zzz_user_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_user_info_item_high"
+                android:layout_marginLeft="@dimen/zzz_user_info_margin_horiz"
+                android:layout_weight="1"
+                android:background="@drawable/zzz_user_info_item_shape"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                app:type="@string/zzz_my_msg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zzz_user_info_padding"
+            android:layout_marginRight="@dimen/zzz_user_info_padding"
+            android:layout_marginTop="@dimen/zzz_user_info_margin_horiz"
+            android:orientation="horizontal">
+
+            <com.gionee.gamesdk.business.usercenter.UserInfoItemView
+                android:id="@+id/zzz_user_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_user_info_item_high"
+                android:layout_weight="1"
+                android:background="@drawable/zzz_user_info_item_shape"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                app:type="@string/zzz_daily_sign"/>
+
+            <com.gionee.gamesdk.business.usercenter.UserInfoItemView
+                android:id="@+id/zzz_user_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_user_info_item_high"
+                android:layout_marginLeft="@dimen/zzz_user_info_margin_horiz"
+                android:layout_weight="1"
+                android:background="@drawable/zzz_user_info_item_shape"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                app:type="@string/zzz_weekly_top"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zzz_user_info_padding"
+            android:layout_marginRight="@dimen/zzz_user_info_padding"
+            android:layout_marginTop="@dimen/zzz_user_info_margin_horiz"
+            android:orientation="horizontal">
+
+            <com.gionee.gamesdk.business.usercenter.UserInfoItemView
+                android:id="@+id/zzz_user_item_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_user_info_item_high"
+                android:layout_weight="1"
+                android:background="@drawable/zzz_user_info_item_shape"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                app:type="@string/zzz_point_market"/>
+
+            <com.gionee.gamesdk.business.usercenter.UserInfoItemView
+                android:id="@+id/zzz_user_item_6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_user_info_item_high"
+                android:layout_marginLeft="@dimen/zzz_user_info_margin_horiz"
+                android:layout_weight="1"
+                android:background="@drawable/zzz_user_info_item_shape"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                app:type="@string/zzz_point_prize"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_title_gradient_height"
+        android:background="@drawable/zzz_title_gradient"/>
+</FrameLayout>

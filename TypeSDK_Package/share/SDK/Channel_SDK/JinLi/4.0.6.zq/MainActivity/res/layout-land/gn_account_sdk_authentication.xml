@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/up"
+        android:layout_width="360dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gn_account_au_up_corners_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/calling_app_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp" />
+
+        <TextView
+            android:id="@+id/calling_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calling_app_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/gn_account_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gn_account_au_down_corners_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/login_fl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gn_account_account_orange_button_bg_selector"
+                android:minHeight="@dimen/gn_account_amigo_alert_dialog_button_bar_height"
+                android:text="@string/gn_account_authorization_and_login"
+                android:textColor="@color/gn_account_white"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/wait_pb"
+                android:layout_width="50dip"
+                android:layout_height="30dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dip"
+                android:indeterminateDrawable="@drawable/gn_account_progressbar_circle_gray"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/account_info"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/up"
+        android:layout_below="@id/up"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/amigo_app_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gn_account_people_land" />
+
+        <TextView
+            android:id="@+id/username_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:textColor="@color/gn_account_main_body_color"
+            android:textSize="@dimen/gn_account_text_size_subhead_information" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/up"
+        android:layout_below="@id/account_info"
+        android:layout_marginLeft="17dip"
+        android:text="@string/gn_account_authorization_rompt"
+        android:textColor="@color/gn_account_main_body_color"
+        android:textSize="@dimen/gn_account_text_size_normal_2" />
+
+</RelativeLayout>

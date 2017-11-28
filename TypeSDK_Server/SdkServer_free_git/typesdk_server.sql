@@ -1,11 +1,11 @@
-﻿DROP DATABASE IF EXISTS `typesdk_db`;
+DROP DATABASE IF EXISTS `typesdk_db`;
 CREATE DATABASE `typesdk_db`;
 USE `typesdk_db`;
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for `sdk_order`
+--  Table structure for `sdk_order`
 -- ----------------------------
 DROP TABLE IF EXISTS `sdk_order`;
 CREATE TABLE `sdk_order` (
@@ -23,13 +23,30 @@ CREATE TABLE `sdk_order` (
   `ord_notifyurl` char(100) DEFAULT NULL,
   `ord_successFlg` char(20) DEFAULT NULL,
   `ord_amount` char(30) DEFAULT NULL,
+  `ord_channellaccountid` char(255) DEFAULT NULL,
+  `goods_price` char(20) DEFAULT NULL,
+  `goods_name` char(20) DEFAULT NULL,
   PRIMARY KEY (`ID`),
   KEY `idx_sdk_order_ord_cporder` (`ord_cporder`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=35177 DEFAULT CHARSET=utf8 COMMENT='订单记录表';
-
+) ENGINE=InnoDB AUTO_INCREMENT=37083 DEFAULT CHARSET=utf8 COMMENT='订单记录表';
 
 -- ----------------------------
--- Procedure structure for `p_game_order_search`
+--  Table structure for `sdk_user`
+-- ----------------------------
+DROP TABLE IF EXISTS `sdk_user`;
+CREATE TABLE `sdk_user` (
+  `ID` int(20) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+  `SdkGameID` char(30) DEFAULT NULL COMMENT 'SDK游戏ID',
+  `SdkChannelID` char(30) DEFAULT NULL COMMENT 'SDK游戏渠道ID',
+  `SdkChannelName` char(30) DEFAULT NULL COMMENT 'SDK游戏渠道名称',
+  `ChannelUserID` char(255) DEFAULT NULL COMMENT '游戏渠道用户ID',
+  `CreateTimeValue` int(20) DEFAULT NULL COMMENT '登入创建时间',
+  `UpdateTimeValue` int(20) DEFAULT NULL COMMENT '状态变更时间',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Procedure definition for `p_game_order_search`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `p_game_order_search`;
 DELIMITER ;;
@@ -43,7 +60,7 @@ END
 DELIMITER ;
 
 -- ----------------------------
--- Procedure structure for `p_sdk_cporder_select`
+--  Procedure definition for `p_sdk_cporder_select`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `p_sdk_cporder_select`;
 DELIMITER ;;
@@ -56,11 +73,32 @@ END
 DELIMITER ;
 
 -- ----------------------------
--- Procedure structure for `p_sdk_order_create`
+--  Procedure definition for `p_sdk_login_log`
+-- ----------------------------
+DROP PROCEDURE IF EXISTS `p_sdk_login_log`;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_login_log`(IN `p_login_gameid` CHAR(30), IN `p_login_channelid` CHAR(30), IN `p_login_channelname` CHAR(30), IN `p_login_channeluserid` CHAR(255))
+IF ISNULL(p_login_channeluserid) || LENGTH(TRIM(p_login_channeluserid)) < 1
+THEN
+	SELECT -1;
+ELSE
+	INSERT INTO sdk_user
+    SET SdkGameID = p_login_gameid,
+    SdkChannelID = p_login_channelid,
+    SdkChannelName = p_login_channelname,
+		ChannelUserID = `p_login_channeluserid` ,
+    CreateTimeValue = unix_timestamp(now()),
+    UpdateTimeValue = unix_timestamp(now());
+END IF
+;;
+DELIMITER ;
+
+-- ----------------------------
+--  Procedure definition for `p_sdk_order_create`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `p_sdk_order_create`;
 DELIMITER ;;
-CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_order_create`(IN `p_ord_game` CHAR(30), IN `p_ord_channel` CHAR(30), IN `p_ord_cporder` CHAR(100), IN `p_ord_verifyurl` CHAR(100),IN `p_ord_channelId` CHAR(100),IN `p_ord_notifyurl` CHAR(100))
+CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_order_create`(IN `p_ord_game` CHAR(30), IN `p_ord_channel` CHAR(30), IN `p_ord_cporder` CHAR(100), IN `p_ord_verifyurl` CHAR(100),IN `p_ord_channelId` CHAR(100),IN `p_ord_notifyurl` CHAR(100),IN `p_ord_channellaccountid` CHAR(255),IN `p_goods_price` CHAR(20),IN `p_goods_name` CHAR(20))
     NO SQL
 IF ISNULL(p_ord_cporder) || LENGTH(TRIM(p_ord_cporder)) < 1
 THEN
@@ -73,6 +111,9 @@ ELSE
 		ord_verifyurl = p_ord_verifyurl,
 		ord_channelId = p_ord_channelId,
     ord_notifyurl =p_ord_notifyurl, 
+		ord_channellaccountid =p_ord_channellaccountid, 
+		goods_price =p_goods_price,
+		goods_name =p_goods_name, 
     ord_chorder = '',
     ord_status = 0,
     createtimevalue = unix_timestamp(now()),
@@ -82,13 +123,13 @@ END IF
 DELIMITER ;
 
 -- ----------------------------
--- Procedure structure for `p_sdk_order_searchByorder`
+--  Procedure definition for `p_sdk_order_searchByorder`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `p_sdk_order_searchByorder`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_order_searchByorder`(IN `p_ord_cporder` char(100),in `p_ord_order` char(100),out `sdkStatus` tinyint)
 BEGIN
-	
+	#declare p_status CHAR(30); 
 	SELECT ord_status
   FROM sdk_order
   WHERE ord_cporder = p_ord_cporder 
@@ -100,7 +141,7 @@ END
 DELIMITER ;
 
 -- ----------------------------
--- Procedure structure for `p_sdk_order_stutas_select`
+--  Procedure definition for `p_sdk_order_stutas_select`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `p_sdk_order_stutas_select`;
 DELIMITER ;;
@@ -119,7 +160,7 @@ END
 DELIMITER ;
 
 -- ----------------------------
--- Procedure structure for `p_sdk_order_update_status`
+--  Procedure definition for `p_sdk_order_update_status`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `p_sdk_order_update_status`;
 DELIMITER ;;
@@ -162,7 +203,7 @@ END IF
 DELIMITER ;
 
 -- ----------------------------
--- Procedure structure for `p_sdk_order_update_statusAndData`
+--  Procedure definition for `p_sdk_order_update_statusAndData`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `p_sdk_order_update_statusAndData`;
 DELIMITER ;;
@@ -209,7 +250,7 @@ END IF
 DELIMITER ;
 
 -- ----------------------------
--- Procedure structure for `p_sdk_order_update_successFlg`
+--  Procedure definition for `p_sdk_order_update_successFlg`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `p_sdk_order_update_successFlg`;
 DELIMITER ;;
@@ -242,7 +283,7 @@ END IF
 DELIMITER ;
 
 -- ----------------------------
--- Procedure structure for `p_sdk_request_log_insert`
+--  Procedure definition for `p_sdk_request_log_insert`
 -- ----------------------------
 DROP PROCEDURE IF EXISTS `p_sdk_request_log_insert`;
 DELIMITER ;;
@@ -257,3 +298,7 @@ INSERT INTO sdk_request_log
     timevalue = unix_timestamp(now())
 ;;
 DELIMITER ;
+
+-- ----------------------------
+--  Records 
+-- ----------------------------

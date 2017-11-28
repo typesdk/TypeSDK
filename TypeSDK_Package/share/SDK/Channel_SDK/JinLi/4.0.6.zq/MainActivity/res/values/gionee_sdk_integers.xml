@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="zzz_loading_duration">180</integer>
+    <integer name="zzz_feedback_content_length">140</integer>
+    <integer name="zzz_feedback_contact_length">20</integer>
+    <integer name="zzz_tab_item_max_length">6</integer>
+
+    <integer name="zzz_welfare_guide_item_content_max_lines">3</integer>
+
+</resources>

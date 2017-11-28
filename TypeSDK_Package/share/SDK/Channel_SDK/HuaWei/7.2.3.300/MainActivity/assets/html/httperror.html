@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+<title>错误页面</title>
+<link href="css/wap_css.css" rel="stylesheet" type="text/css" />
+</head>
+<script>
+function checkbox(){
+	if(!document.getElementById('checkid').checked){
+		document.getElementById('checkid').checked=true;
+	}else{
+		document.getElementById('checkid').checked=false;
+	}
+}
+</script>
+<body>
+<div class="allwkg">
+	<div class="allkg">
+		<div class="tpkg txtalign commtpad20"><img src="images/404tp.gif" /></div>
+		<div class="wronglist">
+			<ul class="title">噢，好像出错了！先放松一下吧：）</ul>
+			<ul class="pad line"><a href="javascript://" onClick="window.HiSpaceObject.refresh();"><img src="images/icon30.gif">刷新</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="window.HiSpaceObject.goBack()"><img src="images/icon31.gif">返回</a></ul>
+			<ul>可能原因：</ul>
+			<ul>
+				<li>网络信号弱</li>
+				<li>找不到请求的页面</li>
+				<li>检查网络接入点(APN)是否为CTNET</li>
+			</ul>
+		</div>
+		<div class="applist">
+		    APN设置操作步骤：<br>
+		    <b>菜单－系统设置－无线和网络－更多－移动网络－接入点名称</b><br>进去以后，选中有CTNET的选项<br><br>然后再<a class="color00379d" href="javascript://" onClick="window.HiSpaceObject.refresh();">刷新</a>此页面
+		</div>
+	</div>
+</div>
+</body>
+</html>

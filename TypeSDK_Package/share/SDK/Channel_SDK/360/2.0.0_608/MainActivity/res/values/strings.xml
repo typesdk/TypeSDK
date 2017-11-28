@@ -1,0 +1,142 @@
+<resources>
+    
+    <string name="portrait_game_entrance">竖屏游戏入口</string>
+    <string name="landscape_game_entrance">横屏游戏入口</string>
+    <string name="click_go">点击进入</string>
+
+    <!-- SdkUserActivity -->
+    <string name="sdk_ver">SDK版本:</string>
+    <string name="channel">渠道:</string>
+    <string name="uninitiated">未初始化</string>
+    <string name="unlogin">状态:未登录</string>
+    <!-- 登录 -->
+    <string name="login_bg_visible">登录(不透明)</string>
+    <string name="login_bg_transparent">登录(透明)</string>
+    <string name="login_bg_visible_force">不显示关闭按钮\n(不透明)</string>
+    <string name="login_bg_transparent_force">不显示关闭按钮\n(透明)</string>
+
+
+    <string name="login">登录</string>
+    <!-- 切换账号 -->
+    <string name="switch_account_bg_visible">切换账号\n(不透明)</string>
+    <string name="switch_account_bg_transparent">切换账号\n(透明)</string>
+    <string name="switch_account">切换账号</string>
+
+    <!-- 退出游戏 -->
+    <string name="quit_game">退出游戏</string>
+    <string name="quit">退出</string>
+    <string name="flow_test">流程测试</string>
+     <string name="portrait_flow_test">竖屏流程测试</string>
+    <string name="landscape_flow_test">横屏流程测试</string>
+
+    <!-- FlowTestLoginActivity -->
+    <string name="response_type">response type:\n(read-only)</string>
+
+    <!-- FlowTestPayActivity 360身份相关 -->
+    <string name="access_token">access token:</string>
+    <string name="qihoo_user_id">qihoo user id:</string>
+    <string name="app_key">app key:</string>
+    <string name="private_key">private key:</string>
+    <string name="app_channel">app channel:</string>
+
+    <!-- FlowTestPayActivity 数额 -->
+    <string name="amount">money amount:</string>
+    <string name="exchange_rate">exchange rate:</string>
+
+    <!-- FlowTestPayActivity 应用、产品相关 -->
+    <string name="test_app_name">app name:</string>
+    <string name="app_user_name">app user name:</string>
+    <string name="app_user_id">app user id:</string>
+    <string name="product_name">product name:</string>
+    <string name="product_id">product id:</string>
+
+    <!-- FlowTestPayActivity 结果通知回调URI -->
+    <string name="notify_uri">notify uri:</string>
+
+    <!-- FlowTestPayActivity 应用、产品的其他可选参数 -->
+    <string name="app_ext_1">app ext 1:</string>
+    <string name="app_ext_2">app ext 2:</string>
+    <string name="app_order_id">app order id:</string>
+
+    <!-- FlowTestPayActivity 支付按钮text -->
+    <string name="pay">支付</string>
+
+    <!-- Demo QihooPayInfo -->
+    <string name="demo_pay_app_name">应用（游戏）名称</string>
+    <string name="demo_pay_app_user_name">应用内用户名称</string>
+    <string name="demo_pay_product_name">测试商品</string>
+    <string name="demo_pay_app_ext1">abc</string>
+    <string name="demo_pay_app_ext2">def</string>
+
+    <!-- 提示用户信息 -->
+    <string name="get_token_title">获取Access Token</string>
+    <string name="get_token_message">正在请求应用服务器,请稍候……</string>
+    <string name="get_user_title">获取Qihoo UserInfo</string>
+    <string name="get_user_message">正在请求应用服务器,请稍候……</string>
+    <string name="get_code_fail">从登录注册或切换账号界面返回，未获取Authorization Code</string>
+    <string name="get_token_fail">未获取Access Token</string>
+    <string name="get_user_fail">未从获取Qihoo UserInfo</string>
+    <string name="back_from_pay">从支付界面返回，请访问您的应用服务器查询结果</string>
+    <string name="enter_safe_env_failed">进入安全支付失败</string>
+    <string name="entering_safe_pay">正在进入安全支付…</string>
+
+    <!-- 实名注册和防沉迷 -->
+    <string name="real_name_reg_tip">防沉迷查询</string>
+    <string name="real_name_reg">实名注册</string>
+    <string name="real_name_reg_bg_transparent_tip">实名注册(透明)</string>
+    <string name="real_name_reg_bg_visible_tip">实名注册(不透明)</string>
+    <string name="anti_addiction_query">防沉迷查询</string>
+    <string name="anti_addiction_query_result_0">查询结果:无此用户数据</string>
+    <string name="anti_addiction_query_result_1">查询结果:未成年</string>
+    <string name="anti_addiction_query_result_2">查询结果:已成年</string>
+    <string name="anti_addiction_query_exception">查询出现异常</string>
+
+    <!-- 开发环境自检查 -->
+    <string name="env_self_check">SDK环境自检</string>
+    <string name="self_check">自检</string>
+    <!-- 获取out包信息 -->
+    <string name="get_out_sdk_info">获取SDK信息</string>
+    <string name="get_info">获取信息</string>
+    <string name="bbs_label">进入论坛</string>
+    <string name="bbs">论坛</string>
+    <string name="io_exception">请求失败，请稍后再试～</string>
+    <string name="time_out_exception">请求超时，请稍后再试～</string>
+    <string name="ssl_exception">连接服务器失败，请正确设置手机日期后重试</string>
+
+    <!-- 游戏退出提示 -->
+    <string name="game_exit_title">退出提示</string>
+    <string name="game_exit_msg">确定退出游戏？</string>
+    <string name="game_exit_ok">确定</string>
+    <string name="game_exit_cancel">取消</string>
+    <string name="add_frient">接受邀请添加好友</string>
+    <string name="get_frient">获取非本游戏的好友</string>
+    <string name="invite_friend">邀请好友</string>
+    <string name="invite_friend_btntxt">邀请</string>
+    <string name="upload_score">上传积分</string>
+    <string name="upload_score_btntxt">上传</string>
+    <string name="get_game_friend">获取游戏好友</string>
+    <string name="get_game_friend_btntxt">获取</string>
+    <string name="get_contact_content">获取可邀请好友列表</string>
+    <string name="invate_friend_batch">批量邀请好友</string>
+    <string name="strget">获取</string>
+    <string name="addfrientbnttxt">添加</string>
+    <string name="bind_sina_weibo_txt">绑定微博</string>
+    <string name="bind_sina_weibo_btntxt">绑定</string>
+    <string name="_">微博推荐好友</string>
+    <string name="yaoqing">邀请内容</string>
+    <string name="get_sinaweibo_rf_btntxt">获取</string>
+    <string name="sdk_share_txt">分享游戏</string>
+    <string name="share_btntxt">分享</string>
+    <string name="get_game_top_friend">获取游戏中好友排名</string>
+    <string name="get_game_top_friend_btntxt">获取</string>
+    <string name="get_game_top_btntxt">获取</string>
+    <string name="bind_phone_number_btntxt">绑定手机号</string>
+    <string name="bind_phone_number_txt">绑定手机号</string>
+    <string name="weibo_nick_name">微博昵称</string>
+
+    <string name="access_token_invalid">AccessToken已失效，请重新登录</string>
+    <string name="qt_invalid">QT已失效，请重新登录</string>
+    <string name="pay_callback_toast" formatted="false">状态码:%d, 状态描述：%s</string>
+    <string name="data_format_error">严重错误！！接口返回数据格式错误！！</string>
+
+</resources>

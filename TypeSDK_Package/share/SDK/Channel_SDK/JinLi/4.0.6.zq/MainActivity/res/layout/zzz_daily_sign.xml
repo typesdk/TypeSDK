@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/zzz_daily_sign_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/zzz_title"
+    android:background="@color/zzz_daily_sign_back_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.gionee.gamesdk.business.core.ui.AlphaAnimImageView
+            android:id="@+id/zzz_daily_sign_icon"
+            android:layout_width="match_parent"
+            android:layout_height="132dip"
+            android:scaleType="fitXY"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_daily_sign_gift_row_first_item_margin"
+            android:layout_marginLeft="@dimen/zzz_daily_sign_gift_content_padding"
+            android:layout_marginRight="@dimen/zzz_daily_sign_gift_content_padding"
+            android:background="@color/zzz_daily_sign_gift_content_background"/>
+
+        <com.gionee.gamesdk.business.usercenter.daily_sign.FlowLabelsView
+            android:id="@+id/zzz_gift_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zzz_daily_sign_gift_content_padding"
+            android:layout_marginRight="@dimen/zzz_daily_sign_gift_content_padding"
+            android:background="@color/zzz_daily_sign_gift_content_background"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/zzz_daily_sign_gift_content_padding"
+            android:layout_marginLeft="@dimen/zzz_daily_sign_gift_content_padding"
+            android:layout_marginRight="@dimen/zzz_daily_sign_gift_content_padding"
+            android:background="@color/zzz_daily_sign_gift_content_background">
+
+            <RelativeLayout
+                android:id="@+id/zzz_sign_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/zzz_daily_sign_gift_content_view_margin"
+                android:layout_marginRight="@dimen/zzz_daily_sign_gift_content_view_margin"
+                android:layout_marginTop="@dimen/zzz_daily_sign_button_margin_top">
+
+                <TextView
+                    android:id="@+id/zzz_daily_sign_already_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zzz_daily_already_sign_high"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/zzz_daily_already_signed_border"
+                    android:gravity="center"
+                    android:text="@string/zzz_daily_already_sign_text"
+                    android:textColor="@color/zzz_daily_already_sign_text_color"
+                    android:textSize="@dimen/zzz_daily_already_sign_text_size"
+                    android:visibility="gone"/>
+
+                <ImageButton
+                    android:id="@+id/zzz_sign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/zzz_daily_sign_btn"/>
+
+                <TextView
+                    android:id="@+id/zzz_daily_sign_gift_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/zzz_sign"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/zzz_daily_sign_gift_tip_text_color"
+                    android:textSize="@dimen/zzz_daily_sign_gift_tip_text_size"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/zzz_daily_sign_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zzz_sign_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/zzz_daily_sign_count_margin_top"
+                android:textColor="@color/zzz_daily_sign_count_text_color"
+                android:textSize="@dimen/zzz_daily_sign_count_text_size"/>
+
+            <TextView
+                android:id="@+id/zzz_daily_sign_next_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zzz_daily_sign_count"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/zzz_daily_sign_count_text_color"
+                android:textSize="@dimen/zzz_daily_sign_count_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="19dip"
+                android:layout_below="@+id/zzz_daily_sign_next_gift"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/zzz_daily_sign_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/zzz_daily_sign_desc_margin"
+            android:layout_marginRight="@dimen/zzz_daily_sign_desc_margin"
+            android:layout_marginTop="@dimen/zzz_daily_sign_desc_margin_top"
+            android:textColor="@color/zzz_daily_sign_desc_text_color"
+            android:textSize="@dimen/zzz_daily_sign_desc_text_size"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_daily_sign_tip_blank_view_height"/>
+    </LinearLayout>
+</ScrollView>

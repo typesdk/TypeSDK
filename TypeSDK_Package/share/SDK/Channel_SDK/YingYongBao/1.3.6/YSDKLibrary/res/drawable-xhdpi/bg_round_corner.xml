@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" />
+    <corners
+        android:bottomLeftRadius="4dp"
+        android:bottomRightRadius="4dp"
+        android:topLeftRadius="4dp"
+        android:topRightRadius="4dp" />
+    <stroke
+        android:width="1dp"
+        android:color="#1D82FF" />
+</shape><!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/drawable-xhdpi/bg_round_corner.xml -->

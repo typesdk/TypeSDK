@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/zzz_dialog_parent_layout"
+                android:layout_width="@dimen/zzz_dialog_default_width"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/zzz_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/zzz_dialog_title_height"
+        android:layout_marginLeft="@dimen/zzz_dialog_title_margin_left"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/zzz_main_green"
+        android:textSize="@dimen/zzz_dialog_title_size"/>
+
+    <FrameLayout
+        android:id="@+id/zzz_dialog_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_dialog_title">
+
+        <TextView
+            android:id="@+id/zzz_dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/zzz_dialog_content_padding_bottom"
+            android:layout_marginTop="@dimen/zzz_dialog_content_margin_top"
+            android:lineSpacingMultiplier="1.265"
+            android:maxHeight="@dimen/zzz_dialog_message_max_height"
+            android:paddingLeft="@dimen/zzz_dialog_content_margin_left_right"
+            android:paddingRight="@dimen/zzz_dialog_content_margin_left_right"
+            android:scrollbars="none"
+            android:textColor="@color/zzz_dialog_message_color"
+            android:textSize="@dimen/zzz_dialog_message_size"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/zzz_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_dialog_button_bar_height"
+        android:layout_below="@id/zzz_dialog_content_layout"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/zzz_dialog_button_layout_padding_vertical"
+        android:paddingLeft="@dimen/zzz_dialog_button_layout_padding_horizon"
+        android:paddingRight="@dimen/zzz_dialog_button_layout_padding_horizon"
+        android:paddingTop="@dimen/zzz_dialog_button_layout_padding_vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/zzz_dialog_button_background">
+
+            <Button
+                android:id="@+id/zzz_negative_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/zzz_dialog_negative_button_background"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/zzz_negative_button_color"
+                android:textSize="@dimen/zzz_dialog_button_size"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/zzz_positive_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/zzz_dialog_positive_button_background"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@drawable/zzz_positive_button_color"
+                android:textSize="@dimen/zzz_dialog_button_size"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

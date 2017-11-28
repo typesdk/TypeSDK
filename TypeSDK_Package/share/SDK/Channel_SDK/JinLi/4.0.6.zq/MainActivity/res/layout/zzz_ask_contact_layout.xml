@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/zzz_ask_module_bg">
+
+    <ImageView
+        android:id="@+id/zzz_must_hint"
+        android:layout_width="@dimen/zzz_ask_must_hint_size"
+        android:layout_height="@dimen/zzz_ask_must_hint_size"
+        android:layout_marginLeft="@dimen/zzz_ask_must_hint_margin_left"
+        android:layout_marginTop="@dimen/zzz_ask_must_hint_margin_top"
+        android:contentDescription="@string/zzz_empty_message"
+        android:src="@drawable/zzz_ask_must_hint"/>
+
+    <TextView
+        android:id="@+id/zzz_contact_textview_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/zzz_ask_contact_textview_qq_margin_left"
+        android:layout_marginTop="@dimen/zzz_ask_contact_textview_qq_margin_top"
+        android:layout_toRightOf="@id/zzz_must_hint"
+        android:includeFontPadding="false"
+        android:text="@string/zzz_qq"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/zzz_ask_contact_textview_qq_text_size"/>
+
+    <EditText
+        android:id="@+id/zzz_contact_edittext_qq"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_ask_contact_edittext_qq_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/zzz_ask_contact_edittext_qq_margin_left"
+        android:layout_marginRight="@dimen/zzz_ask_contact_edittext_qq_margin_right"
+        android:layout_marginTop="@dimen/zzz_ask_contact_edittext_qq_margin_top"
+        android:background="@drawable/zzz_ask_input_bg"
+        android:gravity="left|center_vertical"
+        android:hint="@string/zzz_contact_edittext_qq_hint"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:paddingLeft="@dimen/zzz_edittext_padding_left"
+        android:textCursorDrawable="@drawable/zzz_edit_cursor"
+        android:textSize="@dimen/zzz_contact_edittext_qq_text_size"/>
+
+    <TextView
+        android:id="@+id/zzz_contact_textview_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/zzz_contact_textview_qq"
+        android:layout_below="@id/zzz_contact_textview_qq"
+        android:layout_marginTop="@dimen/zzz_ask_contact_textview_phone_margin_top"
+        android:includeFontPadding="false"
+        android:text="@string/zzz_contact_phone"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/zzz_ask_contact_textview_phone_text_size"/>
+
+    <EditText
+        android:id="@+id/zzz_contact_edittext_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_ask_contact_edittext_phone_height"
+        android:layout_alignLeft="@id/zzz_contact_edittext_qq"
+        android:layout_alignRight="@id/zzz_contact_edittext_qq"
+        android:layout_below="@id/zzz_contact_edittext_qq"
+        android:layout_marginTop="@dimen/zzz_ask_contact_edittext_phone_margin_top"
+        android:background="@drawable/zzz_ask_input_bg"
+        android:gravity="left|center_vertical"
+        android:hint="@string/zzz_contact_edittext_phone_hint"
+        android:textColor="@android:color/black"
+        android:paddingLeft="@dimen/zzz_edittext_padding_left"
+        android:textColorHint="@android:color/darker_gray"
+        android:textCursorDrawable="@drawable/zzz_edit_cursor"
+        android:textSize="@dimen/zzz_contact_edittext_phone_text_size"/>
+
+</RelativeLayout>

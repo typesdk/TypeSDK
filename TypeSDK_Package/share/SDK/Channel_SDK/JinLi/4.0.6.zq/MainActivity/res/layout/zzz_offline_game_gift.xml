@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/zzz_title_color">
+
+        <ImageView
+            android:id="@+id/zzz_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/zzz_title_height"
+            android:layout_marginLeft="@dimen/zzz_second_title_back_marginLeft"
+            android:src="@drawable/zzz_back_src_light"/>
+
+        <TextView
+            android:id="@+id/zzz_offline_game_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/zzz_title_text_color"
+            android:layout_marginLeft="@dimen/zzz_second_title_back_marginLeft"
+            android:textSize="18dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/zzz_back"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/zzz_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_title_gradient_height"
+            android:background="@drawable/zzz_title_gradient"/>
+    </RelativeLayout>
+</LinearLayout>

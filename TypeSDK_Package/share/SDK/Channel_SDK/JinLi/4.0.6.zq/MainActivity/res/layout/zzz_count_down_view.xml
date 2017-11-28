@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+    <com.gionee.gamesdk.business.core.ui.CountDownItem
+        android:id="@+id/zzz_count_down_day"
+        android:layout_width="@dimen/zzz_billboard_count_down_item_width"
+        android:layout_height="@dimen/zzz_billboard_count_down_item_height"/>
+
+    <ImageView
+        android:id="@+id/zzz_count_down_day_img"
+        android:layout_width="@dimen/zzz_billboard_day_icon_size"
+        android:layout_height="@dimen/zzz_billboard_day_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/zzz_billboard_day_item_margin"
+        android:layout_toRightOf="@+id/zzz_count_down_day"
+        android:scaleType="fitXY"/>
+
+    <com.gionee.gamesdk.business.core.ui.CountDownItem
+        android:id="@+id/zzz_count_down_hours_h"
+        android:layout_width="@dimen/zzz_billboard_count_down_item_width"
+        android:layout_height="@dimen/zzz_billboard_count_down_item_height"
+        android:layout_marginLeft="@dimen/zzz_billboard_day_item_margin"
+        android:layout_toRightOf="@+id/zzz_count_down_day_img"/>
+
+    <com.gionee.gamesdk.business.core.ui.CountDownItem
+        android:id="@+id/zzz_count_down_hours_l"
+        android:layout_width="@dimen/zzz_billboard_count_down_item_width"
+        android:layout_height="@dimen/zzz_billboard_count_down_item_height"
+        android:layout_marginLeft="@dimen/zzz_billboard_day_item_margin"
+        android:layout_toRightOf="@+id/zzz_count_down_hours_h"/>
+
+    <TextView
+        android:id="@+id/zzz_count_down_hours_minis_split_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/zzz_billboard_day_item_margin"
+        android:layout_toRightOf="@+id/zzz_count_down_hours_l"
+        android:text="@string/zzz_colon"
+        android:textStyle="bold"/>
+
+    <com.gionee.gamesdk.business.core.ui.CountDownItem
+        android:id="@+id/zzz_count_down_minis_h"
+        android:layout_width="@dimen/zzz_billboard_count_down_item_width"
+        android:layout_height="@dimen/zzz_billboard_count_down_item_height"
+        android:layout_marginLeft="@dimen/zzz_billboard_day_item_margin"
+        android:layout_toRightOf="@+id/zzz_count_down_hours_minis_split_text"/>
+
+    <com.gionee.gamesdk.business.core.ui.CountDownItem
+        android:id="@+id/zzz_count_down_minis_l"
+        android:layout_width="@dimen/zzz_billboard_count_down_item_width"
+        android:layout_height="@dimen/zzz_billboard_count_down_item_height"
+        android:layout_marginLeft="@dimen/zzz_billboard_day_item_margin"
+        android:layout_toRightOf="@+id/zzz_count_down_minis_h"/>
+
+    <TextView
+        android:id="@+id/zzz_count_down_minis_seconds_split_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/zzz_billboard_day_item_margin"
+        android:layout_toRightOf="@+id/zzz_count_down_minis_l"
+        android:text="@string/zzz_colon"
+        android:textStyle="bold"/>
+
+    <com.gionee.gamesdk.business.core.ui.CountDownItem
+        android:id="@+id/zzz_count_down_seconds_h"
+        android:layout_width="@dimen/zzz_billboard_count_down_item_width"
+        android:layout_height="@dimen/zzz_billboard_count_down_item_height"
+        android:layout_marginLeft="@dimen/zzz_billboard_day_item_margin"
+        android:layout_toRightOf="@+id/zzz_count_down_minis_seconds_split_text"/>
+
+    <com.gionee.gamesdk.business.core.ui.CountDownItem
+        android:id="@+id/zzz_count_down_seconds_l"
+        android:layout_width="@dimen/zzz_billboard_count_down_item_width"
+        android:layout_height="@dimen/zzz_billboard_count_down_item_height"
+        android:layout_marginLeft="@dimen/zzz_billboard_day_item_margin"
+        android:layout_toRightOf="@+id/zzz_count_down_seconds_h"/>
+</merge>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/zzz_local_page_bg">
+
+    <RelativeLayout
+        android:id="@+id/zzz_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_title_height"
+        android:background="@color/zzz_title_color">
+
+        <TextView
+            android:id="@+id/zzz_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zzz_second_title_back_marginLeft"
+            android:drawableLeft="@drawable/zzz_back_src_light"
+            android:drawablePadding="@dimen/zzz_second_title_back_marginRight"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/zzz_back_to_game"
+            android:textColor="@color/zzz_title_text_color"
+            android:textSize="@dimen/zzz_title_textsize"/>
+
+    </RelativeLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zzz_title"
+        layout="@layout/zzz_tab_viewpager_with_transparent_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="zzz_empty_message"></string>
+    <string name="zzz_copy_ok">已复制到剪切板</string>
+    <string name="zzz_cancel">取消</string>
+    <string name="zzz_download_manager_error">下载管理器不可用</string>
+    <string name="zzz_found_no_gallery">请在“设置”中打开“读取外部存储”的权限</string>
+    <string name="zzz_hint_title">提示</string>
+    <string name="zzz_download_now">立即下载</string>
+    <string name="zzz_upgrade_now">立即更新</string>
+    <string name="zzz_install_now">立即安装</string>
+    <string name="zzz_install_gamehall_tips">温馨提示：</string>
+    <string name="zzz_download_gamehall">尚未安装金立游戏大厅客户端，请先安装</string>
+    <string name="zzz_upgrade_gamehall">金立游戏大厅版本过旧，新版本支持省流量和断点续传，更快更省更方便！</string>
+    <string name="zzz_activity_not_found">应用不存在</string>
+    <string name="zzz_point_market">积分商城</string>
+    <string name="zzz_download_success">下载完成</string>
+    <string name="zzz_download_title">下载提示</string>
+    <string name="zzz_offline_recommend_game_download">下载</string>
+    <string name="zzz_can_not_launch_game">启动游戏失败</string>
+    <string name="zzz_status_downloading">下载中</string>
+    <string name="zzz_status_install">安装</string>
+    <string name="zzz_status_open">打开</string>
+    <string name="zzz_status_continue_download">继续</string>
+    <string name="zzz_overlay_permission_granted_success">权限授予成功！</string>
+    <string name="zzz_overlay_permission_granted_failed">权限授予失败，无法开启悬浮窗</string>
+    <string name="zzz_permission_setting_title">权限设置</string>
+    <string name="zzz_overlay_permission_content">为了您能正常游戏，请在“设置”中打开在“其他应用的上层显示”的权限。</string>
+    <string name="zzz_setting">设置</string>
+    <string name="zzz_file_not_exists">下载文件已经被删除，请重新刷新页面</string>
+    <string name="zzz_not_have_write_storage_permission">请先到权限管理中开启应用读写存储器权限</string>
+</resources>

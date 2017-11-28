@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <TabHost
+        android:id="@+id/zzz_home_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/zzz_title_bar"
+                layout="@layout/zzz_second_title_layout"/>
+
+            <HorizontalScrollView
+                android:id="@+id/zzz_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/zzz_main_tab_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/zzz_main_tab_unselected"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zzz_tabwidget_bg"
+                    android:divider="@null"
+                    android:paddingLeft="@dimen/zzz_main_tab_margin_left"
+                    android:paddingRight="@dimen/zzz_main_tab_margin_right">
+                </TabWidget>
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/zzz_scroll_view"
+                android:layout_below="@id/zzz_title_bar"
+                android:background="@color/zzz_local_page_bg">
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+
+</merge>

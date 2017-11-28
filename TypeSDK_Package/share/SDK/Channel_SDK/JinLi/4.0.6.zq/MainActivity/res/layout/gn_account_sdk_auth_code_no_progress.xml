@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Gionee < changwy > <2014-05-21> modify for CR01237976 begin -->
+<!-- Gionee <lantian> <2013-06-13> modify for CR00823401 begin -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/auth_code_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/gn_account_content_left_right"
+    android:layout_marginRight="@dimen/gn_account_content_left_right"
+    android:layout_marginTop="10dip"
+    android:gravity="center_vertical"
+    android:visibility="gone" >
+
+    <!-- Gionee < changwy > <2013-12-03> modify for CR00965024 begin -->
+
+    <EditText
+        android:id="@+id/auth_code_input_et"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/gn_account_editText_height"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/auth_code_ll"
+        android:background="@color/gn_account_editer_text_backgroud_color"
+        android:hint="@string/gn_account_input_authcode_hint"
+        android:imeOptions="flagNoExtractUi"
+        android:maxLength="4"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:phoneNumber="true"
+        android:textColor="@color/gn_account_main_body_color"
+        android:textSize="@dimen/gn_account_text_size_subhead_information" />
+    <!-- Gionee < changwy > <2013-12-03> modify for CR00965024 end -->
+
+    <LinearLayout
+        android:id="@+id/auth_code_ll"
+        android:layout_width="74dip"
+        android:layout_height="36dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dip"
+        android:layout_toLeftOf="@+id/auth_code_change_tv"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/auth_code_iv"
+            android:layout_width="74dip"
+            android:layout_height="36dip"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/auth_code_pb"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/auth_code_change_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="8dip"
+        android:singleLine="true"
+        android:text="@string/gn_account_auth_code_change"
+        android:textColor="@color/gn_account_main_body_color"
+        android:textSize="@dimen/gn_account_text_size_normal_2" />
+
+</RelativeLayout> <!-- Gionee <lantian> <2013-06-13> modify for CR00823401 end -->

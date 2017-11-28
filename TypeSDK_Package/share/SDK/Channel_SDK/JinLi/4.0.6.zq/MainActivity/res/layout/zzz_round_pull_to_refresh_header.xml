@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/zzz_fl_inner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/zzz_round_header_footer_bottom_padding"
+                android:paddingTop="@dimen/zzz_round_header_footer_top_padding">
+
+    <com.gionee.gamesdk.business.core.pulltorefresh.PullView
+        android:id="@+id/zzz_pull_to_refresh_icon_view"
+        android:layout_width="@dimen/zzz_ball_icon_size"
+        android:layout_height="@dimen/zzz_ball_icon_size"
+        android:contentDescription="@string/zzz_about"/>
+
+</RelativeLayout>

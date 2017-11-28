@@ -44,7 +44,7 @@ function convertParamLogin(query,ret)
 
 
 
-function callChannelLogin(attrs,params,query,ret,retf)
+function callChannelLogin(attrs,params,query,ret,retf,gattrs)
 {
     if(query.sign.indexOf(" ")>=0)
     {
@@ -76,6 +76,7 @@ function callChannelLogin(attrs,params,query,ret,retf)
         ret.token = Usign;
         ret.value = {};
         retf(ret);
+        logicCommon.createLoginLog(gattrs.id,attrs.channel_id,attrs.sdk_name,ret.id);
 
     }
 
@@ -96,7 +97,15 @@ function compareOrder(attrs,gattrs,params,query,ret,game,channel,retf){
         if (!hasData) {
             retf('{FAILURE}');
             return;
-        } else {
+        }  else  if (query.app_order_id == params.orderdata && query.product_id == params.goodsid && query.amount >= params.goodsprice*0.9&&query.amount <= params.goodsprice)
+        {
+            var data  = {};
+            data.code = '0000';
+            data.msg = 'NORMAL';
+            retf(data);
+            return;
+        }
+        else {
             retValue.sign = logicCommon.createSignPay(retValue,gattrs.gkey);
             logicCommon.UpdateOrderStatus(game,channel,retValue.cporder,retValue.order,1,0,query);
             var options = {

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/zzz_billboard_head_text"
+        android:layout_width="@dimen/zzz_billboard_prize_text_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="@dimen/zzz_billboard_prize_head_text_size"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/zzz_billboard_head_icon_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/zzz_billboard_head_text"/>
+
+    <ImageView
+        android:id="@+id/zzz_billboard_head_icon_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/zzz_billboard_head_text"/>
+</RelativeLayout>

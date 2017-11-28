@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="replaceKey" >
+
+    <echo message="==================replace MainActivity AndroidManifest.xml====================="/>
+    <replace
+        dir="../MainActivity"
+        encoding="UTF-8"
+        includes="AndroidManifest.xml" >
+
+        <replacefilter
+            token="@package@"
+            value="${package}" />
+
+        <replacefilter
+            token="@minSdkVersion@"
+            value="${minSdkVersion}" />
+
+        <replacefilter
+            token="@targetSdkVersion@"
+            value="${targetSdkVersion}" />
+
+        <replacefilter
+            token="@app_id@"
+            value="${app_id}" />
+
+        <replacefilter
+            token="@product_id@"
+            value="${product_id}" />
+
+        <replacefilter
+            token="@sdk_name@"
+            value="${sdk_name}" />
+    </replace>
+    <echo message="==================replace MainActivity project.properties====================="/>
+    <replace
+        dir="../MainActivity"
+        encoding="UTF-8"
+        includes="project.properties" >
+
+        <replacefilter
+            token="@targetSdkVersion@"
+            value="${targetSdkVersion}" />
+    </replace>
+    <echo message="==================replace MainActivity TypeSDKBonjour_Tencent.java====================="/>
+    <replace
+        dir="../MainActivity/src/com/type/sdk/android/tencent"
+        encoding="UTF-8"
+        includes="TypeSDKBonjour_Tencent.java" >
+
+        <replacefilter
+            token="@package@"
+            value="${package}" />
+    </replace>
+    <echo message="==================replace MainActivity ysdkconf.ini====================="/>
+    <replace
+        dir="../MainActivity/assets"
+        encoding="UTF-8"
+        includes="ysdkconf.ini" >
+
+        <replacefilter
+            token="@app_id@"
+            value="${app_id}" />
+
+        <replacefilter
+            token="@product_id@"
+            value="${product_id}" />
+
+        <replacefilter
+            token="@ysdk_url@"
+            value="${ysdk_url}" />
+    </replace>
+    <echo message="==================replace MainActivity WXEntryActivity.java====================="/>
+    <replace
+        dir="../MainActivity"
+        encoding="UTF-8"
+        includes="WXEntryActivity.java" >
+
+        <replacefilter
+            token="@package@"
+            value="${package}" />
+    </replace>
+    <echo message="==================mkdir MainActivity ${wx_path}====================="/>
+    <mkdir dir="${wx_path}" >
+    </mkdir>
+
+    <echo message="==================copy MainActivity WXEntryActivity.java to ${wx_path}====================="/>
+    <copy
+        file="../MainActivity/WXEntryActivity.java"
+        todir="${wx_path}" >
+    </copy>
+	
+	<replace dir="../MainActivity/src/com/type/sdk/android" includes="TypeSDKHelper.java" encoding="UTF-8">
+        <replacefilter token="@channelName@" value="${channelName}"/>
+    </replace>
+
+</project>

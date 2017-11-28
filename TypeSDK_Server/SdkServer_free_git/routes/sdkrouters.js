@@ -23,6 +23,7 @@ router.get('/:game/:channel/:action/', function (req, res) {
   csllogger.requrl = req.protocol + '://' + req.headers.host + req.url;
 
   console.log('GAME:' + req.params.game + ' CHANNEL:' + req.params.channel + ' ACTION:' + req.params.action);
+
   var isRoute = false;
 
   retObj.init();
@@ -88,7 +89,6 @@ router.post('/:game/:channel/:action/', function (req, res) {
 
   console.log('GAME:' + req.params.game + ' CHANNEL:' + req.params.channel + ' ACTION:' + req.params.action);
 
-
   logger.info('POST - GAME:' + req.params.game + ' CHANNEL:' + req.params.channel + ' ACTION:' + req.params.action);
   var isRoute = false;
 
@@ -105,21 +105,18 @@ router.post('/:game/:channel/:action/', function (req, res) {
     };
   }
 
-  console.log('channelConfig:', channelConfig);
 
   if (channelConfig['game' + req.params.game]) matchgame.push(channelConfig['game' + req.params.game]);
 
   if (matchgame.length > 0) {
     var matchchannel = [];
 
-    console.log('before - matchgame[0]:', matchgame[0]);
 
     //同步新增游戏逻辑
     if (/^(S|s)etChannelConfig$/.test(req.params.action)) {
       if (!matchgame[0]['ch' + req.params.channel]) matchgame[0]['ch' + req.params.channel] = {id: 1, name: 'UC',attrs:{}};
     }
 
-    console.log('after - matchgame[0]:', matchgame[0]);
 
     if (matchgame[0]['ch' + req.params.channel]) matchchannel.push(matchgame[0]['ch' + req.params.channel]);
 

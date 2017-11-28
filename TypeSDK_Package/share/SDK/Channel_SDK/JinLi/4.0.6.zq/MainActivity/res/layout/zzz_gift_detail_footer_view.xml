@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/zzz_gift_activation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zzz_gift_title"
+        android:background="@drawable/zzz_gift_gray_box"
+        android:paddingLeft="@dimen/zzz_giftdetailkey_padding_left"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/zzz_activation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/zzz_gift_activation"
+            android:textColor="@color/zzz_gifttext_gray"
+            android:textSize="@dimen/zzz_gift_item_key_text_size"/>
+
+        <Button
+            android:id="@+id/zzz_activation_key_copy"
+            android:layout_width="@dimen/zzz_gift_detail_activation_key_copy_width"
+            android:layout_height="@dimen/zzz_gift_item_activate_word_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/zzz_btn_gift_copy"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="@string/zzz_copy_and_return"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/zzz_game_list_button_text_size"/>
+
+        <TextView
+            android:id="@+id/zzz_activation_key"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_gift_item_activate_word_height"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/zzz_activation_key_copy"
+            android:layout_toRightOf="@id/zzz_activation_text"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/zzz_main_text_color"
+            android:textSize="@dimen/zzz_gift_item_key_text_size"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/zzz_local_page_bg">
+
+    <include
+        android:id="@+id/zzz_title_layout"
+        layout="@layout/zzz_second_title_layout"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zzz_title_layout"
+        layout="@layout/zzz_load_helper_view"/>
+
+    <include
+        android:id="@+id/zzz_recharge_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_rechange_btn_parent_height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/zzz_recharge_panel"/>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zzz_title_layout"
+        android:layout_above="@id/zzz_recharge_parent"
+        layout="@layout/zzz_gn_webview"/>
+
+</RelativeLayout>

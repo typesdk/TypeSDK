@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="gn_account_error_1009">HTTP格式错误</string>
+    <string name="gn_account_error_1011">认证失败</string>
+    <string name="gn_account_error_1012">应用不存在</string>
+    <string name="gn_account_error_1020">服务器内部错误</string>
+    <string name="gn_account_error_1030">发送失败</string>
+    <string name="gn_account_error_1031">发送超时</string>
+    <string name="gn_account_error_1040">验证会话已经被使用</string>
+    <string name="gn_account_error_1041">资源不存在</string>
+    <string name="gn_account_error_1042">下发短信验证码超出了频率</string>
+    <string name="gn_account_error_1042_reset_ready">操作过于频繁，请一小时后重试</string>
+    <string name="gn_account_error_1050">Mac验证的timestamp已过期</string>
+    <string name="gn_account_error_1051">Mac验证的nonce重复</string>
+    <string name="gn_account_error_1100">您的手机号已注册,请直接登录</string>
+    <string name="gn_account_error_1101">验证码错误</string>
+    <string name="gn_account_error_1102">帐号不存在</string>
+    <string name="gn_account_error_1103">服务器没有收到短信</string>
+    <string name="gn_account_error_1104">帐号已冻结</string>
+    <string name="gn_account_error_1105">没有设置安全问题</string>
+    <string name="gn_account_error_1106">收到短信，但短信验证不通过</string>
+    <string name="gn_account_error_1107">没有sim卡</string>
+    <string name="gn_account_error_1108">收到短信，但电话号码不对应</string>
+    <string name="gn_account_error_1109">用户跳过流程</string>
+    <string name="gn_account_error_1110">验证码错误</string>
+    <string name="gn_account_error_1111">回话已过期</string>
+    <string name="gn_account_error_1114">验证码过期</string>
+    <string name="gn_account_error_1115">用户等级不足</string>
+    <string name="gn_account_error_1116">绑定手机号已存在</string>
+    <string name="gn_account_error_1117">不允许重复注册</string>
+    <string name="gn_account_error_1118">请输入图形验证码</string>
+    <string name="gn_account_error_1204">Token provider不存在</string>
+    <string name="gn_account_error_1220">获取不到微博信息</string>
+    <string name="gn_account_error_1221">重复绑定</string>
+    <string name="gn_account_error_1201">刷新验证码失败</string>
+    <string name="gn_account_error_1222">保存token失败</string>
+    <string name="gn_account_error_1223">获取QQ信息失败</string>
+    <string name="gn_account_error_1224">不允许解绑没手机号的最后一个SNS帐号</string>
+    <string name="gn_account_error_1251">本号码已被绑定，请更换其他号码</string>
+    <string name="gn_account_error_1253">升级失败</string>
+    <string name="gn_account_error_9999">网络异常</string>
+    <string name="gn_account_account_or_password_error">用户名或密码不正确</string>
+    <string name="gn_account_error_unknow">未知错误</string>
+    <string name="gn_account_rigistered_error">本号码已被绑定，请更换其他号码</string>
+    <string name="gn_account_ssl_time_error">抱歉，请同步手机时间后重试</string>
+
+</resources>

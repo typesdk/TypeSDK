@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@drawable/zzz_single_user_center_text_selector"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/zzz_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/zzz_single_usercenter_item_margin_left"
+    />
+
+    <TextView
+        android:id="@+id/zzz_item_property"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/zzz_single_usercenter_item_margin_right"
+        android:layout_toRightOf="@id/zzz_item_icon"
+        android:gravity="center_vertical"
+        android:textColor="@color/zzz_single_usercenter_item_text_color"
+        android:textSize="@dimen/zzz_single_usercenter_item_text_size"
+    />
+
+
+    <ImageView
+        android:id="@+id/zzz_item_arrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/zzz_single_my_arrow"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/zzz_single_usercenter_arrow_margin_right"
+    />
+
+</RelativeLayout>

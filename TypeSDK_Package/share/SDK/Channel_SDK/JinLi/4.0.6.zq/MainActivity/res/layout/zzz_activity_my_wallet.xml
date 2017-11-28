@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/zzz_local_page_bg"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/zzz_title"
+        layout="@layout/zzz_second_title_layout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_title_gradient_height"
+        android:background="@drawable/zzz_title_gradient"/>
+
+    <LinearLayout
+        android:id="@+id/zzz_wallet_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/zzz_wallet_acoin"
+            layout="@layout/zzz_wallet_property_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_wallet_item_height"/>
+
+        <include layout="@layout/zzz_my_wallet_setting_divide_line"/>
+
+        <include
+            android:id="@+id/zzz_wallet_aticket"
+            layout="@layout/zzz_wallet_property_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_wallet_item_height"
+        />
+
+        <include
+            android:id="@+id/zzz_wallet_gameticket"
+            layout="@layout/zzz_wallet_property_item_no_arrow"
+            android:layout_marginTop="@dimen/zzz_wallet_item_space_height"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_wallet_item_height"/>
+
+
+    </LinearLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/zzz_user_wallet_a_cion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_my_wallet_item_width"
+        android:background="@color/zzz_white">
+
+        <TextView
+            android:id="@+id/zzz_user_wallet_a_cion_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/zzz_point_wallet_a_coin"
+            android:layout_marginRight="@dimen/zzz_my_wallet_content_margin"
+            android:layout_marginLeft="@dimen/zzz_my_wallet_content_margin"
+            android:textColor="@color/zzz_gifttext_black"
+            android:textSize="@dimen/zzz_my_wallet_text_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/zzz_my_wallet_content_margin"
+            android:layout_marginLeft="@dimen/zzz_my_wallet_content_margin"
+            android:src="@drawable/zzz_user_info_item_indicate" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_my_wallet_item_line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/zzz_my_wallet_content_margin"
+            android:layout_marginLeft="@dimen/zzz_my_wallet_content_margin"
+            android:background="@color/zzz_local_page_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zzz_title_gradient_height"
+            android:background="@drawable/zzz_title_gradient"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zzz_user_wallet_a_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zzz_my_wallet_item_width"
+        android:background="@color/zzz_white"
+        android:paddingLeft="@dimen/zzz_my_wallet_padding"
+        android:paddingRight="@dimen/zzz_my_wallet_padding">
+
+        <TextView
+            android:id="@+id/zzz_user_wallet_a_ticket_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/zzz_point_wallet_a_ticket"
+            android:textColor="@color/zzz_gifttext_black"
+            android:textSize="@dimen/zzz_my_wallet_text_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/zzz_user_info_item_indicate" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/zzz_game_ticket_rule_margin_top"
+        android:background="@color/zzz_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/zzz_my_wallet_item_width"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/zzz_my_wallet_padding"
+            android:gravity="center"
+            android:text="@string/zzz_game_tick"
+            android:textColor="@color/zzz_gifttext_black"
+            android:textSize="@dimen/zzz_my_wallet_text_size" />
+
+        <TextView
+            android:id="@+id/zzz_my_wallet_more_gima_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/zzz_my_wallet_item_width"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/zzz_my_wallet_padding"
+            android:drawableRight="@drawable/zzz_user_info_item_indicate"
+            android:gravity="center"
+            android:text="@string/zzz_more_game_tick"
+            android:textColor="@color/zzz_user_my_wallet_more_game_ticket_color"
+            android:textSize="@dimen/zzz_see_more_textsize" />-->
+
+
+    <include
+        layout="@layout/zzz_tab_viewpager_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/zzz_my_wallet_more_gima_ticket"/>
+</LinearLayout>

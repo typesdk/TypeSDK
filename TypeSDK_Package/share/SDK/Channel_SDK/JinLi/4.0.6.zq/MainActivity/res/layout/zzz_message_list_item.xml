@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/zzz_record_item_num_margin_left"
+    android:paddingRight="@dimen/zzz_record_item_channel_margin_right">
+
+    <TextView
+        android:id="@+id/message_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/zzz_message_title_margin_top"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/zzz_message_title_color"
+        android:textSize="@dimen/zzz_message_title_text_size"/>
+
+    <TextView
+        android:id="@+id/message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_title"
+        android:layout_marginTop="@dimen/zzz_message_content_margin_top"
+        android:textColor="@color/zzz_message_content_color"
+        android:textSize="@dimen/zzz_message_content_text_size"/>
+
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_content"
+        android:layout_marginTop="@dimen/zzz_message_time_stamp_margin_top"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/zzz_message_time_stamp_color"
+        android:textSize="@dimen/zzz_message_time_stamp_text_size"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/message_time"
+        android:layout_marginTop="@dimen/zzz_message_time_stamp_margin_top"
+        android:background="@color/zzz_seperate_line_color"/>
+</RelativeLayout>

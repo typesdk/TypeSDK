@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gn_account_white">#FFFFFF</color>
+    <color name="gn_account_edittext_grey">#808080</color>
+    <color name="gn_account_textview_grey">#929292</color>
+    <color name="gn_account_divide_line">#c5c5c5</color>
+    <color name="gn_account_red">#cc3333</color>
+    <color name="gn_account_gray">#66000000</color>
+    <color name="gn_account_gray2">#888888</color>
+    <color name="gn_account_background_color">#fdfdfd</color>
+    <color name="gn_account_jump_color">#CCCCCC</color>
+    <color name="gn_account_black">#000000</color>
+    <color name="gn_account_blue">#0066ff</color>
+    <color name="gn_account_orange_bg">#ff9000</color>
+    <color name="gn_account_edittext_hint_color">#aaaaaa</color>
+    <color name="gn_account_main_body_color">#CC000000</color>
+    <color name="gn_account_explain_body_color">#66000000</color>
+    <color name="gn_account_defalut_action_bar_color">#fffeac1a</color>
+    <color name="gn_account_amigo_accent_color_g1">#ff9000</color>
+    <color name="gn_account_transparent_color">#00000000</color>
+    <color name="gn_account_divider_color">#d7d7d7</color>
+    <color name="gn_account_textview_name">#323232</color>
+    <color name="gn_account_orange_clicked">#50ff9000</color>
+    <color name="gn_account_transparent">#0000</color>
+    <color name="gn_account_black5">#cc000000</color>
+    <color name="gn_account_editer_text_backgroud_color">#10000000</color>
+    <color name="gn_account_prompt">#80000000</color>
+
+</resources>

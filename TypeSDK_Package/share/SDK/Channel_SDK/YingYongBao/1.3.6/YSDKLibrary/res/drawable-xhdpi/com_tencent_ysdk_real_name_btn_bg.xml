@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/com_tencent_ysdk_real_name_btn_nor" android:state_pressed="false"/>
+    <item android:drawable="@drawable/com_tencent_ysdk_real_name_btn_sel" android:state_pressed="true"/>
+
+</selector>
+<!-- From: file:/data/rdm/projects/18500/ysdk/src/main/res/drawable-xhdpi/com_tencent_ysdk_real_name_btn_bg.xml -->

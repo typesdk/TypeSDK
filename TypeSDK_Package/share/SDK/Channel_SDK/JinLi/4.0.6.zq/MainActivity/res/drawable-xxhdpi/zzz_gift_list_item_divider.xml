@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+       android:insetLeft="18dp"
+       android:insetRight="18dp"
+       android:layout_width="match_parent"
+       android:layout_height="1px"
+       android:drawable="@color/zzz_wallet_line_color">
+</inset>

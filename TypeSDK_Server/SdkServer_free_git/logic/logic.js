@@ -5,6 +5,7 @@ var merge = require('merge');
 var crypto = require('crypto');
 var logicCommon = require('./logicCommon.js');
 var redisconfig = require('../config.json');
+var redisDA = require("./dbRedis.js");
 
 function doAction(game, channel, action, gattrs, channeloptions, oquery, params, ret, retf) {
 
@@ -60,7 +61,7 @@ function doAction(game, channel, action, gattrs, channeloptions, oquery, params,
       }
 
       //同步向渠道登录接口发送请求（处理回调中记录请求返回结果日志）
-      logic.callChannelLogin(attrs, params, query, ret, retf);
+      logic.callChannelLogin(attrs, params, query, ret, retf,gattrs);
       break;
     case /^(P|p)ay$/.test(action):
       //渠道参数转换 -- 实际不需要
@@ -90,6 +91,7 @@ function doAction(game, channel, action, gattrs, channeloptions, oquery, params,
 
       // 游戏服查询订单 对比订单，id = '101'或 '202' 是AppStore
       // 海外苹果非越狱渠道比较特殊，得先进入逻辑验证，收到苹果返回才能订单对比
+
       if (channeloptions.id == '101' || channeloptions.id == '202') {
         logic.callGamePay(attrs, gattrs, params, query, ret, retf, game, channel, channeloptions.id);
       } else {
@@ -689,8 +691,6 @@ function doAction(game, channel, action, gattrs, channeloptions, oquery, params,
       if (redisConfig != undefined) {
         var redis = require("redis");
         var Redis = redis.createClient(redisConfig.port, redisConfig.host);
-        console.log('****** GetChannelConfig ******');
-        console.log(redisConfig);
         Redis.auth(redisConfig.pass, function () {
           console.log('connected to target redis-server');
         });
@@ -712,10 +712,9 @@ function doAction(game, channel, action, gattrs, channeloptions, oquery, params,
       if (redisConfig != undefined) {
         var redis = require("redis");
         var Redis = redis.createClient(redisConfig.port, redisConfig.host);
-        console.log('****** SetChannelConfig ******');
-        console.log(redisConfig);
         Redis.auth(redisConfig.pass, function () {
           console.log('connected to target redis-server');
+
         });
 
         //todo 后台配置同步接口
@@ -726,7 +725,6 @@ function doAction(game, channel, action, gattrs, channeloptions, oquery, params,
         ret.msg = 'gameId 不存在';
         retf(ret);
       }
-      break;
       break;
     default:
       console.log("• Didn't match any test");
