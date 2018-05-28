@@ -44,7 +44,7 @@ function createSignLogin(query,key)
     return crypto.createHash('md5').update( query.AppID + query.Act + query.Uin + query.SessionId + key).digest('hex').toLowerCase();
 }
 
-function callChannelLogin(attrs,params,query,ret,retf,gattrs)
+function callChannelLogin(attrs,params,query,ret,retf)
 {
     var cloned = merge(true, params.out_params);
     merge(cloned,query);
@@ -75,7 +75,6 @@ function callChannelLogin(attrs,params,query,ret,retf,gattrs)
                 ret.nick = "";
                 ret.token = "";
                 ret.value = retOut;
-                logicCommon.createLoginLog(gattrs.id,attrs.channel_id,attrs.sdk_name,ret.id);
             }else{
                 //打点：验证失败
                 logicCommon.sdkMonitorDot(logicCommon.dotType.LoginDot.ChVerifyErr);

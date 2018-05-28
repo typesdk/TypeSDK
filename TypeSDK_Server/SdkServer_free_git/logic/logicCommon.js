@@ -13,6 +13,7 @@ var logicRedis = require("./logicRedis.js");
 
 
 function saveOrder(game, channel, cporder, notifyurl, data, ret, retf, verifyurl, channelId) {
+  var sdkorder = crypto.randomBytes(20).toString('hex');
   redisDA.select('0', function (error) {
     console.log(error);
     if (error) {
@@ -34,6 +35,7 @@ function saveOrder(game, channel, cporder, notifyurl, data, ret, retf, verifyurl
             , "orderdata": data
             , "cporder": cporder
             , "notifyurl": notifyurl
+            , "sdkorder": sdkorder
             , "verifyurl": verifyurl
           };
       redisDA.set(logicOrderKey + ':' + cporder, JSON.stringify(savedata), function (error, res) {
@@ -57,23 +59,8 @@ function saveOrder(game, channel, cporder, notifyurl, data, ret, retf, verifyurl
 
         retf(ret);
       });
-
-      if (data.goodsinfo != undefined && data.uid != undefined)
-      {
-        var uid = data.uid;
-         var price = data.goodsinfo.price;
-         var name = data.goodsinfo.name;
-      }
-      else
-      {
-        //需要游戏服务器传递
-          var uid = '000';
-          var price = '000';
-          var name = '000';
-      }
-
       redisDA.expire(logicOrderKey + ':' + cporder, 3 * 24 * 60 * 60);
-      mysqlDA.createOrder(game, channel, cporder, verifyurl, channelId, notifyurl,uid,price,name);
+      mysqlDA.createOrder(game, channel, cporder, verifyurl, channelId, notifyurl);
     }
   });
 }
@@ -172,18 +159,8 @@ function getNotifyUrl(cporder, params, callback) {
             var data = JSON.parse(res);
             params.out_url = data.notifyurl;
             params.verifyurl = data.verifyurl;
-            params.orderdata = data.orderdata.cporder;
-            if (data.orderdata.goodsinfo != undefined)
-            {
-                params.goodsname = data.orderdata.goodsinfo.name;
-                params.goodsprice = data.orderdata.goodsinfo.price;
-            }
-            else
-            {
-                params.goodsname = '2.2之前版本没有这个参数';
-                params.goodsprice = '2.2之前版本没有这个参数';
-            }
-            params.goodsid = data.orderdata.data;
+            params.amount = data.amount;
+
             callback(true);
           }
         }
@@ -1320,37 +1297,6 @@ function autoCallBack(channel, options, cb) {
   }, timeTip);
 }
 
-
-function createLoginLog(game, channelid, channelname, channeluserid) {
-    mysqlDA.createLoginLog(game, channelid, channelname, channeluserid);
-}
-
-
-// function veriorder(cporder,params,callback) {
-//     redisDA.select('0', function (error) {
-//         if (error) {
-//             callback(false);
-//         } else {
-//             redisDA.get(logicOrderKey + ':' + cporder, function (error, res) {
-//                 if (error) {
-//                     callback(false);
-//                 } else {
-//                     if (res == null) {
-//                         callback(false);
-//                     } else {
-//                         var order = JSON.parse(res);
-//                         params.orderdata = order.orderdata.cporder;
-//                         params.goodsname = order.orderdata.goodsinfo.name;
-//                         params.goodsprice = order.orderdata.goodsinfo.price;
-//                         callback(params);
-//                     }
-//                 }
-//             });
-//         }
-//     });
-//
-// }
-
 exports.dotType = {
   LoginDot: {
     GetReqFromGClient: 'Login_1',   //接收到客户端登录请求
@@ -1420,5 +1366,3 @@ exports.updataOrder = updataOrder;
 exports.SaveOrderRedis = SaveOrderRedis;
 exports.getItemList = getItemList;
 exports.setItemList = setItemList;
-
-exports.createLoginLog = createLoginLog;

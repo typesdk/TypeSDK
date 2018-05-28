@@ -5,50 +5,58 @@ USE `typesdk_db`;
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
---  Table structure for `sdk_order`
+-- Table structure for `sdk_order`
 -- ----------------------------
-DROP TABLE IF EXISTS `sdk_order`;
 CREATE TABLE `sdk_order` (
-  `ID` int(20) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
-  `ord_game` char(30) DEFAULT NULL COMMENT '订单关联游戏（区服）',
-  `ord_channel` char(30) DEFAULT NULL COMMENT '订单关联渠道',
-  `ord_cporder` char(100) DEFAULT NULL COMMENT '游戏内部订单号',
-  `ord_chorder` char(100) DEFAULT NULL COMMENT '渠道订单号',
-  `ord_status` tinyint(1) DEFAULT NULL COMMENT '订单状态（0：已创建，1：已回调，2,：已发货）',
-  `createtimevalue` int(20) DEFAULT NULL COMMENT '订单创建时间',
-  `updatetimevalue` int(20) DEFAULT NULL COMMENT '状态变更时间',
-  `ord_channelId` char(100) DEFAULT NULL,
-  `ord_data` mediumtext,
-  `ord_verifyurl` char(100) DEFAULT NULL,
-  `ord_notifyurl` char(100) DEFAULT NULL,
-  `ord_successFlg` char(20) DEFAULT NULL,
-  `ord_amount` char(30) DEFAULT NULL,
-  `ord_channellaccountid` char(255) DEFAULT NULL,
-  `goods_price` char(20) DEFAULT NULL,
-  `goods_name` char(20) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `idx_sdk_order_ord_cporder` (`ord_cporder`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=37083 DEFAULT CHARSET=utf8 COMMENT='订单记录表';
+`ID`  int(20) NOT NULL AUTO_INCREMENT COMMENT '自增ID' ,
+`ord_game`  char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '订单关联游戏（区服）' ,
+`ord_channel`  char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '订单关联渠道' ,
+`ord_cporder`  char(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '游戏内部订单号' ,
+`ord_chorder`  char(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '渠道订单号' ,
+`ord_status`  tinyint(1) NULL DEFAULT NULL COMMENT '订单状态（0：已创建，1：已回调，2,：已发货）' ,
+`createtimevalue`  int(20) NULL DEFAULT NULL COMMENT '订单创建时间' ,
+`updatetimevalue`  int(20) NULL DEFAULT NULL COMMENT '状态变更时间' ,
+`ord_channelId`  char(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+`ord_data`  mediumtext CHARACTER SET utf8 COLLATE utf8_general_ci NULL ,
+`ord_verifyurl`  char(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+`ord_notifyurl`  char(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+`ord_successFlg`  char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+`ord_amount`  char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+`ord_channellaccountid`  char(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+`goods_price`  char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+`goods_name`  char(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ,
+PRIMARY KEY (`ID`),
+INDEX `idx_sdk_order_ord_cporder` (`ord_cporder`) USING BTREE 
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+COMMENT='订单记录表'
+AUTO_INCREMENT=1
+
+;
 
 -- ----------------------------
---  Table structure for `sdk_user`
+-- Table structure for `sdk_user`
 -- ----------------------------
-DROP TABLE IF EXISTS `sdk_user`;
 CREATE TABLE `sdk_user` (
-  `ID` int(20) NOT NULL AUTO_INCREMENT COMMENT '自增ID',
-  `SdkGameID` char(30) DEFAULT NULL COMMENT 'SDK游戏ID',
-  `SdkChannelID` char(30) DEFAULT NULL COMMENT 'SDK游戏渠道ID',
-  `SdkChannelName` char(30) DEFAULT NULL COMMENT 'SDK游戏渠道名称',
-  `ChannelUserID` char(255) DEFAULT NULL COMMENT '游戏渠道用户ID',
-  `CreateTimeValue` int(20) DEFAULT NULL COMMENT '登入创建时间',
-  `UpdateTimeValue` int(20) DEFAULT NULL COMMENT '状态变更时间',
-  PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+`ID`  int(20) NOT NULL AUTO_INCREMENT COMMENT '自增ID' ,
+`SdkGameID`  char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'SDK游戏ID' ,
+`SdkChannelID`  char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'SDK游戏渠道ID' ,
+`SdkChannelName`  char(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'SDK游戏渠道名称' ,
+`ChannelUserID`  char(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '游戏渠道用户ID' ,
+`CreateTimeValue`  int(20) NULL DEFAULT NULL COMMENT '登入创建时间' ,
+`UpdateTimeValue`  int(20) NULL DEFAULT NULL COMMENT '状态变更时间' ,
+PRIMARY KEY (`ID`)
+)
+ENGINE=InnoDB
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+AUTO_INCREMENT=1
+
+;
 
 -- ----------------------------
---  Procedure definition for `p_game_order_search`
+-- Procedure structure for `p_game_order_search`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_game_order_search`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_game_order_search`(IN `p_ord_cporder` char(100))
 BEGIN
@@ -60,9 +68,8 @@ END
 DELIMITER ;
 
 -- ----------------------------
---  Procedure definition for `p_sdk_cporder_select`
+-- Procedure structure for `p_sdk_cporder_select`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_sdk_cporder_select`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_cporder_select`(IN `p_ord_cporder` CHAR(100))
 BEGIN
@@ -73,9 +80,8 @@ END
 DELIMITER ;
 
 -- ----------------------------
---  Procedure definition for `p_sdk_login_log`
+-- Procedure structure for `p_sdk_login_log`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_sdk_login_log`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_login_log`(IN `p_login_gameid` CHAR(30), IN `p_login_channelid` CHAR(30), IN `p_login_channelname` CHAR(30), IN `p_login_channeluserid` CHAR(255))
 IF ISNULL(p_login_channeluserid) || LENGTH(TRIM(p_login_channeluserid)) < 1
@@ -94,9 +100,8 @@ END IF
 DELIMITER ;
 
 -- ----------------------------
---  Procedure definition for `p_sdk_order_create`
+-- Procedure structure for `p_sdk_order_create`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_sdk_order_create`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_order_create`(IN `p_ord_game` CHAR(30), IN `p_ord_channel` CHAR(30), IN `p_ord_cporder` CHAR(100), IN `p_ord_verifyurl` CHAR(100),IN `p_ord_channelId` CHAR(100),IN `p_ord_notifyurl` CHAR(100),IN `p_ord_channellaccountid` CHAR(255),IN `p_goods_price` CHAR(20),IN `p_goods_name` CHAR(20))
     NO SQL
@@ -123,9 +128,8 @@ END IF
 DELIMITER ;
 
 -- ----------------------------
---  Procedure definition for `p_sdk_order_searchByorder`
+-- Procedure structure for `p_sdk_order_searchByorder`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_sdk_order_searchByorder`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_order_searchByorder`(IN `p_ord_cporder` char(100),in `p_ord_order` char(100),out `sdkStatus` tinyint)
 BEGIN
@@ -141,9 +145,8 @@ END
 DELIMITER ;
 
 -- ----------------------------
---  Procedure definition for `p_sdk_order_stutas_select`
+-- Procedure structure for `p_sdk_order_stutas_select`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_sdk_order_stutas_select`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_order_stutas_select`(IN `p_ord_game` char(30),IN `p_ord_startTime` int(20),IN `p_ord_endTime` int(20))
 BEGIN
@@ -160,9 +163,8 @@ END
 DELIMITER ;
 
 -- ----------------------------
---  Procedure definition for `p_sdk_order_update_status`
+-- Procedure structure for `p_sdk_order_update_status`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_sdk_order_update_status`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_order_update_status`(IN `p_ord_game` CHAR(30), IN `p_ord_channel` CHAR(30), IN `p_ord_cporder` CHAR(100), IN `p_ord_chorder` CHAR(100), IN `p_ord_status` TINYINT(1),IN `p_ord_amount` CHAR(30))
     NO SQL
@@ -203,9 +205,8 @@ END IF
 DELIMITER ;
 
 -- ----------------------------
---  Procedure definition for `p_sdk_order_update_statusAndData`
+-- Procedure structure for `p_sdk_order_update_statusAndData`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_sdk_order_update_statusAndData`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_order_update_statusAndData`(IN `p_ord_game` CHAR(30),IN `p_ord_channel` CHAR(30),IN `p_ord_cporder` CHAR(100),IN `p_ord_chorder` CHAR(100),IN `p_ord_status` TINYINT(1),IN `p_ord_amount` CHAR(30),IN `p_ord_data` mediumtext)
 IF ISNULL(p_ord_cporder) || LENGTH(TRIM(p_ord_cporder)) < 1
@@ -250,9 +251,8 @@ END IF
 DELIMITER ;
 
 -- ----------------------------
---  Procedure definition for `p_sdk_order_update_successFlg`
+-- Procedure structure for `p_sdk_order_update_successFlg`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_sdk_order_update_successFlg`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_order_update_successFlg`(IN `p_ord_cporder` char(100),IN `p_ord_channelId` char(100))
 IF ISNULL(p_ord_cporder) || LENGTH(TRIM(p_ord_cporder)) < 1
@@ -283,9 +283,8 @@ END IF
 DELIMITER ;
 
 -- ----------------------------
---  Procedure definition for `p_sdk_request_log_insert`
+-- Procedure structure for `p_sdk_request_log_insert`
 -- ----------------------------
-DROP PROCEDURE IF EXISTS `p_sdk_request_log_insert`;
 DELIMITER ;;
 CREATE DEFINER=`root`@`localhost` PROCEDURE `p_sdk_request_log_insert`(IN `p_req_game` CHAR(30), IN `p_req_channel` CHAR(30), IN `p_req_action` CHAR(10), IN `p_req_detail` VARCHAR(3000))
     NO SQL
@@ -300,5 +299,11 @@ INSERT INTO sdk_request_log
 DELIMITER ;
 
 -- ----------------------------
---  Records 
+-- Auto increment value for `sdk_order`
 -- ----------------------------
+ALTER TABLE `sdk_order` AUTO_INCREMENT=37489;
+
+-- ----------------------------
+-- Auto increment value for `sdk_user`
+-- ----------------------------
+ALTER TABLE `sdk_user` AUTO_INCREMENT=485;

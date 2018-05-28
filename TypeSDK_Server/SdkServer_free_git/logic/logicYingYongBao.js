@@ -65,7 +65,7 @@ function convertParamLogin(query, ret) {
  * @param ret
  * @param retf
  */
-function callChannelLogin(attrs, params, query, ret, retf,gattrs) {
+function callChannelLogin(attrs, params, query, ret, retf) {
     var cloned = merge(true, params.out_params);
     merge(cloned, query);
 
@@ -122,7 +122,6 @@ function callChannelLogin(attrs, params, query, ret, retf,gattrs) {
                 ret.nick = "";
                 ret.token = "";
                 ret.value = retOut;
-                logicCommon.createLoginLog(gattrs.id,attrs.channel_id,attrs.sdk_name,ret.id);
             }
             else {
                 //打点：验证失败
@@ -357,9 +356,7 @@ function compareOrder(message, callBack) {
             console.log(retValue);
             callBack(retData);
             return;
-        }
-
-        else {
+        } else {
             retValue.sign = logicCommon.createSignPay(retValue, message.gamekey);
             logicCommon.UpdateOrderStatus(gameName, channelId, retValue.cporder, retValue.order, 1,0, message);
 

@@ -21,10 +21,13 @@ function convertParamLogin(query,ret)
 
     for(var i in cloned)
     {
+        //�жϲ������Ƿ���е��ֶ���ȫ
         if(org[i] == cloned[i] && i != "data" && i != "id")
         {
             return false;
         }
+
+        //�жϲ������Ƿ���Ϊ�յ��ֶ�
         if(0 == (cloned[i] + "").replace(/(^s*)|(s*$)/g, "").length && i != "data" && i != "id")
         {
             return false;
@@ -38,7 +41,7 @@ function convertParamLogin(query,ret)
 
 
 
-function callChannelLogin(attrs,params,query,ret,retf,gattrs)
+function callChannelLogin(attrs,params,query,ret,retf)
 {
     var cloned = merge(true, params.out_params);
     merge(cloned,query);
@@ -75,8 +78,11 @@ function callChannelLogin(attrs,params,query,ret,retf,gattrs)
                 ret.nick = "";
                 ret.token = query.ticket;
                 ret.value = retOut;
-                logicCommon.createLoginLog(gattrs.id,attrs.channel_id,attrs.sdk_name,ret.id);
 
+                //ret.ret = '1';
+                //ret.msg = 'success';
+                //ret.uid = '' + retOut.data.user_id;
+                //ret.channel = '39';
             }
             else
             {
@@ -130,16 +136,7 @@ function compareOrder(attrs,gattrs,params,query,ret,game,channel,retf){
         if (!hasData) {
             retf('FAILURE');
             return;
-        }
-        else  if (query.app_order_id == params.orderdata && query.product_id == params.goodsid && query.amount >= params.goodsprice*0.9&&query.amount <= params.goodsprice)
-        {
-            var data  = {};
-            data.code = '0000';
-            data.msg = 'NORMAL';
-            retf(data);
-            return;
-        }
-        else {
+        } else {
             retValue.sign = logicCommon.createSignPay(retValue,gattrs.gkey);
             logicCommon.UpdateOrderStatus(game,channel,retValue.cporder,retValue.order,1,0,query);
             var options = {
